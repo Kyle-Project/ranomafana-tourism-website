@@ -22,7 +22,9 @@ npm run photos:fetch         # download them + write images/PHOTO-CREDITS.md
 
 ## Publishing
 
-The folder is a git repository (branch `main`, created 11 Oct 2026). Pushing `main`
+Live at <https://kyle-project.github.io/ranomafana-tourism-website/>, from the repo
+<https://github.com/Kyle-Project/ranomafana-tourism-website> (first published 11 Oct
+2026). The folder is a git repository (branch `main`). Pushing `main`
 to GitHub publishes the site through GitHub Pages — `.github/workflows/publish.yml`
 runs `npm run check` first and publishes nothing if it fails, so the live site keeps
 its last good version. Only `index.html`, `data/` and `images/` go online. The repo is

@@ -22,6 +22,9 @@ npm run check
 
 ## Publishing
 
+Live site: <https://kyle-project.github.io/ranomafana-tourism-website/> ·
+repository: <https://github.com/Kyle-Project/ranomafana-tourism-website>
+
 The site is hosted on GitHub Pages and updates itself: every change pushed to the
 `main` branch on GitHub goes live a minute or two later. Before publishing, GitHub
 runs the same `npm run check`; if it finds an error, nothing changes on the live
