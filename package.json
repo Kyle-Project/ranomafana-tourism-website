@@ -1,0 +1,19 @@
+{
+  "name": "ranomafana-tourism-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Community tourism directory for Ranomafana, Madagascar",
+  "type": "module",
+  "scripts": {
+    "dev": "python -m http.server 8137",
+    "check": "node scripts/validate.mjs",
+    "check:gaps": "node scripts/validate.mjs --gaps",
+    "check:write": "node scripts/validate.mjs --write",
+    "photos:placeholders": "python scripts/make-placeholders.py",
+    "photos:find": "node scripts/fetch-photos.mjs --list",
+    "photos:fetch": "node scripts/fetch-photos.mjs --all"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

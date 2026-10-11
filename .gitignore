@@ -1,0 +1,17 @@
+node_modules/
+_site/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Editor / OS cruft
+.vscode/
+.idea/
+*.swp
+*~
+
+# Keep .claude/launch.json tracked — it defines the dev server config.
+# Ignore local Claude Code session state only.
+.claude/settings.local.json
+.claude/state/

@@ -1,0 +1,10 @@
+# Keep Unix line endings everywhere. scripts/validate.mjs splits the data file on
+# "\n", and GitHub's servers check it on Linux.
+* text=auto eol=lf
+
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.avif binary
+*.webp binary
+*.docx binary
