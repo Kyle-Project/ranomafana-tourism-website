@@ -133,10 +133,12 @@ Field reference lives in `data/README.md`.
 
 **Credit the guide correctly.** It was made by Peace Corps Volunteer Kyle Schmidt,
 with funding from PIC3 and support from PCDT-R and the Commune of Ranomafana. That
-wording appears in the home-page welcome (`welcomeText1`), the "Plan with people who
-live here" boxes (`planCtaText`), the About page and the footer (`footerCredit`), in
-all four languages. **Emma Starink is thanked in the footer credit only** ("With
-thanks to Emma Starink") — Kyle asked for her name to stay out of the main body
+credit appears in the "Plan with people who live here" boxes (`planCtaText`), the
+About page and the footer (`footerCredit`), in all four languages. The footer is the
+main place for it, kept to one short dot-separated line (Kyle, 11 Oct 2026: "make it
+succinct"); the home-page welcome no longer carries it — Kyle had both welcome
+paragraphs removed that day. **Emma Starink is thanked in the footer credit only**
+("Thanks to Emma Starink") — Kyle asked for her name to stay out of the main body
 text. Do not describe the guide as made with Madagascar National Parks — the first
 welcome text did, and Kyle corrected it.
 
