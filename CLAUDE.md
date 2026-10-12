@@ -142,7 +142,8 @@ main place for it, kept to one short dot-separated line (Kyle, 11 Oct 2026: "mak
 succinct"); the home-page welcome does not carry it. Kyle had the first welcome
 paragraphs (which opened with the credit) removed on 11 Oct, then asked on 12 Oct for
 a new welcome, and that day settled on short, punchy tour-operator copy under the
-eyebrow "Why Ranomafana?", in the order he asked for: four key phrases, one per line
+heading "Welcome to Ranomafana!" (no small label above it — he had the "Why
+Ranomafana?" one removed), in the order he asked for: four key phrases, one per line
 (`welcomeText1`, his own wording: "Wild adventures. Immersive expeditions. Thermal
 relaxation. World-renowned biodiversity."), then "UNESCO World Heritage Ranomafana is
 home to…" and the key activities (`welcomeText2`), then the impact of a stay
@@ -169,10 +170,15 @@ standing in for a real hotel is not.
 
 `PLACEHOLDER_STAY` and `PLACEHOLDER_NATURE` still exist at the top of the data file
 and point at real Ranomafana photographs — despite its file name,
-`great-ranomafana-nature-shot.jpg` (`PLACEHOLDER_NATURE`, also the home-page hero) is
-a leaf-tailed gecko on a branch, and `ranomafana-primary.jpg` (`PLACEHOLDER_STAY`) is
-a waterfall pool. They are for genuinely scenic contexts, not as a stand-in for a
-business. Describe them by what they show in `alt` text.
+`great-ranomafana-nature-shot.jpg` (`PLACEHOLDER_NATURE`, also the National Park
+page hero) is a leaf-tailed gecko on a branch, and `ranomafana-primary.jpg`
+(`PLACEHOLDER_STAY`) is a waterfall pool. They are for genuinely scenic contexts, not
+as a stand-in for a business. Describe them by what they show in `alt` text.
+
+The home-page hero is `ranomafana-national-park-namorona.jpg`, the Namorona River
+through the park's rainforest (Kyle's choice, 12 Oct 2026, replacing the gecko: a
+forest shot says where you are). A wide, misty shot over the canopy would suit it
+even better if one is ever taken; a landscape-format photo fits the hero best.
 
 On listing cards a photo-less listing shows a CSS placeholder (dark panel, name,
 "Photo coming soon") and quietly tries its first gallery slot on top, so a newly
