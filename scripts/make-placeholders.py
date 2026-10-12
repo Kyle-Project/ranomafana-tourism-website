@@ -7,11 +7,17 @@ in the site palette carrying the listing name and category. Nobody looking at on
 mistakes it for a picture of the place, which is the whole point — the previous
 version of this site used stock photos of unrelated hotels.
 
-  python scripts/make-placeholders.py            regenerate all
-  python scripts/make-placeholders.py --list     show what it would write
+  python scripts/make-placeholders.py                 regenerate all, in all four languages
+  python scripts/make-placeholders.py --list          show what it would write
+  python scripts/make-placeholders.py --lang fr,de    only these languages
+
+Each card has words printed on it, so it is made once per language:
+images/placeholder-<slug>.jpg (English) and placeholder-<slug>-fr.jpg, -de.jpg and
+-mg.jpg, which the site shows when the visitor picks that language. Names come from
+data/ranomafana-translations.js where a listing's name is translated there.
 
 Overwriting is safe: a placeholder is only ever written to
-images/placeholder-<slug>.jpg, never over a real photograph.
+images/placeholder-<slug>[-lang].jpg, never over a real photograph.
 """
 import json
 import os
@@ -23,6 +29,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMAGES = os.path.join(ROOT, "images")
 DATA_JS = os.path.join(ROOT, "data", "ranomafana-data.js")
+TRANSLATIONS_JS = os.path.join(ROOT, "data", "ranomafana-translations.js")
 
 W, H = 1200, 800
 
@@ -61,14 +68,14 @@ FONT_SANS = _first_existing([
 ])
 
 
-def load_data():
-    """Evaluate the JS data file with node and hand back the object."""
+def load_js(path, name):
+    """Evaluate a JS data file with node and hand back the object it defines."""
     out = subprocess.run(
         ["node", "-e",
-         f"const fs=require('fs');const c=fs.readFileSync({json.dumps(DATA_JS)},'utf8');"
-         "const d=new Function(c+'; return RANOMAFANA_DATA;')();"
+         f"const fs=require('fs');const c=fs.readFileSync({json.dumps(path)},'utf8');"
+         f"const d=new Function(c+'; return {name};')();"
          "process.stdout.write(JSON.stringify(d));"],
-        capture_output=True, text=True, check=True)
+        capture_output=True, text=True, check=True, encoding="utf-8")
     return json.loads(out.stdout)
 
 
@@ -87,7 +94,7 @@ def wrap(draw, text, font, max_w):
     return lines
 
 
-def make(slug, name, kind):
+def make(slug, name, kind, note):
     tint = TINTS[int(hashlib.md5(slug.encode()).hexdigest(), 16) % len(TINTS)]
     img = Image.new("RGB", (W, H), FLOOR)
     d = ImageDraw.Draw(img)
@@ -134,32 +141,50 @@ def make(slug, name, kind):
     # Rule + honest label so the gap is legible rather than disguised.
     ry = y + 26
     d.line([(W // 2 - 90, ry), (W // 2 + 90, ry)], fill=GOLD, width=2)
-    d.text((W // 2, ry + 26), "Photograph coming soon", font=note_font, fill=LICHEN, anchor="ma")
+    d.text((W // 2, ry + 26), note, font=note_font, fill=LICHEN, anchor="ma")
     d.text((W // 2, H - m - 78), "Ranomafana", font=note_font, fill=LICHEN, anchor="ma")
 
     return img
 
 
-KINDS = {"stays": "Where to stay", "eat": "Where to eat", "do": "What to do"}
+# The printed words, per language. Keep "note" in step with photoSoon in index.html.
+WORDS = {
+    "en": {"stays": "Where to stay", "eat": "Where to eat", "do": "What to do", "note": "Photograph coming soon"},
+    "fr": {"stays": "Où dormir", "eat": "Où manger", "do": "À faire", "note": "Photo à venir"},
+    "de": {"stays": "Übernachten", "eat": "Essen", "do": "Erleben", "note": "Foto folgt"},
+    "mg": {"stays": "Toerana hatoriana", "eat": "Toerana hisakafoana", "do": "Zavatra atao", "note": "Ho avy ny sary"},
+}
 
 
 def main():
-    data = load_data()
+    data = load_js(DATA_JS, "RANOMAFANA_DATA")
+    names = load_js(TRANSLATIONS_JS, "LISTING_TRANSLATIONS") if os.path.exists(TRANSLATIONS_JS) else {}
     dry = "--list" in sys.argv
+    langs = list(WORDS)
+    if "--lang" in sys.argv:
+        langs = sys.argv[sys.argv.index("--lang") + 1].split(",")
     written = 0
-    for key, kind in KINDS.items():
+    for key in ("stays", "eat", "do"):
         for row in data.get(key, []):
-            if not row.get("photoNeeded"):
+            english_file = os.path.join(IMAGES, f"placeholder-{row['slug']}.jpg")
+            # Listings still waiting for a photo, and any whose placeholder is still
+            # used as a fallback after its photo arrived.
+            if not row.get("photoNeeded") and not os.path.exists(english_file):
                 continue
-            name = row.get("name") or row.get("title")
-            path = os.path.join(IMAGES, f"placeholder-{row['slug']}.jpg")
-            if dry:
-                print(f"  would write {os.path.relpath(path, ROOT)}  ({name})")
-            else:
-                make(row["slug"], name, kind).save(
-                    path, "JPEG", quality=86, optimize=True, progressive=True)
-                print(f"  {os.path.relpath(path, ROOT)}  ({name})")
-            written += 1
+            for lang in langs:
+                name = row.get("name") or row.get("title")
+                versions = names.get(key, {}).get(row["slug"], {}).get("name", {})
+                if lang != "en" and versions.get("en") == name and versions.get(lang):
+                    name = versions[lang]
+                suffix = "" if lang == "en" else f"-{lang}"
+                path = os.path.join(IMAGES, f"placeholder-{row['slug']}{suffix}.jpg")
+                if dry:
+                    print(f"  would write {os.path.relpath(path, ROOT)}  ({name})")
+                else:
+                    make(row["slug"], name, WORDS[lang][key], WORDS[lang]["note"]).save(
+                        path, "JPEG", quality=86, optimize=True, progressive=True)
+                    print(f"  {os.path.relpath(path, ROOT)}  ({name})")
+                written += 1
     print(f"\n  {written} placeholder{'' if written == 1 else 's'}"
           f"{' would be' if dry else ''} generated")
 

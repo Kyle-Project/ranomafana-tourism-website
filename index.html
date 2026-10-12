@@ -432,6 +432,7 @@
     /* ----------------------------------------------------- HOME: welcome */
     .welcome { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px; align-items: start; }
     .welcome-copy { display: flex; flex-direction: column; gap: 18px; max-width: 640px; }
+    .welcome-words { font-family: var(--serif); font-weight: 300; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.25; color: var(--mist); }
     .welcome-sign { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 20px; line-height: 1.45; color: var(--sage); }
     @media (max-width: 991px) { .welcome { grid-template-columns: 1fr; gap: 24px; } }
 
@@ -939,17 +940,17 @@
 </head>
 <body data-page="home">
 
-  <a class="skip-link" href="#main" onclick="event.preventDefault(); document.getElementById('main').focus();">Skip to content</a>
+  <a class="skip-link" href="#main" onclick="event.preventDefault(); document.getElementById('main').focus();" data-i18n="skipLink">Skip to content</a>
 
   <!-- ================================================================ HEADER -->
   <header class="site-header" id="siteHeader">
     <div class="wrap header-inner">
-      <a class="brand" href="#home" aria-label="Ranomafana — home">
+      <a class="brand" href="#home" aria-label="Ranomafana — home" data-i18n-aria-label="ariaHome">
         <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#E5B53D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c4.5 4.5 7 8 7 11.5a7 7 0 0 1-14 0C5 10 7.5 6.5 12 2z"></path><path d="M12 22V11M12 15l-3-3M12 17l3-3"></path></svg>
         <span class="brand-name">Ranomafana</span>
       </a>
 
-      <nav class="desktop-nav" aria-label="Main">
+      <nav class="desktop-nav" aria-label="Main" data-i18n-aria-label="ariaMainNav">
         <a class="nl" href="#stay" data-nav="stay" data-i18n="navStay">Stay</a>
         <a class="nl" href="#eat" data-nav="eat" data-i18n="navEat">Eat</a>
         <a class="nl" href="#do" data-nav="do" data-i18n="navDo">Things to do</a>
@@ -971,7 +972,7 @@
         </label>
         <a class="btn btn-gold btn-plan" href="#itineraries" data-i18n="planVisitBtn">Plan your visit</a>
         <a class="btn btn-gold btn-ask" href="mailto:ask@valb.io?subject=Ranomafana%20visit%20inquiry" data-i18n="askTeamBtn">Ask the team</a>
-        <button class="menu-btn" type="button" onclick="toggleDrawer(true)" aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false">
+        <button class="menu-btn" type="button" onclick="toggleDrawer(true)" aria-label="Open menu" data-i18n-aria-label="ariaOpenMenu" aria-controls="mobileDrawer" aria-expanded="false">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg>
         </button>
       </div>
@@ -979,17 +980,17 @@
   </header>
 
   <div class="drawer-overlay" id="drawerOverlay" onclick="toggleDrawer(false)"></div>
-  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu">
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu" data-i18n-aria-label="ariaMenu">
     <div class="drawer-head">
       <span class="brand">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E5B53D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c4.5 4.5 7 8 7 11.5a7 7 0 0 1-14 0C5 10 7.5 6.5 12 2z"></path><path d="M12 22V11M12 15l-3-3M12 17l3-3"></path></svg>
         <span class="brand-name">Ranomafana</span>
       </span>
-      <button class="icon-btn" type="button" onclick="toggleDrawer(false)" aria-label="Close menu">
+      <button class="icon-btn" type="button" onclick="toggleDrawer(false)" aria-label="Close menu" data-i18n-aria-label="ariaCloseMenu">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
       </button>
     </div>
-    <nav class="drawer-nav" aria-label="All pages">
+    <nav class="drawer-nav" aria-label="All pages" data-i18n-aria-label="ariaAllPages">
       <a href="#home" data-i18n="drawerHome">Home</a>
       <a href="#stay" data-i18n="drawerStay">Places to stay</a>
       <a href="#eat" data-i18n="drawerEat">Places to eat</a>
@@ -1023,7 +1024,7 @@
     <section id="page-home" class="page-view active" aria-labelledby="home-h">
 
       <div class="hero">
-        <img class="bg-photo" src="images/great-ranomafana-nature-shot.jpg" alt="A leaf-tailed gecko on a branch at night" fetchpriority="high">
+        <img class="bg-photo" src="images/great-ranomafana-nature-shot.jpg" alt="A leaf-tailed gecko on a branch at night" data-i18n-alt="altGecko" fetchpriority="high">
         <div class="shade"></div>
         <div class="wrap hero-inner">
           <span class="hero-badge">
@@ -1046,7 +1047,7 @@
       </div>
 
       <!-- Three doors -->
-      <nav class="wrap" aria-label="Start here">
+      <nav class="wrap" aria-label="Start here" data-i18n-aria-label="ariaStartHere">
         <div class="doors">
           <a class="door" href="#stay">
             <img class="bg-photo" src="images/setam-lodge-terrace-view.jpg" alt="" loading="lazy">
@@ -1087,14 +1088,18 @@
         </div>
       </nav>
 
-      <!-- Welcome (Kyle's introduction, "Website information.docx", October 2026) -->
+      <!-- Welcome. Every fact here is already on the site (hero, layers, Getting here, About).
+           The guide's credit belongs in the footer, not here (Kyle, 11 Oct 2026). -->
       <section class="wrap pad-b" aria-labelledby="wl-h">
         <div class="welcome">
           <div class="stack g-14">
-            <span class="eyebrow" data-i18n="welcomeEyebrow">Welcome</span>
+            <span class="eyebrow" data-i18n="welcomeEyebrow">Why Ranomafana?</span>
             <h2 id="wl-h" class="display d-64" data-i18n="welcomeHeading" data-i18n-html>Welcome to <em>Ranomafana!</em></h2>
           </div>
           <div class="welcome-copy">
+            <p class="welcome-words" data-i18n="welcomeText1" data-i18n-html>Wild adventures.<br>Immersive expeditions.<br>Thermal relaxation.<br>World-renowned biodiversity.</p>
+            <p class="lede" data-i18n="welcomeText2">UNESCO World Heritage Ranomafana is home to fourteen kinds of lemur, including the rare golden bamboo lemur. Track them with a local guide, find chameleons by torchlight, hike to waterfalls, kayak the Namorona and unwind in the hot springs.</p>
+            <p class="lede" data-i18n="welcomeText3">Your stay makes a difference: park fees help protect the forest, and the guides, cooks and hosts you meet live here. Hire local. Buy local. Keep the forest standing.</p>
             <p class="welcome-sign" data-i18n="welcomeSignoff">We look forward to welcoming you to Ranomafana, and hope to see you soon!</p>
             <a class="text-link" href="#about"><span data-i18n="welcomeLink">Why your visit matters</span> →</a>
           </div>
@@ -1116,7 +1121,7 @@
               <p class="layer-text" data-i18n="layer1Text">Fourteen species, including the golden bamboo lemur, discovered here in 1986 and the reason this forest is protected. The park opens at 07:00; mid-morning, when the lemurs settle in to feed, is the best time to go in.</p>
               <a class="text-link layer-link" href="#park"><span><span data-i18n="layer1Link">Walk the Talatakely circuit</span> →</span></a>
             </div>
-            <div class="layer-media zoom"><img src="images/ranomafana-national-park-wildlife.jpg" alt="A lemur clinging to a tree trunk among the bamboo, Ranomafana National Park" loading="lazy"></div>
+            <div class="layer-media zoom"><img src="images/ranomafana-national-park-wildlife.jpg" alt="A lemur clinging to a tree trunk among the bamboo, Ranomafana National Park" data-i18n-alt="altLemurTrunk" loading="lazy"></div>
           </article>
           <article class="layer layer--flip">
             <span class="layer-dot ring"></span>
@@ -1126,7 +1131,7 @@
               <p class="layer-text" data-i18n="layer2Text">Leaf-tailed geckos, chameleons and more than 90 kinds of frog live a metre off the ground. They come out after dark, and a guided night walk is the way to find them.</p>
               <a class="text-link layer-link" href="#do" onclick="openDoBySlug('night-walk'); return false;"><span><span data-i18n="layer2Link">Find a night walk</span> →</span></a>
             </div>
-            <div class="layer-media zoom"><img src="images/satanic-leaf-gecko.jpg" alt="Satanic leaf-tailed gecko" loading="lazy"></div>
+            <div class="layer-media zoom"><img src="images/satanic-leaf-gecko.jpg" alt="Satanic leaf-tailed gecko" data-i18n-alt="altSatanicGecko" loading="lazy"></div>
           </article>
           <article class="layer">
             <span class="layer-dot ring"></span>
@@ -1136,7 +1141,7 @@
               <p class="layer-text" data-i18n="layer3Text">Waterfall walks with free access, kayaking on the river, and community-run reserves like VOI Ambohimagneva, where trails to pools in the forest are being opened to visitors.</p>
               <a class="text-link layer-link" href="#do" onclick="goToDo('water'); return false;"><span><span data-i18n="layer3Link">Explore waterfalls &amp; reserves</span> →</span></a>
             </div>
-            <div class="layer-media zoom"><img src="images/voi-ambohimagneva-river-pool.jpg" alt="River pool at VOI Ambohimagneva community reserve" loading="lazy"></div>
+            <div class="layer-media zoom"><img src="images/voi-ambohimagneva-river-pool.jpg" alt="River pool at VOI Ambohimagneva community reserve" data-i18n-alt="altRiverPool" loading="lazy"></div>
           </article>
           <article class="layer layer--flip">
             <span class="layer-dot ember"></span>
@@ -1148,7 +1153,7 @@
             </div>
             <!-- Station Thermale's own photo slot (see PHOTO-AND-DATA-GAPS.md). Until it is shot this shows the
                  placeholder card. Do not use Hotel Thermal photos here: they are two different places. -->
-            <div class="layer-media zoom"><img src="images/station-thermale-pool.jpg" alt="The open-air pool at Station Thermale" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder-station-thermale.jpg'"></div>
+            <div class="layer-media zoom"><img src="images/station-thermale-pool.jpg" alt="The open-air pool at Station Thermale" data-i18n-alt="altThermalePool" loading="lazy" onerror="this.onerror=null; this.src=localImage('images/placeholder-station-thermale.jpg')"></div>
           </article>
         </div>
       </section>
@@ -1163,7 +1168,7 @@
             <div class="byg-item"><span class="byg-value" data-i18n="bygCashValue">Cash only</span><span class="byg-label" data-i18n="bygCashLabel">Ariary, in small notes</span></div>
             <div class="byg-item"><span class="byg-value" data-fill="parkHours">07:00–17:00</span><span class="byg-label" data-i18n="bygTimeLabel">Park opening hours. Mid-morning is best for lemurs</span></div>
           </div>
-          <nav class="wrap byg-nav" aria-label="Plan your trip">
+          <nav class="wrap byg-nav" aria-label="Plan your trip" data-i18n-aria-label="crumbPlan">
             <span class="byg-nav-label" data-i18n="planTripLabel">Plan your trip:</span>
             <a class="pill-link" href="#itineraries" data-i18n="tabItineraries">Itineraries</a>
             <a class="pill-link" href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
@@ -1216,7 +1221,7 @@
       <!-- Eat feature -->
       <section class="wrap" style="padding-top: 112px; padding-bottom: 56px;" aria-labelledby="eat-h">
         <div class="split">
-          <div class="split-media zoom"><img src="images/grenat-hotel-restaurant.jpg" alt="Dining room at Grenat Hotel restaurant" loading="lazy"></div>
+          <div class="split-media zoom"><img src="images/grenat-hotel-restaurant.jpg" alt="Dining room at Grenat Hotel restaurant" data-i18n-alt="altGrenatDining" loading="lazy"></div>
           <div class="stack g-18">
             <span class="eyebrow" data-i18n="eatEyebrow">Eat</span>
             <h2 id="eat-h" class="display d-64" data-i18n="eatFeatureHeading">Romazava after the rain.</h2>
@@ -1272,14 +1277,14 @@
         <img class="bg-photo" src="images/setam-lodge-terrace-view.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navStay">Stay</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navStay">Stay</span></nav>
           <h1 id="stay-h" class="page-title" data-i18n="stayHeading">Places to stay</h1>
           <p class="page-intro" data-i18n="staySubtitle">{stays} places, from research-station dorms at the park’s edge to riverside bungalows and village guesthouses.</p>
         </div>
       </div>
 
       <div class="wrap dir">
-        <aside class="filters" aria-label="Filters">
+        <aside class="filters" aria-label="Filters" data-i18n-aria-label="ariaFilters">
           <div class="f-block">
             <label class="f-label" for="staySearch" data-i18n="searchLabel">Search</label>
             <input id="staySearch" class="search-input" type="search" placeholder="Hotel or lodge name" data-i18n-placeholder="staySearchPlaceholder" oninput="filterStays()">
@@ -1305,7 +1310,7 @@
           <p class="filters-note" data-i18n="stayNote">Rates were gathered locally for this guide, or come from a published source. Prices change, so confirm when you book.</p>
         </aside>
 
-        <section class="results" aria-label="Results">
+        <section class="results" aria-label="Results" data-i18n-aria-label="ariaResults">
           <div class="results-bar">
             <span class="results-count" id="stayCount" aria-live="polite"></span>
             <label class="sort"><span data-i18n="sortLabel">Sort</span>
@@ -1331,14 +1336,14 @@
         <img class="bg-photo" src="images/grenat-hotel-restaurant.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navEat">Eat</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navEat">Eat</span></nav>
           <h1 id="eat-page-h" class="page-title" data-i18n="eatHeading">Places to eat</h1>
           <p class="page-intro" data-i18n="eatSubtitle">{eats} places: Malagasy kitchens, French-style hotel dining rooms and snack bars by the park gate.</p>
         </div>
       </div>
 
       <div class="wrap dir">
-        <aside class="filters" aria-label="Filters">
+        <aside class="filters" aria-label="Filters" data-i18n-aria-label="ariaFilters">
           <div class="f-block">
             <label class="f-label" for="eatSearch" data-i18n="searchLabel">Search</label>
             <input id="eatSearch" class="search-input" type="search" placeholder="Restaurant name" data-i18n-placeholder="eatSearchPlaceholder" oninput="filterEat()">
@@ -1361,7 +1366,7 @@
           <p class="filters-note" data-i18n="eatNote">$ budget · $$ mid-range · $$$ the most formal dining rooms. Some lodge kitchens ask you to order ahead.</p>
         </aside>
 
-        <section class="results" aria-label="Results">
+        <section class="results" aria-label="Results" data-i18n-aria-label="ariaResults">
           <div class="results-bar">
             <span class="results-count" id="eatCount" aria-live="polite"></span>
             <label class="sort"><span data-i18n="sortLabel">Sort</span>
@@ -1387,14 +1392,14 @@
         <img class="bg-photo" src="images/voi-ambohimagneva-waterfall-ambony.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navDo">Things to do</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navDo">Things to do</span></nav>
           <h1 id="do-h" class="page-title" data-i18n="doHeading">Things to do</h1>
           <p class="page-intro" data-i18n="doSubtitle">{dos} ways in: the national park and its circuits, community reserves, waterfalls, the thermal springs and the village.</p>
         </div>
       </div>
 
       <div class="wrap dir">
-        <aside class="filters" aria-label="Filters">
+        <aside class="filters" aria-label="Filters" data-i18n-aria-label="ariaFilters">
           <div class="f-block">
             <label class="f-label" for="doSearch" data-i18n="searchLabel">Search</label>
             <input id="doSearch" class="search-input" type="search" placeholder="Trail, falls, reserve…" data-i18n-placeholder="doSearchPlaceholder" oninput="filterDo()">
@@ -1411,7 +1416,7 @@
           <p class="filters-note" data-i18n="doNote">The park’s three circuits share one ticket and one guide. Night walks, the waterfalls and the springs need no park ticket.</p>
         </aside>
 
-        <section class="results" aria-label="Results">
+        <section class="results" aria-label="Results" data-i18n-aria-label="ariaResults">
           <div class="results-bar">
             <span class="results-count" id="doCount" aria-live="polite"></span>
           </div>
@@ -1427,10 +1432,10 @@
     <!-- ====================================================== NATIONAL PARK -->
     <section id="page-park" class="page-view" aria-labelledby="park-h">
       <div class="page-hero page-hero--park">
-        <img class="bg-photo" src="images/great-ranomafana-nature-shot.jpg" alt="A leaf-tailed gecko on a branch at night" loading="lazy">
+        <img class="bg-photo" src="images/great-ranomafana-nature-shot.jpg" alt="A leaf-tailed gecko on a branch at night" data-i18n-alt="altGecko" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#do" data-i18n="navDo">Things to do</a> / <span data-i18n="crumbPark">National park</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#do" data-i18n="navDo">Things to do</a> / <span data-i18n="crumbPark">National park</span></nav>
           <div class="hero-badges" id="parkBadges"></div>
           <h1 id="park-h" class="page-title" data-i18n="parkTitle" data-i18n-html>Ranomafana<br><em>National Park</em></h1>
         </div>
@@ -1468,7 +1473,7 @@
           </section>
         </article>
 
-        <aside class="visit-card" aria-label="Visit details" id="parkAside"></aside>
+        <aside class="visit-card" aria-label="Visit details" data-i18n-aria-label="ariaVisitDetails" id="parkAside"></aside>
       </div>
     </section>
 
@@ -1478,12 +1483,12 @@
         <img class="bg-photo" src="images/ranomafana-primary.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="crumbPlan">Plan your trip</span> / <span data-i18n="tabItineraries">Itineraries</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="crumbPlan">Plan your trip</span> / <span data-i18n="tabItineraries">Itineraries</span></nav>
           <h1 id="it-h" class="page-title" data-i18n="itinHeading">Itineraries</h1>
           <p class="page-intro" data-i18n="itinSubtitle">{itins} ready-made plans, from a half day passing through to three days deep in the forest. Pick one to see it hour by hour.</p>
         </div>
       </div>
-      <nav class="plan-tabs" aria-label="Plan your trip">
+      <nav class="plan-tabs" aria-label="Plan your trip" data-i18n-aria-label="crumbPlan">
         <div class="wrap">
           <a class="pt" href="#itineraries" aria-current="page" data-i18n="tabItineraries">Itineraries</a>
           <a class="pt" href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
@@ -1492,8 +1497,8 @@
         </div>
       </nav>
 
-      <section class="wrap" aria-label="Choose a plan">
-        <div class="itin-grid" role="group" aria-label="Itineraries" id="itineraryGrid"></div>
+      <section class="wrap" aria-label="Choose a plan" data-i18n-aria-label="ariaChoosePlan">
+        <div class="itin-grid" role="group" aria-label="Itineraries" data-i18n-aria-label="tabItineraries" id="itineraryGrid"></div>
       </section>
       <div class="wrap itin-detail" id="itineraryDetail" aria-live="polite"></div>
 
@@ -1503,7 +1508,7 @@
           <span class="next-arrow" aria-hidden="true">→</span>
         </a>
       </section>
-      <p class="wrap page-note">These plans come from this guide’s own itinerary data. Times are suggestions; your guide will adjust them to the weather and the animals.</p>
+      <p class="wrap page-note" data-i18n="itinNote">These plans come from this guide’s own itinerary data. Times are suggestions; your guide will adjust them to the weather and the animals.</p>
     </section>
 
     <!-- ====================================================== GETTING HERE -->
@@ -1512,12 +1517,12 @@
         <img class="bg-photo" src="images/voi-ambohimagneva-valley-view.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#itineraries" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabGettingHere">Getting here</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#itineraries" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabGettingHere">Getting here</span></nav>
           <h1 id="gh-h" class="page-title" data-i18n="tabGettingHere">Getting here</h1>
           <p class="page-intro" data-i18n="ghIntro">The only way in is by road. Ranomafana sits on the RN25, which drops from the highlands at Fianarantsoa down through the rainforest towards the east coast.</p>
         </div>
       </div>
-      <nav class="plan-tabs" aria-label="Plan your trip">
+      <nav class="plan-tabs" aria-label="Plan your trip" data-i18n-aria-label="crumbPlan">
         <div class="wrap">
           <a class="pt" href="#itineraries" data-i18n="tabItineraries">Itineraries</a>
           <a class="pt" href="#getting-here" aria-current="page" data-i18n="tabGettingHere">Getting here</a>
@@ -1538,37 +1543,37 @@
 
       <section class="wrap stack g-24 sec" aria-labelledby="ways-h">
         <h2 id="ways-h" class="display d-56" data-i18n="waysHeading">Ways to arrive</h2>
-        <p class="lede" style="max-width: 760px;">Ranomafana is in the Vatovavy region of south-east Madagascar, 65 km from Fianarantsoa, the nearest city. Getting here from Antananarivo can be tricky, but every option below works.</p>
+        <p class="lede" style="max-width: 760px;" data-i18n="ghWaysIntro">Ranomafana is in the Vatovavy region of south-east Madagascar, 65 km from Fianarantsoa, the nearest city. Getting here from Antananarivo can be tricky, but every option below works.</p>
         <div class="card-row">
           <article class="info-card">
             <span class="eyebrow" data-i18n="way2Eyebrow">From Antananarivo · Cotisse</span>
             <h3 data-i18n="way2Title">A long day on the road</h3>
-            <p>Book a seat by calling or WhatsApp-ing the Cotisse station in Antananarivo on +261 32 11 027 10, or in person. Pay at least 24 hours before departure: online with PayPal or MVola, or at any Cotisse station. Seats to Fianarantsoa cost 40,000 Ar, with buses by day and by night. The drive takes about 12 hours, with regular toilet stops and a lunch break. You then change in Fianarantsoa (see below).</p>
+            <p data-i18n="way2Text">Book a seat by calling or WhatsApp-ing the Cotisse station in Antananarivo on +261 32 11 027 10, or in person. Pay at least 24 hours before departure: online with PayPal or MVola, or at any Cotisse station. Seats to Fianarantsoa cost 40,000 Ar, with buses by day and by night. The drive takes about 12 hours, with regular toilet stops and a lunch break. You then change in Fianarantsoa (see below).</p>
           </article>
           <article class="info-card">
             <span class="eyebrow" data-i18n="waySoaEyebrow">From Antananarivo · Soatrans</span>
             <h3 data-i18n="waySoaTitle">Straight through the night</h3>
-            <p>Book by calling +261 32 11 905 00 or at the station, and pay in person at least 24 hours ahead. The bus to Manakara (65,000 Ar) leaves Antananarivo at 13:30 and passes Ranomafana at around 03:00, where you can get off. Ranomafana is safe and calm at night. Staying at Setam Lodge, Forêt Australe, Au Domnatur or Karibotel? Get off outside your hotel rather than in town. Seats to Fianarantsoa cost 45,000 Ar if you would rather change there.</p>
+            <p data-i18n="waySoaText">Book by calling +261 32 11 905 00 or at the station, and pay in person at least 24 hours ahead. The bus to Manakara (65,000 Ar) leaves Antananarivo at 13:30 and passes Ranomafana at around 03:00, where you can get off. Ranomafana is safe and calm at night. Staying at Setam Lodge, Forêt Australe, Au Domnatur or Karibotel? Get off outside your hotel rather than in town. Seats to Fianarantsoa cost 45,000 Ar if you would rather change there.</p>
           </article>
           <article class="info-card">
             <span class="eyebrow" data-i18n="way4Eyebrow">Charter a car</span>
             <h3 data-i18n="way4Title">The flexible option</h3>
-            <p>Buses and rough roads are not exactly relaxing, so many visitors hire a car and driver in Antananarivo. Search for private car hire or drivers there; we suggest Dadamanga as a good place to start. Expect roughly US$100–300 per car, depending on the company, whether you have a driver, how many of you there are and the time of year. The drive takes about 12 hours, stopping where and when you like: Antsirabe (5 hours in) and Ambositra (8 hours in, home to beautiful wood carving) are popular.</p>
+            <p data-i18n="way4Text">Buses and rough roads are not exactly relaxing, so many visitors hire a car and driver in Antananarivo. Search for private car hire or drivers there; we suggest Dadamanga as a good place to start. Expect roughly US$100–300 per car, depending on the company, whether you have a driver, how many of you there are and the time of year. The drive takes about 12 hours, stopping where and when you like: Antsirabe (5 hours in) and Ambositra (8 hours in, home to beautiful wood carving) are popular.</p>
           </article>
           <article class="info-card">
             <span class="eyebrow" data-i18n="wayFlyEyebrow">By air</span>
             <h3 data-i18n="wayFlyTitle">Charter to Fianarantsoa</h3>
-            <p>A private charter plane to Fianarantsoa airport takes about an hour. It has to be booked through a travel agency, and prices vary. From Fianarantsoa, continue by bus or car.</p>
+            <p data-i18n="wayFlyText">A private charter plane to Fianarantsoa airport takes about an hour. It has to be booked through a travel agency, and prices vary. From Fianarantsoa, continue by bus or car.</p>
           </article>
           <article class="info-card">
             <span class="eyebrow" data-i18n="way1Eyebrow">From Fianarantsoa</span>
             <h3 data-i18n="way1Title">The short hop</h3>
-            <p>65 km on the RN25. Regional taxi-brousses (shared minibuses) leave the bus station at any time of day: 7,000 Ar per person, about 2½ hours. Use the toilet before you get in.</p>
+            <p data-i18n="way1Text">65 km on the RN25. Regional taxi-brousses (shared minibuses) leave the bus station at any time of day: 7,000 Ar per person, about 2½ hours. Use the toilet before you get in.</p>
           </article>
           <article class="info-card">
             <span class="eyebrow" data-i18n="way3Eyebrow">From the east coast</span>
             <h3 data-i18n="way3Title">Up from the sea</h3>
-            <p>Mananjary is 139 km away along the RN25. Taxi-brousses also come up from Manakara.</p>
+            <p data-i18n="way3Text">Mananjary is 139 km away along the RN25. Taxi-brousses also come up from Manakara.</p>
           </article>
         </div>
       </section>
@@ -1578,12 +1583,12 @@
           <div class="stack g-16">
             <span class="eyebrow" style="color: var(--gold);" data-i18n="fianarEyebrow">Coming by Cotisse</span>
             <h2 id="fia-h" class="display d-44" data-i18n="fianarHeading">Changing in Fianarantsoa</h2>
-            <p class="lede" style="color: var(--fern);">The daytime Cotisse reaches Fianarantsoa at about 19:00, after the last buses to Ranomafana, so plan to stay the night. Take the night bus instead and you arrive in the morning, ready to go straight to the regional bus station.</p>
+            <p class="lede" style="color: var(--fern);" data-i18n="fianarText">The daytime Cotisse reaches Fianarantsoa at about 19:00, after the last buses to Ranomafana, so plan to stay the night. Take the night bus instead and you arrive in the morning, ready to go straight to the regional bus station.</p>
           </div>
           <ul class="numbered">
-            <li><span class="num">1</span><span>Stay near the Cotisse station. Zomatel and Hotel Vannie usually have rooms, at 50,000–90,000 Ar a night. Hotel Vannie is about a 15-minute walk and Zomatel about 20. A taxi takes 5–10 minutes and should cost no more than 10,000 Ar; hotels further out, such as Mahamanina, cost a little more.</span></li>
-            <li><span class="num">2</span><span>In the morning, walk down the hill from Zomatel or Vannie (bear right) to the regional bus station. From anywhere else, any taxi driver will understand “brousse stationnement”.</span></li>
-            <li><span class="num">3</span><span>Regional brousses are not like Cotisse or Soatrans: you will be squeezed in, with your bags on the roof. Tell the driver or door attendant you are getting off at Ranomafana, and keep your valuables on you.</span></li>
+            <li><span class="num">1</span><span data-i18n="fianarStep1">Stay near the Cotisse station. Zomatel and Hotel Vannie usually have rooms, at 50,000–90,000 Ar a night. Hotel Vannie is about a 15-minute walk and Zomatel about 20. A taxi takes 5–10 minutes and should cost no more than 10,000 Ar; hotels further out, such as Mahamanina, cost a little more.</span></li>
+            <li><span class="num">2</span><span data-i18n="fianarStep2">In the morning, walk down the hill from Zomatel or Vannie (bear right) to the regional bus station. From anywhere else, any taxi driver will understand “brousse stationnement”.</span></li>
+            <li><span class="num">3</span><span data-i18n="fianarStep3">Regional brousses are not like Cotisse or Soatrans: you will be squeezed in, with your bags on the roof. Tell the driver or door attendant you are getting off at Ranomafana, and keep your valuables on you.</span></li>
           </ul>
         </div>
       </section>
@@ -1593,12 +1598,12 @@
           <div class="stack g-16">
             <span class="eyebrow" style="color: var(--gold);" data-i18n="goodToKnow">Good to know</span>
             <h2 id="gate-h" class="display d-44" data-i18n="gateHeading">The park gate is not in the village.</h2>
-            <p class="lede" style="color: var(--fern);">The park entrance is at Ambodiamontana, about 7 km up the RN25 from the centre of Ranomafana. Most places to stay are in the village, and there is no shuttle between the two.</p>
+            <p class="lede" style="color: var(--fern);" data-i18n="gateText">The park entrance is at Ambodiamontana, about 7 km up the RN25 from the centre of Ranomafana. Most places to stay are in the village, and there is no shuttle between the two.</p>
           </div>
           <ul class="numbered">
-            <li><span class="num">1</span><span>From the taxi-brousse station in the centre of town, take any brousse heading towards Fianarantsoa and tell them you are getting off at the park entrance: 20–25 minutes, 1,000–2,000 Ar each. Seats are scarce in the morning, when park staff ride them to work. Coming back is the same in reverse.</span></li>
-            <li><span class="num">2</span><span>Or walk back down, weather permitting: it is a beautiful hour downhill to town, and lemurs are sometimes seen near the road.</span></li>
-            <li><span class="num">3</span><span>Or sleep at the forest edge: Setam Lodge is an 800 m walk from the park entrance, and Centre ValBio sits beside the park. <a class="text-link" href="#stay"><span data-i18n="navStay">Stay</span> →</a></span></li>
+            <li><span class="num">1</span><span data-i18n="gateStep1">From the taxi-brousse station in the centre of town, take any brousse heading towards Fianarantsoa and tell them you are getting off at the park entrance: 20–25 minutes, 1,000–2,000 Ar each. Seats are scarce in the morning, when park staff ride them to work. Coming back is the same in reverse.</span></li>
+            <li><span class="num">2</span><span data-i18n="gateStep2">Or walk back down, weather permitting: it is a beautiful hour downhill to town, and lemurs are sometimes seen near the road.</span></li>
+            <li><span class="num">3</span><span data-i18n="gateStep3" data-i18n-html>Or sleep at the forest edge: Setam Lodge is an 800 m walk from the park entrance, and Centre ValBio sits beside the park. <a class="text-link" href="#stay">Stay →</a></span></li>
           </ul>
         </div>
       </section>
@@ -1606,9 +1611,9 @@
       <section class="wrap sec-tight" aria-labelledby="pack-h">
         <div class="rule-row">
           <h2 id="pack-h" data-i18n="packHeading">Before you leave</h2>
-          <div><strong data-i18n="pack1Title">Bring Ariary</strong><span>The park takes cash only, and so do most lodges. Small notes help.</span></div>
-          <div><strong data-i18n="pack2Title">Book a bed</strong><span data-tokens>{stays} places to stay, from the forest edge to the village. <a class="text-link" href="#stay">Browse stays →</a></span></div>
-          <div><strong data-i18n="pack3Title">Pack a rain shell</strong><span>In every season. <a class="text-link" href="#when">When to visit →</a></span></div>
+          <div><strong data-i18n="pack1Title">Bring Ariary</strong><span data-i18n="pack1Text">The park takes cash only, and so do most lodges. Small notes help.</span></div>
+          <div><strong data-i18n="pack2Title">Book a bed</strong><span data-i18n="pack2Text" data-i18n-html>{stays} places to stay, from the forest edge to the village. <a class="text-link" href="#stay">Browse stays →</a></span></div>
+          <div><strong data-i18n="pack3Title">Pack a rain shell</strong><span data-i18n="pack3Text" data-i18n-html>In every season. <a class="text-link" href="#when">When to visit →</a></span></div>
         </div>
       </section>
 
@@ -1618,7 +1623,7 @@
           <span class="next-arrow" aria-hidden="true">→</span>
         </a>
       </section>
-      <p class="wrap page-note">Sources: Cotisse, Soatrans, private car, charter flight, Fianarantsoa connections, fares, journey times and getting to the park gate from this guide’s own local notes (October 2026); distances from Madagascar National Parks; taxi-brousse routes from the coast from Wikivoyage (updated November 2017). Roads and fares change, so check locally.</p>
+      <p class="wrap page-note" data-i18n="ghSources">Sources: Cotisse, Soatrans, private car, charter flight, Fianarantsoa connections, fares, journey times and getting to the park gate from this guide’s own local notes (October 2026); distances from Madagascar National Parks; taxi-brousse routes from the coast from Wikivoyage (updated November 2017). Roads and fares change, so check locally.</p>
     </section>
 
     <!-- ===================================================== WHEN TO VISIT -->
@@ -1627,12 +1632,12 @@
         <img class="bg-photo" src="images/voi-ambohimagneva-forest-view.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#itineraries" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabWhen">When to visit</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#itineraries" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabWhen">When to visit</span></nav>
           <h1 id="wv-h" class="page-title" data-i18n="tabWhen">When to visit</h1>
           <p class="page-intro" data-i18n="whenIntro">The park is open all year. What changes is the rain, the cold, and which animals are easiest to find.</p>
         </div>
       </div>
-      <nav class="plan-tabs" aria-label="Plan your trip">
+      <nav class="plan-tabs" aria-label="Plan your trip" data-i18n-aria-label="crumbPlan">
         <div class="wrap">
           <a class="pt" href="#itineraries" data-i18n="tabItineraries">Itineraries</a>
           <a class="pt" href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
@@ -1647,17 +1652,17 @@
           <article class="info-card">
             <span class="season-kicker" style="color: var(--wet-fg);"><span class="season-dot wet"></span><span data-i18n="wetMonths">November – April</span></span>
             <h3 data-i18n="wetTitle">Warm and wet</h3>
-            <p>Daytime around 26°C and humid, with highs above 28°C from November to February. About 80% of the year’s rain falls in these months. January to March is cyclone season, and some days are too wet for the trails.</p>
+            <p data-i18n="wetText">Daytime around 26°C and humid, with highs above 28°C from November to February. About 80% of the year’s rain falls in these months. January to March is cyclone season, and some days are too wet for the trails.</p>
           </article>
           <article class="info-card">
             <span class="season-kicker" style="color: var(--fern);"><span class="season-dot dry"></span><span data-i18n="dryMonths">May – October</span></span>
             <h3 data-i18n="dryTitle">Cool and drier</h3>
-            <p>Daytime around 22°C, nights down to 10°C. June to August is the cold season, when reptiles and some other animals are harder to find. Drier is relative here: it still rains.</p>
+            <p data-i18n="dryText">Daytime around 22°C, nights down to 10°C. June to August is the cold season, when reptiles and some other animals are harder to find. Drier is relative here: it still rains.</p>
           </article>
           <article class="info-card" style="border-color: var(--gold);">
             <span class="season-kicker" style="color: var(--gold);"><span aria-hidden="true">★</span><span data-i18n="bestMonths">April · May · September · November</span></span>
             <h3 data-i18n="sweetTitle">The sweet spots</h3>
-            <p>Mild weather and less rain, with animals active again after the cold months. In October and November many lemurs have babies.</p>
+            <p data-i18n="sweetText">Mild weather and less rain, with animals active again after the cold months. In October and November many lemurs have babies.</p>
           </article>
         </div>
       </section>
@@ -1672,16 +1677,16 @@
             <span><span class="ev-dot"></span><span data-i18n="legendEvent">Festival or event</span></span>
           </div>
         </div>
-        <div class="months" role="group" aria-label="Choose a month" id="monthGrid"></div>
+        <div class="months" role="group" aria-label="Choose a month" data-i18n-aria-label="ariaChooseMonth" id="monthGrid"></div>
         <article class="month-detail" id="monthDetail" aria-live="polite"></article>
       </section>
 
       <section class="wrap sec-tight" aria-labelledby="ev-h">
         <div class="rule-row">
           <h2 id="ev-h" data-i18n="whateverMonth">Whatever the month</h2>
-          <div><strong data-i18n="rainShell">Rain shell</strong><span>Bring one in every season.</span></div>
-          <div><strong data-i18n="sturdyShoes">Sturdy shoes</strong><span>The trails are steep, and slippery when wet.</span></div>
-          <div><strong data-i18n="goMidMorning">Go mid-morning</strong><span data-tokens>The park is open {parkHours}. Mid-morning, when the lemurs settle in to feed, is the best time to go in.</span></div>
+          <div><strong data-i18n="rainShell">Rain shell</strong><span data-i18n="rainShellText">Bring one in every season.</span></div>
+          <div><strong data-i18n="sturdyShoes">Sturdy shoes</strong><span data-i18n="sturdyShoesText">The trails are steep, and slippery when wet.</span></div>
+          <div><strong data-i18n="goMidMorning">Go mid-morning</strong><span data-i18n="midMorningText">The park is open {parkHours}. Mid-morning, when the lemurs settle in to feed, is the best time to go in.</span></div>
         </div>
       </section>
 
@@ -1691,21 +1696,21 @@
           <span class="next-arrow" aria-hidden="true">→</span>
         </a>
       </section>
-      <p class="wrap page-note">Sources: hot and cold seasons and the 80% rainfall share from Madagascar National Parks; daytime and night temperatures, cyclone season, best months and lemur births from SafariBookings; trail conditions from Wikipedia; festivals from this guide’s own events listings.</p>
+      <p class="wrap page-note" data-i18n="whenSources">Sources: hot and cold seasons and the 80% rainfall share from Madagascar National Parks; daytime and night temperatures, cyclone season, best months and lemur births from SafariBookings; trail conditions from Wikipedia; festivals from this guide’s own events listings.</p>
     </section>
 
     <!-- ===================================================== HIRING A GUIDE -->
     <section id="page-guides" class="page-view" aria-labelledby="gd-h">
       <div class="page-hero page-hero--plan">
-        <img class="bg-photo" src="images/guide-forest-straw-hat.jpg" alt="A guide in a straw hat with a walking stick, looking into the rainforest" style="object-position: center 30%;" loading="lazy">
+        <img class="bg-photo" src="images/guide-forest-straw-hat.jpg" alt="A guide in a straw hat with a walking stick, looking into the rainforest" data-i18n-alt="altGuideHat" style="object-position: center 30%;" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#itineraries" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabGuides">Hiring a guide</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#itineraries" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabGuides">Hiring a guide</span></nav>
           <h1 id="gd-h" class="page-title" data-i18n="tabGuides">Hiring a guide</h1>
           <p class="page-intro" data-i18n="guidesIntro">Nobody walks the park alone. A certified Madagascar National Parks guide has been required for international visitors since 2010, and they are the reason you will actually see the animals.</p>
         </div>
       </div>
-      <nav class="plan-tabs" aria-label="Plan your trip">
+      <nav class="plan-tabs" aria-label="Plan your trip" data-i18n-aria-label="crumbPlan">
         <div class="wrap">
           <a class="pt" href="#itineraries" data-i18n="tabItineraries">Itineraries</a>
           <a class="pt" href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
@@ -1717,10 +1722,10 @@
       <section class="wrap stack g-24" style="padding-top: 64px; padding-bottom: 32px;" aria-labelledby="how-h">
         <h2 id="how-h" class="display d-56" data-i18n="howItWorksHeading">How it works</h2>
         <ol class="steps">
-          <li><span class="num">01</span><strong data-i18n="step1Title">Find a guide</strong><span>Ask your hotel, or turn up at the park and choose from the guides working that day. Guides can’t be booked online.</span></li>
-          <li><span class="num">02</span><strong data-i18n="step2Title">Pick a walk</strong><span>Walks are priced by circuit and length, and specialists cost more. Tell your guide about your fitness and any worries: they will adapt the route to suit you.</span></li>
-          <li><span class="num">03</span><strong data-i18n="step3Title">Pay in Ariary</strong><span>Cash only: park entry, the community fee at its own booth, and the guide fee for your group.</span></li>
-          <li><span class="num">04</span><strong data-i18n="step4Title">Go mid-morning</strong><span data-tokens>The park is open {parkHours}. Mid-morning, when the lemurs are awake and settling in to feed, is the best time. <a class="text-link" href="#getting-here">Getting to the gate →</a></span></li>
+          <li><span class="num">01</span><strong data-i18n="step1Title">Find a guide</strong><span data-i18n="step1Text">Ask your hotel, or turn up at the park and choose from the guides working that day. Guides can’t be booked online.</span></li>
+          <li><span class="num">02</span><strong data-i18n="step2Title">Pick a walk</strong><span data-i18n="step2Text">Walks are priced by circuit and length, and specialists cost more. Tell your guide about your fitness and any worries: they will adapt the route to suit you.</span></li>
+          <li><span class="num">03</span><strong data-i18n="step3Title">Pay in Ariary</strong><span data-i18n="step3Text">Cash only: park entry, the community fee at its own booth, and the guide fee for your group.</span></li>
+          <li><span class="num">04</span><strong data-i18n="step4Title">Go mid-morning</strong><span data-i18n="step4Text" data-i18n-html>The park is open {parkHours}. Mid-morning, when the lemurs are awake and settling in to feed, is the best time. <a class="text-link" href="#getting-here">Getting to the gate →</a></span></li>
         </ol>
       </section>
 
@@ -1729,36 +1734,36 @@
           <div class="stack g-6" style="padding: 28px 28px 8px;">
             <span class="eyebrow" data-i18n="costEyebrow">What it costs</span>
             <h2 id="cost-h" class="display" style="font-size: 34px;" data-i18n="costHeading">One fee per group</h2>
-            <p class="small-muted" style="font-size: 15px;">The guide fee is shared by everyone in your group, so it costs less each with more people. One guide takes a group of one to four; groups of six or more need at least two.</p>
+            <p class="small-muted" style="font-size: 15px;" data-i18n="costText">The guide fee is shared by everyone in your group, so it costs less each with more people. One guide takes a group of one to four; groups of six or more need at least two.</p>
           </div>
           <table class="cost-table">
             <thead><tr><th scope="col" data-i18n="costWalk">Walk</th><th scope="col" data-i18n="costPaid">Paid at the gate</th></tr></thead>
             <tbody id="guideCosts"></tbody>
           </table>
-          <p class="small-muted" style="padding: 16px 28px 28px; font-size: 13px;" data-tokens>Guide rates by circuit, {feesAsOf}. Plus park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class="text-link" style="font-size: 13px;" href="#park">Park fees →</a></p>
+          <p class="small-muted" style="padding: 16px 28px 28px; font-size: 13px;" data-i18n="costFootnote" data-i18n-html>Guide rates by circuit, {feesAsOf}. Plus park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class="text-link" style="font-size: 13px;" href="#park">Park fees →</a></p>
         </article>
         <div class="stack g-24">
           <article class="info-card" style="border-radius: 24px;">
             <span class="eyebrow" data-i18n="soloEyebrow">Travelling solo?</span>
             <h3 style="font-weight: 300;" data-i18n="soloTitle">Share the guide</h3>
-            <p>Ask the park office to pair you with other visitors so you split one guide fee.</p>
+            <p data-i18n="soloText">Ask the park office to pair you with other visitors so you split one guide fee.</p>
           </article>
           <article class="info-card" style="border-radius: 24px;">
             <span class="eyebrow" data-i18n="spotterEyebrow">The team behind your guide</span>
             <h3 style="font-weight: 300;" data-i18n="spotterTitle">Spotters in the forest</h3>
-            <p>Animal spotters work the forest and tell your guide by phone where the animals are, so you can walk straight to them. The spotter is included in the guide’s price.</p>
+            <p data-i18n="spotterText">Animal spotters work the forest and tell your guide by phone where the animals are, so you can walk straight to them. The spotter is included in the guide’s price.</p>
           </article>
         </div>
       </section>
 
       <section class="wrap stack g-24" style="padding-top: 32px; padding-bottom: 64px;" aria-labelledby="spec-h">
         <h2 id="spec-h" class="display d-56" data-i18n="specHeading">Ask for a specialist</h2>
-        <p class="lede" style="max-width: 760px;" data-tokens>Specialist guides are experts in finding and explaining the park’s birds, plants, or reptiles and amphibians. Because of that expertise they cost {specialistFee}, whatever the circuit. Specialist guides can also be arranged through Centre ValBio.</p>
+        <p class="lede" style="max-width: 760px;" data-i18n="specText">Specialist guides are experts in finding and explaining the park’s birds, plants, or reptiles and amphibians. Because of that expertise they cost {specialistFee}, whatever the circuit. Specialist guides can also be arranged through Centre ValBio.</p>
         <div class="card-row" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px;">
-          <div class="spec"><strong data-i18n="specPrimates">Primatology</strong><span>Lemurs, including the golden bamboo lemur.</span></div>
-          <div class="spec"><strong data-i18n="specBirds">Ornithology</strong><span>Birders: ask for a birding specialist by name. <a class="text-link" href="#itineraries" onclick="openItinerary('birders-two-day'); return false;">Birders’ itinerary →</a></span></div>
-          <div class="spec"><strong data-i18n="specHerps">Herpetology</strong><span>Frogs, chameleons and leaf-tailed geckos.</span></div>
-          <div class="spec"><strong data-i18n="specBotany">Botany</strong><span>Orchids, giant ferns and the forest itself.</span></div>
+          <div class="spec"><strong data-i18n="specPrimates">Primatology</strong><span data-i18n="specPrimatesText">Lemurs, including the golden bamboo lemur.</span></div>
+          <div class="spec"><strong data-i18n="specBirds">Ornithology</strong><span data-i18n="specBirdsText" data-i18n-html>Birders: ask for a birding specialist by name. <a class="text-link" href="#itineraries" onclick="openItinerary('birders-two-day'); return false;">Birders’ itinerary →</a></span></div>
+          <div class="spec"><strong data-i18n="specHerps">Herpetology</strong><span data-i18n="specHerpsText">Frogs, chameleons and leaf-tailed geckos.</span></div>
+          <div class="spec"><strong data-i18n="specBotany">Botany</strong><span data-i18n="specBotanyText">Orchids, giant ferns and the forest itself.</span></div>
         </div>
       </section>
 
@@ -1769,14 +1774,14 @@
             <h2 id="out-h" class="display d-44" data-i18n="outsideHeading">Community guides, village fees</h2>
             <div class="stack g-6">
               <h3 class="out-sub">VOI Mitsinjo</h3>
-              <p style="font-size: 16px; line-height: 1.65; color: var(--fern);">Community guides from Ambatolahy lead day and night walks, and the fees go straight to the village.</p>
+              <p style="font-size: 16px; line-height: 1.65; color: var(--fern);" data-i18n="outsideMitsinjoText">Community guides from Ambatolahy lead day and night walks, and the fees go straight to the village.</p>
             </div>
             <div class="stack g-6">
               <h3 class="out-sub">VOI Ambohimagneva</h3>
-              <p style="font-size: 16px; line-height: 1.65; color: var(--fern);">A 75-hectare reserve bordering the national park, about 3 km from town on foot, managed by the local community association (the VOI) under Madagascar’s community forest-management law. Trails and a river waterfall are being opened to visitors, with guides certified by Madagascar National Parks and research links to Centre ValBio. Visitor access is still being set up, so ask before you go.</p>
-              <div class="out-photo"><img src="images/voi-ambohimagneva-guide-adrien.jpg" alt="Guide Adrien on the boardwalk trail at VOI Ambohimagneva" loading="lazy"></div>
+              <p style="font-size: 16px; line-height: 1.65; color: var(--fern);" data-i18n="outsideAmbohiText">A 75-hectare reserve bordering the national park, about 3 km from town on foot, managed by the local community association (the VOI) under Madagascar’s community forest-management law. Trails and a river waterfall are being opened to visitors, with guides certified by Madagascar National Parks and research links to Centre ValBio. Visitor access is still being set up, so ask before you go.</p>
+              <div class="out-photo"><img src="images/voi-ambohimagneva-guide-adrien.jpg" alt="Guide Adrien on the boardwalk trail at VOI Ambohimagneva" data-i18n-alt="altGuideAdrien" loading="lazy"></div>
             </div>
-            <p style="font-size: 16px; line-height: 1.65; color: var(--fern);">Night walks along the forest edge by the RN25 need no park ticket.</p>
+            <p style="font-size: 16px; line-height: 1.65; color: var(--fern);" data-i18n="outsideNightText">Night walks along the forest edge by the RN25 need no park ticket.</p>
           </div>
           <div class="stack g-10" id="guidesOutside"></div>
         </div>
@@ -1788,7 +1793,7 @@
           <span class="next-arrow" aria-hidden="true">→</span>
         </a>
       </section>
-      <p class="wrap page-note">Sources: guide prices by circuit, specialist rates, group sizes, opening hours and how to find a guide from this guide’s own local notes (October 2026), consistent with trip reports (The Travelling Sloth, August 2025; The Blog of Dimi, January 2024); community fee from Madagascar National Parks; community guides from this guide’s own park listings; specialities from The Blog of Dimi; Centre ValBio specialists from Wikipedia; spotters by phone from Wikivoyage. Prices change, so confirm at the park office.</p>
+      <p class="wrap page-note" data-i18n="guidesSources">Sources: guide prices by circuit, specialist rates, group sizes, opening hours and how to find a guide from this guide’s own local notes (October 2026), consistent with trip reports (The Travelling Sloth, August 2025; The Blog of Dimi, January 2024); community fee from Madagascar National Parks; community guides from this guide’s own park listings; specialities from The Blog of Dimi; Centre ValBio specialists from Wikipedia; spotters by phone from Wikivoyage. Prices change, so confirm at the park office.</p>
     </section>
 
     <!-- ========================================================= WHAT'S ON -->
@@ -1797,12 +1802,12 @@
         <img class="bg-photo" src="images/cvb-community-event.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navEvents">What’s on</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navEvents">What’s on</span></nav>
           <h1 id="evp-h" class="page-title" data-i18n="navEvents">What’s on</h1>
           <p class="page-intro" data-i18n="eventsSubtitle">Weekly markets and talks, national holidays, and the festivals of the highland year.</p>
         </div>
       </div>
-      <section class="wrap" style="padding-top: 48px; padding-bottom: 96px;" aria-label="Calendar">
+      <section class="wrap" style="padding-top: 48px; padding-bottom: 96px;" aria-label="Calendar" data-i18n-aria-label="ariaCalendar">
         <div class="event-rows" id="eventList"></div>
         <p class="page-note" style="padding: 24px 0 0;" data-i18n="eventsNote">Dates for national holidays are fixed; village events can move. Check locally before you plan around one.</p>
       </section>
@@ -1814,12 +1819,12 @@
         <img class="bg-photo" src="images/voi-ambohimagneva-hiking-trail.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navBlog">Stories</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navBlog">Stories</span></nav>
           <h1 id="blog-h" class="page-title" data-i18n="storiesHeading">Field notes</h1>
           <p class="page-intro" data-i18n="blogSubtitle">Wildlife, practical advice and the people behind the forest. New stories are on the way.</p>
         </div>
       </div>
-      <section class="wrap" style="padding-top: 48px; padding-bottom: 96px;" aria-label="Stories">
+      <section class="wrap" style="padding-top: 48px; padding-bottom: 96px;" aria-label="Stories" data-i18n-aria-label="navBlog">
         <div class="story-cards" id="blogGrid"></div>
       </section>
     </section>
@@ -1830,7 +1835,7 @@
         <img class="bg-photo" src="images/main-view-cvb.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="footerAbout">About</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="footerAbout">About</span></nav>
           <h1 id="ab-h" class="page-title" data-i18n="aboutHeading">About the team</h1>
           <p class="page-intro" data-i18n="teamIntro">This guide is shaped by people who care deeply about Ranomafana: local tourism providers, community members, guides, and conservation-minded partners working to help visitors travel thoughtfully.</p>
         </div>
@@ -1842,48 +1847,48 @@
             <span class="eyebrow" data-i18n="ecoEyebrow">Why your visit matters</span>
             <h2 id="eco-h" class="display d-56" data-i18n="ecoHeading" data-i18n-html>On the fence about visiting? <em>This is for you.</em></h2>
             <div class="stack g-16">
-              <p class="lede">The rainforest, the lemurs and the hot springs work together to bring international and Malagasy visitors to Ranomafana, and that benefits the town’s 20,000 residents and the landscape around them more than you might guess.</p>
-              <p class="lede">Ecotourism provides essential income that directly funds conservation here. Money from entrance fees, guided tours and other park activities is often reinvested in maintaining the park, protecting its wildlife and supporting vital biodiversity research.</p>
-              <p class="lede">Since 1991, Madagascar National Parks (MNP) has managed Ranomafana National Park and the plants and animals found only here. MNP is a private association recognised as serving the public interest, working under the supervision of Madagascar’s Ministry of Environment and Sustainable Development. Its mission is to establish, conserve and sustainably manage a network of national parks and reserves that represents Madagascar’s biological diversity and natural heritage, and to involve local communities in that work.</p>
+              <p class="lede" data-i18n="ecoText1">The rainforest, the lemurs and the hot springs work together to bring international and Malagasy visitors to Ranomafana, and that benefits the town’s 20,000 residents and the landscape around them more than you might guess.</p>
+              <p class="lede" data-i18n="ecoText2">Ecotourism provides essential income that directly funds conservation here. Money from entrance fees, guided tours and other park activities is often reinvested in maintaining the park, protecting its wildlife and supporting vital biodiversity research.</p>
+              <p class="lede" data-i18n="ecoText3">Since 1991, Madagascar National Parks (MNP) has managed Ranomafana National Park and the plants and animals found only here. MNP is a private association recognised as serving the public interest, working under the supervision of Madagascar’s Ministry of Environment and Sustainable Development. Its mission is to establish, conserve and sustainably manage a network of national parks and reserves that represents Madagascar’s biological diversity and natural heritage, and to involve local communities in that work.</p>
             </div>
           </div>
-          <div class="split-media"><img src="images/ranomafana-town-flowers.jpg" alt="Pink flowers in Ranomafana town, with the forested mountains behind" loading="lazy"></div>
+          <div class="split-media"><img src="images/ranomafana-town-flowers.jpg" alt="Pink flowers in Ranomafana town, with the forested mountains behind" data-i18n-alt="altTownFlowers" loading="lazy"></div>
         </div>
       </section>
 
       <section class="wrap stack g-20" style="padding-bottom: 24px;" aria-labelledby="mnp-h">
         <h3 id="mnp-h" class="display d-44" data-i18n="ecoMnpHeading">What Madagascar National Parks does</h3>
         <ul class="tips">
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Sends rangers on patrol to protect the park’s natural resources, and monitors the health of its wildlife and forest.</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Builds and maintains conservation infrastructure such as boundary markers, firebreaks and watchtowers.</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Raises public awareness of why the park’s biodiversity matters.</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Works with local communities, who take part in conservation as guides, escorts, porters, cooks and labourers.</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Makes sure tourism facilities are in place, so that local communities benefit from visitors.</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Partners with research and development organisations around the park, adding to what we know about it and supporting the local economy.</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span data-i18n="mnp1">Sends rangers on patrol to protect the park’s natural resources, and monitors the health of its wildlife and forest.</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span data-i18n="mnp2">Builds and maintains conservation infrastructure such as boundary markers, firebreaks and watchtowers.</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span data-i18n="mnp3">Raises public awareness of why the park’s biodiversity matters.</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span data-i18n="mnp4">Works with local communities, who take part in conservation as guides, escorts, porters, cooks and labourers.</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span data-i18n="mnp5">Makes sure tourism facilities are in place, so that local communities benefit from visitors.</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span data-i18n="mnp6">Partners with research and development organisations around the park, adding to what we know about it and supporting the local economy.</span></li>
         </ul>
       </section>
 
       <section class="wrap stack g-24" style="padding-top: 32px; padding-bottom: 24px;" aria-labelledby="num-h">
         <div class="rule-row">
           <h2 id="num-h" data-i18n="ecoNumbersHeading">By the numbers</h2>
-          <div><strong>~19,000</strong><span>international visitors a year before the COVID-19 pandemic</span></div>
-          <div><strong>~3,500</strong><span>a year since: fewer than one in five of the visitors it once had</span></div>
-          <div><strong>20,000</strong><span>people live in Ranomafana, many working in its hotels, restaurants and shops</span></div>
+          <div><strong>~19,000</strong><span data-i18n="num1Text">international visitors a year before the COVID-19 pandemic</span></div>
+          <div><strong>~3,500</strong><span data-i18n="num2Text">a year since: fewer than one in five of the visitors it once had</span></div>
+          <div><strong>20,000</strong><span data-i18n="num3Text">people live in Ranomafana, many working in its hotels, restaurants and shops</span></div>
         </div>
         <div class="stack g-16" style="max-width: 820px;">
-          <p class="lede">Without visitors, MNP cannot work as it should. The pandemic devastated ecotourism across Madagascar, straining both MNP’s conservation work and the livelihoods of the people in town who run the hotels, restaurants and shops that serve visitors.</p>
-          <p class="lede-serif">Your visit is a small but truly meaningful part of restoring what the pandemic took from Madagascar. Your presence is valued, and you are very welcome here.</p>
+          <p class="lede" data-i18n="ecoText4">Without visitors, MNP cannot work as it should. The pandemic devastated ecotourism across Madagascar, straining both MNP’s conservation work and the livelihoods of the people in town who run the hotels, restaurants and shops that serve visitors.</p>
+          <p class="lede-serif" data-i18n="ecoText5">Your visit is a small but truly meaningful part of restoring what the pandemic took from Madagascar. Your presence is valued, and you are very welcome here.</p>
         </div>
       </section>
 
       <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 64px;" aria-labelledby="team-h">
         <h2 id="team-h" class="display d-56" data-i18n="teamHeading">The people behind the guide</h2>
-        <p class="lede">This guide was made by Peace Corps Volunteer Kyle Schmidt, with funding from PIC3 and support from PCDT-R and the Commune of Ranomafana. Profiles are on the way: each card has space for a headshot, a short biography and direct contact details.</p>
+        <p class="lede" data-i18n="teamText">This guide was made by Peace Corps Volunteer Kyle Schmidt, with funding from PIC3 and support from PCDT-R and the Commune of Ranomafana. Profiles are on the way: each card has space for a headshot, a short biography and direct contact details.</p>
         <div class="team-grid">
-          <article class="team-card"><div class="headshot">Headshot</div><div><h3>Name to come</h3><p class="team-role">Tourism team lead</p><p>A short introduction to this team member’s work and connection to Ranomafana.</p></div></article>
-          <article class="team-card"><div class="headshot">Headshot</div><div><h3>Name to come</h3><p class="team-role">Community liaison</p><p>Community partnerships, local knowledge and visitor support.</p></div></article>
-          <article class="team-card"><div class="headshot">Headshot</div><div><h3>Name to come</h3><p class="team-role">Visitor information</p><p>Helping visitors plan safe, respectful and memorable trips.</p></div></article>
-          <article class="team-card"><div class="headshot">Headshot</div><div><h3>Name to come</h3><p class="team-role">Digital &amp; partnerships</p><p>Keeping this guide up to date and working with local partners.</p></div></article>
+          <article class="team-card"><div class="headshot" data-i18n="teamHeadshot">Headshot</div><div><h3 data-i18n="teamNameTbc">Name to come</h3><p class="team-role" data-i18n="teamRole1">Tourism team lead</p><p data-i18n="teamBio1">A short introduction to this team member’s work and connection to Ranomafana.</p></div></article>
+          <article class="team-card"><div class="headshot" data-i18n="teamHeadshot">Headshot</div><div><h3 data-i18n="teamNameTbc">Name to come</h3><p class="team-role" data-i18n="teamRole2">Community liaison</p><p data-i18n="teamBio2">Community partnerships, local knowledge and visitor support.</p></div></article>
+          <article class="team-card"><div class="headshot" data-i18n="teamHeadshot">Headshot</div><div><h3 data-i18n="teamNameTbc">Name to come</h3><p class="team-role" data-i18n="teamRole3">Visitor information</p><p data-i18n="teamBio3">Helping visitors plan safe, respectful and memorable trips.</p></div></article>
+          <article class="team-card"><div class="headshot" data-i18n="teamHeadshot">Headshot</div><div><h3 data-i18n="teamNameTbc">Name to come</h3><p class="team-role" data-i18n="teamRole4">Digital &amp; partnerships</p><p data-i18n="teamBio4">Keeping this guide up to date and working with local partners.</p></div></article>
         </div>
       </section>
       <section class="wrap pad-b">
@@ -1897,7 +1902,7 @@
           </div>
         </div>
       </section>
-      <p class="wrap page-note">Sources: visitor numbers, population and Madagascar National Parks’ role from this guide’s own local notes (October 2026).</p>
+      <p class="wrap page-note" data-i18n="aboutSources">Sources: visitor numbers, population and Madagascar National Parks’ role from this guide’s own local notes (October 2026).</p>
     </section>
 
   </main>
@@ -1910,21 +1915,21 @@
           <span class="footer-name">Ranomafana</span>
           <span data-i18n="footerTagline">A community visitor guide · Madagascar</span>
         </div>
-        <nav class="footer-col" aria-label="Explore">
+        <nav class="footer-col" aria-label="Explore" data-i18n-aria-label="footerExplore">
           <strong data-i18n="footerExplore">Explore</strong>
           <a href="#stay" data-i18n="drawerStay">Places to stay</a>
           <a href="#eat" data-i18n="drawerEat">Places to eat</a>
           <a href="#do" data-i18n="drawerDo">Things to do</a>
           <a href="#events" data-i18n="navEvents">What’s on</a>
         </nav>
-        <nav class="footer-col" aria-label="Plan">
+        <nav class="footer-col" aria-label="Plan" data-i18n-aria-label="navPlan">
           <strong data-i18n="navPlan">Plan</strong>
           <a href="#itineraries" data-i18n="tabItineraries">Itineraries</a>
           <a href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
           <a href="#when" data-i18n="tabWhen">When to visit</a>
           <a href="#guides" data-i18n="tabGuides">Hiring a guide</a>
         </nav>
-        <nav class="footer-col" aria-label="About">
+        <nav class="footer-col" aria-label="About" data-i18n-aria-label="footerAbout">
           <strong data-i18n="footerAbout">About</strong>
           <a href="#about" data-i18n="footerTeam">The team</a>
           <a href="#blog" data-i18n="navBlog">Stories</a>
@@ -1933,10 +1938,10 @@
       </div>
       <div class="partners">
         <span class="partners-label" data-i18n="partnersHeading">Partners</span>
-        <a class="partner" href="https://www.peacecorps.gov/madagascar/" target="_blank" rel="noopener" aria-label="Peace Corps Madagascar (opens in a new tab)"><img src="https://www.peacecorps.gov/static/uswds/img/custom/PeaceCorps-LogoFooter-Wht.86345e4359f2.svg" alt="Peace Corps Madagascar" loading="lazy"></a>
-        <a class="partner partner--light" href="https://www.stonybrook.edu/commcms/centre-valbio/" target="_blank" rel="noopener" aria-label="Centre ValBio (opens in a new tab)"><img src="images/centre-valbio-logo.png" alt="Centre ValBio" loading="lazy"></a>
-        <a class="partner partner--light" href="https://www.pic.mg/" target="_blank" rel="noopener" aria-label="PIC3 — Pôles Intégrés de Croissance (opens in a new tab)"><img src="images/pic3-logo.png" alt="PIC3 — Pôles Intégrés de Croissance" loading="lazy"></a>
-        <a class="partner partner--light" href="https://parcs-madagascar.com/en/homepage/" target="_blank" rel="noopener" aria-label="Madagascar National Parks (opens in a new tab)"><img src="images/madagascar-national-parks-logo.png" alt="Madagascar National Parks" loading="lazy"></a>
+        <a class="partner" href="https://www.peacecorps.gov/madagascar/" target="_blank" rel="noopener" data-newtab="Peace Corps Madagascar" aria-label="Peace Corps Madagascar (opens in a new tab)"><img src="https://www.peacecorps.gov/static/uswds/img/custom/PeaceCorps-LogoFooter-Wht.86345e4359f2.svg" alt="Peace Corps Madagascar" loading="lazy"></a>
+        <a class="partner partner--light" href="https://www.stonybrook.edu/commcms/centre-valbio/" target="_blank" rel="noopener" data-newtab="Centre ValBio" aria-label="Centre ValBio (opens in a new tab)"><img src="images/centre-valbio-logo.png" alt="Centre ValBio" loading="lazy"></a>
+        <a class="partner partner--light" href="https://www.pic.mg/" target="_blank" rel="noopener" data-newtab="PIC3 — Pôles Intégrés de Croissance" aria-label="PIC3 — Pôles Intégrés de Croissance (opens in a new tab)"><img src="images/pic3-logo.png" alt="PIC3 — Pôles Intégrés de Croissance" loading="lazy"></a>
+        <a class="partner partner--light" href="https://parcs-madagascar.com/en/homepage/" target="_blank" rel="noopener" data-newtab="Madagascar National Parks" aria-label="Madagascar National Parks (opens in a new tab)"><img src="images/madagascar-national-parks-logo.png" alt="Madagascar National Parks" loading="lazy"></a>
       </div>
       <div class="footer-base">
         <p class="footer-credit" data-i18n="footerCredit">Made by Peace Corps Volunteer Kyle Schmidt · Funded by PIC3 · Supported by PCDT-R and the Commune of Ranomafana · Thanks to Emma Starink</p>
@@ -1946,7 +1951,7 @@
   </footer>
 
   <!-- ============================================================ BOTTOM NAV -->
-  <nav class="bottom-nav" aria-label="Primary">
+  <nav class="bottom-nav" aria-label="Primary" data-i18n-aria-label="ariaPrimaryNav">
     <a href="#home" data-bnav="home">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>
       <span data-i18n="bnavHome">Home</span>
@@ -1972,7 +1977,7 @@
   <!-- ================================================================= MODAL -->
   <div class="modal" id="itemModal" aria-hidden="true" onclick="if (event.target === this) closeModal('itemModal')">
     <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="icon-btn modal-close" type="button" onclick="closeModal('itemModal')" aria-label="Close">
+      <button class="icon-btn modal-close" type="button" onclick="closeModal('itemModal')" aria-label="Close" data-i18n-aria-label="ariaClose">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
       </button>
       <div id="itemModalBody"></div>
@@ -1986,6 +1991,9 @@
        ---------------------------------------------------------------------
        Every listing comes from data/ranomafana-data.js, loaded just above:
        stayData, eatData, doData, itineraryData, eventData, blogData.
+       Their French, German and Malagasy text is in
+       data/ranomafana-translations.js, fetched only when someone picks one
+       of those languages.
        Nothing here should hold a fact about a listing — counts, fees and
        ratings are all read from the data file.
        ===================================================================== */
@@ -2017,19 +2025,30 @@
     };
     const icon = (name, size = 18) => `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ''}</svg>`;
 
-    /* "4.4 (Tripadvisor, 13 reviews)" -> { stars: "★ 4.4", source: "Tripadvisor · 13 reviews", score: 4.4 }.
-       A rating of "—" means unrated and returns null. Scores out of 10 are halved for sorting. */
+    /* "4.4 (Tripadvisor, 13 reviews)" -> { stars: "★ 4.4", source: "Tripadvisor · 13 reviews", score: 4.4 },
+       with "13 reviews" in the current language. A rating of "—" means unrated and
+       returns null. Scores out of 10 are halved for sorting. */
     function parseRating(rating) {
       const m = String(rating || '').match(/^([\d.]+)(\/10)?\s*(?:\((.*)\))?$/);
       if (!m) return null;
       const value = parseFloat(m[1]);
-      return { stars: `★ ${m[1]}${m[2] || ''}`, source: (m[3] || '').replace(/,\s*/g, ' · '), score: m[2] ? value / 2 : value };
+      const source = (m[3] || '').replace(/,\s*/g, ' · ')
+        .replace(/\b(\d+) reviews?\b/, (all, n) => t(n === '1' ? 'reviewOne' : 'reviewMany').replace('{n}', n));
+      return { stars: `★ ${m[1]}${m[2] || ''}`, source, score: m[2] ? value / 2 : value };
     }
 
     const PARK = bySlug(doData, 'ranomafana-national-park') || {};
     const NIGHT_WALK = bySlug(doData, 'night-walk') || {};
     const LOCALES = { en: 'en-GB', fr: 'fr-FR', de: 'de-DE', mg: 'mg' };
     const locale = () => LOCALES[currentLang] || 'en-GB';
+
+    /* "55,000 Ar" written the local way: "55 000 Ar" in French and Malagasy,
+       "55.000 Ar" in German. For fees read straight from the data file. The
+       spaces are non-breaking ( ), so a price never wraps mid-number. */
+    const THOUSANDS = { fr: ' ', de: '.', mg: ' ' };
+    const localNumbers = (text) => (THOUSANDS[currentLang]
+      ? String(text).replace(/\b\d{1,3}(?:,\d{3})+\b/g, (n) => n.replace(/,/g, THOUSANDS[currentLang])).replace(/(\d) Ar\b/g, '$1 Ar')
+      : String(text));
 
     /* Month i (0–11) by name. Browsers carry no Malagasy month names, so a
        language can list its own in the `monthNames` key of its dictionary. */
@@ -2052,17 +2071,19 @@
       return {
         stays: stayData.length, eats: eatData.length, dos: doData.length, itins: itineraryData.length,
         circuits: (PARK.circuits || []).length,
-        entryFee: PARK.entryFee || '', childFee: PARK.childFee || '', communityFee: PARK.communityFee || '', feesAsOf,
-        specialistFee: PARK.specialistFee || '', parkHours: PARK.hours || ''
+        entryFee: localNumbers(PARK.entryFee || ''), childFee: localNumbers(PARK.childFee || ''),
+        communityFee: localNumbers(PARK.communityFee || ''), feesAsOf,
+        specialistFee: localNumbers(PARK.specialistFee || ''), parkHours: PARK.hours || ''
       };
     }
     const fill = (text) => String(text).replace(/\{(\w+)\}/g, (match, key) => (key in TOK ? TOK[key] : match));
 
     // --- 1. I18N / LANGUAGE -------------------------------------------------
-    /* Interface text only. Listing descriptions, tips and itinerary stops are
-       English-only, and so are the explanatory paragraphs on the park and
-       plan pages (they carry no data-i18n key). A key missing from fr/de/mg
-       falls back to English. */
+    /* Interface and page text, keyed by data-i18n attributes (data-i18n-alt and
+       data-i18n-aria-label for image descriptions and screen-reader labels) and
+       by t(). A key missing from fr/de/mg falls back to English. Listing text
+       (descriptions, tips, itinerary stops, stories) is translated separately:
+       see applyListingLanguage() below. */
 
     let currentLang = 'en';
     const translations = {
@@ -2220,8 +2241,11 @@
         storyComing: "The full story is on its way.",
         allPhotos: "See all photos",
         footerCredit: "Made by Peace Corps Volunteer Kyle Schmidt · Funded by PIC3 · Supported by PCDT-R and the Commune of Ranomafana · Thanks to Emma Starink",
-        welcomeEyebrow: "Welcome",
+        welcomeEyebrow: "Why Ranomafana?",
         welcomeHeading: "Welcome to <em>Ranomafana!</em>",
+        welcomeText1: "Wild adventures.<br>Immersive expeditions.<br>Thermal relaxation.<br>World-renowned biodiversity.",
+        welcomeText2: "UNESCO World Heritage Ranomafana is home to fourteen kinds of lemur, including the rare golden bamboo lemur. Track them with a local guide, find chameleons by torchlight, hike to waterfalls, kayak the Namorona and unwind in the hot springs.",
+        welcomeText3: "Your stay makes a difference: park fees help protect the forest, and the guides, cooks and hosts you meet live here. Hire local. Buy local. Keep the forest standing.",
         welcomeSignoff: "We look forward to welcoming you to Ranomafana, and hope to see you soon!",
         welcomeLink: "Why your visit matters",
         roomRates: "Room rates, per night",
@@ -2241,6 +2265,130 @@
         ecoHeading: "On the fence about visiting? <em>This is for you.</em>",
         ecoMnpHeading: "What Madagascar National Parks does",
         ecoNumbersHeading: "By the numbers",
+        // translated page text, labels and listing categories (October 2026)
+        skipLink: "Skip to content",
+        itinNote: "These plans come from this guide’s own itinerary data. Times are suggestions; your guide will adjust them to the weather and the animals.",
+        ghWaysIntro: "Ranomafana is in the Vatovavy region of south-east Madagascar, 65 km from Fianarantsoa, the nearest city. Getting here from Antananarivo can be tricky, but every option below works.",
+        way2Text: "Book a seat by calling or WhatsApp-ing the Cotisse station in Antananarivo on +261 32 11 027 10, or in person. Pay at least 24 hours before departure: online with PayPal or MVola, or at any Cotisse station. Seats to Fianarantsoa cost 40,000 Ar, with buses by day and by night. The drive takes about 12 hours, with regular toilet stops and a lunch break. You then change in Fianarantsoa (see below).",
+        waySoaText: "Book by calling +261 32 11 905 00 or at the station, and pay in person at least 24 hours ahead. The bus to Manakara (65,000 Ar) leaves Antananarivo at 13:30 and passes Ranomafana at around 03:00, where you can get off. Ranomafana is safe and calm at night. Staying at Setam Lodge, Forêt Australe, Au Domnatur or Karibotel? Get off outside your hotel rather than in town. Seats to Fianarantsoa cost 45,000 Ar if you would rather change there.",
+        way4Text: "Buses and rough roads are not exactly relaxing, so many visitors hire a car and driver in Antananarivo. Search for private car hire or drivers there; we suggest Dadamanga as a good place to start. Expect roughly US$100–300 per car, depending on the company, whether you have a driver, how many of you there are and the time of year. The drive takes about 12 hours, stopping where and when you like: Antsirabe (5 hours in) and Ambositra (8 hours in, home to beautiful wood carving) are popular.",
+        wayFlyText: "A private charter plane to Fianarantsoa airport takes about an hour. It has to be booked through a travel agency, and prices vary. From Fianarantsoa, continue by bus or car.",
+        way1Text: "65 km on the RN25. Regional taxi-brousses (shared minibuses) leave the bus station at any time of day: 7,000 Ar per person, about 2½ hours. Use the toilet before you get in.",
+        way3Text: "Mananjary is 139 km away along the RN25. Taxi-brousses also come up from Manakara.",
+        fianarText: "The daytime Cotisse reaches Fianarantsoa at about 19:00, after the last buses to Ranomafana, so plan to stay the night. Take the night bus instead and you arrive in the morning, ready to go straight to the regional bus station.",
+        fianarStep1: "Stay near the Cotisse station. Zomatel and Hotel Vannie usually have rooms, at 50,000–90,000 Ar a night. Hotel Vannie is about a 15-minute walk and Zomatel about 20. A taxi takes 5–10 minutes and should cost no more than 10,000 Ar; hotels further out, such as Mahamanina, cost a little more.",
+        fianarStep2: "In the morning, walk down the hill from Zomatel or Vannie (bear right) to the regional bus station. From anywhere else, any taxi driver will understand “brousse stationnement”.",
+        fianarStep3: "Regional brousses are not like Cotisse or Soatrans: you will be squeezed in, with your bags on the roof. Tell the driver or door attendant you are getting off at Ranomafana, and keep your valuables on you.",
+        gateText: "The park entrance is at Ambodiamontana, about 7 km up the RN25 from the centre of Ranomafana. Most places to stay are in the village, and there is no shuttle between the two.",
+        gateStep1: "From the taxi-brousse station in the centre of town, take any brousse heading towards Fianarantsoa and tell them you are getting off at the park entrance: 20–25 minutes, 1,000–2,000 Ar each. Seats are scarce in the morning, when park staff ride them to work. Coming back is the same in reverse.",
+        gateStep2: "Or walk back down, weather permitting: it is a beautiful hour downhill to town, and lemurs are sometimes seen near the road.",
+        gateStep3: "Or sleep at the forest edge: Setam Lodge is an 800 m walk from the park entrance, and Centre ValBio sits beside the park. <a class=\"text-link\" href=\"#stay\">Stay →</a>",
+        pack1Text: "The park takes cash only, and so do most lodges. Small notes help.",
+        pack2Text: "{stays} places to stay, from the forest edge to the village. <a class=\"text-link\" href=\"#stay\">Browse stays →</a>",
+        pack3Text: "In every season. <a class=\"text-link\" href=\"#when\">When to visit →</a>",
+        ghSources: "Sources: Cotisse, Soatrans, private car, charter flight, Fianarantsoa connections, fares, journey times and getting to the park gate from this guide’s own local notes (October 2026); distances from Madagascar National Parks; taxi-brousse routes from the coast from Wikivoyage (updated November 2017). Roads and fares change, so check locally.",
+        wetText: "Daytime around 26°C and humid, with highs above 28°C from November to February. About 80% of the year’s rain falls in these months. January to March is cyclone season, and some days are too wet for the trails.",
+        dryText: "Daytime around 22°C, nights down to 10°C. June to August is the cold season, when reptiles and some other animals are harder to find. Drier is relative here: it still rains.",
+        sweetText: "Mild weather and less rain, with animals active again after the cold months. In October and November many lemurs have babies.",
+        rainShellText: "Bring one in every season.",
+        sturdyShoesText: "The trails are steep, and slippery when wet.",
+        midMorningText: "The park is open {parkHours}. Mid-morning, when the lemurs settle in to feed, is the best time to go in.",
+        whenSources: "Sources: hot and cold seasons and the 80% rainfall share from Madagascar National Parks; daytime and night temperatures, cyclone season, best months and lemur births from SafariBookings; trail conditions from Wikipedia; festivals from this guide’s own events listings.",
+        step1Text: "Ask your hotel, or turn up at the park and choose from the guides working that day. Guides can’t be booked online.",
+        step2Text: "Walks are priced by circuit and length, and specialists cost more. Tell your guide about your fitness and any worries: they will adapt the route to suit you.",
+        step3Text: "Cash only: park entry, the community fee at its own booth, and the guide fee for your group.",
+        step4Text: "The park is open {parkHours}. Mid-morning, when the lemurs are awake and settling in to feed, is the best time. <a class=\"text-link\" href=\"#getting-here\">Getting to the gate →</a>",
+        costText: "The guide fee is shared by everyone in your group, so it costs less each with more people. One guide takes a group of one to four; groups of six or more need at least two.",
+        costFootnote: "Guide rates by circuit, {feesAsOf}. Plus park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class=\"text-link\" style=\"font-size: 13px;\" href=\"#park\">Park fees →</a>",
+        soloText: "Ask the park office to pair you with other visitors so you split one guide fee.",
+        spotterText: "Animal spotters work the forest and tell your guide by phone where the animals are, so you can walk straight to them. The spotter is included in the guide’s price.",
+        specText: "Specialist guides are experts in finding and explaining the park’s birds, plants, or reptiles and amphibians. Because of that expertise they cost {specialistFee}, whatever the circuit. Specialist guides can also be arranged through Centre ValBio.",
+        specPrimatesText: "Lemurs, including the golden bamboo lemur.",
+        specBirdsText: "Birders: ask for a birding specialist by name. <a class=\"text-link\" href=\"#itineraries\" onclick=\"openItinerary('birders-two-day'); return false;\">Birders’ itinerary →</a>",
+        specHerpsText: "Frogs, chameleons and leaf-tailed geckos.",
+        specBotanyText: "Orchids, giant ferns and the forest itself.",
+        outsideMitsinjoText: "Community guides from Ambatolahy lead day and night walks, and the fees go straight to the village.",
+        outsideAmbohiText: "A 75-hectare reserve bordering the national park, about 3 km from town on foot, managed by the local community association (the VOI) under Madagascar’s community forest-management law. Trails and a river waterfall are being opened to visitors, with guides certified by Madagascar National Parks and research links to Centre ValBio. Visitor access is still being set up, so ask before you go.",
+        outsideNightText: "Night walks along the forest edge by the RN25 need no park ticket.",
+        guidesSources: "Sources: guide prices by circuit, specialist rates, group sizes, opening hours and how to find a guide from this guide’s own local notes (October 2026), consistent with trip reports (The Travelling Sloth, August 2025; The Blog of Dimi, January 2024); community fee from Madagascar National Parks; community guides from this guide’s own park listings; specialities from The Blog of Dimi; Centre ValBio specialists from Wikipedia; spotters by phone from Wikivoyage. Prices change, so confirm at the park office.",
+        ecoText1: "The rainforest, the lemurs and the hot springs work together to bring international and Malagasy visitors to Ranomafana, and that benefits the town’s 20,000 residents and the landscape around them more than you might guess.",
+        ecoText2: "Ecotourism provides essential income that directly funds conservation here. Money from entrance fees, guided tours and other park activities is often reinvested in maintaining the park, protecting its wildlife and supporting vital biodiversity research.",
+        ecoText3: "Since 1991, Madagascar National Parks (MNP) has managed Ranomafana National Park and the plants and animals found only here. MNP is a private association recognised as serving the public interest, working under the supervision of Madagascar’s Ministry of Environment and Sustainable Development. Its mission is to establish, conserve and sustainably manage a network of national parks and reserves that represents Madagascar’s biological diversity and natural heritage, and to involve local communities in that work.",
+        mnp1: "Sends rangers on patrol to protect the park’s natural resources, and monitors the health of its wildlife and forest.",
+        mnp2: "Builds and maintains conservation infrastructure such as boundary markers, firebreaks and watchtowers.",
+        mnp3: "Raises public awareness of why the park’s biodiversity matters.",
+        mnp4: "Works with local communities, who take part in conservation as guides, escorts, porters, cooks and labourers.",
+        mnp5: "Makes sure tourism facilities are in place, so that local communities benefit from visitors.",
+        mnp6: "Partners with research and development organisations around the park, adding to what we know about it and supporting the local economy.",
+        num1Text: "international visitors a year before the COVID-19 pandemic",
+        num2Text: "a year since: fewer than one in five of the visitors it once had",
+        num3Text: "people live in Ranomafana, many working in its hotels, restaurants and shops",
+        ecoText4: "Without visitors, MNP cannot work as it should. The pandemic devastated ecotourism across Madagascar, straining both MNP’s conservation work and the livelihoods of the people in town who run the hotels, restaurants and shops that serve visitors.",
+        ecoText5: "Your visit is a small but truly meaningful part of restoring what the pandemic took from Madagascar. Your presence is valued, and you are very welcome here.",
+        teamText: "This guide was made by Peace Corps Volunteer Kyle Schmidt, with funding from PIC3 and support from PCDT-R and the Commune of Ranomafana. Profiles are on the way: each card has space for a headshot, a short biography and direct contact details.",
+        teamRole1: "Tourism team lead",
+        teamBio1: "A short introduction to this team member’s work and connection to Ranomafana.",
+        teamRole2: "Community liaison",
+        teamBio2: "Community partnerships, local knowledge and visitor support.",
+        teamRole3: "Visitor information",
+        teamBio3: "Helping visitors plan safe, respectful and memorable trips.",
+        teamRole4: "Digital & partnerships",
+        teamBio4: "Keeping this guide up to date and working with local partners.",
+        aboutSources: "Sources: visitor numbers, population and Madagascar National Parks’ role from this guide’s own local notes (October 2026).",
+        ariaHome: "Ranomafana — home",
+        ariaMainNav: "Main",
+        ariaOpenMenu: "Open menu",
+        ariaMenu: "Menu",
+        ariaCloseMenu: "Close menu",
+        ariaAllPages: "All pages",
+        ariaStartHere: "Start here",
+        ariaBreadcrumb: "Breadcrumb",
+        ariaFilters: "Filters",
+        ariaResults: "Results",
+        ariaVisitDetails: "Visit details",
+        ariaChoosePlan: "Choose a plan",
+        ariaChooseMonth: "Choose a month",
+        ariaCalendar: "Calendar",
+        ariaPrimaryNav: "Primary",
+        ariaClose: "Close",
+        altGecko: "A leaf-tailed gecko on a branch at night",
+        altLemurTrunk: "A lemur clinging to a tree trunk among the bamboo, Ranomafana National Park",
+        altSatanicGecko: "Satanic leaf-tailed gecko",
+        altRiverPool: "River pool at VOI Ambohimagneva community reserve",
+        altThermalePool: "The open-air pool at Station Thermale",
+        altGrenatDining: "Dining room at Grenat Hotel restaurant",
+        altGuideHat: "A guide in a straw hat with a walking stick, looking into the rainforest",
+        altGuideAdrien: "Guide Adrien on the boardwalk trail at VOI Ambohimagneva",
+        altTownFlowers: "Pink flowers in Ranomafana town, with the forested mountains behind",
+        newTabSuffix: "opens in a new tab",
+        teamHeadshot: "Headshot",
+        teamNameTbc: "Name to come",
+        reviewOne: "{n} review",
+        reviewMany: "{n} reviews",
+        catNationalPark: "National park",
+        catCommunityConservation: "Community conservation",
+        catWildlife: "Wildlife",
+        catThermalSprings: "Thermal springs",
+        catWaterfall: "Waterfall",
+        catWaterActivity: "Water activity",
+        catGarden: "Garden",
+        catResearch: "Research & conservation",
+        catArtCulture: "Art & culture",
+        catMarket: "Market",
+        catPractical: "Practical",
+        catFood: "Food",
+        catCulture: "Culture",
+        catConservation: "Conservation",
+        noteHot: "Hot season: highs above 28°C, humid.",
+        noteCyclone: "Cyclone season (January to March): some days are too wet for the trails.",
+        noteCold: "Cold season: nights down to 10°C. Reptiles and some other animals are harder to find.",
+        noteBest: "One of the best months: mild, with less rain.",
+        noteBabies: "Many lemurs have babies in October and November.",
+        noteWetEnds: "The last month of the wet season.",
+        noteDryBegins: "Daytime around 22°C as the drier season begins.",
+        noteActiveAgain: "Animals are active again after the cold months.",
+        noteDryEnds: "The last month of the drier season.",
+        noteWetBegins: "The wet season and the hot season both begin."
       },
 
       fr: {
@@ -2387,8 +2535,11 @@
         storyComing: "Le récit complet arrive bientôt.",
         allPhotos: "Voir toutes les photos",
         footerCredit: "Réalisé par Kyle Schmidt, volontaire du Peace Corps · Financé par le PIC3 · Soutenu par le PCDT-R et la Commune de Ranomafana · Merci à Emma Starink",
-        welcomeEyebrow: "Bienvenue",
+        welcomeEyebrow: "Pourquoi Ranomafana ?",
         welcomeHeading: "Bienvenue à <em>Ranomafana !</em>",
+        welcomeText1: "Aventures sauvages.<br>Expéditions immersives.<br>Détente thermale.<br>Biodiversité de renommée mondiale.",
+        welcomeText2: "Inscrit au patrimoine mondial de l’UNESCO, Ranomafana abrite quatorze espèces de lémuriens, dont le rare hapalémur doré. Suivez-les avec un guide local, cherchez les caméléons à la lampe, marchez jusqu’aux cascades, pagayez sur la Namorona et détendez-vous dans les sources chaudes.",
+        welcomeText3: "Votre séjour compte : les droits d’entrée du parc aident à protéger la forêt, et les guides, cuisiniers et hôtes que vous rencontrez vivent ici. Choisissez local. Achetez local. Préservez la forêt.",
         welcomeSignoff: "Au plaisir de vous accueillir à Ranomafana, et à bientôt !",
         welcomeLink: "Pourquoi votre visite compte",
         roomRates: "Tarifs des chambres, par nuit",
@@ -2408,6 +2559,130 @@
         ecoHeading: "Vous hésitez à venir ? <em>Ceci est pour vous.</em>",
         ecoMnpHeading: "Le rôle de Madagascar National Parks",
         ecoNumbersHeading: "En chiffres",
+        // translated page text, labels and listing categories (October 2026)
+        skipLink: "Aller au contenu",
+        itinNote: "Ces programmes s’appuient sur les itinéraires de ce guide. Les horaires sont indicatifs ; votre guide les adaptera à la météo et aux animaux.",
+        ghWaysIntro: "Ranomafana se trouve dans la région Vatovavy, dans le sud-est de Madagascar, à 65 km de Fianarantsoa, la ville la plus proche. Venir depuis Antananarivo peut être compliqué, mais toutes les options ci-dessous fonctionnent.",
+        way2Text: "Réservez une place en appelant ou en écrivant sur WhatsApp à la gare Cotisse d’Antananarivo au +261 32 11 027 10, ou sur place. Payez au moins 24 heures avant le départ : en ligne par PayPal ou MVola, ou dans n’importe quelle agence Cotisse. Une place pour Fianarantsoa coûte 40 000 Ar, avec des cars de jour et de nuit. Le trajet dure environ 12 heures, avec des arrêts toilettes réguliers et une pause déjeuner. Vous changez ensuite à Fianarantsoa (voir ci-dessous).",
+        waySoaText: "Réservez en appelant le +261 32 11 905 00 ou à la gare, et payez sur place au moins 24 heures à l’avance. Le car pour Manakara (65 000 Ar) quitte Antananarivo à 13:30 et passe à Ranomafana vers 03:00, où vous pouvez descendre. Ranomafana est sûr et calme la nuit. Vous logez au Setam Lodge, à Forêt Australe, à Au Domnatur ou au Karibotel ? Descendez devant votre hôtel plutôt qu’au village. Une place pour Fianarantsoa coûte 45 000 Ar si vous préférez changer là-bas.",
+        way4Text: "Les cars et les routes cabossées ne sont pas vraiment reposants : beaucoup de visiteurs louent une voiture avec chauffeur à Antananarivo. Cherchez sur place une location de voiture ou un chauffeur privé ; Dadamanga est un bon point de départ. Comptez environ 100 à 300 dollars américains par voiture, selon l’agence, la présence d’un chauffeur, le nombre de voyageurs et la saison. Le trajet dure environ 12 heures, avec des arrêts où et quand vous voulez : Antsirabe (après 5 heures) et Ambositra (après 8 heures, haut lieu de la sculpture sur bois) sont des étapes appréciées.",
+        wayFlyText: "Un avion charter privé jusqu’à l’aéroport de Fianarantsoa met environ une heure. Il se réserve auprès d’une agence de voyages, et les prix varient. Depuis Fianarantsoa, continuez en car ou en voiture.",
+        way1Text: "65 km sur la RN25. Les taxis-brousses régionaux (minibus partagés) partent de la gare routière à toute heure de la journée : 7 000 Ar par personne, environ 2 h 30. Passez aux toilettes avant de monter.",
+        way3Text: "Mananjary est à 139 km par la RN25. Des taxis-brousses montent aussi depuis Manakara.",
+        fianarText: "Le Cotisse de jour arrive à Fianarantsoa vers 19:00, après les derniers départs pour Ranomafana : prévoyez d’y passer la nuit. Prenez plutôt le car de nuit et vous arriverez le matin, prêt à filer directement à la gare routière régionale.",
+        fianarStep1: "Logez près de la gare Cotisse. Le Zomatel et l’Hôtel Vannie ont généralement des chambres, à 50 000–90 000 Ar la nuit. L’Hôtel Vannie est à environ 15 minutes à pied et le Zomatel à 20. Un taxi met 5 à 10 minutes et ne devrait pas coûter plus de 10 000 Ar ; les hôtels plus éloignés, comme à Mahamanina, coûtent un peu plus.",
+        fianarStep2: "Le matin, descendez la colline depuis le Zomatel ou le Vannie (en gardant la droite) jusqu’à la gare routière régionale. De n’importe où ailleurs, tout chauffeur de taxi comprendra « brousse stationnement ».",
+        fianarStep3: "Les brousses régionaux ne ressemblent pas aux cars Cotisse ou Soatrans : vous serez serrés, avec vos bagages sur le toit. Dites au chauffeur ou au receveur que vous descendez à Ranomafana, et gardez vos objets de valeur sur vous.",
+        gateText: "L’entrée du parc se trouve à Ambodiamontana, à environ 7 km du centre de Ranomafana en remontant la RN25. La plupart des hébergements sont au village, et il n’y a pas de navette entre les deux.",
+        gateStep1: "Depuis la gare des taxis-brousses du centre, prenez n’importe quel brousse en direction de Fianarantsoa et dites que vous descendez à l’entrée du parc : 20 à 25 minutes, 1 000–2 000 Ar par personne. Les places sont rares le matin, quand le personnel du parc s’en sert pour aller travailler. Le retour se fait de la même façon.",
+        gateStep2: "Ou redescendez à pied si le temps le permet : une belle heure de descente jusqu’au village, et l’on voit parfois des lémuriens près de la route.",
+        gateStep3: "Ou dormez en lisière de forêt : le Setam Lodge est à 800 m à pied de l’entrée du parc, et le Centre ValBio est juste à côté du parc. <a class=\"text-link\" href=\"#stay\">Hébergements →</a>",
+        pack1Text: "Le parc n’accepte que les espèces, comme la plupart des hébergements. Les petites coupures sont utiles.",
+        pack2Text: "{stays} hébergements, de la lisière de la forêt au village. <a class=\"text-link\" href=\"#stay\">Voir les hébergements →</a>",
+        pack3Text: "En toute saison. <a class=\"text-link\" href=\"#when\">Quand venir →</a>",
+        ghSources: "Sources : Cotisse, Soatrans, voiture privée, vol charter, correspondances à Fianarantsoa, tarifs, temps de trajet et accès à l’entrée du parc d’après les notes locales de ce guide (octobre 2026) ; distances d’après Madagascar National Parks ; itinéraires en taxi-brousse depuis la côte d’après Wikivoyage (mis à jour en novembre 2017). Les routes et les tarifs changent : renseignez-vous sur place.",
+        wetText: "Environ 26 °C en journée et un air humide, avec des maximales au-dessus de 28 °C de novembre à février. Environ 80 % de la pluie de l’année tombe pendant ces mois. De janvier à mars, c’est la saison des cyclones, et certains jours sont trop pluvieux pour les sentiers.",
+        dryText: "Environ 22 °C en journée, et jusqu’à 10 °C la nuit. De juin à août, c’est la saison froide, où les reptiles et d’autres animaux sont plus difficiles à trouver. « Plus sec » est relatif ici : il pleut quand même.",
+        sweetText: "Un temps doux et moins de pluie, avec des animaux de nouveau actifs après les mois froids. En octobre et novembre, beaucoup de lémuriens ont des petits.",
+        rainShellText: "Prenez-en une en toute saison.",
+        sturdyShoesText: "Les sentiers sont raides, et glissants quand ils sont mouillés.",
+        midMorningText: "Horaires du parc : {parkHours}. Le milieu de matinée, quand les lémuriens commencent à se nourrir, est le meilleur moment pour entrer.",
+        whenSources: "Sources : saisons chaude et froide et part de 80 % des pluies d’après Madagascar National Parks ; températures de jour et de nuit, saison des cyclones, meilleurs mois et naissances des lémuriens d’après SafariBookings ; état des sentiers d’après Wikipédia ; fêtes d’après les événements recensés par ce guide.",
+        step1Text: "Demandez à votre hôtel, ou présentez-vous au parc et choisissez parmi les guides présents ce jour-là. On ne peut pas réserver de guide en ligne.",
+        step2Text: "Les balades sont tarifées selon le circuit et la durée, et les spécialistes coûtent plus cher. Parlez à votre guide de votre forme physique et de vos éventuelles craintes : il adaptera l’itinéraire.",
+        step3Text: "Espèces uniquement : l’entrée du parc, la taxe communautaire à son propre guichet, et le prix du guide pour votre groupe.",
+        step4Text: "Horaires du parc : {parkHours}. Le milieu de matinée, quand les lémuriens sont réveillés et commencent à se nourrir, est le meilleur moment. <a class=\"text-link\" href=\"#getting-here\">Rejoindre l’entrée →</a>",
+        costText: "Le prix du guide est partagé par tout votre groupe : plus vous êtes nombreux, moins c’est cher par personne. Un guide prend un groupe de une à quatre personnes ; à partir de six, il en faut au moins deux.",
+        costFootnote: "Tarifs des guides par circuit, {feesAsOf}. Plus l’entrée du parc : {entryFee} par adulte et par jour ({childFee} de 5 à 12 ans, gratuit avant 5 ans) et une taxe communautaire de {communityFee}. <a class=\"text-link\" style=\"font-size: 13px;\" href=\"#park\">Tarifs du parc →</a>",
+        soloText: "Demandez au bureau du parc de vous associer à d’autres visiteurs pour partager le prix d’un guide.",
+        spotterText: "Des pisteurs parcourent la forêt et indiquent par téléphone à votre guide où se trouvent les animaux, pour que vous puissiez aller droit vers eux. Le pisteur est compris dans le prix du guide.",
+        specText: "Les guides spécialisés sont experts pour trouver et expliquer les oiseaux, les plantes ou les reptiles et amphibiens du parc. Pour cette expertise, ils coûtent {specialistFee}, quel que soit le circuit. Des guides spécialisés peuvent aussi être organisés par le Centre ValBio.",
+        specPrimatesText: "Les lémuriens, dont l’hapalémur doré.",
+        specBirdsText: "Ornithologues : demandez nommément un guide spécialisé en oiseaux. <a class=\"text-link\" href=\"#itineraries\" onclick=\"openItinerary('birders-two-day'); return false;\">Itinéraire ornithologique →</a>",
+        specHerpsText: "Grenouilles, caméléons et uroplates.",
+        specBotanyText: "Orchidées, fougères géantes et la forêt elle-même.",
+        outsideMitsinjoText: "Des guides communautaires d’Ambatolahy mènent des balades de jour et de nuit, et les droits vont directement au village.",
+        outsideAmbohiText: "Une réserve de 75 hectares en bordure du parc national, à environ 3 km du village à pied, gérée par l’association communautaire locale (le VOI) dans le cadre de la loi malgache sur la gestion communautaire des forêts. Des sentiers et une cascade sur la rivière sont en cours d’ouverture aux visiteurs, avec des guides agréés par Madagascar National Parks et des liens de recherche avec le Centre ValBio. L’accueil des visiteurs est encore en cours de mise en place : renseignez-vous avant de partir.",
+        outsideNightText: "Les balades nocturnes en lisière de forêt, le long de la RN25, ne nécessitent pas de billet du parc.",
+        guidesSources: "Sources : tarifs des guides par circuit, tarifs des spécialistes, taille des groupes, horaires et façon de trouver un guide d’après les notes locales de ce guide (octobre 2026), en accord avec des récits de voyage (The Travelling Sloth, août 2025 ; The Blog of Dimi, janvier 2024) ; taxe communautaire d’après Madagascar National Parks ; guides communautaires d’après les fiches de ce guide ; spécialités d’après The Blog of Dimi ; spécialistes du Centre ValBio d’après Wikipédia ; pisteurs par téléphone d’après Wikivoyage. Les prix changent : vérifiez au bureau du parc.",
+        ecoText1: "La forêt tropicale, les lémuriens et les sources chaudes attirent ensemble à Ranomafana des visiteurs étrangers et malgaches, et cela profite aux 20 000 habitants de la ville et aux paysages qui les entourent bien plus qu’on ne l’imagine.",
+        ecoText2: "L’écotourisme apporte un revenu essentiel qui finance directement la conservation ici. L’argent des droits d’entrée, des visites guidées et des autres activités du parc est souvent réinvesti dans l’entretien du parc, la protection de sa faune et le soutien à une recherche vitale sur la biodiversité.",
+        ecoText3: "Depuis 1991, Madagascar National Parks (MNP) gère le parc national de Ranomafana ainsi que les plantes et les animaux qu’on ne trouve qu’ici. MNP est une association privée reconnue d’utilité publique, placée sous la tutelle du ministère malgache de l’Environnement et du Développement durable. Sa mission est de créer, conserver et gérer durablement un réseau de parcs nationaux et de réserves représentatif de la diversité biologique et du patrimoine naturel de Madagascar, en y associant les communautés locales.",
+        mnp1: "Envoie des agents en patrouille pour protéger les ressources naturelles du parc, et surveille la santé de sa faune et de sa forêt.",
+        mnp2: "Construit et entretient les infrastructures de conservation : bornes de délimitation, pare-feux et tours de guet.",
+        mnp3: "Sensibilise le public à l’importance de la biodiversité du parc.",
+        mnp4: "Travaille avec les communautés locales, qui participent à la conservation comme guides, accompagnateurs, porteurs, cuisiniers et ouvriers.",
+        mnp5: "Veille à ce que les équipements touristiques soient en place, pour que les communautés locales profitent des visiteurs.",
+        mnp6: "S’associe aux organismes de recherche et de développement autour du parc, pour mieux le connaître et soutenir l’économie locale.",
+        num1Text: "visiteurs étrangers par an avant la pandémie de COVID-19",
+        num2Text: "par an depuis : moins d’un cinquième des visiteurs d’autrefois",
+        num3Text: "habitants à Ranomafana, dont beaucoup travaillent dans ses hôtels, restaurants et boutiques",
+        ecoText4: "Sans visiteurs, MNP ne peut pas fonctionner comme il le devrait. La pandémie a dévasté l’écotourisme à Madagascar, fragilisant à la fois le travail de conservation de MNP et les moyens de subsistance des habitants qui tiennent les hôtels, restaurants et boutiques au service des visiteurs.",
+        ecoText5: "Votre visite est une petite mais vraie contribution pour rendre à Madagascar ce que la pandémie lui a pris. Votre présence compte, et vous êtes ici le bienvenu.",
+        teamText: "Ce guide a été réalisé par Kyle Schmidt, volontaire du Peace Corps, grâce au financement du PIC3 et avec le soutien du PCDT-R et de la Commune de Ranomafana. Les profils arrivent bientôt : chaque carte a la place pour une photo, une courte biographie et des coordonnées directes.",
+        teamRole1: "Responsable de l’équipe tourisme",
+        teamBio1: "Une courte présentation du travail de ce membre de l’équipe et de son lien avec Ranomafana.",
+        teamRole2: "Relations avec la communauté",
+        teamBio2: "Partenariats communautaires, connaissance du terrain et accompagnement des visiteurs.",
+        teamRole3: "Information des visiteurs",
+        teamBio3: "Aider les visiteurs à préparer des voyages sûrs, respectueux et mémorables.",
+        teamRole4: "Numérique et partenariats",
+        teamBio4: "Tenir ce guide à jour et travailler avec les partenaires locaux.",
+        aboutSources: "Sources : nombre de visiteurs, population et rôle de Madagascar National Parks d’après les notes locales de ce guide (octobre 2026).",
+        ariaHome: "Ranomafana — accueil",
+        ariaMainNav: "Navigation principale",
+        ariaOpenMenu: "Ouvrir le menu",
+        ariaMenu: "Menu",
+        ariaCloseMenu: "Fermer le menu",
+        ariaAllPages: "Toutes les pages",
+        ariaStartHere: "Commencer ici",
+        ariaBreadcrumb: "Fil d’Ariane",
+        ariaFilters: "Filtres",
+        ariaResults: "Résultats",
+        ariaVisitDetails: "Infos pratiques",
+        ariaChoosePlan: "Choisir un programme",
+        ariaChooseMonth: "Choisir un mois",
+        ariaCalendar: "Calendrier",
+        ariaPrimaryNav: "Navigation",
+        ariaClose: "Fermer",
+        altGecko: "Un uroplate sur une branche, la nuit",
+        altLemurTrunk: "Un lémurien agrippé à un tronc parmi les bambous, parc national de Ranomafana",
+        altSatanicGecko: "Uroplate fantastique",
+        altRiverPool: "Bassin de rivière dans la réserve communautaire VOI Ambohimagneva",
+        altThermalePool: "La piscine en plein air de la Station Thermale",
+        altGrenatDining: "La salle du restaurant du Grenat Hotel",
+        altGuideHat: "Un guide au chapeau de paille et au bâton de marche, le regard tourné vers la forêt",
+        altGuideAdrien: "Le guide Adrien sur la passerelle du sentier de VOI Ambohimagneva",
+        altTownFlowers: "Des fleurs roses dans le village de Ranomafana, avec les montagnes boisées derrière",
+        newTabSuffix: "s’ouvre dans un nouvel onglet",
+        teamHeadshot: "Photo",
+        teamNameTbc: "Nom à venir",
+        reviewOne: "{n} avis",
+        reviewMany: "{n} avis",
+        catNationalPark: "Parc national",
+        catCommunityConservation: "Conservation communautaire",
+        catWildlife: "Faune",
+        catThermalSprings: "Sources thermales",
+        catWaterfall: "Cascade",
+        catWaterActivity: "Activité nautique",
+        catGarden: "Jardin",
+        catResearch: "Recherche et conservation",
+        catArtCulture: "Art et culture",
+        catMarket: "Marché",
+        catPractical: "Pratique",
+        catFood: "Cuisine",
+        catCulture: "Culture",
+        catConservation: "Conservation",
+        noteHot: "Saison chaude : maximales au-dessus de 28 °C, air humide.",
+        noteCyclone: "Saison des cyclones (janvier à mars) : certains jours sont trop pluvieux pour les sentiers.",
+        noteCold: "Saison froide : jusqu’à 10 °C la nuit. Les reptiles et d’autres animaux sont plus difficiles à trouver.",
+        noteBest: "L’un des meilleurs mois : doux, avec moins de pluie.",
+        noteBabies: "En octobre et novembre, beaucoup de lémuriens ont des petits.",
+        noteWetEnds: "Le dernier mois de la saison des pluies.",
+        noteDryBegins: "Environ 22 °C en journée, au début de la saison plus sèche.",
+        noteActiveAgain: "Les animaux sont de nouveau actifs après les mois froids.",
+        noteDryEnds: "Le dernier mois de la saison plus sèche.",
+        noteWetBegins: "La saison des pluies et la saison chaude commencent toutes les deux."
       },
 
       de: {
@@ -2554,8 +2829,11 @@
         storyComing: "Die vollständige Geschichte folgt bald.",
         allPhotos: "Alle Fotos ansehen",
         footerCredit: "Erstellt vom Peace-Corps-Freiwilligen Kyle Schmidt · Finanziert von PIC3 · Unterstützt von PCDT-R und der Gemeinde Ranomafana · Dank an Emma Starink",
-        welcomeEyebrow: "Willkommen",
+        welcomeEyebrow: "Warum Ranomafana?",
         welcomeHeading: "Willkommen in <em>Ranomafana!</em>",
+        welcomeText1: "Wilde Abenteuer.<br>Hautnahe Expeditionen.<br>Thermale Entspannung.<br>Weltberühmte Artenvielfalt.",
+        welcomeText2: "Das UNESCO-Welterbe Ranomafana ist Heimat von vierzehn Lemurenarten, darunter der seltene Goldene Bambuslemur. Folgen Sie ihnen mit einem Guide aus dem Ort, suchen Sie Chamäleons im Licht der Taschenlampe, wandern Sie zu Wasserfällen, paddeln Sie auf dem Namorona und entspannen Sie in den heißen Quellen.",
+        welcomeText3: "Ihr Aufenthalt zählt: Die Parkgebühren helfen, den Wald zu schützen, und die Guides, Köche und Gastgeber, denen Sie begegnen, leben hier. Lokal buchen. Lokal kaufen. Den Wald erhalten.",
         welcomeSignoff: "Wir freuen uns darauf, Sie in Ranomafana willkommen zu heißen – bis bald!",
         welcomeLink: "Warum Ihr Besuch zählt",
         roomRates: "Zimmerpreise pro Nacht",
@@ -2575,6 +2853,130 @@
         ecoHeading: "Noch unentschlossen? <em>Das hier ist für Sie.</em>",
         ecoMnpHeading: "Was Madagascar National Parks tut",
         ecoNumbersHeading: "In Zahlen",
+        // translated page text, labels and listing categories (October 2026)
+        skipLink: "Zum Inhalt springen",
+        itinNote: "Diese Pläne beruhen auf den Reiserouten dieses Führers. Die Zeiten sind Vorschläge; Ihr Guide passt sie an Wetter und Tiere an.",
+        ghWaysIntro: "Ranomafana liegt in der Region Vatovavy im Südosten Madagaskars, 65 km von Fianarantsoa, der nächsten Stadt. Die Anreise aus Antananarivo kann mühsam sein, aber jede der folgenden Möglichkeiten funktioniert.",
+        way2Text: "Reservieren Sie einen Platz telefonisch oder per WhatsApp beim Cotisse-Busbahnhof in Antananarivo unter +261 32 11 027 10 oder vor Ort. Bezahlen Sie mindestens 24 Stunden vor Abfahrt: online mit PayPal oder MVola oder an jeder Cotisse-Station. Ein Platz nach Fianarantsoa kostet 40.000 Ar, mit Bussen tagsüber und nachts. Die Fahrt dauert etwa 12 Stunden, mit regelmäßigen Toilettenstopps und einer Mittagspause. Danach steigen Sie in Fianarantsoa um (siehe unten).",
+        waySoaText: "Buchen Sie telefonisch unter +261 32 11 905 00 oder am Busbahnhof und bezahlen Sie mindestens 24 Stunden vorher persönlich. Der Bus nach Manakara (65.000 Ar) fährt um 13:30 in Antananarivo ab und kommt gegen 03:00 durch Ranomafana, wo Sie aussteigen können. Ranomafana ist nachts sicher und ruhig. Sie wohnen in der Setam Lodge, in Forêt Australe, im Au Domnatur oder im Karibotel? Steigen Sie direkt vor Ihrem Hotel aus statt im Ort. Ein Platz nach Fianarantsoa kostet 45.000 Ar, falls Sie lieber dort umsteigen.",
+        way4Text: "Busse und holprige Straßen sind nicht gerade erholsam, deshalb mieten viele Besucher in Antananarivo ein Auto mit Fahrer. Suchen Sie dort nach Mietwagen oder privaten Fahrern; Dadamanga ist ein guter Ausgangspunkt. Rechnen Sie mit etwa 100–300 US-Dollar pro Auto, je nach Anbieter, ob mit Fahrer, wie viele Sie sind und zu welcher Jahreszeit. Die Fahrt dauert etwa 12 Stunden, mit Stopps, wo und wann Sie möchten: Antsirabe (nach 5 Stunden) und Ambositra (nach 8 Stunden, Heimat wunderschöner Holzschnitzerei) sind beliebt.",
+        wayFlyText: "Ein privates Charterflugzeug zum Flughafen Fianarantsoa braucht etwa eine Stunde. Es muss über ein Reisebüro gebucht werden, und die Preise schwanken. Ab Fianarantsoa geht es mit Bus oder Auto weiter.",
+        way1Text: "65 km auf der RN25. Regionale Taxi-Brousses (Sammelkleinbusse) fahren zu jeder Tageszeit am Busbahnhof ab: 7.000 Ar pro Person, etwa 2½ Stunden. Gehen Sie vor dem Einsteigen noch zur Toilette.",
+        way3Text: "Mananjary liegt 139 km entfernt an der RN25. Taxi-Brousses kommen auch von Manakara herauf.",
+        fianarText: "Der Cotisse-Tagesbus erreicht Fianarantsoa gegen 19:00, nach den letzten Bussen nach Ranomafana, also planen Sie eine Übernachtung ein. Nehmen Sie stattdessen den Nachtbus, kommen Sie morgens an und können direkt zum regionalen Busbahnhof gehen.",
+        fianarStep1: "Übernachten Sie nahe dem Cotisse-Busbahnhof. Zomatel und Hotel Vannie haben meist Zimmer frei, für 50.000–90.000 Ar pro Nacht. Zum Hotel Vannie sind es etwa 15 Minuten zu Fuß, zum Zomatel etwa 20. Ein Taxi braucht 5–10 Minuten und sollte nicht mehr als 10.000 Ar kosten; weiter entfernte Hotels, etwa in Mahamanina, kosten etwas mehr.",
+        fianarStep2: "Gehen Sie morgens vom Zomatel oder Vannie den Hügel hinunter (rechts halten) zum regionalen Busbahnhof. Von überall sonst versteht jeder Taxifahrer „brousse stationnement“.",
+        fianarStep3: "Regionale Brousses sind nicht wie Cotisse oder Soatrans: Sie sitzen eng gedrängt, das Gepäck kommt aufs Dach. Sagen Sie dem Fahrer oder dem Türsteher, dass Sie in Ranomafana aussteigen, und behalten Sie Ihre Wertsachen am Körper.",
+        gateText: "Der Parkeingang liegt in Ambodiamontana, etwa 7 km vom Zentrum Ranomafanas die RN25 hinauf. Die meisten Unterkünfte sind im Ort, und es gibt keinen Shuttle zwischen beiden.",
+        gateStep1: "Nehmen Sie am Taxi-Brousse-Bahnhof im Zentrum irgendein Brousse Richtung Fianarantsoa und sagen Sie, dass Sie am Parkeingang aussteigen: 20–25 Minuten, 1.000–2.000 Ar pro Person. Morgens sind Plätze knapp, weil die Parkmitarbeiter damit zur Arbeit fahren. Zurück geht es genauso.",
+        gateStep2: "Oder gehen Sie bei gutem Wetter zu Fuß zurück: eine wunderschöne Stunde bergab in den Ort, und manchmal sieht man Lemuren nahe der Straße.",
+        gateStep3: "Oder übernachten Sie am Waldrand: Die Setam Lodge liegt 800 m zu Fuß vom Parkeingang, und das Centre ValBio direkt am Park. <a class=\"text-link\" href=\"#stay\">Unterkünfte →</a>",
+        pack1Text: "Der Park nimmt nur Bargeld, die meisten Unterkünfte ebenso. Kleine Scheine helfen.",
+        pack2Text: "{stays} Unterkünfte, vom Waldrand bis in den Ort. <a class=\"text-link\" href=\"#stay\">Unterkünfte ansehen →</a>",
+        pack3Text: "Zu jeder Jahreszeit. <a class=\"text-link\" href=\"#when\">Reisezeit →</a>",
+        ghSources: "Quellen: Cotisse, Soatrans, Privatauto, Charterflug, Anschlüsse in Fianarantsoa, Preise, Fahrzeiten und der Weg zum Parkeingang aus den eigenen Notizen dieses Führers vor Ort (Oktober 2026); Entfernungen von Madagascar National Parks; Taxi-Brousse-Verbindungen von der Küste aus Wikivoyage (Stand November 2017). Straßen und Preise ändern sich, also vor Ort nachfragen.",
+        wetText: "Tagsüber etwa 26 °C und feucht, von November bis Februar über 28 °C. Etwa 80 % des Jahresregens fallen in diesen Monaten. Von Januar bis März ist Zyklonsaison, und manche Tage sind für die Wege zu nass.",
+        dryText: "Tagsüber etwa 22 °C, nachts bis zu 10 °C. Juni bis August ist die kalte Jahreszeit, in der Reptilien und einige andere Tiere schwerer zu finden sind. Trockener ist hier relativ: Es regnet trotzdem.",
+        sweetText: "Mildes Wetter und weniger Regen, und nach den kalten Monaten sind die Tiere wieder aktiv. Im Oktober und November bekommen viele Lemuren Junge.",
+        rainShellText: "Zu jeder Jahreszeit mitnehmen.",
+        sturdyShoesText: "Die Wege sind steil und bei Nässe rutschig.",
+        midMorningText: "Der Park ist {parkHours} geöffnet. Der Vormittag, wenn die Lemuren zu fressen beginnen, ist die beste Zeit für den Besuch.",
+        whenSources: "Quellen: heiße und kalte Jahreszeit sowie der Regenanteil von 80 % von Madagascar National Parks; Tages- und Nachttemperaturen, Zyklonsaison, beste Monate und Lemurengeburten von SafariBookings; Zustand der Wege aus Wikipedia; Feste aus den Veranstaltungen dieses Führers.",
+        step1Text: "Fragen Sie Ihr Hotel, oder kommen Sie zum Park und wählen Sie unter den Guides, die an dem Tag arbeiten. Online lassen sich Guides nicht buchen.",
+        step2Text: "Die Preise richten sich nach Rundweg und Dauer, Spezialisten kosten mehr. Sagen Sie Ihrem Guide, wie fit Sie sind und was Sie beschäftigt: Er passt die Route an.",
+        step3Text: "Nur Bargeld: Parkeintritt, die Gemeindeabgabe an ihrem eigenen Schalter und die Guidegebühr für Ihre Gruppe.",
+        step4Text: "Der Park ist {parkHours} geöffnet. Der Vormittag, wenn die Lemuren wach sind und zu fressen beginnen, ist die beste Zeit. <a class=\"text-link\" href=\"#getting-here\">Zum Parkeingang →</a>",
+        costText: "Die Guidegebühr teilen sich alle in Ihrer Gruppe, mit mehr Leuten wird es also für jeden günstiger. Ein Guide nimmt eine Gruppe von einer bis vier Personen; ab sechs Personen braucht es mindestens zwei.",
+        costFootnote: "Guidepreise nach Rundweg, Stand {feesAsOf}. Dazu Parkeintritt: {entryFee} pro Erwachsenem und Tag ({childFee} für 5–12 Jahre, unter 5 frei) und eine Gemeindeabgabe von {communityFee}. <a class=\"text-link\" style=\"font-size: 13px;\" href=\"#park\">Parkgebühren →</a>",
+        soloText: "Bitten Sie das Parkbüro, Sie mit anderen Besuchern zusammenzubringen, damit Sie sich eine Guidegebühr teilen.",
+        spotterText: "Spotter durchstreifen den Wald und sagen Ihrem Guide per Telefon, wo die Tiere sind, sodass Sie direkt zu ihnen gehen können. Der Spotter ist im Guidepreis enthalten.",
+        specText: "Spezial-Guides sind Experten darin, die Vögel, Pflanzen oder Reptilien und Amphibien des Parks zu finden und zu erklären. Wegen dieses Fachwissens kosten sie {specialistFee}, unabhängig vom Rundweg. Spezial-Guides lassen sich auch über das Centre ValBio vermitteln.",
+        specPrimatesText: "Lemuren, darunter der Goldene Bambuslemur.",
+        specBirdsText: "Vogelbeobachter: Fragen Sie gezielt nach einem Vogel-Guide. <a class=\"text-link\" href=\"#itineraries\" onclick=\"openItinerary('birders-two-day'); return false;\">Route für Vogelbeobachter →</a>",
+        specHerpsText: "Frösche, Chamäleons und Plattschwanzgeckos.",
+        specBotanyText: "Orchideen, Baumfarne und der Wald selbst.",
+        outsideMitsinjoText: "Gemeinde-Guides aus Ambatolahy führen Tag- und Nachtwanderungen, und die Gebühren gehen direkt an das Dorf.",
+        outsideAmbohiText: "Ein 75 Hektar großes Reservat am Rand des Nationalparks, etwa 3 km zu Fuß vom Ort, verwaltet vom örtlichen Gemeindeverein (dem VOI) nach Madagaskars Gesetz über die gemeinschaftliche Waldverwaltung. Wege und ein Wasserfall am Fluss werden für Besucher geöffnet, mit von Madagascar National Parks zertifizierten Guides und Forschungsverbindungen zum Centre ValBio. Der Besucherbetrieb wird noch aufgebaut, also fragen Sie vorher.",
+        outsideNightText: "Für Nachtwanderungen am Waldrand entlang der RN25 braucht man kein Parkticket.",
+        guidesSources: "Quellen: Guidepreise nach Rundweg, Spezialistenpreise, Gruppengrößen, Öffnungszeiten und wie man einen Guide findet aus den eigenen Notizen dieses Führers vor Ort (Oktober 2026), im Einklang mit Reiseberichten (The Travelling Sloth, August 2025; The Blog of Dimi, Januar 2024); Gemeindeabgabe von Madagascar National Parks; Gemeinde-Guides aus den Parkeinträgen dieses Führers; Fachgebiete von The Blog of Dimi; Spezialisten des Centre ValBio aus Wikipedia; Spotter per Telefon aus Wikivoyage. Preise ändern sich, also im Parkbüro nachfragen.",
+        ecoText1: "Der Regenwald, die Lemuren und die heißen Quellen locken gemeinsam internationale und madagassische Besucher nach Ranomafana, und davon profitieren die 20.000 Einwohner des Orts und die Landschaft um sie herum mehr, als man denkt.",
+        ecoText2: "Ökotourismus bringt wichtige Einnahmen, die hier direkt den Naturschutz finanzieren. Geld aus Eintritten, Führungen und anderen Parkangeboten fließt oft zurück in den Unterhalt des Parks, den Schutz seiner Tiere und wichtige Biodiversitätsforschung.",
+        ecoText3: "Seit 1991 verwaltet Madagascar National Parks (MNP) den Nationalpark Ranomafana und die Pflanzen und Tiere, die es nur hier gibt. MNP ist ein privater, als gemeinnützig anerkannter Verein unter der Aufsicht des madagassischen Ministeriums für Umwelt und nachhaltige Entwicklung. Seine Aufgabe ist es, ein Netz von Nationalparks und Reservaten einzurichten, zu erhalten und nachhaltig zu verwalten, das die biologische Vielfalt und das Naturerbe Madagaskars abbildet, und die örtlichen Gemeinden daran zu beteiligen.",
+        mnp1: "Schickt Ranger auf Patrouille, um die natürlichen Ressourcen des Parks zu schützen, und überwacht den Zustand von Tieren und Wald.",
+        mnp2: "Baut und pflegt Naturschutz-Infrastruktur wie Grenzmarkierungen, Brandschneisen und Wachtürme.",
+        mnp3: "Macht der Öffentlichkeit bewusst, warum die Artenvielfalt des Parks wichtig ist.",
+        mnp4: "Arbeitet mit den örtlichen Gemeinden, die sich als Guides, Begleiter, Träger, Köche und Arbeiter am Naturschutz beteiligen.",
+        mnp5: "Sorgt dafür, dass touristische Einrichtungen vorhanden sind, damit die Gemeinden von den Besuchern profitieren.",
+        mnp6: "Arbeitet mit Forschungs- und Entwicklungsorganisationen rund um den Park zusammen, erweitert das Wissen über ihn und unterstützt die lokale Wirtschaft.",
+        num1Text: "internationale Besucher pro Jahr vor der COVID-19-Pandemie",
+        num2Text: "pro Jahr seitdem: weniger als ein Fünftel der früheren Besucherzahl",
+        num3Text: "Menschen leben in Ranomafana, viele arbeiten in Hotels, Restaurants und Läden",
+        ecoText4: "Ohne Besucher kann MNP nicht so arbeiten, wie es sollte. Die Pandemie hat den Ökotourismus in ganz Madagaskar verwüstet und sowohl die Naturschutzarbeit von MNP als auch den Lebensunterhalt der Menschen im Ort belastet, die die Hotels, Restaurants und Läden für Besucher betreiben.",
+        ecoText5: "Ihr Besuch ist ein kleiner, aber wirklich bedeutsamer Beitrag dazu, Madagaskar zurückzugeben, was die Pandemie genommen hat. Ihre Anwesenheit wird geschätzt, und Sie sind hier herzlich willkommen.",
+        teamText: "Diesen Führer hat der Peace-Corps-Freiwillige Kyle Schmidt erstellt, finanziert von PIC3 und unterstützt von PCDT-R und der Gemeinde Ranomafana. Profile folgen bald: Jede Karte hat Platz für ein Porträtfoto, eine kurze Biografie und direkte Kontaktdaten.",
+        teamRole1: "Leitung Tourismusteam",
+        teamBio1: "Eine kurze Vorstellung der Arbeit dieses Teammitglieds und seiner Verbindung zu Ranomafana.",
+        teamRole2: "Verbindung zur Gemeinde",
+        teamBio2: "Gemeindepartnerschaften, Ortskenntnis und Unterstützung für Besucher.",
+        teamRole3: "Besucherinformation",
+        teamBio3: "Hilft Besuchern, sichere, respektvolle und unvergessliche Reisen zu planen.",
+        teamRole4: "Digitales und Partnerschaften",
+        teamBio4: "Hält diesen Führer aktuell und arbeitet mit Partnern vor Ort.",
+        aboutSources: "Quellen: Besucherzahlen, Einwohnerzahl und die Rolle von Madagascar National Parks aus den eigenen Notizen dieses Führers vor Ort (Oktober 2026).",
+        ariaHome: "Ranomafana – Startseite",
+        ariaMainNav: "Hauptnavigation",
+        ariaOpenMenu: "Menü öffnen",
+        ariaMenu: "Menü",
+        ariaCloseMenu: "Menü schließen",
+        ariaAllPages: "Alle Seiten",
+        ariaStartHere: "Hier anfangen",
+        ariaBreadcrumb: "Brotkrumennavigation",
+        ariaFilters: "Filter",
+        ariaResults: "Ergebnisse",
+        ariaVisitDetails: "Besuchsinfos",
+        ariaChoosePlan: "Plan wählen",
+        ariaChooseMonth: "Monat wählen",
+        ariaCalendar: "Kalender",
+        ariaPrimaryNav: "Navigation",
+        ariaClose: "Schließen",
+        altGecko: "Ein Plattschwanzgecko nachts auf einem Ast",
+        altLemurTrunk: "Ein Lemur klammert sich zwischen Bambus an einen Baumstamm, Nationalpark Ranomafana",
+        altSatanicGecko: "Satanischer Plattschwanzgecko",
+        altRiverPool: "Flussbecken im Gemeindereservat VOI Ambohimagneva",
+        altThermalePool: "Das Freibecken der Station Thermale",
+        altGrenatDining: "Speisesaal des Restaurants im Grenat Hotel",
+        altGuideHat: "Ein Guide mit Strohhut und Wanderstock blickt in den Regenwald",
+        altGuideAdrien: "Guide Adrien auf dem Bohlenweg in VOI Ambohimagneva",
+        altTownFlowers: "Rosa Blüten im Ort Ranomafana, dahinter die bewaldeten Berge",
+        newTabSuffix: "öffnet in neuem Tab",
+        teamHeadshot: "Porträt",
+        teamNameTbc: "Name folgt",
+        reviewOne: "{n} Bewertung",
+        reviewMany: "{n} Bewertungen",
+        catNationalPark: "Nationalpark",
+        catCommunityConservation: "Naturschutz durch Gemeinden",
+        catWildlife: "Tierwelt",
+        catThermalSprings: "Thermalquellen",
+        catWaterfall: "Wasserfall",
+        catWaterActivity: "Wassersport",
+        catGarden: "Garten",
+        catResearch: "Forschung und Naturschutz",
+        catArtCulture: "Kunst und Kultur",
+        catMarket: "Markt",
+        catPractical: "Praktisches",
+        catFood: "Essen",
+        catCulture: "Kultur",
+        catConservation: "Naturschutz",
+        noteHot: "Heiße Jahreszeit: über 28 °C, feucht.",
+        noteCyclone: "Zyklonsaison (Januar bis März): Manche Tage sind für die Wege zu nass.",
+        noteCold: "Kalte Jahreszeit: nachts bis zu 10 °C. Reptilien und einige andere Tiere sind schwerer zu finden.",
+        noteBest: "Einer der besten Monate: mild und weniger Regen.",
+        noteBabies: "Im Oktober und November bekommen viele Lemuren Junge.",
+        noteWetEnds: "Der letzte Monat der Regenzeit.",
+        noteDryBegins: "Tagsüber etwa 22 °C, die trockenere Jahreszeit beginnt.",
+        noteActiveAgain: "Nach den kalten Monaten sind die Tiere wieder aktiv.",
+        noteDryEnds: "Der letzte Monat der trockeneren Jahreszeit.",
+        noteWetBegins: "Regenzeit und heiße Jahreszeit beginnen."
       },
 
       mg: {
@@ -2721,8 +3123,11 @@
         storyComing: "Ho avy tsy ho ela ny tantara feno.",
         allPhotos: "Jereo ny sary rehetra",
         footerCredit: "Nataon'i Kyle Schmidt, mpilatsaka an-tsitrapo ao amin'ny Peace Corps · Novatsian'ny PIC3 vola · Notohanan'ny PCDT-R sy ny Kaominina Ranomafana · Misaotra an'i Emma Starink",
-        welcomeEyebrow: "Tongasoa",
+        welcomeEyebrow: "Nahoana i Ranomafana?",
         welcomeHeading: "Tongasoa eto <em>Ranomafana!</em>",
+        welcomeText1: "Fitsangatsanganana mampientanentana.<br>Dia lalina anaty ala.<br>Fialan-tsasatra ao amin'ny rano mafana.<br>Harena voajanahary malaza eran-tany.",
+        welcomeText2: "Lova Iraisan'izao Tontolo Izao ao amin'ny UNESCO, fonenan'ny karazana gidro efatra ambin'ny folo i Ranomafana, anisan'izany ny gidro volamena mpihinam-bolo tsy fahita firy. Araho izy ireo miaraka amin'ny mpitari-dalana eto an-toerana, tadiavo amin'ny jiro ny tana, mandehana mankany amin'ny riandrano, mitaingena kayak eny amin'ny Namorona, ary miala sasatra ao amin'ny loharano mafana.",
+        welcomeText3: "Manan-danja ny fijanonanao: manampy amin'ny fiarovana ny ala ny saram-pidirana ao amin'ny valan-javaboahary, ary mipetraka eto ireo mpitari-dalana, mpahandro ary mpampiantrano hihaonanao. Ampiasao ny eto an-toerana. Mividiana eto an-toerana. Arovy ny ala.",
         welcomeSignoff: "Miandry anao eto Ranomafana izahay, ary manantena ny hihaona aminao tsy ho ela!",
         welcomeLink: "Nahoana no zava-dehibe ny fitsidihanao",
         roomRates: "Vidin'ny efitrano, isan-alina",
@@ -2742,7 +3147,131 @@
         ecoHeading: "Mbola misalasala ve ianao? <em>Ho anao ity.</em>",
         ecoMnpHeading: "Ny asan'ny Madagascar National Parks",
         ecoNumbersHeading: "Amin'ny isa",
-        monthNames: "Janoary,Febroary,Martsa,Aprily,Mey,Jona,Jolay,Aogositra,Septambra,Oktobra,Novambra,Desambra"
+        monthNames: "Janoary,Febroary,Martsa,Aprily,Mey,Jona,Jolay,Aogositra,Septambra,Oktobra,Novambra,Desambra",
+        // translated page text, labels and listing categories (October 2026)
+        skipLink: "Mankanesa any amin'ny votoatiny",
+        itinNote: "Avy amin'ny lalana voaomana ao amin'ity torolàlana ity ireo fandaharana ireo. Soso-kevitra fotsiny ny ora; hampifanarahan'ny mpitari-dalanao amin'ny toetr'andro sy ny biby izany.",
+        ghWaysIntro: "Ao amin'ny faritra Vatovavy any atsimo atsinanan'i Madagasikara i Ranomafana, 65 km miala an'i Fianarantsoa, ilay tanàn-dehibe akaiky indrindra. Mety ho sarotra ny avy any Antananarivo, saingy mandeha avokoa ireo safidy rehetra etsy ambany.",
+        way2Text: "Mamandriha toerana amin'ny fiantsoana na amin'ny WhatsApp ny fiantsonan'ny Cotisse ao Antananarivo amin'ny +261 32 11 027 10, na mivantana any. Aloa farafahakeliny 24 ora alohan'ny fiaingana: amin'ny aterineto amin'ny PayPal na MVola, na any amin'ny biraon'ny Cotisse rehetra. 40 000 Ar ny toerana mankany Fianarantsoa, misy fiara antoandro sy alina. Adiny 12 eo ho eo ny dia, misy fijanonana tsy tapaka ho an'ny kabone sy fiatoana hisakafoana antoandro. Avy eo dia miova fiara any Fianarantsoa ianao (jereo etsy ambany).",
+        waySoaText: "Mamandriha amin'ny fiantsoana ny +261 32 11 905 00 na any amin'ny fiantsonana, ary aloa mivantana farafahakeliny 24 ora mialoha. Miainga avy any Antananarivo amin'ny 13:30 ny fiara mankany Manakara (65 000 Ar) ary mandalo an'i Ranomafana amin'ny 03:00 eo ho eo, izay ahafahanao midina. Milamina sady azo antoka i Ranomafana amin'ny alina. Matory ao Setam Lodge, Forêt Australe, Au Domnatur na Karibotel ve ianao? Midina eo anoloan'ny hotelinao fa aza any an-tanàna. 45 000 Ar ny toerana mankany Fianarantsoa raha aleonao miova fiara any.",
+        way4Text: "Tsy dia mampiala sasatra loatra ny fiara fitateram-bahoaka sy ny lalana ratsy, ka maro ny mpitsidika manofa fiara miaraka amin'ny mpamily any Antananarivo. Mitadiava fanofana fiara na mpamily manokana any; tsara hanombohana ny Dadamanga. Eo amin'ny 100–300 dolara amerikanina eo ho eo isaky ny fiara, arakaraka ny orinasa, raha misy mpamily na tsia, ny isanareo ary ny vanim-potoana. Adiny 12 eo ho eo ny dia, mijanona amin'izay toerana sy fotoana tianao: tian'ny maro i Antsirabe (aorian'ny adiny 5) sy Ambositra (aorian'ny adiny 8, tanànan'ny sokitra hazo mahafinaritra).",
+        wayFlyText: "Adiny iray eo ho eo ny sidina manokana mankany amin'ny seranam-piaramanidin'i Fianarantsoa. Tsy maintsy amandrihana amin'ny alalan'ny masoivoho fitsangatsanganana izany, ary miovaova ny vidiny. Avy any Fianarantsoa dia mitohiza amin'ny fiara fitateram-bahoaka na fiara.",
+        way1Text: "65 km amin'ny RN25. Miainga avy eo amin'ny fiantsonana amin'ny ora rehetra amin'ny andro ny taxi-brousse (fiara kely iombonana): 7 000 Ar isan'olona, adiny 2½ eo ho eo. Mankanesa any amin'ny kabone alohan'ny hiakarana.",
+        way3Text: "139 km amin'ny RN25 i Mananjary. Misy taxi-brousse miakatra avy any Manakara koa.",
+        fianarText: "Tonga any Fianarantsoa amin'ny 19:00 eo ho eo ny Cotisse antoandro, aorian'ny fiara farany mankany Ranomafana, ka miomàna hatory any. Raha ny fiara alina kosa no raisinao dia tonga amin'ny maraina ianao, vonona handeha mivantana any amin'ny fiantsonan'ny taxi-brousse.",
+        fianarStep1: "Matory akaikin'ny fiantsonan'ny Cotisse. Matetika manana efitrano ny Zomatel sy ny Hotel Vannie, 50 000–90 000 Ar isan-alina. 15 minitra eo ho eo an-tongotra ny Hotel Vannie ary 20 eo ho eo ny Zomatel. 5–10 minitra ny taxi ary tsy tokony hihoatra ny 10 000 Ar; lafo kokoa kely ireo hotely lavitra kokoa, toa ao Mahamanina.",
+        fianarStep2: "Amin'ny maraina, midina ny havoana avy ao Zomatel na Vannie (mankany ankavanana) mankany amin'ny fiantsonan'ny taxi-brousse. Avy any an-toeran-kafa, ho azon'ny mpamily taxi rehetra ny hoe \"brousse stationnement\".",
+        fianarStep3: "Tsy mitovy amin'ny Cotisse na Soatrans ny taxi-brousse: hifanizina ianao, ary ho eo ambony tafo ny entanao. Lazao amin'ny mpamily na ny mpanampy azy fa hidina ao Ranomafana ianao, ary aza afaka aminao ny zavatra sarobidy.",
+        gateText: "Ao Ambodiamontana ny fidirana amin'ny valan-javaboahary, 7 km eo ho eo miakatra amin'ny RN25 avy eo afovoan'i Ranomafana. Ao an-tanàna ny ankamaroan'ny toerana hatoriana, ary tsy misy fiara mampitohy azy roa.",
+        gateStep1: "Avy eo amin'ny fiantsonan'ny taxi-brousse eo afovoan-tanàna, mandehana taxi-brousse mankany Fianarantsoa ary lazao fa hidina eo amin'ny fidirana amin'ny valan-javaboahary ianao: 20–25 minitra, 1 000–2 000 Ar isan'olona. Vitsy ny toerana amin'ny maraina, satria ampiasain'ny mpiasan'ny valan-javaboahary handehanana hiasa izy ireo. Toy izany koa ny fiverenana.",
+        gateStep2: "Na miverena an-tongotra raha mamela ny toetr'andro: adiny iray mahafinaritra midina mankany an-tanàna, ary indraindray misy gidro hita eo akaikin'ny lalana.",
+        gateStep3: "Na matory eo amin'ny sisin'ala: 800 m an-tongotra miala ny fidirana amin'ny valan-javaboahary ny Setam Lodge, ary eo akaikin'ny valan-javaboahary ny Centre ValBio. <a class=\"text-link\" href=\"#stay\">Toerana hatoriana →</a>",
+        pack1Text: "Vola an-tanana ihany no raisin'ny valan-javaboahary, ary toy izany koa ny ankamaroan'ny toerana hatoriana. Mahasoa ny vola madinika.",
+        pack2Text: "Toerana hatoriana {stays}, manomboka eo amin'ny sisin'ala ka hatrany an-tanàna. <a class=\"text-link\" href=\"#stay\">Jereo ny toerana hatoriana →</a>",
+        pack3Text: "Na inona na inona vanim-potoana. <a class=\"text-link\" href=\"#when\">Rahoviana no tsara ho avy →</a>",
+        ghSources: "Loharano: Cotisse, Soatrans, fiara manokana, sidina manokana, fifandraisana any Fianarantsoa, vidiny, faharetan'ny dia ary ny fomba hahatongavana eo amin'ny fidirana amin'ny valan-javaboahary avy amin'ny naoty an-toerana nataon'ity torolàlana ity (Oktobra 2026); halavirana avy amin'ny Madagascar National Parks; lalan'ny taxi-brousse avy any amin'ny morontsiraka avy amin'ny Wikivoyage (navaozina Novambra 2017). Miova ny lalana sy ny vidiny, ka hamarino eto an-toerana.",
+        wetText: "Eo amin'ny 26°C eo ho eo amin'ny antoandro ary mando ny rivotra, mihoatra ny 28°C manomboka amin'ny Novambra ka hatramin'ny Febroary. Eo amin'ny 80% eo ho eo amin'ny oran'ny taona no milatsaka amin'ireo volana ireo. Ny Janoary ka hatramin'ny Martsa no vanim-potoanan'ny rivo-doza, ary misy andro be orana loatra ho an'ny lalana.",
+        dryText: "Eo amin'ny 22°C eo ho eo amin'ny antoandro, ary mety hidina hatramin'ny 10°C amin'ny alina. Ny Jona ka hatramin'ny Aogositra no vanim-potoana mangatsiaka, izay sarotra kokoa ny hahitana ny biby mandady sy biby hafa. Tsy dia maina loatra eto: mbola misy orana ihany.",
+        sweetText: "Andro mafana antonony sy orana vitsy kokoa, ary mihetsika indray ny biby aorian'ny volana mangatsiaka. Amin'ny Oktobra sy Novambra dia maro ny gidro miteraka.",
+        rainShellText: "Mitondrà iray na inona na inona vanim-potoana.",
+        sturdyShoesText: "Mideza ny lalana, ary malama rehefa lena.",
+        midMorningText: "Misokatra amin'ny {parkHours} ny valan-javaboahary. Ny antoandro maraina, rehefa manomboka mihinana ny gidro, no fotoana tsara indrindra hidirana.",
+        whenSources: "Loharano: ny vanim-potoana mafana sy mangatsiaka ary ny 80% amin'ny orana avy amin'ny Madagascar National Parks; ny hafanana amin'ny antoandro sy alina, ny vanim-potoanan'ny rivo-doza, ny volana tsara indrindra ary ny fiterahan'ny gidro avy amin'ny SafariBookings; ny toetry ny lalana avy amin'ny Wikipedia; ny fety avy amin'ny lisitry ny hetsika ao amin'ity torolàlana ity.",
+        step1Text: "Anontanio amin'ny hotelinao, na mankanesa any amin'ny valan-javaboahary ary misafidiana amin'ireo mpitari-dalana miasa amin'io andro io. Tsy azo amandrihana amin'ny aterineto ny mpitari-dalana.",
+        step2Text: "Arakaraka ny lalana sy ny halavany ny vidiny, ary lafo kokoa ny manampahaizana manokana. Lazao amin'ny mpitari-dalanao ny herinao sy izay manahiana anao: hampifanaraka ny lalana aminao izy.",
+        step3Text: "Vola an-tanana ihany: ny fidirana amin'ny valan-javaboahary, ny saran'ny fiaraha-monina amin'ny varavarankely manokana, ary ny saran'ny mpitari-dalana ho an'ny vondronao.",
+        step4Text: "Misokatra amin'ny {parkHours} ny valan-javaboahary. Ny antoandro maraina, rehefa mifoha ny gidro ary manomboka mihinana, no fotoana tsara indrindra. <a class=\"text-link\" href=\"#getting-here\">Mankany amin'ny vavahady →</a>",
+        costText: "Zarain'ny olona rehetra ao amin'ny vondronao ny saran'ny mpitari-dalana, ka arakaraka ny hamaroan'ny olona no hihenan'ny anjaran'ny tsirairay. Mpitari-dalana iray no mitondra vondrona olona iray ka hatramin'ny efatra; roa farafahakeliny ho an'ny vondrona olona enina na mihoatra.",
+        costFootnote: "Saran'ny mpitari-dalana isaky ny lalana, {feesAsOf}. Miampy ny fidirana amin'ny valan-javaboahary: {entryFee} isan'olon-dehibe isan'andro ({childFee} ho an'ny 5–12 taona, maimaim-poana latsaky ny 5 taona) ary saran'ny fiaraha-monina {communityFee}. <a class=\"text-link\" style=\"font-size: 13px;\" href=\"#park\">Saran'ny valan-javaboahary →</a>",
+        soloText: "Angataho amin'ny biraon'ny valan-javaboahary ny hampiarahana anao amin'ny mpitsidika hafa mba hizarana ny saran'ny mpitari-dalana iray.",
+        spotterText: "Misy mpitady biby mandehandeha ao an'ala ary milaza amin'ny mpitari-dalanao amin'ny telefaona hoe aiza ny biby, ka afaka mandeha mivantana any aminy ianao. Tafiditra ao amin'ny saran'ny mpitari-dalana ny mpitady biby.",
+        specText: "Ireo mpitari-dalana manampahaizana manokana dia mahay mitady sy manazava ny vorona, ny zava-maniry, na ny biby mandady sy ny amfibiana ao amin'ny valan-javaboahary. Noho izany fahaizana izany dia {specialistFee} ny sarany, na inona na inona lalana. Azo alahatra amin'ny alalan'ny Centre ValBio koa ny mpitari-dalana manampahaizana manokana.",
+        specPrimatesText: "Gidro, anisan'izany ny gidro volamena mpihinam-bolo.",
+        specBirdsText: "Mpijery vorona: angataho amin'ny anarany ny mpitari-dalana manampahaizana momba ny vorona. <a class=\"text-link\" href=\"#itineraries\" onclick=\"openItinerary('birders-two-day'); return false;\">Lalana ho an'ny mpijery vorona →</a>",
+        specHerpsText: "Sahona, tana ary androngo rambo ravina.",
+        specBotanyText: "Orkide, fanjana goavana ary ny ala mihitsy.",
+        outsideMitsinjoText: "Mpitari-dalana avy amin'ny fiaraha-monina ao Ambatolahy no mitarika fitsangatsanganana atoandro sy alina, ary mankany amin'ny tanàna mivantana ny sarany.",
+        outsideAmbohiText: "Tahiry 75 hektara mifanila amin'ny valan-javaboahary, 3 km eo ho eo an-tongotra miala ny tanàna, tantanan'ny fikambanan'ny fiaraha-monina eto an-toerana (ny VOI) araka ny lalàna malagasy momba ny fitantanana ny ala ataon'ny fiaraha-monina. Efa sokafana ho an'ny mpitsidika ny lalana sy riandrano iray eo amin'ny renirano, miaraka amin'ny mpitari-dalana nahazo fahazoan-dalana avy amin'ny Madagascar National Parks ary fifandraisana amin'ny Centre ValBio amin'ny fikarohana. Mbola eo am-panomanana ny fandraisana mpitsidika, ka manontania alohan'ny handehananao.",
+        outsideNightText: "Tsy mila tapakilan'ny valan-javaboahary ny fitsangatsanganana amin'ny alina eo amin'ny sisin'ala amoron'ny RN25.",
+        guidesSources: "Loharano: saran'ny mpitari-dalana isaky ny lalana, saran'ny manampahaizana manokana, haben'ny vondrona, ora fisokafana ary ny fomba hitadiavana mpitari-dalana avy amin'ny naoty an-toerana nataon'ity torolàlana ity (Oktobra 2026), mifanaraka amin'ny tatitry ny mpandeha (The Travelling Sloth, Aogositra 2025; The Blog of Dimi, Janoary 2024); saran'ny fiaraha-monina avy amin'ny Madagascar National Parks; mpitari-dalana avy amin'ny fiaraha-monina avy amin'ny lisitra ao amin'ity torolàlana ity; sehatra manokana avy amin'ny The Blog of Dimi; manampahaizana ao amin'ny Centre ValBio avy amin'ny Wikipedia; mpitady biby amin'ny telefaona avy amin'ny Wikivoyage. Miova ny vidiny, ka hamarino ao amin'ny biraon'ny valan-javaboahary.",
+        ecoText1: "Ny ala mando, ny gidro ary ny loharano mafana no miara-misarika mpitsidika vahiny sy malagasy ho any Ranomafana, ary mahasoa ny mponina 20 000 ao an-tanàna sy ny tontolo manodidina azy izany mihoatra noho izay eritreretinao.",
+        ecoText2: "Ny fizahan-tany maharitra dia mitondra vola miditra tena ilaina izay mamatsy mivantana ny fiarovana ny zava-boahary eto. Matetika ny vola avy amin'ny saram-pidirana, ny fitsangatsanganana miaraka amin'ny mpitari-dalana ary ny asa hafa ao amin'ny valan-javaboahary dia ampiasaina indray amin'ny fikarakarana ny valan-javaboahary, ny fiarovana ny biby ao aminy ary ny fanohanana ny fikarohana manan-danja momba ny zava-boahary.",
+        ecoText3: "Nanomboka tamin'ny 1991, ny Madagascar National Parks (MNP) no mitantana ny valan-javaboahary Ranomafana sy ireo zava-maniry sy biby tsy hita afa-tsy eto. Fikambanana tsy miankina ekena ho mahasoa ny besinimaro ny MNP, miasa eo ambany fanaraha-mason'ny Minisiteran'ny Tontolo Iainana sy ny Fampandrosoana Maharitra. Ny iraka ananany dia ny manangana, miaro ary mitantana maharitra tambajotram-balan-javaboahary sy tahiry maneho ny fahasamihafan'ny zava-boahary sy ny harena voajanahary eto Madagasikara, ary mampandray anjara ny fiaraha-monina eo an-toerana amin'izany.",
+        mnp1: "Mandefa mpiambina hanao fisafoana mba hiarovana ny harena voajanaharin'ny valan-javaboahary, ary manara-maso ny fahasalaman'ny biby sy ny ala.",
+        mnp2: "Manorina sy mikarakara fotodrafitrasa fiarovana toy ny famantarana sisintany, lalana fiarovana amin'ny afo ary tilikambo fiambenana.",
+        mnp3: "Manentana ny besinimaro momba ny maha-zava-dehibe ny zava-boaharin'ny valan-javaboahary.",
+        mnp4: "Miara-miasa amin'ny fiaraha-monina eo an-toerana, izay mandray anjara amin'ny fiarovana amin'ny maha-mpitari-dalana, mpanaraka, mpitondra entana, mpahandro ary mpiasa azy.",
+        mnp5: "Manao izay hisian'ny fotodrafitrasa ho an'ny fizahan-tany, mba hahazoan'ny fiaraha-monina tombony amin'ny mpitsidika.",
+        mnp6: "Miara-miasa amin'ireo fikambanana mpikaroka sy mpanentana fampandrosoana manodidina ny valan-javaboahary, manampy ny fahalalana momba azy ary manohana ny toekarena eo an-toerana.",
+        num1Text: "mpitsidika vahiny isan-taona talohan'ny areti-mifindra COVID-19",
+        num2Text: "isan-taona hatramin'izay: latsaky ny ampahadimin'ny mpitsidika taloha",
+        num3Text: "olona no mipetraka ao Ranomafana, maro amin'izy ireo no miasa ao amin'ny hotely, trano fisakafoana ary fivarotana",
+        ecoText4: "Raha tsy misy mpitsidika dia tsy afaka miasa araka ny tokony ho izy ny MNP. Nanimba ny fizahan-tany maharitra manerana an'i Madagasikara ny areti-mifindra, ka nanahirana na ny asa fiarovana ataon'ny MNP na ny fivelomanan'ny olona ao an-tanàna mitantana ny hotely, trano fisakafoana ary fivarotana manompo ny mpitsidika.",
+        ecoText5: "Anjara kely nefa tena manan-danja amin'ny famerenana izay nalain'ny areti-mifindra tamin'i Madagasikara ny fitsidihanao. Ankasitrahana ny fahatongavanao, ary tena tongasoa ianao eto.",
+        teamText: "Nataon'i Kyle Schmidt, mpilatsaka an-tsitrapo ao amin'ny Peace Corps, ity torolàlana ity, novatsian'ny PIC3 vola ary notohanan'ny PCDT-R sy ny Kaominina Ranomafana. Ho avy tsy ho ela ny mombamomba ny ekipa: misy toerana ho an'ny sary, tantaram-piainana fohy ary fomba hifandraisana mivantana ny karatra tsirairay.",
+        teamRole1: "Mpitarika ny ekipan'ny fizahan-tany",
+        teamBio1: "Fampahafantarana fohy ny asan'ity mpikambana ao amin'ny ekipa ity sy ny fifandraisany amin'i Ranomafana.",
+        teamRole2: "Mpampifandray amin'ny fiaraha-monina",
+        teamBio2: "Fiaraha-miasa amin'ny fiaraha-monina, fahalalana ny eto an-toerana ary fanampiana ny mpitsidika.",
+        teamRole3: "Fampahalalana ho an'ny mpitsidika",
+        teamBio3: "Manampy ny mpitsidika hikarakara dia azo antoka, manaja ary tsy hay hadinoina.",
+        teamRole4: "Nomerika sy fiaraha-miasa",
+        teamBio4: "Manavao ity torolàlana ity ary miara-miasa amin'ireo mpiara-miasa eto an-toerana.",
+        aboutSources: "Loharano: isan'ny mpitsidika, isan'ny mponina ary ny anjara asan'ny Madagascar National Parks avy amin'ny naoty an-toerana nataon'ity torolàlana ity (Oktobra 2026).",
+        ariaHome: "Ranomafana — fandraisana",
+        ariaMainNav: "Fitetezana lehibe",
+        ariaOpenMenu: "Sokafy ny menio",
+        ariaMenu: "Menio",
+        ariaCloseMenu: "Akatony ny menio",
+        ariaAllPages: "Pejy rehetra",
+        ariaStartHere: "Manomboka eto",
+        ariaBreadcrumb: "Lalana nalehanao",
+        ariaFilters: "Sivana",
+        ariaResults: "Valiny",
+        ariaVisitDetails: "Antsipirian'ny fitsidihana",
+        ariaChoosePlan: "Misafidiana fandaharana",
+        ariaChooseMonth: "Misafidiana volana",
+        ariaCalendar: "Kalandrie",
+        ariaPrimaryNav: "Fitetezana",
+        ariaClose: "Akatony",
+        altGecko: "Androngo rambo ravina eo amin'ny sampan-kazo amin'ny alina",
+        altLemurTrunk: "Gidro mihantona amin'ny vatan-kazo eo anivon'ny volo, valan-javaboahary Ranomafana",
+        altSatanicGecko: "Androngo rambo ravina (Uroplatus phantasticus)",
+        altRiverPool: "Dobo eo amin'ny renirano ao amin'ny tahirin'ny fiaraha-monina VOI Ambohimagneva",
+        altThermalePool: "Ny dobo any ivelany ao amin'ny Station Thermale",
+        altGrenatDining: "Ny efitrano fisakafoana ao amin'ny Grenat Hotel",
+        altGuideHat: "Mpitari-dalana misatroka mahasoa sy mitondra tehina, mijery ny ala mando",
+        altGuideAdrien: "Adrien, mpitari-dalana, eo amin'ny tetezana hazo ao VOI Ambohimagneva",
+        altTownFlowers: "Voninkazo mavokely ao an-tanànan'i Ranomafana, miaraka amin'ny tendrombohitra feno ala ao ambadika",
+        newTabSuffix: "misokatra amin'ny takelaka vaovao",
+        teamHeadshot: "Sary",
+        teamNameTbc: "Anarana ho avy",
+        reviewOne: "fanehoan-kevitra {n}",
+        reviewMany: "fanehoan-kevitra {n}",
+        catNationalPark: "Valan-javaboahary",
+        catCommunityConservation: "Fiarovana ataon'ny fiaraha-monina",
+        catWildlife: "Biby",
+        catThermalSprings: "Loharano mafana",
+        catWaterfall: "Riandrano",
+        catWaterActivity: "Fanatanjahantena an-drano",
+        catGarden: "Zaridaina",
+        catResearch: "Fikarohana sy fiarovana",
+        catArtCulture: "Zavakanto sy kolontsaina",
+        catMarket: "Tsena",
+        catPractical: "Torohevitra",
+        catFood: "Sakafo",
+        catCulture: "Kolontsaina",
+        catConservation: "Fiarovana",
+        noteHot: "Vanim-potoana mafana: mihoatra ny 28°C, mando ny rivotra.",
+        noteCyclone: "Vanim-potoanan'ny rivo-doza (Janoary ka hatramin'ny Martsa): misy andro be orana loatra ho an'ny lalana.",
+        noteCold: "Vanim-potoana mangatsiaka: mety hidina hatramin'ny 10°C ny alina. Sarotra kokoa ny hahitana ny biby mandady sy biby hafa.",
+        noteBest: "Iray amin'ireo volana tsara indrindra: tsy dia mafana loatra, ary vitsy kokoa ny orana.",
+        noteBabies: "Maro ny gidro miteraka amin'ny Oktobra sy Novambra.",
+        noteWetEnds: "Ny volana farany amin'ny vanim-potoanan'ny orana.",
+        noteDryBegins: "Eo amin'ny 22°C eo ho eo amin'ny antoandro rehefa manomboka ny vanim-potoana maina kokoa.",
+        noteActiveAgain: "Mihetsika indray ny biby aorian'ny volana mangatsiaka.",
+        noteDryEnds: "Ny volana farany amin'ny vanim-potoana maina kokoa.",
+        noteWetBegins: "Manomboka ny vanim-potoanan'ny orana sy ny vanim-potoana mafana."
       }
     };
 
@@ -2750,6 +3279,70 @@
       const dict = translations[currentLang] || translations.en;
       const value = dict[key] ?? translations.en[key];
       return value === undefined ? key : fill(value);
+    }
+
+    /* Listing text in French, German and Malagasy lives in
+       data/ranomafana-translations.js, as
+       LISTING_TRANSLATIONS[collection][slug][field] = { en, fr, de, mg }.
+       Each field keeps the English it was translated from: if the data file's
+       English has changed since, that field stays in English until it is
+       re-translated, so a translation can never show an old price. The rows are
+       switched in place, so every render function reads row.desc as before.
+       english(row, field) gives back the original, for what must not change
+       with the language: Google Maps searches, itinerary stop links and the
+       weekly-event test. A field such as "gallery[].alt" means the alt text of
+       every photo in the gallery list, as one list. */
+    const LISTING_ROWS = { stays: stayData, eat: eatData, do: doData, itineraries: itineraryData, events: eventData, blog: blogData };
+    const ENGLISH = new Map();   // row -> { field: its original English value }
+    function getPath(obj, path) {
+      const [head, tail] = path.split('[].');
+      const base = head.split('.').reduce((v, k) => (v == null ? v : v[k]), obj);
+      return tail === undefined ? base : (Array.isArray(base) ? base.map((item) => getPath(item, tail)) : undefined);
+    }
+    function setPath(obj, path, value) {
+      const [head, tail] = path.split('[].');
+      const keys = head.split('.');
+      if (tail !== undefined) {
+        const list = keys.reduce((v, k) => (v == null ? v : v[k]), obj);
+        if (Array.isArray(list) && Array.isArray(value) && value.length === list.length) list.forEach((item, i) => setPath(item, tail, value[i]));
+        return;
+      }
+      const last = keys.pop();
+      const parent = keys.reduce((v, k) => (v == null ? v : v[k]), obj);
+      if (parent != null) parent[last] = value;
+    }
+    function applyListingLanguage(lang) {
+      if (typeof LISTING_TRANSLATIONS === 'undefined') return;
+      for (const [collection, rows] of Object.entries(LISTING_ROWS)) {
+        for (const row of rows) {
+          const fields = (LISTING_TRANSLATIONS[collection] || {})[row.slug];
+          if (!fields) continue;
+          if (!ENGLISH.has(row)) ENGLISH.set(row, {});
+          const original = ENGLISH.get(row);
+          for (const [field, versions] of Object.entries(fields)) {
+            if (!(field in original)) original[field] = getPath(row, field);
+            if (original[field] === undefined) continue;
+            const upToDate = JSON.stringify(versions.en) === JSON.stringify(original[field]);
+            setPath(row, field, (lang !== 'en' && upToDate ? versions[lang] : undefined) ?? original[field]);
+          }
+        }
+      }
+    }
+    const english = (row, field) => {
+      const original = ENGLISH.get(row);
+      return original && field in original ? original[field] : getPath(row, field);
+    };
+
+    /* The translations file is fetched the first time someone picks a language
+       other than English, so English visitors never download it. */
+    let listingTranslationsRequested = false;
+    function loadListingTranslations() {
+      if (typeof LISTING_TRANSLATIONS !== 'undefined' || listingTranslationsRequested) return;
+      listingTranslationsRequested = true;
+      const script = document.createElement('script');
+      script.src = 'data/ranomafana-translations.js';
+      script.onload = () => { applyListingLanguage(currentLang); renderAll(); };
+      document.head.appendChild(script);
     }
 
     function setLanguage(lang) {
@@ -2769,8 +3362,14 @@
         const value = translations[lang][el.dataset.i18nPlaceholder] ?? translations.en[el.dataset.i18nPlaceholder];
         if (value !== undefined) el.placeholder = value;
       });
+      // Screen-reader labels and image descriptions
+      document.querySelectorAll('[data-i18n-aria-label]').forEach((el) => el.setAttribute('aria-label', t(el.dataset.i18nAriaLabel)));
+      document.querySelectorAll('[data-i18n-alt]').forEach((el) => { el.alt = t(el.dataset.i18nAlt); });
+      document.querySelectorAll('a[data-newtab]').forEach((a) => a.setAttribute('aria-label', `${a.dataset.newtab} (${t('newTabSuffix')})`));
       document.querySelectorAll('.langSelector').forEach((sel) => { sel.value = lang; });
 
+      if (lang !== 'en') loadListingTranslations();
+      applyListingLanguage(lang);
       fillStatic();
       renderAll();   // re-render the grids so their labels change too, keeping any search or filter
       updatePageTitle();
@@ -2969,13 +3568,34 @@
       'Market': 'village'
     };
     const doGroup = (item) => DO_GROUPS[item.category] || 'other';
+
+    /* Categories stay in English in the data (DO_GROUPS above relies on that).
+       This gives each its translation key for display; stories use it too. A
+       category missing here shows in English — npm run check warns about that. */
+    const CATEGORY_LABEL = {
+      'National park': 'catNationalPark',
+      'Community conservation': 'catCommunityConservation',
+      'Wildlife': 'catWildlife',
+      'Research & conservation': 'catResearch',
+      'Garden': 'catGarden',
+      'Thermal springs': 'catThermalSprings',
+      'Waterfall': 'catWaterfall',
+      'Water activity': 'catWaterActivity',
+      'Art & culture': 'catArtCulture',
+      'Market': 'catMarket',
+      'Practical': 'catPractical',
+      'Food': 'catFood',
+      'Culture': 'catCulture',
+      'Conservation': 'catConservation'
+    };
+    const categoryLabel = (category) => (CATEGORY_LABEL[category] ? t(CATEGORY_LABEL[category]) : category);
     const doFilter = { group: 'all' };
 
     function getFilteredDo() {
       const q = searchValue('doSearch');
       return doData.filter((d) =>
         (doFilter.group === 'all' || doGroup(d) === doFilter.group) &&
-        (!q || `${d.name} ${d.category} ${d.desc}`.toLowerCase().includes(q))
+        (!q || `${d.name} ${d.category} ${categoryLabel(d.category)} ${d.desc}`.toLowerCase().includes(q))
       );
     }
     function filterDo() { renderDo(getFilteredDo()); }
@@ -3005,7 +3625,7 @@
         <article class="lcard">
           ${cardMedia(d)}
           <div class="lcard-body">
-            <div class="lcard-kicker"><span>${esc(d.category)}</span>${r ? `<span class="stars">${esc(r.stars)}</span>` : ''}</div>
+            <div class="lcard-kicker"><span>${esc(categoryLabel(d.category))}</span>${r ? `<span class="stars">${esc(r.stars)}</span>` : ''}</div>
             <h3 class="lcard-title"><button type="button" class="lcard-open" ${open}>${esc(d.name)}</button></h3>
             <div class="lcard-badges">
               ${d.status === 'coming-soon' ? `<span class="badge-soon">${esc(t('comingSoon'))}</span>` : ''}
@@ -3026,19 +3646,25 @@
 
     // --- 3. LISTING DETAIL (MODAL) -----------------------------------------
 
+    /* The generated placeholder cards (placeholder-<slug>.jpg in the images folder) have words
+       printed on them, so each has a French, German and Malagasy twin,
+       placeholder-<slug>-fr.jpg and so on (npm run photos:placeholders makes all four). */
+    const localImage = (src) => (currentLang !== 'en' && /^images\/placeholder-[a-z0-9-]+\.jpg$/.test(src || '')
+      ? src.replace(/\.jpg$/, `-${currentLang}.jpg`) : src);
+
     /* dropMissing: a thumbnail whose photo hasn't been taken yet removes itself
        instead of showing its fallback (used by the park's photo viewer). */
     function galleryImg(image, dropMissing = false) {
       const fallback = dropMissing ? ` onerror="this.closest('.thumb').remove()"`
-        : image.fallback ? ` onerror="this.onerror=null; this.src='${esc(image.fallback)}'"` : '';
-      return `<img src="${esc(image.src)}" alt="${esc(image.alt)}" loading="lazy"${fallback}>`;
+        : image.fallback ? ` onerror="this.onerror=null; this.src='${esc(localImage(image.fallback))}'"` : '';
+      return `<img src="${esc(localImage(image.src))}" alt="${esc(image.alt)}" loading="lazy"${fallback}>`;
     }
 
     function galleryHTML(name, images, dropMissing = false) {
       if (!images || !images.length) return '';
       const thumbs = images.length > 1 ? `
         <div class="gallery-thumbs" role="list">
-          ${images.map((im, i) => `<button type="button" class="thumb${i === 0 ? ' active' : ''}" role="listitem" data-src="${esc(im.src)}" data-alt="${esc(im.alt)}" data-fallback="${esc(im.fallback || '')}" onclick="selectGalleryImage(this)" aria-label="${esc(im.alt)}">${galleryImg(im, dropMissing)}</button>`).join('')}
+          ${images.map((im, i) => `<button type="button" class="thumb${i === 0 ? ' active' : ''}" role="listitem" data-src="${esc(localImage(im.src))}" data-alt="${esc(im.alt)}" data-fallback="${esc(localImage(im.fallback) || '')}" onclick="selectGalleryImage(this)" aria-label="${esc(im.alt)}">${galleryImg(im, dropMissing)}</button>`).join('')}
         </div>` : '';
       return `
         <div class="m-section stay-gallery" aria-label="${esc(name)}: ${esc(t('photoGallery'))}">
@@ -3127,11 +3753,11 @@
             <li>${icon('utensils')}<span><strong>${esc(t('amenityRestaurant'))}:</strong> ${esc(t(item.restaurant ? 'available' : 'notListed'))}</span></li>
           </ul>
         </div>
-        ${mapHTML(item.name)}
+        ${mapHTML(english(item, 'name'))}
         <div class="m-actions">
           ${c.website ? `<a class="btn btn-gold" href="${esc(c.website)}" target="_blank" rel="noopener">${icon('globe')} ${esc(t('officialWebsite'))}</a>` : ''}
-          <a class="btn btn-ghost" href="https://www.tripadvisor.com/Search?q=${encodeURIComponent(item.name + ' Ranomafana')}" target="_blank" rel="noopener">${icon('star')} ${esc(t('reviews'))}</a>
-          <a class="btn btn-ghost" href="mailto:${esc(c.email || 'ask@valb.io')}?subject=${encodeURIComponent(item.name + ' accommodation inquiry')}">${icon('send')} ${esc(t('sendInquiry'))}</a>
+          <a class="btn btn-ghost" href="https://www.tripadvisor.com/Search?q=${encodeURIComponent(english(item, 'name') + ' Ranomafana')}" target="_blank" rel="noopener">${icon('star')} ${esc(t('reviews'))}</a>
+          <a class="btn btn-ghost" href="mailto:${esc(c.email || 'ask@valb.io')}?subject=${encodeURIComponent(english(item, 'name') + ' accommodation inquiry')}">${icon('send')} ${esc(t('sendInquiry'))}</a>
         </div>`);
     }
 
@@ -3162,7 +3788,7 @@
             ${c.note ? `<li>${icon('info')}<span>${esc(c.note)}</span></li>` : ''}
           </ul>
         </div>
-        ${mapHTML(item.name)}`);
+        ${mapHTML(english(item, 'name'))}`);
     }
 
     function openDoModal(name) {
@@ -3172,7 +3798,7 @@
       const r = parseRating(item.rating);
       showModal(`
         <div class="m-head">
-          <span class="m-kicker">${esc(item.category)}${item.duration ? ` · ${esc(item.duration)}` : ''}</span>
+          <span class="m-kicker">${esc(categoryLabel(item.category))}${item.duration ? ` · ${esc(item.duration)}` : ''}</span>
           <h2 class="m-title" id="modalTitle">${esc(item.name)}</h2>
         </div>
         ${item.status === 'coming-soon' ? modalNote(t('inDevelopment'), 'seedling') : ''}
@@ -3204,7 +3830,7 @@
           <h3 class="m-h">${esc(t('practicalTips'))}</h3>
           <ul class="info-list">${item.tips.map((tip) => `<li>${icon('bulb')}<span>${esc(tip)}</span></li>`).join('')}</ul>
         </div>` : ''}
-        ${mapHTML(item.name)}
+        ${mapHTML(english(item, 'name'))}
         ${item.slug === PARK.slug ? `<div class="m-actions"><a class="btn btn-gold" href="#park">${esc(t('openParkPage'))}</a></div>` : ''}`);
     }
 
@@ -3231,10 +3857,12 @@
       [/Jirama/i, { slug: 'jirama-waterfall-hike' }],
       [/\b(lunch|dinner)\b/i, { page: 'eat' }]
     ];
-    function parseStop(stop) {
+    function parseStop(stop, enStop = stop) {
       const cut = stop.indexOf(' — ');
       const what = cut > -1 ? stop.slice(cut + 3) : stop;
-      const hit = STOP_LINKS.find(([pattern]) => pattern.test(what));
+      // The link is chosen from the English stop, so it survives translation.
+      const enCut = enStop.indexOf(' — ');
+      const hit = STOP_LINKS.find(([pattern]) => pattern.test(enCut > -1 ? enStop.slice(enCut + 3) : enStop));
       return { when: cut > -1 ? stop.slice(0, cut) : '', what, link: hit ? hit[1] : null };
     }
     function stopLink(link) {
@@ -3271,7 +3899,8 @@
       const it = bySlug(itineraryData, selectedItinerary);
       const el = document.getElementById('itineraryDetail');
       if (!it || !el) return;
-      const stops = it.stops.map(parseStop);
+      const enStops = english(it, 'stops') || [];
+      const stops = it.stops.map((stop, i) => parseStop(stop, enStops[i]));
       const needsGuide = stops.some((s) => s.link && s.link.page === 'park');
       el.innerHTML = `
         <article class="itin-main">
@@ -3293,7 +3922,7 @@
             ${needsGuide ? `<p class="small-muted">${esc(t('guideNote'))}</p>` : ''}
             <a class="btn btn-gold" href="#guides">${esc(t('howGuides'))}</a>
             <a class="btn btn-ghost" href="#getting-here">${esc(t('tabGettingHere'))}</a>
-            <a class="text-link" style="text-align: center; margin-top: 4px;" href="mailto:ask@valb.io?subject=${encodeURIComponent('Ranomafana itinerary: ' + it.title)}">${esc(t('askAboutPlan'))} →</a>
+            <a class="text-link" style="text-align: center; margin-top: 4px;" href="mailto:ask@valb.io?subject=${encodeURIComponent('Ranomafana itinerary: ' + english(it, 'title'))}">${esc(t('askAboutPlan'))} →</a>
           </div>
         </aside>`;
     }
@@ -3306,7 +3935,7 @@
         .filter((e) => e.date && new Date(e.date + 'T00:00:00') >= today)
         .sort((a, b) => a.date.localeCompare(b.date));
     }
-    const isWeekly = (e) => /weekly/i.test(e.monthBadge || '');
+    const isWeekly = (e) => /weekly/i.test(english(e, 'monthBadge') || '');
 
     function eventRow(ev, isNext, compact) {
       const month = ev.date ? monthName(Number(ev.date.slice(5, 7)) - 1) : ev.monthBadge;
@@ -3333,7 +3962,7 @@
     /* compact: the home page's "Field notes" cards (no excerpt). Every card opens
        the story in the reader below; the link still goes to #blog without script. */
     function storyCard(post, compact) {
-      const kicker = `${esc(post.category)} · ${esc(post.readMins)} ${esc(t('minShort'))}${post.status === 'draft' ? ` <span class="badge-soon">${esc(t('draftBadge'))}</span>` : ''}`;
+      const kicker = `${esc(categoryLabel(post.category))} · ${esc(post.readMins)} ${esc(t('minShort'))}${post.status === 'draft' ? ` <span class="badge-soon">${esc(t('draftBadge'))}</span>` : ''}`;
       return `
         <a class="story-card zoom" href="#blog" data-slug="${esc(post.slug)}" onclick="openStory(this.dataset.slug); return false;">
           <div class="story-card-media"><img src="${esc(post.img)}" alt="" loading="lazy"></div>
@@ -3354,7 +3983,7 @@
         : `<p>${esc(line)}</p>`)).join('');
       showModal(`
         <div class="m-head">
-          <span class="m-kicker">${esc(post.category)} · ${esc(post.readMins)} ${esc(t('minShort'))}</span>
+          <span class="m-kicker">${esc(categoryLabel(post.category))} · ${esc(post.readMins)} ${esc(t('minShort'))}</span>
           <h2 class="m-title" id="modalTitle">${esc(post.title)}</h2>
         </div>
         ${post.sample || post.status === 'draft' ? modalNote(t('storyDraftNote'), 'info') : ''}
@@ -3440,7 +4069,7 @@
       if (!item) return '';
       const thumb = opts.thumb === false ? '' :
         `<span class="mini-card-thumb">${!item.photoNeeded && item.img ? `<img src="${esc(item.img)}" alt="" loading="lazy">` : icon('image', 26)}</span>`;
-      const sub = opts.sub === 'category' ? `${item.category} · ${item.duration}` : `${item.price} · ${item.duration}`;
+      const sub = opts.sub === 'category' ? `${categoryLabel(item.category)} · ${item.duration}` : `${item.price} · ${item.duration}`;
       return `
         <button type="button" class="mini-card${opts.thumb === false ? ' mini-card--row' : ''}" data-name="${esc(item.name)}" onclick="openDoModal(this.dataset.name)">
           ${thumb}
@@ -3479,13 +4108,14 @@
       const intro = PARK.intro && PARK.intro.length ? PARK.intro : [PARK.desc];
       document.getElementById('parkLede').innerHTML = intro.map((para, i) => `<p class="${i === 0 ? 'park-lede' : 'lede'}">${esc(para)}</p>`).join('');
 
+      const enCircuits = english(PARK, 'circuits') || [];   // a level's colour comes from its English name
       document.getElementById('parkCircuits').innerHTML = (PARK.circuits || []).map((c, i) => `
         <div class="circuit">
           <span class="circuit-num">${String(i + 1).padStart(2, '0')}</span>
           <div class="stack g-6">
             <h3 class="circuit-name">${esc(c.name)}</h3>
             <span class="circuit-dur">${esc(c.duration)}</span>
-            <span class="level level--${esc(String(c.level).toLowerCase().replace(/\s+/g, '-'))}">${esc(c.level)}</span>
+            <span class="level level--${esc(String((enCircuits[i] || c).level).toLowerCase().replace(/\s+/g, '-'))}">${esc(c.level)}</span>
           </div>
           <p>${esc(c.desc)}</p>
         </div>`).join('');
@@ -3507,18 +4137,18 @@
       document.getElementById('parkAfterDark').innerHTML =
         ['night-walk', 'station-thermale', 'hotel-thermal-pools', 'centre-valbio-tour'].map((slug) => miniCard(bySlug(doData, slug))).join('');
 
-      const guideFees = (PARK.guideFees || []).map((g) => `<span>${esc(g.price)} <small>· ${esc(g.walk)}</small></span>`).join('');
+      const guideFees = (PARK.guideFees || []).map((g) => `<span>${esc(localNumbers(g.price))} <small>· ${esc(g.walk)}</small></span>`).join('');
       document.getElementById('parkAside').innerHTML = `
         <div class="visit-head">
           <span class="eyebrow">${esc(t('entry'))}</span>
-          <span class="visit-fee">${esc(PARK.entryFee || '')}</span>
+          <span class="visit-fee">${esc(localNumbers(PARK.entryFee || ''))}</span>
           <span class="small-muted">${esc(t('perAdult'))}</span>
         </div>
         <dl class="facts">
           ${PARK.hours ? `<div><dt>${esc(t('parkHoursLabel'))}</dt><dd>${esc(PARK.hours)}</dd></div>` : ''}
-          <div><dt>${esc(t('communityFee'))}</dt><dd><span>${esc(PARK.communityFee || '')} <small>· ${esc(t('separateBooth'))}</small></span></dd></div>
+          <div><dt>${esc(t('communityFee'))}</dt><dd><span>${esc(localNumbers(PARK.communityFee || ''))} <small>· ${esc(t('separateBooth'))}</small></span></dd></div>
           ${guideFees ? `<div class="col"><dt>${esc(t('guidePerGroup'))}</dt><dd>${guideFees}</dd></div>` : ''}
-          ${PARK.specialistFee ? `<div><dt>${esc(t('specialistGuide'))}</dt><dd>${esc(PARK.specialistFee)}</dd></div>` : ''}
+          ${PARK.specialistFee ? `<div><dt>${esc(t('specialistGuide'))}</dt><dd>${esc(localNumbers(PARK.specialistFee))}</dd></div>` : ''}
           ${NIGHT_WALK.price ? `<div><dt>${esc(t('nightWalk'))}</dt><dd>${esc(NIGHT_WALK.price)}</dd></div>` : ''}
           <div><dt>${esc(t('timeNeeded'))}</dt><dd>${esc(PARK.duration)}</dd></div>
           <div><dt>${esc(t('payment'))}</dt><dd>${esc(t('cashOnlyAriary'))}</dd></div>
@@ -3532,28 +4162,22 @@
         </div>`;
     }
 
-    /* Seasons and notes for the month picker. Sources are listed at the foot of
-       the When to visit page. Festivals come from eventData (its `months` field). */
-    const MONTH_NOTES = {
-      hot: 'Hot season: highs above 28°C, humid.',
-      cyclone: 'Cyclone season (January to March): some days are too wet for the trails.',
-      cold: 'Cold season: nights down to 10°C. Reptiles and some other animals are harder to find.',
-      best: 'One of the best months: mild, with less rain.',
-      babies: 'Many lemurs have babies in October and November.'
-    };
+    /* Seasons and notes for the month picker; each note is a translation key
+       (noteHot, noteCyclone…). Sources are listed at the foot of the When to
+       visit page. Festivals come from eventData (its `months` field). */
     const MONTHS = [
-      { wet: true, notes: ['hot', 'cyclone'] },
-      { wet: true, notes: ['hot', 'cyclone'] },
-      { wet: true, notes: ['cyclone'] },
-      { wet: true, best: true, notes: ['best', 'The last month of the wet season.'] },
-      { wet: false, best: true, notes: ['best', 'Daytime around 22°C as the drier season begins.'] },
-      { wet: false, notes: ['cold'] },
-      { wet: false, notes: ['cold'] },
-      { wet: false, notes: ['cold'] },
-      { wet: false, best: true, notes: ['best', 'Animals are active again after the cold months.'] },
-      { wet: false, notes: ['babies', 'The last month of the drier season.'] },
-      { wet: true, best: true, notes: ['best', 'babies', 'The wet season and the hot season both begin.'] },
-      { wet: true, notes: ['hot'] }
+      { wet: true, notes: ['noteHot', 'noteCyclone'] },
+      { wet: true, notes: ['noteHot', 'noteCyclone'] },
+      { wet: true, notes: ['noteCyclone'] },
+      { wet: true, best: true, notes: ['noteBest', 'noteWetEnds'] },
+      { wet: false, best: true, notes: ['noteBest', 'noteDryBegins'] },
+      { wet: false, notes: ['noteCold'] },
+      { wet: false, notes: ['noteCold'] },
+      { wet: false, notes: ['noteCold'] },
+      { wet: false, best: true, notes: ['noteBest', 'noteActiveAgain'] },
+      { wet: false, notes: ['noteBabies', 'noteDryEnds'] },
+      { wet: true, best: true, notes: ['noteBest', 'noteBabies', 'noteWetBegins'] },
+      { wet: true, notes: ['noteHot'] }
     ];
     let selectedMonth = new Date().getMonth();
 
@@ -3587,7 +4211,7 @@
           <span class="eyebrow">${esc(tag)}</span>
           <h3 class="month-name">${esc(capitalize(monthName(i, 'long')))}</h3>
           <span style="font-size: 16px; font-weight: 600; color: ${m.wet ? 'var(--wet-fg)' : 'var(--fern)'};">${esc(t(m.wet ? 'wetSeason' : 'drySeason'))}</span>
-          <ul class="month-notes">${m.notes.map((n) => `<li>${esc(MONTH_NOTES[n] || n)}</li>`).join('')}</ul>
+          <ul class="month-notes">${m.notes.map((n) => `<li>${esc(t(n))}</li>`).join('')}</ul>
         </div>
         <div class="stack g-14">
           <span class="eyebrow" style="color: var(--lichen);">${esc(t('festivalsEvents'))}</span>
@@ -3602,8 +4226,8 @@
       const body = document.getElementById('guideCosts');
       if (body) {
         body.innerHTML = (PARK.guideFees || []).map((g) =>
-          `<tr><td>${esc(g.walk)} · ${esc(t('hoursN').replace('{n}', g.hours))}</td><td>${esc(g.price)}</td></tr>`).join('') +
-          (PARK.specialistFee ? `<tr><td>${esc(t('specialistAny'))}</td><td>${esc(PARK.specialistFee)}</td></tr>` : '') +
+          `<tr><td>${esc(g.walk)} · ${esc(t('hoursN').replace('{n}', g.hours))}</td><td>${esc(localNumbers(g.price))}</td></tr>`).join('') +
+          (PARK.specialistFee ? `<tr><td>${esc(t('specialistAny'))}</td><td>${esc(localNumbers(PARK.specialistFee))}</td></tr>` : '') +
           (NIGHT_WALK.price ? `<tr><td>${esc(NIGHT_WALK.name)} · ${esc(NIGHT_WALK.duration)}</td><td>${esc(NIGHT_WALK.price)}</td></tr>` : '');
       }
       const outside = document.getElementById('guidesOutside');

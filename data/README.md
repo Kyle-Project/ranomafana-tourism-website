@@ -8,6 +8,31 @@
 <script> /* the site's own code */ </script>
 ```
 
+## Other languages
+
+The data file is English. `ranomafana-translations.js` holds each listing's text in
+French, German and Malagasy, keyed by collection and `slug`:
+
+```js
+LISTING_TRANSLATIONS.stays["setam-lodge"].price =
+  { en: "160,000–200,000 Ar / night", fr: "160 000–200 000 Ar / nuit", de: "…", mg: "…" }
+```
+
+`en` is the English the translation was made from. **When you change a listing's
+English here, its translation goes out of date**, and the site shows the new English
+in every language until you update that entry: copy the new English into `en`, then
+rewrite `fr`, `de` and `mg`. `npm run check` names every field in that state; a new
+listing shows in English until it gets an entry. Keep `slug`, `category` and `type`
+as they are: translations, filters and links rely on them.
+
+Photo descriptions are in there too: `gallery[].alt` is the list of a listing's
+gallery `alt` texts, in gallery order. Adding or rewording a gallery photo here puts
+that listing's descriptions back in English until the list is updated.
+
+Placeholder cards have words printed on them, so `npm run photos:placeholders` makes
+each one in all four languages (`placeholder-<slug>.jpg`, `-fr.jpg`, `-de.jpg`,
+`-mg.jpg`). Keep pointing `fallback` at the English file; the site picks the twin.
+
 ## Collections
 
 | Array | Count | Page |

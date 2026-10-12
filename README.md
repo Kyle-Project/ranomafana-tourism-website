@@ -37,6 +37,7 @@ site and the run shows a red ✗ under the repository's **Actions** tab.
 | `index.html` | The whole site — markup, styles, JavaScript, translations |
 | `data/ranomafana-data.js` | **The database.** Every listing lives here |
 | `data/ranomafana-data.json` | Generated copy for CMS import — don't edit by hand |
+| `data/ranomafana-translations.js` | Listing text in French, German and Malagasy |
 | `data/README.md` | Field-by-field reference for the database |
 | `images/` | All photography |
 | `scripts/validate.mjs` | The data checker behind `npm run check` |
@@ -77,9 +78,12 @@ The shoot list is in [PHOTO-AND-DATA-GAPS.md](PHOTO-AND-DATA-GAPS.md).
 ## Current contents
 
 25 places to stay · 16 places to eat · 14 things to do · 6 itineraries · 8 events ·
-10 blog seeds. Available in English, French, German and Malagasy (interface text;
-listing descriptions and the longer explanations on the park and Plan pages are
-English only).
+10 blog seeds. Fully available in English, French, German and Malagasy: the
+interface, the page text and every listing. Listing translations live in
+`data/ranomafana-translations.js`; when you change a listing's English, run
+`npm run check` — it lists any translation that now needs updating, and until it is
+updated that text shows in English. The Malagasy still needs checking by a native
+speaker.
 
 Pages: home, Places to stay, Places to eat, Things to do, the National Park, four
 Plan pages (Itineraries, Getting here, When to visit, Hiring a guide), What's on,

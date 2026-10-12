@@ -228,6 +228,18 @@ for (const key of ['stays', 'eat', 'do']) {
   }
 }
 
+/* Each generated placeholder card has a French, German and Malagasy twin
+   (placeholder-<slug>-fr.jpg …) that the site shows in that language. */
+for (const r of [...referenced]) {
+  const base = r.match(/^(placeholder-[a-z0-9-]+)\.jpg$/)?.[1];
+  if (!base || /-(fr|de|mg)$/.test(base)) continue;
+  for (const [lang, name] of [['fr', 'French'], ['de', 'German'], ['mg', 'Malagasy']]) {
+    const twin = `${base}-${lang}.jpg`;
+    if (imagesOnDisk.has(twin)) referenced.add(twin);
+    else if (imagesOnDisk.has(r)) warn(`images/${twin} is missing, so that placeholder shows in English in ${name} — run npm run photos:placeholders`);
+  }
+}
+
 for (const r of [...referenced].sort()) {
   if (!imagesOnDisk.has(r) && !planned.has(r)) err(`images/${r} is referenced but not on disk`);
 }
@@ -297,6 +309,103 @@ for (const t of eatTypes) {
   }
 }
 
+/* ------------------------------------------------------------ 4b. languages */
+
+const LANGS = { fr: 'French', de: 'German', mg: 'Malagasy' };
+const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+
+/* Interface and page text: every key in the English dictionary in index.html
+   needs a French, German and Malagasy version, or that text shows in English. */
+{
+  const start = html.indexOf('const translations = {');
+  const end = html.indexOf('function t(key)', start);
+  let dicts = null;
+  try {
+    dicts = new Function(html.slice(start, end).replace('const translations =', 'return'))();
+  } catch (e) {
+    err(`the translations dictionary in index.html did not parse: ${e.message}`);
+  }
+  for (const [lang, name] of Object.entries(dicts ? LANGS : {})) {
+    const missing = Object.keys(dicts.en).filter((k) => !(k in (dicts[lang] ?? {})));
+    if (missing.length) warn(`${plural(missing.length, 'text is', 'texts are')} missing from the ${name} dictionary in index.html (shown in English): ${missing.join(', ')}`);
+  }
+}
+
+/* Category names are shown through CATEGORY_LABEL in index.html. */
+{
+  const block = html.match(/const CATEGORY_LABEL = \{([\s\S]*?)\};/)?.[1];
+  if (!block) warn('index.html has no CATEGORY_LABEL map — category names show in English in every language');
+  else {
+    const cats = new Set([...(DATA.do ?? []).map((d) => d.category), ...(DATA.blog ?? []).map((b) => b.category)]);
+    for (const cat of cats) {
+      if (!block.includes(`'${cat}':`)) warn(`category "${cat}" is not in CATEGORY_LABEL in index.html — it shows in English in every language`);
+    }
+  }
+}
+
+/* Listing text: data/ranomafana-translations.js holds { en, fr, de, mg } per field.
+   Its "en" must still match the data file. When it doesn't, the site shows the
+   English for that field in every language until the translation is updated. */
+const TRANSLATED_FIELDS = {
+  stays: ['desc', 'price', 'wifiNote', 'rooms', 'meals', 'features', 'ratesNote', 'contact.note', 'gallery[].alt'],
+  eat: ['desc', 'highlights', 'meals', 'contact.note', 'gallery[].alt'],
+  do: ['desc', 'price', 'duration', 'tips', 'intro', 'wildlife', 'circuits', 'guideFees', 'contact.note', 'gallery[].alt'],
+  itineraries: ['badge', 'title', 'level', 'bestFor', 'parkTicket', 'desc', 'stops'],
+  events: ['title', 'dayBadge', 'monthBadge', 'whenLabel', 'desc'],
+  blog: ['title', 'excerpt', 'body'],
+};
+const untranslated = [];
+{
+  const file = path.join(ROOT, 'data', 'ranomafana-translations.js');
+  let TR = null;
+  if (!fs.existsSync(file)) warn('data/ranomafana-translations.js is missing — listings show in English in every language');
+  else {
+    try {
+      TR = new Function(`${fs.readFileSync(file, 'utf8')}\n; return LISTING_TRANSLATIONS;`)();
+    } catch (e) {
+      err(`data/ranomafana-translations.js did not parse: ${e.message}`);
+    }
+  }
+  if (!html.includes('data/ranomafana-translations.js')) warn('index.html never loads data/ranomafana-translations.js');
+
+  // "gallery[].alt" is the alt text of every photo in the gallery, as one list
+  const getPath = (obj, p) => {
+    const [head, tail] = p.split('[].');
+    const base = head.split('.').reduce((v, k) => (v == null ? v : v[k]), obj);
+    return tail === undefined ? base : (Array.isArray(base) ? base.map((item) => getPath(item, tail)) : undefined);
+  };
+  const outdated = [];
+  for (const [key, meta] of Object.entries(TR ? COLLECTIONS : {})) {
+    for (const [slug, fields] of Object.entries(TR[key] ?? {})) {
+      const row = (DATA[key] ?? []).find((r) => r.slug === slug);
+      if (!row) { warn(`translations: no ${meta.label.toLowerCase()} has the slug "${slug}" any more — renamed or removed?`); continue; }
+      for (const [field, versions] of Object.entries(fields)) {
+        const where = `${meta.label} "${row[meta.titleKey]}" ${field}`;
+        for (const [lang, name] of Object.entries(LANGS)) {
+          if (versions[lang] === undefined) warn(`translations: ${where} has no ${name} version`);
+          else if (Array.isArray(versions.en) && versions[lang].length !== versions.en.length) {
+            warn(`translations: ${where} — the ${name} version has ${versions[lang].length} items, the English ${versions.en.length}`);
+          }
+        }
+        if (JSON.stringify(versions.en) !== JSON.stringify(getPath(row, field))) outdated.push(where);
+      }
+    }
+    for (const row of DATA[key] ?? []) {
+      for (const field of TRANSLATED_FIELDS[key] ?? []) {
+        const v = getPath(row, field);
+        if (v === undefined || v === '' || (Array.isArray(v) && !v.length)) continue;
+        if (!TR[key]?.[row.slug]?.[field]) untranslated.push(`${meta.label} "${row[meta.titleKey]}" ${field}`);
+      }
+    }
+  }
+  if (outdated.length) {
+    warn(`${plural(outdated.length, 'translated field has', 'translated fields have')} new English in the data file, so the site shows English there in every language until data/ranomafana-translations.js is updated (new "en", then fr, de and mg): ${outdated.join('; ')}`);
+  }
+  if (untranslated.length) {
+    notes.push(`${plural(untranslated.length, 'listing text is', 'listing texts are')} not translated yet, so they show in English in every language${process.argv.includes('--gaps') ? '' : ' — npm run check:gaps lists them'}`);
+  }
+}
+
 /* ------------------------------------------------------- 5. editorial gaps */
 
 const gaps = { unverified: [], photoNeeded: [], noContact: [] };
@@ -345,7 +454,7 @@ line(`    ${String(gaps.unverified.length).padStart(3)}  unconfirmed listings`);
 line(`    ${String(gaps.photoNeeded.length).padStart(3)}  awaiting a real photo`);
 line(`    ${String(gaps.noContact.length).padStart(3)}  with no published contact details`);
 if (process.argv.includes('--gaps')) {
-  for (const [k, v] of Object.entries(gaps)) {
+  for (const [k, v] of Object.entries({ ...gaps, untranslated })) {
     if (!v.length) continue;
     line();
     line(`  ${k}:`);

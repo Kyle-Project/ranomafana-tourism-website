@@ -11,7 +11,7 @@ npm run dev                  # http.server on 8137 → http://localhost:8137
 npm run check                # validate the data (no deps, always safe)
 npm run check:write          # validate, then regenerate the JSON mirror
 npm run check:gaps           # same, listing every unverified / photo-less item
-npm run photos:placeholders  # regenerate placeholder cards (needs Pillow)
+npm run photos:placeholders  # regenerate placeholder cards, all 4 languages (needs Pillow)
 npm run photos:find          # show free-licensed Commons photos, download none
 npm run photos:fetch         # download them + write images/PHOTO-CREDITS.md
 ```
@@ -44,6 +44,9 @@ index.html                  the entire site — markup, CSS, JS, i18n dictionary
 data/ranomafana-data.js     the database: six global arrays
 images/                     flat folder, kebab-case names
 ```
+
+Plus `data/ranomafana-translations.js`, the listing text in French, German and
+Malagasy (see i18n below).
 
 `index.html` loads `data/ranomafana-data.js` first, so the arrays are globals by
 the time the page script runs. There is no bundler and no module system — keep it
@@ -136,8 +139,15 @@ with funding from PIC3 and support from PCDT-R and the Commune of Ranomafana. Th
 credit appears in the "Plan with people who live here" boxes (`planCtaText`), the
 About page and the footer (`footerCredit`), in all four languages. The footer is the
 main place for it, kept to one short dot-separated line (Kyle, 11 Oct 2026: "make it
-succinct"); the home-page welcome no longer carries it — Kyle had both welcome
-paragraphs removed that day. **Emma Starink is thanked in the footer credit only**
+succinct"); the home-page welcome does not carry it. Kyle had the first welcome
+paragraphs (which opened with the credit) removed on 11 Oct, then asked on 12 Oct for
+a new welcome, and that day settled on short, punchy tour-operator copy under the
+eyebrow "Why Ranomafana?", in the order he asked for: four key phrases, one per line
+(`welcomeText1`, his own wording: "Wild adventures. Immersive expeditions. Thermal
+relaxation. World-renowned biodiversity."), then "UNESCO World Heritage Ranomafana is
+home to…" and the key activities (`welcomeText2`), then the impact of a stay
+(`welcomeText3`). He asked twice for it shorter and punchier: keep it that way, and
+keep the credit out of it. **Emma Starink is thanked in the footer credit only**
 ("Thanks to Emma Starink") — Kyle asked for her name to stay out of the main body
 text. Do not describe the guide as made with Madagascar National Parks — the first
 welcome text did, and Kyle corrected it.
@@ -150,8 +160,11 @@ contact block as "no published contact details yet", which is the correct outcom
 
 **Never use stock photos of somewhere else.** A listing without its own photograph
 gets a generated placeholder card, `images/placeholder-<slug>.jpg` — a colour panel
-with the name on it, obviously a graphic. Set `photoNeeded: true` and run
-`npm run photos:placeholders`. An honest placeholder is fine; an Unsplash hotel room
+with the name on it, obviously a graphic. Its words are printed in the picture, so
+each card also has `-fr`, `-de` and `-mg` twins (`placeholder-<slug>-fr.jpg`…), which
+`localImage()` in the script swaps in for that language. Set `photoNeeded: true` and
+run `npm run photos:placeholders`, which writes all four (`--lang fr,de,mg` to leave
+the English ones untouched); `npm run check` warns if a twin is missing. An honest placeholder is fine; an Unsplash hotel room
 standing in for a real hotel is not.
 
 `PLACEHOLDER_STAY` and `PLACEHOLDER_NATURE` still exist at the top of the data file
@@ -205,22 +218,51 @@ The home page, the park page and the Hiring a guide page read the broken-out fie
 
 ## i18n
 
-`translations` in `index.html` holds `en` / `fr` / `de` / `mg` dictionaries keyed by
-`data-i18n` attributes (`data-i18n-html` when the value carries `<em>`,
-`data-i18n-placeholder` for inputs). Rendered cards use `t(key)`. A key missing from
-`fr`/`de`/`mg` falls back to English. Values may contain tokens — `{stays}`,
-`{eats}`, `{dos}`, `{itins}`, `{circuits}`, `{entryFee}`, `{childFee}`,
-`{communityFee}`, `{feesAsOf}` — filled from the data by `tokenValues()`. Browsers
-have no Malagasy month names, so `mg.monthNames` lists them.
+Kyle asked on 12 Oct 2026 for **everything** to be translated in every language
+option, and it now is: interface, page text and listing content. Two places hold it.
 
-Every new interface string goes into **all four** dictionaries. The Malagasy added in
-the October 2026 redesign was written without a native speaker and should be checked.
+**Interface and page text** — `translations` in `index.html` holds `en` / `fr` / `de`
+/ `mg` dictionaries keyed by `data-i18n` attributes (`data-i18n-html` when the value
+carries markup such as `<em>` or a link, `data-i18n-placeholder` for inputs,
+`data-i18n-alt` for image descriptions, `data-i18n-aria-label` for screen-reader
+labels). Rendered cards use `t(key)`. This includes the explanatory paragraphs and
+**Sources** lines on Getting here, When to visit, Hiring a guide and About, so a fact
+changed there must be changed in all four dictionaries, not just the markup (the
+markup holds the English only as the no-script fallback). Values may contain tokens —
+`{stays}`, `{eats}`, `{dos}`, `{itins}`, `{circuits}`, `{entryFee}`, `{childFee}`,
+`{communityFee}`, `{feesAsOf}`, `{specialistFee}`, `{parkHours}` — filled from the
+data by `tokenValues()`. Do not put a `data-i18n` element inside another one: the
+outer one's text replaces it. Browsers have no Malagasy month names, so
+`mg.monthNames` lists them. Category names (Things to do and Stories) stay English in
+the data and are translated through `CATEGORY_LABEL` in the script; month notes are
+the `note…` keys.
 
-**Listing content itself is English-only** — descriptions, tips and stop lists are
-not translated. Neither are the explanatory paragraphs on the park and Plan pages:
-they carry no `data-i18n` key, so edit them directly in the markup. If Kyle asks for
-translated listings, that is a real design change (per-language fields in the data
-file), not a quick fix. Say so before starting.
+**Listing content** — `data/ranomafana-translations.js`, as
+`LISTING_TRANSLATIONS[collection][slug][field] = { en, fr, de, mg }`, covering the
+fields listed in `TRANSLATED_FIELDS` in `scripts/validate.mjs` (plus `name` for
+descriptive Do and Eat names). `applyListingLanguage()` switches the rows in place, so
+render functions read `row.desc` as before; `english(row, field)` returns the
+original wherever the English must stay (Google Maps and Tripadvisor searches,
+`STOP_LINKS` matching, the weekly-event test, circuit level colours). The file is
+fetched only when someone picks a non-English language. Each field's `en` is the
+English it was translated from: **if you change English listing text in the data file,
+that field shows English in every language until you update its entry** — copy the
+new English into `en` and rewrite `fr`, `de` and `mg`. `npm run check` names every
+field in that state, and `npm run check:gaps` lists listing text with no translation
+(a new listing starts that way and shows English until translated). Prices in
+translations use the local style: `160 000 Ar` (fr, mg) and `160.000 Ar` (de), with
+non-breaking spaces so they never wrap mid-number; `localNumbers()` does the same for
+fees read straight from the data.
+
+Every new interface string goes into **all four** dictionaries (`npm run check` warns
+when one is missing). Photo descriptions are translated too (Kyle, 12 Oct 2026:
+"translate all the text including photo descriptions"): gallery `alt` text through the
+`gallery[].alt` field of the translations file, page images through `data-i18n-alt`.
+A new gallery photo shows its English description until that listing's
+`gallery[].alt` entry is updated. Not translated, on purpose: listing names that are
+proper names, and partner organisations' names on their logos. All the Malagasy —
+the October 2026 redesign and the 12 Oct 2026 translation of the page text and
+listings — was written without a native speaker and should be checked by one.
 
 ## Adding a new page
 
@@ -275,7 +317,8 @@ file), not a quick fix. Say so before starting.
 
 25 stays · 16 restaurants · 14 things to do · 6 itineraries · 8 events · 10 blog
 seeds. All 25 stays are verified, against published sources or on Kyle's
-authority. Interface in English, French, German and Malagasy.
+authority. The whole site — interface, page text and listings — is in English,
+French, German and Malagasy (since 12 Oct 2026).
 
 Kyle's own notes (`Website information.docx`, received 11 October 2026) were folded
 into the whole site that day: room rates, meals and contacts for 13 hotels, the
