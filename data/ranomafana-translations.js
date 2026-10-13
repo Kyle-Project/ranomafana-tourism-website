@@ -42,34 +42,50 @@ const LISTING_TRANSLATIONS = {
       "gallery[].alt": {
         "en": [
           "Aerial view of Centre ValBio",
+          "The Centre ValBio buildings from the air, beside the road with the forest behind",
+          "Tables on the terrace outside the conference room at dusk, Centre ValBio",
           "Visitors at the Centre ValBio entrance",
           "Centre ValBio researcher and guide",
           "Community event at Centre ValBio",
           "Centre ValBio team",
+          "Centre ValBio staff in green team shirts beside a Centre ValBio sign",
+          "World Lemur Day with Centre ValBio: staff and guests with a ruffed lemur mascot",
           "Satanic leaf-tailed gecko near Centre ValBio"
         ],
         "fr": [
           "Centre ValBio vu du ciel",
+          "Les bâtiments du Centre ValBio vus du ciel, au bord de la route, la forêt derrière",
+          "Des tables sur la terrasse devant la salle de conférence, au crépuscule, Centre ValBio",
           "Des visiteurs à l’entrée du Centre ValBio",
           "Un membre de l’équipe de recherche et un guide du Centre ValBio",
           "Un événement communautaire au Centre ValBio",
           "L’équipe du Centre ValBio",
+          "Le personnel du Centre ValBio en polos verts, à côté d’un panneau du Centre ValBio",
+          "La Journée mondiale des lémuriens avec le Centre ValBio : personnel et invités avec une mascotte de vari",
           "Un uroplate fantastique près du Centre ValBio"
         ],
         "de": [
           "Centre ValBio aus der Luft",
+          "Die Gebäude des Centre ValBio aus der Luft, an der Straße, dahinter der Wald",
+          "Tische auf der Terrasse vor dem Konferenzraum in der Abenddämmerung, Centre ValBio",
           "Besucher am Eingang des Centre ValBio",
           "Ein Mitglied des Forschungsteams und ein Guide des Centre ValBio",
           "Gemeindeveranstaltung im Centre ValBio",
           "Das Team des Centre ValBio",
+          "Mitarbeitende des Centre ValBio in grünen Teamshirts neben einem Centre-ValBio-Schild",
+          "Welt-Lemuren-Tag mit dem Centre ValBio: Mitarbeitende und Gäste mit einem Vari-Maskottchen",
           "Satanischer Plattschwanzgecko nahe dem Centre ValBio"
         ],
         "mg": [
           "Centre ValBio jerena avy eny ambony",
+          "Ireo tranon'ny Centre ValBio jerena avy eny ambony, eo amoron-dalana, misy ala ao ambadika",
+          "Latabatra eo amin'ny lavarangana eo anoloan'ny efitrano fivoriana, amin'ny takariva, Centre ValBio",
           "Mpitsidika eo amin'ny fidirana ao amin'ny Centre ValBio",
           "Mpikaroka sy mpitari-dalana ao amin'ny Centre ValBio",
           "Hetsika iarahan'ny fiaraha-monina ao amin'ny Centre ValBio",
           "Ny ekipan'ny Centre ValBio",
+          "Mpiasan'ny Centre ValBio manao akanjo maitso, eo akaikin'ny takelaka Centre ValBio",
+          "Andro iraisam-pirenena ho an'ny gidro niaraka tamin'ny Centre ValBio: mpiasa sy vahiny miaraka amin'ny saribakoly varikandana",
           "Androngo rambo ravina (Uroplatus phantasticus) akaikin'ny Centre ValBio"
         ]
       }
@@ -2441,8 +2457,8 @@ const LISTING_TRANSLATIONS = {
             "group": "Lemurs",
             "note": "Fourteen species live here, among them:",
             "photo": {
-              "src": "images/ranomafana-national-park-lemur-bamboo.jpg",
-              "alt": "A lemur in the bamboo, Ranomafana National Park"
+              "src": "images/ranomafana-national-park-ruffed-lemur.jpg",
+              "alt": "A black-and-white ruffed lemur looking down from a branch, Ranomafana National Park"
             },
             "species": [
               "Golden bamboo lemur",
@@ -2464,8 +2480,8 @@ const LISTING_TRANSLATIONS = {
             "group": "Birds",
             "note": "125 species, many found only in Madagascar. Look for:",
             "photo": {
-              "src": "images/ranomafana-national-park-bird.jpg",
-              "alt": "A bird perched in the understory, Ranomafana National Park"
+              "src": "images/ranomafana-national-park-paradise-flycatcher.jpg",
+              "alt": "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park"
             },
             "species": ["Forest ibis", "Ground-rollers", "Blue vanga"]
           },
@@ -2473,8 +2489,8 @@ const LISTING_TRANSLATIONS = {
             "group": "Reptiles",
             "note": "Well camouflaged, so let your guide point them out:",
             "photo": {
-              "src": "images/ranomafana-national-park-leaf-tailed-gecko.jpg",
-              "alt": "A leaf-tailed gecko disguised as a dead leaf, Ranomafana National Park"
+              "src": "images/ranomafana-national-park-chameleon-branch.jpg",
+              "alt": "A chameleon with blue legs and an orange-banded tail on a branch, Ranomafana National Park"
             },
             "species": ["Satanic leaf-tailed gecko", "Mossy leaf-tailed gecko", "Madagascar boa", "Chameleons"]
           },
@@ -2493,8 +2509,8 @@ const LISTING_TRANSLATIONS = {
             "group": "Lémuriens",
             "note": "Quatorze espèces vivent ici, parmi lesquelles :",
             "photo": {
-              "src": "images/ranomafana-national-park-lemur-bamboo.jpg",
-              "alt": "Un lémurien dans les bambous, parc national de Ranomafana"
+              "src": "images/ranomafana-national-park-ruffed-lemur.jpg",
+              "alt": "Un vari noir et blanc qui regarde depuis une branche, parc national de Ranomafana"
             },
             "species": [
               "Hapalémur doré",
@@ -2516,8 +2532,8 @@ const LISTING_TRANSLATIONS = {
             "group": "Oiseaux",
             "note": "125 espèces, dont beaucoup n’existent qu’à Madagascar. Cherchez :",
             "photo": {
-              "src": "images/ranomafana-national-park-bird.jpg",
-              "alt": "Un oiseau perché dans le sous-bois, parc national de Ranomafana"
+              "src": "images/ranomafana-national-park-paradise-flycatcher.jpg",
+              "alt": "Un tchitrec malgache posé sur son nid de mousse, parc national de Ranomafana"
             },
             "species": ["Ibis huppé", "Brachyptérolles", "Vanga bleu"]
           },
@@ -2525,8 +2541,8 @@ const LISTING_TRANSLATIONS = {
             "group": "Reptiles",
             "note": "Bien camouflés : laissez votre guide vous les montrer :",
             "photo": {
-              "src": "images/ranomafana-national-park-leaf-tailed-gecko.jpg",
-              "alt": "Un uroplate déguisé en feuille morte, parc national de Ranomafana"
+              "src": "images/ranomafana-national-park-chameleon-branch.jpg",
+              "alt": "Un caméléon aux pattes bleues et à la queue annelée d’orange sur une branche, parc national de Ranomafana"
             },
             "species": ["Uroplate fantastique", "Uroplate de Sikora", "Boa de Madagascar", "Caméléons"]
           },
@@ -2545,8 +2561,8 @@ const LISTING_TRANSLATIONS = {
             "group": "Lemuren",
             "note": "Vierzehn Arten leben hier, darunter:",
             "photo": {
-              "src": "images/ranomafana-national-park-lemur-bamboo.jpg",
-              "alt": "Ein Lemur im Bambus, Nationalpark Ranomafana"
+              "src": "images/ranomafana-national-park-ruffed-lemur.jpg",
+              "alt": "Ein Schwarzweißer Vari blickt von einem Ast herab, Nationalpark Ranomafana"
             },
             "species": [
               "Goldener Bambuslemur",
@@ -2568,8 +2584,8 @@ const LISTING_TRANSLATIONS = {
             "group": "Vögel",
             "note": "125 Arten, viele davon nur auf Madagaskar. Achten Sie auf:",
             "photo": {
-              "src": "images/ranomafana-national-park-bird.jpg",
-              "alt": "Ein Vogel im Unterholz, Nationalpark Ranomafana"
+              "src": "images/ranomafana-national-park-paradise-flycatcher.jpg",
+              "alt": "Ein Madagaskar-Paradiesschnäpper auf seinem moosigen Nest, Nationalpark Ranomafana"
             },
             "species": ["Schopfibis", "Erdracken", "Blauvanga"]
           },
@@ -2577,8 +2593,8 @@ const LISTING_TRANSLATIONS = {
             "group": "Reptilien",
             "note": "Gut getarnt – lassen Sie sie sich von Ihrem Guide zeigen:",
             "photo": {
-              "src": "images/ranomafana-national-park-leaf-tailed-gecko.jpg",
-              "alt": "Ein Plattschwanzgecko, getarnt als welkes Blatt, Nationalpark Ranomafana"
+              "src": "images/ranomafana-national-park-chameleon-branch.jpg",
+              "alt": "Ein Chamäleon mit blauen Beinen und orange gebändertem Schwanz auf einem Ast, Nationalpark Ranomafana"
             },
             "species": ["Satanischer Plattschwanzgecko", "Moosiger Plattschwanzgecko", "Madagaskar-Boa", "Chamäleons"]
           },
@@ -2597,8 +2613,8 @@ const LISTING_TRANSLATIONS = {
             "group": "Gidro",
             "note": "Karazany efatra ambin'ny folo no miaina eto, anisan'izany:",
             "photo": {
-              "src": "images/ranomafana-national-park-lemur-bamboo.jpg",
-              "alt": "Gidro iray ao anaty volo, valan-javaboahary Ranomafana"
+              "src": "images/ranomafana-national-park-ruffed-lemur.jpg",
+              "alt": "Varikandana (gidro mainty sy fotsy) mijery avy eo amin'ny sampan-kazo, valan-javaboahary Ranomafana"
             },
             "species": [
               "Gidro volamena mpihinam-bolo",
@@ -2620,8 +2636,8 @@ const LISTING_TRANSLATIONS = {
             "group": "Vorona",
             "note": "Karazany 125, ny ankamaroany tsy hita afa-tsy eto Madagasikara. Tadiavo:",
             "photo": {
-              "src": "images/ranomafana-national-park-bird.jpg",
-              "alt": "Vorona iray mipetraka ao ambanin'ny ala, valan-javaboahary Ranomafana"
+              "src": "images/ranomafana-national-park-paradise-flycatcher.jpg",
+              "alt": "Vorona rambo lava (Terpsiphone mutata) mipetraka eo amin'ny akaniny vita amin'ny volon-ketsa, valan-javaboahary Ranomafana"
             },
             "species": ["Akohonala", "Vorona mandeha an-tany (ground-roller)", "Vanga manga"]
           },
@@ -2629,8 +2645,8 @@ const LISTING_TRANSLATIONS = {
             "group": "Biby mandady",
             "note": "Mahay miafina tsara izy ireo, ka avelao ny mpitari-dalana hanondro azy:",
             "photo": {
-              "src": "images/ranomafana-national-park-leaf-tailed-gecko.jpg",
-              "alt": "Androngo rambo ravina mitovy amin'ny ravina maina, valan-javaboahary Ranomafana"
+              "src": "images/ranomafana-national-park-chameleon-branch.jpg",
+              "alt": "Tana manana tongotra manga sy rambo misy tsipika volom-boasary eo amin'ny sampan-kazo, valan-javaboahary Ranomafana"
             },
             "species": [
               "Androngo rambo ravina (Uroplatus phantasticus)",
@@ -2808,6 +2824,9 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
+          "A bamboo lemur feeding on bamboo leaves, Ranomafana National Park",
+          "A small cascade tumbling over mossy boulders in the rainforest, Ranomafana National Park",
+          "A tiny leaf chameleon (Brookesia) on a mossy twig, Ranomafana National Park",
           "A lemur clinging to a tree trunk among the bamboo, Ranomafana National Park",
           "The forest campsite inside Ranomafana National Park, with a wooden rack and a fire pit",
           "Looking up a giant rainforest tree into the canopy, Ranomafana National Park",
@@ -2820,6 +2839,12 @@ const LISTING_TRANSLATIONS = {
           "A leaf-tailed gecko disguised as a dead leaf, Ranomafana National Park",
           "A bird perched in the understory, Ranomafana National Park",
           "A young chameleon held up for a closer look, Ranomafana National Park",
+          "A black-and-white ruffed lemur looking down from a branch, Ranomafana National Park",
+          "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park",
+          "A chameleon with blue legs and an orange-banded tail on a branch, Ranomafana National Park",
+          "A ground-roller, one of the shy birds of the forest floor, in close-up, Ranomafana National Park",
+          "Hungry nestlings calling from their nest hole, Ranomafana National Park",
+          "A hairy black-and-orange caterpillar under a leaf, Ranomafana National Park",
           "Bamboo forest, home of the park's bamboo lemurs",
           "Moss-covered tree trunks in the rainforest, Ranomafana National Park",
           "A stream running over mossy rocks under the forest canopy, Ranomafana National Park",
@@ -2827,6 +2852,9 @@ const LISTING_TRANSLATIONS = {
           "Ranomafana National Park entrance"
         ],
         "fr": [
+          "Un hapalémur mangeant des feuilles de bambou, parc national de Ranomafana",
+          "Une petite cascade dévalant des rochers moussus dans la forêt tropicale, parc national de Ranomafana",
+          "Un minuscule caméléon-feuille (Brookesia) sur une brindille moussue, parc national de Ranomafana",
           "Un lémurien agrippé à un tronc parmi les bambous, parc national de Ranomafana",
           "Le camping en forêt du parc national de Ranomafana, avec un séchoir en bois et un foyer",
           "Vers la canopée, le long d’un arbre géant de la forêt, parc national de Ranomafana",
@@ -2839,6 +2867,12 @@ const LISTING_TRANSLATIONS = {
           "Un uroplate déguisé en feuille morte, parc national de Ranomafana",
           "Un oiseau perché dans le sous-bois, parc national de Ranomafana",
           "Un jeune caméléon présenté de près, parc national de Ranomafana",
+          "Un vari noir et blanc qui regarde depuis une branche, parc national de Ranomafana",
+          "Un tchitrec malgache posé sur son nid de mousse, parc national de Ranomafana",
+          "Un caméléon aux pattes bleues et à la queue annelée d’orange sur une branche, parc national de Ranomafana",
+          "Un brachyptérolle, l’un des oiseaux discrets du sol forestier, en gros plan, parc national de Ranomafana",
+          "Des oisillons affamés qui réclament au fond de leur cavité, parc national de Ranomafana",
+          "Une chenille velue noire et orange sous une feuille, parc national de Ranomafana",
           "La forêt de bambous, domaine des hapalémurs du parc",
           "Des troncs couverts de mousse dans la forêt tropicale, parc national de Ranomafana",
           "Un ruisseau sur des rochers moussus sous la canopée, parc national de Ranomafana",
@@ -2846,6 +2880,9 @@ const LISTING_TRANSLATIONS = {
           "L’entrée du parc national de Ranomafana"
         ],
         "de": [
+          "Ein Bambuslemur frisst Bambusblätter, Nationalpark Ranomafana",
+          "Eine kleine Kaskade stürzt über moosige Felsblöcke im Regenwald, Nationalpark Ranomafana",
+          "Ein winziges Stummelschwanzchamäleon (Brookesia) auf einem moosigen Zweig, Nationalpark Ranomafana",
           "Ein Lemur klammert sich zwischen Bambus an einen Baumstamm, Nationalpark Ranomafana",
           "Der Zeltplatz im Wald des Nationalparks Ranomafana, mit Holzgestell und Feuerstelle",
           "Blick an einem Urwaldriesen hinauf ins Blätterdach, Nationalpark Ranomafana",
@@ -2858,6 +2895,12 @@ const LISTING_TRANSLATIONS = {
           "Ein Plattschwanzgecko, getarnt als welkes Blatt, Nationalpark Ranomafana",
           "Ein Vogel im Unterholz, Nationalpark Ranomafana",
           "Ein junges Chamäleon, zum genaueren Hinsehen hochgehalten, Nationalpark Ranomafana",
+          "Ein Schwarzweißer Vari blickt von einem Ast herab, Nationalpark Ranomafana",
+          "Ein Madagaskar-Paradiesschnäpper auf seinem moosigen Nest, Nationalpark Ranomafana",
+          "Ein Chamäleon mit blauen Beinen und orange gebändertem Schwanz auf einem Ast, Nationalpark Ranomafana",
+          "Ein Erdracke, einer der scheuen Vögel des Waldbodens, in Nahaufnahme, Nationalpark Ranomafana",
+          "Hungrige Nestlinge betteln in ihrer Bruthöhle, Nationalpark Ranomafana",
+          "Eine behaarte schwarz-orange Raupe unter einem Blatt, Nationalpark Ranomafana",
           "Bambuswald, Heimat der Bambuslemuren des Parks",
           "Moosbewachsene Baumstämme im Regenwald, Nationalpark Ranomafana",
           "Ein Bach über moosigen Felsen unter dem Blätterdach, Nationalpark Ranomafana",
@@ -2865,6 +2908,9 @@ const LISTING_TRANSLATIONS = {
           "Eingang des Nationalparks Ranomafana"
         ],
         "mg": [
+          "Gidro mpihinam-bolo mihinana ravim-bolo, valan-javaboahary Ranomafana",
+          "Riandrano kely mikoriana eo ambonin'ny vato misy volon-ketsa ao anaty ala mando, valan-javaboahary Ranomafana",
+          "Tana kely bitika mitovy amin'ny ravina (Brookesia) eo amin'ny rantsan-kazo misy volon-ketsa, valan-javaboahary Ranomafana",
           "Gidro mihantona amin'ny vatan-kazo eo anivon'ny volo, valan-javaboahary Ranomafana",
           "Ny toerana filasiana ao anaty ala ao amin'ny valan-javaboahary Ranomafana, misy fanaovana hazo sy fatana",
           "Mijery ny tampon'ny ala manaraka hazo goavana iray, valan-javaboahary Ranomafana",
@@ -2877,6 +2923,12 @@ const LISTING_TRANSLATIONS = {
           "Androngo rambo ravina mitovy amin'ny ravina maina, valan-javaboahary Ranomafana",
           "Vorona iray mipetraka ao ambanin'ny ala, valan-javaboahary Ranomafana",
           "Zanaka tana atsangana mba hojerena akaiky, valan-javaboahary Ranomafana",
+          "Varikandana (gidro mainty sy fotsy) mijery avy eo amin'ny sampan-kazo, valan-javaboahary Ranomafana",
+          "Vorona rambo lava (Terpsiphone mutata) mipetraka eo amin'ny akaniny vita amin'ny volon-ketsa, valan-javaboahary Ranomafana",
+          "Tana manana tongotra manga sy rambo misy tsipika volom-boasary eo amin'ny sampan-kazo, valan-javaboahary Ranomafana",
+          "Vorona saro-kenatra miaina eny amin'ny tany ao an'ala (ground-roller), jerena akaiky, valan-javaboahary Ranomafana",
+          "Zana-borona noana mitabataba ao anaty lavaka akaniny, valan-javaboahary Ranomafana",
+          "Fanday volony mainty sy volom-boasary eo ambanin'ny ravina, valan-javaboahary Ranomafana",
           "Ala volo, fonenan'ireo gidro mpihinam-bolo ao amin'ny valan-javaboahary",
           "Vatan-kazo rakotra volon-ketsa ao amin'ny ala mando, valan-javaboahary Ranomafana",
           "Rano mikoriana eo ambonin'ny vato misy volon-ketsa ambanin'ny tampon'ny ala, valan-javaboahary Ranomafana",
@@ -3008,24 +3060,32 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
+          "A green tree frog with red-rimmed eyes on a mossy twig at night",
           "Satanic leaf-tailed gecko",
           "A chameleon asleep on a twig, lit by torchlight on the night walk",
-          "A mouse lemur in the branches at night"
+          "A mouse lemur in the branches at night",
+          "A Madagascar pygmy kingfisher perched on a twig after dark"
         ],
         "fr": [
+          "Une grenouille arboricole verte aux yeux cerclés de rouge sur une brindille moussue, la nuit",
           "Uroplate fantastique",
           "Un caméléon endormi sur une brindille, éclairé à la lampe pendant la balade nocturne",
-          "Un microcèbe dans les branches, la nuit"
+          "Un microcèbe dans les branches, la nuit",
+          "Un martin-chasseur malgache perché sur une brindille, à la nuit tombée"
         ],
         "de": [
+          "Ein grüner Baumfrosch mit rot umrandeten Augen nachts auf einem moosigen Zweig",
           "Satanischer Plattschwanzgecko",
           "Ein schlafendes Chamäleon auf einem Zweig im Schein der Taschenlampe bei der Nachtwanderung",
-          "Ein Mausmaki nachts im Geäst"
+          "Ein Mausmaki nachts im Geäst",
+          "Ein Madagaskar-Zwergfischer sitzt nach Einbruch der Dunkelheit auf einem Zweig"
         ],
         "mg": [
+          "Sahona maitso manana maso voahodidin'ny mena eo amin'ny rantsan-kazo misy volon-ketsa amin'ny alina",
           "Androngo rambo ravina (Uroplatus phantasticus)",
           "Tana matory eo amin'ny rantsan-kazo kely, hazavain'ny jiro mandritra ny fitsangatsanganana amin'ny alina",
-          "Tsidy eny amin'ny sampan-kazo amin'ny alina"
+          "Tsidy eny amin'ny sampan-kazo amin'ny alina",
+          "Vintsiala mipetraka eo amin'ny rantsan-kazo kely rehefa maizina ny andro"
         ]
       }
     },

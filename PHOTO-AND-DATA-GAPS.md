@@ -290,6 +290,35 @@ Thermal.
 I took the river-valley photo (12.01.13 PM (1)) to be the Namorona near town. If it is
 a different river, say so and it comes off the kayaking listing.
 
+### Added 13 October 2026 — wildlife, a forest cascade and a village
+
+All 12 are on the site, used as received (already 1600 px and under 500 KB, so there are
+no separate originals).
+
+| Where | Photos |
+|---|---|
+| **National Park** — wildlife cards | black-and-white ruffed lemur (Lemurs), paradise flycatcher on its nest (Birds), chameleon with blue legs (Reptiles). The earlier card photos stay in the gallery |
+| **National Park** — gallery | bamboo lemur feeding, forest cascade and leaf chameleon among the eight on the page; the cards' three photos, a ground-roller, nestlings in a nest hole and a caterpillar under “See all photos” |
+| **Guided Night Walk** | red-eyed tree frog (now its card photo and first in the pop-up), pygmy kingfisher |
+| **Home page**, “Canopy” | the bamboo lemur feeding, in place of the lemur on a trunk |
+| **About page**, beside “Without visitors…” | the village of thatch-roofed houses |
+
+**Please check:** the photo descriptions name only what is certain from the picture. I
+think the feeding lemur is a golden bamboo lemur and the ground-roller a scaly
+ground-roller — confirm and the descriptions can say so. I placed the kingfisher and the
+frog on the night walk because both were shot with flash in the dark; and I assumed all
+twelve were taken in or around Ranomafana. If someone else took any of them, tell me who
+and the photo gets a credit.
+
+### Added 13 October 2026 — Centre ValBio photos
+
+Four more on the **Center Val Bio** listing, recompressed to under 500 KB: the buildings from
+the air beside the road and the terrace at dusk (second and third in its pop-up), then the
+team in green shirts with the CVB sign and World Lemur Day (after the existing team photo).
+Originals are in `photo-originals/2026-10-13 Centre ValBio/`, along with a video
+(`74114143-….mp4`, 4 MB) that is not on the site — the site has no video, and 4 MB is heavy
+on Ranomafana connections.
+
 Every photo-less listing now has a **designed placeholder** (`images/placeholder-<slug>.jpg`)
 rather than sharing one of two landscapes. They are obviously graphics — property name
 on a colour panel, "Photograph coming soon" — so nobody mistakes one for a picture of

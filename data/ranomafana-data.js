@@ -75,10 +75,15 @@ const stayData = [
     desc: "Modern research-station lodging beside Ranomafana National Park: 48 dorm beds (quad and six-bed rooms) plus 3 en-suite private rooms, Starlink Wi-Fi, and three-course meals. All visits arranged at least one day in advance.",
     gallery: [
       { src: "images/cvb-aerial-view.jpg", fallback: "images/main-view-cvb.jpg", alt: "Aerial view of Centre ValBio" },
+      /* Kyle's photos of 13 Oct 2026; originals in photo-originals/2026-10-13 Centre ValBio/ */
+      { src: "images/cvb-campus-aerial.jpg", alt: "The Centre ValBio buildings from the air, beside the road with the forest behind" },
+      { src: "images/cvb-terrace-dusk.jpg", alt: "Tables on the terrace outside the conference room at dusk, Centre ValBio" },
       { src: "images/cvb-front-entrance-shot.jpg", alt: "Visitors at the Centre ValBio entrance" },
       { src: "images/cvb-researcher-guide.jpg", fallback: "images/wright-patricia-125.jpg", alt: "Centre ValBio researcher and guide" },
       { src: "images/cvb-community-event.jpg", fallback: "images/independence-day-cvb-team-shot.jpg", alt: "Community event at Centre ValBio" },
       { src: "images/cvb-team-group.jpg", fallback: "images/group-staff-shot.jpg", alt: "Centre ValBio team" },
+      { src: "images/cvb-staff-green-shirts.jpg", alt: "Centre ValBio staff in green team shirts beside a Centre ValBio sign" },
+      { src: "images/cvb-world-lemur-day.jpg", alt: "World Lemur Day with Centre ValBio: staff and guests with a ruffed lemur mascot" },
       { src: "images/satanic-leaf-gecko.jpg", fallback: PLACEHOLDER_NATURE, alt: "Satanic leaf-tailed gecko near Centre ValBio" }
     ],
     contact: {
@@ -990,19 +995,19 @@ const doData = [
       {
         group: "Lemurs",
         note: "Fourteen species live here, among them:",
-        photo: { src: "images/ranomafana-national-park-lemur-bamboo.jpg", alt: "A lemur in the bamboo, Ranomafana National Park" },
+        photo: { src: "images/ranomafana-national-park-ruffed-lemur.jpg", alt: "A black-and-white ruffed lemur looking down from a branch, Ranomafana National Park" },
         species: ["Golden bamboo lemur", "Greater bamboo lemur", "Ranomafana grey bamboo lemur", "Milne-Edwards’ sifaka", "Southern black-and-white ruffed lemur", "Red-bellied lemur", "Red-fronted brown lemur", "Aye-aye", "Brown mouse lemur", "Crossley’s dwarf lemur", "Small-toothed sportive lemur", "Sibree’s dwarf lemur", "Peyrieras’ woolly lemur"]
       },
       {
         group: "Birds",
         note: "125 species, many found only in Madagascar. Look for:",
-        photo: { src: "images/ranomafana-national-park-bird.jpg", alt: "A bird perched in the understory, Ranomafana National Park" },
+        photo: { src: "images/ranomafana-national-park-paradise-flycatcher.jpg", alt: "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park" },
         species: ["Forest ibis", "Ground-rollers", "Blue vanga"]
       },
       {
         group: "Reptiles",
         note: "Well camouflaged, so let your guide point them out:",
-        photo: { src: "images/ranomafana-national-park-leaf-tailed-gecko.jpg", alt: "A leaf-tailed gecko disguised as a dead leaf, Ranomafana National Park" },
+        photo: { src: "images/ranomafana-national-park-chameleon-branch.jpg", alt: "A chameleon with blue legs and an orange-banded tail on a branch, Ranomafana National Park" },
         species: ["Satanic leaf-tailed gecko", "Mossy leaf-tailed gecko", "Madagascar boa", "Chameleons"]
       },
       {
@@ -1044,10 +1049,14 @@ const doData = [
         desc: "Higher-altitude forest at the park\u2019s western edge \u2014 the birders\u2019 circuit, and the route towards the sacred lake on the two-day version. Cooler and wetter than Talatakely; ask specifically for a birding guide."
       }
     ],
-    /* Photos from Kyle, 11 Oct 2026 (originals in photo-originals/). The park
-       page shows the first seven; "See all photos" opens the rest. The entrance
-       slot is still waiting for its photo, so it stays last. */
+    /* Photos from Kyle, 11 Oct 2026 (originals in photo-originals/), and more
+       from him on 13 Oct 2026 (used as received: already 1600px and under 500 KB).
+       The park page shows the first seven; "See all photos" opens the rest. The
+       entrance slot is still waiting for its photo, so it stays last. */
     gallery: [
+      { src: "images/ranomafana-national-park-bamboo-lemur-feeding.jpg", alt: "A bamboo lemur feeding on bamboo leaves, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-cascade.jpg", alt: "A small cascade tumbling over mossy boulders in the rainforest, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-leaf-chameleon.jpg", alt: "A tiny leaf chameleon (Brookesia) on a mossy twig, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-wildlife.jpg", alt: "A lemur clinging to a tree trunk among the bamboo, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-campsite.jpg", alt: "The forest campsite inside Ranomafana National Park, with a wooden rack and a fire pit" },
       { src: "images/ranomafana-national-park-canopy.jpg", alt: "Looking up a giant rainforest tree into the canopy, Ranomafana National Park" },
@@ -1060,6 +1069,12 @@ const doData = [
       { src: "images/ranomafana-national-park-leaf-tailed-gecko.jpg", alt: "A leaf-tailed gecko disguised as a dead leaf, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-bird.jpg", alt: "A bird perched in the understory, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-chameleon-in-hand.jpg", alt: "A young chameleon held up for a closer look, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-ruffed-lemur.jpg", alt: "A black-and-white ruffed lemur looking down from a branch, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-paradise-flycatcher.jpg", alt: "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-chameleon-branch.jpg", alt: "A chameleon with blue legs and an orange-banded tail on a branch, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-ground-roller.jpg", alt: "A ground-roller, one of the shy birds of the forest floor, in close-up, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-nestlings.jpg", alt: "Hungry nestlings calling from their nest hole, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-caterpillar.jpg", alt: "A hairy black-and-orange caterpillar under a leaf, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-bamboo.jpg", alt: "Bamboo forest, home of the park's bamboo lemurs" },
       { src: "images/ranomafana-national-park-mossy-trunks.jpg", alt: "Moss-covered tree trunks in the rainforest, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-stream.jpg", alt: "A stream running over mossy rocks under the forest canopy, Ranomafana National Park" },
@@ -1101,14 +1116,16 @@ const doData = [
     rating: "4.7 (Tripadvisor)",
     duration: "About 1 hour",
     status: "open",
-    img: "images/satanic-leaf-gecko.jpg",
+    img: "images/night-walk-tree-frog.jpg",
     verified: true,
     sourceNote: "Price paid August 2025 for a 2-hour night walk (The Travelling Sloth trip report). The earlier 20,000–25,000 Ar figure came from 2026 fee-guide websites with no gate report behind it. Length (about an hour), booking through your guide or hotel, the brown mouse lemurs and chameleons, and the need for a private car from Kyle's notes (received 11 Oct 2026).",
     desc: "After-dark walk along the RN25 at the forest edge — the park itself closes at 17:00 — for brown mouse lemurs and many kinds of chameleon, with tree frogs and leaf-tailed geckos too. No park ticket is needed. Arrange it through your daytime park guide or your hotel.",
     gallery: [
+      { src: "images/night-walk-tree-frog.jpg", alt: "A green tree frog with red-rimmed eyes on a mossy twig at night" },
       { src: "images/satanic-leaf-gecko.jpg", alt: "Satanic leaf-tailed gecko" },
       { src: "images/night-walk-chameleon.jpg", alt: "A chameleon asleep on a twig, lit by torchlight on the night walk" },
-      { src: "images/night-walk-mouse-lemur.jpg", alt: "A mouse lemur in the branches at night" }
+      { src: "images/night-walk-mouse-lemur.jpg", alt: "A mouse lemur in the branches at night" },
+      { src: "images/night-walk-pygmy-kingfisher.jpg", alt: "A Madagascar pygmy kingfisher perched on a twig after dark" }
     ],
     tips: ["You need a private car: taxi-brousses stop running regularly after dusk, and walking the road at night is not considered safe", "Arrange it with your daytime guide or your hotel", "Bring a head torch with a red filter", "Starts around 18:30", "Wear long sleeves"],
     contact: { phone: "", email: "", website: "", social: "" }

@@ -21,6 +21,14 @@
           "alt": "Aerial view of Centre ValBio"
         },
         {
+          "src": "images/cvb-campus-aerial.jpg",
+          "alt": "The Centre ValBio buildings from the air, beside the road with the forest behind"
+        },
+        {
+          "src": "images/cvb-terrace-dusk.jpg",
+          "alt": "Tables on the terrace outside the conference room at dusk, Centre ValBio"
+        },
+        {
           "src": "images/cvb-front-entrance-shot.jpg",
           "alt": "Visitors at the Centre ValBio entrance"
         },
@@ -38,6 +46,14 @@
           "src": "images/cvb-team-group.jpg",
           "fallback": "images/group-staff-shot.jpg",
           "alt": "Centre ValBio team"
+        },
+        {
+          "src": "images/cvb-staff-green-shirts.jpg",
+          "alt": "Centre ValBio staff in green team shirts beside a Centre ValBio sign"
+        },
+        {
+          "src": "images/cvb-world-lemur-day.jpg",
+          "alt": "World Lemur Day with Centre ValBio: staff and guests with a ruffed lemur mascot"
         },
         {
           "src": "images/satanic-leaf-gecko.jpg",
@@ -1994,8 +2010,8 @@
           "group": "Lemurs",
           "note": "Fourteen species live here, among them:",
           "photo": {
-            "src": "images/ranomafana-national-park-lemur-bamboo.jpg",
-            "alt": "A lemur in the bamboo, Ranomafana National Park"
+            "src": "images/ranomafana-national-park-ruffed-lemur.jpg",
+            "alt": "A black-and-white ruffed lemur looking down from a branch, Ranomafana National Park"
           },
           "species": [
             "Golden bamboo lemur",
@@ -2017,8 +2033,8 @@
           "group": "Birds",
           "note": "125 species, many found only in Madagascar. Look for:",
           "photo": {
-            "src": "images/ranomafana-national-park-bird.jpg",
-            "alt": "A bird perched in the understory, Ranomafana National Park"
+            "src": "images/ranomafana-national-park-paradise-flycatcher.jpg",
+            "alt": "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park"
           },
           "species": [
             "Forest ibis",
@@ -2030,8 +2046,8 @@
           "group": "Reptiles",
           "note": "Well camouflaged, so let your guide point them out:",
           "photo": {
-            "src": "images/ranomafana-national-park-leaf-tailed-gecko.jpg",
-            "alt": "A leaf-tailed gecko disguised as a dead leaf, Ranomafana National Park"
+            "src": "images/ranomafana-national-park-chameleon-branch.jpg",
+            "alt": "A chameleon with blue legs and an orange-banded tail on a branch, Ranomafana National Park"
           },
           "species": [
             "Satanic leaf-tailed gecko",
@@ -2086,6 +2102,18 @@
       ],
       "gallery": [
         {
+          "src": "images/ranomafana-national-park-bamboo-lemur-feeding.jpg",
+          "alt": "A bamboo lemur feeding on bamboo leaves, Ranomafana National Park"
+        },
+        {
+          "src": "images/ranomafana-national-park-cascade.jpg",
+          "alt": "A small cascade tumbling over mossy boulders in the rainforest, Ranomafana National Park"
+        },
+        {
+          "src": "images/ranomafana-national-park-leaf-chameleon.jpg",
+          "alt": "A tiny leaf chameleon (Brookesia) on a mossy twig, Ranomafana National Park"
+        },
+        {
           "src": "images/ranomafana-national-park-wildlife.jpg",
           "alt": "A lemur clinging to a tree trunk among the bamboo, Ranomafana National Park"
         },
@@ -2132,6 +2160,30 @@
         {
           "src": "images/ranomafana-national-park-chameleon-in-hand.jpg",
           "alt": "A young chameleon held up for a closer look, Ranomafana National Park"
+        },
+        {
+          "src": "images/ranomafana-national-park-ruffed-lemur.jpg",
+          "alt": "A black-and-white ruffed lemur looking down from a branch, Ranomafana National Park"
+        },
+        {
+          "src": "images/ranomafana-national-park-paradise-flycatcher.jpg",
+          "alt": "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park"
+        },
+        {
+          "src": "images/ranomafana-national-park-chameleon-branch.jpg",
+          "alt": "A chameleon with blue legs and an orange-banded tail on a branch, Ranomafana National Park"
+        },
+        {
+          "src": "images/ranomafana-national-park-ground-roller.jpg",
+          "alt": "A ground-roller, one of the shy birds of the forest floor, in close-up, Ranomafana National Park"
+        },
+        {
+          "src": "images/ranomafana-national-park-nestlings.jpg",
+          "alt": "Hungry nestlings calling from their nest hole, Ranomafana National Park"
+        },
+        {
+          "src": "images/ranomafana-national-park-caterpillar.jpg",
+          "alt": "A hairy black-and-orange caterpillar under a leaf, Ranomafana National Park"
         },
         {
           "src": "images/ranomafana-national-park-bamboo.jpg",
@@ -2213,11 +2265,15 @@
       "rating": "4.7 (Tripadvisor)",
       "duration": "About 1 hour",
       "status": "open",
-      "img": "images/satanic-leaf-gecko.jpg",
+      "img": "images/night-walk-tree-frog.jpg",
       "verified": true,
       "sourceNote": "Price paid August 2025 for a 2-hour night walk (The Travelling Sloth trip report). The earlier 20,000–25,000 Ar figure came from 2026 fee-guide websites with no gate report behind it. Length (about an hour), booking through your guide or hotel, the brown mouse lemurs and chameleons, and the need for a private car from Kyle's notes (received 11 Oct 2026).",
       "desc": "After-dark walk along the RN25 at the forest edge — the park itself closes at 17:00 — for brown mouse lemurs and many kinds of chameleon, with tree frogs and leaf-tailed geckos too. No park ticket is needed. Arrange it through your daytime park guide or your hotel.",
       "gallery": [
+        {
+          "src": "images/night-walk-tree-frog.jpg",
+          "alt": "A green tree frog with red-rimmed eyes on a mossy twig at night"
+        },
         {
           "src": "images/satanic-leaf-gecko.jpg",
           "alt": "Satanic leaf-tailed gecko"
@@ -2229,6 +2285,10 @@
         {
           "src": "images/night-walk-mouse-lemur.jpg",
           "alt": "A mouse lemur in the branches at night"
+        },
+        {
+          "src": "images/night-walk-pygmy-kingfisher.jpg",
+          "alt": "A Madagascar pygmy kingfisher perched on a twig after dark"
         }
       ],
       "tips": [

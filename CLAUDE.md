@@ -346,6 +346,15 @@ Their untouched originals are in `photo-originals/` (not used by the site; keep
 originals there, not in `images/`). The park page shows eight photos and a
 "See all photos" pop-up (`openParkPhotos()`) for the rest.
 
+Kyle's 12 photos of 13 October 2026 (used as received, no separate originals) gave the
+park's Lemurs, Birds and Reptiles cards new photos, added nine to the park gallery, made a
+red-eyed tree frog the night walk's card photo, put a feeding bamboo lemur on the home
+page's Canopy layer and a village beside "Without visitors…" on the About page. Their
+descriptions name a species only where the picture makes it certain. Four Centre ValBio
+photos the same day (aerial, terrace, two team photos) joined the Center Val Bio gallery;
+originals in `photo-originals/2026-10-13 Centre ValBio/`. Details in section 7 of
+`PHOTO-AND-DATA-GAPS.md`.
+
 Station Thermale prices and hours come from the board at its ticket booth (photo,
 October 2026): 10,000 Ar / residents 2,000 Ar, pool closed Tuesdays. It has **no contact
 details of its own** — never fill them with Hotel Thermal's, which is what the site
