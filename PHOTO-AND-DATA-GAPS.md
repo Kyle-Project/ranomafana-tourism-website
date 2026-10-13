@@ -303,9 +303,8 @@ no separate originals).
 | **Home page**, “Canopy” | the bamboo lemur feeding, in place of the lemur on a trunk |
 | **About page**, beside “Without visitors…” | the village of thatch-roofed houses |
 
-**Please check:** the photo descriptions name only what is certain from the picture. I
-think the feeding lemur is a golden bamboo lemur and the ground-roller a scaly
-ground-roller — confirm and the descriptions can say so. I placed the kingfisher and the
+**Confirmed by Kyle, 13 Oct 2026:** the feeding lemur is a golden bamboo lemur and the
+ground-roller a scaly ground-roller; the descriptions now name both. I placed the kingfisher and the
 frog on the night walk because both were shot with flash in the dark; and I assumed all
 twelve were taken in or around Ranomafana. If someone else took any of them, tell me who
 and the photo gets a credit.

@@ -1054,7 +1054,7 @@ const doData = [
        The park page shows the first seven; "See all photos" opens the rest. The
        entrance slot is still waiting for its photo, so it stays last. */
     gallery: [
-      { src: "images/ranomafana-national-park-bamboo-lemur-feeding.jpg", alt: "A bamboo lemur feeding on bamboo leaves, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-bamboo-lemur-feeding.jpg", alt: "A golden bamboo lemur feeding on bamboo leaves, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-cascade.jpg", alt: "A small cascade tumbling over mossy boulders in the rainforest, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-leaf-chameleon.jpg", alt: "A tiny leaf chameleon (Brookesia) on a mossy twig, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-wildlife.jpg", alt: "A lemur clinging to a tree trunk among the bamboo, Ranomafana National Park" },
@@ -1072,7 +1072,7 @@ const doData = [
       { src: "images/ranomafana-national-park-ruffed-lemur.jpg", alt: "A black-and-white ruffed lemur looking down from a branch, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-paradise-flycatcher.jpg", alt: "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-chameleon-branch.jpg", alt: "A chameleon with blue legs and an orange-banded tail on a branch, Ranomafana National Park" },
-      { src: "images/ranomafana-national-park-ground-roller.jpg", alt: "A ground-roller, one of the shy birds of the forest floor, in close-up, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-ground-roller.jpg", alt: "A scaly ground-roller, one of the shy birds of the forest floor, in close-up, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-nestlings.jpg", alt: "Hungry nestlings calling from their nest hole, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-caterpillar.jpg", alt: "A hairy black-and-orange caterpillar under a leaf, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-bamboo.jpg", alt: "Bamboo forest, home of the park's bamboo lemurs" },

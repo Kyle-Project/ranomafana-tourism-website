@@ -348,9 +348,10 @@ originals there, not in `images/`). The park page shows eight photos and a
 
 Kyle's 12 photos of 13 October 2026 (used as received, no separate originals) gave the
 park's Lemurs, Birds and Reptiles cards new photos, added nine to the park gallery, made a
-red-eyed tree frog the night walk's card photo, put a feeding bamboo lemur on the home
-page's Canopy layer and a village beside "Without visitors…" on the About page. Their
-descriptions name a species only where the picture makes it certain. Four Centre ValBio
+red-eyed tree frog the night walk's card photo, put a feeding golden bamboo lemur on the
+home page's Canopy layer and a village beside "Without visitors…" on the About page. Their
+descriptions name a species only where the picture makes it certain or Kyle confirmed it
+(the golden bamboo lemur and the scaly ground-roller). Four Centre ValBio
 photos the same day (aerial, terrace, two team photos) joined the Center Val Bio gallery;
 originals in `photo-originals/2026-10-13 Centre ValBio/`. Details in section 7 of
 `PHOTO-AND-DATA-GAPS.md`.

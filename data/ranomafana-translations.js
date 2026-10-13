@@ -2824,7 +2824,7 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
-          "A bamboo lemur feeding on bamboo leaves, Ranomafana National Park",
+          "A golden bamboo lemur feeding on bamboo leaves, Ranomafana National Park",
           "A small cascade tumbling over mossy boulders in the rainforest, Ranomafana National Park",
           "A tiny leaf chameleon (Brookesia) on a mossy twig, Ranomafana National Park",
           "A lemur clinging to a tree trunk among the bamboo, Ranomafana National Park",
@@ -2842,7 +2842,7 @@ const LISTING_TRANSLATIONS = {
           "A black-and-white ruffed lemur looking down from a branch, Ranomafana National Park",
           "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park",
           "A chameleon with blue legs and an orange-banded tail on a branch, Ranomafana National Park",
-          "A ground-roller, one of the shy birds of the forest floor, in close-up, Ranomafana National Park",
+          "A scaly ground-roller, one of the shy birds of the forest floor, in close-up, Ranomafana National Park",
           "Hungry nestlings calling from their nest hole, Ranomafana National Park",
           "A hairy black-and-orange caterpillar under a leaf, Ranomafana National Park",
           "Bamboo forest, home of the park's bamboo lemurs",
@@ -2852,7 +2852,7 @@ const LISTING_TRANSLATIONS = {
           "Ranomafana National Park entrance"
         ],
         "fr": [
-          "Un hapalémur mangeant des feuilles de bambou, parc national de Ranomafana",
+          "Un hapalémur doré mangeant des feuilles de bambou, parc national de Ranomafana",
           "Une petite cascade dévalant des rochers moussus dans la forêt tropicale, parc national de Ranomafana",
           "Un minuscule caméléon-feuille (Brookesia) sur une brindille moussue, parc national de Ranomafana",
           "Un lémurien agrippé à un tronc parmi les bambous, parc national de Ranomafana",
@@ -2870,7 +2870,7 @@ const LISTING_TRANSLATIONS = {
           "Un vari noir et blanc qui regarde depuis une branche, parc national de Ranomafana",
           "Un tchitrec malgache posé sur son nid de mousse, parc national de Ranomafana",
           "Un caméléon aux pattes bleues et à la queue annelée d’orange sur une branche, parc national de Ranomafana",
-          "Un brachyptérolle, l’un des oiseaux discrets du sol forestier, en gros plan, parc national de Ranomafana",
+          "Un brachyptérolle écaillé, l’un des oiseaux discrets du sol forestier, en gros plan, parc national de Ranomafana",
           "Des oisillons affamés qui réclament au fond de leur cavité, parc national de Ranomafana",
           "Une chenille velue noire et orange sous une feuille, parc national de Ranomafana",
           "La forêt de bambous, domaine des hapalémurs du parc",
@@ -2880,7 +2880,7 @@ const LISTING_TRANSLATIONS = {
           "L’entrée du parc national de Ranomafana"
         ],
         "de": [
-          "Ein Bambuslemur frisst Bambusblätter, Nationalpark Ranomafana",
+          "Ein Goldener Bambuslemur frisst Bambusblätter, Nationalpark Ranomafana",
           "Eine kleine Kaskade stürzt über moosige Felsblöcke im Regenwald, Nationalpark Ranomafana",
           "Ein winziges Stummelschwanzchamäleon (Brookesia) auf einem moosigen Zweig, Nationalpark Ranomafana",
           "Ein Lemur klammert sich zwischen Bambus an einen Baumstamm, Nationalpark Ranomafana",
@@ -2898,7 +2898,7 @@ const LISTING_TRANSLATIONS = {
           "Ein Schwarzweißer Vari blickt von einem Ast herab, Nationalpark Ranomafana",
           "Ein Madagaskar-Paradiesschnäpper auf seinem moosigen Nest, Nationalpark Ranomafana",
           "Ein Chamäleon mit blauen Beinen und orange gebändertem Schwanz auf einem Ast, Nationalpark Ranomafana",
-          "Ein Erdracke, einer der scheuen Vögel des Waldbodens, in Nahaufnahme, Nationalpark Ranomafana",
+          "Eine Schuppenerdracke, einer der scheuen Vögel des Waldbodens, in Nahaufnahme, Nationalpark Ranomafana",
           "Hungrige Nestlinge betteln in ihrer Bruthöhle, Nationalpark Ranomafana",
           "Eine behaarte schwarz-orange Raupe unter einem Blatt, Nationalpark Ranomafana",
           "Bambuswald, Heimat der Bambuslemuren des Parks",
@@ -2908,7 +2908,7 @@ const LISTING_TRANSLATIONS = {
           "Eingang des Nationalparks Ranomafana"
         ],
         "mg": [
-          "Gidro mpihinam-bolo mihinana ravim-bolo, valan-javaboahary Ranomafana",
+          "Gidro volamena mpihinam-bolo mihinana ravim-bolo, valan-javaboahary Ranomafana",
           "Riandrano kely mikoriana eo ambonin'ny vato misy volon-ketsa ao anaty ala mando, valan-javaboahary Ranomafana",
           "Tana kely bitika mitovy amin'ny ravina (Brookesia) eo amin'ny rantsan-kazo misy volon-ketsa, valan-javaboahary Ranomafana",
           "Gidro mihantona amin'ny vatan-kazo eo anivon'ny volo, valan-javaboahary Ranomafana",
@@ -2926,7 +2926,7 @@ const LISTING_TRANSLATIONS = {
           "Varikandana (gidro mainty sy fotsy) mijery avy eo amin'ny sampan-kazo, valan-javaboahary Ranomafana",
           "Vorona rambo lava (Terpsiphone mutata) mipetraka eo amin'ny akaniny vita amin'ny volon-ketsa, valan-javaboahary Ranomafana",
           "Tana manana tongotra manga sy rambo misy tsipika volom-boasary eo amin'ny sampan-kazo, valan-javaboahary Ranomafana",
-          "Vorona saro-kenatra miaina eny amin'ny tany ao an'ala (ground-roller), jerena akaiky, valan-javaboahary Ranomafana",
+          "Vorona saro-kenatra miaina eny amin'ny tany ao an'ala (scaly ground-roller, Geobiastes squamiger), jerena akaiky, valan-javaboahary Ranomafana",
           "Zana-borona noana mitabataba ao anaty lavaka akaniny, valan-javaboahary Ranomafana",
           "Fanday volony mainty sy volom-boasary eo ambanin'ny ravina, valan-javaboahary Ranomafana",
           "Ala volo, fonenan'ireo gidro mpihinam-bolo ao amin'ny valan-javaboahary",
