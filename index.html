@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Ranomafana · A community visitor guide</title>
-  <meta name="description" content="Where to stay, eat and walk in Ranomafana, Madagascar: the national park and its lemurs, the hot springs, and how to plan a visit, from the people who live here.">
+  <meta name="description" content="Ranomafana, Madagascar: fourteen kinds of lemur in a rainforest found nowhere else, hot springs, and a visit that helps keep it alive. Where to stay, eat and walk, from the people who live here.">
   <meta name="theme-color" content="#0B1512">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230B1512'/%3E%3Cg fill='none' stroke='%23E5B53D' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2c4.5 4.5 7 8 7 11.5a7 7 0 0 1-14 0C5 10 7.5 6.5 12 2z'/%3E%3Cpath d='M12 22V11M12 15l-3-3M12 17l3-3'/%3E%3C/g%3E%3C/svg%3E">
 
@@ -864,6 +864,7 @@
     .footer-grid { display: grid; grid-template-columns: 2fr repeat(3, minmax(0, 1fr)); gap: 32px; }
     .footer-brand { display: flex; flex-direction: column; gap: 12px; }
     .footer-name { font-family: var(--serif); font-weight: 300; font-size: 56px; color: var(--mist); line-height: 1; }
+    .footer-call { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 20px; line-height: 1.35; color: var(--gold); }
     .footer-col { display: flex; flex-direction: column; gap: 10px; font-size: 15px; }
     .footer-col strong { color: var(--mist); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
     .footer-col a { color: var(--lichen); text-decoration: none; }
@@ -1031,11 +1032,13 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E5B53D" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"></path></svg>
             <span data-i18n="heroBadge">UNESCO World Heritage</span><span class="only-lg">·</span><span class="only-lg" data-i18n="heroBadgeMore">Rainforests of the Atsinanana</span>
           </span>
-          <h1 id="home-h" class="hero-title" data-i18n="heroTitle" data-i18n-html>Go deeper<br><em>into the forest.</em></h1>
+          <!-- Title and lede carry the guide's rationale (Kyle, 15 Oct 2026): "A world found
+               nowhere else. Your visit keeps it alive." It replaced "Go deeper into the forest." -->
+          <h1 id="home-h" class="hero-title" data-i18n="heroTitle" data-i18n-html>A world found<br><em>nowhere else.</em></h1>
           <div class="hero-row">
             <p class="hero-lede">
-              <span class="only-lg" data-i18n="heroSubtitle">43,550 hectares of montane rainforest. Fourteen kinds of lemur. And at the bottom of the valley, the hot springs that gave Ranomafana its name.</span>
-              <span class="only-sm" data-i18n="heroSubtitleShort">Fourteen kinds of lemur above, hot springs below.</span>
+              <span class="only-lg" data-i18n="heroSubtitle">Fourteen kinds of lemur, 43,550 hectares of rainforest, and hot springs at the bottom of the valley. Your visit keeps it alive.</span>
+              <span class="only-sm" data-i18n="heroSubtitleShort">Fourteen kinds of lemur, hot springs below. Your visit keeps it alive.</span>
             </p>
             <a class="btn btn-gold only-sm" href="#itineraries" data-i18n="planVisitBtn">Plan your visit</a>
             <button class="descend only-lg" type="button" onclick="document.getElementById('layers').scrollIntoView({ behavior: 'smooth' })">
@@ -1103,6 +1106,24 @@
             <a class="text-link" href="#about"><span data-i18n="welcomeLink">Why your visit matters</span> →</a>
           </div>
         </div>
+      </section>
+
+      <!-- The case for Ranomafana: the three points of Kyle's rationale ("Why Ranomafana",
+           15 Oct 2026), with the site's own MNP figures (43,550 ha, 14 lemurs), not the 41,600 ha
+           and 12 lemurs in that document. Comparisons with other Malagasy parks are left out on
+           purpose: MNP, a partner, runs them too. Sources at the foot of the section. -->
+      <section class="wrap pad-b stack g-24" aria-labelledby="why-h">
+        <div class="section-head" style="margin-bottom: 0;">
+          <h2 id="why-h" class="display d-64" data-i18n="whyHeading" data-i18n-html>Seeing it is what <em>protects it.</em></h2>
+          <p class="lede-serif" data-i18n="whyLede">Walk into an ancient rainforest, meet animals that live nowhere on Earth but Madagascar, and leave having helped protect them.</p>
+        </div>
+        <ol class="steps">
+          <li><span class="num">01</span><strong data-i18n="why1Title">Found nowhere else</strong><span data-i18n="why1Text">Madagascar broke away from every other landmass some 88 million years ago, and about nine in ten of its plants and animals live nowhere else. The golden bamboo lemur was discovered here in 1986.</span></li>
+          <li><span class="num">02</span><strong data-i18n="why2Title">All in one valley</strong><span data-i18n="why2Text">Rainforest with fourteen kinds of lemur, hot springs to soak in and Centre ValBio, a working research station, all along one road. Lemurs in the morning, a soak in the afternoon, chameleons after dark.</span></li>
+          <li><span class="num">03</span><strong data-i18n="why3Title">Your visit counts</strong><span data-i18n="why3Text">Madagascar is one of the world’s lowest-income countries, so what you spend here goes far. It pays local guides, cooks and hosts, and gives the villages around the park a reason to keep the forest standing.</span></li>
+        </ol>
+        <a class="text-link" href="#about"><span data-i18n="whyLink">How your visit protects the forest</span> →</a>
+        <p class="page-note" style="padding-bottom: 0;" data-i18n="whySources">Sources: Madagascar’s 88 million years of isolation and the share of its species found nowhere else from Wikipedia (Wildlife of Madagascar); the lemur count from Madagascar National Parks; Madagascar’s income level from the World Bank’s country classification (2025–26).</p>
       </section>
 
       <!-- Four layers of one forest -->
@@ -1278,7 +1299,7 @@
         <div class="wrap page-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navStay">Stay</span></nav>
           <h1 id="stay-h" class="page-title" data-i18n="stayHeading">Places to stay</h1>
-          <p class="page-intro" data-i18n="staySubtitle">{stays} places, from research-station dorms at the park’s edge to riverside bungalows and village guesthouses.</p>
+          <p class="page-intro" data-i18n="staySubtitle">{stays} places, from research-station dorms at the park’s edge to riverside bungalows and village guesthouses. Book direct where you can, and all of your payment reaches the place you stay.</p>
         </div>
       </div>
 
@@ -1706,7 +1727,7 @@
         <div class="wrap page-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#itineraries" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabGuides">Hiring a guide</span></nav>
           <h1 id="gd-h" class="page-title" data-i18n="tabGuides">Hiring a guide</h1>
-          <p class="page-intro" data-i18n="guidesIntro">Nobody walks the park alone. A certified Madagascar National Parks guide has been required for international visitors since 2010, and they are the reason you will actually see the animals.</p>
+          <p class="page-intro" data-i18n="guidesIntro">Nobody walks the park alone. A certified Madagascar National Parks guide has been required for international visitors since 2010, and they are the reason you will actually see the animals. Your guide lives here, so hiring one is also one of the most direct ways your visit supports the village.</p>
         </div>
       </div>
       <nav class="plan-tabs" aria-label="Plan your trip" data-i18n-aria-label="crumbPlan">
@@ -1855,6 +1876,31 @@
         </div>
       </section>
 
+      <!-- How tourism protects the forest: the community and conservation case from Kyle's
+           rationale ("Why Ranomafana", 15 Oct 2026). The pills send visitors to local businesses. -->
+      <section class="wrap stack g-24" style="padding-top: 32px; padding-bottom: 32px;" aria-labelledby="circle-h">
+        <h2 id="circle-h" class="display d-56" data-i18n="circleHeading" data-i18n-html>How your visit <em>protects the forest.</em></h2>
+        <div class="split" style="align-items: start;">
+          <div class="stack g-16">
+            <p class="lede-serif" data-i18n="circleLede">Every stay, meal and trek helps Ranomafana’s communities protect the rainforest they call home.</p>
+            <p class="lede" data-i18n="circleText1">Villages ring the park, and daily life presses right up against the forest. The band of forest between the two, the buffer zone, is the most vulnerable ground of all: without a reason to keep it, the pressure is to clear it. Tourism gives that reason.</p>
+            <p class="lede" data-i18n="circleText2">Madagascar is one of the world’s lowest-income countries, and the people who live beside this forest have to feel the benefit of protecting it. When they do, conservation stops being a sacrifice asked of them and becomes something that rewards them.</p>
+          </div>
+          <ol class="numbered">
+            <li><span class="num">1</span><span data-i18n="circle1">You spend money with local guides, lodges, restaurants and artisans.</span></li>
+            <li><span class="num">2</span><span data-i18n="circle2">That income gives families a living tied to a standing forest, not a cleared one.</span></li>
+            <li><span class="num">3</span><span data-i18n="circle3">A protected buffer zone shields the park and the animals inside it.</span></li>
+            <li><span class="num">4</span><span data-i18n="circle4">Thriving wildlife keeps drawing visitors, and the circle begins again.</span></li>
+          </ol>
+        </div>
+        <nav class="pill-row" aria-label="Start here" data-i18n-aria-label="ariaStartHere">
+          <a class="pill-link lg" href="#guides" data-i18n="tabGuides">Hiring a guide</a>
+          <a class="pill-link lg" href="#stay" data-i18n="drawerStay">Places to stay</a>
+          <a class="pill-link lg" href="#eat" data-i18n="drawerEat">Places to eat</a>
+          <a class="pill-link lg" href="#do" data-i18n="drawerDo">Things to do</a>
+        </nav>
+      </section>
+
       <section class="wrap stack g-20" style="padding-bottom: 24px;" aria-labelledby="mnp-h">
         <h3 id="mnp-h" class="display d-44" data-i18n="ecoMnpHeading">What Madagascar National Parks does</h3>
         <ul class="tips">
@@ -1904,7 +1950,7 @@
           </div>
         </div>
       </section>
-      <p class="wrap page-note" data-i18n="aboutSources">Sources: visitor numbers, population and Madagascar National Parks’ role from this guide’s own local notes (October 2026).</p>
+      <p class="wrap page-note" data-i18n="aboutSources">Sources: visitor numbers, population and Madagascar National Parks’ role from this guide’s own local notes (October 2026); how tourism protects the forest from this guide’s own rationale (October 2026); Madagascar’s income level from the World Bank’s country classification (2025–26).</p>
     </section>
 
   </main>
@@ -1915,6 +1961,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <span class="footer-name">Ranomafana</span>
+          <span class="footer-call" data-i18n="footerCall">Discover Ranomafana. Protect what exists nowhere else.</span>
           <span data-i18n="footerTagline">A community visitor guide · Madagascar</span>
         </div>
         <nav class="footer-col" aria-label="Explore" data-i18n-aria-label="footerExplore">
@@ -2099,9 +2146,9 @@
         crumbHome: "Home", crumbPlan: "Plan your trip", crumbPark: "National park",
         // home
         heroBadge: "UNESCO World Heritage", heroBadgeMore: "Rainforests of the Atsinanana",
-        heroTitle: "Go deeper<br><em>into the forest.</em>",
-        heroSubtitle: "43,550 hectares of montane rainforest. Fourteen kinds of lemur. And at the bottom of the valley, the hot springs that gave Ranomafana its name.",
-        heroSubtitleShort: "Fourteen kinds of lemur above, hot springs below.",
+        heroTitle: "A world found<br><em>nowhere else.</em>",
+        heroSubtitle: "Fourteen kinds of lemur, 43,550 hectares of rainforest, and hot springs at the bottom of the valley. Your visit keeps it alive.",
+        heroSubtitleShort: "Fourteen kinds of lemur, hot springs below. Your visit keeps it alive.",
         descend: "Descend",
         doorStay: "Stay", doorStaySub: "{stays} lodges, hotels & guesthouses", doorStayShort: "{stays} places",
         doorEat: "Eat", doorEatSub: "{eats} restaurants & snack bars", doorEatShort: "{eats} places",
@@ -2142,7 +2189,7 @@
         emailTeamBtn: "Email the team", meetTeamBtn: "Meet the team",
         // directories
         stayHeading: "Places to stay",
-        staySubtitle: "{stays} places, from research-station dorms at the park’s edge to riverside bungalows and village guesthouses.",
+        staySubtitle: "{stays} places, from research-station dorms at the park’s edge to riverside bungalows and village guesthouses. Book direct where you can, and all of your payment reaches the place you stay.",
         searchLabel: "Search", staySearchPlaceholder: "Hotel or lodge name",
         typeLegend: "Type", chipAll: "All places", chipEco: "Eco lodges", chipHotel: "Hotels", chipGuest: "Guesthouses",
         mustHave: "Must have", amenityWifi: "Wi-Fi", amenityHotWater: "Hot water", amenityRestaurant: "Restaurant", needRestaurant: "Restaurant on site", amenityParking: "Parking",
@@ -2203,7 +2250,7 @@
         noEventsMonth: "No annual festivals listed this month.", weeklyLead: "Every week, all year:",
         whateverMonth: "Whatever the month", rainShell: "Rain shell", sturdyShoes: "Sturdy shoes", goMidMorning: "Go mid-morning",
         // hiring a guide
-        guidesIntro: "Nobody walks the park alone. A certified Madagascar National Parks guide has been required for international visitors since 2010, and they are the reason you will actually see the animals.",
+        guidesIntro: "Nobody walks the park alone. A certified Madagascar National Parks guide has been required for international visitors since 2010, and they are the reason you will actually see the animals. Your guide lives here, so hiring one is also one of the most direct ways your visit supports the village.",
         howItWorksHeading: "How it works",
         step1Title: "Find a guide", step2Title: "Pick a walk", step3Title: "Pay in Ariary", step4Title: "Go mid-morning",
         costEyebrow: "What it costs", costHeading: "One fee per group", costWalk: "Walk", costPaid: "Paid at the gate", hoursN: "{n} hours",
@@ -2335,7 +2382,7 @@
         teamBio3: "Helping visitors plan safe, respectful and memorable trips.",
         teamRole4: "Digital & partnerships",
         teamBio4: "Keeping this guide up to date and working with local partners.",
-        aboutSources: "Sources: visitor numbers, population and Madagascar National Parks’ role from this guide’s own local notes (October 2026).",
+        aboutSources: "Sources: visitor numbers, population and Madagascar National Parks’ role from this guide’s own local notes (October 2026); how tourism protects the forest from this guide’s own rationale (October 2026); Madagascar’s income level from the World Bank’s country classification (2025–26).",
         ariaHome: "Ranomafana — home",
         ariaMainNav: "Main",
         ariaOpenMenu: "Open menu",
@@ -2391,7 +2438,27 @@
         noteDryBegins: "Daytime around 22°C as the drier season begins.",
         noteActiveAgain: "Animals are active again after the cold months.",
         noteDryEnds: "The last month of the drier season.",
-        noteWetBegins: "The wet season and the hot season both begin."
+        noteWetBegins: "The wet season and the hot season both begin.",
+        // the case for Ranomafana (Kyle's rationale, 15 Oct 2026): home band, About section, footer
+        whyHeading: "Seeing it is what <em>protects it.</em>",
+        whyLede: "Walk into an ancient rainforest, meet animals that live nowhere on Earth but Madagascar, and leave having helped protect them.",
+        why1Title: "Found nowhere else",
+        why1Text: "Madagascar broke away from every other landmass some 88 million years ago, and about nine in ten of its plants and animals live nowhere else. The golden bamboo lemur was discovered here in 1986.",
+        why2Title: "All in one valley",
+        why2Text: "Rainforest with fourteen kinds of lemur, hot springs to soak in and Centre ValBio, a working research station, all along one road. Lemurs in the morning, a soak in the afternoon, chameleons after dark.",
+        why3Title: "Your visit counts",
+        why3Text: "Madagascar is one of the world’s lowest-income countries, so what you spend here goes far. It pays local guides, cooks and hosts, and gives the villages around the park a reason to keep the forest standing.",
+        whyLink: "How your visit protects the forest",
+        whySources: "Sources: Madagascar’s 88 million years of isolation and the share of its species found nowhere else from Wikipedia (Wildlife of Madagascar); the lemur count from Madagascar National Parks; Madagascar’s income level from the World Bank’s country classification (2025–26).",
+        circleHeading: "How your visit <em>protects the forest.</em>",
+        circleLede: "Every stay, meal and trek helps Ranomafana’s communities protect the rainforest they call home.",
+        circleText1: "Villages ring the park, and daily life presses right up against the forest. The band of forest between the two, the buffer zone, is the most vulnerable ground of all: without a reason to keep it, the pressure is to clear it. Tourism gives that reason.",
+        circleText2: "Madagascar is one of the world’s lowest-income countries, and the people who live beside this forest have to feel the benefit of protecting it. When they do, conservation stops being a sacrifice asked of them and becomes something that rewards them.",
+        circle1: "You spend money with local guides, lodges, restaurants and artisans.",
+        circle2: "That income gives families a living tied to a standing forest, not a cleared one.",
+        circle3: "A protected buffer zone shields the park and the animals inside it.",
+        circle4: "Thriving wildlife keeps drawing visitors, and the circle begins again.",
+        footerCall: "Discover Ranomafana. Protect what exists nowhere else."
       },
 
       fr: {
@@ -2402,9 +2469,9 @@
         bnavHome: "Accueil", bnavStay: "Dormir", bnavEat: "Manger", bnavDo: "Faire", bnavPlan: "Préparer",
         crumbHome: "Accueil", crumbPlan: "Préparer le voyage", crumbPark: "Parc national",
         heroBadge: "Patrimoine mondial de l’UNESCO", heroBadgeMore: "Forêts humides de l’Atsinanana",
-        heroTitle: "Entrez plus loin<br><em>dans la forêt.</em>",
-        heroSubtitle: "43 550 hectares de forêt tropicale de montagne. Quatorze espèces de lémuriens. Et au fond de la vallée, les sources chaudes qui ont donné son nom à Ranomafana.",
-        heroSubtitleShort: "Quatorze espèces de lémuriens en haut, des sources chaudes en bas.",
+        heroTitle: "Un monde qui n’existe<br><em>nulle part ailleurs.</em>",
+        heroSubtitle: "Quatorze espèces de lémuriens, 43 550 hectares de forêt tropicale et, au fond de la vallée, des sources chaudes. Votre visite le garde en vie.",
+        heroSubtitleShort: "Quatorze espèces de lémuriens, des sources chaudes en bas. Votre visite le garde en vie.",
         descend: "Descendre",
         doorStay: "Dormir", doorStaySub: "{stays} lodges, hôtels et maisons d’hôtes", doorStayShort: "{stays} adresses",
         doorEat: "Manger", doorEatSub: "{eats} restaurants et snacks", doorEatShort: "{eats} adresses",
@@ -2444,7 +2511,7 @@
         planCtaText: "Kyle Schmidt, volontaire du Peace Corps, a réalisé ce guide avec des partenaires locaux. Posez-nous vos questions sur l’accès, les guides ou l’hébergement.",
         emailTeamBtn: "Écrire à l’équipe", meetTeamBtn: "Rencontrer l’équipe",
         stayHeading: "Hébergements",
-        staySubtitle: "{stays} adresses, des dortoirs de la station de recherche à l’orée du parc aux bungalows en bord de rivière et aux maisons d’hôtes du village.",
+        staySubtitle: "{stays} adresses, des dortoirs de la station de recherche à l’orée du parc aux bungalows en bord de rivière et aux maisons d’hôtes du village. Réservez en direct quand c’est possible : tout ce que vous payez revient à votre hébergement.",
         searchLabel: "Rechercher", staySearchPlaceholder: "Nom de l’hôtel ou du lodge",
         typeLegend: "Type", chipAll: "Toutes", chipEco: "Écolodges", chipHotel: "Hôtels", chipGuest: "Maisons d’hôtes",
         mustHave: "Indispensable", amenityWifi: "Wi-Fi", amenityHotWater: "Eau chaude", amenityRestaurant: "Restaurant", needRestaurant: "Restaurant sur place", amenityParking: "Parking",
@@ -2500,7 +2567,7 @@
         thisMonth: "Ce mois-ci", aBestMonth: "Un des meilleurs mois", monthTag: "Mois", festivalsEvents: "Fêtes et événements",
         noEventsMonth: "Aucune fête annuelle répertoriée ce mois-ci.", weeklyLead: "Chaque semaine, toute l’année :",
         whateverMonth: "Quel que soit le mois", rainShell: "Imperméable", sturdyShoes: "Bonnes chaussures", goMidMorning: "En milieu de matinée",
-        guidesIntro: "Personne ne parcourt le parc seul. Depuis 2010, un guide agréé par Madagascar National Parks est obligatoire pour les visiteurs étrangers, et c’est grâce à lui que vous verrez vraiment les animaux.",
+        guidesIntro: "Personne ne parcourt le parc seul. Depuis 2010, un guide agréé par Madagascar National Parks est obligatoire pour les visiteurs étrangers, et c’est grâce à lui que vous verrez vraiment les animaux. Votre guide vit ici : l’engager est aussi l’une des façons les plus directes dont votre visite soutient le village.",
         howItWorksHeading: "Comment ça marche",
         step1Title: "Trouver un guide", step2Title: "Choisir une balade", step3Title: "Payer en ariary", step4Title: "Y aller en milieu de matinée",
         costEyebrow: "Ce que ça coûte", costHeading: "Un tarif par groupe", costWalk: "Balade", costPaid: "Payé à l’entrée", hoursN: "{n} heures",
@@ -2630,7 +2697,7 @@
         teamBio3: "Aider les visiteurs à préparer des voyages sûrs, respectueux et mémorables.",
         teamRole4: "Numérique et partenariats",
         teamBio4: "Tenir ce guide à jour et travailler avec les partenaires locaux.",
-        aboutSources: "Sources : nombre de visiteurs, population et rôle de Madagascar National Parks d’après les notes locales de ce guide (octobre 2026).",
+        aboutSources: "Sources : nombre de visiteurs, population et rôle de Madagascar National Parks d’après les notes locales de ce guide (octobre 2026) ; la façon dont le tourisme protège la forêt d’après l’argumentaire de ce guide (octobre 2026) ; le niveau de revenu de Madagascar d’après la classification des pays de la Banque mondiale (2025–26).",
         ariaHome: "Ranomafana — accueil",
         ariaMainNav: "Navigation principale",
         ariaOpenMenu: "Ouvrir le menu",
@@ -2686,7 +2753,26 @@
         noteDryBegins: "Environ 22 °C en journée, au début de la saison plus sèche.",
         noteActiveAgain: "Les animaux sont de nouveau actifs après les mois froids.",
         noteDryEnds: "Le dernier mois de la saison plus sèche.",
-        noteWetBegins: "La saison des pluies et la saison chaude commencent toutes les deux."
+        noteWetBegins: "La saison des pluies et la saison chaude commencent toutes les deux.",
+        whyHeading: "Le voir, c’est <em>le protéger.</em>",
+        whyLede: "Entrez dans une forêt tropicale ancienne, rencontrez des animaux qui ne vivent nulle part ailleurs qu’à Madagascar, et repartez en ayant contribué à les protéger.",
+        why1Title: "Introuvable ailleurs",
+        why1Text: "Madagascar s’est détachée de toutes les autres terres il y a quelque 88 millions d’années, et environ neuf de ses plantes et animaux sur dix ne vivent nulle part ailleurs. L’hapalémur doré a été découvert ici en 1986.",
+        why2Title: "Tout dans une seule vallée",
+        why2Text: "Une forêt tropicale aux quatorze espèces de lémuriens, des sources chaudes où se baigner et le Centre ValBio, une station de recherche en activité, le long d’une seule route. Les lémuriens le matin, un bain l’après-midi, les caméléons à la nuit tombée.",
+        why3Title: "Votre visite compte",
+        why3Text: "Madagascar est l’un des pays aux revenus les plus faibles du monde : ce que vous dépensez ici va loin. Cela rémunère guides, cuisiniers et hôtes locaux, et donne aux villages autour du parc une raison de préserver la forêt.",
+        whyLink: "Comment votre visite protège la forêt",
+        whySources: "Sources : les 88 millions d’années d’isolement de Madagascar et la part de ses espèces introuvables ailleurs d’après Wikipédia (article anglais « Wildlife of Madagascar ») ; le nombre de lémuriens d’après Madagascar National Parks ; le niveau de revenu de Madagascar d’après la classification des pays de la Banque mondiale (2025–26).",
+        circleHeading: "Comment votre visite <em>protège la forêt.</em>",
+        circleLede: "Chaque nuitée, chaque repas et chaque randonnée aide les communautés de Ranomafana à protéger la forêt qui est leur foyer.",
+        circleText1: "Des villages entourent le parc, et la vie quotidienne arrive jusqu’à l’orée de la forêt. La bande de forêt entre les deux, la zone tampon, est la plus vulnérable de toutes : sans raison de la garder, la tentation est de la défricher. Le tourisme donne cette raison.",
+        circleText2: "Madagascar est l’un des pays aux revenus les plus faibles du monde, et ceux qui vivent à côté de cette forêt doivent sentir ce que sa protection leur apporte. Alors, la conservation cesse d’être un sacrifice qu’on leur demande et devient quelque chose qui les récompense.",
+        circle1: "Vous dépensez auprès des guides, hébergements, restaurants et artisans locaux.",
+        circle2: "Ce revenu donne aux familles de quoi vivre grâce à une forêt debout, et non défrichée.",
+        circle3: "Une zone tampon protégée met à l’abri le parc et les animaux qui y vivent.",
+        circle4: "Une faune florissante continue d’attirer les visiteurs, et le cercle recommence.",
+        footerCall: "Découvrez Ranomafana. Protégez ce qui n’existe nulle part ailleurs."
       },
 
       de: {
@@ -2697,9 +2783,9 @@
         bnavHome: "Start", bnavStay: "Schlafen", bnavEat: "Essen", bnavDo: "Erleben", bnavPlan: "Planen",
         crumbHome: "Start", crumbPlan: "Reise planen", crumbPark: "Nationalpark",
         heroBadge: "UNESCO-Welterbe", heroBadgeMore: "Regenwälder von Atsinanana",
-        heroTitle: "Tiefer hinein<br><em>in den Wald.</em>",
-        heroSubtitle: "43.550 Hektar Bergregenwald. Vierzehn Lemurenarten. Und unten im Tal die heißen Quellen, denen Ranomafana seinen Namen verdankt.",
-        heroSubtitleShort: "Oben vierzehn Lemurenarten, unten heiße Quellen.",
+        heroTitle: "Eine Welt,<br><em>die es nur hier gibt.</em>",
+        heroSubtitle: "Vierzehn Lemurenarten, 43.550 Hektar Regenwald und unten im Tal heiße Quellen. Ihr Besuch hält diese Welt am Leben.",
+        heroSubtitleShort: "Vierzehn Lemurenarten, unten heiße Quellen. Ihr Besuch hält diese Welt am Leben.",
         descend: "Hinab",
         doorStay: "Schlafen", doorStaySub: "{stays} Lodges, Hotels & Gästehäuser", doorStayShort: "{stays} Orte",
         doorEat: "Essen", doorEatSub: "{eats} Restaurants & Imbisse", doorEatShort: "{eats} Orte",
@@ -2739,7 +2825,7 @@
         planCtaText: "Der Peace-Corps-Freiwillige Kyle Schmidt hat diesen Führer mit lokalen Partnern erstellt. Fragen Sie uns zu Anreise, Guides oder Unterkünften.",
         emailTeamBtn: "E-Mail ans Team", meetTeamBtn: "Das Team kennenlernen",
         stayHeading: "Unterkünfte",
-        staySubtitle: "{stays} Unterkünfte, von Schlafsälen der Forschungsstation am Parkrand bis zu Bungalows am Fluss und Gästehäusern im Dorf.",
+        staySubtitle: "{stays} Unterkünfte, von Schlafsälen der Forschungsstation am Parkrand bis zu Bungalows am Fluss und Gästehäusern im Dorf. Buchen Sie wenn möglich direkt, dann kommt Ihre ganze Zahlung bei Ihrer Unterkunft an.",
         searchLabel: "Suche", staySearchPlaceholder: "Name von Hotel oder Lodge",
         typeLegend: "Art", chipAll: "Alle", chipEco: "Öko-Lodges", chipHotel: "Hotels", chipGuest: "Gästehäuser",
         mustHave: "Muss haben", amenityWifi: "WLAN", amenityHotWater: "Warmwasser", amenityRestaurant: "Restaurant", needRestaurant: "Restaurant im Haus", amenityParking: "Parkplatz",
@@ -2795,7 +2881,7 @@
         thisMonth: "Dieser Monat", aBestMonth: "Einer der besten Monate", monthTag: "Monat", festivalsEvents: "Feste & Veranstaltungen",
         noEventsMonth: "In diesem Monat sind keine jährlichen Feste verzeichnet.", weeklyLead: "Jede Woche, das ganze Jahr:",
         whateverMonth: "In jedem Monat", rainShell: "Regenjacke", sturdyShoes: "Feste Schuhe", goMidMorning: "Am Vormittag",
-        guidesIntro: "Niemand geht allein in den Park. Seit 2010 ist für internationale Besucher ein zertifizierter Guide von Madagascar National Parks Pflicht, und er ist der Grund, warum Sie die Tiere tatsächlich sehen.",
+        guidesIntro: "Niemand geht allein in den Park. Seit 2010 ist für internationale Besucher ein zertifizierter Guide von Madagascar National Parks Pflicht, und er ist der Grund, warum Sie die Tiere tatsächlich sehen. Ihr Guide lebt hier, und ihn zu engagieren ist auch einer der direktesten Wege, wie Ihr Besuch das Dorf unterstützt.",
         howItWorksHeading: "So funktioniert’s",
         step1Title: "Einen Guide finden", step2Title: "Eine Wanderung wählen", step3Title: "In Ariary bezahlen", step4Title: "Am Vormittag gehen",
         costEyebrow: "Was es kostet", costHeading: "Ein Preis pro Gruppe", costWalk: "Wanderung", costPaid: "Am Eingang bezahlt", hoursN: "{n} Stunden",
@@ -2925,7 +3011,7 @@
         teamBio3: "Hilft Besuchern, sichere, respektvolle und unvergessliche Reisen zu planen.",
         teamRole4: "Digitales und Partnerschaften",
         teamBio4: "Hält diesen Führer aktuell und arbeitet mit Partnern vor Ort.",
-        aboutSources: "Quellen: Besucherzahlen, Einwohnerzahl und die Rolle von Madagascar National Parks aus den eigenen Notizen dieses Führers vor Ort (Oktober 2026).",
+        aboutSources: "Quellen: Besucherzahlen, Einwohnerzahl und die Rolle von Madagascar National Parks aus den eigenen Notizen dieses Führers vor Ort (Oktober 2026); wie der Tourismus den Wald schützt, aus der eigenen Begründung dieses Führers (Oktober 2026); Madagaskars Einkommensniveau nach der Länderklassifikation der Weltbank (2025–26).",
         ariaHome: "Ranomafana – Startseite",
         ariaMainNav: "Hauptnavigation",
         ariaOpenMenu: "Menü öffnen",
@@ -2981,7 +3067,26 @@
         noteDryBegins: "Tagsüber etwa 22 °C, die trockenere Jahreszeit beginnt.",
         noteActiveAgain: "Nach den kalten Monaten sind die Tiere wieder aktiv.",
         noteDryEnds: "Der letzte Monat der trockeneren Jahreszeit.",
-        noteWetBegins: "Regenzeit und heiße Jahreszeit beginnen."
+        noteWetBegins: "Regenzeit und heiße Jahreszeit beginnen.",
+        whyHeading: "Wer es sieht, <em>schützt es.</em>",
+        whyLede: "Betreten Sie einen uralten Regenwald, begegnen Sie Tieren, die es nirgendwo auf der Erde gibt außer auf Madagaskar, und tragen Sie mit Ihrem Besuch zu ihrem Schutz bei.",
+        why1Title: "Nur hier zu finden",
+        why1Text: "Madagaskar hat sich vor rund 88 Millionen Jahren von allen anderen Landmassen gelöst, und etwa neun von zehn seiner Pflanzen und Tiere leben nirgendwo sonst. Der Goldene Bambuslemur wurde 1986 hier entdeckt.",
+        why2Title: "Alles in einem Tal",
+        why2Text: "Regenwald mit vierzehn Lemurenarten, heiße Quellen zum Baden und Centre ValBio, eine aktive Forschungsstation, alles an einer Straße. Morgens Lemuren, nachmittags ein Bad, nach Einbruch der Dunkelheit Chamäleons.",
+        why3Title: "Ihr Besuch zählt",
+        why3Text: "Madagaskar gehört zu den Ländern mit dem niedrigsten Einkommen der Welt, und was Sie hier ausgeben, bewirkt viel. Es bezahlt einheimische Guides, Köche und Gastgeber und gibt den Dörfern rund um den Park einen Grund, den Wald zu erhalten.",
+        whyLink: "Wie Ihr Besuch den Wald schützt",
+        whySources: "Quellen: Madagaskars 88 Millionen Jahre Isolation und der Anteil seiner Arten, die es nirgendwo sonst gibt, nach Wikipedia (englischer Artikel „Wildlife of Madagascar“); die Zahl der Lemurenarten von Madagascar National Parks; Madagaskars Einkommensniveau nach der Länderklassifikation der Weltbank (2025–26).",
+        circleHeading: "Wie Ihr Besuch <em>den Wald schützt.</em>",
+        circleLede: "Jede Übernachtung, jede Mahlzeit und jede Wanderung hilft den Gemeinden von Ranomafana, den Regenwald zu schützen, in dem sie zu Hause sind.",
+        circleText1: "Dörfer umgeben den Park, und das tägliche Leben reicht bis an den Waldrand. Der Waldstreifen dazwischen, die Pufferzone, ist am stärksten gefährdet: Ohne einen Grund, ihn zu erhalten, droht er gerodet zu werden. Der Tourismus liefert diesen Grund.",
+        circleText2: "Madagaskar gehört zu den Ländern mit dem niedrigsten Einkommen der Welt, und die Menschen, die neben diesem Wald leben, müssen spüren, dass sich sein Schutz für sie lohnt. Dann ist Naturschutz kein Opfer mehr, das man von ihnen verlangt, sondern etwas, das sie belohnt.",
+        circle1: "Sie geben Ihr Geld bei einheimischen Guides, Unterkünften, Restaurants und Kunsthandwerkern aus.",
+        circle2: "Dieses Einkommen gibt Familien einen Lebensunterhalt, der an einen stehenden Wald gebunden ist, nicht an einen gerodeten.",
+        circle3: "Eine geschützte Pufferzone schirmt den Park und die Tiere darin ab.",
+        circle4: "Eine blühende Tierwelt lockt weiter Besucher an, und der Kreislauf beginnt von vorn.",
+        footerCall: "Entdecken Sie Ranomafana. Schützen Sie, was es nirgendwo sonst gibt."
       },
 
       mg: {
@@ -2992,9 +3097,9 @@
         bnavHome: "Fandraisana", bnavStay: "Hatoriana", bnavEat: "Sakafo", bnavDo: "Hatao", bnavPlan: "Drafitra",
         crumbHome: "Fandraisana", crumbPlan: "Omano ny dianao", crumbPark: "Valan-javaboahary",
         heroBadge: "Lova iraisam-pirenena UNESCO", heroBadgeMore: "Alan'i Atsinanana",
-        heroTitle: "Midira lalina kokoa<br><em>ao anaty ala.</em>",
-        heroSubtitle: "Ala mando an-tendrombohitra 43 550 hektara. Karazana gidro efatra ambin'ny folo. Ary any amin'ny fanambanin'ny lohasaha, ireo loharano mafana nanomezana ny anaran'i Ranomafana.",
-        heroSubtitleShort: "Gidro karazany 14 eny ambony, loharano mafana eny ambany.",
+        heroTitle: "Tontolo tsy hita<br><em>afa-tsy eto.</em>",
+        heroSubtitle: "Karazana gidro efatra ambin'ny folo, ala mando 43 550 hektara, ary loharano mafana any amin'ny fanambanin'ny lohasaha. Ny fitsidihanao no mitazona azy ho velona.",
+        heroSubtitleShort: "Gidro karazany 14, loharano mafana eny ambany. Ny fitsidihanao no mitazona azy ho velona.",
         descend: "Midina",
         doorStay: "Hatoriana", doorStaySub: "Lodge, hotely ary trano fandraisam-bahiny {stays}", doorStayShort: "Toerana {stays}",
         doorEat: "Hisakafoana", doorEatSub: "Trano fisakafoanana sy sakafo maivana {eats}", doorEatShort: "Toerana {eats}",
@@ -3034,7 +3139,7 @@
         planCtaText: "Kyle Schmidt, mpilatsaka an-tsitrapo ao amin'ny Peace Corps, no nanao ity torolàlana ity niaraka tamin'ireo mpiara-miasa eto an-toerana. Anontanio izahay momba ny fomba ahatongavana, ny mpitari-dalana na ny toerana hatoriana.",
         emailTeamBtn: "Mandefasa mailaka", meetTeamBtn: "Fantaro ny ekipa",
         stayHeading: "Toerana hatoriana",
-        staySubtitle: "Toerana {stays}: manomboka amin'ny efitrano iombonan'ny foibem-pikarohana eo amoron'ny valan-javaboahary ka hatramin'ny bungalow amoron-drano sy trano fandraisam-bahiny ao an-tanàna.",
+        staySubtitle: "Toerana {stays}: manomboka amin'ny efitrano iombonan'ny foibem-pikarohana eo amoron'ny valan-javaboahary ka hatramin'ny bungalow amoron-drano sy trano fandraisam-bahiny ao an-tanàna. Mamandriha mivantana raha azo atao, dia tonga feno any amin'ny toerana hipetrahanao ny vola aloanao.",
         searchLabel: "Hikaroka", staySearchPlaceholder: "Anaran'ny hotely na lodge",
         typeLegend: "Karazany", chipAll: "Rehetra", chipEco: "Eco-lodge", chipHotel: "Hotely", chipGuest: "Trano fandraisam-bahiny",
         mustHave: "Tsy maintsy misy", amenityWifi: "Wi-Fi", amenityHotWater: "Rano mafana", amenityRestaurant: "Trano fisakafoanana", needRestaurant: "Misy trano fisakafoanana", amenityParking: "Fiantsonan'ny fiara",
@@ -3090,7 +3195,7 @@
         thisMonth: "Ity volana ity", aBestMonth: "Volana tsara indrindra", monthTag: "Volana", festivalsEvents: "Fety sy hetsika",
         noEventsMonth: "Tsy misy fety isan-taona voasoratra amin'ity volana ity.", weeklyLead: "Isan-kerinandro, mandavan-taona:",
         whateverMonth: "Na inona na inona volana", rainShell: "Akanjo orana", sturdyShoes: "Kiraro matanjaka", goMidMorning: "Eo antenatenan'ny maraina",
-        guidesIntro: "Tsy misy mandeha irery ao anaty valan-javaboahary. Hatramin'ny 2010 dia tsy maintsy maka mpitari-dalana nahazo fankatoavana avy amin'ny Madagascar National Parks ny mpitsidika vahiny, ary izy no mahatonga anao hahita marina ny biby.",
+        guidesIntro: "Tsy misy mandeha irery ao anaty valan-javaboahary. Hatramin'ny 2010 dia tsy maintsy maka mpitari-dalana nahazo fankatoavana avy amin'ny Madagascar National Parks ny mpitsidika vahiny, ary izy no mahatonga anao hahita marina ny biby. Mipetraka eto ny mpitari-dalanao, ka ny fakana azy dia anisan'ny fomba mivantana indrindra anohanan'ny fitsidihanao ny tanàna.",
         howItWorksHeading: "Ny fomba fiasany",
         step1Title: "Mitadiava mpitari-dalana", step2Title: "Mifidiana dia", step3Title: "Mandoava amin'ny Ariary", step4Title: "Mandehana eo antenatenan'ny maraina",
         costEyebrow: "Ny saran'izany", costHeading: "Sarany iray isaky ny vondrona", costWalk: "Dia an-tongotra", costPaid: "Aloa eo am-bavahady", hoursN: "{n} ora",
@@ -3221,7 +3326,7 @@
         teamBio3: "Manampy ny mpitsidika hikarakara dia azo antoka, manaja ary tsy hay hadinoina.",
         teamRole4: "Nomerika sy fiaraha-miasa",
         teamBio4: "Manavao ity torolàlana ity ary miara-miasa amin'ireo mpiara-miasa eto an-toerana.",
-        aboutSources: "Loharano: isan'ny mpitsidika, isan'ny mponina ary ny anjara asan'ny Madagascar National Parks avy amin'ny naoty an-toerana nataon'ity torolàlana ity (Oktobra 2026).",
+        aboutSources: "Loharano: isan'ny mpitsidika, isan'ny mponina ary ny anjara asan'ny Madagascar National Parks avy amin'ny naoty an-toerana nataon'ity torolàlana ity (Oktobra 2026); ny fomba iarovan'ny fizahan-tany ny ala avy amin'ny fanazavana nataon'ity torolàlana ity (Oktobra 2026); ny haavon'ny fidiram-bolan'i Madagasikara avy amin'ny fanasokajiana firenena ataon'ny Banky Iraisam-pirenena (2025–26).",
         ariaHome: "Ranomafana — fandraisana",
         ariaMainNav: "Fitetezana lehibe",
         ariaOpenMenu: "Sokafy ny menio",
@@ -3277,7 +3382,26 @@
         noteDryBegins: "Eo amin'ny 22°C eo ho eo amin'ny antoandro rehefa manomboka ny vanim-potoana maina kokoa.",
         noteActiveAgain: "Mihetsika indray ny biby aorian'ny volana mangatsiaka.",
         noteDryEnds: "Ny volana farany amin'ny vanim-potoana maina kokoa.",
-        noteWetBegins: "Manomboka ny vanim-potoanan'ny orana sy ny vanim-potoana mafana."
+        noteWetBegins: "Manomboka ny vanim-potoanan'ny orana sy ny vanim-potoana mafana.",
+        whyHeading: "Ny fahitana azy no <em>miaro azy.</em>",
+        whyLede: "Midira ao anaty ala mando efa antitra, mihaona amin'ireo biby tsy misy afa-tsy eto Madagasikara, ary miverina rehefa nanampy tamin'ny fiarovana azy ireo.",
+        why1Title: "Tsy hita any an-kafa",
+        why1Text: "Nisaraka tamin'ny tany rehetra hafa i Madagasikara 88 tapitrisa taona lasa izay, ary eo amin'ny sivy amin'ny folo amin'ireo zava-maniry sy biby eto no tsy hita any an-kafa. Teto no nahitana ny gidro volamena mpihinam-bolo tamin'ny 1986.",
+        why2Title: "Ao anaty lohasaha iray ihany",
+        why2Text: "Ala mando misy karazana gidro efatra ambin'ny folo, loharano mafana azo milomanosana, ary ny Centre ValBio, foibem-pikarohana miasa tokoa, eo amin'ny lalana iray ihany. Gidro amin'ny maraina, filomanosana amin'ny tolakandro, tana rehefa maizina.",
+        why3Title: "Manan-danja ny fitsidihanao",
+        why3Text: "Anisan'ny firenena ambany fidiram-bola indrindra eran-tany i Madagasikara, ka lavitra no alehan'izay laninao eto. Mandoa ny karaman'ny mpitari-dalana, mpahandro ary mpampiantrano eto an-toerana izany, ary manome antony ireo tanàna manodidina ny valan-javaboahary hitahiry ny ala.",
+        whyLink: "Ahoana no iarovan'ny fitsidihanao ny ala",
+        whySources: "Loharano: ny 88 tapitrisa taona nitokanan'i Madagasikara sy ny anjaran'ireo karazana tsy hita any an-kafa avy amin'ny Wikipedia (lahatsoratra anglisy « Wildlife of Madagascar »); ny isan'ny karazana gidro avy amin'ny Madagascar National Parks; ny haavon'ny fidiram-bolan'i Madagasikara avy amin'ny fanasokajiana firenena ataon'ny Banky Iraisam-pirenena (2025–26).",
+        circleHeading: "Ahoana no <em>iarovan'ny fitsidihanao ny ala.</em>",
+        circleLede: "Ny alina tsirairay, ny sakafo tsirairay ary ny dia an-tongotra tsirairay dia manampy ny fiaraha-monina eto Ranomafana hiaro ny ala izay fonenany.",
+        circleText1: "Voahodidin'ny tanàna ny valan-javaboahary, ary tonga hatrany amoron'ny ala ny fiainana andavanandro. Ny tapak'ala eo anelanelan'izy roa, ilay faritra fiarovana manodidina, no tena marefo indrindra: raha tsy misy antony hitahirizana azy dia ho voakapa izy. Ny fizahan-tany no manome izany antony izany.",
+        circleText2: "Anisan'ny firenena ambany fidiram-bola indrindra eran-tany i Madagasikara, ary tsy maintsy mahatsapa ny tombontsoa azo amin'ny fiarovana ity ala ity ireo olona mipetraka eo akaikiny. Rehefa mahatsapa izany izy ireo, dia tsy sorona angatahina aminy intsony ny fiarovana ny zava-boahary, fa zavatra mamaly soa azy.",
+        circle1: "Mandany vola amin'ny mpitari-dalana, trano fandraisam-bahiny, trano fisakafoana ary mpanao asa tanana eto an-toerana ianao.",
+        circle2: "Io vola miditra io dia manome ny fianakaviana fivelomana mifamatotra amin'ny ala mbola misy, fa tsy amin'ny ala efa voakapa.",
+        circle3: "Miaro ny valan-javaboahary sy ireo biby ao anatiny ny faritra fiarovana manodidina voaaro tsara.",
+        circle4: "Ny biby mihamaro sy salama dia manohy misarika mpitsidika, ary manomboka indray ny fihodinana.",
+        footerCall: "Fantaro i Ranomafana. Arovy izay tsy hita afa-tsy eto."
       }
     };
 

@@ -148,7 +148,23 @@ Ranomafana?" one removed), in the order he asked for: four key phrases, one per 
 relaxation. World-renowned biodiversity."), then "UNESCO World Heritage Ranomafana is
 home to…" and the key activities (`welcomeText2`), then the impact of a stay
 (`welcomeText3`). He asked twice for it shorter and punchier: keep it that way, and
-keep the credit out of it. **Emma Starink is thanked in the footer credit only**
+keep the credit out of it.
+
+**The case for Ranomafana is the site's message.** Kyle's rationale ("Why Ranomafana —
+Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026. The hero reads
+"A world found nowhere else. Your visit keeps it alive." (it replaced "Go deeper into
+the forest."). A band under the welcome gives the rationale's three points (found nowhere
+else, all in one valley, your visit counts), with its own Sources line. About has "How
+your visit protects the forest": the buffer zone and the four-step circle, with pills to
+guides, stays, food and things to do. The Stay and Hiring a guide intros and a footer line
+("Discover Ranomafana. Protect what exists nowhere else.") carry it too. Where the document
+and the site differ, the site wins:
+- MNP's 43,550 ha and 14 lemur species, not the document's 41,600 ha and 12.
+- "Montane rainforest", not "primary cloud forest" (Talatakely is secondary forest).
+- No comparisons with Andasibe, Isalo, Nosy Be or the Avenue of the Baobabs: MNP, a
+  partner, runs Andasibe and Isalo.
+
+**Emma Starink is thanked in the footer credit only**
 ("Thanks to Emma Starink") — Kyle asked for her name to stay out of the main body
 text. Do not describe the guide as made with Madagascar National Parks — the first
 welcome text did, and Kyle corrected it.
@@ -158,6 +174,9 @@ earlier draft carried AI-generated phone numbers and emails that turned out to b
 fabricated — six were confirmed wrong against FHORM and the properties' own sites.
 If a number cannot be sourced, leave the field as `""`. The modal renders an empty
 contact block as "no published contact details yet", which is the correct outcome.
+A stay's "Send an inquiry" button appears only when the stay has its own email. Until
+16 Oct 2026 it fell back to Centre ValBio's ask@valb.io, which sent guesthouse inquiries
+to CVB. Never give it a fallback address.
 
 **Never use stock photos of somewhere else.** A listing without its own photograph
 gets a generated placeholder card, `images/placeholder-<slug>.jpg` — a colour panel
