@@ -3763,7 +3763,7 @@
         <div class="m-actions">
           ${c.website ? `<a class="btn btn-gold" href="${esc(c.website)}" target="_blank" rel="noopener">${icon('globe')} ${esc(t('officialWebsite'))}</a>` : ''}
           <a class="btn btn-ghost" href="https://www.tripadvisor.com/Search?q=${encodeURIComponent(english(item, 'name') + ' Ranomafana')}" target="_blank" rel="noopener">${icon('star')} ${esc(t('reviews'))}</a>
-          <a class="btn btn-ghost" href="mailto:${esc(c.email || 'ask@valb.io')}?subject=${encodeURIComponent(english(item, 'name') + ' accommodation inquiry')}">${icon('send')} ${esc(t('sendInquiry'))}</a>
+          ${c.email ? `<a class="btn btn-ghost" href="mailto:${esc(c.email)}?subject=${encodeURIComponent(english(item, 'name') + ' accommodation inquiry')}">${icon('send')} ${esc(t('sendInquiry'))}</a>` : ''}
         </div>`);
     }
 
