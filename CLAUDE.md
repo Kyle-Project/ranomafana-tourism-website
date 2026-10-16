@@ -108,8 +108,8 @@ plan into `#itineraryDetail`. Alongside the six, `renderHome()`, `renderPark()`,
 
 ### Pages
 
-Twelve `<section id="page-x" class="page-view">` elements, one shown at a time by
-`switchPage(id)`: `home`, `stay`, `eat`, `do`, `park`, `itineraries`, `getting-here`,
+Thirteen `<section id="page-x" class="page-view">` elements, one shown at a time by
+`switchPage(id)`: `home`, `why`, `stay`, `eat`, `do`, `park`, `itineraries`, `getting-here`,
 `when`, `guides`, `events`, `blog`, `about`. The page name lives in the address as a
 hash (`index.html#park`), so links are plain `<a href="#park">`, the back button
 works, and pages can be shared. `PAGES`, `NAV_GROUP` (which nav item lights up) and
@@ -151,14 +151,25 @@ home to…" and the key activities (`welcomeText2`), then the impact of a stay
 keep the credit out of it.
 
 **The case for Ranomafana is the site's message.** Kyle's rationale ("Why Ranomafana —
-Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026. The hero reads
-"A world found nowhere else. Your visit keeps it alive." (it replaced "Go deeper into
-the forest."). A band under the welcome gives the rationale's three points (found nowhere
-else, all in one valley, your visit counts), with its own Sources line. About has "How
-your visit protects the forest": the buffer zone and the four-step circle, with pills to
-guides, stays, food and things to do. The Stay and Hiring a guide intros and a footer line
-("Discover Ranomafana. Protect what exists nowhere else.") carry it too. Where the document
-and the site differ, the site wins:
+Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026.
+
+- **Home hero:** it opens on the name. "Ranomafana" is the headline, with "Madagascar ·
+  UNESCO World Heritage" above it and "A world found nowhere else." and "…Your visit keeps
+  it alive." below. Kyle, 16 Oct 2026: "it should open with clear text that says
+  Ranomafana". It replaced "Go deeper into the forest." The welcome section already says
+  "Welcome to Ranomafana!", so the hero doesn't repeat it.
+- **Keep the home page clear** (Kyle, 16 Oct 2026). The rationale's points live on their
+  own page, **Why visit** (`#why`). It has "Why Madagascar" (life found nowhere else, the
+  home of the lemurs, your visit goes further) and "Why Ranomafana" (fourteen kinds of
+  lemur, all in one valley, run by the people who live here). It also has "How your visit
+  protects the forest": the buffer zone and the four-step circle, with pills to guides,
+  stays, food and things to do. Its Sources line is at the foot of the page.
+- **Links to it:** the welcome's link, the menu drawer and the footer's Explore column.
+  It isn't in the desktop nav, which is full.
+- **Elsewhere:** the Stay and Hiring a guide intros, and a footer line ("Discover
+  Ranomafana. Protect what exists nowhere else."), carry the message too.
+
+Where the document and the site differ, the site wins:
 - MNP's 43,550 ha and 14 lemur species, not the document's 41,600 ha and 12.
 - "Montane rainforest", not "primary cloud forest" (Talatakely is secondary forest).
 - No comparisons with Andasibe, Isalo, Nosy Be or the Avenue of the Baobabs: MNP, a
