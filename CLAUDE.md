@@ -159,13 +159,39 @@ Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026.
   Ranomafana". It replaced "Go deeper into the forest." The welcome section already says
   "Welcome to Ranomafana!", so the hero doesn't repeat it.
 - **Keep the home page clear** (Kyle, 16 Oct 2026). The rationale's points live on their
-  own page, **Why visit** (`#why`). It has "Why Madagascar" (life found nowhere else, the
-  home of the lemurs, your visit goes further) and "Why Ranomafana" (fourteen kinds of
-  lemur, all in one valley, run by the people who live here). It also has "How your visit
-  protects the forest": the buffer zone and the four-step circle, with pills to guides,
-  stays, food and things to do. Its Sources line is at the foot of the page.
-- **Links to it:** the welcome's link, the menu drawer and the footer's Explore column.
-  It isn't in the desktop nav, which is full.
+  own page, **Why visit** (`#why`). In order, the page has:
+  - **"Where in the world":** a map of Madagascar with tappable pins and a panel beside it.
+  - **"Why Madagascar":** life found nowhere else, the home of the lemurs, your visit
+    goes further.
+  - **"Why Ranomafana":** fourteen kinds of lemur, all in one valley, run by the people
+    who live here.
+  - **"The valley up close":** a map of the valley with four tappable stops.
+  - **"How your visit protects the forest":** the buffer zone and the four-step circle,
+    with pills to guides, stays, food and things to do.
+  - **A Sources line** at the foot of the page.
+
+  Each reason is a photo card (`WHY_CARDS` in the script). Tapping a card opens its photos
+  in the pop-up with a link onward. The photos are already on the site, and their
+  descriptions come from the listing galleries (so they are already translated) or from
+  `PAGE_PHOTO_ALT`.
+- **The maps** are static SVGs in `images/`: `map-madagascar.svg` (Natural Earth, public
+  domain) and `map-ranomafana.svg` (OpenStreetMap, ODbL; the credit under it is a licence
+  condition). `scripts/make-maps.py` drew them and explains how to redraw them. The pins
+  and place names are HTML on top of the pictures, so they translate, at percentages set
+  in `MAPS` in the script.
+  - **Shared pins:** places only 250 m apart share a pin (the park gate with Centre
+    ValBio, the village with the thermal pool), so pins never overlap on a phone.
+  - **Short pin labels:** pins carry short labels; the panel gives the full name.
+  - **Check after any change:** check pin labels for overlap at 320–375 px in all four
+    languages.
+- **Its tab:** a designated **Why visit** tab, first in the desktop header and second in
+  the phone's bottom bar (six tabs now). The welcome's link, the menu drawer and the
+  footer's Explore column also lead to it.
+  - **Header fit:** the header gaps were tightened, and the German label shortened to
+    "Warum hierher", so the header stays on one line at 1280 px in every language. It
+    already wrapped at 992–1200 px.
+  - **Malagasy Home tab:** the Malagasy bottom-bar "Fandraisana" carries a soft hyphen,
+    so on small phones it breaks to two lines instead of being cut.
 - **Elsewhere:** the Stay and Hiring a guide intros, and a footer line ("Discover
   Ranomafana. Protect what exists nowhere else."), carry the message too.
 

@@ -154,13 +154,13 @@
     /* ------------------------------------------------------- header */
     .site-header { position: absolute; top: 0; left: 0; right: 0; z-index: 100; }
     .header-inner {
-      display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: center; justify-content: space-between;
+      display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between;
       padding-top: 24px; padding-bottom: 24px;
     }
     .brand { display: flex; align-items: center; gap: 12px; color: #FFFFFF; text-decoration: none; }
     .brand:hover { color: #FFFFFF; }
     .brand-name { font-family: var(--serif); font-weight: 500; font-size: 24px; letter-spacing: .01em; }
-    .desktop-nav { display: flex; flex-wrap: wrap; gap: 4px 28px; font-size: 15px; }
+    .desktop-nav { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 15px; }
     .nl { color: var(--mist); text-decoration: none; font-weight: 500; padding: 10px 2px; border-bottom: 1px solid transparent; }
     .nl:hover { color: #FFFFFF; border-bottom-color: var(--gold); }
     .nl[aria-current="page"] { color: #FFFFFF; font-weight: 700; border-bottom-color: var(--gold); }
@@ -242,13 +242,15 @@
     @media (max-width: 991px) {
       body { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
       .bottom-nav {
-        display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+        display: grid; grid-template-columns: repeat(6, minmax(0, 1fr));
         position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 900;
         height: 68px; max-width: 560px; margin: 0 auto;
         background: rgba(19, 33, 28, .96); border: 1px solid var(--moss); border-radius: 20px;
         -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
       }
-      .bottom-nav a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-decoration: none; color: var(--lichen); font-size: 12px; font-weight: 600; }
+      .bottom-nav a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-width: 0; text-decoration: none; color: var(--lichen); font-size: 12px; font-weight: 600; }
+      /* Six tabs: a long label (Malagasy "Fandraisana") breaks at its soft hyphen rather than being cut. */
+      .bottom-nav a span { max-width: 100%; padding: 0 2px; text-align: center; line-height: 1.15; hyphens: manual; }
       .bottom-nav a[aria-current="page"] { color: var(--gold); font-weight: 700; }
     }
 
@@ -862,6 +864,71 @@
     .team-role { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ember); }
     .team-card p { font-size: 14px; line-height: 1.55; color: var(--lichen); margin-top: 6px; }
 
+    /* ----------------------------------------------------- why visit: maps and photo cards */
+    .map-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: center; }
+    .map-split--valley { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); align-items: start; }
+    .map-box { position: relative; border-radius: 20px; overflow: hidden; background: var(--band); border: 1px solid var(--moss); }
+    .map-box > img { width: 100%; height: auto; }
+    .map-pins { position: absolute; inset: 0; }
+    .map-label { position: absolute; transform: translate(-50%, -50%); font-size: 13px; font-weight: 600; color: var(--lichen); white-space: nowrap; pointer-events: none; text-shadow: 0 1px 4px var(--floor), 0 0 8px var(--floor); }
+    .map-label--caps { font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+    .map-label--left { transform: translate(calc(-100% - 10px), -50%); color: var(--mist); }
+    .map-label--edge-l { transform: translate(0, -50%); }
+    .map-label--edge-r { transform: translate(-100%, -50%); }
+    .map-dot { position: absolute; width: 8px; height: 8px; border-radius: 50%; background: var(--mist); transform: translate(-50%, -50%); }
+    .map-pin { position: absolute; width: 44px; height: 44px; transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center; padding: 0; border: 0; background: none; color: var(--mist); cursor: pointer; }
+    .map-pin-dot { width: 18px; height: 18px; border-radius: 50%; background: var(--mist); border: 3px solid var(--canopy); box-shadow: 0 0 0 2px var(--mist); transition: transform .2s ease; }
+    .map-pin:hover .map-pin-dot { transform: scale(1.15); }
+    .map-pin[aria-pressed="true"] { color: var(--gold); }
+    .map-pin[aria-pressed="true"] .map-pin-dot { background: var(--gold); box-shadow: 0 0 0 2px var(--gold), 0 0 0 9px rgba(229, 181, 61, .28); }
+    .map-pin-label { position: absolute; white-space: nowrap; font-size: 13px; font-weight: 700; text-shadow: 0 1px 4px var(--floor), 0 0 8px var(--floor); }
+    .map-pin--above .map-pin-label { bottom: 36px; left: 50%; transform: translateX(-50%); }
+    .map-pin--below .map-pin-label { top: 36px; left: 50%; transform: translateX(-50%); }
+    .map-pin--left .map-pin-label { right: 36px; }
+    .map-pin--right .map-pin-label { left: 36px; }
+    .map-panel { background: var(--under); border: 1px solid var(--moss); border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 10px; }
+    .map-panel h3 { font-family: var(--serif); font-size: 30px; font-weight: 500; line-height: 1.1; }
+    .map-panel p { font-size: 16px; line-height: 1.6; color: var(--fern); }
+    .map-panel .pill-row { margin-top: 6px; }
+    .map-under { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; align-items: center; margin-top: 12px; }
+    .map-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--lichen); }
+    .map-legend > span { display: inline-flex; gap: 8px; align-items: center; }
+    .sw { display: inline-block; width: 22px; height: 12px; border-radius: 3px; }
+    .sw-park { background: #17301F; border: 1px dashed var(--moss-2); }
+    .sw-river { height: 4px; background: #6E9FC0; }
+    .sw-road { height: 4px; background: var(--fern); }
+    .map-credit { font-size: 12px; line-height: 1.5; color: var(--muted); }
+    .map-credit a { color: var(--lichen); }
+    .why-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
+    .why-card {
+      display: flex; flex-direction: column; padding: 0; text-align: left; font: inherit; color: var(--mist); cursor: pointer;
+      background: var(--under); border: 1px solid var(--moss); border-radius: 20px; overflow: hidden; transition: border-color .2s ease, transform .2s ease;
+    }
+    .why-card:hover { border-color: var(--moss-3); transform: translateY(-2px); }
+    .why-card-media { position: relative; display: block; height: 240px; overflow: hidden; background: var(--ph); }
+    .why-card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
+    .why-card:hover .why-card-media img { transform: scale(1.04); }
+    .why-card-count { position: absolute; right: 12px; bottom: 12px; display: inline-flex; gap: 6px; align-items: center; padding: 6px 12px; border-radius: 999px; background: rgba(5, 11, 9, .8); font-size: 13px; font-weight: 600; }
+    .why-card-body { display: flex; flex-direction: column; gap: 8px; flex: 1; padding: 20px 24px 24px; }
+    .why-card-num { font-family: var(--serif); font-size: 40px; font-weight: 300; line-height: 1; color: var(--gold); }
+    .why-card-title { font-size: 20px; font-weight: 600; line-height: 1.3; }
+    .why-card-text { font-size: 15px; line-height: 1.6; color: var(--lichen); }
+    .why-card-more { margin-top: auto; padding-top: 8px; font-size: 15px; font-weight: 700; color: var(--gold); }
+    @media (max-width: 991px) {
+      .map-split, .map-split--valley { grid-template-columns: 1fr; gap: 24px; }
+    }
+    @media (max-width: 720px) {
+      .map-label { font-size: 11px; }
+      .map-label--caps { font-size: 10px; letter-spacing: .12em; }
+      .map-pin-label { font-size: 12px; }
+      .map-panel { padding: 20px; }
+      .map-panel h3 { font-size: 26px; }
+      .why-card-media { height: 200px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .why-card, .why-card-media img, .map-pin-dot { transition: none; }
+    }
+
     /* ----------------------------------------------------- footer */
     .site-footer { background: var(--floor); color: var(--lichen); border-top: 1px solid var(--rule); }
     .footer-inner { padding-top: 72px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 56px; }
@@ -956,6 +1023,7 @@
       </a>
 
       <nav class="desktop-nav" aria-label="Main" data-i18n-aria-label="ariaMainNav">
+        <a class="nl" href="#why" data-nav="why" data-i18n="navWhy">Why visit</a>
         <a class="nl" href="#stay" data-nav="stay" data-i18n="navStay">Stay</a>
         <a class="nl" href="#eat" data-nav="eat" data-i18n="navEat">Eat</a>
         <a class="nl" href="#do" data-nav="do" data-i18n="navDo">Things to do</a>
@@ -1858,22 +1926,68 @@
         </div>
       </div>
 
-      <section class="wrap stack g-24" style="padding-top: 64px; padding-bottom: 32px;" aria-labelledby="wm-h">
+      <!-- Where in the world. The map is images/map-madagascar.svg, drawn from Natural Earth
+           (public domain) by a one-off script; the place names and tappable pins sit on top in
+           HTML so they translate. renderWhy() fills the pins and the panel. -->
+      <section class="wrap stack g-24" style="padding-top: 64px; padding-bottom: 32px;" aria-labelledby="wmap-h">
+        <div class="section-head" style="margin-bottom: 0;">
+          <h2 id="wmap-h" class="display d-56" data-i18n="whyMapHeading" data-i18n-html>Where in <em>the world</em></h2>
+          <p class="lede" data-i18n="whyMapIntro">Madagascar is the world’s fourth-largest island, off the south-east coast of Africa. Ranomafana is in its south-east, on the road that drops from the highlands to the Indian Ocean.</p>
+        </div>
+        <div class="map-split">
+          <div class="map-box" id="mapMg">
+            <img src="images/map-madagascar.svg" alt="Map of Madagascar off the south-east coast of Africa, with the road from Antananarivo to Ranomafana" data-i18n-alt="altMapMadagascar" width="900" height="958" loading="lazy">
+            <span class="map-label map-label--caps" style="left: 10%; top: 15%;" data-i18n="mapAfrica">Africa</span>
+            <span class="map-label" style="left: 22%; top: 68%;" data-i18n="mapChannel">Mozambique Channel</span>
+            <span class="map-label map-label--edge-r" style="left: 96%; top: 90%;" data-i18n="mapOcean">Indian Ocean</span>
+            <span class="map-dot" style="left: 72.01%; top: 67.95%;"></span>
+            <span class="map-label map-label--left" style="left: 72.01%; top: 67.95%;">Fianarantsoa</span>
+            <div class="map-pins" id="mapPinsMg"></div>
+          </div>
+          <div class="stack g-16">
+            <div class="map-panel" id="mapPanelMg" aria-live="polite"></div>
+            <p class="map-credit" data-i18n="mapCreditMg">Map: Natural Earth. The dashed line is the road, simplified.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap stack g-24" style="padding-top: 48px; padding-bottom: 32px;" aria-labelledby="wm-h">
         <h2 id="wm-h" class="display d-56" data-i18n="whyMadHeading" data-i18n-html>Why <em>Madagascar</em></h2>
-        <ol class="steps">
-          <li><span class="num">01</span><strong data-i18n="whyMad1Title">Life found nowhere else</strong><span data-i18n="whyMad1Text">Madagascar broke away from every other landmass some 88 million years ago, and life here took its own path. About nine in ten of its plants and animals live nowhere else on Earth.</span></li>
-          <li><span class="num">02</span><strong data-i18n="whyMad2Title">The home of the lemurs</strong><span data-i18n="whyMad2Text">Every lemur in the world is native to Madagascar, from tiny mouse lemurs to leaping sifakas, and so is every leaf-tailed gecko.</span></li>
-          <li><span class="num">03</span><strong data-i18n="whyMad3Title">Your visit goes further</strong><span data-i18n="whyMad3Text">Madagascar is one of the world’s lowest-income countries, so what you spend here goes far: it pays a guide’s wage, keeps a family guesthouse open and helps fund the protection of the forest.</span></li>
-        </ol>
+        <div class="why-cards" id="whyMadCards"></div>
       </section>
 
       <section class="wrap stack g-24" style="padding-top: 48px; padding-bottom: 32px;" aria-labelledby="wr-h">
         <h2 id="wr-h" class="display d-56" data-i18n="whyRanoHeading" data-i18n-html>Why <em>Ranomafana</em></h2>
-        <ol class="steps">
-          <li><span class="num">01</span><strong data-i18n="whyRano1Title">Fourteen kinds of lemur</strong><span data-i18n="whyRano1Text">43,550 hectares of montane rainforest, a national park since 1991 and a UNESCO World Heritage Site since 2007. The golden bamboo lemur was discovered here in 1986, and it is the reason the forest is protected.</span></li>
-          <li><span class="num">02</span><strong data-i18n="whyRano2Title">All in one valley</strong><span data-i18n="whyRano2Text">Rainforest with fourteen kinds of lemur, hot springs to soak in and Centre ValBio, a working research station, all along one road. Lemurs in the morning, a soak in the afternoon, chameleons after dark.</span></li>
-          <li><span class="num">03</span><strong data-i18n="whyRano3Title">Run by the people who live here</strong><span data-i18n="whyRano3Text">Local guides lead every walk in the park, most places to stay are in the village, and community associations look after forest reserves beside the park.</span></li>
-        </ol>
+        <div class="why-cards" id="whyRanoCards"></div>
+      </section>
+
+      <!-- The valley up close. images/map-ranomafana.svg is drawn from OpenStreetMap data
+           (© OpenStreetMap contributors, ODbL: the credit under the map is a licence condition). -->
+      <section class="wrap stack g-24" style="padding-top: 48px; padding-bottom: 16px;" aria-labelledby="valley-h">
+        <div class="section-head" style="margin-bottom: 0;">
+          <h2 id="valley-h" class="display d-56" data-i18n="whyValleyHeading" data-i18n-html>The valley <em>up close</em></h2>
+          <p class="lede" data-i18n="whyValleyIntro">From the park entrance at Ambodiamontana down to the village and its hot springs is about 7 km on the RN25, with the Namorona River beside you most of the way.</p>
+        </div>
+        <div class="map-split map-split--valley">
+          <div>
+            <div class="map-box" id="mapValley">
+              <img src="images/map-ranomafana.svg" alt="Map of the Ranomafana valley: the RN25 and the Namorona River run from the national park entrance down to the village" data-i18n-alt="altMapValley" width="1000" height="656" loading="lazy">
+              <span class="map-label map-label--caps map-label--edge-l" style="left: 3%; top: 86%;" data-i18n="crumbPark">National park</span>
+              <span class="map-label map-label--edge-l" style="left: 1.5%; top: 17%;">← Fianarantsoa · 65 km</span>
+              <span class="map-label map-label--edge-r" style="left: 98.5%; top: 92%;">Mananjary · 139 km →</span>
+              <div class="map-pins" id="mapPinsValley"></div>
+            </div>
+            <div class="map-under">
+              <div class="map-legend">
+                <span><span class="sw sw-park" aria-hidden="true"></span><span data-i18n="crumbPark">National park</span></span>
+                <span><span class="sw sw-river" aria-hidden="true"></span><span data-i18n="legendRiver">Namorona River</span></span>
+                <span><span class="sw sw-road" aria-hidden="true"></span>RN25</span>
+              </div>
+              <p class="map-credit"><span data-i18n="mapCreditValley">Map data</span> © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> <span data-i18n="mapContributors">contributors</span></p>
+            </div>
+          </div>
+          <div class="map-panel" id="mapPanelValley" aria-live="polite"></div>
+        </div>
       </section>
 
       <section class="wrap stack g-24" style="padding-top: 48px; padding-bottom: 48px;" aria-labelledby="circle-h">
@@ -1906,7 +2020,7 @@
           <span class="next-arrow" aria-hidden="true">→</span>
         </a>
       </section>
-      <p class="wrap page-note" data-i18n="whySources">Sources: Madagascar’s 88 million years of isolation, the share of its species found nowhere else, and where lemurs and leaf-tailed geckos come from, from Wikipedia (Wildlife of Madagascar; Lemur; Uroplatus); Madagascar’s income level from the World Bank’s country classification (2025–26); the park’s size, lemur count and dates from Madagascar National Parks and this guide’s own local notes (October 2026); how tourism protects the forest from this guide’s own rationale (October 2026).</p>
+      <p class="wrap page-note" data-i18n="whySources">Sources: Madagascar’s size and place from Wikipedia (Madagascar); its 88 million years of isolation, the share of its species found nowhere else, and where lemurs and leaf-tailed geckos come from, from Wikipedia (Wildlife of Madagascar; Lemur; Uroplatus); Madagascar’s income level from the World Bank’s country classification (2025–26); the park’s size, lemur count, dates and distances from Madagascar National Parks and this guide’s own local notes (October 2026); how tourism protects the forest from this guide’s own rationale (October 2026). Maps drawn for this guide from Natural Earth (public domain) and OpenStreetMap (© OpenStreetMap contributors, ODbL), October 2026.</p>
     </section>
 
     <!-- ============================================================= ABOUT -->
@@ -2040,6 +2154,10 @@
     <a href="#home" data-bnav="home">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>
       <span data-i18n="bnavHome">Home</span>
+    </a>
+    <a href="#why" data-bnav="why">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20z"></path></svg>
+      <span data-i18n="bnavWhy">Why</span>
     </a>
     <a href="#stay" data-bnav="stay">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V8M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"></path><circle cx="7" cy="11" r="1.6"></circle></svg>
@@ -2493,7 +2611,37 @@
         whyRano2Text: "Rainforest with fourteen kinds of lemur, hot springs to soak in and Centre ValBio, a working research station, all along one road. Lemurs in the morning, a soak in the afternoon, chameleons after dark.",
         whyRano3Title: "Run by the people who live here",
         whyRano3Text: "Local guides lead every walk in the park, most places to stay are in the village, and community associations look after forest reserves beside the park.",
-        whySources: "Sources: Madagascar’s 88 million years of isolation, the share of its species found nowhere else, and where lemurs and leaf-tailed geckos come from, from Wikipedia (Wildlife of Madagascar; Lemur; Uroplatus); Madagascar’s income level from the World Bank’s country classification (2025–26); the park’s size, lemur count and dates from Madagascar National Parks and this guide’s own local notes (October 2026); how tourism protects the forest from this guide’s own rationale (October 2026).",
+        whySources: "Sources: Madagascar’s size and place from Wikipedia (Madagascar); its 88 million years of isolation, the share of its species found nowhere else, and where lemurs and leaf-tailed geckos come from, from Wikipedia (Wildlife of Madagascar; Lemur; Uroplatus); Madagascar’s income level from the World Bank’s country classification (2025–26); the park’s size, lemur count, dates and distances from Madagascar National Parks and this guide’s own local notes (October 2026); how tourism protects the forest from this guide’s own rationale (October 2026). Maps drawn for this guide from Natural Earth (public domain) and OpenStreetMap (© OpenStreetMap contributors, ODbL), October 2026.",
+        bnavWhy: "Why",
+        whyMapHeading: "Where in <em>the world</em>",
+        whyMapIntro: "Madagascar is the world’s fourth-largest island, off the south-east coast of Africa. Ranomafana is in its south-east, on the road that drops from the highlands to the Indian Ocean.",
+        altMapMadagascar: "Map of Madagascar off the south-east coast of Africa, with the road from Antananarivo to Ranomafana",
+        mapAfrica: "Africa",
+        mapChannel: "Mozambique Channel",
+        mapOcean: "Indian Ocean",
+        mapHint: "Tap a place on the map",
+        mapTanaText: "The capital. Ranomafana is 412 km away by road: about 12 hours by car, through Antsirabe, Ambositra and Fianarantsoa.",
+        mapRanoText: "Where the highlands drop into rainforest on the way to the coast: 65 km from Fianarantsoa, the nearest city, and 139 km from Mananjary on the Indian Ocean.",
+        mapSeeValley: "Map of the valley",
+        mapCreditMg: "Map: Natural Earth. The dashed line is the road, simplified.",
+        whyValleyHeading: "The valley <em>up close</em>",
+        whyValleyIntro: "From the park entrance at Ambodiamontana down to the village and its hot springs is about 7 km on the RN25, with the Namorona River beside you most of the way.",
+        altMapValley: "Map of the Ranomafana valley: the RN25 and the Namorona River run from the national park entrance down to the village",
+        mapParkPin: "Park entrance",
+        mapParkName: "Park entrance & Centre ValBio",
+        mapParkText: "Where the walks begin. The park office is at Ambodiamontana, about 7 km up the RN25 from the village, and Centre ValBio, the research station, is just beside it.",
+        mapCvbLink: "Centre ValBio tour",
+        mapAmbatolahyText: "A village at the forest edge, with lodges a short walk from the park entrance and the VOI Mitsinjo community reserve.",
+        mapMitsinjoLink: "VOI Mitsinjo",
+        mapTsararanoText: "Hillside hotels just before the village, above the river.",
+        mapVillageName: "Ranomafana village",
+        mapVillageText: "Most places to stay and eat, the market, the taxi-brousse station and the hot springs that gave the town its name.",
+        legendRiver: "Namorona River",
+        mapCreditValley: "Map data",
+        mapContributors: "contributors",
+        photosN: "{n} photos",
+        whySeeMore: "See photos",
+        whyCtaCommunity: "See a community reserve",
         circleHeading: "How your visit <em>protects the forest.</em>",
         circleLede: "Every stay, meal and trek helps Ranomafana’s communities protect the rainforest they call home.",
         circleText1: "Villages ring the park, and daily life presses right up against the forest. The band of forest between the two, the buffer zone, is the most vulnerable ground of all: without a reason to keep it, the pressure is to clear it. Tourism gives that reason.",
@@ -2815,7 +2963,37 @@
         whyRano2Text: "Une forêt tropicale aux quatorze espèces de lémuriens, des sources chaudes où se baigner et le Centre ValBio, une station de recherche en activité, le long d’une seule route. Les lémuriens le matin, un bain l’après-midi, les caméléons à la nuit tombée.",
         whyRano3Title: "Tenu par ceux qui vivent ici",
         whyRano3Text: "Des guides locaux mènent chaque balade dans le parc, la plupart des hébergements sont au village, et des associations communautaires gèrent des réserves forestières en bordure du parc.",
-        whySources: "Sources : les 88 millions d’années d’isolement de Madagascar, la part de ses espèces introuvables ailleurs et l’origine des lémuriens et des geckos à queue feuillue d’après Wikipédia (articles anglais « Wildlife of Madagascar », « Lemur » et « Uroplatus ») ; le niveau de revenu de Madagascar d’après la classification des pays de la Banque mondiale (2025–26) ; la superficie du parc, le nombre de lémuriens et les dates d’après Madagascar National Parks et les notes locales de ce guide (octobre 2026) ; la façon dont le tourisme protège la forêt d’après l’argumentaire de ce guide (octobre 2026).",
+        whySources: "Sources : la taille et la situation de Madagascar d’après Wikipédia (article anglais « Madagascar ») ; ses 88 millions d’années d’isolement, la part de ses espèces introuvables ailleurs et l’origine des lémuriens et des geckos à queue feuillue d’après Wikipédia (articles anglais « Wildlife of Madagascar », « Lemur » et « Uroplatus ») ; le niveau de revenu de Madagascar d’après la classification des pays de la Banque mondiale (2025–26) ; la superficie du parc, le nombre de lémuriens, les dates et les distances d’après Madagascar National Parks et les notes locales de ce guide (octobre 2026) ; la façon dont le tourisme protège la forêt d’après l’argumentaire de ce guide (octobre 2026). Cartes dessinées pour ce guide à partir de Natural Earth (domaine public) et d’OpenStreetMap (© les contributeurs d’OpenStreetMap, ODbL), octobre 2026.",
+        bnavWhy: "Pourquoi",
+        whyMapHeading: "Sur la <em>carte du monde</em>",
+        whyMapIntro: "Madagascar est la quatrième plus grande île du monde, au large de la côte sud-est de l’Afrique. Ranomafana se trouve dans son sud-est, sur la route qui descend des hautes terres vers l’océan Indien.",
+        altMapMadagascar: "Carte de Madagascar au large de la côte sud-est de l’Afrique, avec la route d’Antananarivo à Ranomafana",
+        mapAfrica: "Afrique",
+        mapChannel: "Canal du Mozambique",
+        mapOcean: "Océan Indien",
+        mapHint: "Touchez un lieu sur la carte",
+        mapTanaText: "La capitale. Ranomafana est à 412 km par la route : environ 12 heures en voiture, par Antsirabe, Ambositra et Fianarantsoa.",
+        mapRanoText: "Là où les hautes terres plongent dans la forêt tropicale en route vers la côte : à 65 km de Fianarantsoa, la ville la plus proche, et à 139 km de Mananjary, sur l’océan Indien.",
+        mapSeeValley: "Carte de la vallée",
+        mapCreditMg: "Carte : Natural Earth. La ligne en tirets est la route, simplifiée.",
+        whyValleyHeading: "La vallée <em>de près</em>",
+        whyValleyIntro: "De l’entrée du parc à Ambodiamontana jusqu’au village et à ses sources chaudes, il y a environ 7 km sur la RN25, avec la rivière Namorona à vos côtés presque tout le long.",
+        altMapValley: "Carte de la vallée de Ranomafana : la RN25 et la rivière Namorona vont de l’entrée du parc national jusqu’au village",
+        mapParkPin: "Entrée du parc",
+        mapParkName: "Entrée du parc et Centre ValBio",
+        mapParkText: "Là où commencent les balades. Le bureau du parc est à Ambodiamontana, à environ 7 km du village en remontant la RN25, et le Centre ValBio, la station de recherche, est juste à côté.",
+        mapCvbLink: "Visite du Centre ValBio",
+        mapAmbatolahyText: "Un village à l’orée de la forêt, avec des lodges à quelques pas de l’entrée du parc et la réserve communautaire VOI Mitsinjo.",
+        mapMitsinjoLink: "VOI Mitsinjo",
+        mapTsararanoText: "Des hôtels à flanc de colline juste avant le village, au-dessus de la rivière.",
+        mapVillageName: "Village de Ranomafana",
+        mapVillageText: "La plupart des hébergements et des restaurants, le marché, la gare des taxis-brousse et les sources chaudes qui ont donné son nom au village.",
+        legendRiver: "Rivière Namorona",
+        mapCreditValley: "Données cartographiques",
+        mapContributors: "et ses contributeurs",
+        photosN: "{n} photos",
+        whySeeMore: "Voir les photos",
+        whyCtaCommunity: "Voir une réserve communautaire",
         circleHeading: "Comment votre visite <em>protège la forêt.</em>",
         circleLede: "Chaque nuitée, chaque repas et chaque randonnée aide les communautés de Ranomafana à protéger la forêt qui est leur foyer.",
         circleText1: "Des villages entourent le parc, et la vie quotidienne arrive jusqu’à l’orée de la forêt. La bande de forêt entre les deux, la zone tampon, est la plus vulnérable de toutes : sans raison de la garder, la tentation est de la défricher. Le tourisme donne cette raison.",
@@ -3120,7 +3298,7 @@
         noteActiveAgain: "Nach den kalten Monaten sind die Tiere wieder aktiv.",
         noteDryEnds: "Der letzte Monat der trockeneren Jahreszeit.",
         noteWetBegins: "Regenzeit und heiße Jahreszeit beginnen.",
-        navWhy: "Warum herkommen",
+        navWhy: "Warum hierher",
         whyPageHeading: "Warum Madagaskar,<br><em>warum Ranomafana.</em>",
         whyPageIntro: "Eine Welt, die es nur hier gibt, ein Tal, das Sie in wenigen Tagen erkunden können, und ein Besuch, der hilft, sie am Leben zu erhalten.",
         whyMadHeading: "Warum <em>Madagaskar</em>",
@@ -3137,7 +3315,37 @@
         whyRano2Text: "Regenwald mit vierzehn Lemurenarten, heiße Quellen zum Baden und Centre ValBio, eine aktive Forschungsstation, alles an einer Straße. Morgens Lemuren, nachmittags ein Bad, nach Einbruch der Dunkelheit Chamäleons.",
         whyRano3Title: "Getragen von den Menschen vor Ort",
         whyRano3Text: "Einheimische Guides führen jede Wanderung im Park, die meisten Unterkünfte liegen im Dorf, und Gemeindevereine betreuen Waldreservate am Rand des Parks.",
-        whySources: "Quellen: Madagaskars 88 Millionen Jahre Isolation, der Anteil seiner Arten, die es nirgendwo sonst gibt, und die Herkunft der Lemuren und Plattschwanzgeckos nach Wikipedia (englische Artikel „Wildlife of Madagascar“, „Lemur“ und „Uroplatus“); Madagaskars Einkommensniveau nach der Länderklassifikation der Weltbank (2025–26); Größe des Parks, Zahl der Lemurenarten und Jahreszahlen von Madagascar National Parks und aus den eigenen Notizen dieses Führers vor Ort (Oktober 2026); wie der Tourismus den Wald schützt, aus der eigenen Begründung dieses Führers (Oktober 2026).",
+        whySources: "Quellen: Größe und Lage Madagaskars nach Wikipedia (englischer Artikel „Madagascar“); seine 88 Millionen Jahre Isolation, der Anteil seiner Arten, die es nirgendwo sonst gibt, und die Herkunft der Lemuren und Plattschwanzgeckos nach Wikipedia (englische Artikel „Wildlife of Madagascar“, „Lemur“ und „Uroplatus“); Madagaskars Einkommensniveau nach der Länderklassifikation der Weltbank (2025–26); Größe des Parks, Zahl der Lemurenarten, Jahreszahlen und Entfernungen von Madagascar National Parks und aus den eigenen Notizen dieses Führers vor Ort (Oktober 2026); wie der Tourismus den Wald schützt, aus der eigenen Begründung dieses Führers (Oktober 2026). Karten für diesen Führer gezeichnet nach Natural Earth (gemeinfrei) und OpenStreetMap (© OpenStreetMap-Mitwirkende, ODbL), Oktober 2026.",
+        bnavWhy: "Warum",
+        whyMapHeading: "Wo auf <em>der Welt</em>",
+        whyMapIntro: "Madagaskar ist die viertgrößte Insel der Welt und liegt vor der Südostküste Afrikas. Ranomafana liegt im Südosten der Insel, an der Straße, die vom Hochland zum Indischen Ozean hinabführt.",
+        altMapMadagascar: "Karte von Madagaskar vor der Südostküste Afrikas, mit der Straße von Antananarivo nach Ranomafana",
+        mapAfrica: "Afrika",
+        mapChannel: "Straße von Mosambik",
+        mapOcean: "Indischer Ozean",
+        mapHint: "Tippen Sie auf einen Ort auf der Karte",
+        mapTanaText: "Die Hauptstadt. Ranomafana liegt 412 km entfernt: etwa 12 Stunden mit dem Auto, über Antsirabe, Ambositra und Fianarantsoa.",
+        mapRanoText: "Dort, wo das Hochland auf dem Weg zur Küste in den Regenwald abfällt: 65 km von Fianarantsoa, der nächsten Stadt, und 139 km von Mananjary am Indischen Ozean.",
+        mapSeeValley: "Karte des Tals",
+        mapCreditMg: "Karte: Natural Earth. Die gestrichelte Linie ist die Straße, vereinfacht.",
+        whyValleyHeading: "Das Tal <em>aus der Nähe</em>",
+        whyValleyIntro: "Vom Parkeingang in Ambodiamontana bis hinunter ins Dorf und zu seinen heißen Quellen sind es auf der RN25 etwa 7 km, fast immer mit dem Fluss Namorona an Ihrer Seite.",
+        altMapValley: "Karte des Tals von Ranomafana: Die RN25 und der Fluss Namorona führen vom Eingang des Nationalparks hinunter ins Dorf",
+        mapParkPin: "Parkeingang",
+        mapParkName: "Parkeingang & Centre ValBio",
+        mapParkText: "Hier beginnen die Wanderungen. Das Parkbüro liegt in Ambodiamontana, etwa 7 km vom Dorf die RN25 hinauf, und Centre ValBio, die Forschungsstation, gleich daneben.",
+        mapCvbLink: "Führung im Centre ValBio",
+        mapAmbatolahyText: "Ein Dorf am Waldrand, mit Lodges wenige Schritte vom Parkeingang und dem Gemeindereservat VOI Mitsinjo.",
+        mapMitsinjoLink: "VOI Mitsinjo",
+        mapTsararanoText: "Hotels am Hang kurz vor dem Dorf, oberhalb des Flusses.",
+        mapVillageName: "Dorf Ranomafana",
+        mapVillageText: "Die meisten Unterkünfte und Restaurants, der Markt, der Taxi-Brousse-Bahnhof und die heißen Quellen, denen der Ort seinen Namen verdankt.",
+        legendRiver: "Fluss Namorona",
+        mapCreditValley: "Kartendaten",
+        mapContributors: "und Mitwirkende",
+        photosN: "{n} Fotos",
+        whySeeMore: "Fotos ansehen",
+        whyCtaCommunity: "Ein Gemeindereservat ansehen",
         circleHeading: "Wie Ihr Besuch <em>den Wald schützt.</em>",
         circleLede: "Jede Übernachtung, jede Mahlzeit und jede Wanderung hilft den Gemeinden von Ranomafana, den Regenwald zu schützen, in dem sie zu Hause sind.",
         circleText1: "Dörfer umgeben den Park, und das tägliche Leben reicht bis an den Waldrand. Der Waldstreifen dazwischen, die Pufferzone, ist am stärksten gefährdet: Ohne einen Grund, ihn zu erhalten, droht er gerodet zu werden. Der Tourismus liefert diesen Grund.",
@@ -3154,7 +3362,7 @@
         languageLabel: "Fiteny", planVisitBtn: "Omano ny dianao", askTeamBtn: "Anontanio ny ekipa", plannerTab: "Fikasana ny dia",
         drawerHome: "Fandraisana", drawerStay: "Toerana hatoriana", drawerEat: "Toerana hisakafoana", drawerDo: "Zavatra hatao", drawerMore: "Hafa koa", drawerAbout: "Ny ekipa",
         tabItineraries: "Fandaharana", tabGettingHere: "Fahatongavana", tabWhen: "Fotoana tsara", tabGuides: "Mpitari-dalana",
-        bnavHome: "Fandraisana", bnavStay: "Hatoriana", bnavEat: "Sakafo", bnavDo: "Hatao", bnavPlan: "Drafitra",
+        bnavHome: "Fandrai­sana", bnavStay: "Hatoriana", bnavEat: "Sakafo", bnavDo: "Hatao", bnavPlan: "Drafitra",
         crumbHome: "Fandraisana", crumbPlan: "Omano ny dianao", crumbPark: "Valan-javaboahary",
         heroPlace: "Madagasikara", heroBadge: "Lova iraisam-pirenena UNESCO", heroBadgeMore: "Alan'i Atsinanana",
         heroTagline: "Tontolo tsy hita <em>afa-tsy eto.</em>",
@@ -3460,7 +3668,37 @@
         whyRano2Text: "Ala mando misy karazana gidro efatra ambin'ny folo, loharano mafana azo milomanosana, ary ny Centre ValBio, foibem-pikarohana miasa tokoa, eo amin'ny lalana iray ihany. Gidro amin'ny maraina, filomanosana amin'ny tolakandro, tana rehefa maizina.",
         whyRano3Title: "Tantanan'ny mponina eto",
         whyRano3Text: "Mpitari-dalana eto an-toerana no mitarika ny dia rehetra ao anaty valan-javaboahary, ao an-tanàna ny ankamaroan'ny toerana hipetrahana, ary fikambanan'ny fiaraha-monina no mitantana tahiry ala eo amoron'ny valan-javaboahary.",
-        whySources: "Loharano: ny 88 tapitrisa taona nitokanan'i Madagasikara, ny anjaran'ireo karazana tsy hita any an-kafa, ary ny niavian'ny gidro sy ny androngo rambo ravina avy amin'ny Wikipedia (lahatsoratra anglisy « Wildlife of Madagascar », « Lemur » ary « Uroplatus »); ny haavon'ny fidiram-bolan'i Madagasikara avy amin'ny fanasokajiana firenena ataon'ny Banky Iraisam-pirenena (2025–26); ny haben'ny valan-javaboahary, ny isan'ny karazana gidro ary ny daty avy amin'ny Madagascar National Parks sy ny naoty an-toerana nataon'ity torolàlana ity (Oktobra 2026); ny fomba iarovan'ny fizahan-tany ny ala avy amin'ny fanazavana nataon'ity torolàlana ity (Oktobra 2026).",
+        whySources: "Loharano: ny haben'i Madagasikara sy ny toerana misy azy avy amin'ny Wikipedia (lahatsoratra anglisy « Madagascar »); ny 88 tapitrisa taona nitokanany, ny anjaran'ireo karazana tsy hita any an-kafa, ary ny niavian'ny gidro sy ny androngo rambo ravina avy amin'ny Wikipedia (lahatsoratra anglisy « Wildlife of Madagascar », « Lemur » ary « Uroplatus »); ny haavon'ny fidiram-bolan'i Madagasikara avy amin'ny fanasokajiana firenena ataon'ny Banky Iraisam-pirenena (2025–26); ny haben'ny valan-javaboahary, ny isan'ny karazana gidro, ny daty ary ny halavirana avy amin'ny Madagascar National Parks sy ny naoty an-toerana nataon'ity torolàlana ity (Oktobra 2026); ny fomba iarovan'ny fizahan-tany ny ala avy amin'ny fanazavana nataon'ity torolàlana ity (Oktobra 2026). Sarintany natao ho an'ity torolàlana ity avy amin'ny Natural Earth (an'ny besinimaro) sy OpenStreetMap (© ireo mpandray anjara ao amin'ny OpenStreetMap, ODbL), Oktobra 2026.",
+        bnavWhy: "Nahoana",
+        whyMapHeading: "Aiza eo amin'ny <em>tontolo</em>",
+        whyMapIntro: "Madagasikara no nosy fahefatra lehibe indrindra eran-tany, eo anilan'ny morontsiraka atsimo atsinanan'i Afrika. Any atsimo atsinanan'ny nosy i Ranomafana, eo amin'ny lalana midina avy any amin'ny tany avo mankany amin'ny Ranomasimbe Indianina.",
+        altMapMadagascar: "Sarintanin'i Madagasikara eo anilan'ny morontsiraka atsimo atsinanan'i Afrika, miaraka amin'ny lalana avy any Antananarivo mankany Ranomafana",
+        mapAfrica: "Afrika",
+        mapChannel: "Lakandranon'i Mozambika",
+        mapOcean: "Ranomasimbe Indianina",
+        mapHint: "Tsindrio ny toerana iray eo amin'ny sarintany",
+        mapTanaText: "Ny renivohitra. 412 km amin'ny lalana i Ranomafana: eo amin'ny 12 ora amin'ny fiara, mandalo an'i Antsirabe, Ambositra ary Fianarantsoa.",
+        mapRanoText: "Eo amin'ny toerana idinan'ny tany avo ho ala mando eny an-dalana mankany amoron-dranomasina: 65 km miala an'i Fianarantsoa, tanàna lehibe akaiky indrindra, ary 139 km miala an'i Mananjary eo amoron'ny Ranomasimbe Indianina.",
+        mapSeeValley: "Sarintanin'ny lohasaha",
+        mapCreditMg: "Sarintany: Natural Earth. Ny tsipika tapatapaka no lalana, natao tsotra.",
+        whyValleyHeading: "Ny lohasaha <em>akaiky</em>",
+        whyValleyIntro: "Avy eo amin'ny fidirana ao amin'ny valan-javaboahary any Ambodiamontana ka hatrany an-tanàna sy ny loharano mafana dia eo amin'ny 7 km eo amin'ny RN25, ary eo anilanao ny renirano Namorona saika manontolo ny lalana.",
+        altMapValley: "Sarintanin'ny lohasahan'i Ranomafana: ny RN25 sy ny renirano Namorona manomboka eo amin'ny fidirana ao amin'ny valan-javaboahary ka hatrany an-tanàna",
+        mapParkPin: "Fidirana",
+        mapParkName: "Fidirana ao amin'ny valan-javaboahary sy Centre ValBio",
+        mapParkText: "Eto no manomboka ny dia an-tongotra. Any Ambodiamontana ny biraon'ny valan-javaboahary, eo amin'ny 7 km miakatra amin'ny RN25 avy eo an-tanàna, ary eo akaikiny ihany ny Centre ValBio, foibem-pikarohana.",
+        mapCvbLink: "Fitsidihana ny Centre ValBio",
+        mapAmbatolahyText: "Tanàna eo amoron'ny ala, misy trano fandraisam-bahiny vitsy dingana miala ny fidirana ao amin'ny valan-javaboahary, ary ny tahiry iombonan'ny fiaraha-monina VOI Mitsinjo.",
+        mapMitsinjoLink: "VOI Mitsinjo",
+        mapTsararanoText: "Hotely eny amin'ny havoana alohan'ny tanàna, ambonin'ny renirano.",
+        mapVillageName: "Tanànan'i Ranomafana",
+        mapVillageText: "Ny ankamaroan'ny toerana hatoriana sy hisakafoana, ny tsena, ny fiantsonan'ny taxi-brousse ary ny loharano mafana nanomezana ny anaran'ny tanàna.",
+        legendRiver: "Renirano Namorona",
+        mapCreditValley: "Angona sarintany",
+        mapContributors: "sy ireo mpandray anjara",
+        photosN: "Sary {n}",
+        whySeeMore: "Jereo ny sary",
+        whyCtaCommunity: "Jereo tahiry iombonana",
         circleHeading: "Ahoana no <em>iarovan'ny fitsidihanao ny ala.</em>",
         circleLede: "Ny alina tsirairay, ny sakafo tsirairay ary ny dia an-tongotra tsirairay dia manampy ny fiaraha-monina eto Ranomafana hiaro ny ala izay fonenany.",
         circleText1: "Voahodidin'ny tanàna ny valan-javaboahary, ary tonga hatrany amoron'ny ala ny fiainana andavanandro. Ny tapak'ala eo anelanelan'izy roa, ilay faritra fiarovana manodidina, no tena marefo indrindra: raha tsy misy antony hitahirizana azy dia ho voakapa izy. Ny fizahan-tany no manome izany antony izany.",
@@ -3610,6 +3848,7 @@
       renderPark();
       renderWhen();
       renderGuides();
+      renderWhy();
     }
 
     // --- 2. LISTING CARDS ---------------------------------------------------
@@ -4432,6 +4671,123 @@
       if (outside) {
         outside.innerHTML = ['voi-mitsinjo', 'voi-ambohimagneva', 'night-walk'].map((slug) => miniCard(bySlug(doData, slug), { thumb: false, sub: 'category' })).join('');
       }
+    }
+
+    // --- 6b. WHY VISIT: PHOTO CARDS AND MAPS -------------------------------
+    /* Each reason is a card with Kyle's photos; tapping it opens them in the pop-up
+       with a link onward. Photo descriptions come from the listing galleries (already
+       translated) or, for page photos, from their alt… keys. */
+    const WHY_CARDS = {
+      whyMadCards: { kicker: 'whyMadHeading', cards: [
+        { key: 'whyMad1', cta: ['do:night-walk', 'layer2Link'], photos: ['images/ranomafana-national-park-leaf-tailed-gecko.jpg', 'images/satanic-leaf-gecko.jpg', 'images/night-walk-tree-frog.jpg', 'images/ranomafana-national-park-leaf-chameleon.jpg', 'images/ranomafana-national-park-chameleon-branch.jpg'] },
+        { key: 'whyMad2', cta: ['#park', 'linkPark'], photos: ['images/ranomafana-national-park-ruffed-lemur.jpg', 'images/ranomafana-national-park-lemur-canopy.jpg', 'images/night-walk-mouse-lemur.jpg', 'images/ranomafana-national-park-lemur-trunk.jpg'] },
+        { key: 'whyMad3', cta: ['#guides', 'tabGuides'], photos: ['images/guide-forest-straw-hat.jpg', 'images/ranomafana-village.jpg', 'images/ranomafana-town-flowers.jpg', 'images/cvb-staff-green-shirts.jpg'] }
+      ] },
+      whyRanoCards: { kicker: 'whyRanoHeading', cards: [
+        { key: 'whyRano1', cta: ['#park', 'layer1Link'], photos: ['images/ranomafana-national-park-bamboo-lemur-feeding.jpg', 'images/ranomafana-national-park-wildlife.jpg', 'images/ranomafana-national-park-bamboo.jpg', 'images/ranomafana-national-park-canopy.jpg'] },
+        { key: 'whyRano2', cta: ['do:station-thermale', 'layer4Link'], photos: ['images/station-thermale-pool.jpg', 'images/ranomafana-national-park-namorona.jpg', 'images/cvb-campus-aerial.jpg', 'images/night-walk-chameleon.jpg', 'images/namorona-kayaking-river.jpg'] },
+        { key: 'whyRano3', cta: ['do:voi-ambohimagneva', 'whyCtaCommunity'], photos: ['images/voi-ambohimagneva-guide-adrien.jpg', 'images/cvb-world-lemur-day.jpg', 'images/ranomafana-national-park-trail.jpg', 'images/voi-ambohimagneva-waterfall-visitor.jpg'] }
+      ] }
+    };
+    const PAGE_PHOTO_ALT = {
+      'images/guide-forest-straw-hat.jpg': 'altGuideHat',
+      'images/ranomafana-village.jpg': 'altVillage',
+      'images/ranomafana-town-flowers.jpg': 'altTownFlowers',
+      'images/voi-ambohimagneva-guide-adrien.jpg': 'altGuideAdrien'
+    };
+    function photoAlt(src) {
+      if (PAGE_PHOTO_ALT[src]) return t(PAGE_PHOTO_ALT[src]);
+      for (const rows of [doData, stayData, eatData]) {
+        for (const row of rows) {
+          const hit = (row.gallery || []).find((g) => g.src === src);
+          if (hit) return hit.alt;
+        }
+      }
+      return '';
+    }
+    const stripTags = (html) => String(html).replace(/<[^>]+>/g, '');
+
+    /* A link target is a page ("#park"), a Things to do listing ("do:night-walk") or,
+       for "valley", the valley map further down this page. */
+    function whyLink([target, key], cls) {
+      const label = `${esc(t(key))} →`;
+      if (target.startsWith('do:')) return `<a class="${cls}" href="#do" onclick="return openDoBySlug('${target.slice(3)}')">${label}</a>`;
+      if (target === 'valley') return `<a class="${cls}" href="#why" onclick="document.getElementById('mapValley').scrollIntoView({ behavior: 'smooth', block: 'center' }); return false;">${label}</a>`;
+      return `<a class="${cls}" href="${target}">${label}</a>`;
+    }
+
+    function renderWhyCards() {
+      for (const [id, group] of Object.entries(WHY_CARDS)) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        el.innerHTML = group.cards.map((c, i) => `
+          <button type="button" class="why-card" onclick="openWhyCard('${id}', ${i})">
+            <span class="why-card-media"><img src="${esc(c.photos[0])}" alt="" loading="lazy"><span class="why-card-count">${icon('image', 14)} ${esc(t('photosN').replace('{n}', c.photos.length))}</span></span>
+            <span class="why-card-body">
+              <span class="why-card-num">${String(i + 1).padStart(2, '0')}</span>
+              <span class="why-card-title">${esc(t(c.key + 'Title'))}</span>
+              <span class="why-card-text">${esc(t(c.key + 'Text'))}</span>
+              <span class="why-card-more">${esc(t('whySeeMore'))} →</span>
+            </span>
+          </button>`).join('');
+      }
+    }
+    function openWhyCard(id, i) {
+      const group = WHY_CARDS[id];
+      const c = group.cards[i];
+      const title = t(c.key + 'Title');
+      showModal(`
+        <div class="m-head">
+          <span class="m-kicker">${esc(stripTags(t(group.kicker)))}</span>
+          <h2 class="m-title" id="modalTitle">${esc(title)}</h2>
+        </div>
+        <p class="m-desc">${esc(t(c.key + 'Text'))}</p>
+        ${galleryHTML(title, c.photos.map((src) => ({ src, alt: photoAlt(src) })))}
+        <div class="m-actions">${whyLink(c.cta, 'btn btn-gold')}</div>`);
+    }
+
+    /* Pins sit on the map pictures at left/top percentages worked out from their
+       coordinates (OpenStreetMap, checked 16 Oct 2026). Places only 250 m apart share a
+       pin, so they never overlap on a phone. */
+    const MAPS = {
+      mg: { pins: 'mapPinsMg', panel: 'mapPanelMg', selected: 'rano', places: [
+        { id: 'tana', x: 75.0, y: 50.74, label: 'left', name: 'Antananarivo', text: 'mapTanaText', links: [['#getting-here', 'tabGettingHere']] },
+        { id: 'rano', x: 74.52, y: 66.62, label: 'above', name: 'Ranomafana', text: 'mapRanoText', links: [['valley', 'mapSeeValley'], ['#getting-here', 'tabGettingHere']] }
+      ] },
+      valley: { pins: 'mapPinsValley', panel: 'mapPanelValley', selected: 'village', places: [
+        { id: 'park', x: 27.15, y: 43.64, label: 'below', pinKey: 'mapParkPin', nameKey: 'mapParkName', text: 'mapParkText', links: [['#park', 'linkPark'], ['do:centre-valbio-tour', 'mapCvbLink']] },
+        { id: 'ambatolahy', x: 38.89, y: 32.05, label: 'left', name: 'Ambatolahy', text: 'mapAmbatolahyText', links: [['#stay', 'drawerStay'], ['do:voi-mitsinjo', 'mapMitsinjoLink']] },
+        { id: 'tsararano', x: 59.17, y: 38.64, label: 'above', name: 'Tsararano', text: 'mapTsararanoText', links: [['#stay', 'drawerStay']] },
+        { id: 'village', x: 70.97, y: 53.18, label: 'below', pin: 'Ranomafana', nameKey: 'mapVillageName', text: 'mapVillageText', links: [['do:station-thermale', 'layer4Link'], ['#eat', 'drawerEat'], ['#stay', 'drawerStay']] }
+      ] }
+    };
+    const placeName = (p) => (p.nameKey ? t(p.nameKey) : p.name);
+    const pinLabel = (p) => (p.pinKey ? t(p.pinKey) : p.pin || placeName(p));   // short, so labels never collide
+
+    function renderMap(id) {
+      const m = MAPS[id];
+      const pins = document.getElementById(m.pins);
+      if (!pins) return;
+      pins.innerHTML = m.places.map((p) => `
+        <button type="button" class="map-pin map-pin--${p.label}" style="left: ${p.x}%; top: ${p.y}%;" aria-pressed="${p.id === m.selected}" onclick="selectMapPlace('${id}', '${p.id}')">
+          <span class="map-pin-dot"></span><span class="map-pin-label">${esc(pinLabel(p))}</span>
+        </button>`).join('');
+      const p = m.places.find((place) => place.id === m.selected);
+      document.getElementById(m.panel).innerHTML = `
+        <span class="eyebrow">${esc(t('mapHint'))}</span>
+        <h3>${esc(placeName(p))}</h3>
+        <p>${esc(t(p.text))}</p>
+        <div class="pill-row">${p.links.map((link) => whyLink(link, 'pill-link')).join('')}</div>`;
+    }
+    function selectMapPlace(id, placeId) {
+      MAPS[id].selected = placeId;
+      renderMap(id);
+    }
+
+    function renderWhy() {
+      renderWhyCards();
+      renderMap('mg');
+      renderMap('valley');
     }
 
     // --- 7. PAGES, NAVIGATION & UI -----------------------------------------
