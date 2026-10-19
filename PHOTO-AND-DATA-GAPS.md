@@ -124,6 +124,27 @@ The site now shows the August 2025 figures, plus **25,000 Ar** for children unde
 has changed. The guide prices are what one group paid without bargaining, so they
 are a rough guide, not an official rate.
 
+**Confirmed 19 Oct 2026 by the park office notice board** (your photo; a copy is in
+`photo-originals/2026-10-19 Park office/`). It lists the same 55,000 / 25,000 Ar day
+entry, and guide fees of 90,000 (Aureus/Talatakely), 120,000 (Vatoharanana) and
+150,000 Ar (Valohoaka) per group of 1–4, 220,000 Ar for specialists — exactly what the
+site shows. It also gives day-and-night tickets (105,000 / 75,000 Ar), camping
+(5,000 Ar per pitch per night) and a circuit map (5,000 Ar), which are recorded in the
+park's `sourceNote` but not shown on the site.
+
+**Guide fees rise in January 2027.** A guides' association notice on the same board
+(agreed 9 June 2026): Aureus 120,000, Vatoharanana 150,000, Valohoaka 180,000,
+Sahamalaotra 120,000 Ar, specialists 250,000 Ar. The park listing now carries this as a
+tip, in all four languages. **In January 2027, change `guideFees` and `specialistFee`
+to these figures and drop the tip.**
+
+**Please read two more notices on that board for me.** A Ministry of Tourism letter
+dated 3 Oct 2026 and MNP sheets headed "Parc Phare" and "Annexes nouveaux tarifs" seem
+to set new entry fees for a list of flagship parks, possibly including Ranomafana
+(something like 110,000 Ar for foreign adults). They are too small in the photo to read
+reliably, so the site takes nothing from them. A close-up photo, or a word with the
+office about when they apply, would settle it.
+
 Also on the listing: cash in Ariary only at the gate, guides mandatory since 2010 and
 assigned at the office (no online booking), the separate community-fee booth, and
 the tip about pairing up with other solo travellers to share the guide fee.
@@ -318,6 +339,50 @@ Originals are in `photo-originals/2026-10-13 Centre ValBio/`, along with a video
 (`74114143-….mp4`, 4 MB) that is not on the site — the site has no video, and 4 MB is heavy
 on Ranomafana connections.
 
+### Added 19 October 2026 — the park, Studio oloNala and Varibolo
+
+You sent 51 WhatsApp photos; 28 are on the site, used as received (already 1600 px and
+under 500 KB; one stream photo was resized to 1440 px to get under). The rest were
+duplicates, near-identical frames or weaker shots.
+
+| Where | Photos |
+|---|---|
+| **National Park** — among the eight on the page | greater bamboo lemur on a bamboo stem, a waterfall into a forest pool, a comet moth, the Namorona in its gorge |
+| **National Park** — “See all photos” | the greater bamboo lemur chewing bamboo, three more lemurs (walking a branch, tail hanging from a vine, on a mossy trunk), a stone path and walkers in the bamboo, a stream through ferns, a second waterfall, walkers on a wooden footbridge, the yellow footbridge over the Namorona (this fills the `entrance` slot), the interpretation centre's sign and its Tanala village display, and the circuit map board |
+| **Studio oloNala** (all three slots, plus two more) | the arched doorway under the “oloNala Art Studio & Shop” sign (now the card photo), the wall of framed wildlife paintings, carved wooden plants, the artist's desk, the small gallery room |
+| **Varibolo Resto** (frontage slot — now the card photo) and **Namorona River Kayaking** (second photo) | the green Varibolo building with its “Kayak Ranomafana” banner |
+| **Varibolo Resto** (dining slot) | the covered terrace with red-checked tablecloths — you confirmed it is Varibolo's, and that Varibolo Resto is not the Park Entrance Restaurant |
+| **Namorona River Kayaking** (third photo) | a woman pointing to the “Kayak Ranomafana” banner |
+| **National Park** — “See all photos”, after the yellow footbridge | your group at the “Parc National Ranomafana” sign |
+| **Park Entrance Craft Shop** — a new Things to do listing (Market, next to Studio oloNala) | its table of vanilla, honey, polished stones and bags (card photo), and the open shop front with the shopkeeper |
+| **Why visit** cards | the greater bamboo lemur on “Fourteen kinds of lemur”, the comet moth on “Life found nowhere else” |
+
+The park page's eight now mix lemurs, water, small wildlife and the river; the earlier
+photos that were on the page (lemur among the bamboo, campsite, giant tree, brown lemur)
+are still first under “See all photos”.
+
+**Named by me — please check.** The large lemur with white ear tufts stripping bamboo is
+described as a **greater bamboo lemur**: the white ear tufts and the bamboo-stripping are
+the marks of that species. The other new lemurs are not named. I took the two waterfalls,
+the stream and the footbridge to be inside the park, as you sent them as park photos; I
+did not name the falls.
+
+**Contact details from the Varibolo banner.** The banner gives **034 37 737 13** and
+**variboloresto72@gmail.com**. The number is now the second one on Varibolo Resto and the
+kayaking listing; the Gmail address is in Varibolo Resto's contact note (info@varibolo.com
+stays the main email). Say if either is out of date.
+
+**Your answers, 19 Oct 2026.** The craft shop is a local shop by the park entrance, not
+Varibolo's, so it has its own listing, **Park Entrance Craft Shop** (a descriptive name,
+like the Park Entrance Restaurant's). Its description lists only what the photos show.
+**What is the shop called, and what are its hours?** The terrace is Varibolo Resto's. The
+photos with people's faces were added at your request.
+
+**Not used:** the car park (three photos), the interpretation centre's courtyard, a second
+comet-moth frame and a third, closer shot of the craft shop's table were left out as
+weaker or repeated shots; so were near-duplicates of the lemurs, the river and the
+footbridge. The park office notice board is a source, not a site photo (see section 3).
+
 Every photo-less listing now has a **designed placeholder** (`images/placeholder-<slug>.jpg`)
 rather than sharing one of two landscapes. They are obviously graphics — property name
 on a colour panel, "Photograph coming soon" — so nobody mistakes one for a picture of
@@ -357,7 +422,7 @@ Frontage · dining room · a signature dish.
 
 | Listing | Files it is waiting for |
 |---|---|
-| **Varibolo Resto** | `varibolo-resto-exterior.jpg` · `varibolo-resto-dining.jpg` · `varibolo-resto-dish.jpg` |
+| **Varibolo Resto** | `varibolo-resto-dish.jpg` (the frontage and terrace are in) |
 | **Hotel Manja Restaurant** | `manja-restaurant-exterior.jpg` · `manja-restaurant-dining.jpg` · `manja-restaurant-dish.jpg` |
 | **Rianala Gite Restaurant** | `rianala-gite-restaurant-exterior.jpg` · `rianala-gite-restaurant-dining.jpg` · `rianala-gite-restaurant-dish.jpg` |
 | **Karibotel Restaurant** | `karibotel-restaurant-exterior.jpg` · `karibotel-restaurant-dining.jpg` · `karibotel-restaurant-dish.jpg` |
@@ -375,9 +440,7 @@ Frontage · dining room · a signature dish.
 | **Thermal Massage** | `thermal-massage-room.jpg` — same rule: nothing borrowed from Hotel Thermal |
 | **Cascade Andriamamovoka** | `cascade-andriamamovoka-falls.jpg` · `cascade-andriamamovoka-trail.jpg` · `cascade-andriamamovoka-river.jpg` |
 | **Namorona River Kayaking** | `namorona-kayaking-launch.jpg` · `namorona-kayaking-group.jpg` (the river shot is in) |
-| **Ranomafana National Park** | `ranomafana-national-park-entrance.jpg` — the park gate and office; every other park slot is filled |
 | **Ranomafana Arboretum** | `ranomafana-arboretum-entrance.jpg` · `ranomafana-arboretum-path.jpg` · `ranomafana-arboretum-flora.jpg` |
-| **Studio oloNala** | `studio-olonala-frontage.jpg` · `studio-olonala-interior.jpg` · `studio-olonala-work.jpg` |
 | **Village Artisan Market** | `village-artisan-market-stalls.jpg` · `village-artisan-market-crafts.jpg` |
 
 ### Shoot these first

@@ -696,18 +696,18 @@ const eatData = [
     type: "malagasy",
     rating: "5.0 (Tripadvisor, 8 reviews)",
     price: "$$",
-    img: "images/placeholder-varibolo-resto.jpg",
+    img: "images/varibolo-resto-exterior.jpg",
     verified: true,
-    photoNeeded: true,
+    photoNeeded: false,
     gallery: [
-      { src: "images/varibolo-resto-exterior.jpg", fallback: "images/placeholder-varibolo-resto.jpg", alt: "Varibolo Resto frontage" },
-      { src: "images/varibolo-resto-dining.jpg", fallback: "images/placeholder-varibolo-resto.jpg", alt: "Dining room at Varibolo Resto" },
+      { src: "images/varibolo-resto-exterior.jpg", alt: "Varibolo's green-painted restaurant and kayak shop, with its Kayak Ranomafana banner" },
+      { src: "images/varibolo-resto-dining.jpg", alt: "The covered dining terrace at Varibolo Resto, with red-checked tablecloths and a view over banana plants to the forest" },
       { src: "images/varibolo-resto-dish.jpg", fallback: "images/placeholder-varibolo-resto.jpg", alt: "A dish at Varibolo Resto" }
     ],
-    sourceNote: "Kayak trips are self-guided, per Kyle's notes (received 11 Oct 2026), which also give info@varibolo.com and the US number. The earlier 'guided descents' wording is corrected.",
+    sourceNote: "Kayak trips are self-guided, per Kyle's notes (received 11 Oct 2026), which also give info@varibolo.com and the US number. The earlier 'guided descents' wording is corrected. Frontage and terrace photos from Kyle, received 19 Oct 2026; he confirmed the terrace is Varibolo Resto's, and that Varibolo Resto is not the Park Entrance Restaurant. The banner in the frontage photo ('Varibolo Resto — Kayak Ranomafana') gives the second number, 034 37 737 13, and variboloresto72@gmail.com.",
     desc: "Riverside restaurant beside the Namorona serving Malagasy and American dishes for breakfast, lunch and dinner — run by Varibolo, Ranomafana's kayak operator, which rents kayaks for self-guided trips down the river.",
     highlights: ["Malagasy and American menu", "Breakfast, lunch and dinner", "Kayak trips arranged by the same team"],
-    contact: { phone: "+261 34 90 823 03", email: "info@varibolo.com", website: "http://www.varibolo.com/", social: "", note: "Staff speak English, French and Malagasy. US number: +1 516 479 1889." }
+    contact: { phone: "+261 34 90 823 03 / +261 34 37 737 13", email: "info@varibolo.com", website: "http://www.varibolo.com/", social: "", note: "Staff speak English, French and Malagasy. US number: +1 516 479 1889. The restaurant's banner also gives variboloresto72@gmail.com." }
   },
   {
     slug: "chez-gaspard-restaurant",
@@ -971,7 +971,7 @@ const doData = [
     specialistFee: "220,000 Ar",
     hours: "07:00–17:00",
     feesAsOf: "2026-10",
-    sourceNote: "Entry (adult 55,000 Ar; ages 5–12 25,000 Ar; under 5 free; Malagasy citizens 2,000 / 500 Ar), guide fees by circuit, the 220,000 Ar specialist rate, group sizes, opening hours, circuit notes, the lemur list and how to get to the gate all come from Kyle's notes ('Website information.docx', received 11 Oct 2026). They agree with gate reports from August 2025 (The Travelling Sloth: 55,000 Ar entry, guide ~90,000 / 120,000 / 150,000 Ar) and January 2024 (The Blog of Dimi). The 5,000 Ar community fee is not in his notes but is stated on the official MNP park page (checked 11 Oct 2026) and in both gate reports, so it stays. The 45,000 Ar entry figure used here in early 2026 came from two fee-guide websites, one citing the other — do not reuse it. Area (43,550 ha), species counts (14 lemurs, 125 birds) and the community fee from the official MNP park page, parcs-madagascar.com/en/parc/ranomafana-2/, checked 11 Oct 2026; Kyle's notes give 43,650 ha, 13 lemurs and 118 birds. Circuit levels for Sahamalaotra, Vatoharanana and Valohoaka are judged from their lengths, not taken from a source.",
+    sourceNote: "Entry (adult 55,000 Ar; ages 5–12 25,000 Ar; under 5 free; Malagasy citizens 2,000 / 500 Ar), guide fees by circuit, the 220,000 Ar specialist rate, group sizes, opening hours, circuit notes, the lemur list and how to get to the gate all come from Kyle's notes ('Website information.docx', received 11 Oct 2026). They agree with gate reports from August 2025 (The Travelling Sloth: 55,000 Ar entry, guide ~90,000 / 120,000 / 150,000 Ar) and January 2024 (The Blog of Dimi). The 5,000 Ar community fee is not in his notes but is stated on the official MNP park page (checked 11 Oct 2026) and in both gate reports, so it stays. The 45,000 Ar entry figure used here in early 2026 came from two fee-guide websites, one citing the other — do not reuse it. Area (43,550 ha), species counts (14 lemurs, 125 birds) and the community fee from the official MNP park page, parcs-madagascar.com/en/parc/ranomafana-2/, checked 11 Oct 2026; Kyle's notes give 43,650 ha, 13 lemurs and 118 birds. Circuit levels for Sahamalaotra, Vatoharanana and Valohoaka are judged from their lengths, not taken from a source. Confirmed by the notice board at the park office, photographed by Kyle (received 19 Oct 2026; copy in photo-originals/2026-10-19 Park office/): entry per day 55,000 Ar foreign adults, 25,000 Ar foreign children, 2,000 / 500 Ar Malagasy; day-and-night tickets 105,000 / 75,000 Ar (Malagasy 7,000 / 5,500 Ar); camping 5,000 Ar per pitch per night; circuit map 5,000 Ar; guide fees per group of 1–4 Aureus 90,000, Vatoharanana 120,000, Valohoaka 150,000, Sahamalaotra 90,000 Ar, trekking, ornithology and herpetology 220,000 Ar, botany 200,000 Ar. The same board posts the guides' association's new guide fees from January 2027 (agreed 9 June 2026): Aureus 120,000 Ar (2 hours), Vatoharanana 150,000 Ar (3–4 hours), Valohoaka 180,000 Ar (5–7 hours), Sahamalaotra 120,000 Ar (2 hours), specialist herpetology, ornithology, botany or trek 250,000 Ar. Switch guideFees and specialistFee to these in January 2027. Also pinned there: a Ministry of Tourism letter dated 3 Oct 2026 and MNP 'Parc Phare' / 'Annexes nouveaux tarifs' sheets that seem to set new entry fees for flagship parks, Ranomafana possibly among them; they are too small in the photo to read reliably, so nothing on the site is taken from them.",
     desc: "UNESCO World Heritage montane rainforest holding fourteen lemur species, including the critically endangered golden bamboo lemur. A certified guide is mandatory for international visitors — arrange one through your hotel, or choose from the guides working that day when you arrive.",
     /* Longer introduction for the National Park page (the card uses desc). */
     intro: [
@@ -986,6 +986,7 @@ const doData = [
       "One guide for a group of one to four; groups of six or more take at least two",
       "Tell your guide about your fitness and any worries — they will adapt the route to suit you",
       "Travelling solo? Ask the office to pair you with others to share the guide fee",
+      "Guide fees rise in January 2027: 120,000 Ar for Talatakely or Sahamalaotra, 150,000 Ar for Vatoharanana, 180,000 Ar for Valohoaka and 250,000 Ar for a specialist guide",
       "Getting there: take a taxi-brousse heading for Fianarantsoa from the station in the centre of town and ask for the park entrance — 20–25 minutes, 1,000–2,000 Ar. By car it is 7 km up the road",
       "Weather permitting, walk back: it is a beautiful hour downhill to town, and lemurs are sometimes seen near the road",
       "Malagasy citizens pay 2,000 Ar (adults) and 500 Ar (ages 5–12)",
@@ -1050,21 +1051,31 @@ const doData = [
       }
     ],
     /* Photos from Kyle, 11 Oct 2026 (originals in photo-originals/), and more
-       from him on 13 Oct 2026 (used as received: already 1600px and under 500 KB).
-       The park page shows the first seven; "See all photos" opens the rest. The
-       entrance slot is still waiting for its photo, so it stays last. */
+       from him on 13 and 19 Oct 2026 (used as received: already 1600px and under
+       500 KB). The park page shows the cover photo and the first seven here;
+       "See all photos" opens the rest. The greater bamboo lemur is named from its
+       white ear tufts and the bamboo it is stripping; the waterfalls of 19 Oct were
+       sent as park photos but are not named. */
     gallery: [
       { src: "images/ranomafana-national-park-bamboo-lemur-feeding.jpg", alt: "A golden bamboo lemur feeding on bamboo leaves, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-greater-bamboo-lemur.jpg", alt: "A greater bamboo lemur, with its white ear tufts, clinging to a bamboo stem, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-cascade.jpg", alt: "A small cascade tumbling over mossy boulders in the rainforest, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-waterfall.jpg", alt: "A waterfall pouring into a forest pool, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-leaf-chameleon.jpg", alt: "A tiny leaf chameleon (Brookesia) on a mossy twig, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-comet-moth.jpg", alt: "A comet moth resting on a leaf, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-namorona-gorge.jpg", alt: "The Namorona River winding through its forested gorge" },
       { src: "images/ranomafana-national-park-wildlife.jpg", alt: "A lemur clinging to a tree trunk among the bamboo, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-campsite.jpg", alt: "The forest campsite inside Ranomafana National Park, with a wooden rack and a fire pit" },
       { src: "images/ranomafana-national-park-canopy.jpg", alt: "Looking up a giant rainforest tree into the canopy, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-lemur-trunk.jpg", alt: "A brown lemur clinging to a trunk in the forest, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-trail.jpg", alt: "Walkers on a forest trail in Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-greater-bamboo-lemur-feeding.jpg", alt: "A greater bamboo lemur chewing a strip of bamboo, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-chameleon.jpg", alt: "A green chameleon on a branch, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-lemur-canopy.jpg", alt: "A lemur on a mossy branch high in the canopy, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-lemur-bamboo.jpg", alt: "A lemur in the bamboo, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-lemur-walking.jpg", alt: "A lemur walking along a branch high in the trees, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-lemur-tail.jpg", alt: "A lemur on a hanging vine, its long bushy tail curled below, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-lemur-mossy-trunk.jpg", alt: "A lemur looking out from a mossy trunk in the canopy, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-mongoose.jpg", alt: "A ring-tailed mongoose crossing a stone path in Ranomafana National Park" },
       { src: "images/ranomafana-national-park-leaf-tailed-gecko.jpg", alt: "A leaf-tailed gecko disguised as a dead leaf, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-bird.jpg", alt: "A bird perched in the understory, Ranomafana National Park" },
@@ -1076,10 +1087,19 @@ const doData = [
       { src: "images/ranomafana-national-park-nestlings.jpg", alt: "Hungry nestlings calling from their nest hole, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-caterpillar.jpg", alt: "A hairy black-and-orange caterpillar under a leaf, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-bamboo.jpg", alt: "Bamboo forest, home of the park's bamboo lemurs" },
+      { src: "images/ranomafana-national-park-bamboo-path.jpg", alt: "A stone-paved path through the bamboo forest, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-bamboo-walkers.jpg", alt: "Walkers following a trail under arching bamboo, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-mossy-trunks.jpg", alt: "Moss-covered tree trunks in the rainforest, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-stream.jpg", alt: "A stream running over mossy rocks under the forest canopy, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-stream-ferns.jpg", alt: "A stream tumbling over rocks between ferns and mossy trees, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-waterfall-pool.jpg", alt: "A tall waterfall falling into a pool behind a mossy tree, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-namorona.jpg", alt: "The Namorona River rushing through the rainforest" },
-      { src: "images/ranomafana-national-park-entrance.jpg", fallback: "images/great-ranomafana-nature-shot.jpg", alt: "Ranomafana National Park entrance" }
+      { src: "images/ranomafana-national-park-footbridge.jpg", alt: "Walkers crossing a wooden footbridge over a forest stream, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-entrance.jpg", alt: "Walkers crossing the yellow footbridge over the Namorona into the forest, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-visitors-sign.jpg", alt: "A group of visitors at the Parc National Ranomafana sign" },
+      { src: "images/ranomafana-national-park-interpretation-sign.jpg", alt: "The sign at the park's interpretation centre, topped by a wooden lemur: “Veloma — Good bye — Au revoir”" },
+      { src: "images/ranomafana-national-park-interpretation-centre.jpg", alt: "Inside the park's interpretation centre: a display of a Tanala village" },
+      { src: "images/ranomafana-national-park-circuit-map.jpg", alt: "The board mapping the park's walking circuits" }
     ],
     contact: { phone: "", email: "", website: "https://parcs-madagascar.com/en/parc/ranomafana-2/", social: "" }
   },
@@ -1258,9 +1278,11 @@ const doData = [
     img: "images/namorona-kayaking-river.jpg",
     verified: true,
     photoNeeded: false,
-    sourceNote: "Price, length, meeting point, the self-guided format, the brousse back and both phone numbers and email from Kyle's notes (received 11 Oct 2026). The earlier 'guided paddle' wording is corrected — his notes are explicit that no guide goes with you. Equipment list from varibolo.com. River photo from Kyle, 11 Oct 2026; the launch and group slots are still waiting for photos.",
+    sourceNote: "Price, length, meeting point, the self-guided format, the brousse back and both phone numbers and email from Kyle's notes (received 11 Oct 2026). The earlier 'guided paddle' wording is corrected — his notes are explicit that no guide goes with you. Equipment list from varibolo.com. River photo from Kyle, 11 Oct 2026, and Varibolo's shop and its 'Kayak Ranomafana' banner on 19 Oct 2026 (the banner gives the third number); the launch and group slots are still waiting for photos.",
     gallery: [
       { src: "images/namorona-kayaking-river.jpg", alt: "The Namorona River winding through the valley near Ranomafana" },
+      { src: "images/varibolo-resto-exterior.jpg", alt: "Varibolo's shop and restaurant, where you can book a kayak" },
+      { src: "images/namorona-kayaking-banner.jpg", alt: "A woman pointing to Varibolo's Kayak Ranomafana banner" },
       { src: "images/namorona-kayaking-launch.jpg", fallback: "images/placeholder-namorona-kayaking.jpg", alt: "Launch point for Namorona River Kayaking" },
       { src: "images/namorona-kayaking-group.jpg", fallback: "images/placeholder-namorona-kayaking.jpg", alt: "Paddlers on the Namorona River Kayaking" }
     ],
@@ -1273,7 +1295,7 @@ const doData = [
       "A dry bag is worth bringing",
       "Cristo Hotel also arranges kayaking on request"
     ],
-    contact: { phone: "+261 34 90 823 03 / +1 516 479 1889", email: "info@varibolo.com", website: "http://www.varibolo.com/", social: "" }
+    contact: { phone: "+261 34 90 823 03 / +261 34 37 737 13 / +1 516 479 1889", email: "info@varibolo.com", website: "http://www.varibolo.com/", social: "" }
   },
   {
     slug: "ranomafana-arboretum",
@@ -1319,17 +1341,40 @@ const doData = [
     rating: "5.0 (Tripadvisor)",
     duration: "30–60 minutes",
     status: "open",
-    img: "images/placeholder-studio-olonala.jpg",
+    img: "images/studio-olonala-frontage.jpg",
     verified: true,
-    photoNeeded: true,
+    photoNeeded: false,
+    sourceNote: "Photos from Kyle, received 19 Oct 2026; the sign over the door reads 'oloNala Art Studio & Shop'.",
     gallery: [
-      { src: "images/studio-olonala-frontage.jpg", fallback: "images/placeholder-studio-olonala.jpg", alt: "Studio oloNala frontage" },
-      { src: "images/studio-olonala-interior.jpg", fallback: "images/placeholder-studio-olonala.jpg", alt: "Inside Studio oloNala" },
-      { src: "images/studio-olonala-work.jpg", fallback: "images/placeholder-studio-olonala.jpg", alt: "Artwork at Studio oloNala" }
+      { src: "images/studio-olonala-frontage.jpg", alt: "The arched doorway of the oloNala Art Studio & Shop, in a wall painted to look like mossy stone" },
+      { src: "images/studio-olonala-interior.jpg", alt: "A wall of framed wildlife paintings inside Studio oloNala" },
+      { src: "images/studio-olonala-work.jpg", alt: "Carved wooden plants on a striped wooden wall, beside framed paintings, at Studio oloNala" },
+      { src: "images/studio-olonala-desk.jpg", alt: "An artist's worktable under the window at Studio oloNala" },
+      { src: "images/studio-olonala-gallery.jpg", alt: "A small gallery room hung with framed pictures at Studio oloNala" }
     ],
     desc: "Art studio and shop at the park entrance, and the public face of oloNala — Madagascar's first environmentally focused art residency, working with Malagasy artists on conservation themes. The building itself incorporates Zafimaniry woodwork.",
     tips: ["Original work and prints for sale", "Right by the park gate — easy to combine with a morning circuit"],
     contact: { phone: "", email: "", website: "https://www.olonala.org/", social: "" }
+  },
+  {
+    slug: "park-entrance-craft-shop",
+    name: "Park Entrance Craft Shop",
+    category: "Market",
+    price: "Free to browse",
+    rating: "—",
+    duration: "15–30 minutes",
+    status: "open",
+    img: "images/park-entrance-craft-shop-goods.jpg",
+    verified: true,
+    photoNeeded: false,
+    sourceNote: "Photos from Kyle, received 19 Oct 2026; he confirmed it is a local shop by the park entrance, not Varibolo's shop. What it sells is described from the photos only. Its name, prices and opening hours are not known yet.",
+    gallery: [
+      { src: "images/park-entrance-craft-shop-goods.jpg", alt: "Vanilla, jars of honey, polished stones and woven bags for sale at the craft shop by the park entrance" },
+      { src: "images/park-entrance-craft-shop-front.jpg", alt: "The open front of the craft shop by the park entrance, with the shopkeeper by the door" }
+    ],
+    desc: "A small local shop by the park entrance, selling Malagasy vanilla, jars of honey, polished stones, woven bags and baskets, and lemur paintings.",
+    tips: ["Right by the park entrance — easy to combine with a circuit and a visit to Studio oloNala", "Bring small Ariary notes"],
+    contact: { phone: "", email: "", website: "", social: "" }
   },
   {
     slug: "village-artisan-market",

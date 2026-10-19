@@ -1824,18 +1824,30 @@ const LISTING_TRANSLATIONS = {
         ]
       },
       "contact.note": {
-        "en": "Staff speak English, French and Malagasy. US number: +1 516 479 1889.",
-        "fr": "L’équipe parle anglais, français et malgache. Numéro aux États-Unis : +1 516 479 1889.",
-        "de": "Das Team spricht Englisch, Französisch und Madagassisch. US-Nummer: +1 516 479 1889.",
-        "mg": "Miteny anglisy, frantsay ary malagasy ny mpiasa. Laharana any Etazonia: +1 516 479 1889."
+        "en": "Staff speak English, French and Malagasy. US number: +1 516 479 1889. The restaurant's banner also gives variboloresto72@gmail.com.",
+        "fr": "L’équipe parle anglais, français et malgache. Numéro aux États-Unis : +1 516 479 1889. La banderole du restaurant indique aussi variboloresto72@gmail.com.",
+        "de": "Das Team spricht Englisch, Französisch und Madagassisch. US-Nummer: +1 516 479 1889. Auf dem Banner des Restaurants steht außerdem variboloresto72@gmail.com.",
+        "mg": "Miteny anglisy, frantsay ary malagasy ny mpiasa. Laharana any Etazonia: +1 516 479 1889. Misy ihany koa variboloresto72@gmail.com eo amin'ny sora-baventin'ny trano fisakafoanana."
       },
       "gallery[].alt": {
-        "en": ["Varibolo Resto frontage", "Dining room at Varibolo Resto", "A dish at Varibolo Resto"],
-        "fr": ["Varibolo Resto : la devanture", "Varibolo Resto : la salle", "Varibolo Resto : un plat"],
-        "de": ["Varibolo Resto: von außen", "Varibolo Resto: der Gastraum", "Varibolo Resto: ein Gericht"],
+        "en": [
+          "Varibolo's green-painted restaurant and kayak shop, with its Kayak Ranomafana banner",
+          "The covered dining terrace at Varibolo Resto, with red-checked tablecloths and a view over banana plants to the forest",
+          "A dish at Varibolo Resto"
+        ],
+        "fr": [
+          "Le restaurant et la boutique de kayak de Varibolo, peints en vert, avec la banderole Kayak Ranomafana",
+          "La terrasse couverte de Varibolo Resto, avec ses nappes à carreaux rouges et une vue sur les bananiers et la forêt",
+          "Varibolo Resto : un plat"
+        ],
+        "de": [
+          "Das grün gestrichene Restaurant mit Kajakladen von Varibolo und dem Banner „Kayak Ranomafana“",
+          "Die überdachte Terrasse von Varibolo Resto mit rot karierten Tischdecken und Blick über Bananenstauden auf den Wald",
+          "Varibolo Resto: ein Gericht"
+        ],
         "mg": [
-          "Varibolo Resto: ny ivelany",
-          "Varibolo Resto: ny efitrano fisakafoana",
+          "Ny trano fisakafoanana sy fivarotana kayak an'i Varibolo, voaloko maitso, misy ny sora-baventy Kayak Ranomafana",
+          "Ny lavarangana misy tafo ao amin'ny Varibolo Resto, misy lamba latabatra misy efajoro mena, mijery ny akondro sy ny ala",
           "Varibolo Resto: sakafo iray"
         ]
       }
@@ -2388,6 +2400,7 @@ const LISTING_TRANSLATIONS = {
           "One guide for a group of one to four; groups of six or more take at least two",
           "Tell your guide about your fitness and any worries — they will adapt the route to suit you",
           "Travelling solo? Ask the office to pair you with others to share the guide fee",
+          "Guide fees rise in January 2027: 120,000 Ar for Talatakely or Sahamalaotra, 150,000 Ar for Vatoharanana, 180,000 Ar for Valohoaka and 250,000 Ar for a specialist guide",
           "Getting there: take a taxi-brousse heading for Fianarantsoa from the station in the centre of town and ask for the park entrance — 20–25 minutes, 1,000–2,000 Ar. By car it is 7 km up the road",
           "Weather permitting, walk back: it is a beautiful hour downhill to town, and lemurs are sometimes seen near the road",
           "Malagasy citizens pay 2,000 Ar (adults) and 500 Ar (ages 5–12)",
@@ -2401,6 +2414,7 @@ const LISTING_TRANSLATIONS = {
           "Un guide pour un groupe de une à quatre personnes ; à partir de six, il en faut au moins deux",
           "Parlez à votre guide de votre forme physique et de vos éventuelles craintes — il adaptera l’itinéraire",
           "Vous voyagez seul ? Demandez au bureau de vous associer à d’autres visiteurs pour partager le prix du guide",
+          "Les tarifs des guides augmentent en janvier 2027 : 120 000 Ar pour Talatakely ou Sahamalaotra, 150 000 Ar pour Vatoharanana, 180 000 Ar pour Valohoaka et 250 000 Ar pour un guide spécialisé",
           "Pour y aller : prenez un taxi-brousse en direction de Fianarantsoa depuis la gare routière du centre et demandez l’entrée du parc — 20 à 25 minutes, 1 000–2 000 Ar. En voiture, c’est à 7 km en montant",
           "Si le temps le permet, redescendez à pied : une belle heure de descente jusqu’au village, et l’on voit parfois des lémuriens près de la route",
           "Les citoyens malgaches paient 2 000 Ar (adultes) et 500 Ar (5 à 12 ans)",
@@ -2414,6 +2428,7 @@ const LISTING_TRANSLATIONS = {
           "Ein Guide für eine Gruppe von einer bis vier Personen; ab sechs Personen mindestens zwei",
           "Sagen Sie Ihrem Guide, wie fit Sie sind und was Sie beschäftigt – er passt die Route an",
           "Allein unterwegs? Bitten Sie das Büro, Sie mit anderen zusammenzubringen, um die Guidegebühr zu teilen",
+          "Ab Januar 2027 steigen die Guidepreise: 120.000 Ar für Talatakely oder Sahamalaotra, 150.000 Ar für Vatoharanana, 180.000 Ar für Valohoaka und 250.000 Ar für einen Fachguide",
           "Anfahrt: Ein Taxi-Brousse Richtung Fianarantsoa vom Busbahnhof im Zentrum nehmen und nach dem Parkeingang fragen – 20–25 Minuten, 1.000–2.000 Ar. Mit dem Auto sind es 7 km bergauf",
           "Bei gutem Wetter zurück zu Fuß: eine wunderschöne Stunde bergab in den Ort, und manchmal sieht man Lemuren nahe der Straße",
           "Madagassische Staatsbürger zahlen 2.000 Ar (Erwachsene) und 500 Ar (5–12 Jahre)",
@@ -2427,6 +2442,7 @@ const LISTING_TRANSLATIONS = {
           "Mpitari-dalana iray ho an'ny vondrona olona iray ka hatramin'ny efatra; roa farafahakeliny ho an'ny vondrona olona enina na mihoatra",
           "Lazao amin'ny mpitari-dalana ny herinao sy izay manahiana anao — hampifanaraka ny lalana aminao izy",
           "Irery ve ianao? Angataho amin'ny birao ny hampiarahana anao amin'ny mpitsidika hafa mba hizarana ny saran'ny mpitari-dalana",
+          "Hiakatra ny saran'ny mpitari-dalana manomboka amin'ny volana janoary 2027: 120 000 Ar ho an'i Talatakely na Sahamalaotra, 150 000 Ar ho an'i Vatoharanana, 180 000 Ar ho an'i Valohoaka ary 250 000 Ar ho an'ny mpitari-dalana manam-pahaizana manokana",
           "Fandehanana: mandehana taxi-brousse mankany Fianarantsoa avy eo amin'ny fiantsonana eo afovoan-tanàna ary angataho ny fidirana amin'ny valan-javaboahary — 20–25 minitra, 1 000–2 000 Ar. Raha fiara, 7 km miakatra amin'ny lalana",
           "Raha mamela ny toetr'andro, miverena an-tongotra: adiny iray mahafinaritra midina mankany an-tanàna, ary indraindray misy gidro hita eo akaikin'ny lalana",
           "Ny olom-pirenena malagasy dia mandoa 2 000 Ar (olon-dehibe) sy 500 Ar (5–12 taona)",
@@ -2825,16 +2841,24 @@ const LISTING_TRANSLATIONS = {
       "gallery[].alt": {
         "en": [
           "A golden bamboo lemur feeding on bamboo leaves, Ranomafana National Park",
+          "A greater bamboo lemur, with its white ear tufts, clinging to a bamboo stem, Ranomafana National Park",
           "A small cascade tumbling over mossy boulders in the rainforest, Ranomafana National Park",
+          "A waterfall pouring into a forest pool, Ranomafana National Park",
           "A tiny leaf chameleon (Brookesia) on a mossy twig, Ranomafana National Park",
+          "A comet moth resting on a leaf, Ranomafana National Park",
+          "The Namorona River winding through its forested gorge",
           "A lemur clinging to a tree trunk among the bamboo, Ranomafana National Park",
           "The forest campsite inside Ranomafana National Park, with a wooden rack and a fire pit",
           "Looking up a giant rainforest tree into the canopy, Ranomafana National Park",
           "A brown lemur clinging to a trunk in the forest, Ranomafana National Park",
           "Walkers on a forest trail in Ranomafana National Park",
+          "A greater bamboo lemur chewing a strip of bamboo, Ranomafana National Park",
           "A green chameleon on a branch, Ranomafana National Park",
           "A lemur on a mossy branch high in the canopy, Ranomafana National Park",
           "A lemur in the bamboo, Ranomafana National Park",
+          "A lemur walking along a branch high in the trees, Ranomafana National Park",
+          "A lemur on a hanging vine, its long bushy tail curled below, Ranomafana National Park",
+          "A lemur looking out from a mossy trunk in the canopy, Ranomafana National Park",
           "A ring-tailed mongoose crossing a stone path in Ranomafana National Park",
           "A leaf-tailed gecko disguised as a dead leaf, Ranomafana National Park",
           "A bird perched in the understory, Ranomafana National Park",
@@ -2846,23 +2870,40 @@ const LISTING_TRANSLATIONS = {
           "Hungry nestlings calling from their nest hole, Ranomafana National Park",
           "A hairy black-and-orange caterpillar under a leaf, Ranomafana National Park",
           "Bamboo forest, home of the park's bamboo lemurs",
+          "A stone-paved path through the bamboo forest, Ranomafana National Park",
+          "Walkers following a trail under arching bamboo, Ranomafana National Park",
           "Moss-covered tree trunks in the rainforest, Ranomafana National Park",
           "A stream running over mossy rocks under the forest canopy, Ranomafana National Park",
+          "A stream tumbling over rocks between ferns and mossy trees, Ranomafana National Park",
+          "A tall waterfall falling into a pool behind a mossy tree, Ranomafana National Park",
           "The Namorona River rushing through the rainforest",
-          "Ranomafana National Park entrance"
+          "Walkers crossing a wooden footbridge over a forest stream, Ranomafana National Park",
+          "Walkers crossing the yellow footbridge over the Namorona into the forest, Ranomafana National Park",
+          "A group of visitors at the Parc National Ranomafana sign",
+          "The sign at the park's interpretation centre, topped by a wooden lemur: “Veloma — Good bye — Au revoir”",
+          "Inside the park's interpretation centre: a display of a Tanala village",
+          "The board mapping the park's walking circuits"
         ],
         "fr": [
           "Un hapalémur doré mangeant des feuilles de bambou, parc national de Ranomafana",
+          "Un grand hapalémur, reconnaissable à ses touffes blanches aux oreilles, agrippé à une tige de bambou, parc national de Ranomafana",
           "Une petite cascade dévalant des rochers moussus dans la forêt tropicale, parc national de Ranomafana",
+          "Une cascade qui se jette dans un bassin en pleine forêt, parc national de Ranomafana",
           "Un minuscule caméléon-feuille (Brookesia) sur une brindille moussue, parc national de Ranomafana",
+          "Un papillon comète posé sur une feuille, parc national de Ranomafana",
+          "La Namorona qui serpente au fond de sa gorge boisée",
           "Un lémurien agrippé à un tronc parmi les bambous, parc national de Ranomafana",
           "Le camping en forêt du parc national de Ranomafana, avec un séchoir en bois et un foyer",
           "Vers la canopée, le long d’un arbre géant de la forêt, parc national de Ranomafana",
           "Un lémur brun agrippé à un tronc dans la forêt, parc national de Ranomafana",
           "Des marcheurs sur un sentier forestier du parc national de Ranomafana",
+          "Un grand hapalémur qui mâche un éclat de bambou, parc national de Ranomafana",
           "Un caméléon vert sur une branche, parc national de Ranomafana",
           "Un lémurien sur une branche moussue, haut dans la canopée, parc national de Ranomafana",
           "Un lémurien dans les bambous, parc national de Ranomafana",
+          "Un lémurien qui avance le long d’une branche, haut dans les arbres, parc national de Ranomafana",
+          "Un lémurien sur une liane, sa longue queue touffue recourbée en dessous, parc national de Ranomafana",
+          "Un lémurien qui observe depuis un tronc moussu dans la canopée, parc national de Ranomafana",
           "Une galidie à queue annelée traversant un chemin de pierre dans le parc national de Ranomafana",
           "Un uroplate déguisé en feuille morte, parc national de Ranomafana",
           "Un oiseau perché dans le sous-bois, parc national de Ranomafana",
@@ -2874,23 +2915,40 @@ const LISTING_TRANSLATIONS = {
           "Des oisillons affamés qui réclament au fond de leur cavité, parc national de Ranomafana",
           "Une chenille velue noire et orange sous une feuille, parc national de Ranomafana",
           "La forêt de bambous, domaine des hapalémurs du parc",
+          "Un sentier pavé de pierres à travers la forêt de bambous, parc national de Ranomafana",
+          "Des marcheurs sur un sentier sous une voûte de bambous, parc national de Ranomafana",
           "Des troncs couverts de mousse dans la forêt tropicale, parc national de Ranomafana",
           "Un ruisseau sur des rochers moussus sous la canopée, parc national de Ranomafana",
+          "Un torrent qui dévale les rochers entre fougères et arbres moussus, parc national de Ranomafana",
+          "Une haute cascade qui tombe dans un bassin, derrière un arbre moussu, parc national de Ranomafana",
           "La Namorona qui dévale à travers la forêt tropicale",
-          "L’entrée du parc national de Ranomafana"
+          "Des marcheurs franchissent une passerelle en bois au-dessus d’un ruisseau forestier, parc national de Ranomafana",
+          "Des marcheurs traversent la passerelle jaune au-dessus de la Namorona pour entrer dans la forêt, parc national de Ranomafana",
+          "Un groupe de visiteurs devant le panneau du Parc National Ranomafana",
+          "Le panneau du centre d’interprétation du parc, surmonté d’un lémurien en bois : « Veloma — Good bye — Au revoir »",
+          "Dans le centre d’interprétation du parc : la reconstitution d’un village tanala",
+          "Le panneau qui présente la carte des circuits de randonnée du parc"
         ],
         "de": [
           "Ein Goldener Bambuslemur frisst Bambusblätter, Nationalpark Ranomafana",
+          "Ein Großer Bambuslemur mit seinen weißen Ohrbüscheln klammert sich an einen Bambusstamm, Nationalpark Ranomafana",
           "Eine kleine Kaskade stürzt über moosige Felsblöcke im Regenwald, Nationalpark Ranomafana",
+          "Ein Wasserfall stürzt in ein Becken mitten im Wald, Nationalpark Ranomafana",
           "Ein winziges Stummelschwanzchamäleon (Brookesia) auf einem moosigen Zweig, Nationalpark Ranomafana",
+          "Ein Kometenfalter ruht auf einem Blatt, Nationalpark Ranomafana",
+          "Die Namorona windet sich durch ihre bewaldete Schlucht",
           "Ein Lemur klammert sich zwischen Bambus an einen Baumstamm, Nationalpark Ranomafana",
           "Der Zeltplatz im Wald des Nationalparks Ranomafana, mit Holzgestell und Feuerstelle",
           "Blick an einem Urwaldriesen hinauf ins Blätterdach, Nationalpark Ranomafana",
           "Ein Brauner Maki klammert sich im Wald an einen Stamm, Nationalpark Ranomafana",
           "Wanderer auf einem Waldweg im Nationalpark Ranomafana",
+          "Ein Großer Bambuslemur kaut an einem Stück Bambus, Nationalpark Ranomafana",
           "Ein grünes Chamäleon auf einem Ast, Nationalpark Ranomafana",
           "Ein Lemur auf einem moosigen Ast hoch im Blätterdach, Nationalpark Ranomafana",
           "Ein Lemur im Bambus, Nationalpark Ranomafana",
+          "Ein Lemur läuft hoch in den Bäumen einen Ast entlang, Nationalpark Ranomafana",
+          "Ein Lemur an einer Liane, den langen buschigen Schwanz nach unten gebogen, Nationalpark Ranomafana",
+          "Ein Lemur schaut von einem moosigen Stamm im Blätterdach herab, Nationalpark Ranomafana",
           "Ein Ringelschwanzmungo überquert einen Steinweg im Nationalpark Ranomafana",
           "Ein Plattschwanzgecko, getarnt als welkes Blatt, Nationalpark Ranomafana",
           "Ein Vogel im Unterholz, Nationalpark Ranomafana",
@@ -2902,23 +2960,40 @@ const LISTING_TRANSLATIONS = {
           "Hungrige Nestlinge betteln in ihrer Bruthöhle, Nationalpark Ranomafana",
           "Eine behaarte schwarz-orange Raupe unter einem Blatt, Nationalpark Ranomafana",
           "Bambuswald, Heimat der Bambuslemuren des Parks",
+          "Ein mit Steinen gepflasterter Weg durch den Bambuswald, Nationalpark Ranomafana",
+          "Wanderer auf einem Pfad unter überhängendem Bambus, Nationalpark Ranomafana",
           "Moosbewachsene Baumstämme im Regenwald, Nationalpark Ranomafana",
           "Ein Bach über moosigen Felsen unter dem Blätterdach, Nationalpark Ranomafana",
+          "Ein Bach stürzt zwischen Farnen und moosigen Bäumen über Felsen, Nationalpark Ranomafana",
+          "Ein hoher Wasserfall stürzt hinter einem moosigen Baum in ein Becken, Nationalpark Ranomafana",
           "Die Namorona rauscht durch den Regenwald",
-          "Eingang des Nationalparks Ranomafana"
+          "Wanderer überqueren eine Holzbrücke über einen Waldbach, Nationalpark Ranomafana",
+          "Wanderer überqueren die gelbe Fußgängerbrücke über die Namorona in den Wald, Nationalpark Ranomafana",
+          "Eine Besuchergruppe am Schild des Parc National Ranomafana",
+          "Das Schild am Informationszentrum des Parks, mit einem Holzlemur obendrauf: „Veloma – Good bye – Au revoir“",
+          "Im Informationszentrum des Parks: eine Ausstellung über ein Tanala-Dorf",
+          "Die Tafel mit der Karte der Rundwege des Parks"
         ],
         "mg": [
           "Gidro volamena mpihinam-bolo mihinana ravim-bolo, valan-javaboahary Ranomafana",
+          "Gidro mpihinam-bolo lehibe (greater bamboo lemur, Prolemur simus), manana volo fotsy eo amin'ny sofiny, mihantona amin'ny tahom-bolo, valan-javaboahary Ranomafana",
           "Riandrano kely mikoriana eo ambonin'ny vato misy volon-ketsa ao anaty ala mando, valan-javaboahary Ranomafana",
+          "Riandrano milatsaka ao anaty dobo ao an'ala, valan-javaboahary Ranomafana",
           "Tana kely bitika mitovy amin'ny ravina (Brookesia) eo amin'ny rantsan-kazo misy volon-ketsa, valan-javaboahary Ranomafana",
+          "Lolo goavana mavo (comet moth, Argema mittrei) mipetraka eo amin'ny ravina, valan-javaboahary Ranomafana",
+          "Ny renirano Namorona mikolaka mamakivaky ny hantsana rakotra ala",
           "Gidro mihantona amin'ny vatan-kazo eo anivon'ny volo, valan-javaboahary Ranomafana",
           "Ny toerana filasiana ao anaty ala ao amin'ny valan-javaboahary Ranomafana, misy fanaovana hazo sy fatana",
           "Mijery ny tampon'ny ala manaraka hazo goavana iray, valan-javaboahary Ranomafana",
           "Gidro volontany mihantona amin'ny vatan-kazo ao an'ala, valan-javaboahary Ranomafana",
           "Mpandeha an-tongotra eny amin'ny lalan'ala ao amin'ny valan-javaboahary Ranomafana",
+          "Gidro mpihinam-bolo lehibe mitsako tapa-bolo, valan-javaboahary Ranomafana",
           "Tana maitso eo amin'ny sampan-kazo, valan-javaboahary Ranomafana",
           "Gidro eo amin'ny sampana misy volon-ketsa ambony be ao amin'ny tampon'ny ala, valan-javaboahary Ranomafana",
           "Gidro iray ao anaty volo, valan-javaboahary Ranomafana",
+          "Gidro mandeha eny amin'ny sampan-kazo ambony be, valan-javaboahary Ranomafana",
+          "Gidro eo amin'ny vahy mihantona, miolika eny ambany ny rambony lava sy matevim-bolo, valan-javaboahary Ranomafana",
+          "Gidro mijery avy eo amin'ny vatan-kazo misy volon-ketsa ao amin'ny tampon'ny ala, valan-javaboahary Ranomafana",
           "Vontsira mena miampita lalana vato ao amin'ny valan-javaboahary Ranomafana",
           "Androngo rambo ravina mitovy amin'ny ravina maina, valan-javaboahary Ranomafana",
           "Vorona iray mipetraka ao ambanin'ny ala, valan-javaboahary Ranomafana",
@@ -2930,10 +3005,19 @@ const LISTING_TRANSLATIONS = {
           "Zana-borona noana mitabataba ao anaty lavaka akaniny, valan-javaboahary Ranomafana",
           "Fanday volony mainty sy volom-boasary eo ambanin'ny ravina, valan-javaboahary Ranomafana",
           "Ala volo, fonenan'ireo gidro mpihinam-bolo ao amin'ny valan-javaboahary",
+          "Lalana rarafana vato mamakivaky ny ala volo, valan-javaboahary Ranomafana",
+          "Mpandeha an-tongotra manaraka lalana eo ambanin'ny volo miondrika, valan-javaboahary Ranomafana",
           "Vatan-kazo rakotra volon-ketsa ao amin'ny ala mando, valan-javaboahary Ranomafana",
           "Rano mikoriana eo ambonin'ny vato misy volon-ketsa ambanin'ny tampon'ny ala, valan-javaboahary Ranomafana",
+          "Rano mikoriana mafy eo ambonin'ny vato, eo anelanelan'ny fanjana sy hazo misy volon-ketsa, valan-javaboahary Ranomafana",
+          "Riandrano avo milatsaka ao anaty dobo, ao ambadiky ny hazo misy volon-ketsa, valan-javaboahary Ranomafana",
           "Ny renirano Namorona mikoriana mafy mamakivaky ny ala mando",
-          "Ny fidirana amin'ny valan-javaboahary Ranomafana"
+          "Mpandeha an-tongotra mita tetezana hazo ambonin'ny renirano kely ao an'ala, valan-javaboahary Ranomafana",
+          "Mpandeha an-tongotra mita ny tetezana mavo ambonin'ny Namorona mankany an'ala, valan-javaboahary Ranomafana",
+          "Vondrona mpitsidika eo anoloan'ny takelaka Parc National Ranomafana",
+          "Ny takelaka eo amin'ny foibe fanazavana ao amin'ny valan-javaboahary, misy gidro vita amin'ny hazo eo amboniny: « Veloma — Good bye — Au revoir »",
+          "Ao anatin'ny foibe fanazavana ao amin'ny valan-javaboahary: fampisehoana tanàna Tanala",
+          "Ny takelaka misy ny sarintanin'ny lalana fitsangatsanganana ao amin'ny valan-javaboahary"
         ]
       }
     },
@@ -3497,21 +3581,29 @@ const LISTING_TRANSLATIONS = {
       "gallery[].alt": {
         "en": [
           "The Namorona River winding through the valley near Ranomafana",
+          "Varibolo's shop and restaurant, where you can book a kayak",
+          "A woman pointing to Varibolo's Kayak Ranomafana banner",
           "Launch point for Namorona River Kayaking",
           "Paddlers on the Namorona River Kayaking"
         ],
         "fr": [
           "La Namorona qui serpente dans la vallée près de Ranomafana",
+          "La boutique-restaurant de Varibolo, où l’on peut réserver un kayak",
+          "Une femme montre la banderole Kayak Ranomafana de Varibolo",
           "Le point de mise à l’eau pour le kayak sur la Namorona",
           "Des kayakistes sur la Namorona"
         ],
         "de": [
           "Die Namorona windet sich durch das Tal bei Ranomafana",
+          "Laden und Restaurant von Varibolo, wo man ein Kajak buchen kann",
+          "Eine Frau zeigt auf das Banner „Kayak Ranomafana“ von Varibolo",
           "Einstiegsstelle für das Kajakfahren auf der Namorona",
           "Kajakfahrer auf der Namorona"
         ],
         "mg": [
           "Ny renirano Namorona mikiaradia ao amin'ny lohasaha akaikin'i Ranomafana",
+          "Ny fivarotana sy trano fisakafoanan'i Varibolo, ahafahana mamandrika kayak",
+          "Vehivavy manondro ny sora-baventy Kayak Ranomafana an'i Varibolo",
           "Ny toerana fiaingan'ny kayak eny amin'ny renirano Namorona",
           "Mpivoy kayak eny amin'ny renirano Namorona"
         ]
@@ -3666,10 +3758,96 @@ const LISTING_TRANSLATIONS = {
         ]
       },
       "gallery[].alt": {
-        "en": ["Studio oloNala frontage", "Inside Studio oloNala", "Artwork at Studio oloNala"],
-        "fr": ["Studio oloNala : la devanture", "L’intérieur du Studio oloNala", "Une œuvre au Studio oloNala"],
-        "de": ["Studio oloNala: von außen", "Im Studio oloNala", "Kunstwerk im Studio oloNala"],
-        "mg": ["Studio oloNala: ny ivelany", "Ao anatin'ny Studio oloNala", "Asa kanto ao amin'ny Studio oloNala"]
+        "en": [
+          "The arched doorway of the oloNala Art Studio & Shop, in a wall painted to look like mossy stone",
+          "A wall of framed wildlife paintings inside Studio oloNala",
+          "Carved wooden plants on a striped wooden wall, beside framed paintings, at Studio oloNala",
+          "An artist's worktable under the window at Studio oloNala",
+          "A small gallery room hung with framed pictures at Studio oloNala"
+        ],
+        "fr": [
+          "La porte en arc de l’oloNala Art Studio & Shop, dans un mur peint comme de la pierre moussue",
+          "Un mur de peintures animalières encadrées dans le Studio oloNala",
+          "Des plantes sculptées dans le bois sur un mur rayé, à côté de tableaux encadrés, au Studio oloNala",
+          "La table de travail d’un artiste sous la fenêtre, au Studio oloNala",
+          "Une petite salle d’exposition aux murs couverts de tableaux encadrés, au Studio oloNala"
+        ],
+        "de": [
+          "Der Bogeneingang des oloNala Art Studio & Shop, in einer Wand, die wie bemooster Stein bemalt ist",
+          "Eine Wand mit gerahmten Tierbildern im Studio oloNala",
+          "Holzgeschnitzte Pflanzen an einer gestreiften Holzwand neben gerahmten Bildern, Studio oloNala",
+          "Ein Arbeitstisch für Künstler unter dem Fenster im Studio oloNala",
+          "Ein kleiner Ausstellungsraum mit gerahmten Bildern im Studio oloNala"
+        ],
+        "mg": [
+          "Ny varavarana miendrika andohalambo an'ny oloNala Art Studio & Shop, amin'ny rindrina voaloko ho toy ny vato misy volon-ketsa",
+          "Rindrina feno sary hosodoko misy biby, voafefy, ao anatin'ny Studio oloNala",
+          "Zavamaniry voasokitra amin'ny hazo eo amin'ny rindrina hazo misy tsipika, eo akaikin'ny sary hosodoko voafefy, ao amin'ny Studio oloNala",
+          "Latabatra fiasan'ny mpanakanto eo ambanin'ny varavarankely, ao amin'ny Studio oloNala",
+          "Efitrano fampirantiana kely misy sary voafefy, ao amin'ny Studio oloNala"
+        ]
+      }
+    },
+    "park-entrance-craft-shop": {
+      "name": {
+        "en": "Park Entrance Craft Shop",
+        "fr": "Boutique d’artisanat de l’entrée du parc",
+        "de": "Kunsthandwerksladen am Parkeingang",
+        "mg": "Fivarotana asa-tanana eo am-pidirana amin'ny valan-javaboahary"
+      },
+      "desc": {
+        "en": "A small local shop by the park entrance, selling Malagasy vanilla, jars of honey, polished stones, woven bags and baskets, and lemur paintings.",
+        "fr": "Une petite boutique locale à l’entrée du parc, qui vend de la vanille de Madagascar, des pots de miel, des pierres polies, des sacs et paniers tressés et des peintures de lémuriens.",
+        "de": "Ein kleiner einheimischer Laden am Parkeingang mit madagassischer Vanille, Honig im Glas, polierten Steinen, geflochtenen Taschen und Körben und Lemurenbildern.",
+        "mg": "Fivarotana kely eo an-toerana, eo am-pidirana amin'ny valan-javaboahary, mivarotra lavanila malagasy, tantely anaty siny kely, vato voadio sy mamirapiratra, kitapo sy harona tenona, ary sary hosodoko misy gidro."
+      },
+      "price": {
+        "en": "Free to browse",
+        "fr": "Entrée libre",
+        "de": "Stöbern kostenlos",
+        "mg": "Maimaim-poana ny mijery"
+      },
+      "duration": {
+        "en": "15–30 minutes",
+        "fr": "15 à 30 minutes",
+        "de": "15–30 Minuten",
+        "mg": "15–30 minitra"
+      },
+      "tips": {
+        "en": [
+          "Right by the park entrance — easy to combine with a circuit and a visit to Studio oloNala",
+          "Bring small Ariary notes"
+        ],
+        "fr": [
+          "Juste à l’entrée du parc — facile à combiner avec un circuit et une visite du Studio oloNala",
+          "Prévoyez des petites coupures en ariary"
+        ],
+        "de": [
+          "Direkt am Parkeingang – leicht mit einem Rundweg und einem Besuch im Studio oloNala zu verbinden",
+          "Kleine Ariary-Scheine mitbringen"
+        ],
+        "mg": [
+          "Eo akaikin'ny fidirana amin'ny valan-javaboahary — mora ampiarahina amin'ny lalana iray sy fitsidihana ny Studio oloNala",
+          "Mitondrà vola ariary madinika"
+        ]
+      },
+      "gallery[].alt": {
+        "en": [
+          "Vanilla, jars of honey, polished stones and woven bags for sale at the craft shop by the park entrance",
+          "The open front of the craft shop by the park entrance, with the shopkeeper by the door"
+        ],
+        "fr": [
+          "Vanille, pots de miel, pierres polies et sacs tressés en vente à la boutique d’artisanat de l’entrée du parc",
+          "La devanture ouverte de la boutique d’artisanat de l’entrée du parc, avec la vendeuse près de la porte"
+        ],
+        "de": [
+          "Vanille, Honig im Glas, polierte Steine und geflochtene Taschen im Kunsthandwerksladen am Parkeingang",
+          "Die offene Front des Kunsthandwerksladens am Parkeingang, mit der Verkäuferin an der Tür"
+        ],
+        "mg": [
+          "Lavanila, tantely anaty siny kely, vato voadio ary kitapo tenona amidy ao amin'ny fivarotana asa-tanana eo am-pidirana amin'ny valan-javaboahary",
+          "Ny tavan'ny fivarotana asa-tanana misokatra eo am-pidirana amin'ny valan-javaboahary, miaraka amin'ny mpivarotra eo akaikin'ny varavarana"
+        ]
       }
     },
     "village-artisan-market": {

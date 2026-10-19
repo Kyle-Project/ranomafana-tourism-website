@@ -377,7 +377,7 @@ listings — was written without a native speaker and should be checked by one.
 
 ## Current state
 
-25 stays · 16 restaurants · 14 things to do · 6 itineraries · 8 events · 10 blog
+25 stays · 16 restaurants · 15 things to do · 6 itineraries · 8 events · 10 blog
 seeds. All 25 stays are verified, against published sources or on Kyle's
 authority. The whole site — interface, page text and listings — is in English,
 French, German and Malagasy (since 12 Oct 2026).
@@ -412,13 +412,35 @@ photos the same day (aerial, terrace, two team photos) joined the Center Val Bio
 originals in `photo-originals/2026-10-13 Centre ValBio/`. Details in section 7 of
 `PHOTO-AND-DATA-GAPS.md`.
 
+Kyle's 51 photos of 19 October 2026 (used as received; 28 on the site) added 18 to the
+park gallery (four of them among the eight on the park page, and the yellow footbridge
+over the Namorona fills the old `entrance` slot), filled all of Studio oloNala's slots
+plus two more, gave Varibolo Resto its frontage and terrace, and added two to the
+kayaking listing. They also started a new listing, **Park Entrance Craft Shop** (Market):
+Kyle says it is a local shop by the park entrance, not Varibolo's. Its real name and
+hours are unknown, and its description lists only what the photos show. Varibolo Resto
+is **not** the Park Entrance Restaurant (Kyle, 19 Oct 2026). Kyle asked for the photos
+showing people's faces (his group at the park sign, a woman at the Varibolo banner) to go
+on the site. The large lemur with white ear tufts stripping bamboo is named a greater
+bamboo lemur from those marks, not on Kyle's word, so it is flagged for him to check. The
+Varibolo banner is the source of the second Varibolo number (034 37 737 13) and
+variboloresto72@gmail.com. Details in section 7 of `PHOTO-AND-DATA-GAPS.md`.
+
+The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
+Park office/`) confirms the entry and guide fees the site shows. It also posts new guide
+fees from **January 2027** (120,000 / 150,000 / 180,000 Ar, specialists 250,000 Ar),
+shown for now as a park tip. In January 2027 move them into `guideFees` and
+`specialistFee` (and the `price` sentence) in all four languages, and drop the tip.
+Notices on the same board about new entry fees for "Parc Phare" parks could not be read;
+nothing was taken from them.
+
 Station Thermale prices and hours come from the board at its ticket booth (photo,
 October 2026): 10,000 Ar / residents 2,000 Ar, pool closed Tuesdays. It has **no contact
 details of its own** — never fill them with Hotel Thermal's, which is what the site
 did until 11 October 2026.
 
 Open editorial work is tracked in `PHOTO-AND-DATA-GAPS.md`: 6 unconfirmed listings,
-29 entries awaiting a real photograph (103 individual photo slots, all pre-wired),
+27 entries awaiting a real photograph (97 individual photo slots, all pre-wired),
 and the conflicts listed in its section 0. The team profiles on the About page are
 placeholders. Kyle's notes had headings for a donation link and a town map with no
 content yet; nothing was added for them.

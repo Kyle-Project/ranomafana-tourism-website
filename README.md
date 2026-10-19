@@ -77,7 +77,7 @@ The shoot list is in [PHOTO-AND-DATA-GAPS.md](PHOTO-AND-DATA-GAPS.md).
 
 ## Current contents
 
-25 places to stay · 16 places to eat · 14 things to do · 6 itineraries · 8 events ·
+25 places to stay · 16 places to eat · 15 things to do · 6 itineraries · 8 events ·
 10 blog seeds. Fully available in English, French, German and Malagasy: the
 interface, the page text and every listing. Listing translations live in
 `data/ranomafana-translations.js`; when you change a listing's English, run
