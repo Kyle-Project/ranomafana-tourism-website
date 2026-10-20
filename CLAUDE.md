@@ -171,6 +171,12 @@ Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026.
   - **"The valley up close":** a map of the valley with four tappable stops.
   - **"How your visit protects the forest":** the buffer zone and the four-step circle,
     with pills to guides, stays, food and things to do.
+  - **"Why your visit matters":** "On the fence about visiting?", what Madagascar
+    National Parks does, and "By the numbers" (visitors before and since the pandemic,
+    the town's 20,000 people). It used to sit on the About page; Kyle asked on 20 Oct 2026
+    for it to be on a different page from the team. The About page is now the team and
+    the "Email the team" box only, with no Sources line of its own: those facts' sources
+    joined `whySources`.
   - **A Sources line** at the foot of the page.
 
   Each reason is a photo card (`WHY_CARDS` in the script). Tapping a card opens its photos
@@ -389,7 +395,7 @@ Kyle's own notes (`Website information.docx`, received 11 October 2026) were fol
 into the whole site that day: room rates, meals and contacts for 13 hotels, the
 park's fees by circuit and its 07:00–17:00 hours, the hot springs, kayaking, the
 arboretum, Getting here, a welcome on the home page and "Why your visit matters" on
-the About page. Where his notes disagreed with an earlier source, the conflict is
+the About page (now on Why visit). Where his notes disagreed with an earlier source, the conflict is
 recorded in that listing's `sourceNote` and in section 0 of `PHOTO-AND-DATA-GAPS.md`.
 Stays and restaurants can now carry `rooms`, `ratesNote`, `meals`, `features` and
 `wifiNote`; the park carries `hours`, `specialistFee`, `intro` and `wildlife`.
@@ -408,7 +414,7 @@ originals there, not in `images/`). The park page shows eight photos and a
 Kyle's 12 photos of 13 October 2026 (used as received, no separate originals) gave the
 park's Lemurs, Birds and Reptiles cards new photos, added nine to the park gallery, made a
 red-eyed tree frog the night walk's card photo, put a feeding golden bamboo lemur on the
-home page's Canopy layer and a village beside "Without visitors…" on the About page. Their
+home page's Canopy layer and a village beside "Without visitors…" (now on the Why visit page). Their
 descriptions name a species only where the picture makes it certain or Kyle confirmed it
 (the golden bamboo lemur and the scaly ground-roller). Four Centre ValBio
 photos the same day (aerial, terrace, two team photos) joined the Center Val Bio gallery;

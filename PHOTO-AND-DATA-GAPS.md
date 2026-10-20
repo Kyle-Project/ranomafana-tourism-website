@@ -8,7 +8,7 @@ meals, Wi-Fi and contacts for 13 hotels; two new hostels (**Chez Rose**,
 lemur list and how to reach the gate; the public pool, private baths, massage and
 Hotel Thermal's hot-spring pools (a new Things to do listing); self-guided kayaking;
 the arboretum; Centre ValBio; the waterfall walk; every transport option on Getting
-here; a welcome on the home page; and "Why your visit matters" on the About page.
+here; a welcome on the home page; and "Why your visit matters" on the About page (moved to the Why visit page, 20 Oct 2026).
 Mirary Hotel and the thermal massage are now verified on the strength of your notes.
 
 Where your notes disagreed with what the site said before, your notes won unless
@@ -322,7 +322,7 @@ no separate originals).
 | **National Park** — gallery | bamboo lemur feeding, forest cascade and leaf chameleon among the eight on the page; the cards' three photos, a ground-roller, nestlings in a nest hole and a caterpillar under “See all photos” |
 | **Guided Night Walk** | red-eyed tree frog (now its card photo and first in the pop-up), pygmy kingfisher |
 | **Home page**, “Canopy” | the bamboo lemur feeding, in place of the lemur on a trunk |
-| **About page**, beside “Without visitors…” | the village of thatch-roofed houses |
+| **About page** (now **Why visit**), beside “Without visitors…” | the village of thatch-roofed houses |
 
 **Confirmed by Kyle, 13 Oct 2026:** the feeding lemur is a golden bamboo lemur and the
 ground-roller a scaly ground-roller; the descriptions now name both. I placed the kingfisher and the
