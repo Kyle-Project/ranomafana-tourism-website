@@ -171,10 +171,14 @@ Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026.
   - **"The valley up close":** a map of the valley with four tappable stops.
   - **"How your visit protects the forest":** the buffer zone and the four-step circle,
     with pills to guides, stays, food and things to do.
-  - **"Why your visit matters":** "On the fence about visiting?", what Madagascar
-    National Parks does, and "By the numbers" (visitors before and since the pandemic,
-    the town's 20,000 people). It used to sit on the About page; Kyle asked on 20 Oct 2026
-    for it to be on a different page from the team. The About page is now the team and
+  - **"Why your visit matters":** "On the fence about visiting?", "Who your visit
+    supports" (`who1`–`who6`) and "By the numbers" (visitors before and since the
+    pandemic, the town's 20,000 people). It used to sit on the About page; Kyle asked on
+    20 Oct 2026 for it to be on a different page from the team, and then for it to be
+    about the community rather than MNP. So it speaks of local guides and their
+    association, villagers working alongside the park, the town's businesses, the VOI
+    reserves and local artisans; MNP gets one sentence. Its photo is the VOI Mitsinjo
+    path being cleared (`altClearingPath`). Keep that focus. The About page is now the team and
     the "Email the team" box only, with no Sources line of its own: those facts' sources
     joined `whySources`.
   - **A Sources line** at the foot of the page.
