@@ -383,6 +383,23 @@ comet-moth frame and a third, closer shot of the craft shop's table were left ou
 weaker or repeated shots; so were near-duplicates of the lemurs, the river and the
 footbridge. The park office notice board is a source, not a site photo (see section 3).
 
+### Added 20 October 2026 — VOI Mitsinjo, Ambohimagneva, Jirama and the park
+
+All 14 used as received (already under 500 KB), each on the listing you named.
+
+| Where | Photos |
+|---|---|
+| **VOI Mitsinjo Reserve** (7; the `forest` and `community` slots, and five more) | the twin waterfall with a man at the pool (now the card photo), the falls pouring into the pool and seen from above, the viewing shelter with yellow railings (empty, and with a group), the walk in through forest and banana plants, three men clearing the path down to the falls |
+| **National Park** — “See all photos”, after the other streams | a sunlit stream cascading over lichen-covered boulders (wide and tall versions) |
+| **VOI Ambohimagneva** | two photos of tree frogs roosting together on a branch in front of the waterfall (after the two frog-species photos), and water sliding down a mossy rock face in two streams |
+| **Jirama Waterfall Hike** — second and third in the pop-up | the big falls running high and brown under a blue sky, and the falls with the boulder-strewn pool below |
+
+The tree frogs are not named; nor is anyone in the photos. VOI Mitsinjo's description
+still says nothing about the waterfall or the viewing shelter. Tell me how to reach them
+(and whether the cleared path is open to visitors) and I'll add a line. A photo of a
+tree with red fruit beside a banana plant was in the same download but not in your
+messages, so it is not on the site.
+
 Every photo-less listing now has a **designed placeholder** (`images/placeholder-<slug>.jpg`)
 rather than sharing one of two landscapes. They are obviously graphics — property name
 on a colour panel, "Photograph coming soon" — so nobody mistakes one for a picture of
@@ -435,7 +452,7 @@ Frontage · dining room · a signature dish.
 
 | Listing | Files it is waiting for |
 |---|---|
-| **VOI Mitsinjo Reserve** | `voi-mitsinjo-forest.jpg` · `voi-mitsinjo-wildlife.jpg` · `voi-mitsinjo-community.jpg` |
+| **VOI Mitsinjo Reserve** | `voi-mitsinjo-wildlife.jpg` (the forest and community slots are in) |
 | **Station Thermale (Thermal Pool & Baths)** | `station-thermale-baths.jpg` — a private bath room (the pool and booth are in); never anything from Hotel Thermal |
 | **Thermal Massage** | `thermal-massage-room.jpg` — same rule: nothing borrowed from Hotel Thermal |
 | **Cascade Andriamamovoka** | `cascade-andriamamovoka-falls.jpg` · `cascade-andriamamovoka-trail.jpg` · `cascade-andriamamovoka-river.jpg` |

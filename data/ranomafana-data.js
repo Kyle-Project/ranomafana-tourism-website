@@ -1051,7 +1051,7 @@ const doData = [
       }
     ],
     /* Photos from Kyle, 11 Oct 2026 (originals in photo-originals/), and more
-       from him on 13 and 19 Oct 2026 (used as received: already 1600px and under
+       from him on 13, 19 and 20 Oct 2026 (used as received: already 1600px and under
        500 KB). The park page shows the cover photo and the first seven here;
        "See all photos" opens the rest. The greater bamboo lemur is named from its
        white ear tufts and the bamboo it is stripping; the waterfalls of 19 Oct were
@@ -1092,6 +1092,8 @@ const doData = [
       { src: "images/ranomafana-national-park-mossy-trunks.jpg", alt: "Moss-covered tree trunks in the rainforest, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-stream.jpg", alt: "A stream running over mossy rocks under the forest canopy, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-stream-ferns.jpg", alt: "A stream tumbling over rocks between ferns and mossy trees, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-cascade-boulders.jpg", alt: "A stream cascading over lichen-covered boulders in the sun, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-cascade-steps.jpg", alt: "A rocky stream stepping down through the forest, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-waterfall-pool.jpg", alt: "A tall waterfall falling into a pool behind a mossy tree, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-namorona.jpg", alt: "The Namorona River rushing through the rainforest" },
       { src: "images/ranomafana-national-park-footbridge.jpg", alt: "Walkers crossing a wooden footbridge over a forest stream, Ranomafana National Park" },
@@ -1111,10 +1113,10 @@ const doData = [
     rating: "\u2014",
     duration: "2\u20134 hours",
     status: "open",
-    img: "images/placeholder-voi-mitsinjo.jpg",
+    img: "images/voi-mitsinjo-waterfall.jpg",
     verified: false,
-    photoNeeded: true,
-    sourceNote: "Local knowledge, from Kyle on the ground in Ranomafana. NOT the same as Association Mitsinjo at Andasibe, ~600 km north \u2014 do not \u2018correct\u2019 this entry away on that basis, as an earlier pass wrongly did. Entry rates and hours still to be confirmed with the association.",
+    photoNeeded: false,
+    sourceNote: "Local knowledge, from Kyle on the ground in Ranomafana. NOT the same as Association Mitsinjo at Andasibe, ~600 km north \u2014 do not \u2018correct\u2019 this entry away on that basis, as an earlier pass wrongly did. Entry rates and hours still to be confirmed with the association. Photos of the waterfall, its viewing shelter and the path from Kyle, received 20 Oct 2026; the wildlife slot is still waiting for a photo.",
     desc: "Community-managed forest reserve at Ambatolahy, run by VOI Ambatolahy \u2014 the local community association that holds the forest management transfer. Guided day and night walks with community guides, with fees going directly to the village rather than to the national park.",
     tips: [
       "Arrange through VOI Ambatolahy \u2014 ask at Ambatolahy village or through your hotel",
@@ -1122,9 +1124,14 @@ const doData = [
       "Good option for a night walk, and for a day when the park circuits are full"
     ],
     gallery: [
-      { src: "images/voi-mitsinjo-forest.jpg", fallback: "images/placeholder-voi-mitsinjo.jpg", alt: "Forest at VOI Mitsinjo Reserve" },
-      { src: "images/voi-mitsinjo-wildlife.jpg", fallback: "images/placeholder-voi-mitsinjo.jpg", alt: "Wildlife at VOI Mitsinjo Reserve" },
-      { src: "images/voi-mitsinjo-community.jpg", fallback: "images/placeholder-voi-mitsinjo.jpg", alt: "VOI Ambatolahy community guides" }
+      { src: "images/voi-mitsinjo-waterfall.jpg", alt: "A man standing at the pool below the reserve's twin waterfall, VOI Mitsinjo Reserve" },
+      { src: "images/voi-mitsinjo-waterfall-pool.jpg", alt: "The twin waterfall pouring into its pool, VOI Mitsinjo Reserve" },
+      { src: "images/voi-mitsinjo-viewing-shelter.jpg", alt: "The covered viewing shelter, with its yellow railings, above the waterfall, VOI Mitsinjo Reserve" },
+      { src: "images/voi-mitsinjo-shelter-group.jpg", alt: "A group in the viewing shelter, with the waterfall behind them, VOI Mitsinjo Reserve" },
+      { src: "images/voi-mitsinjo-waterfall-above.jpg", alt: "The twin waterfall seen from above, falling over dark rock into a pool, VOI Mitsinjo Reserve" },
+      { src: "images/voi-mitsinjo-forest.jpg", alt: "Walking through forest and banana plants on the way to the waterfall, VOI Mitsinjo Reserve" },
+      { src: "images/voi-mitsinjo-community.jpg", alt: "Three men clearing the path down to the waterfall, VOI Mitsinjo Reserve" },
+      { src: "images/voi-mitsinjo-wildlife.jpg", fallback: "images/placeholder-voi-mitsinjo.jpg", alt: "Wildlife at VOI Mitsinjo Reserve" }
     ],
     contact: { phone: "", email: "", website: "", social: "", note: "Managed by VOI Ambatolahy." }
   },
@@ -1257,9 +1264,11 @@ const doData = [
     img: "images/jirama-waterfall-hike-falls.jpg",
     verified: true,
     photoNeeded: false,
-    sourceNote: "Local knowledge from the original site draft — no published source found under this name. The route (start at the public pool, about an hour upriver to the biggest waterfall on the Namorona, not visible from the road) is from Kyle's notes (received 11 Oct 2026), which describe the walk but do not name the falls. On 11 Oct 2026 Kyle identified his photos of the big granite falls as the end of this walk, and placed them on this listing, so it is now marked verified.",
+    sourceNote: "Local knowledge from the original site draft — no published source found under this name. The route (start at the public pool, about an hour upriver to the biggest waterfall on the Namorona, not visible from the road) is from Kyle's notes (received 11 Oct 2026), which describe the walk but do not name the falls. On 11 Oct 2026 Kyle identified his photos of the big granite falls as the end of this walk, and placed them on this listing, so it is now marked verified. Two more photos of the falls (high water, and the pool below) from Kyle on 20 Oct 2026.",
     gallery: [
       { src: "images/jirama-waterfall-hike-falls.jpg", alt: "The big waterfall on the Namorona, stepping down over granite at the end of the walk from the public pool" },
+      { src: "images/jirama-waterfall-hike-high-water.jpg", alt: "The big waterfall running high and brown under a blue sky" },
+      { src: "images/jirama-waterfall-hike-pool.jpg", alt: "The falls and the boulder-strewn pool below them, under a cloudy sky" },
       { src: "images/jirama-waterfall-hike-trail.jpg", alt: "The waterfall seen across the fields and banana plants on the way" },
       { src: "images/jirama-waterfall-hike-river.jpg", alt: "Water pouring between granite boulders at the falls" }
     ],
@@ -1407,7 +1416,7 @@ const doData = [
     img: "images/voi-ambohimagneva-waterfall-ambony.jpg",
     verified: false,
     photoNeeded: false,
-    sourceNote: "Project in development, not yet a published visitor attraction. Replaces the earlier 'Reserve Ambohimaneva' entry. Photos added 2026-09-12 from a site visit, and four more waterfall photos on 2026-10-11 (Kyle confirmed they were taken here). Spelling corrected to 'Ambohimagneva' 2026-09-12 per Kyle.",
+    sourceNote: "Project in development, not yet a published visitor attraction. Replaces the earlier 'Reserve Ambohimaneva' entry. Photos added 2026-09-12 from a site visit, and four more waterfall photos on 2026-10-11 (Kyle confirmed they were taken here). Two tree-frog photos and a waterfall from Kyle on 2026-10-20; the frogs are not named. Spelling corrected to 'Ambohimagneva' 2026-09-12 per Kyle.",
     gallery: [
       { src: "images/voi-ambohimagneva-waterfall-ambony.jpg", alt: "Tall waterfall inside the reserve at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-waterfall-ambany.jpg", alt: "Tall waterfall lower on the trail at VOI Ambohimagneva" },
@@ -1417,6 +1426,7 @@ const doData = [
       { src: "images/voi-ambohimagneva-waterfall-swim.jpg", alt: "A swimmer standing in the spray of a waterfall at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-waterfall-sunlit.jpg", alt: "Sunlight falling on a waterfall between dark rocks at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-cascade-pool.jpg", alt: "A mossy cascade spilling into a forest pool at VOI Ambohimagneva" },
+      { src: "images/voi-ambohimagneva-waterfall-split.jpg", alt: "Water sliding down a mossy rock face in two streams at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-river-pool.jpg", alt: "A river pool at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-river-pool-2.jpg", alt: "Another river pool along the VOI Ambohimagneva trail" },
       { src: "images/voi-ambohimagneva-river.jpg", alt: "The river running through VOI Ambohimagneva" },
@@ -1426,6 +1436,8 @@ const doData = [
       { src: "images/voi-ambohimagneva-leaf-tailed-gecko.jpg", alt: "Mossy leaf-tailed gecko camouflaged on a branch at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-frog-species.jpg", alt: "A frog species found at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-frog-species-2.jpg", alt: "A second frog species found at VOI Ambohimagneva" },
+      { src: "images/voi-ambohimagneva-tree-frogs.jpg", alt: "Several tree frogs resting together on a branch in front of the waterfall at VOI Ambohimagneva" },
+      { src: "images/voi-ambohimagneva-tree-frogs-2.jpg", alt: "The tree frogs' leafy roost in the sun at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-hiking-trail.jpg", alt: "Hiking the trail at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-guide-adrien.jpg", alt: "Guide Adrien on the boardwalk trail at VOI Ambohimagneva" }
     ],

@@ -2875,6 +2875,8 @@ const LISTING_TRANSLATIONS = {
           "Moss-covered tree trunks in the rainforest, Ranomafana National Park",
           "A stream running over mossy rocks under the forest canopy, Ranomafana National Park",
           "A stream tumbling over rocks between ferns and mossy trees, Ranomafana National Park",
+          "A stream cascading over lichen-covered boulders in the sun, Ranomafana National Park",
+          "A rocky stream stepping down through the forest, Ranomafana National Park",
           "A tall waterfall falling into a pool behind a mossy tree, Ranomafana National Park",
           "The Namorona River rushing through the rainforest",
           "Walkers crossing a wooden footbridge over a forest stream, Ranomafana National Park",
@@ -2920,6 +2922,8 @@ const LISTING_TRANSLATIONS = {
           "Des troncs couverts de mousse dans la forêt tropicale, parc national de Ranomafana",
           "Un ruisseau sur des rochers moussus sous la canopée, parc national de Ranomafana",
           "Un torrent qui dévale les rochers entre fougères et arbres moussus, parc national de Ranomafana",
+          "Un torrent qui cascade sur des rochers couverts de lichens, au soleil, parc national de Ranomafana",
+          "Un torrent rocailleux qui descend en gradins à travers la forêt, parc national de Ranomafana",
           "Une haute cascade qui tombe dans un bassin, derrière un arbre moussu, parc national de Ranomafana",
           "La Namorona qui dévale à travers la forêt tropicale",
           "Des marcheurs franchissent une passerelle en bois au-dessus d’un ruisseau forestier, parc national de Ranomafana",
@@ -2965,6 +2969,8 @@ const LISTING_TRANSLATIONS = {
           "Moosbewachsene Baumstämme im Regenwald, Nationalpark Ranomafana",
           "Ein Bach über moosigen Felsen unter dem Blätterdach, Nationalpark Ranomafana",
           "Ein Bach stürzt zwischen Farnen und moosigen Bäumen über Felsen, Nationalpark Ranomafana",
+          "Ein Bach stürzt in der Sonne über flechtenbedeckte Felsblöcke, Nationalpark Ranomafana",
+          "Ein felsiger Bach fließt stufenweise durch den Wald hinab, Nationalpark Ranomafana",
           "Ein hoher Wasserfall stürzt hinter einem moosigen Baum in ein Becken, Nationalpark Ranomafana",
           "Die Namorona rauscht durch den Regenwald",
           "Wanderer überqueren eine Holzbrücke über einen Waldbach, Nationalpark Ranomafana",
@@ -3010,6 +3016,8 @@ const LISTING_TRANSLATIONS = {
           "Vatan-kazo rakotra volon-ketsa ao amin'ny ala mando, valan-javaboahary Ranomafana",
           "Rano mikoriana eo ambonin'ny vato misy volon-ketsa ambanin'ny tampon'ny ala, valan-javaboahary Ranomafana",
           "Rano mikoriana mafy eo ambonin'ny vato, eo anelanelan'ny fanjana sy hazo misy volon-ketsa, valan-javaboahary Ranomafana",
+          "Rano mikoriana mafy eo ambonin'ny vato lehibe rakotra lichen, amin'ny masoandro, valan-javaboahary Ranomafana",
+          "Renirano feno vato midina tsikelikely mamakivaky ny ala, valan-javaboahary Ranomafana",
           "Riandrano avo milatsaka ao anaty dobo, ao ambadiky ny hazo misy volon-ketsa, valan-javaboahary Ranomafana",
           "Ny renirano Namorona mikoriana mafy mamakivaky ny ala mando",
           "Mpandeha an-tongotra mita tetezana hazo ambonin'ny renirano kely ao an'ala, valan-javaboahary Ranomafana",
@@ -3071,24 +3079,44 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
-          "Forest at VOI Mitsinjo Reserve",
-          "Wildlife at VOI Mitsinjo Reserve",
-          "VOI Ambatolahy community guides"
+          "A man standing at the pool below the reserve's twin waterfall, VOI Mitsinjo Reserve",
+          "The twin waterfall pouring into its pool, VOI Mitsinjo Reserve",
+          "The covered viewing shelter, with its yellow railings, above the waterfall, VOI Mitsinjo Reserve",
+          "A group in the viewing shelter, with the waterfall behind them, VOI Mitsinjo Reserve",
+          "The twin waterfall seen from above, falling over dark rock into a pool, VOI Mitsinjo Reserve",
+          "Walking through forest and banana plants on the way to the waterfall, VOI Mitsinjo Reserve",
+          "Three men clearing the path down to the waterfall, VOI Mitsinjo Reserve",
+          "Wildlife at VOI Mitsinjo Reserve"
         ],
         "fr": [
-          "La forêt de la réserve VOI Mitsinjo",
-          "La faune de la réserve VOI Mitsinjo",
-          "Les guides communautaires du VOI Ambatolahy"
+          "Un homme au bord du bassin, sous la double cascade de la réserve, réserve VOI Mitsinjo",
+          "La double cascade qui se jette dans son bassin, réserve VOI Mitsinjo",
+          "L’abri couvert aux balustrades jaunes, au-dessus de la cascade, réserve VOI Mitsinjo",
+          "Un groupe dans l’abri d’observation, avec la cascade derrière lui, réserve VOI Mitsinjo",
+          "La double cascade vue d’en haut, qui dévale la roche sombre jusqu’à un bassin, réserve VOI Mitsinjo",
+          "En marche à travers la forêt et les bananiers vers la cascade, réserve VOI Mitsinjo",
+          "Trois hommes dégagent le sentier qui descend vers la cascade, réserve VOI Mitsinjo",
+          "La faune de la réserve VOI Mitsinjo"
         ],
         "de": [
-          "Wald im Reservat VOI Mitsinjo",
-          "Tiere im Reservat VOI Mitsinjo",
-          "Gemeinde-Guides von VOI Ambatolahy"
+          "Ein Mann steht am Becken unter dem doppelten Wasserfall des Reservats, Reservat VOI Mitsinjo",
+          "Der doppelte Wasserfall stürzt in sein Becken, Reservat VOI Mitsinjo",
+          "Der überdachte Aussichtsunterstand mit gelbem Geländer oberhalb des Wasserfalls, Reservat VOI Mitsinjo",
+          "Eine Gruppe im Aussichtsunterstand, hinter ihr der Wasserfall, Reservat VOI Mitsinjo",
+          "Der doppelte Wasserfall von oben, über dunklen Fels in ein Becken stürzend, Reservat VOI Mitsinjo",
+          "Unterwegs zum Wasserfall durch Wald und Bananenstauden, Reservat VOI Mitsinjo",
+          "Drei Männer räumen den Pfad zum Wasserfall frei, Reservat VOI Mitsinjo",
+          "Tiere im Reservat VOI Mitsinjo"
         ],
         "mg": [
-          "Ny ala ao amin'ny tahiry VOI Mitsinjo",
-          "Biby ao amin'ny tahiry VOI Mitsinjo",
-          "Ireo mpitari-dalana avy amin'ny fiaraha-monina VOI Ambatolahy"
+          "Lehilahy mijoro eo amoron'ny dobo eo ambanin'ny riandrano kambana ao amin'ny tahiry, Tahiry VOI Mitsinjo",
+          "Ny riandrano kambana milatsaka ao anaty doboany, Tahiry VOI Mitsinjo",
+          "Ny fialofana misy tafo sy fefy mavo, eo ambonin'ny riandrano, fijerena ny toerana, Tahiry VOI Mitsinjo",
+          "Vondron'olona ao amin'ny fialofana fijerena, ary ny riandrano ao ambadik'izy ireo, Tahiry VOI Mitsinjo",
+          "Ny riandrano kambana jerena avy any ambony, milatsaka eo ambonin'ny vato mainty mankany anaty dobo, Tahiry VOI Mitsinjo",
+          "Mandeha mamakivaky ala sy akondro mankany amin'ny riandrano, Tahiry VOI Mitsinjo",
+          "Lehilahy telo manadio ny lalana midina mankany amin'ny riandrano, Tahiry VOI Mitsinjo",
+          "Biby ao amin'ny tahiry VOI Mitsinjo"
         ]
       }
     },
@@ -3504,21 +3532,29 @@ const LISTING_TRANSLATIONS = {
       "gallery[].alt": {
         "en": [
           "The big waterfall on the Namorona, stepping down over granite at the end of the walk from the public pool",
+          "The big waterfall running high and brown under a blue sky",
+          "The falls and the boulder-strewn pool below them, under a cloudy sky",
           "The waterfall seen across the fields and banana plants on the way",
           "Water pouring between granite boulders at the falls"
         ],
         "fr": [
           "La grande cascade de la Namorona, qui descend en gradins sur le granite au bout de la balade depuis la piscine publique",
+          "La grande cascade en crue, aux eaux brunes, sous un ciel bleu",
+          "Les chutes et le bassin parsemé de rochers à leur pied, sous un ciel nuageux",
           "La cascade vue au-delà des champs et des bananiers, en chemin",
           "L’eau qui jaillit entre les blocs de granite de la cascade"
         ],
         "de": [
           "Der große Wasserfall der Namorona stürzt stufenweise über Granit, am Ende der Wanderung vom öffentlichen Bad",
+          "Der große Wasserfall mit hohem, braunem Wasser unter blauem Himmel",
+          "Die Fälle und das felsübersäte Becken darunter, unter bewölktem Himmel",
           "Der Wasserfall unterwegs, über Felder und Bananenstauden hinweg gesehen",
           "Wasser stürzt am Wasserfall zwischen Granitblöcken hindurch"
         ],
         "mg": [
           "Ny riandrano lehibe amin'ny Namorona, midina amin'ny vato granita, eo amin'ny faran'ny dia avy eo amin'ny dobo ho an'ny besinimaro",
+          "Ny riandrano lehibe be rano sy mena tany, eo ambanin'ny lanitra manga",
+          "Ny riandrano sy ny dobo feno vato lehibe eo ambaniny, eo ambanin'ny lanitra rakotra rahona",
           "Ny riandrano hita eny ampitan'ny saha sy ny akondro eny an-dalana",
           "Rano mikoriana eo anelanelan'ny vato granita lehibe eo amin'ny riandrano"
         ]
@@ -3929,6 +3965,7 @@ const LISTING_TRANSLATIONS = {
           "A swimmer standing in the spray of a waterfall at VOI Ambohimagneva",
           "Sunlight falling on a waterfall between dark rocks at VOI Ambohimagneva",
           "A mossy cascade spilling into a forest pool at VOI Ambohimagneva",
+          "Water sliding down a mossy rock face in two streams at VOI Ambohimagneva",
           "A river pool at VOI Ambohimagneva",
           "Another river pool along the VOI Ambohimagneva trail",
           "The river running through VOI Ambohimagneva",
@@ -3938,6 +3975,8 @@ const LISTING_TRANSLATIONS = {
           "Mossy leaf-tailed gecko camouflaged on a branch at VOI Ambohimagneva",
           "A frog species found at VOI Ambohimagneva",
           "A second frog species found at VOI Ambohimagneva",
+          "Several tree frogs resting together on a branch in front of the waterfall at VOI Ambohimagneva",
+          "The tree frogs' leafy roost in the sun at VOI Ambohimagneva",
           "Hiking the trail at VOI Ambohimagneva",
           "Guide Adrien on the boardwalk trail at VOI Ambohimagneva"
         ],
@@ -3950,6 +3989,7 @@ const LISTING_TRANSLATIONS = {
           "Une personne qui se baigne, debout dans les embruns d’une cascade à VOI Ambohimagneva",
           "Le soleil sur une cascade entre des rochers sombres, VOI Ambohimagneva",
           "Une cascade moussue qui se déverse dans un bassin en forêt, VOI Ambohimagneva",
+          "L’eau glisse en deux filets sur une paroi rocheuse moussue, à VOI Ambohimagneva",
           "Un bassin de rivière à VOI Ambohimagneva",
           "Un autre bassin de rivière le long du sentier de VOI Ambohimagneva",
           "La rivière qui traverse VOI Ambohimagneva",
@@ -3959,6 +3999,8 @@ const LISTING_TRANSLATIONS = {
           "Un uroplate de Sikora camouflé sur une branche, VOI Ambohimagneva",
           "Une espèce de grenouille de VOI Ambohimagneva",
           "Une autre espèce de grenouille de VOI Ambohimagneva",
+          "Plusieurs rainettes qui se reposent ensemble sur une branche devant la cascade, à VOI Ambohimagneva",
+          "Le perchoir feuillu des rainettes, au soleil, à VOI Ambohimagneva",
           "Randonnée sur le sentier de VOI Ambohimagneva",
           "Le guide Adrien sur la passerelle du sentier de VOI Ambohimagneva"
         ],
@@ -3971,6 +4013,7 @@ const LISTING_TRANSLATIONS = {
           "Eine badende Person steht in der Gischt eines Wasserfalls, VOI Ambohimagneva",
           "Sonnenlicht auf einem Wasserfall zwischen dunklen Felsen, VOI Ambohimagneva",
           "Eine moosige Kaskade ergießt sich in ein Waldbecken, VOI Ambohimagneva",
+          "Wasser gleitet in zwei Strömen über eine moosige Felswand, VOI Ambohimagneva",
           "Ein Flussbecken in VOI Ambohimagneva",
           "Ein weiteres Flussbecken am Weg durch VOI Ambohimagneva",
           "Der Fluss, der durch VOI Ambohimagneva fließt",
@@ -3980,6 +4023,8 @@ const LISTING_TRANSLATIONS = {
           "Moosiger Plattschwanzgecko, getarnt auf einem Ast, VOI Ambohimagneva",
           "Eine Froschart aus VOI Ambohimagneva",
           "Eine zweite Froschart aus VOI Ambohimagneva",
+          "Mehrere Laubfrösche ruhen gemeinsam auf einem Zweig vor dem Wasserfall, VOI Ambohimagneva",
+          "Der belaubte Ruheplatz der Laubfrösche in der Sonne, VOI Ambohimagneva",
           "Wandern auf dem Weg durch VOI Ambohimagneva",
           "Guide Adrien auf dem Bohlenweg in VOI Ambohimagneva"
         ],
@@ -3992,6 +4037,7 @@ const LISTING_TRANSLATIONS = {
           "Mpilomano mijoro eo amin'ny tsiranoka avy amin'ny riandrano ao VOI Ambohimagneva",
           "Taratry ny masoandro amin'ny riandrano eo anelanelan'ny vato maizina, VOI Ambohimagneva",
           "Riandrano misy volon-ketsa milatsaka ao anaty dobo an'ala, VOI Ambohimagneva",
+          "Rano mikoriana roa sakana eo amin'ny hantsam-bato misy volon-ketsa, ao amin'ny VOI Ambohimagneva",
           "Dobo eo amin'ny renirano ao VOI Ambohimagneva",
           "Dobo iray hafa eo amin'ny renirano manaraka ny lalan'ny VOI Ambohimagneva",
           "Ny renirano mamakivaky ny VOI Ambohimagneva",
@@ -4001,6 +4047,8 @@ const LISTING_TRANSLATIONS = {
           "Androngo rambo ravina (Uroplatus sikorae) miafina eo amin'ny sampan-kazo, VOI Ambohimagneva",
           "Karazana sahona iray hita ao VOI Ambohimagneva",
           "Karazana sahona iray hafa hita ao VOI Ambohimagneva",
+          "Sahona maromaro mipetraka miaraka eo amin'ny sampan-kazo eo anoloan'ny riandrano, ao amin'ny VOI Ambohimagneva",
+          "Ny toerana fialan-tsasatry ny sahona eo anivon'ny ravina, amin'ny masoandro, ao amin'ny VOI Ambohimagneva",
           "Dia an-tongotra eo amin'ny lalan'ny VOI Ambohimagneva",
           "Adrien, mpitari-dalana, eo amin'ny tetezana hazo ao VOI Ambohimagneva"
         ]

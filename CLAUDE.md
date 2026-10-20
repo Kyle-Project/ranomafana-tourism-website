@@ -426,6 +426,13 @@ bamboo lemur from those marks, not on Kyle's word, so it is flagged for him to c
 Varibolo banner is the source of the second Varibolo number (034 37 737 13) and
 variboloresto72@gmail.com. Details in section 7 of `PHOTO-AND-DATA-GAPS.md`.
 
+Kyle's 14 photos of 20 October 2026 (used as received) each went to the listing he named:
+VOI Mitsinjo Reserve got seven (its twin waterfall, now the card photo, the viewing
+shelter, the walk in, the path being cleared), the park two sunlit cascades, VOI
+Ambohimagneva two tree-frog photos and a waterfall, and the Jirama Waterfall Hike two
+more of the big falls. VOI Mitsinjo's description doesn't yet mention the waterfall or
+the shelter; that waits on Kyle saying how visitors reach them.
+
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide
 fees from **January 2027** (120,000 / 150,000 / 180,000 Ar, specialists 250,000 Ar),
@@ -440,7 +447,7 @@ details of its own** — never fill them with Hotel Thermal's, which is what the
 did until 11 October 2026.
 
 Open editorial work is tracked in `PHOTO-AND-DATA-GAPS.md`: 6 unconfirmed listings,
-27 entries awaiting a real photograph (97 individual photo slots, all pre-wired),
+26 entries awaiting a real photograph (95 individual photo slots, all pre-wired),
 and the conflicts listed in its section 0. The team profiles on the About page are
 placeholders. Kyle's notes had headings for a donation link and a town map with no
 content yet; nothing was added for them.
