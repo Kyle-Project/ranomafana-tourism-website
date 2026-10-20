@@ -172,13 +172,18 @@ Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026.
   - **"How your visit protects the forest":** the buffer zone and the four-step circle,
     with pills to guides, stays, food and things to do.
   - **"Why your visit matters":** "On the fence about visiting?", "Who your visit
-    supports" (`who1`–`who6`) and "By the numbers" (visitors before and since the
+    supports" (`who1`–`who8`) and "By the numbers" (visitors before and since the
     pandemic, the town's 20,000 people). It used to sit on the About page; Kyle asked on
-    20 Oct 2026 for it to be on a different page from the team, and then for it to be
-    about the community rather than MNP. So it speaks of local guides and their
-    association, villagers working alongside the park, the town's businesses, the VOI
-    reserves and local artisans; MNP gets one sentence. Its photo is the VOI Mitsinjo
-    path being cleared (`altClearingPath`). Keep that focus. The About page is now the team and
+    20 Oct 2026 for it to be on a different page from the team. The same day he asked
+    for it to keep some of the MNP story but to focus, in the end, on what ecotourism
+    does for the community. So the paragraphs pair how fees fund the park with where
+    visitors' money goes locally; MNP's role since 1991 is told through how it involves
+    communities; and the pandemic paragraph covers both the town and MNP. The list is
+    five community points (guides and their association, villagers working with MNP,
+    the town's businesses, the VOI reserves, artisans), two MNP points (its rangers and
+    protection work, its research partners) and the community fee. The photo beside it
+    is the town flowers (Kyle asked for it back after it was briefly swapped). Keep
+    that balance. The About page is now the team and
     the "Email the team" box only, with no Sources line of its own: those facts' sources
     joined `whySources`.
   - **A Sources line** at the foot of the page.
