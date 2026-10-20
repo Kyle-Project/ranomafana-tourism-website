@@ -148,7 +148,10 @@ Ranomafana?" one removed), in the order he asked for: four key phrases, one per 
 relaxation. World-renowned biodiversity."), then "UNESCO World Heritage Ranomafana is
 home to…" and the key activities (`welcomeText2`), then the impact of a stay
 (`welcomeText3`). He asked twice for it shorter and punchier: keep it that way, and
-keep the credit out of it.
+keep the credit out of it. On 20 Oct 2026 he asked for a photo there: under the heading
+sits the yellow footbridge into the park (`ranomafana-national-park-entrance.jpg`), with
+an inset of the greater bamboo lemur over its corner (`.welcome-photos`; descriptions
+`altWelcomeBridge` and `altWelcomeLemur`). No text was added with them.
 
 **The case for Ranomafana is the site's message.** Kyle's rationale ("Why Ranomafana —
 Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026.
@@ -430,8 +433,9 @@ Kyle's 14 photos of 20 October 2026 (used as received) each went to the listing 
 VOI Mitsinjo Reserve got seven (its twin waterfall, now the card photo, the viewing
 shelter, the walk in, the path being cleared), the park two sunlit cascades, VOI
 Ambohimagneva two tree-frog photos and a waterfall, and the Jirama Waterfall Hike two
-more of the big falls. VOI Mitsinjo's description doesn't yet mention the waterfall or
-the shelter; that waits on Kyle saying how visitors reach them.
+more of the big falls. VOI Mitsinjo's description now says how to reach the waterfall,
+in Kyle's words of 20 Oct 2026: a 30-minute walk from Ambatolahy village, or a four-hour
+hike through the forest.
 
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide

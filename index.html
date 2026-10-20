@@ -440,7 +440,21 @@
     .welcome-copy { display: flex; flex-direction: column; gap: 18px; max-width: 640px; }
     .welcome-words { font-family: var(--serif); font-weight: 300; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.25; color: var(--mist); }
     .welcome-sign { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 20px; line-height: 1.45; color: var(--sage); }
+    /* Main photo with a smaller one overlapping its lower right corner. The inset's border is
+       the page colour, so it reads as cut into the main photo. Both stay inside the column. */
+    .welcome-photos { position: relative; margin: 18px 0 0; padding-bottom: 56px; }
+    .welcome-main { width: 86%; aspect-ratio: 4 / 3; border-radius: 20px; overflow: hidden; background: var(--ph); }
+    .welcome-inset {
+      position: absolute; right: 0; bottom: 0; width: 34%; aspect-ratio: 4 / 5;
+      border-radius: 18px; overflow: hidden; background: var(--ph); border: 6px solid var(--canopy);
+    }
+    .welcome-main img, .welcome-inset img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .welcome-inset img { object-position: 50% 40%; }
     @media (max-width: 991px) { .welcome { grid-template-columns: 1fr; gap: 24px; } }
+    @media (max-width: 600px) {
+      .welcome-photos { padding-bottom: 40px; }
+      .welcome-inset { width: 36%; border-width: 4px; border-radius: 14px; }
+    }
 
     /* ----------------------------------------------------- HOME: pace picker */
     .pace-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px; align-items: start; }
@@ -1170,11 +1184,17 @@
       </nav>
 
       <!-- Welcome. Every fact here is already on the site (hero, layers, Getting here, About).
-           The guide's credit belongs in the footer, not here (Kyle, 11 Oct 2026). -->
+           The guide's credit belongs in the footer, not here (Kyle, 11 Oct 2026).
+           The two photos under the heading (Kyle asked for one, 20 Oct 2026): walking into the
+           forest over the yellow footbridge, and an inset of a lemur you may meet there. -->
       <section class="wrap pad-b" aria-labelledby="wl-h">
         <div class="welcome">
           <div class="stack g-14">
             <h2 id="wl-h" class="display d-64" data-i18n="welcomeHeading" data-i18n-html>Welcome to <em>Ranomafana!</em></h2>
+            <figure class="welcome-photos">
+              <div class="welcome-main zoom"><img src="images/ranomafana-national-park-entrance.jpg" alt="Walkers crossing the yellow footbridge over the Namorona into the forest of Ranomafana National Park" data-i18n-alt="altWelcomeBridge" loading="lazy"></div>
+              <div class="welcome-inset"><img src="images/ranomafana-national-park-greater-bamboo-lemur.jpg" alt="A greater bamboo lemur, with its white ear tufts, clinging to a bamboo stem" data-i18n-alt="altWelcomeLemur" loading="lazy"></div>
+            </figure>
           </div>
           <div class="welcome-copy">
             <p class="welcome-words" data-i18n="welcomeText1" data-i18n-html>Wild adventures.<br>Immersive expeditions.<br>Thermal relaxation.<br>World-renowned biodiversity.</p>
@@ -2556,6 +2576,8 @@
         altGecko: "A leaf-tailed gecko on a branch at night",
         altHeroRiver: "The Namorona River running through the rainforest of Ranomafana National Park",
         altBambooLemur: "A golden bamboo lemur feeding on bamboo leaves in the rainforest",
+        altWelcomeBridge: "Walkers crossing the yellow footbridge over the Namorona into the forest of Ranomafana National Park",
+        altWelcomeLemur: "A greater bamboo lemur, with its white ear tufts, clinging to a bamboo stem",
         altSatanicGecko: "Satanic leaf-tailed gecko",
         altRiverPool: "River pool at VOI Ambohimagneva community reserve",
         altThermalePool: "The open-air pool at Station Thermale",
@@ -2909,6 +2931,8 @@
         altGecko: "Un uroplate sur une branche, la nuit",
         altHeroRiver: "La rivière Namorona traverse la forêt tropicale du parc national de Ranomafana",
         altBambooLemur: "Un hapalémur doré mangeant des feuilles de bambou dans la forêt tropicale",
+        altWelcomeBridge: "Des marcheurs traversent la passerelle jaune au-dessus de la Namorona pour entrer dans la forêt du parc national de Ranomafana",
+        altWelcomeLemur: "Un grand hapalémur, reconnaissable à ses touffes blanches aux oreilles, agrippé à une tige de bambou",
         altSatanicGecko: "Uroplate fantastique",
         altRiverPool: "Bassin de rivière dans la réserve communautaire VOI Ambohimagneva",
         altThermalePool: "La piscine en plein air de la Station Thermale",
@@ -3261,6 +3285,8 @@
         altGecko: "Ein Plattschwanzgecko nachts auf einem Ast",
         altHeroRiver: "Der Fluss Namorona im Regenwald des Nationalparks Ranomafana",
         altBambooLemur: "Ein Goldener Bambuslemur frisst Bambusblätter im Regenwald",
+        altWelcomeBridge: "Wanderer überqueren die gelbe Fußgängerbrücke über die Namorona in den Wald des Nationalparks Ranomafana",
+        altWelcomeLemur: "Ein Großer Bambuslemur mit seinen weißen Ohrbüscheln klammert sich an einen Bambusstamm",
         altSatanicGecko: "Satanischer Plattschwanzgecko",
         altRiverPool: "Flussbecken im Gemeindereservat VOI Ambohimagneva",
         altThermalePool: "Das Freibecken der Station Thermale",
@@ -3614,6 +3640,8 @@
         altGecko: "Androngo rambo ravina eo amin'ny sampan-kazo amin'ny alina",
         altHeroRiver: "Ny renirano Namorona mikoriana ao anaty ala mando ao amin'ny valan-javaboahary Ranomafana",
         altBambooLemur: "Gidro volamena mpihinam-bolo mihinana ravim-bolo ao anaty ala mando",
+        altWelcomeBridge: "Mpandeha an-tongotra mita ny tetezana mavo ambonin'ny Namorona mankany amin'ny alan'ny valan-javaboahary Ranomafana",
+        altWelcomeLemur: "Gidro mpihinam-bolo lehibe (Prolemur simus), manana volo fotsy eo amin'ny sofiny, mihantona amin'ny tahom-bolo",
         altSatanicGecko: "Androngo rambo ravina (Uroplatus phantasticus)",
         altRiverPool: "Dobo eo amin'ny renirano ao amin'ny tahirin'ny fiaraha-monina VOI Ambohimagneva",
         altThermalePool: "Ny dobo any ivelany ao amin'ny Station Thermale",

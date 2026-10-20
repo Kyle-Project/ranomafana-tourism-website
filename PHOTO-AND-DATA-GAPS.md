@@ -394,9 +394,12 @@ All 14 used as received (already under 500 KB), each on the listing you named.
 | **VOI Ambohimagneva** | two photos of tree frogs roosting together on a branch in front of the waterfall (after the two frog-species photos), and water sliding down a mossy rock face in two streams |
 | **Jirama Waterfall Hike** — second and third in the pop-up | the big falls running high and brown under a blue sky, and the falls with the boulder-strewn pool below |
 
-The tree frogs are not named; nor is anyone in the photos. VOI Mitsinjo's description
-still says nothing about the waterfall or the viewing shelter. Tell me how to reach them
-(and whether the cleared path is open to visitors) and I'll add a line. A photo of a
+The tree frogs are not named; nor is anyone in the photos. VOI Mitsinjo's description now
+says how to reach the waterfall, as you put it: a 30-minute walk from Ambatolahy village,
+or a four-hour hike through the forest.
+
+The **home page welcome** now has photos too: the yellow footbridge into the park under
+“Welcome to Ranomafana!”, with the greater bamboo lemur as a small inset. A photo of a
 tree with red fruit beside a banana plant was in the same download but not in your
 messages, so it is not on the site.
 
