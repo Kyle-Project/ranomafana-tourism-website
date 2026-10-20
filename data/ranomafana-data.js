@@ -1416,7 +1416,7 @@ const doData = [
     img: "images/voi-ambohimagneva-waterfall-ambony.jpg",
     verified: false,
     photoNeeded: false,
-    sourceNote: "Project in development, not yet a published visitor attraction. Replaces the earlier 'Reserve Ambohimaneva' entry. Photos added 2026-09-12 from a site visit, and four more waterfall photos on 2026-10-11 (Kyle confirmed they were taken here). Two tree-frog photos and a waterfall from Kyle on 2026-10-20; the frogs are not named. Spelling corrected to 'Ambohimagneva' 2026-09-12 per Kyle.",
+    sourceNote: "Project in development, not yet a published visitor attraction. Replaces the earlier 'Reserve Ambohimaneva' entry. Photos added 2026-09-12 from a site visit, and four more waterfall photos on 2026-10-11 (Kyle confirmed they were taken here). Two tree-frog photos and a waterfall from Kyle on 2026-10-20; the frogs are not named. That visitor fees go directly to the village and its people is from Kyle, 20 Oct 2026. Spelling corrected to 'Ambohimagneva' 2026-09-12 per Kyle.",
     gallery: [
       { src: "images/voi-ambohimagneva-waterfall-ambony.jpg", alt: "Tall waterfall inside the reserve at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-waterfall-ambany.jpg", alt: "Tall waterfall lower on the trail at VOI Ambohimagneva" },
@@ -1441,7 +1441,7 @@ const doData = [
       { src: "images/voi-ambohimagneva-hiking-trail.jpg", alt: "Hiking the trail at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-guide-adrien.jpg", alt: "Guide Adrien on the boardwalk trail at VOI Ambohimagneva" }
     ],
-    desc: "A 75-hectare community-managed reserve bordering the national park, governed through a VOI partnership under Madagascar's GELOSE framework, with MNP-certified guide access and Centre ValBio research collaboration. Trails and a river waterfall site are being opened to visitors.",
+    desc: "A 75-hectare community-managed reserve bordering the national park, governed through a VOI partnership under Madagascar's GELOSE framework, with MNP-certified guide access and Centre ValBio research collaboration. Trails and a river waterfall site are being opened to visitors. Visitor fees go directly to the village and the people who live there.",
     tips: ["Access on foot, roughly 3 km from town", "Contact ahead — visitor access is still being established"],
     contact: { phone: "", email: "", website: "", social: "" }
   }

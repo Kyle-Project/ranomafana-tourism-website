@@ -183,7 +183,8 @@ Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026.
     the town's businesses, the VOI reserves, artisans), two MNP points (its rangers and
     protection work, its research partners) and the community fee. The photo beside it
     is the town flowers (Kyle asked for it back after it was briefly swapped). Keep
-    that balance. The About page is now the team and
+    that balance. At both VOI reserves, Mitsinjo and Ambohimagneva, the fees go straight
+    to the village and its people (Kyle, 20 Oct 2026; also on the Ambohimagneva listing). The About page is now the team and
     the "Email the team" box only, with no Sources line of its own: those facts' sources
     joined `whySources`.
   - **A Sources line** at the foot of the page.
