@@ -445,8 +445,11 @@ listings — was written without a native speaker and should be checked by one.
   OpenStreetMap). The reserve is around 150 hectares of forest (Kyle, 23 Oct 2026).
 - **Pop-up maps search Google for the listing's name** unless it has a `mapPin`. All
   56 were checked on 23 Oct 2026: eleven landed on another business, another town or
-  a scatter of pins, and are now pinned (sources in each `sourceNote`). Two are pinned
-  pending Kyle's word: VOI Ambohimagneva and Cascade Andriamamovoka.
+  a scatter of pins, and are now pinned (sources in each `sourceNote`). Two rest on
+  the best evidence found rather than Kyle's word: VOI Ambohimagneva (Google's own
+  listing for the reserve, at the forest edge north of town) and Cascade
+  Andriamamovoka (the roadside viewpoint below the park gate; Wikidata's coordinates
+  for the falls are rough). The Jirama hike is pinned at its start, the public pool.
 - **Duplicate keys are silent.** A repeated `gallery:` or `img:` in one object is
   legal JS and the last one quietly wins — it happened once here and hid a correct
   gallery behind a stale one. `npm run check` now fails on it.
