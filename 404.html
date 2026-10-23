@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>Page not found · Ranomafana</title>
+  <meta name="theme-color" content="#0B1512">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230B1512'/%3E%3Cg fill='none' stroke='%23E5B53D' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2c4.5 4.5 7 8 7 11.5a7 7 0 0 1-14 0C5 10 7.5 6.5 12 2z'/%3E%3Cpath d='M12 22V11M12 15l-3-3M12 17l3-3'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <!-- GitHub Pages shows this page for any address that doesn't exist. An address
+       ending in a page name (…/stay, …/park) is sent on to that page of the site. -->
+  <style>
+    :root { --canopy: #0B1512; --moss: #26392F; --gold: #E5B53D; --gold-hi: #F4D27A; --mist: #EAF0EA; --lichen: #A9B8AF; --ember: #E98A62; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; background: var(--canopy); color: var(--mist);
+      font-family: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 16px; line-height: 1.6;
+      display: flex; align-items: center; justify-content: center;
+      padding: 40px max(16px, env(safe-area-inset-right, 0px)) 40px max(16px, env(safe-area-inset-left, 0px));
+    }
+    main { max-width: 560px; display: flex; flex-direction: column; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-family: 'Fraunces', Georgia, serif; font-size: 22px; }
+    .label { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--ember); }
+    h1 { margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 300; font-size: clamp(36px, 8vw, 56px); line-height: 1.05; }
+    p { margin: 0; color: var(--lichen); font-size: 17px; }
+    a.btn { align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 12px 24px; border-radius: 999px; background: var(--gold); color: var(--canopy); font-weight: 600; text-decoration: none; }
+    a.btn:hover { background: var(--gold-hi); }
+    a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="brand">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E5B53D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c4.5 4.5 7 8 7 11.5a7 7 0 0 1-14 0C5 10 7.5 6.5 12 2z"></path><path d="M12 22V11M12 15l-3-3M12 17l3-3"></path></svg>
+      Ranomafana
+    </span>
+    <span class="label" id="label">Page not found</span>
+    <h1 id="title">This page doesn’t exist.</h1>
+    <p id="text">The link may be mistyped, or the page has moved. Everything in the guide starts from the home page.</p>
+    <a class="btn" id="home" href="./">Go to the home page</a>
+  </main>
+  <script>
+    (function () {
+      var PAGES = ['home', 'why', 'stay', 'eat', 'do', 'park', 'itineraries', 'getting-here', 'when', 'guides', 'know', 'events', 'blog', 'about'];
+      var parts = location.pathname.split('/').filter(Boolean);
+      // On kyle-project.github.io the site lives in /ranomafana-tourism-website/;
+      // on its own domain (or a local server) it lives at the root.
+      var base = /\.github\.io$/.test(location.hostname) && parts.length ? '/' + parts.shift() + '/' : '/';
+      var last = (parts[parts.length - 1] || '').replace(/\.html?$/, '').toLowerCase();
+      if (PAGES.indexOf(last) !== -1) { location.replace(base + '#' + last); return; }
+      document.getElementById('home').href = base;
+
+      var TEXT = {
+        fr: ['Page introuvable', 'Cette page n’existe pas.', 'Le lien contient peut-être une erreur, ou la page a changé d’adresse. Tout le guide part de la page d’accueil.', 'Aller à l’accueil'],
+        de: ['Seite nicht gefunden', 'Diese Seite gibt es nicht.', 'Vielleicht ist der Link falsch geschrieben, oder die Seite ist umgezogen. Der ganze Führer beginnt auf der Startseite.', 'Zur Startseite'],
+        mg: ['Tsy hita ny pejy', 'Tsy misy ity pejy ity.', 'Mety diso ny rohy, na nifindra toerana ny pejy. Manomboka eo amin’ny pejy fandraisana ny torolàlana rehetra.', 'Mankany amin’ny pejy fandraisana']
+      };
+      var lang = null;
+      try { lang = localStorage.getItem('ranomafana-lang'); } catch (e) { /* storage blocked */ }
+      if (!TEXT[lang]) {
+        var prefs = navigator.languages || [navigator.language || ''];
+        for (var i = 0; i < prefs.length && !lang; i++) {
+          var code = String(prefs[i]).slice(0, 2).toLowerCase();
+          if (code === 'en' || TEXT[code]) lang = code;
+        }
+      }
+      if (!TEXT[lang]) return;
+      var t = TEXT[lang];
+      document.documentElement.lang = lang;
+      document.getElementById('label').textContent = t[0];
+      document.getElementById('title').textContent = t[1];
+      document.getElementById('text').textContent = t[2];
+      document.getElementById('home').textContent = t[3];
+      document.title = t[0] + ' · Ranomafana';
+    })();
+  </script>
+</body>
+</html>

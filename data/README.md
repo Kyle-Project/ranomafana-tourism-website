@@ -39,8 +39,8 @@ each one in all four languages (`placeholder-<slug>.jpg`, `-fr.jpg`, `-de.jpg`,
 |---|---|---|
 | `stayData` | 25 | Places to stay |
 | `eatData` | 16 | Places to eat |
-| `doData` | 14 | Things to do (the national park entry also feeds the National Park page) |
-| `itineraryData` | 6 | Itineraries, and the "What kind of traveller are you?" picker on the home page |
+| `doData` | 15 | Things to do (the national park entry also feeds the National Park page) |
+| `itineraryData` | 7 | Itineraries, and the "What kind of traveller are you?" picker on the home page |
 | `eventData` | 8 | What's on, the home page, and the When to visit month picker |
 | `blogData` | 10 | Stories, and "Field notes" on the home page |
 
@@ -69,6 +69,15 @@ wifiNote: "In the restaurant",                // replaces "Available" on the Wi-
 Keep `price` as the short range shown on the card ("160,000–200,000 Ar / night").
 Restaurants can carry `meals` too.
 
+Any stay, restaurant or thing to do can carry `mapPin: "-21.2501,47.4300"`
+(latitude, longitude) to put the pop-up's map pin on that spot. Without it the map
+searches Google for the listing's name, which can land on a namesake elsewhere in
+Madagascar: "VOI Mitsinjo Reserve" found Parc Mitsinjo at Andasibe, so that listing
+is pinned to Ambatolahy village. Every listing's map was checked on 23 Oct 2026 and
+eleven are pinned; each one's `sourceNote` says where its pin came from. A new
+listing's map is worth a look: if Google finds the wrong place, or scatters several
+pins, give it a `mapPin`.
+
 ## Stories (`blogData`)
 
 Every story card opens a reader. Its text is the `body` list — one line per
@@ -85,8 +94,11 @@ sample: true,      // shows "This story is a draft and will be updated" — dele
 
 The ten stories carry sample text written only from facts already on the site.
 Rewrite freely; delete `sample: true` (and set `status: "published"`) when a story
-is final. Story titles, categories and read times follow the design canvas — see
-"Stories and the design canvas" in `CLAUDE.md`.
+is final. Only `status: "published"` stories are listed on the site (on the Stories
+page and in the home "Field notes"); a draft still opens from its own link,
+`index.html#blog/<slug>`, so it can be previewed. The read time ("4 min") is worked
+out from the body, so there is no field for it. Story titles and categories follow
+the design canvas — see "Stories and the design canvas" in `CLAUDE.md`.
 
 ## Fields that drive more than one page
 
@@ -106,6 +118,31 @@ is final. Story titles, categories and read times follow the design canvas — s
   `"Yes, both days"` or `"Not needed"`.
 - **Itinerary `stops`** are written `"When — what"`. The part before ` — ` becomes
   the time on the Itineraries page; put each stop in its own string.
+- **Itinerary `costs`** — what the plan costs, added up from the fees in this file
+  and shown per adult (alone, and with 2 or 4 sharing a guide):
+  `costs: ["park", "guide:Talatakely", "do:station-thermale", "?do:night-walk"]`.
+  `"park"` is one day's entry and community fee (write it once per park day);
+  `"guide:Talatakely"` names a row of the park's `guideFees` by how its walk starts;
+  `"specialist"` is the specialist guide fee; `"do:<slug>"` is that thing to do's
+  price per person (one with no number, "Contact for rates", shows as "price on
+  request"). A `?` in front lists it as optional, outside the total. The totals
+  follow any change to the fees by themselves.
+
+## Settings and newer fields (23 October 2026)
+
+- **`TEAM_EMAIL`**, at the top of the data file: the address behind every "Ask the
+  team" and "Email the team" link. Change it there and nowhere else.
+- **`EXCHANGE`**, next to it: Ariary per euro and per dollar, with the month
+  (`asOf`). It drives the rough "≈ 11 € · 12 $" guide beside fees. Update it from
+  xe.com (mid-market rate) now and then; `npm run check` warns after six months.
+- **`toGate`** on a stay: kilometres to the park gate by road, rounded to 0.5
+  (`toGate: 6`). It shows on the card and in the pop-up and drives the "Nearest
+  the park" sort. Measure a new place on OpenStreetMap or with a car's odometer.
+- **`contact.whatsapp`**: the number(s) the business says take WhatsApp, e.g.
+  `whatsapp: "+261 34 07 324 33"` (several joined by ` / `). It adds a "Message on
+  WhatsApp" button with a short hello. Only on the business's own word.
+- **`asOf`**: the month a listing's details were gathered, `asOf: "2026-10"`. The
+  pop-up shows "Details as of October 2026"; `npm run check` warns after a year.
 
 ## The `verified` flag
 

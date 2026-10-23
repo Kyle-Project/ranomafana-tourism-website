@@ -69,7 +69,7 @@ the properties' real details. All are now replaced with sourced ones.
 
 | Listing | Was | Now | Source |
 |---|---|---|---|
-| **Karibotel** | +261 34 05 601 20 · karibotel.ranomafana@gmail.com | **+261 33 15 629 50 · resa.karibotelranomafana@gmail.com · karibotel.com** | FHORM |
+| **Karibotel** | +261 34 05 601 20 · karibotel.ranomafana@gmail.com | **+261 33 15 629 50 · resa.karibotelranomafana@gmail.com** · karibotel.com (no longer exists, 22 Oct 2026; link removed) | FHORM |
 | **Setam Lodge** | +261 34 02 092 06 · setamlodge@yahoo.fr · setam-lodge.com | **+261 34 07 324 33 · setamlodgeresa@gmail.com · setam-madagascar.com/en/lodge** | Property site + FHORM |
 | **Kambana Résidence** | +261 34 04 882 11 · kambana.residence@gmail.com | **+261 34 95 932 86 · navalona40@gmail.com · kambanaresidence.com** | Property site + Aty Aminay |
 | **Soa Lodge** | +261 34 50 112 40 · soaguestlodge@gmail.com | **+261 33 15 279 90 / +261 32 02 279 90 · soa_guesthouse@outlook.com** | Tripadvisor |
@@ -227,6 +227,8 @@ been removed — the charge exists but isn't published anywhere.
   Restaurant, and Lemur Coffee (the café side of Lemur Coffee Hotel).
 - **Real Tripadvisor ratings on every listing that has one** — now shown on the
   cards. Best-rated stay is Soa Lodge (4.1); best-rated restaurant is Grenat (4.0).
+  *(22 Oct 2026: those "best-rated" labels were taken out of the descriptions, since
+  other listings now rate higher.)*
 - **Varibolo**: +261 34 90 823 03, inflatable Sea Eagle kayaks, 2–3 hour guided
   tours with all equipment, guides speaking English, French and Malagasy.
 - **Au Domnatur** was formerly **Domaine Nature** — noted in the listing so the two
@@ -332,7 +334,7 @@ and the photo gets a credit.
 
 ### Added 13 October 2026 — Centre ValBio photos
 
-Four more on the **Center Val Bio** listing, recompressed to under 500 KB: the buildings from
+Four more on the **Centre ValBio** listing, recompressed to under 500 KB: the buildings from
 the air beside the road and the terrace at dusk (second and third in its pop-up), then the
 team in green shirts with the CVB sign and World Lemur Day (after the existing team photo).
 Originals are in `photo-originals/2026-10-13 Centre ValBio/`, along with a video
@@ -371,6 +373,10 @@ did not name the falls.
 **variboloresto72@gmail.com**. The number is now the second one on Varibolo Resto and the
 kayaking listing; the Gmail address is in Varibolo Resto's contact note (info@varibolo.com
 stays the main email). Say if either is out of date.
+
+**22 Oct 2026:** varibolo.com no longer exists, so info@varibolo.com cannot receive mail.
+The banner's variboloresto72@gmail.com is now the email on Varibolo Resto and the kayaking
+listing, and the website link is gone from both.
 
 **Your answers, 19 Oct 2026.** The craft shop is a local shop by the park entrance, not
 Varibolo's, so it has its own listing, **Park Entrance Craft Shop** (a descriptive name,
@@ -533,3 +539,35 @@ Ministère du Tourisme register · Tripadvisor · Petit Futé · Booking.com ·
 Madagascar National Parks · Wikivoyage · Gondwana Explorer · Aty Aminay ·
 setam-madagascar.com · kambanaresidence.com · karibotel.com · lemurcoffeehotel.com ·
 nytanana-hotel-ranomafana.mg · manjahotel.com · varibolo.com · olonala.org
+
+## 9. From the website review — what only you can supply (23 Oct 2026)
+
+The review (<https://claude.ai/artifact/Wm3UVW8U6hhzFoMpiJL2Ep>) is now worked into
+the site wherever the facts were already known. These need you or a partner:
+
+- **Team inbox.** Every "Ask the team" link still goes to Centre ValBio's
+  ask@valb.io. Does CVB answer for the guide? If not, give me the address to use
+  (it is one line, `TEAM_EMAIL`, at the top of the data file).
+- **Peace Corps.** The footer now carries a disclaimer and a local copy of the logo.
+  Ask Peace Corps Madagascar whether the logo may be used and whether they want
+  other wording.
+- **Search engines.** Once the site is live, sign in to Google Search Console and
+  Bing Webmaster Tools and submit `sitemap.xml` (about ten minutes).
+- **Know before you go** has no answers yet for: the nearest cash machine, which
+  phone networks have signal, the nearest clinic, emergency numbers, and what to
+  tip guides and porters.
+- **The 5,000 Ar community fee.** "Where your money goes" can only say MNP calls it
+  a communal tax. What does it pay for? (Ask MNP or the Commune, in writing.)
+- **Weekly events.** Is the Saturday artisan market real, and on which day? Do the
+  Wednesday Centre ValBio talks still run? Until confirmed they show only on What's
+  on.
+- **Distances.** Soa Lodge is the one stay with no "km to the park gate": where is
+  it? The other 24 were measured on OpenStreetMap (the village centre is about
+  5.8 km from the gate by road).
+- **WhatsApp.** Only Setam Lodge, Au Domnatur and Kambana have a WhatsApp button,
+  from their own notes. Ask the others which number takes WhatsApp.
+- **World Lemur Festival.** After 30 October, tell me the 2027 date (the last Friday
+  of October is 29 October 2027) and anything about the programme.
+- **Partner projects** from the review: bookable village experiences, guide
+  profiles, multi-day trek prices, a volunteer morning, a fact sheet for tour
+  operators, a visitor counter, and who looks after the site after your service.

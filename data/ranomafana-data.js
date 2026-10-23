@@ -30,6 +30,17 @@
                   meals: [ "Breakfast: 10,000 Ar", … ]
                   features: [ "Swimming pool", … ]   shown as "Good to know"
                   wifiNote    where the Wi-Fi reaches ("In the restaurant")
+                  toGate      km to the park gate by road, rounded to 0.5 km.
+                              Measured 23 Oct 2026 with OpenStreetMap routing from
+                              the listing's place on OpenStreetMap (Minerva: from
+                              Centrest, opposite; Kambana: from Tsararano hamlet;
+                              Forêt Australe: from Ambatolahy). Shown in the pop-up
+                              and used by the "Nearest the park" sort.
+                contact.whatsapp   the number(s) the owner says take WhatsApp,
+                              joined by " / ". Adds a "Message on WhatsApp" button.
+                              Only from the business itself or Kyle's notes.
+                asOf        "2026-10": the month the listing's details were
+                              gathered. Shown as "Details as of October 2026".
 
    eat          type: 'malagasy' | 'french' | 'snack' | 'hotel'
                 rating (string; '—' when unrated), price ('$'..'$$$')
@@ -47,11 +58,16 @@
                 ({ group, note, species[] }), circuits[], tips[].
 
    itineraries  days, badge, level, title, desc, stops[], bestFor, parkTicket
+                costs[]: what the plan costs, worked out from the fees in this
+                file. "park" = one day's entry + community fee; "guide:Talatakely"
+                (start of a guideFees walk) or "specialist" = a guide fee shared
+                by the group; "do:<slug>" = that activity's price per person. A
+                "?" in front marks an optional extra.
                 Each stop is "When — what"; the text before " — " shows as
                 the time on the Itineraries page.
    events       title, whenLabel, dayBadge, monthBadge, recurring, desc, date,
                 months[] (1–12: which months it falls in, for When to visit)
-   blog         title, excerpt, category, readMins, status, img
+   blog         title, excerpt, category, status, img (read time is worked out from the body)
    ============================================================================ */
 
 /* Fallback used when a listing has no photograph of its own yet.
@@ -60,13 +76,23 @@
 const PLACEHOLDER_STAY = "images/ranomafana-primary.jpg";
 const PLACEHOLDER_NATURE = "images/great-ranomafana-nature-shot.jpg";
 
+/* The team's email address. Every "Email the team" and "Ask the team" link on
+   the site points here, so this is the one place to change it. */
+const TEAM_EMAIL = "ask@valb.io";
+
+/* The rough euro and dollar guide shown beside Ariary prices ("≈ 11 € · 12 $").
+   One dated rate, not a live feed. Update it now and then from xe.com (the
+   mid-market rate), with the month in asOf. */
+const EXCHANGE = { eur: 5080, usd: 4530, asOf: "2026-10", source: "XE mid-market rate, 23 Oct 2026" };
+
 /* ---------------------------------------------------------------- 1. STAYS */
 const stayData = [
   {
     slug: "centre-valbio",
-    name: "Center Val Bio",
+    name: "Centre ValBio",
     type: "eco",
     price: "Contact for research / guest rates",
+    toGate: 0.5,
     rating: "4.4 (Tripadvisor, 13 reviews)",
     img: "images/main-view-cvb.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
@@ -99,13 +125,14 @@ const stayData = [
     name: "Setam Lodge",
     type: "eco",
     price: "160,000–200,000 Ar / night",
+    toGate: 1,
     rating: "3.6 (Tripadvisor, 294 reviews)",
     img: "images/setam-lodge-aerial-view.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the restaurant",
     verified: true,
-    sourceNote: "Contacts corrected from setam-madagascar.com and FHORM. The previously listed setam-lodge.com and setamlodge@yahoo.fr are not the property's own details. Rates, meals, amenities and the 800 m distance from Kyle's notes ('Website information.docx', received 11 Oct 2026), which confirm the phone and email.",
-    desc: "Twenty bungalows on a ridge an 800 m walk from the park entrance — the closest place to stay — each looking out over the rainforest canopy, with private hot-water bathrooms and a 70-seat bar and restaurant. The largest and most established lodge in Ranomafana.",
+    sourceNote: "Contacts corrected from setam-madagascar.com and FHORM. The previously listed setam-lodge.com and setamlodge@yahoo.fr are not the property's own details. Rates, meals, amenities and the 800 m distance from Kyle's notes ('Website information.docx', received 11 Oct 2026), which confirm the phone and email. 'The closest place to stay' was dropped on 23 Oct 2026: Centre ValBio, beside the gate, is closer (OpenStreetMap).",
+    desc: "Twenty bungalows on a ridge an 800 m walk from the park entrance, each looking out over the rainforest canopy, with private hot-water bathrooms and a 70-seat bar and restaurant. The largest and most established lodge in Ranomafana.",
     rooms: [
       { type: "Double", price: "160,000 Ar" },
       { type: "Twin", price: "160,000 Ar" },
@@ -113,7 +140,7 @@ const stayData = [
       { type: "Family (1 double + 2 single beds)", price: "200,000 Ar" }
     ],
     meals: ["Breakfast: 25,000 Ar continental, 30,000 Ar American", "Lunch or dinner: 50,000 Ar set price"],
-    features: ["Closest stay to the park entrance, an 800 m walk", "Fan or heater in the rooms", "Look for giraffe-necked weevils in the grounds"],
+    features: ["An 800 m walk from the park entrance", "Fan or heater in the rooms", "Look for giraffe-necked weevils in the grounds"],
     gallery: [
       { src: "images/setam-lodge-aerial-view.jpg", alt: "Aerial view of Setam Lodge" },
       { src: "images/setam-lodge-entrance-path.jpg", alt: "Entrance path at Setam Lodge" },
@@ -122,6 +149,7 @@ const stayData = [
     ],
     contact: {
       phone: "+261 34 07 324 33",
+      whatsapp: "+261 34 07 324 33",
       email: "setamlodgeresa@gmail.com",
       website: "https://setam-madagascar.com/en/lodge",
       social: "https://www.facebook.com/setam.lodge/",
@@ -133,11 +161,13 @@ const stayData = [
     name: "Forêt Australe",
     type: "eco",
     price: "60,000–80,000 Ar / night",
+    toGate: 1.5,
     rating: "3.1 (Tripadvisor, 24 reviews)",
     img: "images/foret-astral-exterior.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the rooms",
     verified: true,
+    asOf: "2026-10",
     sourceNote: "Name corrected from 'Foret Astral' — Tripadvisor and Petit Futé both list it as Forêt Australe, at Ambatolahy. Rates, meals, Wi-Fi and features from Kyle's notes (received 11 Oct 2026), which confirm the phone and email. His notes also give www.groupeaustralhotel.com and www.foretaustral.groupeaustralhotel.com, but neither address resolved when checked on 11 Oct 2026, so no website is linked.",
     desc: "Eco-lodge at Ambatolahy immersed in nature, with rustic bungalows along the Namorona River near Ranomafana National Park, a private walking circuit, and lemurs in the hotel's own trees.",
     rooms: [
@@ -159,11 +189,13 @@ const stayData = [
     name: "Au Domnatur",
     type: "eco",
     price: "120,000–210,000 Ar / night",
+    toGate: 4,
     rating: "3.3 (Tripadvisor, 77 reviews)",
     img: "images/au-domnatur-exterior.webp",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the restaurant",
     verified: true,
+    asOf: "2026-10",
     sourceNote: "Formerly trading as Domaine Nature — the two names are the same property, not separate listings. Rates, meals, amenities, both WhatsApp numbers and the email from Kyle's notes (received 11 Oct 2026); the email is spelled there with a double r ('audomnaturr'). +261 32 42 952 37 was listed before his notes and is kept as a third number. The earlier 'from about €40' rate is replaced.",
     desc: "Quiet nature lodge 2 km above Ranomafana, with comfortable bungalows and rooms amid lush vegetation, canopy views, waterfalls in the grounds, a bar and an on-site restaurant. Previously known as Domaine Nature.",
     rooms: [
@@ -182,18 +214,20 @@ const stayData = [
       { src: "images/au-domnatur-view.jpg", alt: "Forest view from Au Domnatur" },
       { src: "images/au-domnatur-view-2.jpg", alt: "Nature view at Au Domnatur" }
     ],
-    contact: { phone: "+261 34 41 846 32 / +261 32 03 611 19 / +261 32 42 952 37", email: "audomnaturr@gmail.com", website: "", social: "https://www.facebook.com/p/H%C3%B4tel-Au-Domnatur-Ranomafana-100005913759576/", note: "The first two numbers are on WhatsApp. Also bookable on Hotels.com and Expedia." }
+    contact: { phone: "+261 34 41 846 32 / +261 32 03 611 19 / +261 32 42 952 37", whatsapp: "+261 34 41 846 32 / +261 32 03 611 19", email: "audomnaturr@gmail.com", website: "", social: "https://www.facebook.com/p/H%C3%B4tel-Au-Domnatur-Ranomafana-100005913759576/", note: "The first two numbers are on WhatsApp. Also bookable on Hotels.com and Expedia." }
   },
   {
     slug: "hotel-thermal",
     name: "Hotel Thermal",
     type: "hotel",
     price: "270,000–350,000 Ar / night",
+    toGate: 6,
     rating: "4.0 (Tripadvisor, 157 reviews)",
     img: "images/hotel-thermal-exterior.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the rooms",
     verified: true,
+    asOf: "2026-10",
     sourceNote: "+261 34 75 512 26 corroborated by FHORM and Madagascar-Tourisme. Kyle's notes (received 11 Oct 2026) give +261 32 12 511 26, so both are listed. His notes spell the email 'thermal@leralais.mg' — taken as a typo for the FHORM-listed thermal@lerelais.mg. Seasonal rates, the three hot-spring tubs, bar, spa, gym, nature walk and river access from his notes.",
     desc: "Three-star hotel beside the thermal springs, run by Association Le Relais Madagascar. Twenty-one air-conditioned rooms (2 single, 7 twin, 12 double) with hot water, satellite TV, Wi-Fi and safes, a 60-seat restaurant terrace, and three private hot-spring tubs of its own, plus a spa, gym and bar.",
     rooms: [
@@ -217,11 +251,13 @@ const stayData = [
     name: "Centrest Sejour Hotel",
     type: "hotel",
     price: "165,000–220,000 Ar / night",
+    toGate: 5.5,
     rating: "3.5 (Tripadvisor, 212 reviews)",
     img: "images/centrest-sejour-exterior.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the restaurant",
     verified: true,
+    asOf: "2026-10",
     sourceNote: "Rates, meals and facilities from Kyle's notes (received 11 Oct 2026), which confirm +261 34 16 524 33 and the email. His notes say both 'breakfast included' and a 25,000–30,000 Ar breakfast price; read here as breakfast included with the room, priced for non-residents — confirm.",
     desc: "Mid-range hotel at the entrance to Ranomafana village, with spacious rooms, private bungalows, a swimming pool, sports courts and Malagasy and French dining. Registered with the Ministry of Tourism.",
     rooms: [
@@ -247,6 +283,7 @@ const stayData = [
     name: "Cristo Hotel",
     type: "hotel",
     price: "Contact property for rates",
+    toGate: 12,
     rating: "3.9 (Tripadvisor, 49 reviews)",
     img: "images/cristo-hotel-exterior.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
@@ -265,11 +302,13 @@ const stayData = [
     name: "Grenat Hotel",
     type: "hotel",
     price: "80,000–120,000 Ar / night",
+    toGate: 6,
     rating: "3.7 (Tripadvisor, 114 reviews)",
     img: "images/grenat-hotel-exterior.webp",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the rooms",
     verified: true,
+    asOf: "2026-10",
     sourceNote: "Listed on Tripadvisor and Petit Futé as 'Le Grenat' / 'Hôtel Grenat', on the main road at the village exit. Rates, meals, features, +261 34 12 780 84 and legrenatran@gmail.com from Kyle's notes (received 11 Oct 2026). Previously listed: +261 34 20 622 88 (kept as a second number) and hotelgrenat@gmail.com (replaced by his email) — confirm which still work.",
     desc: "Comfortable mid-range accommodation on the main road at the edge of the village, with river and rainforest views, private en-suite rooms, guarded private parking, and one of the better-reviewed restaurants in Ranomafana.",
     rooms: [
@@ -294,11 +333,13 @@ const stayData = [
     name: "Chez Gaspard",
     type: "guest",
     price: "70,000–140,000 Ar / night",
+    toGate: 6,
     rating: "3.7 (Tripadvisor, 148 reviews)",
     img: "images/chez-gaspard-exterior.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the restaurant",
     verified: true,
+    asOf: "2026-10",
     sourceNote: "Rates, meals, features, hotelchezgaspard@gmail.com and +261 32 01 115 15 from Kyle's notes (received 11 Oct 2026), which confirm the 034 and 033 numbers. Previously listed: +261 38 02 115 02 (kept as a fourth number) and bungalow@hotelchezgaspard.com (replaced by his email).",
     desc: "Budget-friendly guest house and restaurant behind the Catholic church, run by the Priests of the Sacred Heart of Jesus — a long-standing favourite with backpackers and guided tour groups, with a garden gazebo and water feature and a bar showing sport.",
     rooms: [
@@ -323,13 +364,14 @@ const stayData = [
     name: "Karibotel",
     type: "hotel",
     price: "143,000–168,000 Ar / night",
+    toGate: 4.5,
     rating: "3.2 (Tripadvisor, 57 reviews)",
     img: "images/placeholder-karibotel.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the rooms",
     verified: true,
     photoNeeded: true,
-    sourceNote: "Contacts corrected via FHORM. The previously listed +261 34 05 601 20 and karibotel.ranomafana@gmail.com were not the property's details. Room rates, pool, Wi-Fi and meal prices from Kyle's notes (received 11 Oct 2026, where it is called 'Karibou Hotel'), which confirm the phone. They replace the earlier 16,000 Ar à la carte / 30,000 Ar set-menu figures. His notes also say 'breakfast included' alongside a breakfast price — confirm.",
+    sourceNote: "Contacts corrected via FHORM. The previously listed +261 34 05 601 20 and karibotel.ranomafana@gmail.com were not the property's details. Room rates, pool, Wi-Fi and meal prices from Kyle's notes (received 11 Oct 2026, where it is called 'Karibou Hotel'), which confirm the phone. They replace the earlier 16,000 Ar à la carte / 30,000 Ar set-menu figures. His notes also say 'breakfast included' alongside a breakfast price — confirm. The website karibotel.com no longer exists (checked 22 Oct 2026: no such domain), so its link was removed.",
     gallery: [
       { src: "images/karibotel-exterior.jpg", fallback: "images/placeholder-karibotel.jpg", alt: "Karibotel exterior" },
       { src: "images/karibotel-room.jpg", fallback: "images/placeholder-karibotel.jpg", alt: "Room at Karibotel" },
@@ -344,27 +386,28 @@ const stayData = [
     ratesNote: "Breakfast is included.",
     meals: ["Breakfast: from 8,000 Ar", "Lunch or dinner: from 45,000 Ar"],
     features: ["Swimming pool and pool area"],
-    contact: { phone: "+261 33 15 629 50", email: "resa.karibotelranomafana@gmail.com", website: "http://www.karibotel.com", social: "https://www.facebook.com/karibotelranomafana/", note: "Tsararano, Ranomafana — just before the village on the RN25." }
+    contact: { phone: "+261 33 15 629 50", email: "resa.karibotelranomafana@gmail.com", website: "", social: "https://www.facebook.com/karibotelranomafana/", note: "Tsararano, Ranomafana — just before the village on the RN25." }
   },
   {
     slug: "kambana-residence",
     name: "Kambana Résidence",
     type: "guest",
-    price: "From about €21 / night",
+    price: "From about 105,000 Ar (€21) / night",
+    toGate: 4.5,
     rating: "—",
     img: "images/placeholder-kambana-residence.jpg",
     wifi: false, hotWater: true, restaurant: true, parking: true,
     verified: true,
     photoNeeded: true,
-    sourceNote: "Contacts corrected via the property's own site and Aty Aminay. The previously listed +261 34 04 882 11 and kambana.residence@gmail.com were not the property's details.",
+    sourceNote: "Contacts corrected via the property's own site and Aty Aminay. The previously listed +261 34 04 882 11 and kambana.residence@gmail.com were not the property's details. '8 km from the park' was dropped on 23 Oct 2026: Tsararano is about 4.5 km from the gate by road (OpenStreetMap routing). The Ariary price is the property's €21 at the XE rate of 23 Oct 2026, rounded.",
     gallery: [
       { src: "images/kambana-residence-exterior.jpg", fallback: "images/placeholder-kambana-residence.jpg", alt: "Kambana Résidence exterior" },
       { src: "images/kambana-residence-room.jpg", fallback: "images/placeholder-kambana-residence.jpg", alt: "Room at Kambana Résidence" },
       { src: "images/kambana-residence-restaurant.jpg", fallback: "images/placeholder-kambana-residence.jpg", alt: "Restaurant or common area at Kambana Résidence" },
       { src: "images/kambana-residence-view.jpg", fallback: "images/placeholder-kambana-residence.jpg", alt: "View from Kambana Résidence" }
     ],
-    desc: "Self-catering apartments at Tsararano, 2 km from the village and 8 km from the park, overlooking the rocky Namorona gorge. Three units (Laguna, Tequila, Vinho) or the whole apartment for up to 15. Solar electricity, hot water, 24-hour reception; meals with two hours' notice.",
-    contact: { phone: "+261 34 95 932 86", email: "navalona40@gmail.com", website: "https://www.kambanaresidence.com/", social: "https://www.facebook.com/profile.php?id=100064152995497", note: "WhatsApp +261 34 36 588 09. Staff arrange transport and park entry reservations." }
+    desc: "Self-catering apartments at Tsararano, 2 km from the village, overlooking the rocky Namorona gorge. Three units (Laguna, Tequila, Vinho) or the whole apartment for up to 15. Solar electricity, hot water, 24-hour reception; meals with two hours' notice.",
+    contact: { phone: "+261 34 95 932 86", whatsapp: "+261 34 36 588 09", email: "navalona40@gmail.com", website: "https://www.kambanaresidence.com/", social: "https://www.facebook.com/profile.php?id=100064152995497", note: "WhatsApp +261 34 36 588 09. Staff arrange transport and park entry reservations." }
   },
   {
     slug: "soa-lodge",
@@ -384,7 +427,7 @@ const stayData = [
       { src: "images/soa-lodge-restaurant.jpg", fallback: "images/placeholder-soa-lodge.jpg", alt: "Restaurant or common area at Soa Lodge" },
       { src: "images/soa-lodge-view.jpg", fallback: "images/placeholder-soa-lodge.jpg", alt: "View from Soa Lodge" }
     ],
-    desc: "The best-rated place to stay in Ranomafana. A small family-run lodge with three hand-painted bungalows on a hillside, panoramic views, a restaurant and bar, laundry, and packed lunches for park days. Expect a lot of steps.",
+    desc: "A small family-run lodge with three hand-painted bungalows on a hillside, panoramic views, a restaurant and bar, laundry, and packed lunches for park days. Expect a lot of steps.",
     rooms: [
       { type: "Double", price: "100,000 Ar" },
       { type: "Triple", price: "130,000 Ar" },
@@ -399,13 +442,14 @@ const stayData = [
     slug: "minerva-apart",
     name: "Minerva Apart",
     type: "guest",
-    price: "Around $35 / night",
+    price: "About 160,000 Ar ($35) / night",
+    toGate: 5.5,
     rating: "9.0/10 (Booking.com, 36 reviews)",
     img: "images/placeholder-minerva-apart.jpg",
     wifi: true, hotWater: true, restaurant: false, parking: false,
     verified: true,
     photoNeeded: true,
-    sourceNote: "Confirmed to exist — trades as 'Minerva Apart', formerly Chez Minerva. On the RN25 opposite Hôtel Centrest.",
+    sourceNote: "Confirmed to exist — trades as 'Minerva Apart', formerly Chez Minerva. On the RN25 opposite Hôtel Centrest. The Ariary price is Booking.com's $35 at the XE rate of 23 Oct 2026, rounded.",
     gallery: [
       { src: "images/minerva-apart-exterior.jpg", fallback: "images/placeholder-minerva-apart.jpg", alt: "Minerva Apart exterior" },
       { src: "images/minerva-apart-room.jpg", fallback: "images/placeholder-minerva-apart.jpg", alt: "Room at Minerva Apart" },
@@ -420,6 +464,7 @@ const stayData = [
     name: "La Palmeraie",
     type: "guest",
     price: "Double 20,000 Ar · triple 30,000 Ar · family 40,000 Ar",
+    toGate: 5.5,
     rating: "3.5 (Petit Futé)",
     img: "images/placeholder-la-palmeraie.jpg",
     wifi: false, hotWater: true, restaurant: false, parking: false,
@@ -440,20 +485,22 @@ const stayData = [
     name: "Manja Hotel",
     type: "hotel",
     price: "70,000–90,000 Ar / night",
+    toGate: 6.5,
     rating: "3.2 (Tripadvisor, 114 reviews)",
     img: "images/placeholder-manja-hotel.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the restaurant",
     verified: true,
+    asOf: "2026-10",
     photoNeeded: true,
-    sourceNote: "Website manjahotel.com confirmed earlier. Rates, meals, the three phone numbers and hotelmanja@gmail.com from Kyle's notes (received 11 Oct 2026); they replace the 58,000–67,000 Ar Wikivoyage range. His notes mark the phones '(Check all)' and give www.hotelmanja.mg as the website, but that address did not resolve when checked on 11 Oct 2026, so manjahotel.com stays.",
+    sourceNote: "Website manjahotel.com confirmed earlier. Rates, meals, the three phone numbers and hotelmanja@gmail.com from Kyle's notes (received 11 Oct 2026); they replace the 58,000–67,000 Ar Wikivoyage range. His notes mark the phones '(Check all)' and give www.hotelmanja.mg as the website, but that address did not resolve when checked on 11 Oct 2026, so manjahotel.com stays. '4 km from the park' was dropped on 23 Oct 2026: by road it is about 6.5 km (OpenStreetMap routing).",
     gallery: [
       { src: "images/manja-hotel-exterior.jpg", fallback: "images/placeholder-manja-hotel.jpg", alt: "Manja Hotel exterior" },
       { src: "images/manja-hotel-room.jpg", fallback: "images/placeholder-manja-hotel.jpg", alt: "Room at Manja Hotel" },
       { src: "images/manja-hotel-restaurant.jpg", fallback: "images/placeholder-manja-hotel.jpg", alt: "Restaurant or common area at Manja Hotel" },
       { src: "images/manja-hotel-view.jpg", fallback: "images/placeholder-manja-hotel.jpg", alt: "View from Manja Hotel" }
     ],
-    desc: "Hillside bungalows overlooking the village, 4 km from the park, with a bar and one of Ranomafana's busiest restaurants. Rooms are dated but clean — hot water, mosquito net, fan. A steep climb to the rooms, with porter help available.",
+    desc: "Hillside bungalows overlooking the village, with a bar and one of Ranomafana's busiest restaurants. Rooms are dated but clean — hot water, mosquito net, fan. A steep climb to the rooms, with porter help available.",
     rooms: [
       { type: "Double", price: "70,000–80,000 Ar" },
       { type: "Twin", price: "70,000–80,000 Ar" },
@@ -467,11 +514,13 @@ const stayData = [
     name: "Ihary Hotel",
     type: "hotel",
     price: "70,000–120,000 Ar / night",
+    toGate: 6,
     rating: "3.0 (Tripadvisor, 47 reviews)",
     img: "images/placeholder-ihary-hotel.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the restaurant",
     verified: true,
+    asOf: "2026-10",
     photoNeeded: true,
     sourceNote: "Landline +261 20 76 296 96 via Gondwana Explorer; Facebook page confirmed. Rates, meals, three mobile numbers, iharyhotel@gmail.com, hot water, Wi-Fi in the restaurant and river access from Kyle's notes (received 11 Oct 2026). Older reviews reported cold showers; his notes say hot water, so it is now marked available. His notes do not mention the swimming pool earlier sources describe — confirm it is still there.",
     gallery: [
@@ -494,6 +543,7 @@ const stayData = [
     name: "Ny Tanàna Hotel",
     type: "hotel",
     price: "Budget — contact for rates",
+    toGate: 8.5,
     rating: "3.8 (Tripadvisor, 13 reviews)",
     img: "images/placeholder-ny-tanana-hotel.jpg",
     wifi: false, hotWater: true, restaurant: true, parking: false,
@@ -514,6 +564,7 @@ const stayData = [
     name: "Lemur Coffee Hotel",
     type: "hotel",
     price: "Contact property for rates",
+    toGate: 7,
     rating: "—",
     img: "images/placeholder-lemur-coffee-hotel.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
@@ -534,11 +585,13 @@ const stayData = [
     name: "Chez Jose",
     type: "guest",
     price: "45,000–60,000 Ar / night",
+    toGate: 6,
     rating: "—",
     img: "images/chez-jose-exterior.avif",
     wifi: true, hotWater: true, restaurant: false, parking: true,
     wifiNote: "In some rooms",
     verified: true,
+    asOf: "2026-10",
     sourceNote: "Rates, Wi-Fi, bar, coffee, the conference room and 'no dining' from Kyle's notes (received 11 Oct 2026), which confirm the phone and email; the restaurant flag is now off. His notes describe it as strongly Catholic — it is run by ECAR, the Catholic Church in Madagascar.",
     desc: "Centrally located, low-cost Catholic guest house in Ranomafana village — simple overnight lodging within walking distance of the thermal baths, with a bar and coffee but no meals.",
     rooms: [
@@ -561,6 +614,7 @@ const stayData = [
     name: "Coin d’or",
     type: "guest",
     price: "About 20,000–50,000 Ar / night",
+    toGate: 5.5,
     rating: "—",
     img: "images/placeholder-coin-dor.jpg",
     wifi: false, hotWater: true, restaurant: true, parking: false,
@@ -582,12 +636,14 @@ const stayData = [
     name: "Akamasoa Guest House",
     type: "guest",
     price: "Budget — contact for rates",
+    toGate: 7,
     rating: "—",
     img: "images/placeholder-akamasoa-guest-house.jpg",
     wifi: false, hotWater: true, restaurant: false, parking: true,
     verified: true,
     photoNeeded: true,
-    sourceNote: "Local listing from Kyle's own records — not present on Tripadvisor or Petit Futé.",
+    sourceNote: "Local listing from Kyle's own records — not present on Tripadvisor or Petit Futé. Map pin from the 'Akamasoa' bed and breakfast on Google Maps (checked 23 Oct 2026): a Google search for the listing's full name landed on Soa Lodge.",
+    mapPin: "-21.2632,47.4646",   // Google Maps "Akamasoa"; the name search finds Soa Lodge
     gallery: [
       { src: "images/akamasoa-guest-house-exterior.jpg", fallback: "images/placeholder-akamasoa-guest-house.jpg", alt: "Akamasoa Guest House exterior" },
       { src: "images/akamasoa-guest-house-room.jpg", fallback: "images/placeholder-akamasoa-guest-house.jpg", alt: "Room at Akamasoa Guest House" },
@@ -602,6 +658,7 @@ const stayData = [
     name: "Chez Liantsoa",
     type: "guest",
     price: "Budget — contact for rates",
+    toGate: 5.5,
     rating: "—",
     img: "images/placeholder-chez-liantsoa.jpg",
     wifi: true, hotWater: false, restaurant: false, parking: false,
@@ -622,11 +679,13 @@ const stayData = [
     name: "Mirary Hotel",
     type: "hotel",
     price: "50,000–80,000 Ar / night",
+    toGate: 6,
     rating: "—",
     img: "images/placeholder-mirary-hotel.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the rooms",
     verified: true,
+    asOf: "2026-10",
     photoNeeded: true,
     sourceNote: "Facebook page confirmed to exist. Rates, Wi-Fi, river access, the hotely-style restaurant and +261 34 38 530 71 from Kyle's notes (received 11 Oct 2026), so it is now marked verified on his authority. The older +261 34 19 554 02 and miraryhotel@gmail.com from his folder remain unconfirmed and are left out.",
     gallery: [
@@ -649,12 +708,15 @@ const stayData = [
     name: "Chez Rose",
     type: "guest",
     price: "About 20,000–50,000 Ar / night",
+    toGate: 6,
     rating: "—",
     img: "images/placeholder-chez-rose.jpg",
     wifi: false, hotWater: true, restaurant: false, parking: false,
     verified: true,
+    asOf: "2026-10",
     photoNeeded: true,
-    sourceNote: "Local listing from Kyle's notes (received 11 Oct 2026), one of four village 'hotelies' (hostels) with Hotel In-Kavana, Coin d'or and La Palmeraie. Price, hot water, shared bathrooms, no Wi-Fi and no meals are what he gave for all four. No contact details or exact location yet.",
+    sourceNote: "Local listing from Kyle's notes (received 11 Oct 2026), one of four village 'hotelies' (hostels) with Hotel In-Kavana, Coin d'or and La Palmeraie. Price, hot water, shared bathrooms, no Wi-Fi and no meals are what he gave for all four. No contact details yet. Map pin from 'Chez Rose' on OpenStreetMap, in the village centre (checked 23 Oct 2026): a Google search for the name landed on Chez Jose.",
+    mapPin: "-21.2605,47.4552",   // OpenStreetMap "Chez Rose"; the name search finds Chez Jose
     gallery: [
       { src: "images/chez-rose-exterior.jpg", fallback: "images/placeholder-chez-rose.jpg", alt: "Chez Rose exterior" },
       { src: "images/chez-rose-room.jpg", fallback: "images/placeholder-chez-rose.jpg", alt: "Room at Chez Rose" },
@@ -670,12 +732,15 @@ const stayData = [
     name: "Hotel In-Kavana",
     type: "guest",
     price: "About 20,000–50,000 Ar / night",
+    toGate: 6,
     rating: "—",
     img: "images/placeholder-hotel-in-kavana.jpg",
     wifi: false, hotWater: true, restaurant: false, parking: false,
     verified: true,
+    asOf: "2026-10",
     photoNeeded: true,
-    sourceNote: "Local listing from Kyle's notes (received 11 Oct 2026), one of four village 'hotelies' (hostels) with Chez Rose, Coin d'or and La Palmeraie. Price, hot water, shared bathrooms, no Wi-Fi and no meals are what he gave for all four. No contact details or exact location yet.",
+    sourceNote: "Local listing from Kyle's notes (received 11 Oct 2026), one of four village 'hotelies' (hostels) with Chez Rose, Coin d'or and La Palmeraie. Price, hot water, shared bathrooms, no Wi-Fi and no meals are what he gave for all four. No contact details yet. Map pin from 'Hotel Kavana' on OpenStreetMap, in the village centre, taken to be this hotely (checked 23 Oct 2026): a Google search for the name landed on Kambana Résidence.",
+    mapPin: "-21.2604,47.4549",   // OpenStreetMap "Hotel Kavana"; the name search finds Kambana
     gallery: [
       { src: "images/hotel-in-kavana-exterior.jpg", fallback: "images/placeholder-hotel-in-kavana.jpg", alt: "Hotel In-Kavana exterior" },
       { src: "images/hotel-in-kavana-room.jpg", fallback: "images/placeholder-hotel-in-kavana.jpg", alt: "Room at Hotel In-Kavana" },
@@ -698,16 +763,18 @@ const eatData = [
     price: "$$",
     img: "images/varibolo-resto-exterior.jpg",
     verified: true,
+    asOf: "2026-10",
     photoNeeded: false,
     gallery: [
       { src: "images/varibolo-resto-exterior.jpg", alt: "Varibolo's green-painted restaurant and kayak shop, with its Kayak Ranomafana banner" },
       { src: "images/varibolo-resto-dining.jpg", alt: "The covered dining terrace at Varibolo Resto, with red-checked tablecloths and a view over banana plants to the forest" },
       { src: "images/varibolo-resto-dish.jpg", fallback: "images/placeholder-varibolo-resto.jpg", alt: "A dish at Varibolo Resto" }
     ],
-    sourceNote: "Kayak trips are self-guided, per Kyle's notes (received 11 Oct 2026), which also give info@varibolo.com and the US number. The earlier 'guided descents' wording is corrected. Frontage and terrace photos from Kyle, received 19 Oct 2026; he confirmed the terrace is Varibolo Resto's, and that Varibolo Resto is not the Park Entrance Restaurant. The banner in the frontage photo ('Varibolo Resto — Kayak Ranomafana') gives the second number, 034 37 737 13, and variboloresto72@gmail.com.",
+    sourceNote: "Kayak trips are self-guided, per Kyle's notes (received 11 Oct 2026), which also give info@varibolo.com and the US number. The earlier 'guided descents' wording is corrected. Frontage and terrace photos from Kyle, received 19 Oct 2026; he confirmed the terrace is Varibolo Resto's, and that Varibolo Resto is not the Park Entrance Restaurant. The banner in the frontage photo ('Varibolo Resto — Kayak Ranomafana') gives the second number, 034 37 737 13, and variboloresto72@gmail.com. On 22 Oct 2026 the domain varibolo.com no longer existed, so info@varibolo.com (from Kyle's notes) cannot receive mail: the banner's Gmail address replaced it and the website link was removed. Map pin from 'Varibolo Resto' on OpenStreetMap, by the park entrance next to Gîte Le Rianala (checked 23 Oct 2026): a Google search for the name scattered ten pins across the valley.",
+    mapPin: "-21.2559,47.4218",   // OpenStreetMap "Varibolo Resto", by the park entrance
     desc: "Riverside restaurant beside the Namorona serving Malagasy and American dishes for breakfast, lunch and dinner — run by Varibolo, Ranomafana's kayak operator, which rents kayaks for self-guided trips down the river.",
     highlights: ["Malagasy and American menu", "Breakfast, lunch and dinner", "Kayak trips arranged by the same team"],
-    contact: { phone: "+261 34 90 823 03 / +261 34 37 737 13", email: "info@varibolo.com", website: "http://www.varibolo.com/", social: "", note: "Staff speak English, French and Malagasy. US number: +1 516 479 1889. The restaurant's banner also gives variboloresto72@gmail.com." }
+    contact: { phone: "+261 34 90 823 03 / +261 34 37 737 13", email: "variboloresto72@gmail.com", website: "", social: "", note: "Staff speak English, French and Malagasy. US number: +1 516 479 1889." }
   },
   {
     slug: "chez-gaspard-restaurant",
@@ -730,7 +797,7 @@ const eatData = [
     price: "$$–$$$",
     img: "images/grenat-hotel-restaurant.jpg",
     verified: true,
-    desc: "Hotel restaurant with rainforest views on the main road at the village exit, serving traditional rice dishes alongside French-influenced plates. The best-rated restaurant in Ranomafana.",
+    desc: "Hotel restaurant with rainforest views on the main road at the village exit, serving traditional rice dishes alongside French-influenced plates.",
     highlights: ["Zebu steak", "Rice and laoka", "Terrace seating"],
     meals: ["Breakfast: from 10,000 Ar", "Lunch or dinner: 15,000–30,000 Ar"],
     contact: { phone: "+261 34 12 780 84 / +261 34 20 622 88", email: "legrenatran@gmail.com", website: "", social: "https://www.facebook.com/p/Hotel-Grenat-Ranomafana-100063624831201/" }
@@ -749,7 +816,7 @@ const eatData = [
       { src: "images/manja-restaurant-dining.jpg", fallback: "images/placeholder-manja-restaurant.jpg", alt: "Dining room at Hotel Manja Restaurant" },
       { src: "images/manja-restaurant-dish.jpg", fallback: "images/placeholder-manja-restaurant.jpg", alt: "A dish at Hotel Manja Restaurant" }
     ],
-    desc: "Busy, inexpensive hillside restaurant — the most-reviewed place to eat in Ranomafana and a reliable budget option, with an exceptional voanjobory. Wi-Fi reaches the restaurant, which is more than can be said for the rooms.",
+    desc: "Busy, inexpensive hillside restaurant and a reliable budget option, with an exceptional voanjobory. Wi-Fi reaches the restaurant, which is more than can be said for the rooms.",
     highlights: ["Voanjobory (Bambara groundnut stew)", "Malagasy set plates", "Wi-Fi in the dining room"],
     meals: ["Breakfast: from 8,000 Ar", "Lunch or dinner: 12,000–25,000 Ar"],
     contact: { phone: "+261 33 09 010 22 / +261 34 13 176 22 / +261 32 07 540 03", email: "hotelmanja@gmail.com", website: "https://manjahotel.com/", social: "" }
@@ -802,7 +869,7 @@ const eatData = [
     desc: "Restaurant at Karibotel, Tsararano, just before the village, on the hillside above the river.",
     highlights: ["Terrace above the river", "Breakfast from 8,000 Ar"],
     meals: ["Breakfast: from 8,000 Ar", "Lunch or dinner: from 45,000 Ar"],
-    contact: { phone: "+261 33 15 629 50", email: "resa.karibotelranomafana@gmail.com", website: "http://www.karibotel.com", social: "https://www.facebook.com/karibotelranomafana/" }
+    contact: { phone: "+261 33 15 629 50", email: "resa.karibotelranomafana@gmail.com", website: "", social: "https://www.facebook.com/karibotelranomafana/" }
   },
   {
     slug: "centrest-restaurant",
@@ -901,7 +968,8 @@ const eatData = [
     img: "images/placeholder-park-entrance-restaurant.jpg",
     verified: true,
     photoNeeded: true,
-    sourceNote: "Wikivoyage: unnamed restaurant near the park reception, around 15,000 Ar per main.",
+    sourceNote: "Wikivoyage: unnamed restaurant near the park reception, around 15,000 Ar per main. Map pin at the park reception, where OpenStreetMap and Google Maps agree (checked 23 Oct 2026): a Google search for the name scattered thirteen pins across the valley.",
+    mapPin: "-21.2563,47.4212",   // the park reception; the name search scatters pins
     gallery: [
       { src: "images/park-entrance-restaurant-exterior.jpg", fallback: "images/placeholder-park-entrance-restaurant.jpg", alt: "Park Entrance Restaurant frontage" },
       { src: "images/park-entrance-restaurant-dining.jpg", fallback: "images/placeholder-park-entrance-restaurant.jpg", alt: "Dining room at Park Entrance Restaurant" },
@@ -1116,8 +1184,9 @@ const doData = [
     img: "images/voi-mitsinjo-waterfall.jpg",
     verified: false,
     photoNeeded: false,
-    sourceNote: "Local knowledge, from Kyle on the ground in Ranomafana. NOT the same as Association Mitsinjo at Andasibe, ~600 km north \u2014 do not \u2018correct\u2019 this entry away on that basis, as an earlier pass wrongly did. Entry rates and hours still to be confirmed with the association. Photos of the waterfall, its viewing shelter and the path from Kyle, received 20 Oct 2026; the wildlife slot is still waiting for a photo. Waterfall access (a 30-minute walk from Ambatolahy village, or a four-hour hike through the forest) from Kyle, 20 Oct 2026.",
-    desc: "Community-managed forest reserve at Ambatolahy, run by VOI Ambatolahy \u2014 the local community association that holds the forest management transfer. Guided day and night walks with community guides, with fees going directly to the village rather than to the national park. The reserve's twin waterfall is a 30-minute walk from Ambatolahy village, or a four-hour hike through the forest.",
+    sourceNote: "Local knowledge, from Kyle on the ground in Ranomafana. NOT the same as Association Mitsinjo at Andasibe, ~600 km north \u2014 do not \u2018correct\u2019 this entry away on that basis, as an earlier pass wrongly did. Entry rates and hours still to be confirmed with the association. Photos of the waterfall, its viewing shelter and the path from Kyle, received 20 Oct 2026; the wildlife slot is still waiting for a photo. Waterfall access (a 30-minute walk from Ambatolahy village, or a four-hour hike through the forest) from Kyle, 20 Oct 2026. Size (around 150 hectares of forest) from Kyle, 23 Oct 2026. The map is pinned to Ambatolahy village (OpenStreetMap) because a Google search for the name lands on Parc Mitsinjo at Andasibe.",
+    mapPin: "-21.2501,47.4300",   // Ambatolahy village; searching the name finds Andasibe
+    desc: "Community-managed forest reserve of around 150 hectares at Ambatolahy, run by VOI Ambatolahy \u2014 the local community association that holds the forest management transfer. Guided day and night walks with community guides, with fees going directly to the village rather than to the national park. The reserve's twin waterfall is a 30-minute walk from Ambatolahy village, or a four-hour hike through the forest.",
     tips: [
       "Arrange through VOI Ambatolahy \u2014 ask at Ambatolahy village or through your hotel",
       "No national park ticket needed; this is a separate community reserve",
@@ -1145,6 +1214,7 @@ const doData = [
     status: "open",
     img: "images/night-walk-tree-frog.jpg",
     verified: true,
+    asOf: "2026-10",
     sourceNote: "Price paid August 2025 for a 2-hour night walk (The Travelling Sloth trip report). The earlier 20,000–25,000 Ar figure came from 2026 fee-guide websites with no gate report behind it. Length (about an hour), booking through your guide or hotel, the brown mouse lemurs and chameleons, and the need for a private car from Kyle's notes (received 11 Oct 2026).",
     desc: "After-dark walk along the RN25 at the forest edge — the park itself closes at 17:00 — for brown mouse lemurs and many kinds of chameleon, with tree frogs and leaf-tailed geckos too. No park ticket is needed. Arrange it through your daytime park guide or your hotel.",
     gallery: [
@@ -1167,6 +1237,7 @@ const doData = [
     status: "open",
     img: "images/station-thermale-pool.jpg",
     verified: true,
+    asOf: "2026-10",
     photoNeeded: false,
     sourceNote: "Prices, opening hours and the Tuesday closure from the price and opening-hours board at the Station Thermale ticket booth, photographed by Kyle (received 11 Oct 2026): bath and pool 10,000 Ar foreigners / 2,000 Ar residents; baths 07:00–11:30 and 14:00–16:00; pool 06:00–12:00 and 13:30–16:30; pool closed every Tuesday ('Talata'); thermal cure 5,000 Ar; lodging for the sick ('hébergement pour les malades') 2,000 Ar; gîte residents 10,000 Ar per person per night (the foreigners' gîte price is faded and unreadable — about 50,000 Ar — so it is not published); relaxing massage 40,000 / 20,000 Ar. These replace the figures in his written notes (5,000 / 1,000 Ar, closed Wednesday, an evening session 19:00–21:00). Contact details removed 11 Oct 2026: the phone, email, website and Facebook page shown here were Hotel Thermal's, a different place; the pool's wall carries the Commune of Ranomafana's emblem. Rules, the private baths and the geothermal explanation from Kyle's notes (received 11 Oct 2026). They replace the Petit Futé hours (pool 06:00–18:00, baths 07:00–11:30 and 14:00–16:30), the 'sulphurous' description (his notes say the water has no sulphur smell) and 'swim cap for long hair' (his notes say everyone). The riverside restaurant was under construction 'as of 2023' in his notes. Photo removed 2026-09-12: was incorrectly using a Hotel Thermal photo — Station Thermale (the public bathhouse) and Hotel Thermal (the accommodation) are two different places.",
     gallery: [
@@ -1203,6 +1274,7 @@ const doData = [
     status: "open",
     img: "images/placeholder-thermal-massage.jpg",
     verified: true,
+    asOf: "2026-10",
     photoNeeded: true,
     sourceNote: "Kyle's notes (received 11 Oct 2026) confirm a massage room in the private baths, booked at the ticket counter. Price (relaxing massage 40,000 Ar foreigners / 20,000 Ar residents) and 'the centre does not supply massage oil' ('Tsy miantoka menaka hanorana ny centre') from the price and opening-hours board at the Station Thermale ticket booth, photographed by Kyle (received 11 Oct 2026). Contact details removed 11 Oct 2026: they were Hotel Thermal's, a different place. Photo removed 2026-09-12: was incorrectly using a Hotel Thermal photo — Station Thermale (the public bathhouse) and Hotel Thermal (the accommodation) are two different places.",
     gallery: [
@@ -1222,6 +1294,7 @@ const doData = [
     status: "open",
     img: "images/hotel-thermal-aerial.jpg",
     verified: true,
+    asOf: "2026-10",
     sourceNote: "All details from Kyle's notes (received 11 Oct 2026). These are Hotel Thermal's own pools, not the public Station Thermale, so Hotel Thermal's photos are correct here.",
     gallery: [
       { src: "images/hotel-thermal-aerial.jpg", alt: "Aerial view of Hotel Thermal and the thermal complex" },
@@ -1243,7 +1316,8 @@ const doData = [
     img: "images/placeholder-cascade-andriamamovoka.jpg",
     verified: true,
     photoNeeded: true,
-    sourceNote: "Coordinates 21°15′15″S 47°25′18″E.",
+    sourceNote: "Coordinates 21°15′15″S 47°25′18″E. Map pin at those coordinates (23 Oct 2026). Google Maps has two other places of that name, 'Chutes Andriamamovoka' by the RN25 at Ambatolahy and a 'Cascade Andriamamovoka' hiking area about 3 km further west: Kyle to confirm which is right.",
+    mapPin: "-21.2542,47.4217",   // the coordinates above (Kyle to confirm)
     gallery: [
       { src: "images/cascade-andriamamovoka-falls.jpg", fallback: "images/placeholder-cascade-andriamamovoka.jpg", alt: "Cascade Andriamamovoka" },
       { src: "images/cascade-andriamamovoka-trail.jpg", fallback: "images/placeholder-cascade-andriamamovoka.jpg", alt: "Trail to Cascade Andriamamovoka" },
@@ -1263,8 +1337,10 @@ const doData = [
     status: "open",
     img: "images/jirama-waterfall-hike-falls.jpg",
     verified: true,
+    asOf: "2026-10",
     photoNeeded: false,
-    sourceNote: "Local knowledge from the original site draft — no published source found under this name. The route (start at the public pool, about an hour upriver to the biggest waterfall on the Namorona, not visible from the road) is from Kyle's notes (received 11 Oct 2026), which describe the walk but do not name the falls. On 11 Oct 2026 Kyle identified his photos of the big granite falls as the end of this walk, and placed them on this listing, so it is now marked verified. Two more photos of the falls (high water, and the pool below) from Kyle on 20 Oct 2026.",
+    sourceNote: "Local knowledge from the original site draft — no published source found under this name. The route (start at the public pool, about an hour upriver to the biggest waterfall on the Namorona, not visible from the road) is from Kyle's notes (received 11 Oct 2026), which describe the walk but do not name the falls. On 11 Oct 2026 Kyle identified his photos of the big granite falls as the end of this walk, and placed them on this listing, so it is now marked verified. Two more photos of the falls (high water, and the pool below) from Kyle on 20 Oct 2026. Map pin at the start of the walk, the public pool (checked 23 Oct 2026): a Google search for the name scattered three waterfall and park pins.",
+    mapPin: "-21.2593,47.4516",   // the start of the walk, the public pool
     gallery: [
       { src: "images/jirama-waterfall-hike-falls.jpg", alt: "The big waterfall on the Namorona, stepping down over granite at the end of the walk from the public pool" },
       { src: "images/jirama-waterfall-hike-high-water.jpg", alt: "The big waterfall running high and brown under a blue sky" },
@@ -1286,8 +1362,10 @@ const doData = [
     status: "open",
     img: "images/namorona-kayaking-river.jpg",
     verified: true,
+    asOf: "2026-10",
     photoNeeded: false,
-    sourceNote: "Price, length, meeting point, the self-guided format, the brousse back and both phone numbers and email from Kyle's notes (received 11 Oct 2026). The earlier 'guided paddle' wording is corrected — his notes are explicit that no guide goes with you. Equipment list from varibolo.com. River photo from Kyle, 11 Oct 2026, and Varibolo's shop and its 'Kayak Ranomafana' banner on 19 Oct 2026 (the banner gives the third number); the launch and group slots are still waiting for photos.",
+    sourceNote: "Price, length, meeting point, the self-guided format, the brousse back and both phone numbers and email from Kyle's notes (received 11 Oct 2026). The earlier 'guided paddle' wording is corrected — his notes are explicit that no guide goes with you. Equipment list from varibolo.com. River photo from Kyle, 11 Oct 2026, and Varibolo's shop and its 'Kayak Ranomafana' banner on 19 Oct 2026 (the banner gives the third number); the launch and group slots are still waiting for photos. On 22 Oct 2026 the domain varibolo.com no longer existed, so info@varibolo.com was replaced by variboloresto72@gmail.com from the banner and the website link was removed. Map pin at the meeting point by the thermal pool, a kayak business on Google Maps (checked 23 Oct 2026): a Google search for the name zoomed out over the whole region.",
+    mapPin: "-21.2600,47.4521",   // the meeting point by the thermal pool
     gallery: [
       { src: "images/namorona-kayaking-river.jpg", alt: "The Namorona River winding through the valley near Ranomafana" },
       { src: "images/varibolo-resto-exterior.jpg", alt: "Varibolo's shop and restaurant, where you can book a kayak" },
@@ -1304,7 +1382,7 @@ const doData = [
       "A dry bag is worth bringing",
       "Cristo Hotel also arranges kayaking on request"
     ],
-    contact: { phone: "+261 34 90 823 03 / +261 34 37 737 13 / +1 516 479 1889", email: "info@varibolo.com", website: "http://www.varibolo.com/", social: "" }
+    contact: { phone: "+261 34 90 823 03 / +261 34 37 737 13 / +1 516 479 1889", email: "variboloresto72@gmail.com", website: "", social: "" }
   },
   {
     slug: "ranomafana-arboretum",
@@ -1316,6 +1394,7 @@ const doData = [
     status: "open",
     img: "images/placeholder-ranomafana-arboretum.jpg",
     verified: true,
+    asOf: "2026-10",
     photoNeeded: true,
     sourceNote: "Ticket price, guided loop, founder, tree and animal details from Kyle's notes (received 11 Oct 2026). Unresolved: his notes say founded 1991 by Dan Turk, an earlier source here said 1994; they say 4 km east of town but also 'a two-minute drive or 20-minute walk', which fits the earlier 2 km better. The page gives the travel times and no distance or year until confirmed. The previously listed ~$5 entry fee was an estimate and has been removed.",
     gallery: [
@@ -1337,6 +1416,7 @@ const doData = [
     status: "open",
     img: "images/cvb-front-entrance-shot.jpg",
     verified: true,
+    asOf: "2026-10",
     sourceNote: "Founding (2003, Dr Patricia Wright), staffing, talks, trainings and tours from Kyle's notes (received 11 Oct 2026).",
     desc: "Guided tour of the research station near the park entrance, founded in 2003 by primatologist Dr Patricia Wright and run today by Malagasy and American researchers and staff — labs, ongoing lemur and reforestation projects, and the story of how the park came to be protected. The centre also hosts regular talks on its research.",
     tips: ["All visits must be arranged one day in advance", "Ask about the research talks", "More on visiting at the Centre ValBio website"],
@@ -1396,7 +1476,8 @@ const doData = [
     img: "images/placeholder-village-artisan-market.jpg",
     verified: false,
     photoNeeded: true,
-    sourceNote: "No published source confirms a weekly artisan market or its day. Kambana Résidence lists 'village market exploration' as a local activity, but the day and location still need confirming on the ground.",
+    sourceNote: "No published source confirms a weekly artisan market or its day. Kambana Résidence lists 'village market exploration' as a local activity, but the day and location still need confirming on the ground. Map pin at the village marketplace on OpenStreetMap (checked 23 Oct 2026): a Google search for the name landed in Antananarivo.",
+    mapPin: "-21.2601,47.4553",   // the village marketplace; the name search finds Antananarivo
     gallery: [
       { src: "images/village-artisan-market-stalls.jpg", fallback: "images/placeholder-village-artisan-market.jpg", alt: "Stalls at the Village Artisan Market" },
       { src: "images/village-artisan-market-crafts.jpg", fallback: "images/placeholder-village-artisan-market.jpg", alt: "Crafts at the Village Artisan Market" }
@@ -1416,7 +1497,8 @@ const doData = [
     img: "images/voi-ambohimagneva-waterfall-ambony.jpg",
     verified: false,
     photoNeeded: false,
-    sourceNote: "Project in development, not yet a published visitor attraction. Replaces the earlier 'Reserve Ambohimaneva' entry. Photos added 2026-09-12 from a site visit, and four more waterfall photos on 2026-10-11 (Kyle confirmed they were taken here). Two tree-frog photos and a waterfall from Kyle on 2026-10-20; the frogs are not named. That visitor fees go directly to the village and its people is from Kyle, 20 Oct 2026. Spelling corrected to 'Ambohimagneva' 2026-09-12 per Kyle.",
+    sourceNote: "Project in development, not yet a published visitor attraction. Replaces the earlier 'Reserve Ambohimaneva' entry. Photos added 2026-09-12 from a site visit, and four more waterfall photos on 2026-10-11 (Kyle confirmed they were taken here). Two tree-frog photos and a waterfall from Kyle on 2026-10-20; the frogs are not named. That visitor fees go directly to the village and its people is from Kyle, 20 Oct 2026. Spelling corrected to 'Ambohimagneva' 2026-09-12 per Kyle. Map pin from 'Ambohimaneva Reserve' on Google Maps (checked 23 Oct 2026), on the edge of town, which sits oddly with 'roughly 3 km from town': Kyle to confirm. A Google search for the listing's name pinned the national park offices.",
+    mapPin: "-21.2563,47.4570",   // Google Maps "Ambohimaneva Reserve" (Kyle to confirm)
     gallery: [
       { src: "images/voi-ambohimagneva-waterfall-ambony.jpg", alt: "Tall waterfall inside the reserve at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-waterfall-ambany.jpg", alt: "Tall waterfall lower on the trail at VOI Ambohimagneva" },
@@ -1457,6 +1539,7 @@ const itineraryData = [
     level: "Easy",
     bestFor: "First visit, tight schedule, RN25 road-trippers",
     parkTicket: "Yes",
+    costs: ["park", "guide:Talatakely", "do:station-thermale", "?do:night-walk"],
     desc: "The classic single day: mid-morning lemur tracking on the Talatakely circuit, lunch in the village, and an afternoon soak in the thermal pool.",
     stops: [
       "08:00 — Talatakely circuit with a certified guide (book the night before; the park opens at 07:00)",
@@ -1474,6 +1557,7 @@ const itineraryData = [
     bestFor: "Most visitors — the recommended minimum stay",
     desc: "One short circuit and one deeper into primary forest, with the thermal springs, a night walk, and the arboretum in between.",
     parkTicket: "Yes, both days",
+    costs: ["park", "park", "guide:Talatakely", "guide:Vatoharanana", "do:ranomafana-arboretum", "do:night-walk", "do:hotel-thermal-pools"],
     stops: [
       "Day 1 am — Talatakely circuit",
       "Day 1 pm — Ranomafana Arboretum",
@@ -1490,6 +1574,7 @@ const itineraryData = [
     level: "Demanding",
     bestFor: "Photographers, naturalists, slow travellers",
     parkTicket: "Yes, days 1–2",
+    costs: ["park", "park", "guide:Talatakely", "guide:Valohoaka", "do:centre-valbio-tour", "?do:namorona-kayaking"],
     desc: "Three days lets you reach the quieter forest, meet the people doing the conservation work, and still have a rest afternoon.",
     stops: [
       "Day 1 — Talatakely circuit, then Centre ValBio campus tour (arrange a day ahead)",
@@ -1506,6 +1591,7 @@ const itineraryData = [
     level: "Moderate",
     bestFor: "Serious birders — ask for a birding specialist guide (220,000 Ar)",
     parkTicket: "Yes, both days",
+    costs: ["park", "park", "specialist", "specialist"],
     desc: "Ranomafana holds most of the eastern rainforest endemics. Two days on the higher circuits gives you a realistic shot at the ground-rollers and asities.",
     stops: [
       "Day 1 — Vohiparara circuit from opening time (07:00), higher-altitude forest",
@@ -1522,6 +1608,7 @@ const itineraryData = [
     level: "Easy",
     bestFor: "Travellers passing through, or a rest day between circuits",
     parkTicket: "Not needed",
+    costs: ["do:station-thermale", "?do:night-walk"],
     desc: "Everything worth doing in Ranomafana that needs no park entry fee and no certified guide — a good option if you arrive late or leave early.",
     stops: [
       "Morning — Jirama waterfall walk, upriver from the public pool",
@@ -1538,12 +1625,32 @@ const itineraryData = [
     level: "Easy",
     bestFor: "Families with children who won't manage a six-hour circuit",
     parkTicket: "Yes",
+    costs: ["park", "guide:Talatakely", "do:ranomafana-arboretum", "do:station-thermale", "do:night-walk"],
     desc: "Short walks, warm water, and animals you can actually count on seeing, sequenced so nobody is hiking through the hottest part of the day.",
     stops: [
       "08:00 — Short Talatakely loop (ask the guide for the two-hour version)",
       "11:00 — Ranomafana Arboretum (feed a chameleon)",
       "13:00 — Thermal pool",
       "18:30 — Night walk — the chameleons are the winner with kids"
+    ]
+  },
+  {
+    slug: "rainy-day",
+    badge: "RAINY DAY · NO PARK TICKET",
+    title: "When It Rains",
+    days: 1,
+    level: "Easy",
+    bestFor: "Wet-season days when the trails are too wet to walk",
+    parkTicket: "Not needed",
+    costs: ["do:centre-valbio-tour", "do:station-thermale", "?do:thermal-massage", "do:hotel-thermal-pools"],
+    desc: "Some wet-season days are too wet for the trails. Spend the morning at the park entrance, indoors with the researchers and artists, then take a taxi-brousse down to the village for the hot springs, warm in any weather.",
+    stops: [
+      "Morning — Centre ValBio research campus tour (arrange it a day ahead)",
+      "Late morning — Studio oloNala and the craft shop by the park entrance",
+      "Midday — Lunch at Varibolo Resto, by the park entrance, then a taxi-brousse down to the village",
+      "Afternoon — Station Thermale pool, warm in any weather (closed on Tuesdays)",
+      "Late afternoon — Optional massage, booked at the Station Thermale ticket counter",
+      "Evening — Hotel Thermal’s private hot-spring pools (book ahead)"
     ]
   }
 ];
@@ -1652,7 +1759,6 @@ const blogData = [
     slug: "golden-bamboo-lemur",
     title: "Spotting the Golden Bamboo Lemur",
     category: "Wildlife",
-    readMins: 6,
     status: "published",
     img: "images/ranomafana-national-park-lemur-bamboo.jpg",
     excerpt: "The species that saved this forest. Where it lives, when it feeds, and how to give yourself a real chance of seeing one.",
@@ -1672,7 +1778,6 @@ const blogData = [
     slug: "what-park-fees-cover",
     title: "What Your Park Fees Actually Pay For",
     category: "Practical",
-    readMins: 4,
     status: "draft",
     img: "images/ranomafana-national-park-trail.jpg",
     excerpt: "Entry, community tax, guide fee — three separate payments, three different destinations. A plain breakdown of where the money goes.",
@@ -1691,7 +1796,6 @@ const blogData = [
     slug: "getting-to-ranomafana",
     title: "Getting to Ranomafana: The RN25 in Plain Terms",
     category: "Practical",
-    readMins: 5,
     status: "draft",
     img: "images/voi-ambohimagneva-valley-view.jpg",
     excerpt: "From Fianarantsoa, from Tana, by taxi-brousse or chartered car — real journey times and what the road is like.",
@@ -1710,10 +1814,9 @@ const blogData = [
     slug: "when-to-visit",
     title: "When to Visit: Ranomafana Season by Season",
     category: "Practical",
-    readMins: 5,
     status: "draft",
     img: "images/voi-ambohimagneva-forest-view.jpg",
-    excerpt: "It rains here roughly 2,300 mm a year. What each season actually means for trails, wildlife activity and crowds.",
+    excerpt: "Open all year, but not the same all year: warm, wet months, cooler and drier ones, and the sweet spots in between.",
     sample: true,
     body: [
       "Ranomafana National Park is open all year. What changes with the months is the rain, the cold, and which animals are easiest to find.",
@@ -1730,7 +1833,6 @@ const blogData = [
     slug: "hiring-a-guide",
     title: "Hiring a Guide: What MNP Certification Means",
     category: "Practical",
-    readMins: 4,
     status: "draft",
     img: "images/cvb-researcher-guide.jpg",
     excerpt: "Guides are mandatory in the park. How the certification works, what a fair rate is, and how to ask for a specialist.",
@@ -1750,7 +1852,6 @@ const blogData = [
     slug: "night-walk-etiquette",
     title: "Night Walk Etiquette",
     category: "Wildlife",
-    readMins: 3,
     status: "draft",
     img: "images/satanic-leaf-gecko.jpg",
     excerpt: "Red filters, flash discipline, and why crowding a mouse lemur costs you the sighting anyway.",
@@ -1768,10 +1869,9 @@ const blogData = [
     slug: "what-to-pack",
     title: "What to Pack for a Rainforest Circuit",
     category: "Practical",
-    readMins: 4,
     status: "draft",
     img: "images/voi-ambohimagneva-hiking-trail.jpg",
-    excerpt: "Leeches, mud, and a 600-metre altitude swing in one morning. The short list that matters.",
+    excerpt: "Steep trails, rain in every season and a cash-only gate. The short list that matters.",
     sample: true,
     body: [
       "Ranomafana’s trails are steep, often wet, and a long way from a shop. The short list that matters:",
@@ -1789,10 +1889,9 @@ const blogData = [
     slug: "malagasy-dishes",
     title: "Eating in Ranomafana: Dishes Worth Ordering",
     category: "Food",
-    readMins: 5,
     status: "draft",
     img: "images/grenat-hotel-restaurant.jpg",
-    excerpt: "Romazava, ravitoto, river crayfish and rice at every meal — what to order and what things should cost.",
+    excerpt: "Rice at every meal, romazava on a cool evening, voanjobory and zebu steak: what to order and what it costs.",
     sample: true,
     body: [
       "Rice comes with almost every meal in Ranomafana, served with a laoka: the dish that goes alongside it. Here is where to start.",
@@ -1807,10 +1906,9 @@ const blogData = [
     slug: "thermal-springs-explained",
     title: "The Thermal Springs, Explained",
     category: "Culture",
-    readMins: 4,
     status: "draft",
     img: "images/station-thermale-pool.jpg",
-    excerpt: "Ranomafana means 'hot water'. The geology behind the springs, and how the colonial-era baths became a village.",
+    excerpt: "Ranomafana means 'hot water'. Why the springs don't smell of sulphur, and three ways to get in.",
     sample: true,
     body: [
       "Ranomafana means “hot water” in Malagasy, and the village is named for its springs.",
@@ -1824,7 +1922,6 @@ const blogData = [
     slug: "how-voi-works",
     title: "Community Conservation: How a VOI Works",
     category: "Conservation",
-    readMins: 7,
     status: "draft",
     img: "images/voi-ambohimagneva-guide-adrien.jpg",
     excerpt: "Madagascar's GELOSE framework hands forest management to local associations. What that looks like on the ground near Ranomafana.",

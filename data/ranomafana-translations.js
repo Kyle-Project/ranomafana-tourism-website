@@ -92,10 +92,10 @@ const LISTING_TRANSLATIONS = {
     },
     "setam-lodge": {
       "desc": {
-        "en": "Twenty bungalows on a ridge an 800 m walk from the park entrance — the closest place to stay — each looking out over the rainforest canopy, with private hot-water bathrooms and a 70-seat bar and restaurant. The largest and most established lodge in Ranomafana.",
-        "fr": "Vingt bungalows sur une crête, à 800 m à pied de l’entrée du parc — l’hébergement le plus proche —, chacun avec vue sur la canopée, salle de bain privée avec eau chaude, et un bar-restaurant de 70 couverts. Le lodge le plus grand et le plus ancien de Ranomafana.",
-        "de": "Zwanzig Bungalows auf einem Bergrücken, 800 m zu Fuß vom Parkeingang – die nächstgelegene Unterkunft –, jeder mit Blick über das Blätterdach des Regenwalds, eigenem Bad mit Warmwasser und einem Bar-Restaurant mit 70 Plätzen. Die größte und etablierteste Lodge in Ranomafana.",
-        "mg": "Bungalow roapolo eo ambony havoana, 800 m an-tongotra avy amin'ny fidirana amin'ny valan-javaboahary — ny toerana hatoriana akaiky indrindra —, samy manana fijery ny tampon'ny ala mando, efitra fandroana manokana misy rano mafana, ary bar sy trano fisakafoana misy toerana 70. Ny lodge lehibe indrindra sady efa ela indrindra eto Ranomafana."
+        "en": "Twenty bungalows on a ridge an 800 m walk from the park entrance, each looking out over the rainforest canopy, with private hot-water bathrooms and a 70-seat bar and restaurant. The largest and most established lodge in Ranomafana.",
+        "fr": "Vingt bungalows sur une crête, à 800 m à pied de l’entrée du parc, chacun avec vue sur la canopée, salle de bain privée avec eau chaude, et un bar-restaurant de 70 couverts. Le lodge le plus grand et le plus ancien de Ranomafana.",
+        "de": "Zwanzig Bungalows auf einem Bergrücken, 800 m zu Fuß vom Parkeingang, jeder mit Blick über das Blätterdach des Regenwalds, eigenem Bad mit Warmwasser und einem Bar-Restaurant mit 70 Plätzen. Die größte und etablierteste Lodge in Ranomafana.",
+        "mg": "Bungalow roapolo eo ambony havoana, 800 m an-tongotra avy amin'ny fidirana amin'ny valan-javaboahary, samy manana fijery ny tampon'ny ala mando, efitra fandroana manokana misy rano mafana, ary bar sy trano fisakafoana misy toerana 70. Ny lodge lehibe indrindra sady efa ela indrindra eto Ranomafana."
       },
       "price": {
         "en": "160,000–200,000 Ar / night",
@@ -151,26 +151,10 @@ const LISTING_TRANSLATIONS = {
         ]
       },
       "features": {
-        "en": [
-          "Closest stay to the park entrance, an 800 m walk",
-          "Fan or heater in the rooms",
-          "Look for giraffe-necked weevils in the grounds"
-        ],
-        "fr": [
-          "L’hébergement le plus proche de l’entrée du parc, à 800 m à pied",
-          "Ventilateur ou chauffage dans les chambres",
-          "Cherchez les charançons girafes dans le jardin"
-        ],
-        "de": [
-          "Die nächstgelegene Unterkunft zum Parkeingang, 800 m zu Fuß",
-          "Ventilator oder Heizung in den Zimmern",
-          "Halten Sie auf dem Gelände Ausschau nach Giraffenhalskäfern"
-        ],
-        "mg": [
-          "Ny toerana hatoriana akaiky indrindra ny fidirana amin'ny valan-javaboahary, 800 m an-tongotra",
-          "Vantilatera na fanafanana ao amin'ny efitrano",
-          "Tadiavo eny an-tokotany ireo voangory girafy"
-        ]
+        "en": ["An 800 m walk from the park entrance","Fan or heater in the rooms","Look for giraffe-necked weevils in the grounds"],
+        "fr": ["À 800 m à pied de l’entrée du parc","Ventilateur ou chauffage dans les chambres","Cherchez les charançons girafes dans le jardin"],
+        "de": ["800 m zu Fuß vom Parkeingang","Ventilator oder Heizung in den Zimmern","Halten Sie auf dem Gelände Ausschau nach Giraffenhalskäfern"],
+        "mg": ["800 m an-tongotra avy amin'ny fidirana amin'ny valan-javaboahary","Vantilatera na fanafanana ao amin'ny efitrano","Tadiavo eny an-tokotany ireo voangory girafy"]
       },
       "contact.note": {
         "en": "Same number on WhatsApp. Reservations Monday–Friday, 08:00–17:00.",
@@ -914,16 +898,16 @@ const LISTING_TRANSLATIONS = {
     },
     "kambana-residence": {
       "desc": {
-        "en": "Self-catering apartments at Tsararano, 2 km from the village and 8 km from the park, overlooking the rocky Namorona gorge. Three units (Laguna, Tequila, Vinho) or the whole apartment for up to 15. Solar electricity, hot water, 24-hour reception; meals with two hours' notice.",
-        "fr": "Appartements avec cuisine à Tsararano, à 2 km du village et 8 km du parc, surplombant les gorges rocheuses de la Namorona. Trois logements (Laguna, Tequila, Vinho) ou l’appartement entier jusqu’à 15 personnes. Électricité solaire, eau chaude, réception 24 h/24 ; repas sur demande deux heures à l’avance.",
-        "de": "Ferienwohnungen mit Küche in Tsararano, 2 km vom Ort und 8 km vom Park, mit Blick auf die felsige Schlucht der Namorona. Drei Einheiten (Laguna, Tequila, Vinho) oder die ganze Wohnung für bis zu 15 Personen. Solarstrom, Warmwasser, Rezeption rund um die Uhr; Mahlzeiten mit zwei Stunden Vorlauf.",
-        "mg": "Trano fonenana misy lakozia ao Tsararano, 2 km miala ny tanàna ary 8 km miala ny valan-javaboahary, manatrika ny hantsana vatoin'ny Namorona. Trano telo (Laguna, Tequila, Vinho) na ny trano manontolo ho an'olona 15 hatramin'ny farany. Herinaratra avy amin'ny masoandro, rano mafana, fandraisana vahiny 24 ora; sakafo raha angatahina adiny roa mialoha."
+        "en": "Self-catering apartments at Tsararano, 2 km from the village, overlooking the rocky Namorona gorge. Three units (Laguna, Tequila, Vinho) or the whole apartment for up to 15. Solar electricity, hot water, 24-hour reception; meals with two hours' notice.",
+        "fr": "Appartements avec cuisine à Tsararano, à 2 km du village, surplombant les gorges rocheuses de la Namorona. Trois logements (Laguna, Tequila, Vinho) ou l’appartement entier jusqu’à 15 personnes. Électricité solaire, eau chaude, réception 24 h/24 ; repas sur demande deux heures à l’avance.",
+        "de": "Ferienwohnungen mit Küche in Tsararano, 2 km vom Ort, mit Blick auf die felsige Schlucht der Namorona. Drei Einheiten (Laguna, Tequila, Vinho) oder die ganze Wohnung für bis zu 15 Personen. Solarstrom, Warmwasser, Rezeption rund um die Uhr; Mahlzeiten mit zwei Stunden Vorlauf.",
+        "mg": "Trano fonenana misy lakozia ao Tsararano, 2 km miala ny tanàna, manatrika ny hantsana vatoin'ny Namorona. Trano telo (Laguna, Tequila, Vinho) na ny trano manontolo ho an'olona 15 hatramin'ny farany. Herinaratra avy amin'ny masoandro, rano mafana, fandraisana vahiny 24 ora; sakafo raha angatahina adiny roa mialoha."
       },
       "price": {
-        "en": "From about €21 / night",
-        "fr": "À partir d’environ 21 € / nuit",
-        "de": "Ab etwa 21 € / Nacht",
-        "mg": "Manomboka amin'ny 21 € eo ho eo / alina"
+        "en": "From about 105,000 Ar (€21) / night",
+        "fr": "À partir d’environ 105 000 Ar (21 €) / nuit",
+        "de": "Ab etwa 105.000 Ar (21 €) / Nacht",
+        "mg": "Manomboka amin'ny 105 000 Ar (21 €) eo ho eo / alina"
       },
       "contact.note": {
         "en": "WhatsApp +261 34 36 588 09. Staff arrange transport and park entry reservations.",
@@ -960,10 +944,10 @@ const LISTING_TRANSLATIONS = {
     },
     "soa-lodge": {
       "desc": {
-        "en": "The best-rated place to stay in Ranomafana. A small family-run lodge with three hand-painted bungalows on a hillside, panoramic views, a restaurant and bar, laundry, and packed lunches for park days. Expect a lot of steps.",
-        "fr": "L’hébergement le mieux noté de Ranomafana. Un petit lodge familial avec trois bungalows peints à la main sur une colline, une vue panoramique, un restaurant et un bar, une blanchisserie et des paniers-repas pour les journées au parc. Prévoyez beaucoup de marches.",
-        "de": "Die am besten bewertete Unterkunft in Ranomafana. Eine kleine, familiengeführte Lodge mit drei handbemalten Bungalows am Hang, Panoramablick, Restaurant und Bar, Wäscheservice und Lunchpaketen für Parktage. Rechnen Sie mit vielen Stufen.",
-        "mg": "Ny toerana hatoriana tsara laza indrindra eto Ranomafana. Lodge kely tantanan'ny fianakaviana iray, misy bungalow telo voaloko tanana eo amin'ny havoana, fijery manodidina, trano fisakafoana sy bar, fanasana lamba, ary sakafo entina ho an'ny andro any amin'ny valan-javaboahary. Tohatra maro no hiakarana."
+        "en": "A small family-run lodge with three hand-painted bungalows on a hillside, panoramic views, a restaurant and bar, laundry, and packed lunches for park days. Expect a lot of steps.",
+        "fr": "Un petit lodge familial avec trois bungalows peints à la main sur une colline, une vue panoramique, un restaurant et un bar, une blanchisserie et des paniers-repas pour les journées au parc. Prévoyez beaucoup de marches.",
+        "de": "Eine kleine, familiengeführte Lodge mit drei handbemalten Bungalows am Hang, Panoramablick, Restaurant und Bar, Wäscheservice und Lunchpaketen für Parktage. Rechnen Sie mit vielen Stufen.",
+        "mg": "Lodge kely tantanan'ny fianakaviana iray, misy bungalow telo voaloko tanana eo amin'ny havoana, fijery manodidina, trano fisakafoana sy bar, fanasana lamba, ary sakafo entina ho an'ny andro any amin'ny valan-javaboahary. Tohatra maro no hiakarana."
       },
       "price": {
         "en": "100,000–180,000 Ar / night",
@@ -1075,10 +1059,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Trano fonenana malalaka 50 m² misy lakozia, eo amin'ny RN25 tandrifin'ny Centrest, misy varavarana fidirana manokana, lavarangana, lakozia kely ary fijery ny zaridaina na ny tendrombohitra. Ny tompony, Jeannot, no mikarakara mpitari-dalana sy fitaterana mankany amin'ny valan-javaboahary. Vola an-tanana ihany no raisina."
       },
       "price": {
-        "en": "Around $35 / night",
-        "fr": "Environ 35 $ / nuit",
-        "de": "Etwa 35 $ / Nacht",
-        "mg": "Manodidina ny 35 $ / alina"
+        "en": "About 160,000 Ar ($35) / night",
+        "fr": "Environ 160 000 Ar (35 $) / nuit",
+        "de": "Etwa 160.000 Ar (35 $) / Nacht",
+        "mg": "Manodidina ny 160 000 Ar (35 $) / alina"
       },
       "contact.note": {
         "en": "Book via Booking.com. Check-in 13:00, check-out 11:00. Cash payment only; pets by prior arrangement.",
@@ -1161,10 +1145,10 @@ const LISTING_TRANSLATIONS = {
     },
     "manja-hotel": {
       "desc": {
-        "en": "Hillside bungalows overlooking the village, 4 km from the park, with a bar and one of Ranomafana's busiest restaurants. Rooms are dated but clean — hot water, mosquito net, fan. A steep climb to the rooms, with porter help available.",
-        "fr": "Bungalows à flanc de colline surplombant le village, à 4 km du parc, avec un bar et l’un des restaurants les plus fréquentés de Ranomafana. Chambres datées mais propres — eau chaude, moustiquaire, ventilateur. Montée raide jusqu’aux chambres, avec porteurs disponibles.",
-        "de": "Bungalows am Hang über dem Ort, 4 km vom Park, mit Bar und einem der belebtesten Restaurants von Ranomafana. Die Zimmer sind in die Jahre gekommen, aber sauber – Warmwasser, Moskitonetz, Ventilator. Steiler Aufstieg zu den Zimmern, Träger helfen mit dem Gepäck.",
-        "mg": "Bungalow eo amin'ny havoana manatrika ny tanàna, 4 km miala ny valan-javaboahary, misy bar ary iray amin'ireo trano fisakafoana be mpanjifa indrindra eto Ranomafana. Efa antitra ny efitrano saingy madio — rano mafana, lay, vantilatera. Mideza ny fiakarana mankany amin'ny efitrano, misy mpitondra entana manampy."
+        "en": "Hillside bungalows overlooking the village, with a bar and one of Ranomafana's busiest restaurants. Rooms are dated but clean — hot water, mosquito net, fan. A steep climb to the rooms, with porter help available.",
+        "fr": "Bungalows à flanc de colline surplombant le village, avec un bar et l’un des restaurants les plus fréquentés de Ranomafana. Chambres datées mais propres — eau chaude, moustiquaire, ventilateur. Montée raide jusqu’aux chambres, avec porteurs disponibles.",
+        "de": "Bungalows am Hang über dem Ort, mit Bar und einem der belebtesten Restaurants von Ranomafana. Die Zimmer sind in die Jahre gekommen, aber sauber – Warmwasser, Moskitonetz, Ventilator. Steiler Aufstieg zu den Zimmern, Träger helfen mit dem Gepäck.",
+        "mg": "Bungalow eo amin'ny havoana manatrika ny tanàna, misy bar ary iray amin'ireo trano fisakafoana be mpanjifa indrindra eto Ranomafana. Efa antitra ny efitrano saingy madio — rano mafana, lay, vantilatera. Mideza ny fiakarana mankany amin'ny efitrano, misy mpitondra entana manampy."
       },
       "price": {
         "en": "70,000–90,000 Ar / night",
@@ -1824,10 +1808,10 @@ const LISTING_TRANSLATIONS = {
         ]
       },
       "contact.note": {
-        "en": "Staff speak English, French and Malagasy. US number: +1 516 479 1889. The restaurant's banner also gives variboloresto72@gmail.com.",
-        "fr": "L’équipe parle anglais, français et malgache. Numéro aux États-Unis : +1 516 479 1889. La banderole du restaurant indique aussi variboloresto72@gmail.com.",
-        "de": "Das Team spricht Englisch, Französisch und Madagassisch. US-Nummer: +1 516 479 1889. Auf dem Banner des Restaurants steht außerdem variboloresto72@gmail.com.",
-        "mg": "Miteny anglisy, frantsay ary malagasy ny mpiasa. Laharana any Etazonia: +1 516 479 1889. Misy ihany koa variboloresto72@gmail.com eo amin'ny sora-baventin'ny trano fisakafoanana."
+        "en": "Staff speak English, French and Malagasy. US number: +1 516 479 1889.",
+        "fr": "L’équipe parle anglais, français et malgache. Numéro aux États-Unis : +1 516 479 1889.",
+        "de": "Das Team spricht Englisch, Französisch und Madagassisch. US-Nummer: +1 516 479 1889.",
+        "mg": "Miteny anglisy, frantsay ary malagasy ny mpiasa. Laharana any Etazonia: +1 516 479 1889."
       },
       "gallery[].alt": {
         "en": [
@@ -1902,10 +1886,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Trano fisakafoan'ny Grenat Hotel"
       },
       "desc": {
-        "en": "Hotel restaurant with rainforest views on the main road at the village exit, serving traditional rice dishes alongside French-influenced plates. The best-rated restaurant in Ranomafana.",
-        "fr": "Restaurant d’hôtel avec vue sur la forêt, sur la route principale à la sortie du village, servant des plats de riz traditionnels et des assiettes d’inspiration française. Le restaurant le mieux noté de Ranomafana.",
-        "de": "Hotelrestaurant mit Blick auf den Regenwald an der Hauptstraße am Ortsausgang, mit traditionellen Reisgerichten und französisch inspirierten Tellern. Das am besten bewertete Restaurant in Ranomafana.",
-        "mg": "Trano fisakafoana ao amin'ny hotely manana fijery ny ala, eo amin'ny lalana lehibe amin'ny fivoahana ny tanàna, manome vary sy laoka nentim-paharazana sy sakafo misy fitaomana frantsay. Ny trano fisakafoana tsara laza indrindra eto Ranomafana."
+        "en": "Hotel restaurant with rainforest views on the main road at the village exit, serving traditional rice dishes alongside French-influenced plates.",
+        "fr": "Restaurant d’hôtel avec vue sur la forêt, sur la route principale à la sortie du village, servant des plats de riz traditionnels et des assiettes d’inspiration française.",
+        "de": "Hotelrestaurant mit Blick auf den Regenwald an der Hauptstraße am Ortsausgang, mit traditionellen Reisgerichten und französisch inspirierten Tellern.",
+        "mg": "Trano fisakafoana ao amin'ny hotely manana fijery ny ala, eo amin'ny lalana lehibe amin'ny fivoahana ny tanàna, manome vary sy laoka nentim-paharazana sy sakafo misy fitaomana frantsay."
       },
       "highlights": {
         "en": ["Zebu steak", "Rice and laoka", "Terrace seating"],
@@ -1928,10 +1912,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Trano fisakafoan'ny Hotel Manja"
       },
       "desc": {
-        "en": "Busy, inexpensive hillside restaurant — the most-reviewed place to eat in Ranomafana and a reliable budget option, with an exceptional voanjobory. Wi-Fi reaches the restaurant, which is more than can be said for the rooms.",
-        "fr": "Restaurant animé et bon marché à flanc de colline — l’endroit le plus commenté de Ranomafana et une valeur sûre pour les petits budgets, avec un voanjobory exceptionnel. Le Wi-Fi atteint le restaurant, ce qui n’est pas le cas des chambres.",
-        "de": "Belebtes, günstiges Restaurant am Hang – das meistbewertete Lokal in Ranomafana und eine verlässliche Wahl für kleines Budget, mit hervorragendem Voanjobory. Das WLAN reicht bis ins Restaurant, was man von den Zimmern nicht sagen kann.",
-        "mg": "Trano fisakafoana be mpanjifa sady mora vidy eo amin'ny havoana — ilay be fanehoan-kevitra indrindra eto Ranomafana ary safidy azo antoka ho an'ny tsy manam-bola be, misy voanjobory tsara mihoatra. Tonga hatrany amin'ny trano fisakafoana ny Wi-Fi, fa tsy hatrany amin'ny efitrano."
+        "en": "Busy, inexpensive hillside restaurant and a reliable budget option, with an exceptional voanjobory. Wi-Fi reaches the restaurant, which is more than can be said for the rooms.",
+        "fr": "Restaurant animé et bon marché à flanc de colline, une valeur sûre pour les petits budgets, avec un voanjobory exceptionnel. Le Wi-Fi atteint le restaurant, ce qui n’est pas le cas des chambres.",
+        "de": "Belebtes, günstiges Restaurant am Hang und eine verlässliche Wahl für kleines Budget, mit hervorragendem Voanjobory. Das WLAN reicht bis ins Restaurant, was man von den Zimmern nicht sagen kann.",
+        "mg": "Trano fisakafoana be mpanjifa sady mora vidy eo amin'ny havoana, ary safidy azo antoka ho an'ny tsy manam-bola be, misy voanjobory tsara mihoatra. Tonga hatrany amin'ny trano fisakafoana ny Wi-Fi, fa tsy hatrany amin'ny efitrano."
       },
       "highlights": {
         "en": ["Voanjobory (Bambara groundnut stew)", "Malagasy set plates", "Wi-Fi in the dining room"],
@@ -3037,10 +3021,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Tahiry VOI Mitsinjo"
       },
       "desc": {
-        "en": "Community-managed forest reserve at Ambatolahy, run by VOI Ambatolahy — the local community association that holds the forest management transfer. Guided day and night walks with community guides, with fees going directly to the village rather than to the national park. The reserve's twin waterfall is a 30-minute walk from Ambatolahy village, or a four-hour hike through the forest.",
-        "fr": "Réserve forestière gérée par la communauté à Ambatolahy, administrée par le VOI Ambatolahy — l’association communautaire locale titulaire du transfert de gestion de la forêt. Balades de jour et de nuit avec des guides communautaires ; les droits vont directement au village et non au parc national. Sa double cascade est à 30 minutes à pied du village d’Ambatolahy, ou à quatre heures de randonnée à travers la forêt.",
-        "de": "Von der Gemeinde verwaltetes Waldreservat in Ambatolahy, geführt von VOI Ambatolahy – dem örtlichen Gemeindeverein, dem die Verwaltung des Waldes übertragen wurde. Geführte Tag- und Nachtwanderungen mit Gemeinde-Guides; die Gebühren gehen direkt an das Dorf statt an den Nationalpark. Der doppelte Wasserfall des Reservats liegt 30 Gehminuten vom Dorf Ambatolahy entfernt, oder vier Stunden Wanderung durch den Wald.",
-        "mg": "Ala tahiry tantanan'ny fiaraha-monina ao Ambatolahy, tantanan'ny VOI Ambatolahy — ny fikambanan'ny fiaraha-monina eo an-toerana nomena ny fitantanana ny ala. Fitsangatsanganana atoandro sy alina miaraka amin'ny mpitari-dalana avy amin'ny fiaraha-monina; mankany amin'ny tanàna mivantana ny sarany fa tsy any amin'ny valan-javaboahary. Azo tratrarina amin'ny dia an-tongotra 30 minitra avy ao an-tanànan'Ambatolahy ny riandrano kambana ao amin'ny tahiry, na amin'ny dia an-tongotra adiny efatra mamakivaky ny ala."
+        "en": "Community-managed forest reserve of around 150 hectares at Ambatolahy, run by VOI Ambatolahy — the local community association that holds the forest management transfer. Guided day and night walks with community guides, with fees going directly to the village rather than to the national park. The reserve's twin waterfall is a 30-minute walk from Ambatolahy village, or a four-hour hike through the forest.",
+        "fr": "Réserve forestière d’environ 150 hectares gérée par la communauté à Ambatolahy, administrée par le VOI Ambatolahy — l’association communautaire locale titulaire du transfert de gestion de la forêt. Balades de jour et de nuit avec des guides communautaires ; les droits vont directement au village et non au parc national. Sa double cascade est à 30 minutes à pied du village d’Ambatolahy, ou à quatre heures de randonnée à travers la forêt.",
+        "de": "Von der Gemeinde verwaltetes Waldreservat von rund 150 Hektar in Ambatolahy, geführt von VOI Ambatolahy – dem örtlichen Gemeindeverein, dem die Verwaltung des Waldes übertragen wurde. Geführte Tag- und Nachtwanderungen mit Gemeinde-Guides; die Gebühren gehen direkt an das Dorf statt an den Nationalpark. Der doppelte Wasserfall des Reservats liegt 30 Gehminuten vom Dorf Ambatolahy entfernt, oder vier Stunden Wanderung durch den Wald.",
+        "mg": "Ala tahiry manodidina ny 150 hektara tantanan'ny fiaraha-monina ao Ambatolahy, tantanan'ny VOI Ambatolahy — ny fikambanan'ny fiaraha-monina eo an-toerana nomena ny fitantanana ny ala. Fitsangatsanganana atoandro sy alina miaraka amin'ny mpitari-dalana avy amin'ny fiaraha-monina; mankany amin'ny tanàna mivantana ny sarany fa tsy any amin'ny valan-javaboahary. Azo tratrarina amin'ny dia an-tongotra 30 minitra avy ao an-tanànan'Ambatolahy ny riandrano kambana ao amin'ny tahiry, na amin'ny dia an-tongotra adiny efatra mamakivaky ny ala."
       },
       "price": {
         "en": "Contact VOI Ambatolahy for entry and guide rates",
@@ -4281,6 +4265,78 @@ const LISTING_TRANSLATIONS = {
         ]
       }
     },
+    "rainy-day": {
+      "badge": {
+        "en": "RAINY DAY · NO PARK TICKET",
+        "fr": "JOUR DE PLUIE · SANS BILLET DU PARC",
+        "de": "REGENTAG · OHNE PARKTICKET",
+        "mg": "ANDRO MISY ORANA · TSY MILA TAPAKILAN'NY VALAN-JAVABOAHARY"
+      },
+      "title": {
+        "en": "When It Rains",
+        "fr": "Quand il pleut",
+        "de": "Wenn es regnet",
+        "mg": "Rehefa avy ny orana"
+      },
+      "level": {
+        "en": "Easy",
+        "fr": "Facile",
+        "de": "Leicht",
+        "mg": "Mora"
+      },
+      "bestFor": {
+        "en": "Wet-season days when the trails are too wet to walk",
+        "fr": "Les jours de saison des pluies où les sentiers sont trop détrempés",
+        "de": "Tage in der Regenzeit, an denen die Wege zu nass sind",
+        "mg": "Andro amin'ny vanim-potoanan'ny orana rehefa lena loatra ny lalana"
+      },
+      "parkTicket": {
+        "en": "Not needed",
+        "fr": "Pas nécessaire",
+        "de": "Nicht nötig",
+        "mg": "Tsy ilaina"
+      },
+      "desc": {
+        "en": "Some wet-season days are too wet for the trails. Spend the morning at the park entrance, indoors with the researchers and artists, then take a taxi-brousse down to the village for the hot springs, warm in any weather.",
+        "fr": "Certains jours de saison des pluies, les sentiers sont impraticables. Passez la matinée à l’entrée du parc, à l’abri chez les chercheurs et les artistes, puis descendez au village en taxi-brousse pour les sources chaudes, agréables par tous les temps.",
+        "de": "An manchen Tagen der Regenzeit sind die Wege zu nass. Verbringen Sie den Vormittag am Parkeingang, drinnen bei den Forschern und Künstlern, und fahren Sie dann mit dem Taxi-Brousse hinunter ins Dorf zu den heißen Quellen, die bei jedem Wetter warm sind.",
+        "mg": "Misy andro amin'ny vanim-potoanan'ny orana izay lena loatra ny lalana. Laniana eo am-bavahadin'ny valan-javaboahary ny maraina, ao anaty trano miaraka amin'ireo mpikaroka sy mpanakanto, avy eo midina any an-tanàna amin'ny taxi-brousse ho any amin'ny rano mafana, mafana na inona na inona toetrandro."
+      },
+      "stops": {
+        "en": [
+          "Morning — Centre ValBio research campus tour (arrange it a day ahead)",
+          "Late morning — Studio oloNala and the craft shop by the park entrance",
+          "Midday — Lunch at Varibolo Resto, by the park entrance, then a taxi-brousse down to the village",
+          "Afternoon — Station Thermale pool, warm in any weather (closed on Tuesdays)",
+          "Late afternoon — Optional massage, booked at the Station Thermale ticket counter",
+          "Evening — Hotel Thermal’s private hot-spring pools (book ahead)"
+        ],
+        "fr": [
+          "Matin — Visite du campus de recherche de Centre ValBio (à organiser la veille)",
+          "Fin de matinée — Studio oloNala et la boutique d’artisanat à l’entrée du parc",
+          "Midi — Déjeuner au Varibolo Resto, à l’entrée du parc, puis taxi-brousse jusqu’au village",
+          "Après-midi — Piscine de la Station Thermale, chaude par tous les temps (fermée le mardi)",
+          "Fin d’après-midi — Massage en option, à réserver au guichet de la Station Thermale",
+          "Soir — Bassins privés de l’Hôtel Thermal (sur réservation)"
+        ],
+        "de": [
+          "Vormittags — Führung über den Forschungscampus von Centre ValBio (einen Tag vorher anmelden)",
+          "Später Vormittag — Studio oloNala und der Kunsthandwerksladen am Parkeingang",
+          "Mittags — Mittagessen im Varibolo Resto am Parkeingang, dann mit dem Taxi-Brousse hinunter ins Dorf",
+          "Nachmittags — Becken der Station Thermale, warm bei jedem Wetter (dienstags geschlossen)",
+          "Später Nachmittag — Auf Wunsch eine Massage, am Schalter der Station Thermale buchen",
+          "Abends — Die privaten Thermalbecken des Hotel Thermal (vorher reservieren)"
+        ],
+        "mg": [
+          "Maraina — Fitsidihana ny toeram-pikarohana Centre ValBio (alamino iray andro mialoha)",
+          "Faran'ny maraina — Studio oloNala sy ny fivarotana asa-tanana eo am-bavahadin'ny valan-javaboahary",
+          "Mitataovovonana — Sakafo atoandro ao amin'ny Varibolo Resto, eo am-bavahadin'ny valan-javaboahary, avy eo midina any an-tanàna amin'ny taxi-brousse",
+          "Tolakandro — Dobon'ny Station Thermale, mafana na inona na inona toetrandro (mihidy ny talata)",
+          "Faran'ny tolakandro — Fanorana raha tianao, alaina eo amin'ny biraon'ny Station Thermale",
+          "Hariva — Dobo rano mafana manokan'ny Hôtel Thermal (mamandriha mialoha)"
+        ]
+      }
+    },
     "half-day-no-park": {
       "badge": {
         "en": "HALF DAY · NO PARK TICKET",
@@ -4737,10 +4793,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Rahoviana no tsara ho avy: Ranomafana isaky ny vanim-potoana"
       },
       "excerpt": {
-        "en": "It rains here roughly 2,300 mm a year. What each season actually means for trails, wildlife activity and crowds.",
-        "fr": "Il tombe ici environ 2 300 mm de pluie par an. Ce que chaque saison change pour les sentiers, l’activité des animaux et l’affluence.",
-        "de": "Hier fallen rund 2.300 mm Regen im Jahr. Was jede Jahreszeit für Wege, Tieraktivität und Andrang bedeutet.",
-        "mg": "Eo amin'ny 2 300 mm eo ho eo ny orana eto isan-taona. Inona no dikan'ny vanim-potoana tsirairay ho an'ny lalana, ny fihetsiky ny biby ary ny hamaroan'ny olona."
+        "en": "Open all year, but not the same all year: warm, wet months, cooler and drier ones, and the sweet spots in between.",
+        "fr": "Ouvert toute l’année, mais jamais tout à fait pareil : des mois chauds et humides, d’autres plus frais et plus secs, et les meilleures périodes entre les deux.",
+        "de": "Das ganze Jahr geöffnet, aber nie ganz gleich: warme, nasse Monate, kühlere und trockenere, und die besten Wochen dazwischen.",
+        "mg": "Misokatra mandavan-taona, nefa tsy mitovy foana: volana mafana sy be orana, volana mangatsiatsiaka sy maina kokoa, ary ireo fotoana tsara indrindra eo anelanelany."
       },
       "body": {
         "en": [
@@ -4897,10 +4953,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Inona no entina amin'ny dia an'ala"
       },
       "excerpt": {
-        "en": "Leeches, mud, and a 600-metre altitude swing in one morning. The short list that matters.",
-        "fr": "Sangsues, boue et 600 mètres de dénivelé en une matinée. La courte liste qui compte.",
-        "de": "Blutegel, Schlamm und 600 Höhenmeter an einem Vormittag. Die kurze Liste, auf die es ankommt.",
-        "mg": "Dintana, fotaka, ary fiakarana 600 metatra ao anatin'ny maraina iray. Ilay lisitra fohy tena ilaina."
+        "en": "Steep trails, rain in every season and a cash-only gate. The short list that matters.",
+        "fr": "Des sentiers raides, de la pluie en toute saison et un guichet qui n’accepte que les espèces. La courte liste qui compte.",
+        "de": "Steile Wege, Regen zu jeder Jahreszeit und eine Kasse, die nur Bargeld nimmt. Die kurze Liste, auf die es ankommt.",
+        "mg": "Lalana mideza, orana na inona na inona vanim-potoana, ary vola an-tanana ihany no raisina eo am-bavahady. Ilay lisitra fohy tena ilaina."
       },
       "body": {
         "en": [
@@ -4957,10 +5013,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Misakafo eto Ranomafana: sakafo mendrika haniana"
       },
       "excerpt": {
-        "en": "Romazava, ravitoto, river crayfish and rice at every meal — what to order and what things should cost.",
-        "fr": "Romazava, ravitoto, écrevisses de rivière et riz à chaque repas — que commander et combien ça doit coûter.",
-        "de": "Romazava, Ravitoto, Flusskrebse und Reis zu jeder Mahlzeit – was Sie bestellen sollten und was es kosten sollte.",
-        "mg": "Romazava, ravitoto, orana an-drano ary vary isaky ny sakafo — inona no hanafarana ary ohatrinona no tokony ho vidiny."
+        "en": "Rice at every meal, romazava on a cool evening, voanjobory and zebu steak: what to order and what it costs.",
+        "fr": "Du riz à chaque repas, un romazava par une soirée fraîche, du voanjobory et du steak de zébu : que commander, et à quel prix.",
+        "de": "Reis zu jeder Mahlzeit, Romazava an einem kühlen Abend, Voanjobory und Zebusteak: was Sie bestellen sollten und was es kostet.",
+        "mg": "Vary isaky ny sakafo, romazava amin'ny hariva mangatsiatsiaka, voanjobory ary hena omby natono: inona no hanafarana ary ohatrinona ny vidiny."
       },
       "body": {
         "en": [
@@ -5005,10 +5061,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Ny loharano mafana, hazavaina"
       },
       "excerpt": {
-        "en": "Ranomafana means 'hot water'. The geology behind the springs, and how the colonial-era baths became a village.",
-        "fr": "Ranomafana signifie « eau chaude ». La géologie derrière les sources, et comment les bains de l’époque coloniale sont devenus un village.",
-        "de": "Ranomafana bedeutet „heißes Wasser“. Die Geologie hinter den Quellen und wie aus den Bädern der Kolonialzeit ein Ort wurde.",
-        "mg": "\"Rano mafana\" no dikan'i Ranomafana. Ny jeolojia ao ambadiky ny loharano, ary ny nahatonga ny fandroana tamin'ny vanim-potoanan'ny fanjanahantany ho tanàna."
+        "en": "Ranomafana means 'hot water'. Why the springs don't smell of sulphur, and three ways to get in.",
+        "fr": "Ranomafana signifie « eau chaude ». Pourquoi les sources ne sentent pas le soufre, et trois façons d’en profiter.",
+        "de": "Ranomafana bedeutet „heißes Wasser“. Warum die Quellen nicht nach Schwefel riechen, und drei Wege ins warme Wasser.",
+        "mg": "\"Rano mafana\" no dikan'i Ranomafana. Nahoana ny loharano no tsy maimbo solifara, ary fomba telo hidirana ao."
       },
       "body": {
         "en": [

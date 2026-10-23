@@ -27,9 +27,34 @@ Live at <https://kyle-project.github.io/ranomafana-tourism-website/>, from the r
 2026). The folder is a git repository (branch `main`). Pushing `main`
 to GitHub publishes the site through GitHub Pages — `.github/workflows/publish.yml`
 runs `npm run check` first and publishes nothing if it fails, so the live site keeps
-its last good version. Only `index.html`, `data/` and `images/` go online. The repo is
+its last good version. Only `index.html`, `404.html`, `sitemap.xml`, `sw.js`,
+`data/` and `images/` go online. The repo is
 public (free GitHub Pages requires it), so notes, scripts and `photo-originals/` are
 readable on GitHub even though they are not part of the website.
+
+**Extras added at publish time (23 Oct 2026).** After copying those files, the
+workflow runs two scripts on the copy it is about to publish — never on this folder,
+so Kyle never runs them and nothing here changes:
+- `scripts/publish-photos.py` makes an 800 px copy of every JPEG/WebP wider than
+  900 px in `images/w800/`.
+- `scripts/publish-extras.mjs` writes a copy of the page for each section
+  (`…/stay/index.html` and so on, with `<base href="../">`, its own title,
+  description, canonical address and `window.START_PAGE`), adds schema.org
+  structured data from the data file, puts `window.PHOTO_FILES` (every file in
+  `images/`) and `window.SMALL_FILES` (the 800 px copies) after the
+  `PUBLISH-EXTRAS` marker in the `<head>`, gives the page's own `<img>` tags a
+  `srcset`, and rewrites `sitemap.xml` with every page.
+Both steps are `continue-on-error`: if one fails, the plain site is published as
+before. The page works without them — run locally there is no START_PAGE and no photo
+lists, so every photo slot is tried and photos load full size. Never reference
+`images/w800/` from the data or markup; it only exists on the live site. To try the
+extras locally: copy the five items and the two folders into `_site/` (git ignores
+it), run both scripts on it, open `http://localhost:8137/_site/`, then delete it.
+
+**Offline reading.** `sw.js` (registered at the end of the page script) keeps the
+page, data, translations and the two maps for reading with no signal. It fetches the
+network first, so a publish is never held back, and keeps no photos. If you change
+`sw.js`, raise the number in its `CACHE` name.
 
 **A push is a publish.** Commit and push only when Kyle asks, and run `npm run check`
 before you do. GitHub's servers are Linux: image names are case-sensitive there, which
@@ -74,13 +99,19 @@ design"):
    board `project/Main.dc.html`, its `<!-- STORIES -->` / "Field notes" section, and any
    board whose title mentions stories (list `project/canvas.json` first).
 2. Match each story card to `blogData` by **title**. New title → new entry (kebab
-   `slug`, `category`, `readMins`, `status: "draft"`, `sample: true`, a short sample
+   `slug`, `category`, `status: "draft"`, `sample: true`, a short sample
    `body` written only from facts already on the site, and an `img` from `images/` —
    never a canvas `/_blob/…` URL; if the card's photo isn't in `images/`, ask Kyle for
-   the file). Changed category, read time or excerpt → update the entry. A card whose
+   the file). Changed category or excerpt → update the entry. Ignore the canvas's
+   read times: the site works out read time from the body (there is no `readMins`
+   field any more). Keep each excerpt to what its body actually says. A card whose
    title changed: confirm with Kyle which entry it replaces before renaming (the
    title is what links them). Story text written in the canvas → the entry's `body`.
-3. The order of the home "Field notes" cards → `HOME_STORIES` in `index.html`.
+3. The order of the home "Field notes" cards → `HOME_STORIES` in `index.html`. Only
+   stories with `status: "published"` are listed (Stories page and home); a draft
+   stays off the site but opens from its own link (`#blog/<slug>`) for a preview. With
+   one published story the card is drawn wide; with none, Field notes is hidden.
+   Publishing a story is Kyle's call: don't set `published` without him.
 4. `npm run check:write`, then open a story on the site to confirm.
 
 Last synced 11 Oct 2026: the canvas's three Field notes cards (Golden Bamboo Lemur,
@@ -108,13 +139,43 @@ plan into `#itineraryDetail`. Alongside the six, `renderHome()`, `renderPark()`,
 
 ### Pages
 
-Thirteen `<section id="page-x" class="page-view">` elements, one shown at a time by
+Fourteen `<section id="page-x" class="page-view">` elements, one shown at a time by
 `switchPage(id)`: `home`, `why`, `stay`, `eat`, `do`, `park`, `itineraries`, `getting-here`,
-`when`, `guides`, `events`, `blog`, `about`. The page name lives in the address as a
+`when`, `guides`, `know`, `events`, `blog`, `about`. `know` ("Know before you go",
+added 23 Oct 2026) is the fifth Plan tab: visas, health and safety with links to
+official advice (the e-visa portal, GOV.UK, CDC, France Diplomatie, Auswärtiges
+Amt), money with the exchange-rate note, a packing list, the eight-point
+**Ranomafana promise** (the visitor code; guides, MNP and the Commune should check
+it, especially the line on fady) and a few Malagasy words. It states no visa fees or
+health rules of its own: those change, so it links out. The plan tabs on all five
+Plan pages, the drawer, the footer and the home "Before you go" strip link to it. The page name lives in the address as a
 hash (`index.html#park`), so links are plain `<a href="#park">`, the back button
 works, and pages can be shared. `PAGES`, `NAV_GROUP` (which nav item lights up) and
 `PAGE_TITLE` in the script list them. **No element may have an `id` equal to a page
 name** — the browser would scroll to it.
+
+Each listing and story pop-up has its own address too: `#stay/setam-lodge`,
+`#eat/<slug>`, `#do/<slug>`, `#blog/<slug>` (`ITEM_PAGES` and `markOpenItem()` in the
+script). Opening one swaps the address in place (no extra back-button step), closing
+it puts the page's address back, and a link to it opens that page with the pop-up.
+Each of these pop-ups has a Share button (the phone's share menu, or a copied link,
+with `?lang=` for the current language). The **slug is the link**, so don't rename
+the slug of a listing that is already online.
+
+The first language a visitor sees is, in order: `?lang=fr` (or `de`, `mg`) in the
+link, their own earlier choice from the menu (saved in the browser), their browser's
+language, then English. Only a menu choice is saved, and it drops any `?lang=`.
+
+**Search and sharing.** The `<head>` carries link-preview tags (the photo is
+`images/og-ranomafana.jpg`, a 1200×630 crop of the hero) and a canonical address.
+Those, and `sitemap.xml`, hold the full github.io address: if the site gets its own
+domain, change all of them (the publish step reads the address from the canonical
+link). On a per-page copy (`…/stay/`) the page changes in place: `switchPage()`
+writes the full path into the address, and in-page `#` links are caught by the
+click handler, because `<base href="../">` would otherwise send them to the home
+copy. `404.html` is what GitHub Pages shows for a missing
+address, in the visitor's language; an address ending in a page name (`…/stay`) is
+sent on to that page (`#stay`).
 
 The National Park page and the Things to do card both read the park's `doData`
 entry. Getting here, When to visit and Hiring a guide are editorial pages: their
@@ -187,6 +248,12 @@ Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026.
     to the village and its people (Kyle, 20 Oct 2026; also on the Ambohimagneva listing). The About page is now the team and
     the "Email the team" box only, with no Sources line of its own: those facts' sources
     joined `whySources`.
+  - **"Where your money goes"** (added 23 Oct 2026, review C3): five rows — park
+    entry, the community fee, the guide fee, the VOI reserves, beds/meals/crafts —
+    each saying who the money reaches, from facts already on the site. The amounts
+    are tokens (`{entryFee}`, `{communityFee}`, `{guideRange}`). The community fee
+    row only repeats MNP's own name for it ("a communal tax"); what it pays for is
+    not yet sourced.
   - **A Sources line** at the foot of the page.
 
   Each reason is a photo card (`WHY_CARDS` in the script). Tapping a card opens its photos
@@ -373,7 +440,13 @@ listings — was written without a native speaker and should be checked by one.
 - **VOI Mitsinjo is not Association Mitsinjo.** The reserve at Ambatolahy is run by
   VOI Ambatolahy and is a genuine local listing; the well-known Mitsinjo is at
   Andasibe, 600 km away. An earlier session deleted this listing over that confusion.
-  Do not repeat it.
+  Do not repeat it. Google makes the same mistake: its pop-up map searched the name and
+  pinned Andasibe, so the listing carries `mapPin` (Ambatolahy village, from
+  OpenStreetMap). The reserve is around 150 hectares of forest (Kyle, 23 Oct 2026).
+- **Pop-up maps search Google for the listing's name** unless it has a `mapPin`. All
+  56 were checked on 23 Oct 2026: eleven landed on another business, another town or
+  a scatter of pins, and are now pinned (sources in each `sourceNote`). Two are pinned
+  pending Kyle's word: VOI Ambohimagneva and Cascade Andriamamovoka.
 - **Duplicate keys are silent.** A repeated `gallery:` or `img:` in one object is
   legal JS and the last one quietly wins — it happened once here and hid a correct
   gallery behind a stale one. `npm run check` now fails on it.
@@ -396,7 +469,7 @@ listings — was written without a native speaker and should be checked by one.
 
 ## Current state
 
-25 stays · 16 restaurants · 15 things to do · 6 itineraries · 8 events · 10 blog
+25 stays · 16 restaurants · 15 things to do · 7 itineraries · 8 events · 10 blog
 seeds. All 25 stays are verified, against published sources or on Kyle's
 authority. The whole site — interface, page text and listings — is in English,
 French, German and Malagasy (since 12 Oct 2026).
@@ -427,7 +500,7 @@ red-eyed tree frog the night walk's card photo, put a feeding golden bamboo lemu
 home page's Canopy layer and a village beside "Without visitors…" (now on the Why visit page). Their
 descriptions name a species only where the picture makes it certain or Kyle confirmed it
 (the golden bamboo lemur and the scaly ground-roller). Four Centre ValBio
-photos the same day (aerial, terrace, two team photos) joined the Center Val Bio gallery;
+photos the same day (aerial, terrace, two team photos) joined the Centre ValBio gallery;
 originals in `photo-originals/2026-10-13 Centre ValBio/`. Details in section 7 of
 `PHOTO-AND-DATA-GAPS.md`.
 
@@ -469,8 +542,74 @@ did until 11 October 2026.
 Open editorial work is tracked in `PHOTO-AND-DATA-GAPS.md`: 6 unconfirmed listings,
 26 entries awaiting a real photograph (95 individual photo slots, all pre-wired),
 and the conflicts listed in its section 0. The team profiles on the About page are
-placeholders. Kyle's notes had headings for a donation link and a town map with no
+placeholders, hidden (`hidden` on `.team-grid`, with a note in the markup) until
+Kyle has names; the About page shows the credit line and the email box meanwhile. Kyle's notes had headings for a donation link and a town map with no
 content yet; nothing was added for them.
+
+**Review of 22 October 2026.** A tourism review and benchmark, the claude.ai
+artifact <https://claude.ai/artifact/Wm3UVW8U6hhzFoMpiJL2Ep>, lists bugs F1–F10,
+recommendations A1–E2 in a four-phase roadmap, and seven questions for Kyle; he may
+cite them by code. Phase 1 (F1–F4, F9, F10, A1, A2, A7, B3) was done on 22–23 Oct
+2026:
+- varibolo.com and karibotel.com no longer exist, so their links are gone, and
+  Varibolo's email is now the banner's variboloresto72@gmail.com (info@varibolo.com
+  could not receive mail);
+- drafts are hidden and read times worked out from the text, with four excerpts
+  rewritten to match their stories;
+- the team cards are hidden;
+- "best-rated" and "most-reviewed" were removed from Soa Lodge, Grenat and Hotel
+  Manja (the site's own ratings contradicted them) — don't add rankings back;
+- "Centre ValBio" is spelled that way everywhere, and the footer copyright uses the
+  guide's name;
+- ratings show their scale ("★ 4.4/5", "★ 9.0/10");
+- plus the sharing tags, sitemap, 404 page, language detection and item links
+  described under Pages.
+
+**The rest of the review, 23 Oct 2026** (Kyle: "fix all bugs and check all
+recommendations"):
+- **Settings at the top of the data file:** `TEAM_EMAIL` (every "Ask/Email the
+  team" link, through `data-team-mail` in the markup; still ask@valb.io until Kyle
+  confirms Centre ValBio answers for the guide — review F5) and `EXCHANGE` (one
+  dated XE mid-market rate, for the "≈ €11 · $12" guide beside fees and the
+  exchange-rate note; `npm run check` warns when it is six months old).
+- **Peace Corps:** the logo is a local copy (`images/peace-corps-logo-white.svg`)
+  and the footer carries a disclaimer (`footerDisclaimer`). Whether Peace Corps
+  Madagascar approves the logo, and wants other wording, is still Kyle's to ask (F6).
+- **Events:** the home page and When to visit show only firm dates and confirmed
+  weekly events; the two unconfirmed weekly ones stay on What's on, with their note.
+  The World Lemur Festival's `date` is 2026-10-30: after the festival, set next
+  year's date (the last Friday of October) or it drops off the home page.
+- **WhatsApp:** `contact.whatsapp` on Setam Lodge, Au Domnatur (the two numbers its
+  note names) and Kambana, from their own notes. Add others only on the business's
+  word.
+- **Park-gate distances:** `toGate` on 24 stays (not Soa Lodge, which is not on
+  OpenStreetMap), measured by OpenStreetMap routing to the park reception
+  (-21.25625, 47.42129). By road the village centre is about 5.8 km from the gate;
+  the site's "6.5 km" and "about 7 km" (MNP and Kyle's notes) were left as they are.
+  Shown on stay cards and pop-ups, and as the "Nearest the park" sort. "The closest
+  place to stay" (Setam: Centre ValBio is closer), Manja's "4 km from the park" and
+  Kambana's "8 km from the park" were taken out as wrong.
+- **Prices:** Kambana and Minerva now read Ariary first ("About 160,000 Ar ($35)"),
+  converted at the XE rate of 23 Oct 2026; their `sourceNote`s say so.
+- **Plan costs:** each itinerary's `costs` list adds up per adult (alone, 2 or 4
+  sharing a guide) from the fees in the data. "Contact for rates" items show as
+  "price on request". A seventh plan, **When It Rains** (`rainy-day`), uses only
+  existing listings; When to visit links to it in wet months.
+- **"Details as of October 2026"** (`asOf`) on the 22 listings whose details come
+  from Kyle's notes of 11 Oct 2026 or the Station Thermale price board.
+- **Home:** the "Before you go" strip now sits right under the welcome (C6).
+- **Printing:** a print style prints just the page (or open pop-up) dark on white;
+  plans have a "Print this plan" link.
+- **Search, speed, offline:** see Publishing.
+
+Still waiting on Kyle (the review's questions and partner work): who answers the
+team inbox (F5), Peace Corps logo approval (F6), Search Console sign-in and sitemap
+submission, a domain (A5), local facts for Know before you go (nearest cash machine,
+phone signal, clinic, emergency numbers, tipping), what the community fee pays for
+(C3), confirming the two weekly events (F8), coordinates or access notes for the rest
+(B5, C8), the business survey for badges (C7), and everything in the review's group
+D that needs partners (festival programme, village experiences, guide profiles, trek
+prices, volunteer day, trade kit, visitor counter).
 
 Source material — one folder per property, with the original descriptions and
 photos — lives outside this repo at `C:\Desktop\Ranomafana Website`.

@@ -2,8 +2,14 @@
 #
 # 1. Runs `npm run check`. If the data has an error, nothing is published and the
 #    live site stays as it was.
-# 2. Copies only what the browser needs (index.html, data/, images/). Notes, scripts
-#    and photo-originals/ stay in the repository but are not put on the website.
+# 2. Copies only what the browser needs (index.html, 404.html, sitemap.xml, sw.js,
+#    data/, images/). Notes, scripts and photo-originals/ stay in the repository but
+#    are not put on the website.
+# 3. Adds the extras (scripts/publish-photos.py, scripts/publish-extras.mjs): 800 px
+#    copies of large photos for phones, a copy of the page for each section
+#    (…/stay/, …/park/) so search engines can list them, structured data, the
+#    photo lists and a full sitemap. If either step fails, the plain site is
+#    published as before.
 #
 # One-time setup on github.com: Settings → Pages → Source: "GitHub Actions".
 # To republish without a change: Actions tab → "Publish site" → "Run workflow".
@@ -39,8 +45,22 @@ jobs:
       - name: Gather the public files
         run: |
           mkdir _site
-          cp -r index.html data images _site/
+          cp -r index.html 404.html sitemap.xml sw.js data images _site/
           rm -f _site/data/README.md
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Make phone-sized photos
+        continue-on-error: true
+        run: |
+          pip install --quiet pillow
+          python scripts/publish-photos.py _site/images
+
+      - name: Add page addresses, search data and photo lists
+        continue-on-error: true
+        run: node scripts/publish-extras.mjs _site
 
       - uses: actions/configure-pages@v6
 

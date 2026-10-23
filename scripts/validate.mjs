@@ -103,6 +103,55 @@ for (const [key, meta] of Object.entries(COLLECTIONS)) {
     if (row.slug && !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(row.slug)) {
       warn(`${where} slug "${row.slug}" is not kebab-case`);
     }
+
+    // The pop-up map puts its pin here; Ranomafana is about -21.26, 47.45.
+    if (row.mapPin !== undefined && !/^-2[0-2]\.\d+,4[67]\.\d+$/.test(row.mapPin)) {
+      err(`${where} mapPin "${row.mapPin}" should be "latitude,longitude" near Ranomafana, like "-21.2501,47.4300"`);
+    }
+  }
+}
+
+/* ------------------------------------- 1b. settings and the newer fields */
+/* TEAM_EMAIL and EXCHANGE sit at the top of the data file; toGate, asOf,
+   contact.whatsapp and itinerary costs were added on 23 Oct 2026. */
+{
+  const code = fs.readFileSync(DATA_JS, 'utf8');
+  const S = new Function(`${code}\n; return { TEAM_EMAIL: typeof TEAM_EMAIL === 'undefined' ? undefined : TEAM_EMAIL, EXCHANGE: typeof EXCHANGE === 'undefined' ? undefined : EXCHANGE };`)();
+  if (!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(S.TEAM_EMAIL ?? '')) err('TEAM_EMAIL at the top of the data file should be the team\'s email address');
+  const months = (ym) => { const [y, m] = ym.split('-').map(Number); const now = new Date(); return (now.getFullYear() - y) * 12 + (now.getMonth() + 1 - m); };
+  const X = S.EXCHANGE;
+  if (!X || !(X.eur > 0) || !(X.usd > 0) || !/^\d{4}-\d{2}$/.test(X.asOf ?? '')) {
+    err('EXCHANGE at the top of the data file needs eur, usd (Ariary per euro and per dollar) and asOf ("2026-10")');
+  } else if (months(X.asOf) > 6) {
+    warn(`EXCHANGE was set in ${X.asOf}: the euro and dollar guide may be stale — update it from xe.com`);
+  }
+
+  for (const [key, meta] of Object.entries({ stays: COLLECTIONS.stays, eat: COLLECTIONS.eat, do: COLLECTIONS.do })) {
+    for (const row of DATA[key] ?? []) {
+      const where = `${meta.label} "${row.name}"`;
+      if (row.toGate !== undefined && !(typeof row.toGate === 'number' && row.toGate >= 0 && row.toGate <= 40)) {
+        err(`${where} toGate should be the distance to the park gate in km, a number like 5.5`);
+      }
+      if (row.asOf !== undefined) {
+        if (!/^\d{4}-\d{2}$/.test(row.asOf)) err(`${where} asOf should look like "2026-10"`);
+        else if (months(row.asOf) > 12) warn(`${where}: its details date from ${row.asOf}, over a year ago — recheck them, then update asOf`);
+      }
+      const wa = row.contact?.whatsapp;
+      if (wa !== undefined && wa !== '' && !/^\+\d[\d ]{6,}\d( \/ \+\d[\d ]{6,}\d)*$/.test(wa)) {
+        err(`${where} contact.whatsapp "${wa}" should be numbers like "+261 34 07 324 33", several joined by " / "`);
+      }
+    }
+  }
+
+  const park = (DATA.do ?? []).find((d) => d.slug === 'ranomafana-national-park') ?? {};
+  for (const it of DATA.itineraries ?? []) {
+    for (const raw of it.costs ?? []) {
+      const key = raw.replace(/^\?/, '');
+      const ok = key === 'park' || key === 'specialist'
+        || (key.startsWith('guide:') && (park.guideFees ?? []).some((g) => g.walk.startsWith(key.slice(6))))
+        || (key.startsWith('do:') && (DATA.do ?? []).some((d) => d.slug === key.slice(3)));
+      if (!ok) err(`Itinerary "${it.title}" costs entry "${raw}" matches no fee — use park, specialist, guide:<walk> or do:<slug>`);
+    }
   }
 }
 
@@ -188,7 +237,7 @@ for (const b of DATA.blog ?? []) {
   const where = `Blog "${b.title}"`;
   for (const f of ['category', 'excerpt', 'img']) if (!b[f]) err(`${where} is missing "${f}"`);
   if (!['published', 'draft'].includes(b.status)) err(`${where} status must be published or draft`);
-  if (typeof b.readMins !== 'number') warn(`${where} readMins should be a number`);
+  if ('readMins' in b) warn(`${where} has "readMins", which is no longer used — the site works out read time from the body`);
   if (b.body !== undefined && (!Array.isArray(b.body) || b.body.some((line) => typeof line !== 'string' || !line.trim()))) {
     err(`${where} body must be a list of non-empty text lines (a line starting "## " is a sub-heading)`);
   }
@@ -207,7 +256,9 @@ const collect = (v) => {
 collect(DATA);
 
 const htmlRefs = new Set(
-  [...html.matchAll(/images\/[A-Za-z0-9._-]+/g)].map((m) => m[0].slice('images/'.length))
+  // A real file name has an extension; "images/w800/" (phone-sized copies made at
+  // publish time) is a folder, not a reference.
+  [...html.matchAll(/images\/[A-Za-z0-9._-]+\.[A-Za-z0-9]+/g)].map((m) => m[0].slice('images/'.length))
 );
 for (const r of htmlRefs) referenced.add(r);
 
@@ -328,6 +379,17 @@ const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
   for (const [lang, name] of Object.entries(dicts ? LANGS : {})) {
     const missing = Object.keys(dicts.en).filter((k) => !(k in (dicts[lang] ?? {})));
     if (missing.length) warn(`${plural(missing.length, 'text is', 'texts are')} missing from the ${name} dictionary in index.html (shown in English): ${missing.join(', ')}`);
+  }
+
+  // A key written twice in one dictionary is legal JS: the second silently wins,
+  // and the first text never shows (it happened with costHeading, 23 Oct 2026).
+  const source = html.slice(start, end);
+  const blocks = source.split(/\n {6}(en|fr|de|mg): \{/);
+  for (let i = 1; i < blocks.length; i += 2) {
+    const seen = new Map();
+    for (const m of blocks[i + 1].matchAll(/(?:^|[\s,{])([a-zA-Z][a-zA-Z0-9]*): ["'`]/gm)) seen.set(m[1], (seen.get(m[1]) ?? 0) + 1);
+    const twice = [...seen].filter(([, n]) => n > 1).map(([k]) => k);
+    if (twice.length) err(`the ${blocks[i]} dictionary in index.html defines ${twice.join(', ')} more than once — only the last one shows`);
   }
 }
 
