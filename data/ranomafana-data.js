@@ -1498,7 +1498,7 @@ const doData = [
     verified: false,
     photoNeeded: false,
     sourceNote: "Project in development, not yet a published visitor attraction. Replaces the earlier 'Reserve Ambohimaneva' entry. Photos added 2026-09-12 from a site visit, and four more waterfall photos on 2026-10-11 (Kyle confirmed they were taken here). Two tree-frog photos and a waterfall from Kyle on 2026-10-20; the frogs are not named. That visitor fees go directly to the village and its people is from Kyle, 20 Oct 2026. Spelling corrected to 'Ambohimagneva' 2026-09-12 per Kyle. Map pin from 'Ambohimaneva Reserve' on Google Maps (checked 23 Oct 2026): a park listing with its own photo and phone number (034 31 153 32, not on the site until the VOI confirms it is theirs), where the forest starts on the north edge of town, so probably the way in; 'roughly 3 km from town' may describe the walk to the circuits. A Google search for the listing's name pinned the national park offices.",
-    mapPin: "-21.2563,47.4570",   // Google Maps "Ambohimaneva Reserve" (Kyle to confirm)
+    mapPin: "-21.2563,47.4570",   // Google Maps "Ambohimaneva Reserve", the forest edge north of town
     gallery: [
       { src: "images/voi-ambohimagneva-waterfall-ambony.jpg", alt: "Tall waterfall inside the reserve at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-waterfall-ambany.jpg", alt: "Tall waterfall lower on the trail at VOI Ambohimagneva" },
