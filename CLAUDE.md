@@ -447,7 +447,8 @@ listings — was written without a native speaker and should be checked by one.
   56 were checked on 23 Oct 2026: eleven landed on another business, another town or
   a scatter of pins, and are now pinned (sources in each `sourceNote`). Two rest on
   the best evidence found rather than Kyle's word: VOI Ambohimagneva (Google's own
-  listing for the reserve, at the forest edge north of town) and Cascade
+  listing for the reserve, at the forest edge north of town; Kyle confirmed its phone
+  number, now on the listing, on 23 Oct 2026) and Cascade
   Andriamamovoka (the roadside viewpoint below the park gate; Wikidata's coordinates
   for the falls are rough). The Jirama hike is pinned at its start, the public pool.
 - **Duplicate keys are silent.** A repeated `gallery:` or `img:` in one object is

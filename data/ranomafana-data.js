@@ -1497,7 +1497,7 @@ const doData = [
     img: "images/voi-ambohimagneva-waterfall-ambony.jpg",
     verified: false,
     photoNeeded: false,
-    sourceNote: "Project in development, not yet a published visitor attraction. Replaces the earlier 'Reserve Ambohimaneva' entry. Photos added 2026-09-12 from a site visit, and four more waterfall photos on 2026-10-11 (Kyle confirmed they were taken here). Two tree-frog photos and a waterfall from Kyle on 2026-10-20; the frogs are not named. That visitor fees go directly to the village and its people is from Kyle, 20 Oct 2026. Spelling corrected to 'Ambohimagneva' 2026-09-12 per Kyle. Map pin from 'Ambohimaneva Reserve' on Google Maps (checked 23 Oct 2026): a park listing with its own photo and phone number (034 31 153 32, not on the site until the VOI confirms it is theirs), where the forest starts on the north edge of town, so probably the way in; 'roughly 3 km from town' may describe the walk to the circuits. A Google search for the listing's name pinned the national park offices.",
+    sourceNote: "Project in development, not yet a published visitor attraction. Replaces the earlier 'Reserve Ambohimaneva' entry. Photos added 2026-09-12 from a site visit, and four more waterfall photos on 2026-10-11 (Kyle confirmed they were taken here). Two tree-frog photos and a waterfall from Kyle on 2026-10-20; the frogs are not named. That visitor fees go directly to the village and its people is from Kyle, 20 Oct 2026. Spelling corrected to 'Ambohimagneva' 2026-09-12 per Kyle. Map pin from 'Ambohimaneva Reserve' on Google Maps (checked 23 Oct 2026): a park listing with its own photo and phone number, where the forest starts on the north edge of town, so probably the way in; 'roughly 3 km from town' may describe the walk to the circuits. A Google search for the listing's name pinned the national park offices. The phone (034 31 153 32) is that Google listing's; Kyle confirmed it is correct on 23 Oct 2026. Kyle also settled the size that day as 75 hectares; the VOI Ambohimagneva review pack in his source folder says 120.",
     mapPin: "-21.2563,47.4570",   // Google Maps "Ambohimaneva Reserve", the forest edge north of town
     gallery: [
       { src: "images/voi-ambohimagneva-waterfall-ambony.jpg", alt: "Tall waterfall inside the reserve at VOI Ambohimagneva" },
@@ -1525,7 +1525,7 @@ const doData = [
     ],
     desc: "A 75-hectare community-managed reserve bordering the national park, governed through a VOI partnership under Madagascar's GELOSE framework, with MNP-certified guide access and Centre ValBio research collaboration. Trails and a river waterfall site are being opened to visitors. Visitor fees go directly to the village and the people who live there.",
     tips: ["Access on foot, roughly 3 km from town", "Contact ahead — visitor access is still being established"],
-    contact: { phone: "", email: "", website: "", social: "" }
+    contact: { phone: "+261 34 31 153 32", email: "", website: "", social: "" }
   }
 ];
 
