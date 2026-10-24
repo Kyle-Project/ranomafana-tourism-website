@@ -3,7 +3,7 @@
 # 1. Runs `npm run check`. If the data has an error, nothing is published and the
 #    live site stays as it was.
 # 2. Copies only what the browser needs (index.html, 404.html, sitemap.xml, sw.js,
-#    data/, images/). Notes, scripts and photo-originals/ stay in the repository but
+#    data/, images/, documents/). Notes, scripts and photo-originals/ stay in the repository but
 #    are not put on the website.
 # 3. Adds the extras (scripts/publish-photos.py, scripts/publish-extras.mjs): 800 px
 #    copies of large photos for phones, a copy of the page for each section
@@ -45,8 +45,8 @@ jobs:
       - name: Gather the public files
         run: |
           mkdir _site
-          cp -r index.html 404.html sitemap.xml sw.js data images _site/
-          rm -f _site/data/README.md
+          cp -r index.html 404.html sitemap.xml sw.js data images documents _site/
+          rm -f _site/data/README.md _site/documents/README.md
 
       - uses: actions/setup-python@v5
         with:

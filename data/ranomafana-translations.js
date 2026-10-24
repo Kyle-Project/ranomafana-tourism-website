@@ -3104,6 +3104,88 @@ const LISTING_TRANSLATIONS = {
         ]
       }
     },
+    "birdwatching": {
+      "name": {
+        "en": "Birdwatching",
+        "fr": "Observation des oiseaux",
+        "de": "Vogelbeobachtung",
+        "mg": "Fijerena vorona"
+      },
+      "desc": {
+        "en": "Ranomafana National Park is home to 125 kinds of bird, many of them found only in Madagascar: forest ibis, ground-rollers, blue vangas and Madagascar paradise flycatchers among them. Hire a specialist bird guide at the park office. They know the calls and the nesting spots, and Vohiparara, the high forest at the park’s western edge, is the birders’ circuit.",
+        "fr": "Le parc national de Ranomafana abrite 125 espèces d’oiseaux, dont beaucoup ne vivent qu’à Madagascar : ibis huppés, rolliers terrestres, artamies azurées et tchitrecs malgaches, entre autres. Engagez un guide spécialiste des oiseaux au bureau du parc. Il connaît les chants et les sites de nidification, et Vohiparara, la forêt d’altitude à l’ouest du parc, est le circuit des ornithologues.",
+        "de": "Im Ranomafana-Nationalpark leben 125 Vogelarten, viele davon nur auf Madagaskar: Schopfibisse, Erdracken, Blauvangas und Madagaskar-Paradiesschnäpper zum Beispiel. Nehmen Sie im Parkbüro einen auf Vögel spezialisierten Guide. Er kennt die Rufe und die Nistplätze, und Vohiparara, der Höhenwald am Westrand des Parks, ist der Rundweg für Vogelkundler.",
+        "mg": "Karazam-borona 125 no monina ao amin'ny valan-javaboaharin'i Ranomafana, ary maro amin'ireo no tsy hita afa-tsy eto Madagasikara: akohon'ala, fandikalalana, vorona manga ary tsingetry, ankoatra ny hafa. Manakarama mpitari-dalana manam-pahaizana manokana momba ny vorona ao amin'ny biraon'ny valan-javaboahary. Fantany ny feon'izy ireo sy ny toerana anaovany akany, ary i Vohiparara, ala avo eo amin'ny sisiny andrefan'ny valan-javaboahary, no lalana ho an'ny mpijery vorona."
+      },
+      "price": {
+        "en": "Park entry (55,000 Ar) plus a specialist bird guide, 220,000 Ar per group",
+        "fr": "Entrée du parc (55 000 Ar) plus un guide spécialiste des oiseaux, 220 000 Ar par groupe",
+        "de": "Parkeintritt (55.000 Ar) plus ein Vogel-Guide, 220.000 Ar pro Gruppe",
+        "mg": "Fidirana amin'ny valan-javaboahary (55 000 Ar) miampy mpitari-dalana manam-pahaizana momba ny vorona, 220 000 Ar isaky ny vondrona"
+      },
+      "duration": {
+        "en": "Half a day to two days",
+        "fr": "D’une demi-journée à deux jours",
+        "de": "Einen halben bis zwei Tage",
+        "mg": "Antsasak'andro ka hatramin'ny roa andro"
+      },
+      "tips": {
+        "en": [
+          "Ask at the park office for a specialist bird guide (ornithology) by name",
+          "The park opens at 07:00, and birds are most active in the morning",
+          "Bring binoculars: the guides may not have spare pairs",
+          "Vohiparara is cooler and wetter than Talatakely: bring a warm layer and a rain shell",
+          "The Birders’ Two Days plan builds a visit around it"
+        ],
+        "fr": [
+          "Demandez au bureau du parc un guide spécialiste des oiseaux (ornithologie)",
+          "Le parc ouvre à 07:00, et les oiseaux sont plus actifs le matin",
+          "Apportez des jumelles : les guides n’en ont pas toujours à prêter",
+          "Vohiparara est plus frais et plus humide que Talatakely : prévoyez une couche chaude et un imperméable",
+          "Le programme « Deux jours pour ornithologues » s’organise autour de cette activité"
+        ],
+        "de": [
+          "Fragen Sie im Parkbüro gezielt nach einem Vogel-Guide (Ornithologie)",
+          "Der Park öffnet um 07:00, und Vögel sind morgens am aktivsten",
+          "Ein Fernglas mitbringen: Die Guides haben nicht immer eines übrig",
+          "In Vohiparara ist es kühler und feuchter als in Talatakely: eine warme Schicht und eine Regenjacke einpacken",
+          "Der Plan „Zwei Tage für Vogelkundler“ baut einen Besuch darauf auf"
+        ],
+        "mg": [
+          "Angataho ao amin'ny biraon'ny valan-javaboahary ny mpitari-dalana manam-pahaizana momba ny vorona (ornithologie)",
+          "Misokatra amin'ny 07:00 ny valan-javaboahary, ary mavitrika indrindra ny vorona amin'ny maraina",
+          "Mitondrà solomaso fijerena lavitra: tsy voatery manana fanampiny ny mpitari-dalana",
+          "Mangatsiatsiaka sy mando kokoa i Vohiparara noho i Talatakely: mitondrà akanjo mafana sy akanjo orana",
+          "Ny fandaharana « Roa andro ho an'ny mpijery vorona » no mifototra amin'izany"
+        ]
+      },
+      "gallery[].alt": {
+        "en": [
+          "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park",
+          "A scaly ground-roller, one of the shy birds of the forest floor, in close-up, Ranomafana National Park",
+          "A bird perched in the understory, Ranomafana National Park",
+          "A Madagascar pygmy kingfisher perched on a twig after dark"
+        ],
+        "fr": [
+          "Un tchitrec malgache posé sur son nid de mousse, parc national de Ranomafana",
+          "Un brachyptérolle écailleux, l’un des oiseaux discrets du sous-bois, en gros plan, parc national de Ranomafana",
+          "Un oiseau perché dans le sous-bois, parc national de Ranomafana",
+          "Un martin-chasseur malgache perché sur une brindille, à la nuit tombée"
+        ],
+        "de": [
+          "Ein Madagaskar-Paradiesschnäpper sitzt auf seinem moosigen Nest, Ranomafana-Nationalpark",
+          "Eine Schuppenerdracke, einer der scheuen Vögel des Waldbodens, in Nahaufnahme, Ranomafana-Nationalpark",
+          "Ein Vogel im Unterholz, Ranomafana-Nationalpark",
+          "Ein Madagaskar-Zwergfischer sitzt nach Einbruch der Dunkelheit auf einem Zweig"
+        ],
+        "mg": [
+          "Tsingetry mipetraka eo amin'ny akaniny feno volon-kazo, valan-javaboaharin'i Ranomafana",
+          "Fandikalalana, iray amin'ireo vorona saro-kenatra amin'ny tany ala, akaiky be, valan-javaboaharin'i Ranomafana",
+          "Vorona mipetraka eo ambanin'ny ala, valan-javaboaharin'i Ranomafana",
+          "Vintsy kely mipetraka eo amin'ny rantsankazo kely rehefa maizina"
+        ]
+      }
+    },
     "night-walk": {
       "name": {
         "en": "Guided Night Walk",

@@ -37,7 +37,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Ranomafana · A community visitor guide</title>
   <meta name="description" content="Ranomafana, Madagascar: fourteen kinds of lemur in a rainforest found nowhere else, hot springs, and a visit that helps keep it alive. Where to stay, eat and walk, from the people who live here.">
-  <meta name="theme-color" content="#0B1512">
+  <meta name="theme-color" content="#0F1E18">
   <link rel="canonical" href="https://kyle-project.github.io/ranomafana-tourism-website/">
   <!-- Link previews on WhatsApp, Facebook and the like: the photo, title and line
        shown when someone shares the site. These need full web addresses, so if the
@@ -56,7 +56,7 @@
   <meta property="og:locale:alternate" content="de_DE">
   <meta property="og:locale:alternate" content="mg_MG">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230B1512'/%3E%3Cg fill='none' stroke='%23E5B53D' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2c4.5 4.5 7 8 7 11.5a7 7 0 0 1-14 0C5 10 7.5 6.5 12 2z'/%3E%3Cpath d='M12 22V11M12 15l-3-3M12 17l3-3'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230F1E18'/%3E%3Cg fill='none' stroke='%23E5B53D' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2c4.5 4.5 7 8 7 11.5a7 7 0 0 1-14 0C5 10 7.5 6.5 12 2z'/%3E%3Cpath d='M12 22V11M12 15l-3-3M12 17l3-3'/%3E%3C/g%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -70,27 +70,33 @@
        Redesign" canvas (Colors, type & new site map board).
        ===================================================================== */
     :root {
-      --floor: #050B09;      /* footer, photo bands */
-      --canopy: #0B1512;     /* page ground */
-      --band: #0F1C17;       /* "before you go" band, inset panels */
-      --under: #13211C;      /* cards, panels */
-      --ph: #1A2C25;         /* photo placeholders */
-      --chip: #1F3A2E;       /* tags */
-      --moss: #26392F;       /* borders, rules */
-      --moss-2: #36513F;     /* input borders, pill outlines */
-      --moss-3: #4B6B5B;     /* secondary button outline */
-      --rule: #1E2F28;
+      /* Lifted from near-black to deep forest green, Oct 2026 (Kyle: "improve
+         readability and contrast… green forest accents"). Every text colour
+         below passes WCAG AA (4.5:1) on --under, the darkest card colour. */
+      --floor: #08130F;      /* footer, photo bands */
+      --canopy: #0F1E18;     /* page ground */
+      --band: #13261E;       /* "before you go" band, inset panels */
+      --under: #182C24;      /* cards, panels */
+      --ph: #1F362C;         /* photo placeholders */
+      --chip: #224232;       /* tags */
+      --moss: #31503F;       /* borders, rules */
+      --moss-2: #456852;     /* input borders, pill outlines */
+      --moss-3: #628A74;     /* secondary button outline */
+      --rule: #284436;
 
       --gold: #E5B53D;       /* buttons, links, key numbers */
       --gold-hi: #F4D27A;
-      --ember: #E98A62;      /* small section labels */
+      --ember: #EE9470;      /* small section labels */
+      --leaf: #84CF9C;       /* forest accent: rules, icons, hover edges — never an action */
+      --leaf-deep: #2E6B4A;
+      --leaf-glow: rgba(132, 207, 156, .10);
 
-      --mist: #EAF0EA;       /* headings, body */
-      --sage: #D3DDD6;
-      --fern: #C3CFC8;
-      --lichen: #A9B8AF;     /* secondary text */
-      --muted: #7E8F86;
-      --chip-fg: #CFE6D4;
+      --mist: #EEF3EE;       /* headings, body */
+      --sage: #D9E2DC;
+      --fern: #CAD5CE;
+      --lichen: #B8C7BE;     /* secondary text */
+      --muted: #9DAEA4;
+      --chip-fg: #D3EBD9;
 
       --easy-bg: #1F3A2E; --easy-fg: #9FD8AB;
       --mod-bg: #3A3013;  --mod-fg: #F0C860;
@@ -114,6 +120,9 @@
       font-size: 16px;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      /* A faint canopy-green light falling from the top of the page. */
+      background-image: radial-gradient(120% 60% at 50% 0%, var(--leaf-glow), transparent 70%);
+      background-repeat: no-repeat;
     }
     body.no-scroll { overflow: hidden; }
     img { display: block; max-width: 100%; }
@@ -150,6 +159,8 @@
       display: block; font-size: 13px; font-weight: 700; letter-spacing: .16em;
       text-transform: uppercase; color: var(--ember);
     }
+    /* Forest accent: a short leaf-green stroke before every section label. */
+    .eyebrow::before { content: ''; display: inline-block; width: 22px; height: 2px; margin-right: 10px; vertical-align: .3em; background: var(--leaf); border-radius: 2px; }
     .display { font-family: var(--serif); font-weight: 300; letter-spacing: -.02em; line-height: 1.02; }
     .display em, .page-title em, .hero-title em, .hero-tagline em, .story h2 em { font-style: italic; color: var(--gold); }
     .d-72 { font-size: clamp(40px, 5vw, 72px); line-height: 1; }
@@ -191,7 +202,7 @@
     .icon-btn:hover { border-color: var(--gold); }
 
     /* ------------------------------------------------------- tags */
-    .chip { font-size: 12px; font-weight: 600; color: var(--chip-fg); background: var(--chip); padding: 4px 9px; border-radius: 6px; }
+    .chip { font-size: 12px; font-weight: 600; color: var(--chip-fg); background: var(--chip); box-shadow: inset 2px 0 0 var(--leaf-deep); padding: 4px 9px; border-radius: 6px; }
     .chips { display: flex; flex-wrap: wrap; gap: 6px; }
     .badge-unconfirmed {
       align-self: flex-start; font-size: 12px; font-weight: 600; color: var(--warn);
@@ -211,7 +222,7 @@
     .brand { display: flex; align-items: center; gap: 12px; color: #FFFFFF; text-decoration: none; }
     .brand:hover { color: #FFFFFF; }
     .brand-name { font-family: var(--serif); font-weight: 500; font-size: 24px; letter-spacing: .01em; }
-    .desktop-nav { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 15px; }
+    .desktop-nav { display: flex; flex-wrap: wrap; gap: 4px 28px; font-size: 15px; }
     .nl { color: var(--mist); text-decoration: none; font-weight: 500; padding: 10px 2px; border-bottom: 1px solid transparent; }
     .nl:hover { color: #FFFFFF; border-bottom-color: var(--gold); }
     .nl[aria-current="page"] { color: #FFFFFF; font-weight: 700; border-bottom-color: var(--gold); }
@@ -226,26 +237,26 @@
     }
     .lang-select:hover { border-color: var(--gold); }
     .lang-select option { background: var(--under); color: var(--mist); }
-    .site-header .btn-ask { display: none; }
-    body.is-plan .site-header .btn-plan { display: none; }
-    body.is-plan .site-header .btn-ask { display: inline-flex; }
     .menu-btn { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; background: transparent; border: 0; color: var(--mist); cursor: pointer; }
 
     /* Desktop: once the hero has scrolled away the header pins itself. */
     @media (min-width: 992px) {
       .site-header.is-stuck {
-        position: fixed; background: rgba(11, 21, 18, .94); border-bottom: 1px solid var(--moss);
+        position: fixed; background: rgba(15, 30, 24, .94); border-bottom: 1px solid var(--moss);
         -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); animation: slideDown .25s ease;
       }
       .site-header.is-stuck .header-inner { padding-top: 12px; padding-bottom: 12px; }
     }
     @keyframes slideDown { from { transform: translateY(-100%); } to { transform: none; } }
-    @media (max-width: 1200px) and (min-width: 992px) {
+    /* Nine tabs since Gallery and Commune joined (Oct 2026). The gold "Plan your
+       visit" / "Ask the team" header button went to make room (Plan is a tab; the
+       team's email is in the footer and on every Plan page), so the header stays
+       on one line at 1280 px and up in every language. */
+    @media (min-width: 992px) {
       .header-inner { gap: 12px 24px; }
-      .desktop-nav { gap: 4px 20px; }
     }
     @media (max-width: 991px) {
-      .desktop-nav, .site-header .btn-plan, body.is-plan .site-header .btn-ask { display: none; }
+      .desktop-nav { display: none; }
       .menu-btn { display: inline-flex; }
       .header-inner { flex-wrap: nowrap; gap: 12px; padding-top: 12px; padding-bottom: 12px; }
       .header-actions { gap: 4px; }
@@ -283,6 +294,8 @@
     .drawer-nav { display: flex; flex-direction: column; gap: 2px; }
     .drawer-nav a { display: flex; align-items: center; min-height: 44px; padding: 8px 12px; border-radius: 12px; color: var(--mist); text-decoration: none; font-weight: 600; }
     .drawer-nav a:hover, .drawer-nav a[aria-current="page"] { background: var(--chip); color: #FFFFFF; }
+    .drawer-nav a.drawer-group { min-height: 36px; margin: 14px 0 2px; padding: 6px 12px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ember); }
+    .drawer-nav a.drawer-group::after { content: ' →'; margin-left: 6px; color: var(--gold); }
     .drawer-group { margin: 14px 12px 4px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ember); }
     .drawer-lang { padding-top: 16px; border-top: 1px solid var(--moss); display: flex; flex-direction: column; gap: 8px; }
     .drawer-lang label { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--lichen); }
@@ -296,7 +309,7 @@
         display: grid; grid-template-columns: repeat(6, minmax(0, 1fr));
         position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 900;
         height: 68px; max-width: 560px; margin: 0 auto;
-        background: rgba(19, 33, 28, .96); border: 1px solid var(--moss); border-radius: 20px;
+        background: rgba(24, 44, 36, .96); border: 1px solid var(--moss); border-radius: 20px;
         -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
       }
       .bottom-nav a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-width: 0; text-decoration: none; color: var(--lichen); font-size: 12px; font-weight: 600; }
@@ -324,12 +337,12 @@
       min-height: clamp(640px, 100svh, 900px); display: flex; flex-direction: column; justify-content: flex-end;
     }
     .hero .bg-photo { opacity: .72; }
-    .hero .shade { background: linear-gradient(180deg, rgba(5,11,9,.75) 0%, rgba(5,11,9,0) 22%, rgba(5,11,9,0) 50%, rgba(11,21,18,1) 100%); }
+    .hero .shade { background: linear-gradient(180deg, rgba(8,19,15,.75) 0%, rgba(8,19,15,0) 22%, rgba(8,19,15,0) 50%, rgba(15,30,24,1) 100%); }
     .hero-inner { position: relative; width: 100%; padding-top: 150px; padding-bottom: 96px; display: flex; flex-direction: column; gap: 24px; }
     .hero-badge {
       align-self: flex-start; display: inline-flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; font-size: 13px; font-weight: 600;
       letter-spacing: .14em; text-transform: uppercase; color: var(--mist); border: 1px solid rgba(234,240,234,.35);
-      border-radius: 999px; padding: 8px 16px; background: rgba(5,11,9,.35);
+      border-radius: 999px; padding: 8px 16px; background: rgba(8,19,15,.35);
     }
     .hero-title { font-family: var(--serif); font-weight: 300; font-size: clamp(60px, 11.7vw, 168px); line-height: .86; letter-spacing: -.035em; color: #FFFFFF; }
     .hero-head { display: flex; flex-direction: column; gap: 14px; }
@@ -360,11 +373,11 @@
       min-height: 440px; display: flex; flex-direction: column; justify-content: flex-end;
     }
     .page-hero .bg-photo { opacity: .5; }
-    .page-hero .shade { background: linear-gradient(180deg, rgba(5,11,9,.75) 0%, rgba(5,11,9,.1) 35%, rgba(11,21,18,1) 100%); }
+    .page-hero .shade { background: linear-gradient(180deg, rgba(8,19,15,.75) 0%, rgba(8,19,15,.1) 35%, rgba(15,30,24,1) 100%); }
     .page-hero--plan { min-height: 420px; }
     .page-hero--park { min-height: clamp(560px, 82svh, 760px); }
     .page-hero--park .bg-photo { opacity: .7; }
-    .page-hero--park .shade { background: linear-gradient(180deg, rgba(5,11,9,.75) 0%, rgba(5,11,9,0) 25%, rgba(11,21,18,1) 100%); }
+    .page-hero--park .shade { background: linear-gradient(180deg, rgba(8,19,15,.75) 0%, rgba(8,19,15,0) 25%, rgba(15,30,24,1) 100%); }
     .page-hero-inner { position: relative; width: 100%; padding-top: 140px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 14px; }
     .page-hero--park .page-hero-inner { padding-bottom: 56px; gap: 18px; }
     .crumbs { font-size: 14px; color: var(--lichen); }
@@ -410,7 +423,7 @@
     .door:hover { color: #FFFFFF; }
     .door .bg-photo { transition: transform .8s ease; }
     .door:hover .bg-photo { transform: scale(1.04); }
-    .door .shade { background: linear-gradient(180deg, rgba(5,11,9,0) 35%, rgba(5,11,9,.85) 100%); }
+    .door .shade { background: linear-gradient(180deg, rgba(8,19,15,0) 35%, rgba(8,19,15,.85) 100%); }
     .door-text { position: absolute; left: 24px; right: 24px; bottom: 22px; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; }
     .door-copy { display: flex; flex-direction: column; gap: 4px; }
     .door-title { font-family: var(--serif); font-size: 40px; font-weight: 500; line-height: 1.1; }
@@ -419,7 +432,7 @@
     @media (max-width: 720px) {
       .doors { gap: 8px; padding-top: 8px; padding-bottom: 32px; }
       .door { height: 150px; border-radius: 14px; border: 0; }
-      .door .shade { background: linear-gradient(180deg, rgba(5,11,9,0) 30%, rgba(5,11,9,.9) 100%); }
+      .door .shade { background: linear-gradient(180deg, rgba(8,19,15,0) 30%, rgba(8,19,15,.9) 100%); }
       .door-text { left: 10px; right: 10px; bottom: 10px; }
       .door-copy { gap: 0; }
       .door-title { font-size: 22px; }
@@ -541,9 +554,9 @@
       position: relative; display: block; min-height: 300px; border-radius: 20px; overflow: hidden; padding: 0;
       text-decoration: none; text-align: left; color: #FFFFFF; border: 1px solid var(--moss); background: var(--ph); cursor: pointer;
     }
-    .photo-card .shade { background: linear-gradient(180deg, rgba(5,11,9,0) 40%, rgba(5,11,9,.9) 100%); }
+    .photo-card .shade { background: linear-gradient(180deg, rgba(8,19,15,0) 40%, rgba(8,19,15,.9) 100%); }
     .photo-card--big { grid-row: span 2; min-height: 620px; }
-    .photo-card--big .shade { background: linear-gradient(180deg, rgba(5,11,9,0) 45%, rgba(5,11,9,.9) 100%); }
+    .photo-card--big .shade { background: linear-gradient(180deg, rgba(8,19,15,0) 45%, rgba(8,19,15,.9) 100%); }
     .photo-card-text { position: absolute; left: 22px; right: 22px; bottom: 20px; display: flex; flex-direction: column; gap: 4px; }
     .photo-card--big .photo-card-text { left: 28px; right: 28px; bottom: 28px; gap: 8px; }
     .photo-card-kicker { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
@@ -579,6 +592,8 @@
     .story-inner { position: relative; padding-top: 128px; padding-bottom: 128px; display: flex; flex-direction: column; gap: 56px; }
     .story h2 { font-family: var(--serif); font-weight: 300; font-size: clamp(38px, 5.3vw, 76px); line-height: 1.04; letter-spacing: -.02em; max-width: 1080px; }
     .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgba(234,240,234,.2); }
+    .glance { border-top-color: var(--leaf-deep); }
+    .glance .stat b { color: var(--gold); }
     .stat { padding: 24px 24px 0 0; display: flex; flex-direction: column; gap: 6px; }
     .stat b { font-family: var(--serif); font-size: clamp(44px, 4.45vw, 64px); font-weight: 300; line-height: 1; }
     .stat span { font-size: 15px; color: var(--lichen); }
@@ -649,7 +664,7 @@
     @media (max-width: 720px) { .story-hero { height: 200px; } }
 
     /* ----------------------------------------------------- CTA box */
-    .cta-box { border: 1px solid var(--moss-2); border-radius: 28px; padding: 72px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between; background: var(--under); }
+    .cta-box { border: 1px solid var(--moss-2); border-radius: 28px; padding: 72px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between; background: radial-gradient(90% 120% at 0% 100%, rgba(46, 107, 74, .35), transparent 60%), var(--under); }
     .cta-copy { max-width: 720px; }
     .btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
     @media (max-width: 720px) {
@@ -689,10 +704,11 @@
     .results-bar { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; min-height: 44px; }
     .results-count { font-size: 15px; color: var(--lichen); }
     .results-count strong { color: var(--mist); }
-    .sort { display: flex; gap: 8px; align-items: center; font-size: 15px; color: var(--lichen); }
+    .sort { display: flex; gap: 8px; align-items: center; min-width: 0; max-width: 100%; font-size: 15px; color: var(--lichen); }
     .sort-select {
       font: 500 15px var(--sans); min-height: 44px; padding: 10px 12px; border: 1px solid var(--moss-2);
       border-radius: 12px; background: var(--under); color: var(--mist); cursor: pointer;
+      min-width: 0; max-width: 100%;   /* a long Malagasy option must not widen the page on phones */
     }
     .empty { padding: 48px; border: 1px dashed var(--moss-2); border-radius: 20px; text-align: center; display: flex; flex-direction: column; gap: 14px; align-items: center; }
     .empty[hidden] { display: none; }
@@ -712,7 +728,7 @@
     /* Listing cards */
     .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 20px; }
     .lcard { position: relative; display: flex; flex-direction: column; background: var(--under); border: 1px solid var(--moss); border-radius: 20px; overflow: hidden; transition: border-color .2s ease, transform .2s ease; }
-    .lcard:hover { border-color: var(--moss-3); transform: translateY(-2px); }
+    .lcard:hover { border-color: var(--leaf-deep); transform: translateY(-2px); }
     .lcard-media { position: relative; height: 200px; background: var(--ph); }
     .lcard-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
     .ph { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 0 20px; text-align: center; background: var(--ph); }
@@ -754,14 +770,14 @@
     .circuit p { font-size: 16px; line-height: 1.65; color: var(--fern); }
     .park-intro { display: flex; flex-direction: column; gap: 20px; }
     .wildlife { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; }
-    .wild-group { display: flex; flex-direction: column; gap: 10px; padding: 22px; background: var(--under); border: 1px solid var(--moss); border-radius: 16px; }
+    .wild-group { display: flex; flex-direction: column; gap: 10px; padding: 22px; background: var(--under); border: 1px solid var(--moss); border-top: 3px solid var(--leaf-deep); border-radius: 16px; }
     .wild-photo { height: 180px; border-radius: 12px; overflow: hidden; background: var(--ph); margin-bottom: 4px; }
     .wild-photo img { width: 100%; height: 100%; object-fit: cover; }
     .wild-group h3 { font-family: var(--serif); font-size: 26px; font-weight: 500; line-height: 1.1; }
     .wild-group p { font-size: 14px; line-height: 1.5; color: var(--lichen); }
     .tips { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 12px; }
     .tips li { display: flex; gap: 12px; padding: 18px; background: var(--under); border: 1px solid var(--moss); border-radius: 14px; font-size: 15px; line-height: 1.5; }
-    .tips svg { flex: none; margin-top: 1px; color: var(--gold); }
+    .tips svg { flex: none; margin-top: 1px; color: var(--leaf); }
     .tips--one { grid-template-columns: 1fr; }
     /* Know before you go */
     .advice-links { list-style: none; padding: 0; display: flex; flex-direction: column; border-top: 1px solid var(--moss); }
@@ -844,10 +860,24 @@
 
     /* ----------------------------------------------------- plan pages */
     .plan-tabs { border-bottom: 1px solid var(--moss); }
+    .guide-intro { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+    .guide-intro img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 30%; border-radius: 20px; border: 1px solid var(--moss); }
+    @media (max-width: 860px) { .guide-intro { grid-template-columns: 1fr; gap: 20px; } }
+    /* Overview pages: one card per page in the section. */
+    .hub-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 20px; }
+    .hub-card { display: flex; flex-direction: column; background: var(--under); border: 1px solid var(--moss); border-top: 3px solid var(--leaf-deep); border-radius: 20px; overflow: hidden; color: var(--mist); text-decoration: none; transition: border-color .2s ease, transform .2s ease; }
+    .hub-card:hover { border-color: var(--leaf-deep); transform: translateY(-2px); color: var(--mist); }
+    .hub-card:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+    .hub-card img { width: 100%; height: 180px; object-fit: cover; background: var(--ph); }
+    .hub-card-body { display: flex; flex-direction: column; gap: 10px; padding: 20px 22px 22px; flex: 1; }
+    .hub-card-title { font-family: var(--serif); font-size: 26px; font-weight: 500; line-height: 1.15; }
+    .hub-card-desc { font-size: 15px; line-height: 1.55; color: var(--lichen); }
+    .hub-card-go { margin-top: auto; color: var(--gold); font-weight: 600; font-size: 15px; }
+    .hub-card:hover .hub-card-go { color: var(--gold-hi); }
     .plan-tabs .wrap { display: flex; gap: 0 32px; overflow-x: auto; scrollbar-width: none; }
     .plan-tabs .wrap::-webkit-scrollbar { display: none; }
     .pt { flex: none; color: var(--lichen); text-decoration: none; font-weight: 600; font-size: 15px; padding: 18px 4px; border-bottom: 2px solid transparent; }
-    .pt:hover { color: var(--mist); }
+    .pt:hover { color: var(--mist); border-bottom-color: var(--leaf-deep); }
     .pt[aria-current="page"] { color: var(--mist); border-bottom-color: var(--gold); }
     .next-card {
       display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; padding: 40px;
@@ -857,7 +887,7 @@
     .next-title { display: block; font-family: var(--serif); font-size: clamp(32px, 3.1vw, 44px); font-weight: 300; margin-top: 6px; }
     .next-arrow { font-size: 32px; color: var(--gold); }
     .page-note { font-size: 13px; color: var(--muted); line-height: 1.6; padding-bottom: 48px; }
-    .info-card { background: var(--under); border: 1px solid var(--moss); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px; }
+    .info-card { background: var(--under); border: 1px solid var(--moss); border-top: 3px solid var(--leaf-deep); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px; }
     .info-card h3 { font-family: var(--serif); font-size: 30px; font-weight: 500; line-height: 1.1; }
     .info-card p { font-size: 16px; line-height: 1.6; color: var(--fern); }
     .card-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
@@ -1041,16 +1071,19 @@
     }
 
     /* ----------------------------------------------------- footer */
-    .site-footer { background: var(--floor); color: var(--lichen); border-top: 1px solid var(--rule); }
+    .site-footer { background: var(--floor); color: var(--lichen); border-top: 1px solid var(--rule); box-shadow: inset 0 3px 0 var(--leaf-deep); }
     .footer-inner { padding-top: 72px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 56px; }
-    .footer-grid { display: grid; grid-template-columns: 2fr repeat(3, minmax(0, 1fr)); gap: 32px; }
+    .footer-grid { display: grid; grid-template-columns: 1.6fr repeat(5, minmax(0, 1fr)); gap: 28px; }
     .footer-brand { display: flex; flex-direction: column; gap: 12px; }
     .footer-name { font-family: var(--serif); font-weight: 300; font-size: 56px; color: var(--mist); line-height: 1; }
     .footer-call { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 20px; line-height: 1.35; color: var(--gold); }
     .footer-col { display: flex; flex-direction: column; gap: 10px; font-size: 15px; }
-    .footer-col strong { color: var(--mist); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
     .footer-col a { color: var(--lichen); text-decoration: none; }
     .footer-col a:hover { color: #FFFFFF; }
+    /* Column headings are links too, each to its section's overview page. */
+    .footer-col .footer-head { color: var(--mist); font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .footer-col .footer-head::after { content: ' →'; color: var(--gold); }
+    .footer-col .footer-head:hover { color: var(--gold-hi); }
     .partners { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding-top: 32px; border-top: 1px solid var(--rule); }
     .partners-label { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--mist); font-weight: 700; margin-right: 12px; }
     .partner { display: flex; align-items: center; justify-content: center; height: 76px; padding: 6px 14px; border-radius: 10px; border: 1px solid var(--moss); }
@@ -1121,6 +1154,57 @@
     .map-frame { width: 100%; height: 240px; border: 0; border-radius: 16px; margin-top: 28px; background: var(--ph); }
     .m-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
 
+    /* --------------------------------------------- PHOTO GALLERY page */
+    .photo-wall { columns: 4 260px; column-gap: 14px; }
+    .gal-tile { width: 100%; margin: 0 0 14px; border: 1px solid var(--moss); border-radius: 14px; overflow: hidden; background: var(--ph); break-inside: avoid; position: relative; }
+    .gal-open { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+    .gal-tile img { width: 100%; height: auto; transition: transform .3s ease; }
+    .gal-tile:hover { border-color: var(--leaf-deep); }
+    .gal-tile:hover img { transform: scale(1.03); }
+    .gal-open:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+    .gal-tile.is-liked { border-color: var(--leaf); }
+    /* The heart: off is an outline on a dark disc, on is filled ember. */
+    .gal-like { position: absolute; top: 8px; right: 8px; z-index: 1; display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 0; border-radius: 50%; background: rgba(8, 19, 15, .72); color: #FFFFFF; cursor: pointer; transition: transform .15s ease; }
+    .gal-like:hover { transform: scale(1.08); }
+    .gal-like:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+    .gal-like[aria-pressed="true"] { color: var(--ember); }
+    .gal-like[aria-pressed="true"] svg { fill: currentColor; }
+    .like-btn[aria-pressed="true"] { color: var(--ember); border-color: var(--ember); }
+    .like-btn[aria-pressed="true"] svg { fill: currentColor; }
+    .gal-tile-label { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 12px 10px; font-size: 13px; font-weight: 600; text-align: left; color: #FFFFFF; background: linear-gradient(180deg, transparent, rgba(8, 19, 15, .88)); }
+    .kind-btn .n { opacity: .75; font-weight: 500; }
+    .kind-btn[aria-pressed="true"] .n { opacity: 1; }
+    .lightbox { display: flex; flex-direction: column; gap: 14px; }
+    .lightbox-img { width: 100%; max-height: 70vh; object-fit: contain; border-radius: 12px; background: var(--floor); }
+    .lightbox-caption { font-size: 16px; line-height: 1.55; color: var(--fern); }
+    .lightbox-nav { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+    .lightbox-count { font-size: 14px; color: var(--muted); }
+    @media (max-width: 720px) { .photo-wall { columns: 2 140px; column-gap: 10px; } .gal-tile { margin-bottom: 10px; border-radius: 10px; } .gal-tile-label { display: none; } }
+
+    /* ---------------------------------------- MUNICIPAL SERVICES page */
+    .soon-box { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; justify-content: space-between; padding: 24px 28px; border: 1px dashed var(--moss-2); border-left: 3px solid var(--leaf-deep); border-radius: 16px; background: var(--band); }
+    .soon-box p { margin: 0; max-width: 720px; font-size: 16px; line-height: 1.6; color: var(--fern); }
+    .service-meta { display: flex; flex-direction: column; gap: 6px; margin: 0; font-size: 14px; }
+    .service-meta div { display: flex; gap: 10px; }
+    .service-meta dt { color: var(--muted); min-width: 72px; }
+    .service-meta dd { margin: 0; font-weight: 600; }
+    .doc-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+    .doc-list:empty { display: none; }
+    .doc { display: flex; align-items: center; gap: 16px; padding: 16px 20px; background: var(--under); border: 1px solid var(--moss); border-radius: 14px; }
+    .doc-icon { flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 10px; background: var(--chip); color: var(--leaf); }
+    .doc-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+    .doc-title { font-weight: 600; font-size: 16px; color: var(--mist); }
+    .doc-meta { font-size: 13px; color: var(--lichen); }
+    @media (max-width: 720px) { .doc { flex-wrap: wrap; padding: 14px; } .doc .btn { width: 100%; } }
+
+    /* ---------------------------------------------- social media links */
+    .social-links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .social-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--moss-2); color: var(--mist); font-size: 14px; font-weight: 600; text-decoration: none; }
+    .social-link svg { color: var(--leaf); }
+    .social-link:hover { border-color: var(--gold); color: #FFFFFF; }
+    .footer-social { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding-top: 28px; }
+    .footer-social[hidden] { display: none; }
+
     /* ----------------------------------------------------- printing
        Prints the page being read (or only the pop-up, when one is open), dark
        on white, without the menus, photos behind headings, maps or buttons. */
@@ -1129,7 +1213,7 @@
         --floor: #FFFFFF; --canopy: #FFFFFF; --band: #FFFFFF; --under: #FFFFFF; --ph: #EEEEEE;
         --moss: #CCCCCC; --moss-2: #CCCCCC; --rule: #CCCCCC;
         --mist: #111111; --sage: #222222; --fern: #222222; --lichen: #444444; --muted: #555555;
-        --gold: #6E500B; --ember: #8A3A1A;
+        --gold: #6E500B; --ember: #8A3A1A; --leaf: #2E6B4A; --leaf-deep: #CCCCCC; --leaf-glow: transparent;
       }
       body { background: #FFFFFF; color: #111111; }
       .site-header, .bottom-nav, .mobile-drawer, .drawer-overlay, .planner-tab, .skip-link, .site-footer,
@@ -1158,14 +1242,16 @@
         <span class="brand-name">Ranomafana</span>
       </a>
 
+      <!-- The five header tabs (Kyle, 23 Oct 2026: "About, Hotels, Restaurants,
+           Activities, Events calendar"), plain links with no drop-downs ("make it
+           simple and clickable"). Each opens its page, whose tab bar leads on to the
+           pages under it; everything else is in the footer. -->
       <nav class="desktop-nav" aria-label="Main" data-i18n-aria-label="ariaMainNav">
-        <a class="nl" href="#why" data-nav="why" data-i18n="navWhy">Why visit</a>
-        <a class="nl" href="#stay" data-nav="stay" data-i18n="navStay">Stay</a>
-        <a class="nl" href="#eat" data-nav="eat" data-i18n="navEat">Eat</a>
-        <a class="nl" href="#do" data-nav="do" data-i18n="navDo">Things to do</a>
-        <a class="nl" href="#itineraries" data-nav="plan" data-i18n="navPlan">Plan</a>
-        <a class="nl" href="#events" data-nav="events" data-i18n="navEvents">What’s on</a>
-        <a class="nl" href="#blog" data-nav="blog" data-i18n="navBlog">Stories</a>
+        <a class="nl" href="#about" data-nav="about" data-i18n="footerAbout">About</a>
+        <a class="nl" href="#stay" data-nav="stay" data-i18n="navHotels">Hotels</a>
+        <a class="nl" href="#eat" data-nav="eat" data-i18n="navRestaurants">Restaurants</a>
+        <a class="nl" href="#do" data-nav="do" data-i18n="navActivities">Activities</a>
+        <a class="nl" href="#events" data-nav="events" data-i18n="navEventsCal">Events calendar</a>
       </nav>
 
       <div class="header-actions">
@@ -1179,8 +1265,6 @@
             <option value="mg">Malagasy</option>
           </select>
         </label>
-        <a class="btn btn-gold btn-plan" href="#itineraries" data-i18n="planVisitBtn">Plan your visit</a>
-        <a class="btn btn-gold btn-ask" href="mailto:ask@valb.io?subject=Ranomafana%20visit%20inquiry" data-team-mail="Ranomafana visit inquiry" data-i18n="askTeamBtn">Ask the team</a>
         <button class="menu-btn" type="button" onclick="toggleDrawer(true)" aria-label="Open menu" data-i18n-aria-label="ariaOpenMenu" aria-controls="mobileDrawer" aria-expanded="false">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg>
         </button>
@@ -1201,20 +1285,25 @@
     </div>
     <nav class="drawer-nav" aria-label="All pages" data-i18n-aria-label="ariaAllPages">
       <a href="#home" data-i18n="drawerHome">Home</a>
+      <a class="drawer-group" href="#about" data-i18n="footerAbout">About</a>
+      <a href="#ranomafana" data-i18n="aboutHubHeading">About Ranomafana</a>
       <a href="#why" data-i18n="navWhy">Why visit</a>
-      <a href="#stay" data-i18n="drawerStay">Places to stay</a>
-      <a href="#eat" data-i18n="drawerEat">Places to eat</a>
-      <a href="#do" data-i18n="drawerDo">Things to do</a>
-      <span class="drawer-group" data-i18n="navPlan">Plan</span>
-      <a href="#itineraries" data-i18n="tabItineraries">Itineraries</a>
-      <a href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
-      <a href="#when" data-i18n="tabWhen">When to visit</a>
-      <a href="#guides" data-i18n="tabGuides">Hiring a guide</a>
-      <a href="#know" data-i18n="tabKnow">Know before you go</a>
-      <span class="drawer-group" data-i18n="drawerMore">More</span>
-      <a href="#events" data-i18n="navEvents">What’s on</a>
       <a href="#blog" data-i18n="navBlog">Stories</a>
-      <a href="#about" data-i18n="drawerAbout">About the team</a>
+      <a href="#gallery" data-i18n="navGallery">Photo gallery</a>
+      <a href="#contact" data-i18n="footerContact">Contact</a>
+      <a class="drawer-group" href="#stay" data-i18n="navHotels">Hotels</a>
+      <a class="drawer-group" href="#eat" data-i18n="navRestaurants">Restaurants</a>
+      <a class="drawer-group" href="#do" data-i18n="navActivities">Activities</a>
+      <a href="#park" data-i18n="crumbPark">National park</a>
+      <a href="#itineraries" data-i18n="tabItineraries">Itineraries</a>
+      <a href="#guides" data-i18n="tabGuides">Hiring a guide</a>
+      <a class="drawer-group" href="#events" data-i18n="navEventsCal">Events calendar</a>
+      <a href="#when" data-i18n="tabWhen">When to visit</a>
+      <span class="drawer-group" data-i18n="drawerMore">More</span>
+      <a href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
+      <a href="#know" data-i18n="tabKnow">Know before you go</a>
+      <a href="#services" data-i18n="navServices">Municipal services</a>
+      <a href="#documents" data-i18n="docsGroup">Documents</a>
     </nav>
     <div class="drawer-lang">
       <label for="drawerLangSelector" data-i18n="languageLabel">Language</label>
@@ -1490,7 +1579,7 @@
           </div>
           <div class="btn-row">
             <a class="btn btn-gold btn-lg" href="mailto:ask@valb.io?subject=Ranomafana%20trip%20planning" data-team-mail="Ranomafana trip planning" data-i18n="emailTeamBtn">Email the team</a>
-            <a class="btn btn-ghost btn-lg" href="#about" data-i18n="meetTeamBtn">Meet the team</a>
+            <a class="btn btn-ghost btn-lg" href="#contact" data-i18n="meetTeamBtn">Meet the team</a>
           </div>
         </div>
       </section>
@@ -1502,7 +1591,7 @@
         <img class="bg-photo" src="images/setam-lodge-terrace-view.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navStay">Stay</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#explore" data-i18n="footerExplore">Explore</a> / <span data-i18n="navStay">Stay</span></nav>
           <h1 id="stay-h" class="page-title" data-i18n="stayHeading">Places to stay</h1>
           <p class="page-intro" data-i18n="staySubtitle">{stays} places, from research-station dorms at the park’s edge to riverside bungalows and village guesthouses. Book direct where you can, and all of your payment reaches the place you stay.</p>
         </div>
@@ -1562,7 +1651,7 @@
         <img class="bg-photo" src="images/grenat-hotel-restaurant.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navEat">Eat</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#explore" data-i18n="footerExplore">Explore</a> / <span data-i18n="navEat">Eat</span></nav>
           <h1 id="eat-page-h" class="page-title" data-i18n="eatHeading">Places to eat</h1>
           <p class="page-intro" data-i18n="eatSubtitle">{eats} places: Malagasy kitchens, French-style hotel dining rooms and snack bars by the park gate.</p>
         </div>
@@ -1618,7 +1707,7 @@
         <img class="bg-photo" src="images/voi-ambohimagneva-waterfall-ambony.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navDo">Things to do</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#explore" data-i18n="footerExplore">Explore</a> / <span data-i18n="navDo">Things to do</span></nav>
           <h1 id="do-h" class="page-title" data-i18n="doHeading">Things to do</h1>
           <p class="page-intro" data-i18n="doSubtitle">{dos} ways in: the national park and its circuits, community reserves, waterfalls, the thermal springs and the village.</p>
         </div>
@@ -1701,6 +1790,88 @@
 
         <aside class="visit-card" aria-label="Visit details" data-i18n-aria-label="ariaVisitDetails" id="parkAside"></aside>
       </div>
+
+      <!-- Hiring a guide: its own page until 24 Oct 2026, when Kyle asked for it to be
+           "integrated into the information about the national park". Old #guides
+           links land here (PAGE_ALIAS and SCROLL_TO in the script). -->
+      <section class="wrap stack g-16" id="park-guide" style="padding-top: 72px;" aria-labelledby="park-guide-h">
+        <span class="eyebrow" data-i18n="guideEyebrow">Required in the park</span>
+        <h2 id="park-guide-h" class="display d-56" data-i18n="tabGuides">Hiring a guide</h2>
+        <div class="guide-intro">
+          <p class="lede" data-i18n="guidesIntro">Nobody walks the park alone. A certified Madagascar National Parks guide has been required for international visitors since 2010, and they are the reason you will actually see the animals. Your guide lives here, so hiring one is also one of the most direct ways your visit supports the village.</p>
+          <img src="images/guide-forest-straw-hat.jpg" alt="A guide in a straw hat with a walking stick, looking into the rainforest" data-i18n-alt="altGuideHat" loading="lazy">
+        </div>
+      </section>
+      <section class="wrap stack g-24" style="padding-top: 32px; padding-bottom: 32px;" aria-labelledby="how-h">
+        <h3 id="how-h" class="display d-44" data-i18n="howItWorksHeading">How it works</h3>
+        <ol class="steps">
+          <li><span class="num">01</span><strong data-i18n="step1Title">Find a guide</strong><span data-i18n="step1Text">Ask your hotel, or turn up at the park and choose from the guides working that day. Guides can’t be booked online.</span></li>
+          <li><span class="num">02</span><strong data-i18n="step2Title">Pick a walk</strong><span data-i18n="step2Text">Walks are priced by circuit and length, and specialists cost more. Tell your guide about your fitness and any worries: they will adapt the route to suit you.</span></li>
+          <li><span class="num">03</span><strong data-i18n="step3Title">Pay in Ariary</strong><span data-i18n="step3Text">Cash only: park entry, the community fee at its own booth, and the guide fee for your group.</span></li>
+          <li><span class="num">04</span><strong data-i18n="step4Title">Go mid-morning</strong><span data-i18n="step4Text" data-i18n-html>The park is open {parkHours}. Mid-morning, when the lemurs are awake and settling in to feed, is the best time. <a class="text-link" href="#getting-here">Getting to the gate →</a></span></li>
+        </ol>
+      </section>
+
+      <section class="wrap" style="padding-top: 48px; padding-bottom: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px; align-items: start;">
+        <article class="cost-card" aria-labelledby="cost-h">
+          <div class="stack g-6" style="padding: 28px 28px 8px;">
+            <span class="eyebrow" data-i18n="costEyebrow">What it costs</span>
+            <h2 id="cost-h" class="display" style="font-size: 34px;" data-i18n="costHeading">One fee per group</h2>
+            <p class="small-muted" style="font-size: 15px;" data-i18n="costText">The guide fee is shared by everyone in your group, so it costs less each with more people. One guide takes a group of one to four; groups of six or more need at least two.</p>
+          </div>
+          <table class="cost-table">
+            <thead><tr><th scope="col" data-i18n="costWalk">Walk</th><th scope="col" data-i18n="costPaid">Paid at the gate</th></tr></thead>
+            <tbody id="guideCosts"></tbody>
+          </table>
+          <p class="small-muted" style="padding: 16px 28px 8px; font-size: 13px;" data-i18n="costFootnote" data-i18n-html>Guide rates by circuit, {feesAsOf}. Plus park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class="text-link" style="font-size: 13px;" href="#park">Park fees →</a></p>
+          <p class="small-muted" style="padding: 0 28px 28px; font-size: 13px;" data-rate-note></p>
+        </article>
+        <div class="stack g-24">
+          <article class="info-card" style="border-radius: 24px;">
+            <span class="eyebrow" data-i18n="soloEyebrow">Travelling solo?</span>
+            <h3 style="font-weight: 300;" data-i18n="soloTitle">Share the guide</h3>
+            <p data-i18n="soloText">Ask the park office to pair you with other visitors so you split one guide fee.</p>
+          </article>
+          <article class="info-card" style="border-radius: 24px;">
+            <span class="eyebrow" data-i18n="spotterEyebrow">The team behind your guide</span>
+            <h3 style="font-weight: 300;" data-i18n="spotterTitle">Spotters in the forest</h3>
+            <p data-i18n="spotterText">Animal spotters work the forest and tell your guide by phone where the animals are, so you can walk straight to them. The spotter is included in the guide’s price.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap stack g-24" style="padding-top: 32px; padding-bottom: 64px;" aria-labelledby="spec-h">
+        <h3 id="spec-h" class="display d-44" data-i18n="specHeading">Ask for a specialist</h3>
+        <p class="lede" style="max-width: 760px;" data-i18n="specText">Specialist guides are experts in finding and explaining the park’s birds, plants, or reptiles and amphibians. Because of that expertise they cost {specialistFee}, whatever the circuit. Specialist guides can also be arranged through Centre ValBio.</p>
+        <div class="card-row" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px;">
+          <div class="spec"><strong data-i18n="specPrimates">Primatology</strong><span data-i18n="specPrimatesText">Lemurs, including the golden bamboo lemur.</span></div>
+          <div class="spec"><strong data-i18n="specBirds">Ornithology</strong><span data-i18n="specBirdsText" data-i18n-html>Birders: ask for a birding specialist by name. <a class="text-link" href="#itineraries" onclick="openItinerary('birders-two-day'); return false;">Birders’ itinerary →</a></span></div>
+          <div class="spec"><strong data-i18n="specHerps">Herpetology</strong><span data-i18n="specHerpsText">Frogs, chameleons and leaf-tailed geckos.</span></div>
+          <div class="spec"><strong data-i18n="specBotany">Botany</strong><span data-i18n="specBotanyText">Orchids, giant ferns and the forest itself.</span></div>
+        </div>
+      </section>
+
+      <section class="wrap" style="padding-bottom: 64px;" aria-labelledby="out-h">
+        <div class="inset-panel" style="padding: 48px; gap: 40px;">
+          <div class="stack g-14">
+            <span class="eyebrow" style="color: var(--gold);" data-i18n="outsideEyebrow">Outside the park</span>
+            <h2 id="out-h" class="display d-44" data-i18n="outsideHeading">Community guides, village fees</h2>
+            <div class="stack g-6">
+              <h3 class="out-sub">VOI Mitsinjo</h3>
+              <p style="font-size: 16px; line-height: 1.65; color: var(--fern);" data-i18n="outsideMitsinjoText">Community guides from Ambatolahy lead day and night walks, and the fees go straight to the village.</p>
+            </div>
+            <div class="stack g-6">
+              <h3 class="out-sub">VOI Ambohimagneva</h3>
+              <p style="font-size: 16px; line-height: 1.65; color: var(--fern);" data-i18n="outsideAmbohiText">A 75-hectare reserve bordering the national park, about 3 km from town on foot, managed by the local community association (the VOI) under Madagascar’s community forest-management law. Trails and a river waterfall are being opened to visitors, with guides certified by Madagascar National Parks and research links to Centre ValBio. Visitor access is still being set up, so ask before you go.</p>
+              <div class="out-photo"><img src="images/voi-ambohimagneva-guide-adrien.jpg" alt="Guide Adrien on the boardwalk trail at VOI Ambohimagneva" data-i18n-alt="altGuideAdrien" loading="lazy"></div>
+            </div>
+            <p style="font-size: 16px; line-height: 1.65; color: var(--fern);" data-i18n="outsideNightText">Night walks along the forest edge by the RN25 need no park ticket.</p>
+          </div>
+          <div class="stack g-10" id="guidesOutside"></div>
+        </div>
+      </section>
+
+      <p class="wrap page-note" data-i18n="guidesSources">Sources: guide prices by circuit, specialist rates, group sizes, opening hours and how to find a guide from this guide’s own local notes (October 2026), consistent with trip reports (The Travelling Sloth, August 2025; The Blog of Dimi, January 2024); community fee from Madagascar National Parks; community guides from this guide’s own park listings; specialities from The Blog of Dimi; Centre ValBio specialists from Wikipedia; spotters by phone from Wikivoyage. Prices change, so confirm at the park office.</p>
     </section>
 
     <!-- ======================================================= ITINERARIES -->
@@ -1709,20 +1880,11 @@
         <img class="bg-photo" src="images/ranomafana-primary.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="crumbPlan">Plan your trip</span> / <span data-i18n="tabItineraries">Itineraries</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#do" data-i18n="navActivities">Activities</a> / <span data-i18n="tabItineraries">Itineraries</span></nav>
           <h1 id="it-h" class="page-title" data-i18n="itinHeading">Itineraries</h1>
           <p class="page-intro" data-i18n="itinSubtitle">{itins} ready-made plans, from a half day passing through to three days deep in the forest. Pick one to see it hour by hour.</p>
         </div>
       </div>
-      <nav class="plan-tabs" aria-label="Plan your trip" data-i18n-aria-label="crumbPlan">
-        <div class="wrap">
-          <a class="pt" href="#itineraries" aria-current="page" data-i18n="tabItineraries">Itineraries</a>
-          <a class="pt" href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
-          <a class="pt" href="#when" data-i18n="tabWhen">When to visit</a>
-          <a class="pt" href="#guides" data-i18n="tabGuides">Hiring a guide</a>
-          <a class="pt" href="#know" data-i18n="tabKnow">Know before you go</a>
-        </div>
-      </nav>
 
       <section class="wrap" aria-label="Choose a plan" data-i18n-aria-label="ariaChoosePlan">
         <div class="itin-grid" role="group" aria-label="Itineraries" data-i18n-aria-label="tabItineraries" id="itineraryGrid"></div>
@@ -1744,20 +1906,11 @@
         <img class="bg-photo" src="images/voi-ambohimagneva-valley-view.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#itineraries" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabGettingHere">Getting here</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#plan" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabGettingHere">Getting here</span></nav>
           <h1 id="gh-h" class="page-title" data-i18n="tabGettingHere">Getting here</h1>
           <p class="page-intro" data-i18n="ghIntro">The only way in is by road. Ranomafana sits on the RN25, which drops from the highlands at Fianarantsoa down through the rainforest towards the east coast.</p>
         </div>
       </div>
-      <nav class="plan-tabs" aria-label="Plan your trip" data-i18n-aria-label="crumbPlan">
-        <div class="wrap">
-          <a class="pt" href="#itineraries" data-i18n="tabItineraries">Itineraries</a>
-          <a class="pt" href="#getting-here" aria-current="page" data-i18n="tabGettingHere">Getting here</a>
-          <a class="pt" href="#when" data-i18n="tabWhen">When to visit</a>
-          <a class="pt" href="#guides" data-i18n="tabGuides">Hiring a guide</a>
-          <a class="pt" href="#know" data-i18n="tabKnow">Know before you go</a>
-        </div>
-      </nav>
 
       <section class="wrap stack g-24" style="padding-top: 64px; padding-bottom: 24px;" aria-labelledby="route-h">
         <h2 id="route-h" class="eyebrow" data-i18n="routeHeading">The route · distances to Ranomafana</h2>
@@ -1860,20 +2013,11 @@
         <img class="bg-photo" src="images/voi-ambohimagneva-forest-view.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#itineraries" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabWhen">When to visit</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#events" data-i18n="navEventsCal">Events calendar</a> / <span data-i18n="tabWhen">When to visit</span></nav>
           <h1 id="wv-h" class="page-title" data-i18n="tabWhen">When to visit</h1>
           <p class="page-intro" data-i18n="whenIntro">The park is open all year. What changes is the rain, the cold, and which animals are easiest to find.</p>
         </div>
       </div>
-      <nav class="plan-tabs" aria-label="Plan your trip" data-i18n-aria-label="crumbPlan">
-        <div class="wrap">
-          <a class="pt" href="#itineraries" data-i18n="tabItineraries">Itineraries</a>
-          <a class="pt" href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
-          <a class="pt" href="#when" aria-current="page" data-i18n="tabWhen">When to visit</a>
-          <a class="pt" href="#guides" data-i18n="tabGuides">Hiring a guide</a>
-          <a class="pt" href="#know" data-i18n="tabKnow">Know before you go</a>
-        </div>
-      </nav>
 
       <section class="wrap stack g-24" style="padding-top: 64px; padding-bottom: 24px;" aria-labelledby="sea-h">
         <h2 id="sea-h" class="display d-56" data-i18n="seasonsHeading">Two seasons, and the months between</h2>
@@ -1929,104 +2073,6 @@
     </section>
 
     <!-- ===================================================== HIRING A GUIDE -->
-    <section id="page-guides" class="page-view" aria-labelledby="gd-h">
-      <div class="page-hero page-hero--plan">
-        <img class="bg-photo" src="images/guide-forest-straw-hat.jpg" alt="A guide in a straw hat with a walking stick, looking into the rainforest" data-i18n-alt="altGuideHat" style="object-position: center 30%;" loading="lazy">
-        <div class="shade"></div>
-        <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#itineraries" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabGuides">Hiring a guide</span></nav>
-          <h1 id="gd-h" class="page-title" data-i18n="tabGuides">Hiring a guide</h1>
-          <p class="page-intro" data-i18n="guidesIntro">Nobody walks the park alone. A certified Madagascar National Parks guide has been required for international visitors since 2010, and they are the reason you will actually see the animals. Your guide lives here, so hiring one is also one of the most direct ways your visit supports the village.</p>
-        </div>
-      </div>
-      <nav class="plan-tabs" aria-label="Plan your trip" data-i18n-aria-label="crumbPlan">
-        <div class="wrap">
-          <a class="pt" href="#itineraries" data-i18n="tabItineraries">Itineraries</a>
-          <a class="pt" href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
-          <a class="pt" href="#when" data-i18n="tabWhen">When to visit</a>
-          <a class="pt" href="#guides" aria-current="page" data-i18n="tabGuides">Hiring a guide</a>
-          <a class="pt" href="#know" data-i18n="tabKnow">Know before you go</a>
-        </div>
-      </nav>
-
-      <section class="wrap stack g-24" style="padding-top: 64px; padding-bottom: 32px;" aria-labelledby="how-h">
-        <h2 id="how-h" class="display d-56" data-i18n="howItWorksHeading">How it works</h2>
-        <ol class="steps">
-          <li><span class="num">01</span><strong data-i18n="step1Title">Find a guide</strong><span data-i18n="step1Text">Ask your hotel, or turn up at the park and choose from the guides working that day. Guides can’t be booked online.</span></li>
-          <li><span class="num">02</span><strong data-i18n="step2Title">Pick a walk</strong><span data-i18n="step2Text">Walks are priced by circuit and length, and specialists cost more. Tell your guide about your fitness and any worries: they will adapt the route to suit you.</span></li>
-          <li><span class="num">03</span><strong data-i18n="step3Title">Pay in Ariary</strong><span data-i18n="step3Text">Cash only: park entry, the community fee at its own booth, and the guide fee for your group.</span></li>
-          <li><span class="num">04</span><strong data-i18n="step4Title">Go mid-morning</strong><span data-i18n="step4Text" data-i18n-html>The park is open {parkHours}. Mid-morning, when the lemurs are awake and settling in to feed, is the best time. <a class="text-link" href="#getting-here">Getting to the gate →</a></span></li>
-        </ol>
-      </section>
-
-      <section class="wrap" style="padding-top: 48px; padding-bottom: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px; align-items: start;">
-        <article class="cost-card" aria-labelledby="cost-h">
-          <div class="stack g-6" style="padding: 28px 28px 8px;">
-            <span class="eyebrow" data-i18n="costEyebrow">What it costs</span>
-            <h2 id="cost-h" class="display" style="font-size: 34px;" data-i18n="costHeading">One fee per group</h2>
-            <p class="small-muted" style="font-size: 15px;" data-i18n="costText">The guide fee is shared by everyone in your group, so it costs less each with more people. One guide takes a group of one to four; groups of six or more need at least two.</p>
-          </div>
-          <table class="cost-table">
-            <thead><tr><th scope="col" data-i18n="costWalk">Walk</th><th scope="col" data-i18n="costPaid">Paid at the gate</th></tr></thead>
-            <tbody id="guideCosts"></tbody>
-          </table>
-          <p class="small-muted" style="padding: 16px 28px 8px; font-size: 13px;" data-i18n="costFootnote" data-i18n-html>Guide rates by circuit, {feesAsOf}. Plus park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class="text-link" style="font-size: 13px;" href="#park">Park fees →</a></p>
-          <p class="small-muted" style="padding: 0 28px 28px; font-size: 13px;" data-rate-note></p>
-        </article>
-        <div class="stack g-24">
-          <article class="info-card" style="border-radius: 24px;">
-            <span class="eyebrow" data-i18n="soloEyebrow">Travelling solo?</span>
-            <h3 style="font-weight: 300;" data-i18n="soloTitle">Share the guide</h3>
-            <p data-i18n="soloText">Ask the park office to pair you with other visitors so you split one guide fee.</p>
-          </article>
-          <article class="info-card" style="border-radius: 24px;">
-            <span class="eyebrow" data-i18n="spotterEyebrow">The team behind your guide</span>
-            <h3 style="font-weight: 300;" data-i18n="spotterTitle">Spotters in the forest</h3>
-            <p data-i18n="spotterText">Animal spotters work the forest and tell your guide by phone where the animals are, so you can walk straight to them. The spotter is included in the guide’s price.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="wrap stack g-24" style="padding-top: 32px; padding-bottom: 64px;" aria-labelledby="spec-h">
-        <h2 id="spec-h" class="display d-56" data-i18n="specHeading">Ask for a specialist</h2>
-        <p class="lede" style="max-width: 760px;" data-i18n="specText">Specialist guides are experts in finding and explaining the park’s birds, plants, or reptiles and amphibians. Because of that expertise they cost {specialistFee}, whatever the circuit. Specialist guides can also be arranged through Centre ValBio.</p>
-        <div class="card-row" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px;">
-          <div class="spec"><strong data-i18n="specPrimates">Primatology</strong><span data-i18n="specPrimatesText">Lemurs, including the golden bamboo lemur.</span></div>
-          <div class="spec"><strong data-i18n="specBirds">Ornithology</strong><span data-i18n="specBirdsText" data-i18n-html>Birders: ask for a birding specialist by name. <a class="text-link" href="#itineraries" onclick="openItinerary('birders-two-day'); return false;">Birders’ itinerary →</a></span></div>
-          <div class="spec"><strong data-i18n="specHerps">Herpetology</strong><span data-i18n="specHerpsText">Frogs, chameleons and leaf-tailed geckos.</span></div>
-          <div class="spec"><strong data-i18n="specBotany">Botany</strong><span data-i18n="specBotanyText">Orchids, giant ferns and the forest itself.</span></div>
-        </div>
-      </section>
-
-      <section class="wrap" style="padding-bottom: 64px;" aria-labelledby="out-h">
-        <div class="inset-panel" style="padding: 48px; gap: 40px;">
-          <div class="stack g-14">
-            <span class="eyebrow" style="color: var(--gold);" data-i18n="outsideEyebrow">Outside the park</span>
-            <h2 id="out-h" class="display d-44" data-i18n="outsideHeading">Community guides, village fees</h2>
-            <div class="stack g-6">
-              <h3 class="out-sub">VOI Mitsinjo</h3>
-              <p style="font-size: 16px; line-height: 1.65; color: var(--fern);" data-i18n="outsideMitsinjoText">Community guides from Ambatolahy lead day and night walks, and the fees go straight to the village.</p>
-            </div>
-            <div class="stack g-6">
-              <h3 class="out-sub">VOI Ambohimagneva</h3>
-              <p style="font-size: 16px; line-height: 1.65; color: var(--fern);" data-i18n="outsideAmbohiText">A 75-hectare reserve bordering the national park, about 3 km from town on foot, managed by the local community association (the VOI) under Madagascar’s community forest-management law. Trails and a river waterfall are being opened to visitors, with guides certified by Madagascar National Parks and research links to Centre ValBio. Visitor access is still being set up, so ask before you go.</p>
-              <div class="out-photo"><img src="images/voi-ambohimagneva-guide-adrien.jpg" alt="Guide Adrien on the boardwalk trail at VOI Ambohimagneva" data-i18n-alt="altGuideAdrien" loading="lazy"></div>
-            </div>
-            <p style="font-size: 16px; line-height: 1.65; color: var(--fern);" data-i18n="outsideNightText">Night walks along the forest edge by the RN25 need no park ticket.</p>
-          </div>
-          <div class="stack g-10" id="guidesOutside"></div>
-        </div>
-      </section>
-
-      <section class="wrap" style="padding-bottom: 32px;">
-        <a class="next-card" href="#itineraries">
-          <span><span class="eyebrow" data-i18n="ready">Ready?</span><span class="next-title" data-i18n="chooseItin">Choose an itinerary</span></span>
-          <span class="next-arrow" aria-hidden="true">→</span>
-        </a>
-      </section>
-      <p class="wrap page-note" data-i18n="guidesSources">Sources: guide prices by circuit, specialist rates, group sizes, opening hours and how to find a guide from this guide’s own local notes (October 2026), consistent with trip reports (The Travelling Sloth, August 2025; The Blog of Dimi, January 2024); community fee from Madagascar National Parks; community guides from this guide’s own park listings; specialities from The Blog of Dimi; Centre ValBio specialists from Wikipedia; spotters by phone from Wikivoyage. Prices change, so confirm at the park office.</p>
-    </section>
-
     <!-- ================================================= KNOW BEFORE YOU GO -->
     <!-- Added 23 Oct 2026 (review C1, C2). Visas and health link to official
          advice rather than restating rules that change. -->
@@ -2035,20 +2081,11 @@
         <img class="bg-photo" src="images/ranomafana-national-park-trail.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#itineraries" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabKnow">Know before you go</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#plan" data-i18n="crumbPlan">Plan your trip</a> / <span data-i18n="tabKnow">Know before you go</span></nav>
           <h1 id="kn-h" class="page-title" data-i18n="tabKnow">Know before you go</h1>
           <p class="page-intro" data-i18n="knowIntro">Visas, health, money, what to pack and a few words of Malagasy: the practical side of a trip, with links to the official advice.</p>
         </div>
       </div>
-      <nav class="plan-tabs" aria-label="Plan your trip" data-i18n-aria-label="crumbPlan">
-        <div class="wrap">
-          <a class="pt" href="#itineraries" data-i18n="tabItineraries">Itineraries</a>
-          <a class="pt" href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
-          <a class="pt" href="#when" data-i18n="tabWhen">When to visit</a>
-          <a class="pt" href="#guides" data-i18n="tabGuides">Hiring a guide</a>
-          <a class="pt" href="#know" aria-current="page" data-i18n="tabKnow">Know before you go</a>
-        </div>
-      </nav>
 
       <section class="wrap stack g-24" style="padding-top: 64px; padding-bottom: 24px;" aria-labelledby="kn-papers-h">
         <h2 id="kn-papers-h" class="display d-56" data-i18n="knowEntryHeading">Papers, health and safety</h2>
@@ -2143,7 +2180,7 @@
         <img class="bg-photo" src="images/cvb-community-event.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navEvents">What’s on</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#explore" data-i18n="footerExplore">Explore</a> / <span data-i18n="navEvents">What’s on</span></nav>
           <h1 id="evp-h" class="page-title" data-i18n="navEvents">What’s on</h1>
           <p class="page-intro" data-i18n="eventsSubtitle">Weekly markets and talks, national holidays, and the festivals of the highland year.</p>
         </div>
@@ -2160,7 +2197,7 @@
         <img class="bg-photo" src="images/voi-ambohimagneva-hiking-trail.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navBlog">Stories</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#about" data-i18n="footerAbout">About</a> / <span data-i18n="navBlog">Stories</span></nav>
           <h1 id="blog-h" class="page-title" data-i18n="storiesHeading">Field notes</h1>
           <p class="page-intro" data-i18n="blogSubtitle">Wildlife, practical advice and the people behind the forest. New stories are on the way.</p>
         </div>
@@ -2181,7 +2218,7 @@
         <img class="bg-photo" src="images/ranomafana-national-park-canopy.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navWhy">Why visit</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#about" data-i18n="footerAbout">About</a> / <span data-i18n="navWhy">Why visit</span></nav>
           <h1 id="why-h" class="page-title" data-i18n="whyPageHeading" data-i18n-html>Why Madagascar,<br><em>why Ranomafana.</em></h1>
           <p class="page-intro" data-i18n="whyPageIntro">A world found nowhere else, a valley you can explore in a few days, and a visit that helps keep it alive.</p>
         </div>
@@ -2347,18 +2384,344 @@
       <p class="wrap page-note" data-i18n="whySources">Sources: Madagascar’s size and place from Wikipedia (Madagascar); its 88 million years of isolation, the share of its species found nowhere else, and where lemurs and leaf-tailed geckos come from, from Wikipedia (Wildlife of Madagascar; Lemur; Uroplatus); Madagascar’s income level from the World Bank’s country classification (2025–26); the park’s size, lemur count, dates and distances from Madagascar National Parks and this guide’s own local notes (October 2026); how tourism protects the forest from this guide’s own rationale (October 2026); visitor numbers, Ranomafana’s population, Madagascar National Parks’ role and the work local people do around the park from this guide’s own local notes (October 2026); the guides’ association from its notice at the park office (2026); the community reserves from their listings in this guide. Maps drawn for this guide from Natural Earth (public domain) and OpenStreetMap (© OpenStreetMap contributors, ODbL), October 2026.</p>
     </section>
 
-    <!-- ============================================================= ABOUT -->
-    <section id="page-about" class="page-view" aria-labelledby="ab-h">
+    <!-- ========================================================= OVERVIEWS -->
+    <!-- One overview page per section (Kyle, 23 Oct 2026): Explore, Plan, About and
+         Documents. Each lays out its pages as cards, and every page in the section
+         carries the same tab bar. Both are built by the script from SECTIONS, which
+         reads each page's own hero photo and intro, so there is nothing to keep in
+         step here: add a page to SECTIONS and it gets a card and a tab. -->
+    <section id="page-explore" class="page-view" aria-labelledby="explore-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-national-park-namorona.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="exploreHeading">Explore Ranomafana</span></nav>
+          <h1 id="explore-h" class="page-title" data-i18n="exploreHeading">Explore Ranomafana</h1>
+          <p class="page-intro" data-i18n="exploreIntro">Hotels, restaurants, activities and the events calendar: everything there is to do in Ranomafana, in one place.</p>
+        </div>
+      </div>
+      <section class="wrap" style="padding-top: 48px; padding-bottom: 64px;" aria-labelledby="explore-h">
+        <div class="hub-grid" data-hub="explore"></div>
+      </section>
+    </section>
+
+    <section id="page-plan" class="page-view" aria-labelledby="plan-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-national-park-trail.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="crumbPlan">Plan your trip</span></nav>
+          <h1 id="plan-h" class="page-title" data-i18n="crumbPlan">Plan your trip</h1>
+          <p class="page-intro" data-i18n="planHubIntro">Itineraries, the journey here, the best months, hiring a guide and the practical side: everything you need to plan a visit.</p>
+        </div>
+      </div>
+      <section class="wrap" style="padding-top: 48px; padding-bottom: 64px;" aria-labelledby="plan-h">
+        <div class="hub-grid" data-hub="plan"></div>
+      </section>
+    </section>
+
+    <section id="page-about" class="page-view" aria-labelledby="about-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-national-park-canopy.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="aboutHubHeading">About Ranomafana</span></nav>
+          <h1 id="about-h" class="page-title" data-i18n="aboutHubHeading">About Ranomafana</h1>
+          <p class="page-intro" data-i18n="aboutHubIntro">A rainforest valley in south-east Madagascar, its town of hot springs, and the people who look after it: Ranomafana at a glance.</p>
+        </div>
+      </div>
+      <section class="wrap stack g-24" style="padding-top: 48px;" aria-labelledby="glance-h">
+        <h2 id="glance-h" class="display d-44" data-i18n="glanceHeading">At a glance</h2>
+        <div class="stats glance">
+          <div class="stat"><b>43,550</b><span data-i18n="glance1">hectares of montane rainforest</span></div>
+          <div class="stat"><b>14</b><span data-i18n="glance2">kinds of lemur</span></div>
+          <div class="stat"><b>125</b><span data-i18n="glance3">kinds of bird</span></div>
+          <div class="stat"><b>20,000</b><span data-i18n="glance4">people in the town</span></div>
+        </div>
+        <div class="card-row" style="margin-top: 16px;">
+          <article class="info-card"><h3 data-i18n="ranoWhereTitle">Where it is</h3><p data-i18n="ranoWhereText">In the Vatovavy region of south-east Madagascar, where the highlands drop into rainforest on the RN25: 65 km from Fianarantsoa, the nearest city, 139 km from Mananjary on the Indian Ocean, and 412 km by road from Antananarivo.</p></article>
+          <article class="info-card"><h3 data-i18n="ranoNameTitle">The name</h3><p data-i18n="ranoNameText" data-i18n-html><em>Rano mafana</em> means hot water in Malagasy. Thermal springs rise at the bottom of the valley, and the village pool, Station Thermale, is a short walk from most lodges.</p></article>
+          <article class="info-card"><h3 data-i18n="ranoParkTitle">The national park</h3><p data-i18n="ranoParkText">43,550 hectares of montane rainforest, a national park since 1991 and a UNESCO World Heritage Site since 2007, run by Madagascar National Parks. The golden bamboo lemur was discovered here in 1986, and it is the reason the forest is protected.</p></article>
+        </div>
+      </section>
+      <section class="wrap stack g-24" style="padding-top: 48px; padding-bottom: 64px;" aria-labelledby="about-more-h">
+        <h2 id="about-more-h" class="display d-44" data-i18n="aboutMoreHeading">More about Ranomafana</h2>
+        <div class="hub-grid" data-hub="about"></div>
+      </section>
+    </section>
+
+    <!-- About Ranomafana: the place itself, first tab of the About section. Every
+         fact here is already on the site (Why visit, Getting here, the park). -->
+    <section id="page-ranomafana" class="page-view" aria-labelledby="ranomafana-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-national-park-namorona.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#about" data-i18n="footerAbout">About</a> / <span data-i18n="tabRanomafana">Ranomafana</span></nav>
+          <h1 id="ranomafana-h" class="page-title" data-i18n="ranoPageHeading" data-i18n-html>The valley of <em>hot water</em></h1>
+          <p class="page-intro" data-i18n="ranoPageIntro">Where Ranomafana is, what its name means, the national park around it and the town at the bottom of the valley.</p>
+        </div>
+      </div>
+      <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 24px;" aria-labelledby="ranomafana-h">
+        <div class="card-row">
+          <article class="info-card"><h3 data-i18n="ranoWhereTitle">Where it is</h3><p data-i18n="ranoWhereText">In the Vatovavy region of south-east Madagascar, where the highlands drop into rainforest on the RN25: 65 km from Fianarantsoa, the nearest city, 139 km from Mananjary on the Indian Ocean, and 412 km by road from Antananarivo.</p></article>
+          <article class="info-card"><h3 data-i18n="ranoNameTitle">The name</h3><p data-i18n="ranoNameText" data-i18n-html><em>Rano mafana</em> means hot water in Malagasy. Thermal springs rise at the bottom of the valley, and the village pool, Station Thermale, is a short walk from most lodges.</p></article>
+          <article class="info-card"><h3 data-i18n="ranoParkTitle">The national park</h3><p data-i18n="ranoParkText">43,550 hectares of montane rainforest, a national park since 1991 and a UNESCO World Heritage Site since 2007, run by Madagascar National Parks. The golden bamboo lemur was discovered here in 1986, and it is the reason the forest is protected.</p></article>
+          <article class="info-card"><h3 data-i18n="ranoWildTitle">Wildlife</h3><p data-i18n="ranoWildText">Fourteen kinds of lemur and 125 kinds of bird, many found only in Madagascar, with chameleons, leaf-tailed geckos and tree frogs that come out after dark.</p></article>
+          <article class="info-card"><h3 data-i18n="ranoTownTitle">The town</h3><p data-i18n="ranoTownText">About 20,000 people live in Ranomafana and the villages around the park. The village sits by the hot springs; the park entrance, at Ambodiamontana, is about 7 km up the RN25, with the Namorona River beside the road most of the way.</p></article>
+          <article class="info-card"><h3 data-i18n="ranoPeopleTitle">Run by the people who live here</h3><p data-i18n="ranoPeopleText">Local guides lead every walk in the park, through their own association. Villages run two community reserves, VOI Mitsinjo and VOI Ambohimagneva, where the fees go straight to the village. The hotels, restaurants and craft shops are local businesses.</p></article>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="#why" data-i18n="navWhy">Why visit</a>
+          <a class="btn btn-ghost" href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
+        </div>
+      </section>
+      <p class="wrap page-note" data-i18n="ranoSources">Sources: the park’s size, species counts and dates from Madagascar National Parks; distances from Madagascar National Parks and this guide’s Getting here page; the town’s population, the guides’ association and the community reserves from this guide’s own local notes (October 2026), as on the Why visit page.</p>
+    </section>
+
+    <section id="page-documents" class="page-view" aria-labelledby="documents-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-village.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="docsGroup">Documents</span></nav>
+          <h1 id="documents-h" class="page-title" data-i18n="docsGroup">Documents</h1>
+          <p class="page-intro" data-i18n="documentsIntro">Plans and information about Ranomafana’s future, and the Commune’s public documents, to read and download.</p>
+        </div>
+      </div>
+      <section class="wrap" style="padding-top: 48px; padding-bottom: 64px;" aria-labelledby="documents-h">
+        <div class="hub-grid" data-hub="documents"></div>
+      </section>
+    </section>
+
+    <!-- =========================================================== GALLERY -->
+    <!-- Every photo already on the site, gathered from the listing galleries by
+         renderGallery(). Nothing to add here: a new photo in a listing's gallery
+         shows up on this page by itself. -->
+    <section id="page-gallery" class="page-view" aria-labelledby="gal-h">
+      <div class="page-hero">
+        <img class="bg-photo" src="images/ranomafana-national-park-namorona.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#about" data-i18n="footerAbout">About</a> / <span data-i18n="navGallery">Photo gallery</span></nav>
+          <h1 id="gal-h" class="page-title" data-i18n="galleryHeading" data-i18n-html>Ranomafana in <em>pictures</em></h1>
+          <p class="page-intro" data-i18n="galleryIntro">The forest and its wildlife, the river, the waterfalls and the town, all photographed in Ranomafana. Tap a photo to see it larger and where it was taken.</p>
+        </div>
+      </div>
+      <section class="wrap stack g-24" style="padding-top: 40px; padding-bottom: 64px;" aria-label="Photos" data-i18n-aria-label="photosHeading">
+        <div class="pace-kinds" role="group" aria-label="Show photos of" data-i18n-aria-label="galleryFilterLabel" id="galleryGroups">
+          <button type="button" class="kind-btn" aria-pressed="true" data-group="all" onclick="filterGallery('all')"><span data-i18n="galleryAll">All photos</span> <span class="n" data-count-gallery="all"></span></button>
+          <button type="button" class="kind-btn" aria-pressed="false" data-group="forest" onclick="filterGallery('forest')"><span data-i18n="groupForest">Forest &amp; wildlife</span> <span class="n" data-count-gallery="forest"></span></button>
+          <button type="button" class="kind-btn" aria-pressed="false" data-group="water" onclick="filterGallery('water')"><span data-i18n="groupWater">Water &amp; springs</span> <span class="n" data-count-gallery="water"></span></button>
+          <button type="button" class="kind-btn" aria-pressed="false" data-group="village" onclick="filterGallery('village')"><span data-i18n="groupVillage">Village &amp; culture</span> <span class="n" data-count-gallery="village"></span></button>
+          <button type="button" class="kind-btn" aria-pressed="false" data-group="stays" onclick="filterGallery('stays')"><span data-i18n="galleryStays">Stays &amp; food</span> <span class="n" data-count-gallery="stays"></span></button>
+          <button type="button" class="kind-btn" aria-pressed="false" data-group="liked" onclick="filterGallery('liked')"><span data-i18n="galleryLiked">Your likes</span> <span class="n" data-count-gallery="liked"></span></button>
+        </div>
+        <p class="small-muted" data-i18n="galleryLikeNote">Tap ♥ on the photos you like best: they move to the top of the gallery. Your likes are kept on this device.</p>
+        <div class="photo-wall" id="galleryGrid"></div>
+        <p class="small-muted" data-i18n="galleryCredit">Photos by Kyle Schmidt and the places listed in this guide, unless noted on the photo’s own listing.</p>
+      </section>
+    </section>
+
+    <!-- ================================================ MUNICIPAL SERVICES -->
+    <!-- A section of its own (Kyle, 23 Oct 2026: not in the same place as Stories):
+         the overview #services and three pages, The Commune, Gendarmerie and
+         Hospital. Their entries come from municipalData in the data file, each row
+         filed by its `section` (renderServices()). Nothing is shown that has not been
+         confirmed: never guess an office, its hours or a phone number. -->
+    <section id="page-services" class="page-view" aria-labelledby="services-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-village.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="navServices">Municipal services</span></nav>
+          <h1 id="services-h" class="page-title" data-i18n="navServices">Municipal services</h1>
+          <p class="page-intro" data-i18n="servicesIntro">The Commune, the Gendarmerie and the hospital: public services in Ranomafana, with the Commune’s public documents.</p>
+        </div>
+      </div>
+      <section class="wrap" style="padding-top: 48px; padding-bottom: 64px;" aria-labelledby="services-h">
+        <div class="hub-grid" data-hub="services"></div>
+      </section>
+    </section>
+
+    <section id="page-commune" class="page-view" aria-labelledby="commune-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-town-flowers.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#services" data-i18n="navServices">Municipal services</a> / <span data-i18n="tabCommune">The Commune</span></nav>
+          <h1 id="commune-h" class="page-title" data-i18n="tabCommune">The Commune</h1>
+          <p class="page-intro" data-i18n="communeIntro">The town hall of Ranomafana: the Commune’s services for residents and visitors, and how to reach them.</p>
+        </div>
+      </div>
+
+      <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 40px;" aria-labelledby="commune-h">
+        <div class="card-row" data-service-section="commune"></div>
+        <div class="soon-box" data-service-empty="commune" hidden>
+          <p data-i18n="servicesEmpty">The Commune of Ranomafana is preparing the list of its services, with opening hours and contacts. It will appear here. Until then, the team can pass on your question.</p>
+          <a class="btn btn-ghost" href="mailto:ask@valb.io?subject=Ranomafana%20The Commune" data-team-mail="Ranomafana: The Commune" data-i18n="emailTeamBtn">Email the team</a>
+        </div>
+      </section>
+      <section class="wrap stack g-16" style="padding-top: 16px; padding-bottom: 64px;" aria-labelledby="sv-social-h" id="servicesSocial" hidden>
+        <h2 id="sv-social-h" class="display d-44" data-i18n="followHeading">Follow Ranomafana</h2>
+        <p class="lede" data-i18n="followText">News, events and photos from Ranomafana on social media.</p>
+        <div class="social-links" data-social></div>
+      </section>
+    </section>
+
+    <section id="page-gendarmerie" class="page-view" aria-labelledby="gendarmerie-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-village.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#services" data-i18n="navServices">Municipal services</a> / <span data-i18n="tabGendarmerie">Gendarmerie</span></nav>
+          <h1 id="gendarmerie-h" class="page-title" data-i18n="tabGendarmerie">Gendarmerie</h1>
+          <p class="page-intro" data-i18n="gendarmerieIntro">The Gendarmerie nationale is the police force in rural Madagascar, Ranomafana included. Its post, hours and contacts will be listed here.</p>
+        </div>
+      </div>
+
+      <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 40px;" aria-labelledby="gendarmerie-h">
+        <div class="card-row" data-service-section="gendarmerie"></div>
+        <div class="soon-box" data-service-empty="gendarmerie" hidden>
+          <p data-i18n="gendarmerieEmpty">The Gendarmerie’s details have not been confirmed yet, so none are shown. In an emergency, your guide or your hotel can help you reach it.</p>
+          <a class="btn btn-ghost" href="mailto:ask@valb.io?subject=Ranomafana%20Gendarmerie" data-team-mail="Ranomafana: Gendarmerie" data-i18n="emailTeamBtn">Email the team</a>
+        </div>
+      </section>
+    </section>
+
+    <section id="page-hospital" class="page-view" aria-labelledby="hospital-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-town-flowers.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#services" data-i18n="navServices">Municipal services</a> / <span data-i18n="tabHospital">Hospital</span></nav>
+          <h1 id="hospital-h" class="page-title" data-i18n="tabHospital">Hospital</h1>
+          <p class="page-intro" data-i18n="hospitalIntro">Medical care in Ranomafana: where to go, opening hours and contacts will be listed here.</p>
+        </div>
+      </div>
+
+      <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 40px;" aria-labelledby="hospital-h">
+        <div class="card-row" data-service-section="hospital"></div>
+        <div class="soon-box" data-service-empty="hospital" hidden>
+          <p data-i18n="hospitalEmpty">The hospital’s details have not been confirmed yet, so none are shown. If you fall ill, your guide or your hotel can take you there.</p>
+          <a class="btn btn-ghost" href="mailto:ask@valb.io?subject=Ranomafana%20Hospital" data-team-mail="Ranomafana: Hospital" data-i18n="emailTeamBtn">Email the team</a>
+        </div>
+      </section>
+    </section>
+
+    <!-- ========================================================= DOCUMENTS -->
+    <!-- Three pages under one "Documents" tab bar (Kyle, 23 Oct 2026). Their files
+         come from documentData in the data file: a row with section "tourism-plan",
+         "development-plan" or "investors" is listed on that page (renderDocuments()).
+         Until a file is added each page says it is on its way; nothing about the
+         plans themselves is written here, because the documents are the source. -->
+    <section id="page-tourism-plan" class="page-view" aria-labelledby="tourism-plan-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-national-park-footbridge.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#documents" data-i18n="docsGroup">Documents</a> / <span data-i18n="tabTourismPlan">Regional Tourism Plan</span></nav>
+          <h1 id="tourism-plan-h" class="page-title" data-i18n="tabTourismPlan">Regional Tourism Plan</h1>
+          <p class="page-intro" data-i18n="tourismPlanIntro">The region’s plan for developing tourism, with Ranomafana’s place in it, to read and download.</p>
+        </div>
+      </div>
+      <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 64px;" aria-labelledby="tourism-plan-dl-h">
+        <span class="eyebrow" data-i18n="docsEyebrow">Downloads</span>
+        <h2 id="tourism-plan-dl-h" class="display d-56" data-i18n="docsToDownload">Documents to download</h2>
+        <ul class="doc-list" data-doc-section="tourism-plan"></ul>
+        <div class="soon-box" data-doc-empty="tourism-plan" hidden>
+          <p data-i18n="docSectionEmpty">This document has not been published here yet. It will be available to download on this page.</p>
+        </div>
+      </section>
+    </section>
+
+    <section id="page-development-plan" class="page-view" aria-labelledby="development-plan-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-village.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#documents" data-i18n="docsGroup">Documents</a> / <span data-i18n="tabDevPlan">Ranomafana Development Plan</span></nav>
+          <h1 id="development-plan-h" class="page-title" data-i18n="tabDevPlan">Ranomafana Development Plan</h1>
+          <p class="page-intro" data-i18n="devPlanIntro">The Commune of Ranomafana’s plan for the development of the town and its communities, to read and download.</p>
+        </div>
+      </div>
+      <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 64px;" aria-labelledby="development-plan-dl-h">
+        <span class="eyebrow" data-i18n="docsEyebrow">Downloads</span>
+        <h2 id="development-plan-dl-h" class="display d-56" data-i18n="docsToDownload">Documents to download</h2>
+        <ul class="doc-list" data-doc-section="development-plan"></ul>
+        <div class="soon-box" data-doc-empty="development-plan" hidden>
+          <p data-i18n="docSectionEmpty">This document has not been published here yet. It will be available to download on this page.</p>
+        </div>
+      </section>
+    </section>
+
+    <section id="page-investors" class="page-view" aria-labelledby="investors-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/main-view-cvb.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#documents" data-i18n="docsGroup">Documents</a> / <span data-i18n="tabInvestors">Investor information</span></nav>
+          <h1 id="investors-h" class="page-title" data-i18n="tabInvestors">Investor information</h1>
+          <p class="page-intro" data-i18n="investorsIntro">For anyone thinking of investing in Ranomafana: the documents to read first, and who to talk to.</p>
+        </div>
+      </div>
+      <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 64px;" aria-labelledby="investors-dl-h">
+        <span class="eyebrow" data-i18n="docsEyebrow">Downloads</span>
+        <h2 id="investors-dl-h" class="display d-56" data-i18n="docsToDownload">Documents to download</h2>
+        <ul class="doc-list" data-doc-section="investors"></ul>
+        <div class="soon-box" data-doc-empty="investors" hidden>
+          <p data-i18n="investorsEmpty">Investor documents will be published here. Until then, the team can put you in touch with the right people.</p>
+          <a class="btn btn-ghost" href="mailto:ask@valb.io?subject=Investing%20in%20Ranomafana" data-team-mail="Investing in Ranomafana" data-i18n="emailTeamBtn">Email the team</a>
+        </div>
+      </section>
+    </section>
+
+    <section id="page-public-documents" class="page-view" aria-labelledby="public-documents-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-village.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#documents" data-i18n="docsGroup">Documents</a> / <span data-i18n="docsHeadingPlain">Public documents</span></nav>
+          <h1 id="public-documents-h" class="page-title" data-i18n="docsHeadingPlain">Public documents</h1>
+          <p class="page-intro" data-i18n="publicDocsIntro">Decrees, notices and other public documents from the Commune of Ranomafana, to download.</p>
+        </div>
+      </div>
+      <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 64px;" aria-labelledby="pd-dl-h">
+        <span class="eyebrow" data-i18n="docsEyebrow">Downloads</span>
+        <h2 id="pd-dl-h" class="display d-56" data-i18n="docsToDownload">Documents to download</h2>
+        <ul class="doc-list" id="docList"></ul>
+        <div class="soon-box" id="docEmpty" hidden>
+          <p data-i18n="docsEmpty">No documents have been published yet. Decrees, notices and other public documents from the Commune will be listed here to download.</p>
+        </div>
+      </section>
+    </section>
+
+    <!-- =========================================================== CONTACT -->
+    <!-- The team and the contact details on one page (Kyle, 23 Oct 2026: "merge the
+         team and the contact tab under contact"). It was #about until then; old
+         #about links still land here (PAGE_ALIAS in the script). -->
+    <section id="page-contact" class="page-view" aria-labelledby="ct-h">
       <div class="page-hero">
         <img class="bg-photo" src="images/main-view-cvb.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
-          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="footerAbout">About</span></nav>
-          <h1 id="ab-h" class="page-title" data-i18n="aboutHeading">About the team</h1>
-          <p class="page-intro" data-i18n="teamIntro">This guide is shaped by people who care deeply about Ranomafana: local tourism providers, community members, guides, and conservation-minded partners working to help visitors travel thoughtfully.</p>
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#about" data-i18n="footerAbout">About</a> / <span data-i18n="footerContact">Contact</span></nav>
+          <h1 id="ct-h" class="page-title" data-i18n="contactHeading">Contact the team</h1>
+          <p class="page-intro" data-i18n="contactIntro">Questions about getting here, guides or where to stay? Write to the people who made this guide.</p>
         </div>
       </div>
-      <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 64px;" aria-labelledby="team-h">
+      <section class="wrap" style="padding-top: 56px; padding-bottom: 40px;">
+        <div class="cta-box">
+          <div class="stack g-16 cta-copy">
+            <h2 class="display d-56" data-i18n="planCtaHeading" data-i18n-html>Plan with people who <em>live here.</em></h2>
+            <p class="lede" data-i18n="planCtaText">Peace Corps Volunteer Kyle Schmidt made this guide with local partners. Ask us about getting here, guides or where to stay.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-gold btn-lg" href="mailto:ask@valb.io?subject=Ranomafana%20team%20contact" data-team-mail="Ranomafana team contact" data-i18n="emailTeamBtn">Email the team</a>
+          </div>
+        </div>
+      </section>
+      <section class="wrap stack g-24" style="padding-top: 24px; padding-bottom: 64px;" aria-labelledby="team-h">
         <h2 id="team-h" class="display d-56" data-i18n="teamHeading">The people behind the guide</h2>
         <p class="lede" data-i18n="teamText">This guide was made by Peace Corps Volunteer Kyle Schmidt, with funding from PIC3 and support from PCDT-R and the Commune of Ranomafana.</p>
         <!-- Team profiles: hidden until real names and photos arrive (review F3, 22 Oct 2026).
@@ -2368,17 +2731,6 @@
           <article class="team-card"><div class="headshot" data-i18n="teamHeadshot">Headshot</div><div><h3 data-i18n="teamNameTbc">Name to come</h3><p class="team-role" data-i18n="teamRole2">Community liaison</p><p data-i18n="teamBio2">Community partnerships, local knowledge and visitor support.</p></div></article>
           <article class="team-card"><div class="headshot" data-i18n="teamHeadshot">Headshot</div><div><h3 data-i18n="teamNameTbc">Name to come</h3><p class="team-role" data-i18n="teamRole3">Visitor information</p><p data-i18n="teamBio3">Helping visitors plan safe, respectful and memorable trips.</p></div></article>
           <article class="team-card"><div class="headshot" data-i18n="teamHeadshot">Headshot</div><div><h3 data-i18n="teamNameTbc">Name to come</h3><p class="team-role" data-i18n="teamRole4">Digital &amp; partnerships</p><p data-i18n="teamBio4">Keeping this guide up to date and working with local partners.</p></div></article>
-        </div>
-      </section>
-      <section class="wrap pad-b">
-        <div class="cta-box">
-          <div class="stack g-16 cta-copy">
-            <h2 class="display d-56" data-i18n="planCtaHeading" data-i18n-html>Plan with people who <em>live here.</em></h2>
-            <p class="lede" data-i18n="planCtaText">Peace Corps Volunteer Kyle Schmidt made this guide with local partners. Ask us about getting here, guides or where to stay.</p>
-          </div>
-          <div class="btn-row">
-            <a class="btn btn-gold btn-lg" href="mailto:ask@valb.io?subject=Ranomafana%20team%20contact" data-team-mail="Ranomafana team contact" data-i18n="emailTeamBtn">Email the team</a>
-          </div>
         </div>
       </section>
     </section>
@@ -2395,15 +2747,15 @@
           <span data-i18n="footerTagline">A community visitor guide · Madagascar</span>
         </div>
         <nav class="footer-col" aria-label="Explore" data-i18n-aria-label="footerExplore">
-          <strong data-i18n="footerExplore">Explore</strong>
-          <a href="#why" data-i18n="navWhy">Why visit</a>
-          <a href="#stay" data-i18n="drawerStay">Places to stay</a>
-          <a href="#eat" data-i18n="drawerEat">Places to eat</a>
-          <a href="#do" data-i18n="drawerDo">Things to do</a>
-          <a href="#events" data-i18n="navEvents">What’s on</a>
+          <a class="footer-head" href="#explore" data-i18n="footerExplore">Explore</a>
+          <a href="#stay" data-i18n="navHotels">Hotels</a>
+          <a href="#eat" data-i18n="navRestaurants">Restaurants</a>
+          <a href="#do" data-i18n="navActivities">Activities</a>
+          <a href="#park" data-i18n="crumbPark">National park</a>
+          <a href="#events" data-i18n="navEventsCal">Events calendar</a>
         </nav>
         <nav class="footer-col" aria-label="Plan" data-i18n-aria-label="navPlan">
-          <strong data-i18n="navPlan">Plan</strong>
+          <a class="footer-head" href="#plan" data-i18n="navPlan">Plan</a>
           <a href="#itineraries" data-i18n="tabItineraries">Itineraries</a>
           <a href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
           <a href="#when" data-i18n="tabWhen">When to visit</a>
@@ -2411,18 +2763,40 @@
           <a href="#know" data-i18n="tabKnow">Know before you go</a>
         </nav>
         <nav class="footer-col" aria-label="About" data-i18n-aria-label="footerAbout">
-          <strong data-i18n="footerAbout">About</strong>
-          <a href="#about" data-i18n="footerTeam">The team</a>
+          <a class="footer-head" href="#about" data-i18n="footerAbout">About</a>
+          <a href="#ranomafana" data-i18n="aboutHubHeading">About Ranomafana</a>
+          <a href="#why" data-i18n="navWhy">Why visit</a>
           <a href="#blog" data-i18n="navBlog">Stories</a>
-          <a href="mailto:ask@valb.io" data-team-mail="" data-i18n="footerContact">Contact</a>
+          <a href="#gallery" data-i18n="navGallery">Photo gallery</a>
+          <a href="#contact" data-i18n="footerContact">Contact</a>
+        </nav>
+        <nav class="footer-col" aria-label="Municipal services" data-i18n-aria-label="navServices">
+          <a class="footer-head" href="#services" data-i18n="navServices">Municipal services</a>
+          <a href="#commune" data-i18n="tabCommune">The Commune</a>
+          <a href="#gendarmerie" data-i18n="tabGendarmerie">Gendarmerie</a>
+          <a href="#hospital" data-i18n="tabHospital">Hospital</a>
+        </nav>
+        <nav class="footer-col" aria-label="Documents" data-i18n-aria-label="docsGroup">
+          <a class="footer-head" href="#documents" data-i18n="docsGroup">Documents</a>
+          <a href="#tourism-plan" data-i18n="tabTourismPlan">Regional Tourism Plan</a>
+          <a href="#development-plan" data-i18n="tabDevPlan">Ranomafana Development Plan</a>
+          <a href="#investors" data-i18n="tabInvestors">Investor information</a>
+          <a href="#public-documents" data-i18n="docsHeadingPlain">Public documents</a>
         </nav>
       </div>
-      <div class="partners">
+      <!-- More logos (Commune, Region, Ministry, PCDT-R…) come from PARTNER_LOGOS in the
+           data file and are added after these four by renderPartners(). -->
+      <div class="partners" id="partnerRow">
         <span class="partners-label" data-i18n="partnersHeading">Partners</span>
         <a class="partner" href="https://www.peacecorps.gov/madagascar/" target="_blank" rel="noopener" data-newtab="Peace Corps Madagascar" aria-label="Peace Corps Madagascar (opens in a new tab)"><img src="images/peace-corps-logo-white.svg" alt="Peace Corps Madagascar" loading="lazy"></a>
         <a class="partner partner--light" href="https://www.stonybrook.edu/commcms/centre-valbio/" target="_blank" rel="noopener" data-newtab="Centre ValBio" aria-label="Centre ValBio (opens in a new tab)"><img src="images/centre-valbio-logo.png" alt="Centre ValBio" loading="lazy"></a>
         <a class="partner partner--light" href="https://www.pic.mg/" target="_blank" rel="noopener" data-newtab="PIC3 — Pôles Intégrés de Croissance" aria-label="PIC3 — Pôles Intégrés de Croissance (opens in a new tab)"><img src="images/pic3-logo.png" alt="PIC3 — Pôles Intégrés de Croissance" loading="lazy"></a>
         <a class="partner partner--light" href="https://parcs-madagascar.com/en/homepage/" target="_blank" rel="noopener" data-newtab="Madagascar National Parks" aria-label="Madagascar National Parks (opens in a new tab)"><img src="images/madagascar-national-parks-logo.png" alt="Madagascar National Parks" loading="lazy"></a>
+      </div>
+      <!-- Shown once SOCIAL_LINKS in the data file has an address (renderSocial()). -->
+      <div class="footer-social" id="footerSocial" hidden>
+        <span class="partners-label" data-i18n="followUs">Follow us</span>
+        <div class="social-links" data-social></div>
       </div>
       <div class="footer-base">
         <p class="footer-credit" data-i18n="footerCredit">Made by Peace Corps Volunteer Kyle Schmidt · Funded by PIC3 · Supported by PCDT-R and the Commune of Ranomafana · Thanks to Emma Starink</p>
@@ -2438,9 +2812,9 @@
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>
       <span data-i18n="bnavHome">Home</span>
     </a>
-    <a href="#why" data-bnav="why">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20z"></path></svg>
-      <span data-i18n="bnavWhy">Why</span>
+    <a href="#about" data-bnav="about">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.5"></path></svg>
+      <span data-i18n="footerAbout">About</span>
     </a>
     <a href="#stay" data-bnav="stay">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V8M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"></path><circle cx="7" cy="11" r="1.6"></circle></svg>
@@ -2454,9 +2828,9 @@
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M15.5 8.5l-2 5-5 2 2-5z"></path></svg>
       <span data-i18n="bnavDo">Do</span>
     </a>
-    <a href="#itineraries" data-bnav="plan">
+    <a href="#events" data-bnav="events">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg>
-      <span data-i18n="bnavPlan">Plan</span>
+      <span data-i18n="bnavEvents">Events</span>
     </a>
   </nav>
 
@@ -2509,6 +2883,8 @@
       send: '<path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/>',
       image: '<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/>',
       pin: '<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+      doc: '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>',
+      download: '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',
       share: '<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/>'
     };
     const icon = (name, size = 18) => `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ''}</svg>`;
@@ -2963,6 +3339,101 @@
         altTownFlowers: "Pink flowers in Ranomafana town, with the forested mountains behind",
         altVillage: "Wooden houses with thatched roofs in a village below forested hills",
         newTabSuffix: "opens in a new tab",
+        navGallery: "Photo gallery",
+        navGalleryShort: "Gallery",
+        navServices: "Municipal services",
+        navServicesShort: "Commune",
+        galleryHeading: "Ranomafana in <em>pictures</em>",
+        galleryIntro: "The forest and its wildlife, the river, the waterfalls and the town, all photographed in Ranomafana. Tap a photo to see it larger and where it was taken.",
+        galleryFilterLabel: "Show photos of",
+        galleryAll: "All photos",
+        galleryStays: "Stays & food",
+        galleryCredit: "Taken a good photo in Ranomafana? The team would love to see it.",
+        guideEyebrow: "Required in the park",
+        navHotels: "Hotels",
+        navRestaurants: "Restaurants",
+        navActivities: "Activities",
+        navEventsCal: "Events calendar",
+        bnavEvents: "Events",
+        glanceHeading: "At a glance",
+        glance1: "hectares of montane rainforest",
+        glance2: "kinds of lemur",
+        glance3: "kinds of bird",
+        glance4: "people in the town",
+        aboutMoreHeading: "More about Ranomafana",
+        tabRanomafana: "Ranomafana",
+        ranoPageHeading: "The valley of <em>hot water</em>",
+        ranoPageIntro: "Where Ranomafana is, what its name means, the national park around it and the town at the bottom of the valley.",
+        ranoWhereTitle: "Where it is",
+        ranoWhereText: "In the Vatovavy region of south-east Madagascar, where the highlands drop into rainforest on the RN25: 65 km from Fianarantsoa, the nearest city, 139 km from Mananjary on the Indian Ocean, and 412 km by road from Antananarivo.",
+        ranoNameTitle: "The name",
+        ranoNameText: "<em>Rano mafana</em> means hot water in Malagasy. Thermal springs rise at the bottom of the valley, and the village pool, Station Thermale, is a short walk from most lodges.",
+        ranoParkTitle: "The national park",
+        ranoParkText: "43,550 hectares of montane rainforest, a national park since 1991 and a UNESCO World Heritage Site since 2007, run by Madagascar National Parks. The golden bamboo lemur was discovered here in 1986, and it is the reason the forest is protected.",
+        ranoWildTitle: "Wildlife",
+        ranoWildText: "Fourteen kinds of lemur and 125 kinds of bird, many found only in Madagascar, with chameleons, leaf-tailed geckos and tree frogs that come out after dark.",
+        ranoTownTitle: "The town",
+        ranoTownText: "About 20,000 people live in Ranomafana and the villages around the park. The village sits by the hot springs; the park entrance, at Ambodiamontana, is about 7 km up the RN25, with the Namorona River beside the road most of the way.",
+        ranoPeopleTitle: "Run by the people who live here",
+        ranoPeopleText: "Local guides lead every walk in the park, through their own association. Villages run two community reserves, VOI Mitsinjo and VOI Ambohimagneva, where the fees go straight to the village. The hotels, restaurants and craft shops are local businesses.",
+        ranoSources: "Sources: the park’s size, species counts and dates from Madagascar National Parks; distances from Madagascar National Parks and this guide’s Getting here page; the town’s population, the guides’ association and the community reserves from this guide’s own local notes (October 2026), as on the Why visit page.",
+        ranoPageHeadingPlain: "The valley of hot water",
+        tabCommune: "The Commune",
+        tabGendarmerie: "Gendarmerie",
+        tabHospital: "Hospital",
+        communeIntro: "The town hall of Ranomafana: the Commune’s services for residents and visitors, and how to reach them.",
+        gendarmerieIntro: "The Gendarmerie nationale is the police force in rural Madagascar, Ranomafana included. Its post, hours and contacts will be listed here.",
+        gendarmerieEmpty: "The Gendarmerie’s details have not been confirmed yet, so none are shown. In an emergency, your guide or your hotel can help you reach it.",
+        hospitalIntro: "Medical care in Ranomafana: where to go, opening hours and contacts will be listed here.",
+        hospitalEmpty: "The hospital’s details have not been confirmed yet, so none are shown. If you fall ill, your guide or your hotel can take you there.",
+        publicDocsIntro: "Decrees, notices and other public documents from the Commune of Ranomafana, to download.",
+        sectionOverview: "Overview",
+        hubOpen: "Open",
+        exploreHeading: "Explore Ranomafana",
+        exploreIntro: "Hotels, restaurants, activities and the events calendar: everything there is to do in Ranomafana, in one place.",
+        planHubIntro: "Itineraries, the journey here, the best months, hiring a guide and the practical side: everything you need to plan a visit.",
+        aboutHubHeading: "About Ranomafana",
+        aboutHubIntro: "A rainforest valley in south-east Madagascar, its town of hot springs, and the people who look after it: Ranomafana at a glance.",
+        documentsIntro: "Plans and information about Ranomafana’s future, and the Commune’s public documents, to read and download.",
+        docsPublicCard: "Decrees, notices and other public documents from the Commune of Ranomafana, to download.",
+        docsGroup: "Documents",
+        tabTourismPlan: "Regional Tourism Plan",
+        tabDevPlan: "Ranomafana Development Plan",
+        tabInvestors: "Investor information",
+        tourismPlanIntro: "The region’s plan for developing tourism, with Ranomafana’s place in it, to read and download.",
+        devPlanIntro: "The Commune of Ranomafana’s plan for the development of the town and its communities, to read and download.",
+        investorsIntro: "For anyone thinking of investing in Ranomafana: the documents to read first, and who to talk to.",
+        docsToDownload: "Documents to download",
+        docSectionEmpty: "This document has not been published here yet. It will be available to download on this page.",
+        investorsEmpty: "Investor documents will be published here. Until then, the team can put you in touch with the right people.",
+        contactHeading: "Contact the team",
+        contactIntro: "Questions about getting here, guides or where to stay? Write to the people who made this guide.",
+        galleryLiked: "Your likes",
+        galleryLikeNote: "Tap ♥ on the photos you like best: they move to the top of the gallery. Your likes are kept on this device.",
+        galleryLike: "Like this photo",
+        galleryUnlike: "Remove your like",
+        galleryLikeShort: "Like",
+        galleryLikedOne: "Liked",
+        galleryNoLikes: "You haven’t liked any photos yet. Tap ♥ on a photo to add it here.",
+        galleryFrom: "Taken at",
+        galleryPrev: "Previous photo",
+        galleryNext: "Next photo",
+        servicesHeading: "The Commune of <em>Ranomafana</em>",
+        servicesIntro: "The Commune, the Gendarmerie and the hospital: public services in Ranomafana, with the Commune’s public documents.",
+        servicesEyebrow: "Town hall",
+        servicesListHeading: "Municipal <em>services</em>",
+        servicesEmpty: "The Commune of Ranomafana is preparing the list of its services, with opening hours and contacts. It will appear here. Until then, the team can pass on your question.",
+        docsEyebrow: "Downloads",
+        docsHeading: "Public <em>documents</em>",
+        docsHeadingPlain: "Public documents",
+        docsEmpty: "No documents have been published yet. Decrees, notices and other public documents from the Commune will be listed here to download.",
+        followHeading: "Follow Ranomafana",
+        followText: "News, events and photos from Ranomafana on social media.",
+        followUs: "Follow us",
+        serviceWhere: "Where",
+        serviceHours: "Hours",
+        serviceContact: "Contact",
+        docDownload: "Download",
         teamHeadshot: "Headshot",
         teamNameTbc: "Name to come",
         reviewOne: "{n} review",
@@ -3392,6 +3863,101 @@
         altTownFlowers: "Des fleurs roses dans le village de Ranomafana, avec les montagnes boisées derrière",
         altVillage: "Des maisons en bois aux toits de chaume dans un village, au pied de collines boisées",
         newTabSuffix: "s’ouvre dans un nouvel onglet",
+        navGallery: "Galerie photos",
+        navGalleryShort: "Galerie",
+        navServices: "Services municipaux",
+        navServicesShort: "Commune",
+        galleryHeading: "Ranomafana en <em>images</em>",
+        galleryIntro: "La forêt et sa faune, la rivière, les cascades et la ville, toutes photographiées à Ranomafana. Touchez une photo pour l’agrandir et voir où elle a été prise.",
+        galleryFilterLabel: "Afficher les photos de",
+        galleryAll: "Toutes les photos",
+        galleryStays: "Hébergements et repas",
+        galleryCredit: "Vous avez pris une belle photo à Ranomafana ? L’équipe serait ravie de la voir.",
+        guideEyebrow: "Obligatoire dans le parc",
+        navHotels: "Hôtels",
+        navRestaurants: "Restaurants",
+        navActivities: "Activités",
+        navEventsCal: "Agenda",
+        bnavEvents: "Agenda",
+        glanceHeading: "En un coup d’œil",
+        glance1: "hectares de forêt tropicale de montagne",
+        glance2: "espèces de lémuriens",
+        glance3: "espèces d’oiseaux",
+        glance4: "habitants dans la ville",
+        aboutMoreHeading: "Plus sur Ranomafana",
+        tabRanomafana: "Ranomafana",
+        ranoPageHeading: "La vallée de l’<em>eau chaude</em>",
+        ranoPageIntro: "Où se trouve Ranomafana, ce que signifie son nom, le parc national qui l’entoure et la ville au fond de la vallée.",
+        ranoWhereTitle: "Où c’est",
+        ranoWhereText: "Dans la région Vatovavy, au sud-est de Madagascar, là où les Hautes Terres plongent dans la forêt tropicale sur la RN25 : à 65 km de Fianarantsoa, la ville la plus proche, à 139 km de Mananjary sur l’océan Indien et à 412 km d’Antananarivo par la route.",
+        ranoNameTitle: "Le nom",
+        ranoNameText: "<em>Rano mafana</em> signifie eau chaude en malgache. Des sources thermales jaillissent au fond de la vallée, et la piscine du village, la Station Thermale, est à quelques pas de la plupart des hébergements.",
+        ranoParkTitle: "Le parc national",
+        ranoParkText: "43 550 hectares de forêt tropicale de montagne, parc national depuis 1991 et site du patrimoine mondial de l’UNESCO depuis 2007, géré par Madagascar National Parks. Le grand hapalémur doré y a été découvert en 1986, et c’est pour lui que la forêt est protégée.",
+        ranoWildTitle: "La faune",
+        ranoWildText: "Quatorze espèces de lémuriens et 125 espèces d’oiseaux, dont beaucoup ne vivent qu’à Madagascar, ainsi que des caméléons, des uroplates et des rainettes qui sortent à la nuit tombée.",
+        ranoTownTitle: "La ville",
+        ranoTownText: "Environ 20 000 personnes vivent à Ranomafana et dans les villages autour du parc. Le village s’étend près des sources chaudes ; l’entrée du parc, à Ambodiamontana, se trouve à environ 7 km en amont sur la RN25, la rivière Namorona longeant la route presque tout du long.",
+        ranoPeopleTitle: "Tenu par les gens qui vivent ici",
+        ranoPeopleText: "Des guides locaux mènent chaque balade dans le parc, au sein de leur propre association. Les villages gèrent deux réserves communautaires, VOI Mitsinjo et VOI Ambohimagneva, dont les droits d’entrée vont directement au village. Hôtels, restaurants et boutiques d’artisanat sont des entreprises locales.",
+        ranoSources: "Sources : superficie du parc, nombre d’espèces et dates selon Madagascar National Parks ; distances selon Madagascar National Parks et la page « Venir » de ce guide ; population de la ville, association des guides et réserves communautaires selon les notes locales de ce guide (octobre 2026), comme sur la page « Pourquoi venir ».",
+        ranoPageHeadingPlain: "La vallée de l’eau chaude",
+        tabCommune: "La Commune",
+        tabGendarmerie: "Gendarmerie",
+        tabHospital: "Hôpital",
+        communeIntro: "La mairie de Ranomafana : les services de la Commune pour les habitants et les visiteurs, et comment les joindre.",
+        gendarmerieIntro: "La Gendarmerie nationale assure la police dans les zones rurales de Madagascar, dont Ranomafana. Son poste, ses horaires et ses contacts seront indiqués ici.",
+        gendarmerieEmpty: "Les coordonnées de la Gendarmerie ne sont pas encore confirmées, aucune n’est donc indiquée. En cas d’urgence, votre guide ou votre hôtel peut vous aider à la joindre.",
+        hospitalIntro: "Les soins à Ranomafana : où aller, les horaires et les contacts seront indiqués ici.",
+        hospitalEmpty: "Les coordonnées de l’hôpital ne sont pas encore confirmées, aucune n’est donc indiquée. Si vous tombez malade, votre guide ou votre hôtel peut vous y conduire.",
+        publicDocsIntro: "Arrêtés, avis et autres documents publics de la Commune de Ranomafana, à télécharger.",
+        sectionOverview: "Vue d’ensemble",
+        hubOpen: "Ouvrir",
+        exploreHeading: "Découvrir Ranomafana",
+        exploreIntro: "Hôtels, restaurants, activités et agenda des événements : tout ce qu’il y a à faire à Ranomafana, au même endroit.",
+        planHubIntro: "Itinéraires, le trajet, les meilleurs mois, l’embauche d’un guide et le côté pratique : tout ce qu’il faut pour préparer une visite.",
+        aboutHubHeading: "À propos de Ranomafana",
+        aboutHubIntro: "Une vallée de forêt tropicale dans le sud-est de Madagascar, sa ville aux sources chaudes et les gens qui en prennent soin : Ranomafana en un coup d’œil.",
+        documentsIntro: "Les plans et informations sur l’avenir de Ranomafana, et les documents publics de la Commune, à lire et à télécharger.",
+        docsPublicCard: "Arrêtés, avis et autres documents publics de la Commune de Ranomafana, à télécharger.",
+        docsGroup: "Documents",
+        tabTourismPlan: "Plan régional du tourisme",
+        tabDevPlan: "Plan de développement de Ranomafana",
+        tabInvestors: "Informations pour les investisseurs",
+        tourismPlanIntro: "Le plan de la région pour le développement du tourisme, et la place qu’y tient Ranomafana, à lire et à télécharger.",
+        devPlanIntro: "Le plan de la Commune de Ranomafana pour le développement de la ville et de ses communautés, à lire et à télécharger.",
+        investorsIntro: "Pour toute personne qui envisage d’investir à Ranomafana : les documents à lire d’abord, et à qui s’adresser.",
+        docsToDownload: "Documents à télécharger",
+        docSectionEmpty: "Ce document n’est pas encore publié ici. Il pourra être téléchargé sur cette page.",
+        investorsEmpty: "Les documents pour les investisseurs seront publiés ici. D’ici là, l’équipe peut vous mettre en relation avec les bonnes personnes.",
+        contactHeading: "Contacter l’équipe",
+        contactIntro: "Des questions sur l’accès, les guides ou l’hébergement ? Écrivez aux personnes qui ont fait ce guide.",
+        galleryLiked: "Vos coups de cœur",
+        galleryLikeNote: "Touchez ♥ sur vos photos préférées : elles remontent en tête de la galerie. Vos coups de cœur restent sur cet appareil.",
+        galleryLike: "Aimer cette photo",
+        galleryUnlike: "Retirer votre coup de cœur",
+        galleryLikeShort: "J’aime",
+        galleryLikedOne: "Aimée",
+        galleryNoLikes: "Vous n’avez encore aimé aucune photo. Touchez ♥ sur une photo pour l’ajouter ici.",
+        galleryFrom: "Prise à",
+        galleryPrev: "Photo précédente",
+        galleryNext: "Photo suivante",
+        servicesHeading: "La Commune de <em>Ranomafana</em>",
+        servicesIntro: "La Commune, la Gendarmerie et l’hôpital : les services publics de Ranomafana, avec les documents publics de la Commune.",
+        servicesEyebrow: "Mairie",
+        servicesListHeading: "Services <em>municipaux</em>",
+        servicesEmpty: "La Commune de Ranomafana prépare la liste de ses services, avec les horaires et les contacts. Elle sera publiée ici. D’ici là, l’équipe peut transmettre votre question.",
+        docsEyebrow: "Téléchargements",
+        docsHeading: "Documents <em>publics</em>",
+        docsHeadingPlain: "Documents publics",
+        docsEmpty: "Aucun document n’a encore été publié. Les arrêtés, avis et autres documents publics de la Commune seront listés ici, à télécharger.",
+        followHeading: "Suivre Ranomafana",
+        followText: "Actualités, événements et photos de Ranomafana sur les réseaux sociaux.",
+        followUs: "Suivez-nous",
+        serviceWhere: "Où",
+        serviceHours: "Horaires",
+        serviceContact: "Contact",
+        docDownload: "Télécharger",
         teamHeadshot: "Photo",
         teamNameTbc: "Nom à venir",
         reviewOne: "{n} avis",
@@ -3820,6 +4386,101 @@
         altTownFlowers: "Rosa Blüten im Ort Ranomafana, dahinter die bewaldeten Berge",
         altVillage: "Holzhäuser mit Strohdächern in einem Dorf unterhalb bewaldeter Hügel",
         newTabSuffix: "öffnet in neuem Tab",
+        navGallery: "Fotogalerie",
+        navGalleryShort: "Galerie",
+        navServices: "Gemeindedienste",
+        navServicesShort: "Gemeinde",
+        galleryHeading: "Ranomafana in <em>Bildern</em>",
+        galleryIntro: "Der Wald und seine Tiere, der Fluss, die Wasserfälle und der Ort, alle in Ranomafana fotografiert. Tippen Sie auf ein Foto, um es groß zu sehen und zu erfahren, wo es entstand.",
+        galleryFilterLabel: "Fotos zeigen von",
+        galleryAll: "Alle Fotos",
+        galleryStays: "Unterkünfte & Essen",
+        galleryCredit: "Ein schönes Foto in Ranomafana gemacht? Das Team freut sich darauf.",
+        guideEyebrow: "Im Park Pflicht",
+        navHotels: "Hotels",
+        navRestaurants: "Restaurants",
+        navActivities: "Aktivitäten",
+        navEventsCal: "Veranstaltungskalender",
+        bnavEvents: "Termine",
+        glanceHeading: "Auf einen Blick",
+        glance1: "Hektar Bergregenwald",
+        glance2: "Lemurenarten",
+        glance3: "Vogelarten",
+        glance4: "Einwohner im Ort",
+        aboutMoreHeading: "Mehr über Ranomafana",
+        tabRanomafana: "Ranomafana",
+        ranoPageHeading: "Das Tal des <em>heißen Wassers</em>",
+        ranoPageIntro: "Wo Ranomafana liegt, was sein Name bedeutet, der Nationalpark ringsum und der Ort unten im Tal.",
+        ranoWhereTitle: "Wo es liegt",
+        ranoWhereText: "In der Region Vatovavy im Südosten Madagaskars, wo das Hochland an der RN25 in den Regenwald abfällt: 65 km von Fianarantsoa, der nächsten Stadt, 139 km von Mananjary am Indischen Ozean und 412 km Straße von Antananarivo.",
+        ranoNameTitle: "Der Name",
+        ranoNameText: "<em>Rano mafana</em> heißt auf Malagasy heißes Wasser. Unten im Tal entspringen Thermalquellen, und das Dorfbad, die Station Thermale, ist von den meisten Unterkünften zu Fuß zu erreichen.",
+        ranoParkTitle: "Der Nationalpark",
+        ranoParkText: "43.550 Hektar Bergregenwald, seit 1991 Nationalpark und seit 2007 UNESCO-Welterbe, verwaltet von Madagascar National Parks. Der Goldene Bambuslemur wurde hier 1986 entdeckt, und seinetwegen steht der Wald unter Schutz.",
+        ranoWildTitle: "Tierwelt",
+        ranoWildText: "Vierzehn Lemurenarten und 125 Vogelarten, viele davon nur auf Madagaskar, dazu Chamäleons, Plattschwanzgeckos und Laubfrösche, die nach Einbruch der Dunkelheit herauskommen.",
+        ranoTownTitle: "Der Ort",
+        ranoTownText: "Rund 20.000 Menschen leben in Ranomafana und den Dörfern rund um den Park. Der Ort liegt bei den heißen Quellen; der Parkeingang in Ambodiamontana ist etwa 7 km die RN25 hinauf, der Fluss Namorona fast die ganze Strecke neben der Straße.",
+        ranoPeopleTitle: "Getragen von den Menschen vor Ort",
+        ranoPeopleText: "Einheimische Guides führen jede Wanderung im Park, organisiert in ihrem eigenen Verband. Dörfer betreiben zwei Gemeindereservate, VOI Mitsinjo und VOI Ambohimagneva, deren Eintritt direkt ins Dorf fließt. Hotels, Restaurants und Kunsthandwerksläden sind lokale Betriebe.",
+        ranoSources: "Quellen: Größe des Parks, Artenzahlen und Daten von Madagascar National Parks; Entfernungen von Madagascar National Parks und der Seite „Anreise“ dieses Führers; Einwohnerzahl, Guide-Verband und Gemeindereservate aus den eigenen Notizen dieses Führers (Oktober 2026), wie auf der Seite „Warum hierher“.",
+        ranoPageHeadingPlain: "Das Tal des heißen Wassers",
+        tabCommune: "Die Gemeinde",
+        tabGendarmerie: "Gendarmerie (Polizei)",
+        tabHospital: "Krankenhaus",
+        communeIntro: "Das Rathaus von Ranomafana: die Dienste der Gemeinde für Einwohner und Besucher und wie Sie sie erreichen.",
+        gendarmerieIntro: "Die Gendarmerie nationale ist die Polizei im ländlichen Madagaskar, auch in Ranomafana. Ihr Posten, ihre Zeiten und Kontakte werden hier stehen.",
+        gendarmerieEmpty: "Die Angaben zur Gendarmerie sind noch nicht bestätigt und werden deshalb nicht gezeigt. Im Notfall hilft Ihnen Ihr Guide oder Ihr Hotel, sie zu erreichen.",
+        hospitalIntro: "Medizinische Versorgung in Ranomafana: wohin man geht, Öffnungszeiten und Kontakte werden hier stehen.",
+        hospitalEmpty: "Die Angaben zum Krankenhaus sind noch nicht bestätigt und werden deshalb nicht gezeigt. Wenn Sie krank werden, bringt Sie Ihr Guide oder Ihr Hotel dorthin.",
+        publicDocsIntro: "Erlasse, Bekanntmachungen und andere öffentliche Dokumente der Gemeinde Ranomafana zum Herunterladen.",
+        sectionOverview: "Überblick",
+        hubOpen: "Öffnen",
+        exploreHeading: "Ranomafana entdecken",
+        exploreIntro: "Hotels, Restaurants, Aktivitäten und Veranstaltungskalender: alles, was man in Ranomafana unternehmen kann, an einem Ort.",
+        planHubIntro: "Reiserouten, die Anreise, die besten Monate, einen Guide finden und das Praktische: alles, was Sie für die Planung brauchen.",
+        aboutHubHeading: "Über Ranomafana",
+        aboutHubIntro: "Ein Regenwaldtal im Südosten Madagaskars, sein Ort mit heißen Quellen und die Menschen, die es bewahren: Ranomafana auf einen Blick.",
+        documentsIntro: "Pläne und Informationen zur Zukunft Ranomafanas sowie die öffentlichen Dokumente der Gemeinde, zum Lesen und Herunterladen.",
+        docsPublicCard: "Erlasse, Bekanntmachungen und andere öffentliche Dokumente der Gemeinde Ranomafana zum Herunterladen.",
+        docsGroup: "Dokumente",
+        tabTourismPlan: "Regionaler Tourismusplan",
+        tabDevPlan: "Entwicklungsplan Ranomafana",
+        tabInvestors: "Informationen für Investoren",
+        tourismPlanIntro: "Der Plan der Region für die Entwicklung des Tourismus und Ranomafanas Platz darin, zum Lesen und Herunterladen.",
+        devPlanIntro: "Der Plan der Gemeinde Ranomafana für die Entwicklung des Ortes und seiner Dörfer, zum Lesen und Herunterladen.",
+        investorsIntro: "Für alle, die an eine Investition in Ranomafana denken: die Dokumente, die Sie zuerst lesen sollten, und wer Ihr Ansprechpartner ist.",
+        docsToDownload: "Dokumente zum Herunterladen",
+        docSectionEmpty: "Dieses Dokument ist hier noch nicht veröffentlicht. Es steht dann auf dieser Seite zum Herunterladen bereit.",
+        investorsEmpty: "Die Dokumente für Investoren werden hier veröffentlicht. Bis dahin vermittelt Ihnen das Team gern die richtigen Ansprechpartner.",
+        contactHeading: "Das Team kontaktieren",
+        contactIntro: "Fragen zu Anreise, Guides oder Unterkünften? Schreiben Sie den Menschen, die diesen Führer gemacht haben.",
+        galleryLiked: "Ihre Favoriten",
+        galleryLikeNote: "Tippen Sie bei Ihren Lieblingsfotos auf ♥: Sie rücken an den Anfang der Galerie. Ihre Favoriten bleiben auf diesem Gerät gespeichert.",
+        galleryLike: "Foto mögen",
+        galleryUnlike: "Nicht mehr mögen",
+        galleryLikeShort: "Gefällt mir",
+        galleryLikedOne: "Gemocht",
+        galleryNoLikes: "Sie haben noch kein Foto markiert. Tippen Sie auf ♥, um eines hier hinzuzufügen.",
+        galleryFrom: "Aufgenommen bei",
+        galleryPrev: "Vorheriges Foto",
+        galleryNext: "Nächstes Foto",
+        servicesHeading: "Die Gemeinde <em>Ranomafana</em>",
+        servicesIntro: "Die Gemeinde, die Gendarmerie und das Krankenhaus: öffentliche Dienste in Ranomafana, mit den öffentlichen Dokumenten der Gemeinde.",
+        servicesEyebrow: "Rathaus",
+        servicesListHeading: "Dienste der <em>Gemeinde</em>",
+        servicesEmpty: "Die Gemeinde Ranomafana stellt gerade die Liste ihrer Dienste mit Öffnungszeiten und Kontakten zusammen. Sie erscheint hier. Bis dahin leitet das Team Ihre Frage gern weiter.",
+        docsEyebrow: "Downloads",
+        docsHeading: "Öffentliche <em>Dokumente</em>",
+        docsHeadingPlain: "Öffentliche Dokumente",
+        docsEmpty: "Noch sind keine Dokumente veröffentlicht. Erlasse, Bekanntmachungen und andere öffentliche Dokumente der Gemeinde stehen dann hier zum Herunterladen.",
+        followHeading: "Ranomafana folgen",
+        followText: "Neuigkeiten, Veranstaltungen und Fotos aus Ranomafana in den sozialen Medien.",
+        followUs: "Folgen Sie uns",
+        serviceWhere: "Wo",
+        serviceHours: "Zeiten",
+        serviceContact: "Kontakt",
+        docDownload: "Herunterladen",
         teamHeadshot: "Porträt",
         teamNameTbc: "Name folgt",
         reviewOne: "{n} Bewertung",
@@ -4249,6 +4910,101 @@
         altTownFlowers: "Voninkazo mavokely ao an-tanànan'i Ranomafana, miaraka amin'ny tendrombohitra feno ala ao ambadika",
         altVillage: "Trano hazo misy tafo bozaka ao amin'ny tanàna iray eo ambanin'ny havoana misy ala",
         newTabSuffix: "misokatra amin'ny takelaka vaovao",
+        navGallery: "Sarin'ny Ranomafana",
+        navGalleryShort: "Sary",
+        navServices: "Tolotra ara-kaominaly",
+        navServicesShort: "Kaominina",
+        galleryHeading: "Ranomafana amin'ny <em>sary</em>",
+        galleryIntro: "Ny ala sy ny biby ao aminy, ny renirano, ny riandrano ary ny tanàna, izay naka sary avokoa tao Ranomafana. Tsindrio ny sary iray hahitana azy lehibe kokoa sy ny toerana nakana azy.",
+        galleryFilterLabel: "Asehoy ny sarin'ny",
+        galleryAll: "Sary rehetra",
+        galleryStays: "Fandriana sy sakafo",
+        galleryCredit: "Naka sary tsara tao Ranomafana ianao? Faly ny ekipa raha mahita izany.",
+        guideEyebrow: "Tsy maintsy atao ao amin'ny valan-javaboahary",
+        navHotels: "Hotely",
+        navRestaurants: "Trano fisakafoana",
+        navActivities: "Zavatra hatao",
+        navEventsCal: "Tetiandron'ny hetsika",
+        bnavEvents: "Hetsika",
+        glanceHeading: "Raha topy maso",
+        glance1: "hektara ala mando an-tendrombohitra",
+        glance2: "karazana varika",
+        glance3: "karazam-borona",
+        glance4: "mponina ao an-tanàna",
+        aboutMoreHeading: "Fanampiny momba an'i Ranomafana",
+        tabRanomafana: "Ranomafana",
+        ranoPageHeading: "Lohasahan'ny <em>rano mafana</em>",
+        ranoPageIntro: "Aiza i Ranomafana, inona no dikan'ny anarany, ny valan-javaboahary manodidina azy ary ny tanàna eo am-pototry ny lohasaha.",
+        ranoWhereTitle: "Aiza no misy azy",
+        ranoWhereText: "Ao amin'ny faritra Vatovavy, atsimo atsinanan'i Madagasikara, eo amin'ny RN25 izay idinan'ny Afovoan-tany mankany amin'ny ala mando: 65 km miala an'i Fianarantsoa, tanàna lehibe akaiky indrindra, 139 km miala an'i Mananjary eo amoron'ny Ranomasimbe Indianina, ary 412 km an-dalana miala an'Antananarivo.",
+        ranoNameTitle: "Ny anarana",
+        ranoNameText: "Ny dikan'ny <em>rano mafana</em> amin'ny teny malagasy dia rano mafana. Misy loharano mafana eo am-pototry ny lohasaha, ary ny dobo filomanosan'ny tanàna, ny Station Thermale, dia tsy lavitra ny ankamaroan'ny toerana hatoriana.",
+        ranoParkTitle: "Ny valan-javaboahary",
+        ranoParkText: "Ala mando an-tendrombohitra 43 550 hektara, valan-javaboahary nanomboka tamin'ny 1991 ary Lova Iraisan'izao Tontolo Izao ankatoavin'ny UNESCO nanomboka tamin'ny 2007, tantanin'ny Madagascar National Parks. Teto no nahitana ny varika volamena tamin'ny 1986, ary izy no antony iarovana ny ala.",
+        ranoWildTitle: "Ny biby",
+        ranoWildText: "Karazana varika efatra ambin'ny folo sy karazam-borona 125, maro amin'ireo no tsy hita afa-tsy eto Madagasikara, miampy tana, androngo rambo ravina ary sahona an-kazo mivoaka rehefa maizina.",
+        ranoTownTitle: "Ny tanàna",
+        ranoTownText: "Olona eo amin'ny 20 000 eo ho eo no monina ao Ranomafana sy ireo tanàna manodidina ny valan-javaboahary. Eo akaikin'ny rano mafana ny tanàna; ny fidirana amin'ny valan-javaboahary, ao Ambodiamontana, dia eo amin'ny 7 km eo ho eo miakatra amin'ny RN25, ary ny reniranon'i Namorona no manaraka ny lalana saika hatrany.",
+        ranoPeopleTitle: "Tantanin'ireo olona monina eto",
+        ranoPeopleText: "Mpitari-dalana eto an-toerana no mitarika ny fitsangatsanganana rehetra ao amin'ny valan-javaboahary, amin'ny alalan'ny fikambanany. Mitantana tahiry roa iombonana ny tanàna, VOI Mitsinjo sy VOI Ambohimagneva, ary mankany amin'ny tanàna mivantana ny saram-pidirana. Orinasa eto an-toerana ny hotely, ny trano fisakafoanana ary ny fivarotana asa tanana.",
+        ranoSources: "Loharano: ny haben'ny valan-javaboahary, ny isan'ny karazana ary ny daty avy amin'ny Madagascar National Parks; ny elanelana avy amin'ny Madagascar National Parks sy ny pejy « Fahatongavana » amin'ity torolàlana ity; ny isan'ny mponina, ny fikambanan'ny mpitari-dalana ary ny tahiry iombonana avy amin'ny naoty eto an-toerana amin'ity torolàlana ity (Oktobra 2026), toy ny ao amin'ny pejy « Nahoana ».",
+        ranoPageHeadingPlain: "Lohasahan'ny rano mafana",
+        tabCommune: "Ny Kaominina",
+        tabGendarmerie: "Zandarimariam-pirenena",
+        tabHospital: "Hopitaly",
+        communeIntro: "Ny lapan'ny tanànan'i Ranomafana: ny tolotry ny Kaominina ho an'ny mponina sy ny mpitsidika, ary ny fomba ifandraisana aminy.",
+        gendarmerieIntro: "Ny Zandarimariam-pirenena no polisy any ambanivohitr'i Madagasikara, anisan'izany i Ranomafana. Ho voatanisa eto ny toerana misy azy, ny ora ary ny fifandraisana.",
+        gendarmerieEmpty: "Mbola tsy voamarina ny momba ny Zandarimariam-pirenena, ka tsy misy aseho. Raha misy maika, afaka manampy anao hifandray aminy ny mpitari-dalanao na ny hotelinao.",
+        hospitalIntro: "Fitsaboana ao Ranomafana: ho voatanisa eto ny toerana aleha, ny ora fisokafana ary ny fifandraisana.",
+        hospitalEmpty: "Mbola tsy voamarina ny momba ny hopitaly, ka tsy misy aseho. Raha marary ianao, afaka mitondra anao any ny mpitari-dalanao na ny hotelinao.",
+        publicDocsIntro: "Didim-pitondrana, filazana ary antontan-taratasy hafa avoakan'ny Kaominin'i Ranomafana, azo alaina.",
+        sectionOverview: "Topimaso",
+        hubOpen: "Sokafy",
+        exploreHeading: "Hizaha an'i Ranomafana",
+        exploreIntro: "Hotely, trano fisakafoana, zavatra hatao ary tetiandron'ny hetsika: izay rehetra azo atao ao Ranomafana, ao anaty toerana iray.",
+        planHubIntro: "Fandaharam-pitsidihana, ny dia ho aty, ny volana tsara indrindra, ny fanakaramana mpitari-dalana ary ny lafiny azo ampiharina: izay rehetra ilainao hikarakarana fitsidihana.",
+        aboutHubHeading: "Momba an'i Ranomafana",
+        aboutHubIntro: "Lohasaha misy ala mando any atsimo atsinanan'i Madagasikara, ny tanànany misy rano mafana, ary ireo olona mikarakara azy: Ranomafana raha topy maso.",
+        documentsIntro: "Drafitra sy fampahalalana momba ny hoavin'i Ranomafana, ary ny antontan-taratasim-panjakana avoakan'ny Kaominina, azo vakiana sy alaina.",
+        docsPublicCard: "Didim-pitondrana, filazana ary antontan-taratasy hafa avoakan'ny Kaominin'i Ranomafana, azo alaina.",
+        docsGroup: "Antontan-taratasy",
+        tabTourismPlan: "Drafitra rezionaly momba ny fizahantany",
+        tabDevPlan: "Drafitra fampandrosoana an'i Ranomafana",
+        tabInvestors: "Fampahalalana ho an'ny mpampiasa vola",
+        tourismPlanIntro: "Ny drafitry ny faritra amin'ny fampandrosoana ny fizahantany, sy ny toeran'i Ranomafana ao anatiny, azo vakiana sy alaina.",
+        devPlanIntro: "Ny drafitry ny Kaominin'i Ranomafana amin'ny fampandrosoana ny tanàna sy ny fokonolona ao aminy, azo vakiana sy alaina.",
+        investorsIntro: "Ho an'izay mieritreritra ny hampiasa vola ao Ranomafana: ireo antontan-taratasy tokony hovakiana aloha, sy ireo olona tokony hifandraisana.",
+        docsToDownload: "Antontan-taratasy azo alaina",
+        docSectionEmpty: "Mbola tsy navoaka eto ity antontan-taratasy ity. Ho azo alaina eto amin'ity pejy ity izy.",
+        investorsEmpty: "Hivoaka eto ny antontan-taratasy ho an'ny mpampiasa vola. Mandra-pahatongan'izany, afaka mampifandray anao amin'ireo olona mety ny ekipa.",
+        contactHeading: "Mifandraisa amin'ny ekipa",
+        contactIntro: "Manana fanontaniana momba ny fahatongavana, ny mpitari-dalana na ny toerana hatoriana? Manorata amin'ireo olona nanao ity torolàlana ity.",
+        galleryLiked: "Ireo tianao",
+        galleryLikeNote: "Tsindrio ny ♥ amin'ireo sary tianao indrindra: miakatra eo an-tampon'ny galeria izy ireo. Voatahiry ao amin'ity fitaovana ity ireo tianao.",
+        galleryLike: "Tiako ity sary ity",
+        galleryUnlike: "Esory ny fitiavanao",
+        galleryLikeShort: "Tiako",
+        galleryLikedOne: "Tiana",
+        galleryNoLikes: "Mbola tsy nisy sary tianao. Tsindrio ny ♥ amin'ny sary iray hampidirana azy eto.",
+        galleryFrom: "Nalaina tao amin'ny",
+        galleryPrev: "Sary teo aloha",
+        galleryNext: "Sary manaraka",
+        servicesHeading: "Ny Kaominin'i <em>Ranomafana</em>",
+        servicesIntro: "Ny Kaominina, ny Zandarimariam-pirenena ary ny hopitaly: ny tolotra ho an'ny besinimaro ao Ranomafana, miaraka amin'ny antontan-taratasim-panjakana avoakan'ny Kaominina.",
+        servicesEyebrow: "Lapan'ny tanàna",
+        servicesListHeading: "Tolotra <em>ara-kaominaly</em>",
+        servicesEmpty: "Manomana ny lisitry ny tolotra ataony, miaraka amin'ny ora fisokafana sy ny fifandraisana, ny Kaominin'i Ranomafana. Hiseho eto izany. Mandra-pahatongan'izany, afaka mampita ny fanontanianao ny ekipa.",
+        docsEyebrow: "Azo alaina",
+        docsHeading: "Antontan-taratasy <em>ho an'ny besinimaro</em>",
+        docsHeadingPlain: "Antontan-taratasy ho an'ny besinimaro",
+        docsEmpty: "Mbola tsy misy antontan-taratasy navoaka. Ho voatanisa eto ary azo alaina ny didim-pitondrana, ny filazana ary ny antontan-taratasy hafa avoakan'ny Kaominina.",
+        followHeading: "Arahi i Ranomafana",
+        followText: "Vaovao, hetsika ary sary avy any Ranomafana amin'ny tambajotra sosialy.",
+        followUs: "Araho izahay",
+        serviceWhere: "Aiza",
+        serviceHours: "Ora",
+        serviceContact: "Fifandraisana",
+        docDownload: "Alaina",
         teamHeadshot: "Sary",
         teamNameTbc: "Anarana ho avy",
         reviewOne: "fanehoan-kevitra {n}",
@@ -4503,6 +5259,12 @@
       renderWhen();
       renderGuides();
       renderWhy();
+      renderGallery();
+      renderServices();
+      renderDocuments();
+      renderHubs();
+      renderSocial();
+      renderPartners();
     }
 
     // --- 2. LISTING CARDS ---------------------------------------------------
@@ -5557,13 +6319,305 @@
       renderMap('valley');
     }
 
+    // Photo gallery ----------------------------------------------------------
+    /* Every real photograph in the listing galleries, the park's included, once
+       each. Placeholder cards and the site's two stand-in scenery photos are left
+       out, and so is a pre-wired slot still waiting for its picture (on the live
+       site from PHOTO_FILES; locally its tile removes itself when it fails). */
+    const galleryFilter = { group: 'all' };
+    let galleryShown = [];
+
+    /* Likes: a visitor's ♥ moves a photo to the top of the gallery (most recent
+       like first; the rest keep their order). They are kept in this browser only
+       (there is no server), so each visitor sees their own favourites first. */
+    const LIKES_KEY = 'ranomafana-liked-photos';
+    let likedPhotos = [];
+    try { likedPhotos = JSON.parse(localStorage.getItem(LIKES_KEY) || '[]').filter((x) => typeof x === 'string'); } catch (e) { likedPhotos = []; }
+    const isLiked = (src) => likedPhotos.includes(src);
+    const HEART = '<path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20z"/>';
+    const heartIcon = (size = 20) => `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${HEART}</svg>`;
+    function likeButton(p, cls) {
+      const on = isLiked(p.src);
+      return `<button type="button" class="${cls}" data-src="${esc(p.src)}" aria-pressed="${on}" aria-label="${esc(t(on ? 'galleryUnlike' : 'galleryLike'))}: ${esc(p.alt)}" onclick="toggleLike(this)">${heartIcon()}${cls === 'gal-like' ? '' : ` ${esc(t(on ? 'galleryLikedOne' : 'galleryLikeShort'))}`}</button>`;
+    }
+    function toggleLike(btn) {
+      const src = btn.dataset.src;
+      const inLightbox = !!btn.closest('#lightbox');
+      likedPhotos = isLiked(src) ? likedPhotos.filter((x) => x !== src) : [src, ...likedPhotos];
+      try { localStorage.setItem(LIKES_KEY, JSON.stringify(likedPhotos)); } catch (e) { /* kept for this visit only */ }
+      renderGallery();
+      if (inLightbox) {
+        // Re-open the same photo at its new place, with focus back on the heart.
+        const i = galleryShown.findIndex((p) => p.src === src);
+        if (i >= 0) { openGalleryPhoto(i); document.querySelector('#lightbox .like-btn').focus(); }
+        else closeModal('itemModal');   // un-liked while viewing "Your likes"
+      } else {
+        const again = [...document.querySelectorAll('#galleryGrid .gal-like')].find((b) => b.dataset.src === src);
+        if (again) { again.focus({ preventScroll: true }); again.closest('.gal-tile').scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+      }
+    }
+    function galleryPhotos() {
+      const seen = new Set([PLACEHOLDER_STAY, PLACEHOLDER_NATURE]);
+      const out = [];
+      for (const [rows, page] of [[doData, 'do'], [stayData, 'stay'], [eatData, 'eat']]) {
+        for (const row of rows) {
+          const group = page === 'do' ? doGroup(row) : 'stays';
+          const photos = [...(row.gallery || []), ...(row.photoNeeded ? [] : [{ src: row.img, alt: row.name }])];
+          for (const g of photos) {
+            if (!g.src || seen.has(g.src) || /placeholder-/.test(g.src) || !photoReady(g.src)) continue;
+            seen.add(g.src);
+            out.push({ src: g.src, alt: g.alt || row.name, name: row.name, page: row.slug === PARK.slug ? 'park' : page, group });
+          }
+        }
+      }
+      // Liked photos first, the most recently liked at the very top.
+      const rank = (p) => (isLiked(p.src) ? likedPhotos.indexOf(p.src) : likedPhotos.length);
+      return out.map((p, i) => ({ p, i })).sort((a, b) => rank(a.p) - rank(b.p) || a.i - b.i).map((x) => x.p);
+    }
+    function renderGallery() {
+      const all = galleryPhotos();
+      const inGroup = (p, k) => k === 'all' || (k === 'liked' ? isLiked(p.src) : p.group === k);
+      document.querySelectorAll('[data-count-gallery]').forEach((el) => {
+        el.textContent = all.filter((p) => inGroup(p, el.dataset.countGallery)).length;
+      });
+      galleryShown = all.filter((p) => inGroup(p, galleryFilter.group));
+      document.getElementById('galleryGrid').innerHTML = galleryShown.length ? galleryShown.map((p, i) => `
+        <div class="gal-tile${isLiked(p.src) ? ' is-liked' : ''}">
+          <button type="button" class="gal-open" onclick="openGalleryPhoto(${i})" aria-label="${esc(p.alt)}">
+            <img src="${esc(p.src)}" alt="" loading="lazy" onerror="galleryMissing(${i}, this)">
+            <span class="gal-tile-label">${esc(p.name)}</span>
+          </button>
+          ${likeButton(p, 'gal-like')}
+        </div>`).join('') : `<p class="small-muted">${esc(t('galleryNoLikes'))}</p>`;
+    }
+    function galleryMissing(i, img) {
+      if (galleryShown[i]) galleryShown[i].missing = true;
+      img.closest('.gal-tile').remove();
+    }
+    function filterGallery(group) {
+      galleryFilter.group = group;
+      document.querySelectorAll('#galleryGroups .kind-btn').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.group === group)));
+      renderGallery();
+    }
+    /* The photo pop-up: the picture large, its description, where it was taken
+       (a link to that listing) and previous / next (the arrow keys work too). */
+    function openGalleryPhoto(i, step = 1) {
+      const n = galleryShown.length;
+      if (!n || galleryShown.every((p) => p.missing)) return;
+      i = ((i % n) + n) % n;
+      const p = galleryShown[i];
+      if (p.missing) { openGalleryPhoto(i + step, step); return; }
+      const opener = p.page === 'stay' ? 'openStayModal' : p.page === 'eat' ? 'openEatModal' : 'openDoModal';
+      const from = p.page === 'park' ? `<a class="text-link" href="#park">${esc(p.name)} →</a>`
+        : `<button type="button" class="text-link print-btn" data-name="${esc(p.name)}" onclick="${opener}(this.dataset.name)">${esc(p.name)} →</button>`;
+      showModal(`
+        <div class="m-head">
+          <span class="m-kicker">${esc(t('navGallery'))}</span>
+          <h2 class="m-title" id="modalTitle">${esc(p.name)}</h2>
+        </div>
+        <figure class="lightbox" id="lightbox" data-index="${i}">
+          <img class="lightbox-img" src="${esc(p.src)}" alt="${esc(p.alt)}">
+          <figcaption class="lightbox-caption">${esc(p.alt)}</figcaption>
+          <div class="lightbox-nav">
+            <span>${esc(t('galleryFrom'))} ${from}</span>
+            <span class="btn-row">
+              ${likeButton(p, 'btn btn-ghost like-btn')}
+              <button type="button" class="btn btn-ghost" onclick="openGalleryPhoto(${i - 1}, -1)" aria-label="${esc(t('galleryPrev'))}">←</button>
+              <span class="lightbox-count">${i + 1} / ${n}</span>
+              <button type="button" class="btn btn-ghost" onclick="openGalleryPhoto(${i + 1})" aria-label="${esc(t('galleryNext'))}">→</button>
+            </span>
+          </div>
+        </figure>`);
+    }
+    document.addEventListener('keydown', (e) => {
+      const box = document.getElementById('lightbox');
+      if (!box || !document.getElementById('itemModal').classList.contains('active')) return;
+      if (e.key === 'ArrowRight') openGalleryPhoto(Number(box.dataset.index) + 1);
+      if (e.key === 'ArrowLeft') openGalleryPhoto(Number(box.dataset.index) - 1, -1);
+    });
+
+    // Municipal services and public documents ---------------------------------
+    /* From municipalData and documentData in the data file. A title or desc may be
+       plain English or { en, fr, de, mg }; localText() picks the visitor's
+       language. Empty lists show the "on its way" notes instead. */
+    const localText = (v) => (v && typeof v === 'object' ? (v[currentLang] || v.en || '') : (v || ''));
+    const LANGUAGE_NAME = { en: 'English', fr: 'Français', de: 'Deutsch', mg: 'Malagasy' };
+    function renderServices() {
+      const rows = typeof municipalData === 'undefined' ? [] : municipalData;
+      const docs = typeof documentData === 'undefined' ? [] : documentData;
+      const meta = (label, value) => (value ? `<div><dt>${esc(t(label))}</dt><dd>${value}</dd></div>` : '');
+      // Each page (The Commune, Gendarmerie, Hospital) lists the rows filed under it.
+      const card = (m) => {
+        const c = m.contact || {};
+        const contact = [
+          c.phone ? `<a href="tel:${esc(c.phone.replace(/[^\d+]/g, ''))}">${esc(c.phone)}</a>` : '',
+          c.email ? `<a href="mailto:${esc(c.email)}">${esc(c.email)}</a>` : ''
+        ].filter(Boolean).join(' · ');
+        return `
+        <article class="info-card">
+          <h3>${esc(localText(m.title))}</h3>
+          ${m.desc ? `<p>${esc(localText(m.desc))}</p>` : ''}
+          <dl class="service-meta">
+            ${meta('serviceWhere', esc(localText(m.where)))}
+            ${meta('serviceHours', esc(localText(m.hours)))}
+            ${meta('serviceContact', contact)}
+          </dl>
+        </article>`;
+      };
+      document.querySelectorAll('[data-service-section]').forEach((list) => {
+        const mine = rows.filter((m) => (m.section || 'commune') === list.dataset.serviceSection);
+        list.innerHTML = mine.map(card).join('');
+        document.querySelector(`[data-service-empty="${list.dataset.serviceSection}"]`).hidden = mine.length > 0;
+      });
+
+      // The Commune's own public documents: rows with no section (or "public").
+      const pub = docs.filter((d) => !d.section || d.section === 'public');
+      document.getElementById('docList').innerHTML = docItems(pub);
+      document.getElementById('docEmpty').hidden = pub.length > 0;
+    }
+
+    /* One download row per document, newest first. */
+    function docItems(docs) {
+      return [...docs].sort((a, b) => String(b.date || '').localeCompare(String(a.date || ''))).map((d) => {
+        const bits = [localText(d.category), d.date ? monthYear(d.date) : '', LANGUAGE_NAME[d.language] || ''].filter(Boolean);
+        return `
+        <li class="doc">
+          <span class="doc-icon">${icon('doc', 22)}</span>
+          <span class="doc-body">
+            <span class="doc-title">${esc(localText(d.title))}</span>
+            <span class="doc-meta">${esc(bits.join(' · '))}</span>
+          </span>
+          <a class="btn btn-ghost" href="${esc(d.file)}" download target="_blank" rel="noopener">${icon('download', 16)} ${esc(t('docDownload'))}</a>
+        </li>`;
+      }).join('');
+    }
+
+    /* The Documents pages (Regional Tourism Plan, Ranomafana Development Plan,
+       Investor information) list the documentData rows filed under their section. */
+    function renderDocuments() {
+      const docs = typeof documentData === 'undefined' ? [] : documentData;
+      document.querySelectorAll('[data-doc-section]').forEach((list) => {
+        const mine = docs.filter((d) => d.section === list.dataset.docSection);
+        list.innerHTML = docItems(mine);
+        document.querySelector(`[data-doc-empty="${list.dataset.docSection}"]`).hidden = mine.length > 0;
+      });
+    }
+
+    /* Social media buttons, from SOCIAL_LINKS in the data file: one for each
+       address filled in. With none, the footer row and the Commune page's
+       "Follow" block stay hidden. */
+    const SOCIAL_ICONS = {
+      facebook: '<path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v3.5H8V21h3.5v-7.5H14l.5-3.5h-3V7.8c0-.7.4-1.3 1.2-1.3H15z"/>',
+      instagram: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/>',
+      linkedin: '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.3v.2M11.5 17v-6.5M11.5 13.2c0-1.6 1-2.7 2.5-2.7s2.5 1 2.5 2.8V17"/>'
+    };
+    const SOCIAL_NAME = { facebook: 'Facebook', instagram: 'Instagram', linkedin: 'LinkedIn' };
+    function renderSocial() {
+      const links = typeof SOCIAL_LINKS === 'undefined' ? {} : SOCIAL_LINKS;
+      const html = Object.keys(SOCIAL_NAME).filter((k) => links[k]).map((k) => `
+        <a class="social-link" href="${esc(links[k])}" target="_blank" rel="noopener" aria-label="${esc(SOCIAL_NAME[k])} (${esc(t('newTabSuffix'))})">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${SOCIAL_ICONS[k]}</svg>${esc(SOCIAL_NAME[k])}
+        </a>`).join('');
+      document.querySelectorAll('[data-social]').forEach((el) => { el.innerHTML = html; });
+      document.getElementById('footerSocial').hidden = !html;
+      document.getElementById('servicesSocial').hidden = !html;
+    }
+
+    /* The extra partner logos from PARTNER_LOGOS, after the four in the markup. A
+       logo file not yet in images/ is skipped (pre-wired, like the photo slots). */
+    function renderPartners() {
+      const row = document.getElementById('partnerRow');
+      row.querySelectorAll('[data-partner-slot]').forEach((el) => el.remove());
+      for (const p of (typeof PARTNER_LOGOS === 'undefined' ? [] : PARTNER_LOGOS)) {
+        if (!p.file || !photoReady(p.file)) continue;
+        const cls = `partner${p.light ? ' partner--light' : ''}`;
+        const img = `<img src="${esc(p.file)}" alt="${esc(p.name)}" loading="lazy" onerror="this.parentElement.remove()">`;
+        row.insertAdjacentHTML('beforeend', p.url
+          ? `<a class="${cls}" data-partner-slot href="${esc(p.url)}" target="_blank" rel="noopener" aria-label="${esc(p.name)} (${esc(t('newTabSuffix'))})">${img}</a>`
+          : `<span class="${cls}" data-partner-slot>${img}</span>`);
+      }
+    }
+
+    // Sections ----------------------------------------------------------------
+    /* The header tabs and the footer's sections, each with an overview page (its id is the
+       section's name) and a tab bar on every one of its pages. Each entry is
+       [page, tab label, card title]; `more` adds cards for pages that belong to
+       another section. Cards take their photo and text from the page itself (its
+       hero photo and its intro line), so they never drift from it. */
+    const SECTIONS = {
+      // The header tabs. A tab whose own page is the overview names it in `overview`.
+      about: { label: 'footerAbout', pages: [['ranomafana', 'tabRanomafana', 'ranoPageHeadingPlain'], ['why', 'navWhy', 'navWhy'], ['blog', 'navBlog', 'navBlog'], ['gallery', 'navGalleryShort', 'navGallery'], ['contact', 'footerContact', 'contactHeading']] },
+      activities: { label: 'navActivities', overview: 'do', overviewLabel: 'navActivities', pages: [['park', 'crumbPark', 'crumbPark'], ['itineraries', 'tabItineraries', 'tabItineraries']] },
+      events: { label: 'navEventsCal', overview: 'events', overviewLabel: 'navEvents', pages: [['when', 'tabWhen', 'tabWhen']] },
+      // The footer's sections. Explore's tab bar sits on its overview only: its pages
+      // carry their header tab's bar.
+      explore: { label: 'footerExplore', onlyOverview: true, pages: [['stay', 'navHotels', 'navHotels'], ['eat', 'navRestaurants', 'navRestaurants'], ['do', 'navActivities', 'navActivities'], ['events', 'navEventsCal', 'navEventsCal']] },
+      plan: { label: 'navPlan', pages: [['getting-here', 'tabGettingHere', 'tabGettingHere'], ['know', 'tabKnow', 'tabKnow']],
+        more: [['itineraries', 'tabItineraries', 'tabItineraries'], ['when', 'tabWhen', 'tabWhen'], ['guides', 'tabGuides', 'guidesIntro']] },
+      services: { label: 'navServices', pages: [['commune', 'tabCommune', 'tabCommune'], ['gendarmerie', 'tabGendarmerie', 'tabGendarmerie'], ['hospital', 'tabHospital', 'tabHospital']],
+        more: [['public-documents', 'docsHeadingPlain', 'docsPublicCard']] },
+      documents: { label: 'docsGroup', pages: [['tourism-plan', 'tabTourismPlan', 'tabTourismPlan'], ['development-plan', 'tabDevPlan', 'tabDevPlan'], ['investors', 'tabInvestors', 'tabInvestors'], ['public-documents', 'docsHeadingPlain', 'docsHeadingPlain']] }
+    };
+    /* Once, at start-up: put the section's tab bar under the hero of the overview
+       and of each of its pages. The labels carry data-i18n, so setLanguage()
+       translates them like any other text. */
+    function buildSectionTabs() {
+      const en = translations.en;
+      for (const [id, sec] of Object.entries(SECTIONS)) {
+        const home = sec.overview || id;
+        const tabs = [[home, sec.overviewLabel || 'sectionOverview'], ...sec.pages.map(([pid, tab]) => [pid, tab])];
+        for (const [here] of (sec.onlyOverview ? tabs.slice(0, 1) : tabs)) {
+          const hero = document.querySelector(`#page-${here} > .page-hero`);
+          if (!hero || hero.nextElementSibling?.classList.contains('plan-tabs')) continue;
+          hero.insertAdjacentHTML('afterend', `
+      <nav class="plan-tabs" aria-label="${esc(en[sec.label])}" data-i18n-aria-label="${sec.label}">
+        <div class="wrap">${tabs.map(([pid, key]) => `
+          <a class="pt" href="#${pid}"${pid === here ? ' aria-current="page"' : ''} data-i18n="${key}">${esc(en[key])}</a>`).join('')}
+        </div>
+      </nav>`);
+        }
+      }
+    }
+    function renderHubs() {
+      for (const [id, sec] of Object.entries(SECTIONS)) {
+        const grid = document.querySelector(`[data-hub="${id}"]`);
+        if (!grid) continue;
+        const cards = [...sec.pages.map((e) => [...e, false]), ...(sec.more || []).map((e) => [...e, true])];
+        grid.innerHTML = cards.map(([pid, tabKey, cardKey, more]) => {
+          const page = document.getElementById(`page-${PAGE_ALIAS[pid] || pid}`);   // a merged page (#guides) uses its new home's photo
+          const photo = page?.querySelector('.page-hero .bg-photo')?.getAttribute('src') || PLACEHOLDER_NATURE;
+          const introKey = page?.querySelector('.page-intro')?.dataset.i18n;
+          // A "more" card (a page from another section) has its own description.
+          const title = t(more ? tabKey : cardKey);
+          const desc = more && cardKey !== tabKey ? t(cardKey) : introKey ? stripTags(fill(t(introKey))) : '';
+          return `
+          <a class="hub-card" href="#${pid}">
+            <img src="${esc(photo)}" alt="" loading="lazy">
+            <span class="hub-card-body">
+              <span class="hub-card-title">${esc(title)}</span>
+              <span class="hub-card-desc">${esc(desc)}</span>
+              <span class="hub-card-go">${esc(t('hubOpen'))} →</span>
+            </span>
+          </a>`;
+        }).join('');
+      }
+    }
+
     // --- 7. PAGES, NAVIGATION & UI -----------------------------------------
     /* One page is shown at a time. The address bar carries the page as a hash
        (#stay, #park…) so the browser's back button and shared links work. */
 
-    const PAGES = ['home', 'why', 'stay', 'eat', 'do', 'park', 'itineraries', 'getting-here', 'when', 'guides', 'know', 'events', 'blog', 'about'];
-    const NAV_GROUP = { park: 'do', itineraries: 'plan', 'getting-here': 'plan', when: 'plan', guides: 'plan', know: 'plan' };
-    const PAGE_TITLE = { why: 'navWhy', stay: 'stayHeading', eat: 'eatHeading', do: 'doHeading', park: 'crumbPark', itineraries: 'tabItineraries', 'getting-here': 'tabGettingHere', when: 'tabWhen', guides: 'tabGuides', know: 'tabKnow', events: 'navEvents', blog: 'storiesHeading', about: 'aboutHeading' };
+    const PAGES = ['home', 'why', 'stay', 'eat', 'do', 'park', 'itineraries', 'getting-here', 'when', 'know', 'events', 'blog', 'gallery', 'services', 'tourism-plan', 'development-plan', 'investors', 'contact', 'explore', 'plan', 'about', 'documents', 'commune', 'gendarmerie', 'hospital', 'public-documents', 'ranomafana'];
+    // Pages that were renamed or merged: an old link opens the new page ({ old: 'new' }),
+    // and SCROLL_TO names the part of that page to show.
+    const PAGE_ALIAS = { guides: 'park' };
+    const SCROLL_TO = { guides: 'park-guide' };
+    function scrollToPart(id) {
+      const el = document.getElementById(id);
+      if (el) requestAnimationFrame(() => el.scrollIntoView({ block: 'start' }));
+    }
+    const NAV_GROUP = { ranomafana: 'about', why: 'about', gallery: 'about', blog: 'about', contact: 'about', itineraries: 'do', when: 'events', commune: 'services', gendarmerie: 'services', hospital: 'services', park: 'do', plan: 'plan', 'getting-here': 'plan', know: 'plan' };
+    const PAGE_TITLE = { why: 'navWhy', stay: 'stayHeading', eat: 'eatHeading', do: 'doHeading', park: 'crumbPark', itineraries: 'tabItineraries', 'getting-here': 'tabGettingHere', when: 'tabWhen', know: 'tabKnow', events: 'navEvents', blog: 'storiesHeading', gallery: 'navGallery', services: 'navServices', 'tourism-plan': 'tabTourismPlan', 'development-plan': 'tabDevPlan', investors: 'tabInvestors', contact: 'footerContact', explore: 'exploreHeading', plan: 'crumbPlan', about: 'aboutHubHeading', documents: 'docsGroup', commune: 'tabCommune', gendarmerie: 'tabGendarmerie', hospital: 'tabHospital', 'public-documents': 'docsHeadingPlain', ranomafana: 'aboutHubHeading' };
     let currentPage = 'home';
 
     const setCurrent = (el, on) => (on ? el.setAttribute('aria-current', 'page') : el.removeAttribute('aria-current'));
@@ -5599,9 +6653,13 @@
 
     function onRoute() {
       const [id, slug] = decodeURIComponent(location.hash.slice(1)).split('/');
-      const page = id || window.START_PAGE || 'home';
+      const page = PAGE_ALIAS[id] || id || window.START_PAGE || 'home';
       if (!PAGES.includes(page)) return;
       if (page !== currentPage) switchPage(page);
+      if (SCROLL_TO[id]) {
+        history.replaceState(null, '', `${location.pathname}${location.search}#${page}`);
+        scrollToPart(SCROLL_TO[id]);
+      }
       if (slug && !(openItem && openItem.page === page && openItem.slug === slug)) openFromAddress(page, slug);
     }
     window.addEventListener('hashchange', onRoute);
@@ -5616,6 +6674,12 @@
       if (window.START_PAGE && link.getAttribute('href') !== '#' + currentPage) {
         e.preventDefault();
         location.hash = link.getAttribute('href');
+        return;
+      }
+      if (SCROLL_TO[link.getAttribute('href').slice(1)] && PAGE_ALIAS[link.getAttribute('href').slice(1)] === currentPage) {
+        e.preventDefault();
+        toggleDrawer(false);
+        scrollToPart(SCROLL_TO[link.getAttribute('href').slice(1)]);
         return;
       }
       if (link.getAttribute('href').slice(1) === currentPage) {
@@ -5741,11 +6805,14 @@
     // setLanguage() translates the page and renders all six collections.
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
     document.addEventListener('DOMContentLoaded', () => {
+      buildSectionTabs();
       TOK = tokenValues();
-      const [start, startSlug] = decodeURIComponent(location.hash.slice(1)).split('/');
+      const [hashPage, startSlug] = decodeURIComponent(location.hash.slice(1)).split('/');
+      const start = PAGE_ALIAS[hashPage] || hashPage;
       switchPage(PAGES.includes(start) ? start : (PAGES.includes(window.START_PAGE) ? window.START_PAGE : 'home'));
       setLanguage(linkLanguage() || savedLanguage() || browserLanguage() || 'en');
       if (startSlug && PAGES.includes(start)) openFromAddress(start, startSlug);   // a shared listing link
+      if (SCROLL_TO[hashPage]) scrollToPart(SCROLL_TO[hashPage]);
 
       // Offline reading (sw.js): once a visitor has opened the site, its pages, data
       // and maps keep working with no signal. Photos are not kept, to save space.

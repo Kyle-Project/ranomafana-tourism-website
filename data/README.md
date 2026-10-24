@@ -144,6 +144,27 @@ the design canvas — see "Stories and the design canvas" in `CLAUDE.md`.
 - **`asOf`**: the month a listing's details were gathered, `asOf: "2026-10"`. The
   pop-up shows "Details as of October 2026"; `npm run check` warns after a year.
 
+## Commune, documents, social media and partner logos (23 October 2026)
+
+All four sit in the data file; the comment above each shows its fields.
+
+- **`SOCIAL_LINKS`** (top of the file): the official Facebook, Instagram and
+  LinkedIn addresses. Each one filled in adds a button to the footer and the
+  Commune page; empty ones show nothing. Only the real, official pages.
+- **`PARTNER_LOGOS`** (top of the file): extra logos for the footer's Partners row.
+  Each row names its file (`images/logo-commune-ranomafana.png` …); drop the logo in
+  under that name and it appears. Add a row per PCDT-R platform member.
+- **`municipalData`** (section 7): public services — title, description, where,
+  hours, phone and email, and `section`: `"commune"`, `"gendarmerie"` or
+  `"hospital"` (the page it shows on). Only what has been confirmed.
+- **`documentData`** (section 8): files to download, kept in the `documents/` folder
+  (see `documents/README.md`). `npm run check` fails if a listed file is missing.
+  Its `section` picks the page: `"public"` (or none) for Public documents,
+  `"tourism-plan"`, `"development-plan"` or `"investors"` for the Documents pages.
+
+A title or description in the last two may be plain English or
+`{ en: "…", fr: "…", de: "…", mg: "…" }` for all four languages.
+
 ## The `verified` flag
 
 - `verified: true` — confirmed against a published source (FHORM, the Ministry of

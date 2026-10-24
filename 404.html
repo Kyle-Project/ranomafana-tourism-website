@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="robots" content="noindex">
   <title>Page not found · Ranomafana</title>
-  <meta name="theme-color" content="#0B1512">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230B1512'/%3E%3Cg fill='none' stroke='%23E5B53D' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2c4.5 4.5 7 8 7 11.5a7 7 0 0 1-14 0C5 10 7.5 6.5 12 2z'/%3E%3Cpath d='M12 22V11M12 15l-3-3M12 17l3-3'/%3E%3C/g%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0F1E18">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230F1E18'/%3E%3Cg fill='none' stroke='%23E5B53D' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2c4.5 4.5 7 8 7 11.5a7 7 0 0 1-14 0C5 10 7.5 6.5 12 2z'/%3E%3Cpath d='M12 22V11M12 15l-3-3M12 17l3-3'/%3E%3C/g%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
   <!-- GitHub Pages shows this page for any address that doesn't exist. An address
        ending in a page name (…/stay, …/park) is sent on to that page of the site. -->
   <style>
-    :root { --canopy: #0B1512; --moss: #26392F; --gold: #E5B53D; --gold-hi: #F4D27A; --mist: #EAF0EA; --lichen: #A9B8AF; --ember: #E98A62; }
+    :root { --canopy: #0F1E18; --moss: #31503F; --gold: #E5B53D; --gold-hi: #F4D27A; --mist: #EEF3EE; --lichen: #B8C7BE; --ember: #EE9470; }
     * { box-sizing: border-box; }
     html, body { height: 100%; }
     body {
@@ -45,12 +45,14 @@
   </main>
   <script>
     (function () {
-      var PAGES = ['home', 'why', 'stay', 'eat', 'do', 'park', 'itineraries', 'getting-here', 'when', 'guides', 'know', 'events', 'blog', 'about'];
+      var PAGES = ['home', 'why', 'stay', 'eat', 'do', 'park', 'itineraries', 'getting-here', 'when', 'know', 'events', 'blog', 'gallery', 'services', 'tourism-plan', 'development-plan', 'investors', 'contact', 'explore', 'plan', 'about', 'documents', 'commune', 'gendarmerie', 'hospital', 'public-documents', 'ranomafana'];
+      var ALIAS = { guides: 'park' };   // renamed pages: { old: 'new' }
       var parts = location.pathname.split('/').filter(Boolean);
       // On kyle-project.github.io the site lives in /ranomafana-tourism-website/;
       // on its own domain (or a local server) it lives at the root.
       var base = /\.github\.io$/.test(location.hostname) && parts.length ? '/' + parts.shift() + '/' : '/';
       var last = (parts[parts.length - 1] || '').replace(/\.html?$/, '').toLowerCase();
+      if (ALIAS[last]) last = ALIAS[last];
       if (PAGES.indexOf(last) !== -1) { location.replace(base + '#' + last); return; }
       document.getElementById('home').href = base;
 

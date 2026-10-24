@@ -9,7 +9,7 @@
    Nothing here needs editing when listings change. If this file is ever changed,
    raise the number in CACHE so old copies are cleared. */
 
-const CACHE = 'ranomafana-offline-v1';
+const CACHE = 'ranomafana-offline-v2';
 const KEEP = [
   './',
   'index.html',
@@ -45,8 +45,12 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
   if (!keepable(url)) return;
+  // cache: 'no-cache' makes the browser check with the server every time (a quick
+  // "not modified" when nothing changed), so its own short-term cache can never
+  // hand back an old page after a change (24 Oct 2026: menus removed from the header
+  // still showed until the browser's cache ran out).
   event.respondWith(
-    fetch(request)
+    fetch(request, { cache: 'no-cache' })
       .then((response) => {
         if (response.ok) {
           const copy = response.clone();

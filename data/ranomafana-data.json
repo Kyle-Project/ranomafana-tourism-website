@@ -2445,6 +2445,51 @@
       }
     },
     {
+      "slug": "birdwatching",
+      "name": "Birdwatching",
+      "category": "Wildlife",
+      "price": "Park entry (55,000 Ar) plus a specialist bird guide, 220,000 Ar per group",
+      "duration": "Half a day to two days",
+      "status": "open",
+      "img": "images/ranomafana-national-park-paradise-flycatcher.jpg",
+      "verified": true,
+      "asOf": "2026-10",
+      "mapPin": "-21.25625,47.42129",
+      "sourceNote": "Added 23 Oct 2026 at Kyle's request (birdwatching as an activity). Every fact comes from the park listing: 125 bird species (official MNP park page, checked 11 Oct 2026), the species in its Birds card, Vohiparara as the birders' circuit, opening at 07:00 (Kyle's notes, 11 Oct 2026) and the 220,000 Ar specialist ornithology guide fee per group of 1-4 (park office notice board, photographed 19 Oct 2026; 250,000 Ar from January 2027, change it then with the park's fees). Photos are Kyle's, already in the park gallery and on the night walk.",
+      "desc": "Ranomafana National Park is home to 125 kinds of bird, many of them found only in Madagascar: forest ibis, ground-rollers, blue vangas and Madagascar paradise flycatchers among them. Hire a specialist bird guide at the park office. They know the calls and the nesting spots, and Vohiparara, the high forest at the park’s western edge, is the birders’ circuit.",
+      "gallery": [
+        {
+          "src": "images/ranomafana-national-park-paradise-flycatcher.jpg",
+          "alt": "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park"
+        },
+        {
+          "src": "images/ranomafana-national-park-ground-roller.jpg",
+          "alt": "A scaly ground-roller, one of the shy birds of the forest floor, in close-up, Ranomafana National Park"
+        },
+        {
+          "src": "images/ranomafana-national-park-bird.jpg",
+          "alt": "A bird perched in the understory, Ranomafana National Park"
+        },
+        {
+          "src": "images/night-walk-pygmy-kingfisher.jpg",
+          "alt": "A Madagascar pygmy kingfisher perched on a twig after dark"
+        }
+      ],
+      "tips": [
+        "Ask at the park office for a specialist bird guide (ornithology) by name",
+        "The park opens at 07:00, and birds are most active in the morning",
+        "Bring binoculars: the guides may not have spare pairs",
+        "Vohiparara is cooler and wetter than Talatakely: bring a warm layer and a rain shell",
+        "The Birders’ Two Days plan builds a visit around it"
+      ],
+      "contact": {
+        "phone": "",
+        "email": "",
+        "website": "",
+        "social": ""
+      }
+    },
+    {
       "slug": "station-thermale",
       "name": "Station Thermale (Thermal Pool & Baths)",
       "category": "Thermal springs",
@@ -3489,6 +3534,45 @@
         "A 75-hectare reserve bordering the national park, about 3 km from town on foot. Trails and a river waterfall are being opened to visitors, with guides certified by Madagascar National Parks and research links to Centre ValBio. Access is still being set up, so ask before you go.",
         "Visiting a community reserve puts money directly into the hands of the people who look after the forest."
       ]
+    }
+  ],
+  "municipal": [],
+  "documents": [],
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  "partners": [
+    {
+      "name": "Commune of Ranomafana",
+      "file": "images/logo-commune-ranomafana.png",
+      "url": "",
+      "light": true
+    },
+    {
+      "name": "Vatovavy Region",
+      "file": "images/logo-region-vatovavy.png",
+      "url": "",
+      "light": true
+    },
+    {
+      "name": "Ministry of Tourism",
+      "file": "images/logo-ministry-of-tourism.png",
+      "url": "",
+      "light": true
+    },
+    {
+      "name": "Regional Tourism Office",
+      "file": "images/logo-regional-tourism-office.png",
+      "url": "",
+      "light": true
+    },
+    {
+      "name": "PCDT-R",
+      "file": "images/logo-pcdt-r.png",
+      "url": "",
+      "light": true
     }
   ]
 }

@@ -509,7 +509,7 @@ own machine and check the results before trusting it**.
   re-checked. One canvas sentence was dropped: "a 4-hour walk cost 120,000 Ar in
   January 2024". It contradicts section 3 above, which records no guide price for
   January 2024.
-- **About page** — the four team profiles are still "Name to come" placeholders.
+- **Contact page** (was the About page) — the four team profiles are still "Name to come" placeholders.
 
 ## 9. Stories have sample text — rewrite when ready
 

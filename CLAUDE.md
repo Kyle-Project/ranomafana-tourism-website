@@ -54,7 +54,9 @@ it), run both scripts on it, open `http://localhost:8137/_site/`, then delete it
 **Offline reading.** `sw.js` (registered at the end of the page script) keeps the
 page, data, translations and the two maps for reading with no signal. It fetches the
 network first, so a publish is never held back, and keeps no photos. If you change
-`sw.js`, raise the number in its `CACHE` name.
+`sw.js`, raise the number in its `CACHE` name (now `-v2`). It fetches with
+`cache: 'no-cache'` (24 Oct 2026), so the browser's own short-term cache can't hand
+back an old page after a change.
 
 **A push is a publish.** Commit and push only when Kyle asks, and run `npm run check`
 before you do. GitHub's servers are Linux: image names are case-sensitive there, which
@@ -139,9 +141,89 @@ plan into `#itineraryDetail`. Alongside the six, `renderHome()`, `renderPark()`,
 
 ### Pages
 
-Fourteen `<section id="page-x" class="page-view">` elements, one shown at a time by
+Twenty-seven `<section id="page-x" class="page-view">` elements, one shown at a time by
 `switchPage(id)`: `home`, `why`, `stay`, `eat`, `do`, `park`, `itineraries`, `getting-here`,
-`when`, `guides`, `know`, `events`, `blog`, `about`. `know` ("Know before you go",
+`when`, `know`, `events`, `blog`, `gallery`, `services`, `tourism-plan`,
+`development-plan`, `investors`, `contact`, `ranomafana`, `commune`, `gendarmerie`,
+`hospital`, `public-documents`, and five section overviews: `explore`, `plan`,
+`about`, `services`, `documents`.
+**Header tabs and sections** (23 Oct 2026). Kyle: "for the upper tab list About,
+Hotels, Restaurants, Activities, Events calendar. The other activities and subheadings
+should logically flow underneath these tabs or should be found at the bottom of the
+site." The header has exactly those five tabs, as plain links (Kyle had drop-down
+menus taken out the same day: "make it simple and clickable"). Each opens its page,
+whose tab bar holds the pages under it:
+- **About** (`#about`): About Ranomafana (`ranomafana`), Why visit, Stories, Photo
+  gallery, Contact.
+- **Hotels** (`#stay`) and **Restaurants** (`#eat`): no menu.
+- **Activities** (`#do`): Things to do, National park, Itineraries.
+- **Hiring a guide is part of the National Park page** (Kyle, 24 Oct 2026: "should be
+  integrated into the information about the national park"). It was its own page
+  (`guides`); its sections (how it works, costs `#guideCosts`, specialists, outside the
+  park `#guidesOutside`, its Sources line) now follow the park's main column, under
+  `#park-guide`. `renderGuides()` still fills them. Links to `#guides` are kept on
+  purpose: `PAGE_ALIAS` sends them to `park` and `SCROLL_TO` scrolls to `park-guide`
+  (`404.html` has the same alias), so old shared links work too.
+- **Events calendar** (`#events`): What's on, When to visit.
+Everything else is at the foot of the site: the footer's five columns are Explore
+(Hotels, Restaurants, Activities, National park, Events calendar), Plan (the four
+planning pages and Hiring a guide), About, Municipal services (commune, gendarmerie, hospital) and
+Documents (tourism-plan, development-plan, investors, public-documents). The phone menu
+follows the header, then a "More" group; the phone bottom bar is Home, About, Stay,
+Eat, Do, Events.
+
+All of it comes from `SECTIONS` in the script. The three header tabs with menus, and
+Plan, Municipal services and Documents, put one tab bar under the hero of every page
+they hold (`buildSectionTabs()` at start-up); a section whose own page is its overview
+names it in `overview` (Activities → `do`, Events → `events`). A page carries only one
+bar, so Plan's bar holds Getting here and Know before you go, and its overview shows
+Itineraries, When to visit and Hiring a guide (the park's guide section) as extra cards
+(`more`). Explore's bar
+sits on its overview only (`onlyOverview`). Overviews of cards (`renderHubs()`, photo
+and text read from each page's own hero photo and intro) exist for `explore`, `plan`,
+`about`, `services` and `documents`. **Never write a `plan-tabs` bar by hand**: add the
+page to `SECTIONS`, and keep `NAV_GROUP` (which header tab lights up) in step.
+
+Kyle, 23 Oct 2026, on the sections: each needs a dedicated page with a tab bar;
+Municipal services must not share a place with Stories; Public documents and each
+service get their own tab. **About** is about Ranomafana itself: the overview opens
+with "At a glance" figures and three fact cards, and `ranomafana` ("The valley of hot
+water") gives the place in six cards — every fact taken from elsewhere on the site,
+with a Sources line. Service entries are `municipalData` rows with `section`
+"commune", "gendarmerie" or "hospital"; none have been confirmed, so each page shows an
+"on its way" note. Never fill the Gendarmerie or hospital with unconfirmed numbers.
+**Documents** (23 Oct 2026): `tourism-plan` (Regional Tourism Plan), `development-plan`
+(Ranomafana Development Plan) and `investors` (Investor information) share a tab bar,
+and a fourth footer column, "Documents", beside Explore, Plan and About (with a link to
+the Commune's public documents too). Each lists the `documentData` rows whose
+`section` names it; until then it says the document is on its way. Write nothing about
+the plans' contents on the site: the documents themselves are the source.
+**`contact`** (23 Oct 2026, Kyle: "merge the team and the contact tab under contact")
+was the About page (`about`): the "Email the team" box first, then the team. Drawer
+and footer have one "Contact" link to it; `PAGE_ALIAS` (and `ALIAS` in `404.html`)
+sends old `#about` / `…/about` links there. "About page" below means this page. `gallery`
+and `services` were added on 23 Oct 2026 at Kyle's request (a partner's list of five
+asks: contrast, new sections, partner logos, social media, birdwatching):
+- **Photo gallery** (`#gallery`, header tab "Gallery"): every real photo in the
+  listing galleries, gathered by `renderGallery()` — nothing to maintain; a new
+  gallery photo appears by itself. Placeholders, `PLACEHOLDER_STAY/NATURE` and empty
+  pre-wired slots are left out. Filters reuse the Things-to-do layers plus "Stays &
+  food". A tap opens the photo with a link to its listing; arrow keys step through.
+  Each photo has a ♥ (Kyle, 23 Oct 2026): a liked photo moves to the top (latest
+  like first) and joins a "Your likes" filter. Likes are kept in the visitor's own
+  browser (`localStorage`, key `ranomafana-liked-photos`), so each visitor sees only
+  their own; shared like counts would need an outside service.
+- **Municipal services** (`#services`, header tab "Commune"): the Commune's services
+  (`municipalData`) and **public documents** (`documentData`, files in `documents/`,
+  which the publish workflow now copies), plus a "Follow Ranomafana" block. Both
+  lists started empty, so the page shows "on its way" notes; never fill them with
+  guessed offices, hours or numbers.
+- **Social links** (`SOCIAL_LINKS`) and **extra partner logos** (`PARTNER_LOGOS`,
+  pre-wired file names) are settings at the top of the data file; see
+  `data/README.md`. Both were left empty for Kyle to supply.
+- The gold "Plan your visit" / "Ask the team" header button was removed when the
+  header had nine tabs; it has five now (see "Header tabs and sections"), and the
+  button was not brought back. `know` ("Know before you go",
 added 23 Oct 2026) is the fifth Plan tab: visas, health and safety with links to
 official advice (the e-visa portal, GOV.UK, CDC, France Diplomatie, Auswärtiges
 Amt), money with the exchange-rate note, a packing list, the eight-point
@@ -270,9 +352,9 @@ Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026.
   - **Short pin labels:** pins carry short labels; the panel gives the full name.
   - **Check after any change:** check pin labels for overlap at 320–375 px in all four
     languages.
-- **Its tab:** a designated **Why visit** tab, first in the desktop header and second in
-  the phone's bottom bar (six tabs now). The welcome's link, the menu drawer and the
-  footer's Explore column also lead to it.
+- **Its tab:** Why visit had its own header tab until 23 Oct 2026; it now sits in the
+  About tab's menu and tab bar (see "Header tabs and sections"). The welcome's link,
+  the menu drawer and the footer's About column lead to it.
   - **Header fit:** the header gaps were tightened, and the German label shortened to
     "Warum hierher", so the header stays on one line at 1280 px in every language. It
     already wrapped at 992–1200 px.
@@ -417,7 +499,8 @@ listings — was written without a native speaker and should be checked by one.
 1. Add a `<section id="page-x" class="page-view">` with a `page-hero` (give its
    photo `loading="lazy"` so hidden pages don't download it up front).
 2. Add `'x'` to `PAGES`, and to `NAV_GROUP` / `PAGE_TITLE` if it belongs under an
-   existing nav item.
+   existing nav item. If it belongs to a section, add it to `SECTIONS`: it gets its
+   card and its tab, and its breadcrumb should name the section.
 3. Link to it with `<a href="#x">` — desktop nav (`data-nav`), the drawer, the footer,
    and the bottom nav (`data-bnav`) if it belongs there.
 4. Add its keys to all four translation dictionaries.
@@ -473,8 +556,10 @@ listings — was written without a native speaker and should be checked by one.
 
 ## Current state
 
-25 stays · 16 restaurants · 15 things to do · 7 itineraries · 8 events · 10 blog
-seeds. All 25 stays are verified, against published sources or on Kyle's
+25 stays · 16 restaurants · 16 things to do · 7 itineraries · 8 events · 10 blog
+seeds. **Birdwatching** (`do`, slug `birdwatching`, 23 Oct 2026) is built only from
+facts on the park listing (125 species, Vohiparara, the specialist guide fee): when
+the park's guide fees change in January 2027, change its `price` too. All 25 stays are verified, against published sources or on Kyle's
 authority. The whole site — interface, page text and listings — is in English,
 French, German and Malagasy (since 12 Oct 2026).
 
@@ -605,6 +690,17 @@ recommendations"):
 - **Printing:** a print style prints just the page (or open pop-up) dark on white;
   plans have a "Print this plan" link.
 - **Search, speed, offline:** see Publishing.
+
+**Colours, 23 Oct 2026.** The ground was lifted from near-black to deep forest green,
+secondary text and borders lightened (every text colour passes WCAG AA on `--under`),
+and a forest accent added: `--leaf` / `--leaf-deep` for small strokes before section
+labels, card tops and hovers, tick icons and the footer edge. It never marks an
+action — gold still does that.
+
+Still waiting on Kyle for the 23 Oct additions: the official Facebook, Instagram and
+LinkedIn addresses; logo files for the Commune, Vatovavy Region, Ministry of Tourism,
+Regional Tourism Office and each PCDT-R member (and their exact names); the
+Commune's services and any public documents to post.
 
 Still waiting on Kyle (the review's questions and partner work): who answers the
 team inbox (F5), Peace Corps logo approval (F6), Search Console sign-in and sitemap

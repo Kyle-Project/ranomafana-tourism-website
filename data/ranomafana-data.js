@@ -85,6 +85,26 @@ const TEAM_EMAIL = "ask@valb.io";
    mid-market rate), with the month in asOf. */
 const EXCHANGE = { eur: 5080, usd: 4530, asOf: "2026-10", source: "XE mid-market rate, 23 Oct 2026" };
 
+/* The official social media pages. Paste each page's full address, such as
+   "https://www.facebook.com/…". The footer and the Commune page show
+   a button for each one filled in, and nothing for an empty one, so never put a
+   guessed address here. */
+const SOCIAL_LINKS = { facebook: "", instagram: "", linkedin: "" };
+
+/* More logos for the Partners row at the foot of every page, after the four
+   already there (Peace Corps, Centre ValBio, PIC3, MNP). Each is a pre-wired
+   slot: save the logo in images/ under the file name given and it appears, with
+   no code change; until then it is skipped. light: true puts a dark logo on a
+   pale tile (use it for logos on a white background). url is the partner's
+   own website, or "" for none. Add one row per PCDT-R platform member. */
+const PARTNER_LOGOS = [
+  { name: "Commune of Ranomafana", file: "images/logo-commune-ranomafana.png", url: "", light: true },
+  { name: "Vatovavy Region", file: "images/logo-region-vatovavy.png", url: "", light: true },
+  { name: "Ministry of Tourism", file: "images/logo-ministry-of-tourism.png", url: "", light: true },
+  { name: "Regional Tourism Office", file: "images/logo-regional-tourism-office.png", url: "", light: true },
+  { name: "PCDT-R", file: "images/logo-pcdt-r.png", url: "", light: true }
+];
+
 /* ---------------------------------------------------------------- 1. STAYS */
 const stayData = [
   {
@@ -1228,6 +1248,28 @@ const doData = [
     contact: { phone: "", email: "", website: "", social: "" }
   },
   {
+    slug: "birdwatching",
+    name: "Birdwatching",
+    category: "Wildlife",
+    price: "Park entry (55,000 Ar) plus a specialist bird guide, 220,000 Ar per group",
+    duration: "Half a day to two days",
+    status: "open",
+    img: "images/ranomafana-national-park-paradise-flycatcher.jpg",
+    verified: true,
+    asOf: "2026-10",
+    mapPin: "-21.25625,47.42129",   // the park reception (OpenStreetMap), where bird guides are hired
+    sourceNote: "Added 23 Oct 2026 at Kyle's request (birdwatching as an activity). Every fact comes from the park listing: 125 bird species (official MNP park page, checked 11 Oct 2026), the species in its Birds card, Vohiparara as the birders' circuit, opening at 07:00 (Kyle's notes, 11 Oct 2026) and the 220,000 Ar specialist ornithology guide fee per group of 1-4 (park office notice board, photographed 19 Oct 2026; 250,000 Ar from January 2027, change it then with the park's fees). Photos are Kyle's, already in the park gallery and on the night walk.",
+    desc: "Ranomafana National Park is home to 125 kinds of bird, many of them found only in Madagascar: forest ibis, ground-rollers, blue vangas and Madagascar paradise flycatchers among them. Hire a specialist bird guide at the park office. They know the calls and the nesting spots, and Vohiparara, the high forest at the park’s western edge, is the birders’ circuit.",
+    gallery: [
+      { src: "images/ranomafana-national-park-paradise-flycatcher.jpg", alt: "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-ground-roller.jpg", alt: "A scaly ground-roller, one of the shy birds of the forest floor, in close-up, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-bird.jpg", alt: "A bird perched in the understory, Ranomafana National Park" },
+      { src: "images/night-walk-pygmy-kingfisher.jpg", alt: "A Madagascar pygmy kingfisher perched on a twig after dark" }
+    ],
+    tips: ["Ask at the park office for a specialist bird guide (ornithology) by name", "The park opens at 07:00, and birds are most active in the morning", "Bring binoculars: the guides may not have spare pairs", "Vohiparara is cooler and wetter than Talatakely: bring a warm layer and a rain shell", "The Birders’ Two Days plan builds a visit around it"],
+    contact: { phone: "", email: "", website: "", social: "" }
+  },
+  {
     slug: "station-thermale",
     name: "Station Thermale (Thermal Pool & Baths)",
     category: "Thermal springs",
@@ -1937,6 +1979,43 @@ const blogData = [
   }
 ];
 
+/* ------------------------------------------------- 7. MUNICIPAL SERVICES */
+/* Public services in Ranomafana, on the Municipal services pages: The Commune,
+   Gendarmerie and Hospital, chosen by `section`. Only
+   what the Commune itself has confirmed: never guess an office's hours or phone
+   number (see CLAUDE.md, "Never invent contact details"). While this list is
+   empty the page says the Commune's information is on its way. One row each:
+   {
+     slug: "civil-registry",            // short name, letters and hyphens
+     section: "commune",                // which page: "commune", "gendarmerie" or "hospital"
+     title: "Civil registry",           // or { en: "…", fr: "…", de: "…", mg: "…" }
+     desc: "Birth, marriage and death certificates.",   // text, or the same { en, fr, de, mg }
+     where: "Town hall, ground floor",  // "" if unknown
+     hours: "Mon–Fri 08:00–12:00",      // "" if unknown
+     contact: { phone: "", email: "" },
+     sourceNote: "Who gave this, and when"
+   } */
+const municipalData = [];
+
+/* --------------------------------------------------- 8. PUBLIC DOCUMENTS */
+/* Files anyone can download: the Commune's public documents (Public documents
+   page) and the other Documents pages (Regional Tourism Plan, Ranomafana
+   Development Plan, Investor information), chosen by `section`. Save the file in
+   the documents/ folder (a PDF, as small as possible: connections here are
+   slow) and add a row. npm run check fails if the file is missing. One row each:
+   {
+     slug: "camping-decree",
+     title: "Camping decree",           // or { en, fr, de, mg }
+     file: "documents/arrete-camping.pdf",
+     category: "Decree",                // shown as a small label
+     date: "2026-10",                   // year-month the document is dated
+     language: "fr",                    // the document's own language: en, fr, de or mg
+     section: "public",                 // which page lists it: "public" (Public documents),
+                                        // "tourism-plan", "development-plan" or "investors"
+     sourceNote: "Who provided it, and when"
+   } */
+const documentData = [];
+
 /* Expose everything as one object too, for anything that prefers a namespace
    (a future CMS import, a build script, or a second page). */
 const RANOMAFANA_DATA = {
@@ -1945,7 +2024,11 @@ const RANOMAFANA_DATA = {
   do: doData,
   itineraries: itineraryData,
   events: eventData,
-  blog: blogData
+  blog: blogData,
+  municipal: municipalData,
+  documents: documentData,
+  social: SOCIAL_LINKS,
+  partners: PARTNER_LOGOS
 };
 if (typeof window !== "undefined") window.RANOMAFANA_DATA = RANOMAFANA_DATA;
 if (typeof module !== "undefined" && module.exports) module.exports = RANOMAFANA_DATA;

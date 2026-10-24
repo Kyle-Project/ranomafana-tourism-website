@@ -244,6 +244,39 @@ for (const b of DATA.blog ?? []) {
   if (!b.body || !b.body.length) warn(`${where} has no body — its reader shows "the full story is on its way"`);
 }
 
+/* ---------------------- 2b. social links, municipal services, documents */
+{
+  const SOCIAL_HOSTS = { facebook: /^https:\/\/(www\.|m\.)?(facebook|fb)\.com\//, instagram: /^https:\/\/(www\.)?instagram\.com\//, linkedin: /^https:\/\/([a-z]{2,3}\.)?linkedin\.com\// };
+  for (const [k, v] of Object.entries(DATA.social ?? {})) {
+    if (!SOCIAL_HOSTS[k]) err(`SOCIAL_LINKS has "${k}", which the site does not show (facebook, instagram, linkedin)`);
+    else if (v && !SOCIAL_HOSTS[k].test(v)) err(`SOCIAL_LINKS ${k} should be the page's full address, starting ${k === 'linkedin' ? 'https://www.linkedin.com/' : `https://www.${k}.com/`}`);
+  }
+  const text = (v) => typeof v === 'string' ? v.trim() : (v && typeof v === 'object' && typeof v.en === 'string' ? v.en.trim() : '');
+  const slugs = new Set();
+  for (const m of DATA.municipal ?? []) {
+    const where = `Municipal service "${text(m.title) || m.slug}"`;
+    if (!m.slug || !/^[a-z0-9-]+$/.test(m.slug)) err(`${where} needs a kebab-case slug`);
+    if (slugs.has(m.slug)) err(`${where}: slug "${m.slug}" is used twice`);
+    slugs.add(m.slug);
+    if (!text(m.title)) err(`${where} needs a title (text, or { en, fr, de, mg })`);
+    if (!['commune', 'gendarmerie', 'hospital'].includes(m.section)) err(`${where} needs section: "commune", "gendarmerie" or "hospital" (the page it is listed on)`);
+    if (!m.sourceNote) warn(`${where} has no sourceNote — say who at the Commune confirmed it, and when`);
+  }
+  const DOCS = path.join(ROOT, 'documents');
+  for (const d of DATA.documents ?? []) {
+    const where = `Document "${text(d.title) || d.slug}"`;
+    if (!text(d.title)) err(`${where} needs a title`);
+    if (!/^documents\/[A-Za-z0-9._-]+$/.test(d.file ?? '')) { err(`${where} file should be documents/<file-name>, with no spaces`); continue; }
+    const file = path.join(ROOT, d.file);
+    if (!fs.existsSync(file)) { err(`${d.file} is listed as a document but is not in the documents folder`); continue; }
+    const mb = fs.statSync(file).size / 1024 / 1024;
+    if (mb > 5) warn(`${d.file} is ${mb.toFixed(1)} MB — slow to download in Ranomafana; try a smaller PDF`);
+    if (d.date && !/^\d{4}-\d{2}$/.test(d.date)) err(`${where} date should be year-month, like "2026-10"`);
+    if (d.language && !['en', 'fr', 'de', 'mg'].includes(d.language)) err(`${where} language should be en, fr, de or mg`);
+    if (d.section && !['public', 'tourism-plan', 'development-plan', 'investors'].includes(d.section)) err(`${where} section should be public, tourism-plan, development-plan or investors`);
+  }
+}
+
 /* --------------------------------------------------------- 3. image paths */
 
 const referenced = new Set();
@@ -279,6 +312,18 @@ for (const key of ['stays', 'eat', 'do']) {
   }
 }
 
+/* Partner logos (PARTNER_LOGOS) are pre-wired too: the footer skips a logo whose
+   file is not in images/ yet. */
+const waitingLogos = [];
+for (const p of DATA.partners ?? []) {
+  const f = p.file?.replace(/^images\//, '');
+  if (!p.name) err('A row in PARTNER_LOGOS has no name');
+  if (!f || !/^images\/[a-z0-9-]+\.(png|jpg|jpeg|svg|webp)$/.test(p.file)) { err(`PARTNER_LOGOS "${p.name}" file should be images/<kebab-case-name>.png (or .jpg, .svg, .webp)`); continue; }
+  if (!imagesOnDisk.has(f)) { planned.add(f); waitingLogos.push(`${p.name} (${p.file})`); }
+  if (p.url && !/^https:\/\//.test(p.url)) err(`PARTNER_LOGOS "${p.name}" url should start with https://`);
+}
+if (waitingLogos.length) notes.push(`${waitingLogos.length} partner logos are waiting for their file (the footer skips them until then): ${waitingLogos.join(', ')}`);
+
 /* Each generated placeholder card has a French, German and Malagasy twin
    (placeholder-<slug>-fr.jpg …) that the site shows in that language. */
 for (const r of [...referenced]) {
@@ -294,8 +339,8 @@ for (const r of [...referenced]) {
 for (const r of [...referenced].sort()) {
   if (!imagesOnDisk.has(r) && !planned.has(r)) err(`images/${r} is referenced but not on disk`);
 }
-if (planned.size) {
-  notes.push(`${planned.size} gallery slots are waiting for a photograph (they fall back to a placeholder) — see PHOTO-AND-DATA-GAPS.md`);
+if (planned.size > waitingLogos.length) {
+  notes.push(`${planned.size - waitingLogos.length} gallery slots are waiting for a photograph (they fall back to a placeholder) — see PHOTO-AND-DATA-GAPS.md`);
 }
 const orphans = [...imagesOnDisk].filter((f) => !referenced.has(f) && !f.startsWith('.') ).sort();
 if (orphans.length) {
