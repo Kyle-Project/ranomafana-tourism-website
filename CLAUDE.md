@@ -141,8 +141,8 @@ plan into `#itineraryDetail`. Alongside the six, `renderHome()`, `renderPark()`,
 
 ### Pages
 
-Twenty-six `<section id="page-x" class="page-view">` elements, one shown at a time by
-`switchPage(id)`: `home`, `why`, `stay`, `eat`, `do`, `park`, `itineraries`, `getting-here`,
+Twenty-seven `<section id="page-x" class="page-view">` elements, one shown at a time by
+`switchPage(id)`: `home`, `why`, `stay`, `eat`, `do`, `park`, `birdwatching`, `itineraries`, `getting-here`,
 `when`, `know`, `events`, `blog`, `gallery`, `services`, `tourism-plan`,
 `development-plan`, `investors`, `contact`, `ranomafana`, `commune`, `gendarmerie`,
 `hospital`, `public-documents`, and four section overviews: `explore`, `plan`,
@@ -159,7 +159,15 @@ whose tab bar holds the pages under it:
   `ranomafana`, which holds the "At a glance" figures and the six fact cards. Old
   `#about` links land there (`PAGE_ALIAS`, and `ALIAS` in `404.html`).
 - **Hotels** (`#stay`) and **Restaurants** (`#eat`): no menu.
-- **Activities** (`#do`): Things to do, National park, Itineraries.
+- **Activities** (`#do`): Things to do, National park, Birdwatching, Itineraries.
+- **Birdwatching** (`#birdwatching`, added 26 Oct 2026, Kyle: "add a learn more about
+  birdwatching in Ranomafana page"): the long version of the Birdwatching listing,
+  built from the park and Birdwatching listings plus the six birds that make the park
+  a Key Biodiversity Area (keybiodiversityareas.org, site 6600, checked 26 Oct 2026;
+  their names stay in English with the scientific name, in every language). The fees
+  are tokens, so January 2027's new guide fee reaches it through `specialistFee`. The
+  Birdwatching pop-up ("Learn more about birdwatching") and the park's Ornithology
+  card link to it; it has a Sources line (`birdSources`).
 - **Hiring a guide is part of the National Park page** (Kyle, 24 Oct 2026: "should be
   integrated into the information about the national park"). It was its own page
   (`guides`); its sections (how it works, costs `#guideCosts`, specialists, outside the
