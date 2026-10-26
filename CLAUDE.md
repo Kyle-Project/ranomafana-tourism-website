@@ -567,6 +567,12 @@ listings — was written without a native speaker and should be checked by one.
   validator warns when a category is missing from it.
 - **Events need `months`** (`[6, 7]`) to appear on the When to visit month picker.
   Weekly events don't. The next dated event is flagged "Next up" automatically.
+- **What's on is in date order** (Kyle, 27 Oct 2026: "should show upcoming events
+  based on the date"). `renderEvents()` sorts by `nextOccurrence()`: a weekly event
+  by its next weekday (`dayBadge`), a season by its next month, or first with a
+  "This month" badge while it is on; a `date` that has passed moves to the same
+  month next year as "exact date to be confirmed" (`evDateTbc`) until the data gets
+  the new date.
 - **Itinerary stops are `"When — what"`.** The text before ` — ` shows as the time.
   A stop naming a listed place gets a link via `STOP_LINKS` in the script.
 - **Keep images under ~500 KB.** Ranomafana connections are slow. Resize to 1600px

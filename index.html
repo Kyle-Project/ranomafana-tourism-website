@@ -3106,6 +3106,7 @@
         eatFeatureText: "{eats} places: Malagasy kitchens, French-style hotel dining rooms and quick snacks by the park gate.",
         chipMalagasy: "Malagasy", chipFrench: "French", chipSnack: "Snacks & quick bites",
         homeEventsHeading: "In the village this season.", fullCalendar: "Full calendar", nextUp: "Next up",
+        evAnnual: "Annual", evDateTbc: "{month} {year} · exact date to be confirmed",
         storiesHeading: "Field notes", allStories: "All stories", minShort: "min",
         shareLink: "Share", linkCopied: "Link copied", copyThisLink: "Copy this link",
         waMessage: "Message on WhatsApp", waHello: "Hello! I found {name} in the Ranomafana visitor guide and have a question.",
@@ -3685,6 +3686,7 @@
         eatFeatureText: "{eats} adresses : cuisines malgaches, salles à manger d’hôtel à la française et snacks près de l’entrée du parc.",
         chipMalagasy: "Malgache", chipFrench: "Française", chipSnack: "Snacks et en-cas",
         homeEventsHeading: "Au village cette saison.", fullCalendar: "Tout l’agenda", nextUp: "Prochainement",
+        evAnnual: "Annuel", evDateTbc: "{month} {year} · date exacte à confirmer",
         storiesHeading: "Carnets de terrain", allStories: "Tous les récits", minShort: "min",
         shareLink: "Partager", linkCopied: "Lien copié", copyThisLink: "Copiez ce lien",
         waMessage: "Écrire sur WhatsApp", waHello: "Bonjour ! J’ai trouvé {name} dans le guide des visiteurs de Ranomafana et j’ai une question.",
@@ -4255,6 +4257,7 @@
         eatFeatureText: "{eats} Adressen: madagassische Küchen, Hotelrestaurants im französischen Stil und Imbisse am Parkeingang.",
         chipMalagasy: "Madagassisch", chipFrench: "Französisch", chipSnack: "Snacks & Imbiss",
         homeEventsHeading: "Im Dorf in dieser Saison.", fullCalendar: "Alle Termine", nextUp: "Als Nächstes",
+        evAnnual: "Jährlich", evDateTbc: "{month} {year} · genauer Termin folgt",
         storiesHeading: "Notizen aus dem Feld", allStories: "Alle Geschichten", minShort: "Min.",
         shareLink: "Teilen", linkCopied: "Link kopiert", copyThisLink: "Diesen Link kopieren",
         waMessage: "Auf WhatsApp schreiben", waHello: "Hallo! Ich habe {name} im Ranomafana-Besucherführer gefunden und habe eine Frage.",
@@ -4825,6 +4828,7 @@
         eatFeatureText: "Toerana {eats}: lakozia malagasy, trano fisakafoanana amin'ny hotely araka ny fomba frantsay, ary sakafo maivana eo akaikin'ny vavahadin'ny valan-javaboahary.",
         chipMalagasy: "Malagasy", chipFrench: "Frantsay", chipSnack: "Sakafo maivana",
         homeEventsHeading: "Ao an-tanàna amin'ity vanim-potoana ity.", fullCalendar: "Ny tetiandro feno", nextUp: "Manaraka",
+        evAnnual: "Isan-taona", evDateTbc: "{month} {year} · mbola hamafisina ny daty marina",
         storiesHeading: "Naoty avy any an-tsaha", allStories: "Ny tantara rehetra", minShort: "min",
         shareLink: "Zarao", linkCopied: "Voadika ny rohy", copyThisLink: "Adikao ity rohy ity",
         waMessage: "Hafatra amin'ny WhatsApp", waHello: "Salama! Hitako tao amin'ny torolàlana ho an'ny mpitsidika an'i Ranomafana ny {name} ary manana fanontaniana aho.",
@@ -6160,26 +6164,59 @@
     }
     const isWeekly = (e) => /weekly/i.test(english(e, 'monthBadge') || '');
 
-    function eventRow(ev, isNext, compact) {
-      const month = ev.date ? monthName(Number(ev.date.slice(5, 7)) - 1) : ev.monthBadge;
+    /* What's on lists every event by when it next happens, counted from today
+       (Kyle, 27 Oct 2026). A weekly event falls on its next weekday; a season on
+       the first day of its next month, or today while it is on ("This month"); a
+       date that has passed moves to the same month next year, its day to be
+       confirmed, until the data gets next year's date. */
+    const WEEKDAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+    function nextOccurrence(ev, today) {
+      if (ev.date && new Date(ev.date + 'T00:00:00') >= today) return { when: new Date(ev.date + 'T00:00:00') };
+      const day = WEEKDAYS.indexOf(english(ev, 'dayBadge'));
+      if (isWeekly(ev) && day >= 0) {
+        const when = new Date(today);
+        when.setDate(when.getDate() + (day - when.getDay() + 7) % 7);
+        return { when };
+      }
+      const months = ev.months || (ev.date ? [Number(ev.date.slice(5, 7))] : []);
+      if (!months.length) return { when: new Date(8.64e15) };   // no date or season: last
+      const now = today.getMonth() + 1;
+      if (!ev.date && months.includes(now)) return { when: today, onNow: true };
+      const starts = months.map((m) => new Date(today.getFullYear() + (m <= now ? 1 : 0), m - 1, 1));
+      return { when: new Date(Math.min(...starts)), tbc: Boolean(ev.date) };
+    }
+
+    function eventRow(ev, isNext, compact, occ = {}) {
+      let day = ev.dayBadge;
+      let month = ev.date ? monthName(Number(ev.date.slice(5, 7)) - 1) : ev.monthBadge;
+      let when = ev.whenLabel;
+      if (occ.tbc) {   // its date has passed: show next year's month instead of a stale day
+        day = monthName(occ.when.getMonth(), 'short').replace('.', '').toUpperCase();
+        month = t('evAnnual');
+        when = t('evDateTbc').replace('{month}', monthName(occ.when.getMonth())).replace('{year}', occ.when.getFullYear());
+      }
+      const badge = isNext ? t('nextUp') : occ.onNow ? t('thisMonth') : '';
       return `
         <article class="event-row${isNext ? ' is-next' : ''}">
-          <span class="ev-date"><span class="ev-day">${esc(ev.dayBadge)}</span><span class="ev-month">${esc(month)}</span></span>
+          <span class="ev-date"><span class="ev-day">${esc(day)}</span><span class="ev-month">${esc(month)}</span></span>
           <span class="ev-body">
             <span class="ev-title">${esc(ev.title)}</span>
-            <span class="ev-when">${esc(ev.whenLabel)}</span>
+            <span class="ev-when">${esc(when)}</span>
             ${compact ? '' : `<span class="ev-desc">${esc(ev.desc)}</span>`}
             ${ev.verified === false ? `<span class="ev-note">${esc(t('eventUnconfirmed'))}</span>` : ''}
           </span>
-          ${isNext ? `<span class="ev-badge">${esc(t('nextUp'))}</span>` : ''}
+          ${badge ? `<span class="ev-badge">${esc(badge)}</span>` : ''}
         </article>`;
     }
 
     function renderEvents(items) {
       const list = document.getElementById('eventList');
       if (!list) return;
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const rows = items.map((ev) => ({ ev, ...nextOccurrence(ev, today) })).sort((a, b) => a.when - b.when);
       const next = upcomingDated()[0];
-      list.innerHTML = items.map((ev) => eventRow(ev, ev === next, false)).join('');
+      list.innerHTML = rows.map(({ ev, ...occ }) => eventRow(ev, ev === next, false, occ)).join('');
     }
 
     /* Only finished stories are listed. A draft (status: "draft") stays hidden
