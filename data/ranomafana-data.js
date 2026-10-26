@@ -124,6 +124,7 @@ const stayData = [
       /* Kyle's photos of 13 Oct 2026; originals in photo-originals/2026-10-13 Centre ValBio/ */
       { src: "images/cvb-campus-aerial.jpg", alt: "The Centre ValBio buildings from the air, beside the road with the forest behind" },
       { src: "images/cvb-terrace-dusk.jpg", alt: "Tables on the terrace outside the conference room at dusk, Centre ValBio" },
+      { src: "images/cvb-buildings-night.jpg", alt: "The Centre ValBio buildings lit up at nightfall, with the forest behind" },   // Kyle, 26 Oct 2026
       { src: "images/cvb-front-entrance-shot.jpg", alt: "Visitors at the Centre ValBio entrance" },
       { src: "images/cvb-researcher-guide.jpg", fallback: "images/wright-patricia-125.jpg", alt: "Centre ValBio researcher and guide" },
       { src: "images/cvb-community-event.jpg", fallback: "images/independence-day-cvb-team-shot.jpg", alt: "Community event at Centre ValBio" },

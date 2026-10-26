@@ -193,13 +193,13 @@ page to `SECTIONS`, and keep `NAV_GROUP` (which header tab lights up) in step.
 Kyle, 23 Oct 2026, on the sections: each needs a dedicated page with a tab bar;
 Municipal services must not share a place with Stories; Public documents and each
 service get their own tab. **About** is about Ranomafana itself: `ranomafana` ("About
-Ranomafana") opens with "At a glance" figures, then "The valley of hot water" in six
-cards — every fact taken from elsewhere on the site, with a Sources line — and then
-"The village and the valley", five of Kyle's photos (26 Oct 2026: the village under a
+Ranomafana") opens with "At a glance" figures (Kyle, 26 Oct 2026: "put at a glance
+first, then the images, then the text"), then "The village and the valley", five of Kyle's photos (26 Oct 2026: the village under a
 rainbow, zebu on the main road, the RN25 welcome sign, a river over boulders, zebu on a
-riverbank). They are `TOWN_PHOTOS` in the script (`renderTownPhotos()`; a tap opens
+riverbank; and later that day the Namorona in mist, a sixth), three across (two on phones). They are `TOWN_PHOTOS` in the script (`renderTownPhotos()`; a tap opens
 them in the pop-up) and also appear in the Photo gallery under "Village & culture",
-linked back to About Ranomafana. Service entries are `municipalData` rows with `section`
+linked back to About Ranomafana. Then comes the text: "The valley of hot water" in six
+cards — every fact taken from elsewhere on the site, with a Sources line. Service entries are `municipalData` rows with `section`
 "commune", "gendarmerie" or "hospital"; none have been confirmed, so each page shows an
 "on its way" note. Never fill the Gendarmerie or hospital with unconfirmed numbers.
 **Documents** (23 Oct 2026): `tourism-plan` (Regional Tourism Plan), `development-plan`
@@ -648,6 +648,7 @@ Kyle's other photos of 26 October 2026 (WhatsApp copies, used as received):
   (08:00–15:30, every day) come from the faded sign by the reception door. Who runs it,
   where it is, fees and contacts are unknown, so it is `verified: false`, with no
   `mapPin`, until Kyle confirms (section 6 of `PHOTO-AND-DATA-GAPS.md`).
+- **Centre ValBio at night** (`cvb-buildings-night.jpg`), fourth in its stay gallery.
 - **Kayaking:** the launch slot (`namorona-kayaking-launch.jpg`) is filled, and a
   paddler waving at the launch (`namorona-kayaking-paddler.jpg`) added after it; the
   group slot is still waiting.

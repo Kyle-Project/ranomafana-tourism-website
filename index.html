@@ -799,14 +799,14 @@
     .park-photos > :first-child { grid-row: span 2; }
     .park-photo { position: relative; border-radius: 16px; overflow: hidden; background: var(--ph); }
     .park-photo img { width: 100%; height: 100%; object-fit: cover; }
-    .town-photos { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
-    .town-photo { display: block; width: 100%; aspect-ratio: 3 / 4; padding: 0; border: 0; border-radius: 16px; overflow: hidden; background: var(--ph); cursor: pointer; }
+    .town-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .town-photo { display: block; width: 100%; aspect-ratio: 4 / 3; padding: 0; border: 0; border-radius: 16px; overflow: hidden; background: var(--ph); cursor: pointer; }
     .town-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
     .town-photo:hover img { transform: scale(1.03); }
     .town-photo:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
     @media (max-width: 720px) {
       .town-photos { grid-template-columns: 1fr 1fr; gap: 10px; }
-      .town-photo:first-child { grid-column: 1 / -1; aspect-ratio: 4 / 3; }
+      .town-photo { aspect-ratio: 1; }
     }
     .photo-slot { height: 100%; border-radius: 16px; border: 1px dashed var(--moss-2); display: flex; align-items: center; justify-content: center; text-align: center; font-size: 14px; color: var(--lichen); padding: 12px; background: var(--canopy); }
     .mini-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; }
@@ -2438,6 +2438,14 @@
           <div class="stat"><b>20,000</b><span data-i18n="glance4">people in the town</span></div>
         </div>
       </section>
+      <!-- Kyle's photos of the village and the country around it (26 Oct 2026).
+           Order (Kyle, 26 Oct 2026): At a glance, then these photos, then the text. The tiles come from TOWN_PHOTOS in the script (renderTownPhotos()); they
+           also appear in the Photo gallery under "Village & culture". -->
+      <section class="wrap stack g-24" style="padding-top: 56px;" aria-labelledby="rano-photos-h">
+        <h2 id="rano-photos-h" class="display d-44" data-i18n="ranoPhotosHeading" data-i18n-html>The village and <em>the valley</em></h2>
+        <p class="lede" data-i18n="ranoPhotosIntro">Life along the RN25, the river and the hills around town. Tap a photo to see it larger.</p>
+        <div class="town-photos" id="townPhotos"></div>
+      </section>
       <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 24px;" aria-labelledby="rano-valley-h">
         <h2 id="rano-valley-h" class="display d-44" data-i18n="ranoPageHeading" data-i18n-html>The valley of <em>hot water</em></h2>
         <div class="card-row">
@@ -2452,14 +2460,6 @@
           <a class="btn btn-gold" href="#why" data-i18n="navWhy">Why visit</a>
           <a class="btn btn-ghost" href="#getting-here" data-i18n="tabGettingHere">Getting here</a>
         </div>
-      </section>
-      <!-- Kyle's photos of the village and the country around it (26 Oct 2026).
-           The tiles come from TOWN_PHOTOS in the script (renderTownPhotos()); they
-           also appear in the Photo gallery under "Village & culture". -->
-      <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 24px;" aria-labelledby="rano-photos-h">
-        <h2 id="rano-photos-h" class="display d-44" data-i18n="ranoPhotosHeading" data-i18n-html>The village and <em>the valley</em></h2>
-        <p class="lede" data-i18n="ranoPhotosIntro">Life along the RN25, the river and the hills around town. Tap a photo to see it larger.</p>
-        <div class="town-photos" id="townPhotos"></div>
       </section>
       <p class="wrap page-note" data-i18n="ranoSources">Sources: the park’s size, species counts and dates from Madagascar National Parks; distances from Madagascar National Parks and this guide’s Getting here page; the town’s population, the guides’ association and the community reserves from this guide’s own local notes (October 2026), as on the Why visit page.</p>
     </section>
@@ -3402,6 +3402,7 @@
         altTownRoad: "Zebu driven along the main road through Ranomafana village, with forested hills behind",
         altTownSign: "The painted welcome sign on the RN25 into Ranomafana: “Bienvenue Ranomafana, roulez doucement”",
         altTownRiver: "A river running over smooth boulders below the valley’s green hills",
+        altTownNamorona: "The Namorona River tumbling down rocky cascades through misty forest",
         altTownZebu: "Zebu grazing on a riverbank below a rocky, forested hill, with someone wading in the river",
         galleryFrom: "Taken at",
         galleryPrev: "Previous photo",
@@ -3931,6 +3932,7 @@
         altTownRoad: "Des zébus conduits sur la route principale du village de Ranomafana, au pied de collines boisées",
         altTownSign: "Le panneau d’accueil peint sur la RN25 à l’entrée de Ranomafana : « Bienvenue Ranomafana, roulez doucement »",
         altTownRiver: "Une rivière qui court sur de gros rochers lisses, au pied des collines vertes de la vallée",
+        altTownNamorona: "La Namorona dévale des cascades rocheuses à travers la forêt dans la brume",
         altTownZebu: "Des zébus paissent au bord d’une rivière, sous une colline rocheuse et boisée ; quelqu’un marche dans l’eau",
         galleryFrom: "Prise à",
         galleryPrev: "Photo précédente",
@@ -4459,6 +4461,7 @@
         altTownRoad: "Zebus werden über die Hauptstraße durch das Dorf Ranomafana getrieben, dahinter bewaldete Hügel",
         altTownSign: "Das bemalte Willkommensschild an der RN25 nach Ranomafana: „Bienvenue Ranomafana, roulez doucement“",
         altTownRiver: "Ein Fluss über glatte Felsblöcke unterhalb der grünen Hügel des Tals",
+        altTownNamorona: "Die Namorona stürzt über felsige Kaskaden durch den nebligen Wald",
         altTownZebu: "Zebus grasen am Flussufer unter einem felsigen, bewaldeten Hügel; jemand watet durch den Fluss",
         galleryFrom: "Aufgenommen bei",
         galleryPrev: "Vorheriges Foto",
@@ -4988,6 +4991,7 @@
         altTownRoad: "Omby entina mamaky ny lalana lehibe ao an-tanànan'i Ranomafana, eo ambanin'ny havoana misy ala",
         altTownSign: "Ny takelaka fandraisana vahiny voaloko eo amin'ny RN25 miditra an'i Ranomafana: « Bienvenue Ranomafana, roulez doucement »",
         altTownRiver: "Renirano mikoriana amin'ny vatobe malama eo ambanin'ny havoana maitso ao amin'ny lohasaha",
+        altTownNamorona: "Ny renirano Namorona midina amin'ny riandrano be vato mamakivaky ny ala feno zavona",
         altTownZebu: "Omby miraoka eo amoron'ny renirano eo ambanin'ny havoana be vato misy ala, ary misy olona mandeha an-drano",
         galleryFrom: "Nalaina tao amin'ny",
         galleryPrev: "Sary teo aloha",
@@ -6246,6 +6250,7 @@
       { src: 'images/ranomafana-village-main-road-zebu.jpg', alt: 'altTownRoad' },
       { src: 'images/ranomafana-welcome-sign-rn25.jpg', alt: 'altTownSign' },
       { src: 'images/ranomafana-river-boulders.jpg', alt: 'altTownRiver' },
+      { src: 'images/namorona-river-cascades-mist.jpg', alt: 'altTownNamorona' },
       { src: 'images/ranomafana-zebu-riverbank.jpg', alt: 'altTownZebu' },
     ];
     const townPhotoList = () => TOWN_PHOTOS.map((p) => ({ src: p.src, alt: t(p.alt) }));
