@@ -141,6 +141,9 @@ the design canvas — see "Stories and the design canvas" in `CLAUDE.md`.
 - **`contact.whatsapp`**: the number(s) the business says take WhatsApp, e.g.
   `whatsapp: "+261 34 07 324 33"` (several joined by ` / `). It adds a "Message on
   WhatsApp" button with a short hello. Only on the business's own word.
+- **`imgPosition`** (optional): where a tall `img` is framed in the wide listing
+  card, as a CSS position, e.g. `imgPosition: "center 34%"` (34% of the way down).
+  Use it when the subject sits off-centre. The park listing has one.
 - **`asOf`**: the month a listing's details were gathered, `asOf: "2026-10"`. The
   pop-up shows "Details as of October 2026"; `npm run check` warns after a year.
 

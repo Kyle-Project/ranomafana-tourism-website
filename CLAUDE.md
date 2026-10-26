@@ -141,20 +141,23 @@ plan into `#itineraryDetail`. Alongside the six, `renderHome()`, `renderPark()`,
 
 ### Pages
 
-Twenty-seven `<section id="page-x" class="page-view">` elements, one shown at a time by
+Twenty-six `<section id="page-x" class="page-view">` elements, one shown at a time by
 `switchPage(id)`: `home`, `why`, `stay`, `eat`, `do`, `park`, `itineraries`, `getting-here`,
 `when`, `know`, `events`, `blog`, `gallery`, `services`, `tourism-plan`,
 `development-plan`, `investors`, `contact`, `ranomafana`, `commune`, `gendarmerie`,
-`hospital`, `public-documents`, and five section overviews: `explore`, `plan`,
-`about`, `services`, `documents`.
+`hospital`, `public-documents`, and four section overviews: `explore`, `plan`,
+`services`, `documents`.
 **Header tabs and sections** (23 Oct 2026). Kyle: "for the upper tab list About,
 Hotels, Restaurants, Activities, Events calendar. The other activities and subheadings
 should logically flow underneath these tabs or should be found at the bottom of the
 site." The header has exactly those five tabs, as plain links (Kyle had drop-down
 menus taken out the same day: "make it simple and clickable"). Each opens its page,
 whose tab bar holds the pages under it:
-- **About** (`#about`): About Ranomafana (`ranomafana`), Why visit, Stories, Photo
-  gallery, Contact.
+- **About** (`#ranomafana`): About Ranomafana, Why visit, Photo gallery, Contact.
+  Stories moved to Explore on 24 Oct 2026 (Kyle: "Move the stories to the explore"). There is no About overview page (Kyle, 24 Oct 2026: "start with an about
+  ranomafana first and remove the overview page"): the section opens on
+  `ranomafana`, which holds the "At a glance" figures and the six fact cards. Old
+  `#about` links land there (`PAGE_ALIAS`, and `ALIAS` in `404.html`).
 - **Hotels** (`#stay`) and **Restaurants** (`#eat`): no menu.
 - **Activities** (`#do`): Things to do, National park, Itineraries.
 - **Hiring a guide is part of the National Park page** (Kyle, 24 Oct 2026: "should be
@@ -166,11 +169,14 @@ whose tab bar holds the pages under it:
   (`404.html` has the same alias), so old shared links work too.
 - **Events calendar** (`#events`): What's on, When to visit.
 Everything else is at the foot of the site: the footer's five columns are Explore
-(Hotels, Restaurants, Activities, National park, Events calendar), Plan (the four
+(Hotels, Restaurants, Activities, Ranomafana National Park, Events calendar, Stories —
+the same six as Explore's tab bar and overview cards; Kyle, 26 Oct 2026, asked for the
+park there), Plan (the four
 planning pages and Hiring a guide), About, Municipal services (commune, gendarmerie, hospital) and
 Documents (tourism-plan, development-plan, investors, public-documents). The phone menu
-follows the header, then a "More" group; the phone bottom bar is Home, About, Stay,
-Eat, Do, Events.
+holds only Home and the five header tabs (Kyle, 26 Oct 2026: "only show main
+headers") — no sub-pages; don't add them back. The phone bottom bar is Home, About,
+Stay, Eat, Do, Events.
 
 All of it comes from `SECTIONS` in the script. The three header tabs with menus, and
 Plan, Municipal services and Documents, put one tab bar under the hero of every page
@@ -178,18 +184,22 @@ they hold (`buildSectionTabs()` at start-up); a section whose own page is its ov
 names it in `overview` (Activities → `do`, Events → `events`). A page carries only one
 bar, so Plan's bar holds Getting here and Know before you go, and its overview shows
 Itineraries, When to visit and Hiring a guide (the park's guide section) as extra cards
-(`more`). Explore's bar
-sits on its overview only (`onlyOverview`). Overviews of cards (`renderHubs()`, photo
+(`more`). Explore's bar sits only on its overview and on Stories (`barOn`); its other
+pages carry their header tab's bar. Overviews of cards (`renderHubs()`, photo
 and text read from each page's own hero photo and intro) exist for `explore`, `plan`,
-`about`, `services` and `documents`. **Never write a `plan-tabs` bar by hand**: add the
+`services` and `documents`. **Never write a `plan-tabs` bar by hand**: add the
 page to `SECTIONS`, and keep `NAV_GROUP` (which header tab lights up) in step.
 
 Kyle, 23 Oct 2026, on the sections: each needs a dedicated page with a tab bar;
 Municipal services must not share a place with Stories; Public documents and each
-service get their own tab. **About** is about Ranomafana itself: the overview opens
-with "At a glance" figures and three fact cards, and `ranomafana` ("The valley of hot
-water") gives the place in six cards — every fact taken from elsewhere on the site,
-with a Sources line. Service entries are `municipalData` rows with `section`
+service get their own tab. **About** is about Ranomafana itself: `ranomafana` ("About
+Ranomafana") opens with "At a glance" figures, then "The valley of hot water" in six
+cards — every fact taken from elsewhere on the site, with a Sources line — and then
+"The village and the valley", five of Kyle's photos (26 Oct 2026: the village under a
+rainbow, zebu on the main road, the RN25 welcome sign, a river over boulders, zebu on a
+riverbank). They are `TOWN_PHOTOS` in the script (`renderTownPhotos()`; a tap opens
+them in the pop-up) and also appear in the Photo gallery under "Village & culture",
+linked back to About Ranomafana. Service entries are `municipalData` rows with `section`
 "commune", "gendarmerie" or "hospital"; none have been confirmed, so each page shows an
 "on its way" note. Never fill the Gendarmerie or hospital with unconfirmed numbers.
 **Documents** (23 Oct 2026): `tourism-plan` (Regional Tourism Plan), `development-plan`
@@ -404,6 +414,11 @@ through the park's rainforest (Kyle's choice, 12 Oct 2026, replacing the gecko: 
 forest shot says where you are). A wide, misty shot over the canopy would suit it
 even better if one is ever taken; a landscape-format photo fits the hero best.
 
+In a listing's pop-up gallery, placeholder cards appear only while the listing has no
+real photo (Kyle, 26 Oct 2026): once one real photo is in, `galleryHTML()` leaves out
+every slot still waiting for its file (and any placeholder image), and leads with the
+first real photo. A pre-wired slot still lights up by itself when its file arrives.
+
 On listing cards a photo-less listing shows a CSS placeholder (dark panel, name,
 "Photo coming soon") and quietly tries its first gallery slot on top, so a newly
 dropped-in photo lights up the card as well as the pop-up.
@@ -556,7 +571,7 @@ listings — was written without a native speaker and should be checked by one.
 
 ## Current state
 
-25 stays · 16 restaurants · 16 things to do · 7 itineraries · 8 events · 10 blog
+25 stays · 16 restaurants · 17 things to do · 7 itineraries · 8 events · 10 blog
 seeds. **Birdwatching** (`do`, slug `birdwatching`, 23 Oct 2026) is built only from
 facts on the park listing (125 species, Vohiparara, the specialist guide fee): when
 the park's guide fees change in January 2027, change its `price` too. All 25 stays are verified, against published sources or on Kyle's
@@ -614,6 +629,28 @@ Ambohimagneva two tree-frog photos and a waterfall, and the Jirama Waterfall Hik
 more of the big falls. VOI Mitsinjo's description now says how to reach the waterfall,
 in Kyle's words of 20 Oct 2026: a 30-minute walk from Ambatolahy village, or a four-hour
 hike through the forest.
+
+Kyle's photo of 26 October 2026 (used as received), a golden bamboo lemur sitting in
+bamboo, is the park listing's photo (`ranomafana-national-park-golden-bamboo-lemur.jpg`):
+the Things to do card, the Explore overview card and the first of the park page's
+photos. It is a tall photo, so the listing's `imgPosition: "center 34%"` keeps the
+lemur in the wide card frames. The old card photo (a lemur on a branch) moved to the
+end of the park gallery.
+
+Kyle's other photos of 26 October 2026 (WhatsApp copies, used as received):
+- **Park wildlife:** a pale frog with orange feet, a yellow-and-black weevil, two
+  millipedes and a land snail joined the end of the park gallery, and the frog heads a
+  fifth wildlife card, "Frogs & small creatures" (no species named: the photos don't
+  make them certain).
+- **Mahakaty Reserve** (`do`, slug `mahakaty-reserve`, category "Nature reserve", a new
+  category in `DO_GROUPS` (forest) and `CATEGORY_LABEL`): a new listing at Kyle's request
+  with his six photos. Its description holds only what the photos show; the hours
+  (08:00–15:30, every day) come from the faded sign by the reception door. Who runs it,
+  where it is, fees and contacts are unknown, so it is `verified: false`, with no
+  `mapPin`, until Kyle confirms (section 6 of `PHOTO-AND-DATA-GAPS.md`).
+- **Kayaking:** the launch slot (`namorona-kayaking-launch.jpg`) is filled, and a
+  paddler waving at the launch (`namorona-kayaking-paddler.jpg`) added after it; the
+  group slot is still waiting.
 
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide

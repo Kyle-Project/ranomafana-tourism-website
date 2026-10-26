@@ -1042,7 +1042,8 @@ const doData = [
     rating: "4.9 (Google Maps & Tripadvisor)",
     duration: "2 hours to 2 days, depending on circuit",
     status: "open",
-    img: "images/ranomafana-national-park-lemur-branch.jpg",
+    img: "images/ranomafana-national-park-golden-bamboo-lemur.jpg",
+    imgPosition: "center 34%",   // a tall photo: keep the lemur in a wide card's frame
     verified: true,
     /* The same fees broken out, for the home page, the park page and the
        Hiring a guide page. Change them here, alongside `price` above, and
@@ -1104,6 +1105,12 @@ const doData = [
         note: "Look down as well as up:",
         photo: { src: "images/ranomafana-national-park-mongoose.jpg", alt: "A ring-tailed mongoose crossing a stone path in Ranomafana National Park" },
         species: ["Ring-tailed mongoose"]
+      },
+      {
+        group: "Frogs & small creatures",
+        note: "Look closely at bark, moss and leaves:",
+        photo: { src: "images/ranomafana-national-park-pale-frog.jpg", alt: "A pale frog with orange feet on a red earth path, Ranomafana National Park" },
+        species: ["Frogs", "Millipedes", "Weevils", "Land snails"]
       }
     ],
     circuits: [
@@ -1189,7 +1196,13 @@ const doData = [
       { src: "images/ranomafana-national-park-visitors-sign.jpg", alt: "A group of visitors at the Parc National Ranomafana sign" },
       { src: "images/ranomafana-national-park-interpretation-sign.jpg", alt: "The sign at the park's interpretation centre, topped by a wooden lemur: “Veloma — Good bye — Au revoir”" },
       { src: "images/ranomafana-national-park-interpretation-centre.jpg", alt: "Inside the park's interpretation centre: a display of a Tanala village" },
-      { src: "images/ranomafana-national-park-circuit-map.jpg", alt: "The board mapping the park's walking circuits" }
+      { src: "images/ranomafana-national-park-circuit-map.jpg", alt: "The board mapping the park's walking circuits" },
+      { src: "images/ranomafana-national-park-lemur-branch.jpg", alt: "A lemur on a branch high in the forest canopy, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-pale-frog.jpg", alt: "A pale frog with orange feet on a red earth path, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-weevil.jpg", alt: "A yellow-and-black weevil on a twisted vine in the forest, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-millipede-orange.jpg", alt: "A black millipede with orange spots curled on a mossy tree trunk, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-millipede-black.jpg", alt: "A black millipede coiled on a tree trunk in the forest, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-land-snail.jpg", alt: "A large land snail on a tree trunk among long, spiky leaves, Ranomafana National Park" }
     ],
     contact: { phone: "", email: "", website: "https://parcs-madagascar.com/en/parc/ranomafana-2/", social: "" }
   },
@@ -1223,6 +1236,31 @@ const doData = [
       { src: "images/voi-mitsinjo-wildlife.jpg", fallback: "images/placeholder-voi-mitsinjo.jpg", alt: "Wildlife at VOI Mitsinjo Reserve" }
     ],
     contact: { phone: "", email: "", website: "", social: "", note: "Managed by VOI Ambatolahy." }
+  },
+  {
+    slug: "mahakaty-reserve",
+    name: "Mahakaty Reserve",
+    category: "Nature reserve",
+    price: "Ask at the reception for entry and guide rates",
+    rating: "\u2014",
+    duration: "",
+    status: "open",
+    img: "images/mahakaty-reserve-river-view.jpg",
+    verified: false,
+    photoNeeded: false,
+    asOf: "2026-10",
+    sourceNote: "Added 26 Oct 2026 at Kyle's request, with his six photos of the same day (used as received). Name from the stone at its gate (\u201cLa Nature est l\u00e0 ! Mahakaty Reserve \u00b7 Bienvenue \u00b7 Welcome\u201d). Opening hours read from the partly faded sign beside the reception door (\u201cHeure d'ouverture 8h \u00e0 15h 30mn 7j/7\u201d): confirm. Who runs it, where exactly it is, entry and guide fees and contact details are not yet known: ask Kyle. The pop-up map searches Google for the name: check it lands on the reserve, or add a mapPin.",
+    desc: "A forest reserve with a painted welcome stone at its gate: “La Nature est là !” (nature is here). A log-cabin reception and a gravel courtyard lead through a wooden gateway into the trees, where a trail of stone steps climbs to a view over a river running through rocky rapids. Open every day from 08:00 to 15:30.",
+    tips: ["Open 08:00–15:30, seven days a week (the sign at the reception)", "Ask at the reception for entry and guide rates", "Wear shoes with grip: the trail has stone steps under fallen leaves"],
+    gallery: [
+      { src: "images/mahakaty-reserve-river-view.jpg", alt: "A river running through rocky rapids below forested hills, seen from the trail, Mahakaty Reserve" },
+      { src: "images/mahakaty-reserve-sign.jpg", alt: "The painted welcome stone at the gate: “La Nature est là ! Mahakaty Reserve”, Mahakaty Reserve" },
+      { src: "images/mahakaty-reserve-entrance.jpg", alt: "The entrance drive between two carved, tree-shaped posts, with a dog in front, Mahakaty Reserve" },
+      { src: "images/mahakaty-reserve-reception.jpg", alt: "The log-cabin reception, with its “Accueil” sign and opening hours, Mahakaty Reserve" },
+      { src: "images/mahakaty-reserve-gateway.jpg", alt: "Crossing the gravel courtyard to the wooden gateway into the forest, Mahakaty Reserve" },
+      { src: "images/mahakaty-reserve-trail.jpg", alt: "A trail of stone steps under fallen leaves through the forest, Mahakaty Reserve" }
+    ],
+    contact: { phone: "", email: "", website: "", social: "" }
   },
   {
     slug: "night-walk",
@@ -1406,13 +1444,13 @@ const doData = [
     verified: true,
     asOf: "2026-10",
     photoNeeded: false,
-    sourceNote: "Price, length, meeting point, the self-guided format, the brousse back and both phone numbers and email from Kyle's notes (received 11 Oct 2026). The earlier 'guided paddle' wording is corrected — his notes are explicit that no guide goes with you. Equipment list from varibolo.com. River photo from Kyle, 11 Oct 2026, and Varibolo's shop and its 'Kayak Ranomafana' banner on 19 Oct 2026 (the banner gives the third number); the launch and group slots are still waiting for photos. On 22 Oct 2026 the domain varibolo.com no longer existed, so info@varibolo.com was replaced by variboloresto72@gmail.com from the banner and the website link was removed. Map pin at the meeting point by the thermal pool, a kayak business on Google Maps (checked 23 Oct 2026): a Google search for the name zoomed out over the whole region.",
+    sourceNote: "Price, length, meeting point, the self-guided format, the brousse back and both phone numbers and email from Kyle's notes (received 11 Oct 2026). The earlier 'guided paddle' wording is corrected — his notes are explicit that no guide goes with you. Equipment list from varibolo.com. River photo from Kyle, 11 Oct 2026, and Varibolo's shop and its 'Kayak Ranomafana' banner on 19 Oct 2026 (the banner gives the third number); the launch slot and a paddler at the launch from Kyle, 26 Oct 2026; the group slot is still waiting for a photo. On 22 Oct 2026 the domain varibolo.com no longer existed, so info@varibolo.com was replaced by variboloresto72@gmail.com from the banner and the website link was removed. Map pin at the meeting point by the thermal pool, a kayak business on Google Maps (checked 23 Oct 2026): a Google search for the name zoomed out over the whole region.",
     mapPin: "-21.2600,47.4521",   // the meeting point by the thermal pool
     gallery: [
-      { src: "images/namorona-kayaking-river.jpg", alt: "The Namorona River winding through the valley near Ranomafana" },
-      { src: "images/varibolo-resto-exterior.jpg", alt: "Varibolo's shop and restaurant, where you can book a kayak" },
       { src: "images/namorona-kayaking-banner.jpg", alt: "A woman pointing to Varibolo's Kayak Ranomafana banner" },
-      { src: "images/namorona-kayaking-launch.jpg", fallback: "images/placeholder-namorona-kayaking.jpg", alt: "Launch point for Namorona River Kayaking" },
+      { src: "images/namorona-kayaking-river.jpg", alt: "The Namorona River winding through the valley near Ranomafana" },
+      { src: "images/namorona-kayaking-launch.jpg", alt: "Two men getting inflatable kayaks ready at the launch point, with geese on the river behind" },
+      { src: "images/namorona-kayaking-paddler.jpg", alt: "A man in a life jacket waving beside an inflatable kayak at the river’s edge, geese swimming past" },
       { src: "images/namorona-kayaking-group.jpg", fallback: "images/placeholder-namorona-kayaking.jpg", alt: "Paddlers on the Namorona River Kayaking" }
     ],
     desc: "Paddle yourself down the Namorona in an inflatable kayak from Varibolo, which has a shop near the park entrance. You usually meet the staff at the little island in the middle of the river by the thermal pool, where they give you a briefing and the kayak (with paddle, life jacket and helmet). The river loosely follows the RN25: you may pass people panning for gold, and can stop at a toaka gasy (local rum) still. No rapids are difficult or dangerous, but you will get wet.",

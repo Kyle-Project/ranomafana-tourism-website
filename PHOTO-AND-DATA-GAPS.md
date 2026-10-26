@@ -236,7 +236,7 @@ been removed — the charge exists but isn't published anywhere.
 
 ---
 
-## 6. Still unverified — 6 items needing you on the ground
+## 6. Still unverified — 7 items needing you on the ground
 
 Everything below shows a "details unconfirmed" note on the page. (Mirary Hotel, the
 thermal massage and the Jirama Waterfall Hike came off this list in October 2026 —
@@ -252,6 +252,11 @@ see sections 0 and 7.)
 5. **VOI Mitsinjo Reserve** — entry and guide rates, and opening arrangements, to be
    confirmed with VOI Ambatolahy.
 6. **Weekly Village Artisan Market** (the What's on entry for item 2).
+7. **Mahakaty Reserve** (added 26 Oct 2026 from your six photos) — who runs it, where
+   exactly it is, entry and guide fees, and a phone number. The hours (08:00–15:30,
+   every day) were read from the faded sign by the reception door: please check them.
+   Its pop-up map searches Google for the name; if that lands somewhere else, send the
+   location and it will be pinned.
 
 **La Palmeraie** — see section 0; probably resolved.
 
@@ -465,7 +470,7 @@ Frontage · dining room · a signature dish.
 | **Station Thermale (Thermal Pool & Baths)** | `station-thermale-baths.jpg` — a private bath room (the pool and booth are in); never anything from Hotel Thermal |
 | **Thermal Massage** | `thermal-massage-room.jpg` — same rule: nothing borrowed from Hotel Thermal |
 | **Cascade Andriamamovoka** | `cascade-andriamamovoka-falls.jpg` · `cascade-andriamamovoka-trail.jpg` · `cascade-andriamamovoka-river.jpg` |
-| **Namorona River Kayaking** | `namorona-kayaking-launch.jpg` · `namorona-kayaking-group.jpg` (the river shot is in) |
+| **Namorona River Kayaking** | `namorona-kayaking-group.jpg` — paddlers out on the river (the river, launch and a paddler at the launch are in, 26 Oct 2026) |
 | **Ranomafana Arboretum** | `ranomafana-arboretum-entrance.jpg` · `ranomafana-arboretum-path.jpg` · `ranomafana-arboretum-flora.jpg` |
 | **Village Artisan Market** | `village-artisan-market-stalls.jpg` · `village-artisan-market-crafts.jpg` |
 

@@ -2502,6 +2502,20 @@ const LISTING_TRANSLATIONS = {
               "alt": "A ring-tailed mongoose crossing a stone path in Ranomafana National Park"
             },
             "species": ["Ring-tailed mongoose"]
+          },
+          {
+            "group": "Frogs & small creatures",
+            "note": "Look closely at bark, moss and leaves:",
+            "photo": {
+              "src": "images/ranomafana-national-park-pale-frog.jpg",
+              "alt": "A pale frog with orange feet on a red earth path, Ranomafana National Park"
+            },
+            "species": [
+              "Frogs",
+              "Millipedes",
+              "Weevils",
+              "Land snails"
+            ]
           }
         ],
         "fr": [
@@ -2554,6 +2568,20 @@ const LISTING_TRANSLATIONS = {
               "alt": "Une galidie à queue annelée traversant un chemin de pierre dans le parc national de Ranomafana"
             },
             "species": ["Galidie à queue annelée"]
+          },
+          {
+            "group": "Grenouilles et petites bêtes",
+            "note": "Regardez de près l’écorce, la mousse et les feuilles :",
+            "photo": {
+              "src": "images/ranomafana-national-park-pale-frog.jpg",
+              "alt": "Une grenouille pâle aux pattes orange sur un sentier de terre rouge, parc national de Ranomafana"
+            },
+            "species": [
+              "Grenouilles",
+              "Mille-pattes",
+              "Charançons",
+              "Escargots terrestres"
+            ]
           }
         ],
         "de": [
@@ -2606,6 +2634,20 @@ const LISTING_TRANSLATIONS = {
               "alt": "Ein Ringelschwanzmungo überquert einen Steinweg im Nationalpark Ranomafana"
             },
             "species": ["Ringelschwanzmungo"]
+          },
+          {
+            "group": "Frösche und kleine Tiere",
+            "note": "Schauen Sie genau auf Rinde, Moos und Blätter:",
+            "photo": {
+              "src": "images/ranomafana-national-park-pale-frog.jpg",
+              "alt": "Ein heller Frosch mit orangefarbenen Füßen auf einem Weg aus roter Erde, Ranomafana-Nationalpark"
+            },
+            "species": [
+              "Frösche",
+              "Tausendfüßer",
+              "Rüsselkäfer",
+              "Landschnecken"
+            ]
           }
         ],
         "mg": [
@@ -2663,6 +2705,20 @@ const LISTING_TRANSLATIONS = {
               "alt": "Vontsira mena miampita lalana vato ao amin'ny valan-javaboahary Ranomafana"
             },
             "species": ["Vontsira mena"]
+          },
+          {
+            "group": "Sahona sy biby madinika",
+            "note": "Jereo tsara ny hodi-kazo, ny volom-bato ary ny ravina:",
+            "photo": {
+              "src": "images/ranomafana-national-park-pale-frog.jpg",
+              "alt": "Sahona fotsy tongotra volom-boasary eo amin'ny lalana tany mena, valan-javaboaharin'i Ranomafana"
+            },
+            "species": [
+              "Sahona",
+              "Biby maro tongotra",
+              "Voangory",
+              "Sifotra"
+            ]
           }
         ]
       },
@@ -2868,7 +2924,13 @@ const LISTING_TRANSLATIONS = {
           "A group of visitors at the Parc National Ranomafana sign",
           "The sign at the park's interpretation centre, topped by a wooden lemur: “Veloma — Good bye — Au revoir”",
           "Inside the park's interpretation centre: a display of a Tanala village",
-          "The board mapping the park's walking circuits"
+          "The board mapping the park's walking circuits",
+          "A lemur on a branch high in the forest canopy, Ranomafana National Park",
+          "A pale frog with orange feet on a red earth path, Ranomafana National Park",
+          "A yellow-and-black weevil on a twisted vine in the forest, Ranomafana National Park",
+          "A black millipede with orange spots curled on a mossy tree trunk, Ranomafana National Park",
+          "A black millipede coiled on a tree trunk in the forest, Ranomafana National Park",
+          "A large land snail on a tree trunk among long, spiky leaves, Ranomafana National Park"
         ],
         "fr": [
           "Un hapalémur doré mangeant des feuilles de bambou, parc national de Ranomafana",
@@ -2915,7 +2977,13 @@ const LISTING_TRANSLATIONS = {
           "Un groupe de visiteurs devant le panneau du Parc National Ranomafana",
           "Le panneau du centre d’interprétation du parc, surmonté d’un lémurien en bois : « Veloma — Good bye — Au revoir »",
           "Dans le centre d’interprétation du parc : la reconstitution d’un village tanala",
-          "Le panneau qui présente la carte des circuits de randonnée du parc"
+          "Le panneau qui présente la carte des circuits de randonnée du parc",
+          "Un lémurien sur une branche, haut dans la canopée, parc national de Ranomafana",
+          "Une grenouille pâle aux pattes orange sur un sentier de terre rouge, parc national de Ranomafana",
+          "Un charançon jaune et noir sur une liane tordue en forêt, parc national de Ranomafana",
+          "Un mille-pattes noir à taches orange enroulé sur un tronc moussu, parc national de Ranomafana",
+          "Un mille-pattes noir enroulé sur un tronc d’arbre en forêt, parc national de Ranomafana",
+          "Un grand escargot terrestre sur un tronc, parmi de longues feuilles pointues, parc national de Ranomafana"
         ],
         "de": [
           "Ein Goldener Bambuslemur frisst Bambusblätter, Nationalpark Ranomafana",
@@ -2962,7 +3030,13 @@ const LISTING_TRANSLATIONS = {
           "Eine Besuchergruppe am Schild des Parc National Ranomafana",
           "Das Schild am Informationszentrum des Parks, mit einem Holzlemur obendrauf: „Veloma – Good bye – Au revoir“",
           "Im Informationszentrum des Parks: eine Ausstellung über ein Tanala-Dorf",
-          "Die Tafel mit der Karte der Rundwege des Parks"
+          "Die Tafel mit der Karte der Rundwege des Parks",
+          "Ein Lemur auf einem Ast hoch oben im Kronendach, Ranomafana-Nationalpark",
+          "Ein heller Frosch mit orangefarbenen Füßen auf einem Weg aus roter Erde, Ranomafana-Nationalpark",
+          "Ein gelb-schwarzer Rüsselkäfer auf einer gewundenen Liane im Wald, Ranomafana-Nationalpark",
+          "Ein schwarzer Tausendfüßer mit orangefarbenen Flecken, eingerollt an einem bemoosten Stamm, Ranomafana-Nationalpark",
+          "Ein schwarzer Tausendfüßer, eingerollt an einem Baumstamm im Wald, Ranomafana-Nationalpark",
+          "Eine große Landschnecke an einem Baumstamm zwischen langen, spitzen Blättern, Ranomafana-Nationalpark"
         ],
         "mg": [
           "Gidro volamena mpihinam-bolo mihinana ravim-bolo, valan-javaboahary Ranomafana",
@@ -3009,7 +3083,13 @@ const LISTING_TRANSLATIONS = {
           "Vondrona mpitsidika eo anoloan'ny takelaka Parc National Ranomafana",
           "Ny takelaka eo amin'ny foibe fanazavana ao amin'ny valan-javaboahary, misy gidro vita amin'ny hazo eo amboniny: « Veloma — Good bye — Au revoir »",
           "Ao anatin'ny foibe fanazavana ao amin'ny valan-javaboahary: fampisehoana tanàna Tanala",
-          "Ny takelaka misy ny sarintanin'ny lalana fitsangatsanganana ao amin'ny valan-javaboahary"
+          "Ny takelaka misy ny sarintanin'ny lalana fitsangatsanganana ao amin'ny valan-javaboahary",
+          "Varika eo amin'ny sampana avo ao amin'ny tampon'ala, valan-javaboaharin'i Ranomafana",
+          "Sahona fotsy tongotra volom-boasary eo amin'ny lalana tany mena, valan-javaboaharin'i Ranomafana",
+          "Voangory mavo sy mainty eo amin'ny vahy miolakolaka any anaty ala, valan-javaboaharin'i Ranomafana",
+          "Biby maro tongotra mainty misy pentina volom-boasary miodina eo amin'ny vatan-kazo misy volom-bato, valan-javaboaharin'i Ranomafana",
+          "Biby maro tongotra mainty miodina eo amin'ny vatan-kazo any anaty ala, valan-javaboaharin'i Ranomafana",
+          "Sifotra lehibe eo amin'ny vatan-kazo, eo anelanelan'ny ravina lava sy maranitra, valan-javaboaharin'i Ranomafana"
         ]
       }
     },
@@ -3183,6 +3263,76 @@ const LISTING_TRANSLATIONS = {
           "Fandikalalana, iray amin'ireo vorona saro-kenatra amin'ny tany ala, akaiky be, valan-javaboaharin'i Ranomafana",
           "Vorona mipetraka eo ambanin'ny ala, valan-javaboaharin'i Ranomafana",
           "Vintsy kely mipetraka eo amin'ny rantsankazo kely rehefa maizina"
+        ]
+      }
+    },
+    "mahakaty-reserve": {
+      "desc": {
+        "en": "A forest reserve with a painted welcome stone at its gate: “La Nature est là !” (nature is here). A log-cabin reception and a gravel courtyard lead through a wooden gateway into the trees, where a trail of stone steps climbs to a view over a river running through rocky rapids. Open every day from 08:00 to 15:30.",
+        "fr": "Une réserve forestière dont l’entrée est marquée par une pierre d’accueil peinte : « La Nature est là ! ». Un accueil en rondins et une cour de gravier mènent, par un portail en bois, sous les arbres, où un sentier de marches de pierre monte jusqu’à une vue sur une rivière qui file entre des rapides rocheux. Ouvert tous les jours de 8 h à 15 h 30.",
+        "de": "Ein Waldreservat mit einem bemalten Begrüßungsstein am Tor: „La Nature est là !“ (Die Natur ist da). Vom Empfang im Blockhaus und einem Kieshof führt ein Holztor unter die Bäume, wo ein Pfad aus Steinstufen zu einem Blick auf einen Fluss mit felsigen Stromschnellen hinaufführt. Täglich von 8:00 bis 15:30 Uhr geöffnet.",
+        "mg": "Tahiry ala misy vato fandraisana voaloko eo am-bavahadiny: « La Nature est là ! » (eto ny zavaboahary). Avy amin'ny fandraisana vahiny vita amin'ny vatan-kazo sy tokotany feno vatokely, misy vavahady hazo miditra any ambanin'ny hazo, ary lalankely misy tohatra vato miakatra mankany amin'ny toerana ahitana renirano mikoriana amin'ny riandrano kely be vato. Misokatra isan'andro, amin'ny 8 ora maraina ka hatramin'ny 3 ora sy sasany hariva."
+      },
+      "price": {
+        "en": "Ask at the reception for entry and guide rates",
+        "fr": "Renseignez-vous à l’accueil pour les droits d’entrée et les tarifs des guides",
+        "de": "Eintritts- und Guidepreise am Empfang erfragen",
+        "mg": "Manontania any amin'ny fandraisana vahiny momba ny saran'ny fidirana sy ny mpitarika"
+      },
+      "tips": {
+        "en": [
+          "Open 08:00–15:30, seven days a week (the sign at the reception)",
+          "Ask at the reception for entry and guide rates",
+          "Wear shoes with grip: the trail has stone steps under fallen leaves"
+        ],
+        "fr": [
+          "Ouvert de 8 h à 15 h 30, sept jours sur sept (panneau de l’accueil)",
+          "Renseignez-vous à l’accueil pour les droits d’entrée et les tarifs des guides",
+          "Portez des chaussures qui accrochent : le sentier a des marches de pierre sous les feuilles mortes"
+        ],
+        "de": [
+          "Täglich 8:00–15:30 Uhr geöffnet (Schild am Empfang)",
+          "Eintritts- und Guidepreise am Empfang erfragen",
+          "Schuhe mit gutem Profil tragen: Der Pfad hat Steinstufen unter Falllaub"
+        ],
+        "mg": [
+          "Misokatra 8 ora – 3 ora sy sasany, isan'andro (araka ny takelaka eo amin'ny fandraisana)",
+          "Manontania any amin'ny fandraisana vahiny momba ny saran'ny fidirana sy ny mpitarika",
+          "Manaova kiraro tsy mampisolafaka: misy tohatra vato ambanin'ny ravina maina ny lalankely"
+        ]
+      },
+      "gallery[].alt": {
+        "en": [
+          "A river running through rocky rapids below forested hills, seen from the trail, Mahakaty Reserve",
+          "The painted welcome stone at the gate: “La Nature est là ! Mahakaty Reserve”, Mahakaty Reserve",
+          "The entrance drive between two carved, tree-shaped posts, with a dog in front, Mahakaty Reserve",
+          "The log-cabin reception, with its “Accueil” sign and opening hours, Mahakaty Reserve",
+          "Crossing the gravel courtyard to the wooden gateway into the forest, Mahakaty Reserve",
+          "A trail of stone steps under fallen leaves through the forest, Mahakaty Reserve"
+        ],
+        "fr": [
+          "Une rivière qui file entre des rapides rocheux sous des collines boisées, vue depuis le sentier, réserve de Mahakaty",
+          "La pierre d’accueil peinte à l’entrée : « La Nature est là ! Mahakaty Reserve », réserve de Mahakaty",
+          "L’allée d’entrée entre deux poteaux sculptés en forme d’arbre, un chien devant, réserve de Mahakaty",
+          "L’accueil en rondins, avec son enseigne « Accueil » et ses horaires d’ouverture, réserve de Mahakaty",
+          "La traversée de la cour de gravier jusqu’au portail en bois qui ouvre sur la forêt, réserve de Mahakaty",
+          "Un sentier de marches de pierre sous les feuilles mortes, à travers la forêt, réserve de Mahakaty"
+        ],
+        "de": [
+          "Ein Fluss, der unter bewaldeten Hügeln durch felsige Stromschnellen läuft, vom Pfad aus gesehen, Reservat Mahakaty",
+          "Der bemalte Begrüßungsstein am Tor: „La Nature est là ! Mahakaty Reserve“, Reservat Mahakaty",
+          "Die Einfahrt zwischen zwei geschnitzten, baumförmigen Pfosten, davor ein Hund, Reservat Mahakaty",
+          "Der Empfang im Blockhaus mit seinem Schild „Accueil“ und den Öffnungszeiten, Reservat Mahakaty",
+          "Über den Kieshof zum Holztor in den Wald, Reservat Mahakaty",
+          "Ein Pfad aus Steinstufen unter Falllaub durch den Wald, Reservat Mahakaty"
+        ],
+        "mg": [
+          "Renirano mikoriana amin'ny riandrano kely be vato eo ambanin'ny havoana misy ala, hita avy eo amin'ny lalankely, Tahiry Mahakaty",
+          "Ny vato fandraisana voaloko eo am-bavahady: « La Nature est là ! Mahakaty Reserve », Tahiry Mahakaty",
+          "Ny lalana fidirana eo anelanelan'ny andry roa voasokitra endrika hazo, misy alika eo aloha, Tahiry Mahakaty",
+          "Ny fandraisana vahiny vita amin'ny vatan-kazo, misy ny takelaka « Accueil » sy ny ora fisokafana, Tahiry Mahakaty",
+          "Mamakivaky ny tokotany feno vatokely mankany amin'ny vavahady hazo miditra any anaty ala, Tahiry Mahakaty",
+          "Lalankely misy tohatra vato ambanin'ny ravina maina, mamakivaky ny ala, Tahiry Mahakaty"
         ]
       }
     },
@@ -3682,31 +3832,31 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
-          "The Namorona River winding through the valley near Ranomafana",
-          "Varibolo's shop and restaurant, where you can book a kayak",
           "A woman pointing to Varibolo's Kayak Ranomafana banner",
-          "Launch point for Namorona River Kayaking",
+          "The Namorona River winding through the valley near Ranomafana",
+          "Two men getting inflatable kayaks ready at the launch point, with geese on the river behind",
+          "A man in a life jacket waving beside an inflatable kayak at the river’s edge, geese swimming past",
           "Paddlers on the Namorona River Kayaking"
         ],
         "fr": [
-          "La Namorona qui serpente dans la vallée près de Ranomafana",
-          "La boutique-restaurant de Varibolo, où l’on peut réserver un kayak",
           "Une femme montre la banderole Kayak Ranomafana de Varibolo",
-          "Le point de mise à l’eau pour le kayak sur la Namorona",
+          "La Namorona qui serpente dans la vallée près de Ranomafana",
+          "Deux hommes préparent des kayaks gonflables au point de mise à l’eau, des oies sur la rivière derrière eux",
+          "Un homme en gilet de sauvetage salue à côté d’un kayak gonflable au bord de la rivière, des oies passent",
           "Des kayakistes sur la Namorona"
         ],
         "de": [
-          "Die Namorona windet sich durch das Tal bei Ranomafana",
-          "Laden und Restaurant von Varibolo, wo man ein Kajak buchen kann",
           "Eine Frau zeigt auf das Banner „Kayak Ranomafana“ von Varibolo",
-          "Einstiegsstelle für das Kajakfahren auf der Namorona",
+          "Die Namorona windet sich durch das Tal bei Ranomafana",
+          "Zwei Männer machen an der Einstiegsstelle Schlauchkajaks bereit, dahinter Gänse auf dem Fluss",
+          "Ein Mann mit Schwimmweste winkt neben einem Schlauchkajak am Flussufer, Gänse schwimmen vorbei",
           "Kajakfahrer auf der Namorona"
         ],
         "mg": [
-          "Ny renirano Namorona mikiaradia ao amin'ny lohasaha akaikin'i Ranomafana",
-          "Ny fivarotana sy trano fisakafoanan'i Varibolo, ahafahana mamandrika kayak",
           "Vehivavy manondro ny sora-baventy Kayak Ranomafana an'i Varibolo",
-          "Ny toerana fiaingan'ny kayak eny amin'ny renirano Namorona",
+          "Ny renirano Namorona mikiaradia ao amin'ny lohasaha akaikin'i Ranomafana",
+          "Lehilahy roa manomana kayak entin-drivotra eo amin'ny toerana fiaingana, misy gisa eny amin'ny renirano ao aoriany",
+          "Lehilahy manao akanjo fanavotana manofahofa tanana eo akaikin'ny kayak entin-drivotra eny amoron'ny renirano, misy gisa milomano mandalo",
           "Mpivoy kayak eny amin'ny renirano Namorona"
         ]
       }
