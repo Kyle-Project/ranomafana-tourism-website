@@ -1267,7 +1267,7 @@ const doData = [
   },
   {
     slug: "mahakaty-reserve",
-    name: "Mahakaty Reserve",
+    name: "Mahakajy Reserve",
     category: "Nature reserve",
     price: "Ask at the reception for entry and guide rates",
     rating: "\u2014",
@@ -1278,16 +1278,16 @@ const doData = [
     photoNeeded: false,
     asOf: "2026-10",
     mapPin: "-21.2794454,47.530062",   // Google Maps' listing for the reserve; a name search finds other parks
-    sourceNote: "Added 26 Oct 2026 at Kyle's request, with his six photos of the same day (used as received). Name from the stone at its gate (\u201cLa Nature est l\u00e0 ! Mahakaty Reserve \u00b7 Bienvenue \u00b7 Welcome\u201d). Opening hours read from the partly faded sign beside the reception door (\u201cHeure d'ouverture 8h \u00e0 15h 30mn 7j/7\u201d): confirm. Who runs it, entry and guide fees and contact details are not yet known: ask Kyle. Map pin from Google Maps' own listing for Mahakaty Reserve (a park, plus code PGCJ+62F, near Kelilalina on the RN25; its photo shows the same rocky river, and it opens at 8 am like the sign), checked 27 Oct 2026: a Google search for the name plus 'Ranomafana Madagascar' found nothing and fell back on other parks, Andasibe's among them.",
+    sourceNote: "Added 26 Oct 2026 at Kyle's request, with his six photos of the same day (used as received). Name from the stone at its gate (\u201cLa Nature est l\u00e0 ! Mahakajy Reserve \u00b7 Bienvenue \u00b7 Welcome\u201d); first misread as 'Mahakaty' from the stylised J, corrected by Kyle on 1 Nov 2026 (the slug and photo file names keep the old spelling, as the listing's link was already online)). Opening hours read from the partly faded sign beside the reception door (\u201cHeure d'ouverture 8h \u00e0 15h 30mn 7j/7\u201d): confirm. Who runs it, entry and guide fees and contact details are not yet known: ask Kyle. Map pin from Google Maps' own listing for the reserve (a park, plus code PGCJ+62F, near Kelilalina on the RN25; its photo shows the same rocky river, and it opens at 8 am like the sign), checked 27 Oct 2026: a Google search for the name plus 'Ranomafana Madagascar' found nothing and fell back on other parks, Andasibe's among them.",
     desc: "A forest reserve with a painted welcome stone at its gate: “La Nature est là !” (nature is here). A log-cabin reception and a gravel courtyard lead through a wooden gateway into the trees, where a trail of stone steps climbs to a view over a river running through rocky rapids. Open every day from 08:00 to 15:30.",
     tips: ["Open 08:00–15:30, seven days a week (the sign at the reception)", "Ask at the reception for entry and guide rates", "Wear shoes with grip: the trail has stone steps under fallen leaves"],
     gallery: [
-      { src: "images/mahakaty-reserve-river-view.jpg", alt: "A river running through rocky rapids below forested hills, seen from the trail, Mahakaty Reserve" },
-      { src: "images/mahakaty-reserve-sign.jpg", alt: "The painted welcome stone at the gate: “La Nature est là ! Mahakaty Reserve”, Mahakaty Reserve" },
-      { src: "images/mahakaty-reserve-entrance.jpg", alt: "The entrance drive between two carved, tree-shaped posts, with a dog in front, Mahakaty Reserve" },
-      { src: "images/mahakaty-reserve-reception.jpg", alt: "The log-cabin reception, with its “Accueil” sign and opening hours, Mahakaty Reserve" },
-      { src: "images/mahakaty-reserve-gateway.jpg", alt: "Crossing the gravel courtyard to the wooden gateway into the forest, Mahakaty Reserve" },
-      { src: "images/mahakaty-reserve-trail.jpg", alt: "A trail of stone steps under fallen leaves through the forest, Mahakaty Reserve" }
+      { src: "images/mahakaty-reserve-river-view.jpg", alt: "A river running through rocky rapids below forested hills, seen from the trail, Mahakajy Reserve" },
+      { src: "images/mahakaty-reserve-sign.jpg", alt: "The painted welcome stone at the gate: “La Nature est là ! Mahakajy Reserve”, Mahakajy Reserve" },
+      { src: "images/mahakaty-reserve-entrance.jpg", alt: "The entrance drive between two carved, tree-shaped posts, with a dog in front, Mahakajy Reserve" },
+      { src: "images/mahakaty-reserve-reception.jpg", alt: "The log-cabin reception, with its “Accueil” sign and opening hours, Mahakajy Reserve" },
+      { src: "images/mahakaty-reserve-gateway.jpg", alt: "Crossing the gravel courtyard to the wooden gateway into the forest, Mahakajy Reserve" },
+      { src: "images/mahakaty-reserve-trail.jpg", alt: "A trail of stone steps under fallen leaves through the forest, Mahakajy Reserve" }
     ],
     contact: { phone: "", email: "", website: "", social: "" }
   },

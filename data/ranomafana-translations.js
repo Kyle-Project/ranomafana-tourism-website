@@ -3643,36 +3643,36 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
-          "A river running through rocky rapids below forested hills, seen from the trail, Mahakaty Reserve",
-          "The painted welcome stone at the gate: “La Nature est là ! Mahakaty Reserve”, Mahakaty Reserve",
-          "The entrance drive between two carved, tree-shaped posts, with a dog in front, Mahakaty Reserve",
-          "The log-cabin reception, with its “Accueil” sign and opening hours, Mahakaty Reserve",
-          "Crossing the gravel courtyard to the wooden gateway into the forest, Mahakaty Reserve",
-          "A trail of stone steps under fallen leaves through the forest, Mahakaty Reserve"
+          "A river running through rocky rapids below forested hills, seen from the trail, Mahakajy Reserve",
+          "The painted welcome stone at the gate: “La Nature est là ! Mahakajy Reserve”, Mahakajy Reserve",
+          "The entrance drive between two carved, tree-shaped posts, with a dog in front, Mahakajy Reserve",
+          "The log-cabin reception, with its “Accueil” sign and opening hours, Mahakajy Reserve",
+          "Crossing the gravel courtyard to the wooden gateway into the forest, Mahakajy Reserve",
+          "A trail of stone steps under fallen leaves through the forest, Mahakajy Reserve"
         ],
         "fr": [
-          "Une rivière qui file entre des rapides rocheux sous des collines boisées, vue depuis le sentier, réserve de Mahakaty",
-          "La pierre d’accueil peinte à l’entrée : « La Nature est là ! Mahakaty Reserve », réserve de Mahakaty",
-          "L’allée d’entrée entre deux poteaux sculptés en forme d’arbre, un chien devant, réserve de Mahakaty",
-          "L’accueil en rondins, avec son enseigne « Accueil » et ses horaires d’ouverture, réserve de Mahakaty",
-          "La traversée de la cour de gravier jusqu’au portail en bois qui ouvre sur la forêt, réserve de Mahakaty",
-          "Un sentier de marches de pierre sous les feuilles mortes, à travers la forêt, réserve de Mahakaty"
+          "Une rivière qui file entre des rapides rocheux sous des collines boisées, vue depuis le sentier, réserve de Mahakajy",
+          "La pierre d’accueil peinte à l’entrée : « La Nature est là ! Mahakajy Reserve », réserve de Mahakajy",
+          "L’allée d’entrée entre deux poteaux sculptés en forme d’arbre, un chien devant, réserve de Mahakajy",
+          "L’accueil en rondins, avec son enseigne « Accueil » et ses horaires d’ouverture, réserve de Mahakajy",
+          "La traversée de la cour de gravier jusqu’au portail en bois qui ouvre sur la forêt, réserve de Mahakajy",
+          "Un sentier de marches de pierre sous les feuilles mortes, à travers la forêt, réserve de Mahakajy"
         ],
         "de": [
-          "Ein Fluss, der unter bewaldeten Hügeln durch felsige Stromschnellen läuft, vom Pfad aus gesehen, Reservat Mahakaty",
-          "Der bemalte Begrüßungsstein am Tor: „La Nature est là ! Mahakaty Reserve“, Reservat Mahakaty",
-          "Die Einfahrt zwischen zwei geschnitzten, baumförmigen Pfosten, davor ein Hund, Reservat Mahakaty",
-          "Der Empfang im Blockhaus mit seinem Schild „Accueil“ und den Öffnungszeiten, Reservat Mahakaty",
-          "Über den Kieshof zum Holztor in den Wald, Reservat Mahakaty",
-          "Ein Pfad aus Steinstufen unter Falllaub durch den Wald, Reservat Mahakaty"
+          "Ein Fluss, der unter bewaldeten Hügeln durch felsige Stromschnellen läuft, vom Pfad aus gesehen, Reservat Mahakajy",
+          "Der bemalte Begrüßungsstein am Tor: „La Nature est là ! Mahakajy Reserve“, Reservat Mahakajy",
+          "Die Einfahrt zwischen zwei geschnitzten, baumförmigen Pfosten, davor ein Hund, Reservat Mahakajy",
+          "Der Empfang im Blockhaus mit seinem Schild „Accueil“ und den Öffnungszeiten, Reservat Mahakajy",
+          "Über den Kieshof zum Holztor in den Wald, Reservat Mahakajy",
+          "Ein Pfad aus Steinstufen unter Falllaub durch den Wald, Reservat Mahakajy"
         ],
         "mg": [
-          "Renirano mikoriana amin'ny riandrano kely be vato eo ambanin'ny havoana misy ala, hita avy eo amin'ny lalankely, Tahiry Mahakaty",
-          "Ny vato fandraisana voaloko eo am-bavahady: « La Nature est là ! Mahakaty Reserve », Tahiry Mahakaty",
-          "Ny lalana fidirana eo anelanelan'ny andry roa voasokitra endrika hazo, misy alika eo aloha, Tahiry Mahakaty",
-          "Ny fandraisana vahiny vita amin'ny vatan-kazo, misy ny takelaka « Accueil » sy ny ora fisokafana, Tahiry Mahakaty",
-          "Mamakivaky ny tokotany feno vatokely mankany amin'ny vavahady hazo miditra any anaty ala, Tahiry Mahakaty",
-          "Lalankely misy tohatra vato ambanin'ny ravina maina, mamakivaky ny ala, Tahiry Mahakaty"
+          "Renirano mikoriana amin'ny riandrano kely be vato eo ambanin'ny havoana misy ala, hita avy eo amin'ny lalankely, Tahiry Mahakajy",
+          "Ny vato fandraisana voaloko eo am-bavahady: « La Nature est là ! Mahakajy Reserve », Tahiry Mahakajy",
+          "Ny lalana fidirana eo anelanelan'ny andry roa voasokitra endrika hazo, misy alika eo aloha, Tahiry Mahakajy",
+          "Ny fandraisana vahiny vita amin'ny vatan-kazo, misy ny takelaka « Accueil » sy ny ora fisokafana, Tahiry Mahakajy",
+          "Mamakivaky ny tokotany feno vatokely mankany amin'ny vavahady hazo miditra any anaty ala, Tahiry Mahakajy",
+          "Lalankely misy tohatra vato ambanin'ny ravina maina, mamakivaky ny ala, Tahiry Mahakajy"
         ]
       }
     },

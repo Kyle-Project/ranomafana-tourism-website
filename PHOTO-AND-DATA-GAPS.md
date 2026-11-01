@@ -258,7 +258,7 @@ see sections 0 and 7.)
 5. **VOI Mitsinjo Reserve** — entry and guide rates, and opening arrangements, to be
    confirmed with VOI Ambatolahy.
 6. **Weekly Village Artisan Market** (the What's on entry for item 2).
-7. **Mahakaty Reserve** (added 26 Oct 2026 from your six photos) — who runs it, entry
+7. **Mahakajy Reserve** (added 26 Oct 2026 from your six photos) — who runs it, entry
    and guide fees, and a phone number. The hours (08:00–15:30, every day) were read from
    the faded sign by the reception door: please check them. Its map is pinned (27 Oct
    2026) to Google Maps' own listing for the reserve, near Kelilalina on the RN25: check

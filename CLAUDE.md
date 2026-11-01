@@ -673,7 +673,8 @@ Kyle's other photos of 26 October 2026 (WhatsApp copies, used as received):
   millipedes and a land snail joined the end of the park gallery, and the frog heads a
   fifth wildlife card, "Frogs & small creatures" (no species named: the photos don't
   make them certain).
-- **Mahakaty Reserve** (`do`, slug `mahakaty-reserve`, category "Nature reserve", a new
+- **Mahakajy Reserve** (Kyle, 1 Nov 2026: Mahakajy, not Mahakaty; the slug and photo
+  files keep the old spelling because its link was already online) (`do`, slug `mahakaty-reserve`, category "Nature reserve", a new
   category in `DO_GROUPS` (forest) and `CATEGORY_LABEL`): a new listing at Kyle's request
   with his six photos. Its description holds only what the photos show; the hours
   (08:00–15:30, every day) come from the faded sign by the reception door. Who runs it,
