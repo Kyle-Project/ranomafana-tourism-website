@@ -126,12 +126,10 @@ const stayData = [
       { src: "images/cvb-terrace-dusk.jpg", alt: "Tables on the terrace outside the conference room at dusk, Centre ValBio" },
       { src: "images/cvb-buildings-night.jpg", alt: "The Centre ValBio buildings lit up at nightfall, with the forest behind" },   // Kyle, 26 Oct 2026
       { src: "images/cvb-front-entrance-shot.jpg", alt: "Visitors at the Centre ValBio entrance" },
-      { src: "images/cvb-researcher-guide.jpg", fallback: "images/wright-patricia-125.jpg", alt: "Centre ValBio researcher and guide" },
       { src: "images/cvb-community-event.jpg", fallback: "images/independence-day-cvb-team-shot.jpg", alt: "Community event at Centre ValBio" },
       { src: "images/cvb-team-group.jpg", fallback: "images/group-staff-shot.jpg", alt: "Centre ValBio team" },
       { src: "images/cvb-staff-green-shirts.jpg", alt: "Centre ValBio staff in green team shirts beside a Centre ValBio sign" },
-      { src: "images/cvb-world-lemur-day.jpg", alt: "World Lemur Day with Centre ValBio: staff and guests with a ruffed lemur mascot" },
-      { src: "images/satanic-leaf-gecko.jpg", fallback: PLACEHOLDER_NATURE, alt: "Satanic leaf-tailed gecko near Centre ValBio" }
+      { src: "images/cvb-world-lemur-day.jpg", alt: "World Lemur Day with Centre ValBio: staff and guests with a ruffed lemur mascot" }
     ],
     contact: {
       phone: "+261 34 13 581 71",
@@ -563,22 +561,47 @@ const stayData = [
     slug: "ny-tanana-hotel",
     name: "Ny Tanàna Hotel",
     type: "hotel",
-    price: "Budget — contact for rates",
+    price: "135,000–200,000 Ar / night",
     toGate: 8.5,
     rating: "3.8 (Tripadvisor, 13 reviews)",
-    img: "images/placeholder-ny-tanana-hotel.jpg",
-    wifi: false, hotWater: true, restaurant: true, parking: false,
+    img: "images/ny-tanana-hotel-exterior.jpg",
+    wifi: false, hotWater: true, restaurant: true, parking: true,
     verified: true,
-    photoNeeded: true,
-    sourceNote: "Own website and Facebook page confirmed; listed with FHORM at Ankevoevo. The +261 34 62 109 88 number in Kyle's folder is unconfirmed.",
+    photoNeeded: false,
+    asOf: "2026-11",
+    sourceNote: "Own website and Facebook page confirmed; listed with FHORM at Ankevoevo. The +261 34 62 109 88 number in Kyle's folder is unconfirmed. Room rates, both phone numbers and the email from the hotel's handwritten rate sheet; meals from its printed menu (breakfast, restaurant, snacks, drinks); photos Kyle's (all received 1 Nov 2026; nine of fourteen photos used, look-alikes left out). The sheet writes the email and website with underscores, which a web address cannot hold: the email is given on the hotel's confirmed nytanana-hotel-ranomafana.mg domain, as Kyle confirmed on 1 Nov 2026. Parking from the photos (cars in the courtyard). Wi-Fi not stated.",
     gallery: [
-      { src: "images/ny-tanana-hotel-exterior.jpg", fallback: "images/placeholder-ny-tanana-hotel.jpg", alt: "Ny Tanàna Hotel exterior" },
-      { src: "images/ny-tanana-hotel-room.jpg", fallback: "images/placeholder-ny-tanana-hotel.jpg", alt: "Room at Ny Tanàna Hotel" },
-      { src: "images/ny-tanana-hotel-restaurant.jpg", fallback: "images/placeholder-ny-tanana-hotel.jpg", alt: "Restaurant or common area at Ny Tanàna Hotel" },
+      { src: "images/ny-tanana-hotel-exterior.jpg", alt: "The gate with its Ny Tanàna sign, and the hotel across the courtyard, Ny Tanàna Hotel" },
+      { src: "images/ny-tanana-hotel-pool.jpg", alt: "The swimming pool on a stone terrace, with parasols and hills behind, Ny Tanàna Hotel" },
+      { src: "images/ny-tanana-hotel-grounds.jpg", alt: "The main building, with balconies, above a lawn and a stone staircase, Ny Tanàna Hotel" },
+      { src: "images/ny-tanana-hotel-bungalows.jpg", alt: "Single-storey garden rooms along a paved path between hedges, Ny Tanàna Hotel" },
+      { src: "images/ny-tanana-hotel-room.jpg", alt: "A room with twin beds, a desk and doors open onto a balcony, Ny Tanàna Hotel" },
+      { src: "images/ny-tanana-hotel-bathroom.jpg", alt: "A bathroom with an open shower, Ny Tanàna Hotel" },
+      { src: "images/ny-tanana-hotel-restaurant.jpg", alt: "The dining room, with paintings of Madagascar along the walls, Ny Tanàna Hotel" },
+      { src: "images/ny-tanana-hotel-bar.jpg", alt: "The bar, with its stools and jars of infused rum, Ny Tanàna Hotel" },
+      { src: "images/ny-tanana-hotel-lounge.jpg", alt: "A lounge of wicker armchairs, with a box of books, Ny Tanàna Hotel" },
       { src: "images/ny-tanana-hotel-view.jpg", fallback: "images/placeholder-ny-tanana-hotel.jpg", alt: "View from Ny Tanàna Hotel" }
     ],
-    desc: "Small hotel and restaurant at Ankevoevo offering authentic Malagasy hospitality, budget rooms and simple home-style meals.",
-    contact: { phone: "", email: "", website: "https://nytanana-hotel-ranomafana.mg/", social: "https://www.facebook.com/Ny.Tanana.Hotel/", note: "Ankevoevo, Ranomafana." }
+    desc: "A hotel and restaurant at Ankevoevo, set around a gravel courtyard: rooms in a two-storey main building with balconies and in single-storey wings along the garden, a swimming pool on a stone terrace, a dining room hung with paintings of Madagascar, a bar with its own infused rum, and a lounge of wicker armchairs. The menu runs from Malagasy dishes such as romazava and tilapia to house specials, pizzas and sandwiches.",
+    rooms: [
+      { type: "Standard double", price: "135,000 Ar" },
+      { type: "Superior double", price: "160,000 Ar" },
+      { type: "Superior twin", price: "170,000 Ar" },
+      { type: "Triple", price: "180,000 Ar" },
+      { type: "Family", price: "200,000 Ar" },
+      { type: "Extra bed", price: "20,000 Ar" }
+    ],
+    ratesNote: "Per room per night. Ask whether breakfast is included.",
+    meals: [
+      "Breakfast: 12,000–26,000 Ar (Malagasy, simple, continental, American or full)",
+      "Malagasy dishes: 19,000–32,000 Ar, with rice and rougail or achard",
+      "Other mains (chicken, zebu, pork, shrimp, pasta): 19,000–38,000 Ar",
+      "Pizzas, sandwiches and tacos: 17,000–26,000 Ar",
+      "Desserts: 10,000–15,000 Ar",
+      "Coffee from 4,000 Ar, tea 5,000 Ar, beer 5,000–9,000 Ar"
+    ],
+    features: ["Swimming pool", "Bar with its own infused rum", "Lounge with wicker armchairs and books", "Parking in the courtyard"],
+    contact: { phone: "+261 34 02 246 64 / +261 38 39 755 41", email: "contact@nytanana-hotel-ranomafana.mg", website: "https://nytanana-hotel-ranomafana.mg/", social: "https://www.facebook.com/Ny.Tanana.Hotel/", note: "Ankevoevo, Ranomafana." }
   },
   {
     slug: "lemur-coffee-hotel",
@@ -1039,7 +1062,7 @@ const doData = [
     slug: "ranomafana-national-park",
     name: "Ranomafana National Park",
     category: "National park",
-    price: "55,000 Ar adult/day · 25,000 Ar ages 5–12 · under 5 free · 5,000 Ar community fee · guide 90,000–150,000 Ar per group, by circuit",
+    price: "55,000 Ar adult/day · 25,000 Ar ages 5–12 · under 5 free · Malagasy citizens 2,000 Ar (children 500 Ar) · 5,000 Ar community fee · guide 90,000–150,000 Ar per group, by circuit",
     rating: "4.9 (Google Maps & Tripadvisor)",
     duration: "2 hours to 2 days, depending on circuit",
     status: "open",
@@ -1051,6 +1074,8 @@ const doData = [
        record the new source in sourceNote. feesAsOf is year-month. */
     entryFee: "55,000 Ar",
     childFee: "25,000 Ar",
+    malagasyFee: "2,000 Ar",        // Malagasy citizens, adult (MNP fee board)
+    malagasyChildFee: "500 Ar",     // Malagasy citizens, child
     communityFee: "5,000 Ar",
     guideFees: [
       { walk: "Talatakely (Aureus)", hours: "2–4", price: "90,000 Ar" },
@@ -1061,7 +1086,7 @@ const doData = [
     specialistFee: "220,000 Ar",
     hours: "07:00–17:00",
     feesAsOf: "2026-10",
-    sourceNote: "Entry (adult 55,000 Ar; ages 5–12 25,000 Ar; under 5 free; Malagasy citizens 2,000 / 500 Ar), guide fees by circuit, the 220,000 Ar specialist rate, group sizes, opening hours, circuit notes, the lemur list and how to get to the gate all come from Kyle's notes ('Website information.docx', received 11 Oct 2026). They agree with gate reports from August 2025 (The Travelling Sloth: 55,000 Ar entry, guide ~90,000 / 120,000 / 150,000 Ar) and January 2024 (The Blog of Dimi). The 5,000 Ar community fee is not in his notes but is stated on the official MNP park page (checked 11 Oct 2026) and in both gate reports, so it stays. The 45,000 Ar entry figure used here in early 2026 came from two fee-guide websites, one citing the other — do not reuse it. Area (43,550 ha), species counts (14 lemurs, 125 birds) and the community fee from the official MNP park page, parcs-madagascar.com/en/parc/ranomafana-2/, checked 11 Oct 2026; Kyle's notes give 43,650 ha, 13 lemurs and 118 birds. Circuit levels for Sahamalaotra, Vatoharanana and Valohoaka are judged from their lengths, not taken from a source. Confirmed by the notice board at the park office, photographed by Kyle (received 19 Oct 2026; copy in photo-originals/2026-10-19 Park office/): entry per day 55,000 Ar foreign adults, 25,000 Ar foreign children, 2,000 / 500 Ar Malagasy; day-and-night tickets 105,000 / 75,000 Ar (Malagasy 7,000 / 5,500 Ar); camping 5,000 Ar per pitch per night; circuit map 5,000 Ar; guide fees per group of 1–4 Aureus 90,000, Vatoharanana 120,000, Valohoaka 150,000, Sahamalaotra 90,000 Ar, trekking, ornithology and herpetology 220,000 Ar, botany 200,000 Ar. The same board posts the guides' association's new guide fees from January 2027 (agreed 9 June 2026): Aureus 120,000 Ar (2 hours), Vatoharanana 150,000 Ar (3–4 hours), Valohoaka 180,000 Ar (5–7 hours), Sahamalaotra 120,000 Ar (2 hours), specialist herpetology, ornithology, botany or trek 250,000 Ar. Switch guideFees and specialistFee to these in January 2027. Also pinned there: a Ministry of Tourism letter dated 3 Oct 2026 and MNP 'Parc Phare' / 'Annexes nouveaux tarifs' sheets that seem to set new entry fees for flagship parks, Ranomafana possibly among them; they are too small in the photo to read reliably, so nothing on the site is taken from them.",
+    sourceNote: "Malagasy citizens' entry (adult 2,000 Ar, child 500 Ar) shown on the park page from 27 Oct 2026, at Kyle's request: MNP's own fee board for the 'Parcs Phares', Ranomafana among them (adult foreigner 55,000 / child foreigner 25,000 / adult Malagasy 2,000 / child Malagasy 500 Ar, per day), the 'Fees and charges' document linked from the official park page (parcs-madagascar.com/en/parc/ranomafana-2/, a photo dated 6 Sep 2024), checked 27 Oct 2026; it agrees with Kyle's notes. The same page says the 5,000 Ar communal tax is paid by foreign visitors. Entry (adult 55,000 Ar; ages 5–12 25,000 Ar; under 5 free; Malagasy citizens 2,000 / 500 Ar), guide fees by circuit, the 220,000 Ar specialist rate, group sizes, opening hours, circuit notes, the lemur list and how to get to the gate all come from Kyle's notes ('Website information.docx', received 11 Oct 2026). They agree with gate reports from August 2025 (The Travelling Sloth: 55,000 Ar entry, guide ~90,000 / 120,000 / 150,000 Ar) and January 2024 (The Blog of Dimi). The 5,000 Ar community fee is not in his notes but is stated on the official MNP park page (checked 11 Oct 2026) and in both gate reports, so it stays. The 45,000 Ar entry figure used here in early 2026 came from two fee-guide websites, one citing the other — do not reuse it. Area (43,550 ha), species counts (14 lemurs, 125 birds) and the community fee from the official MNP park page, parcs-madagascar.com/en/parc/ranomafana-2/, checked 11 Oct 2026; Kyle's notes give 43,650 ha, 13 lemurs and 118 birds. Circuit levels for Sahamalaotra, Vatoharanana and Valohoaka are judged from their lengths, not taken from a source. Confirmed by the notice board at the park office, photographed by Kyle (received 19 Oct 2026; copy in photo-originals/2026-10-19 Park office/): entry per day 55,000 Ar foreign adults, 25,000 Ar foreign children, 2,000 / 500 Ar Malagasy; day-and-night tickets 105,000 / 75,000 Ar (Malagasy 7,000 / 5,500 Ar); camping 5,000 Ar per pitch per night; circuit map 5,000 Ar; guide fees per group of 1–4 Aureus 90,000, Vatoharanana 120,000, Valohoaka 150,000, Sahamalaotra 90,000 Ar, trekking, ornithology and herpetology 220,000 Ar, botany 200,000 Ar. The same board posts the guides' association's new guide fees from January 2027 (agreed 9 June 2026): Aureus 120,000 Ar (2 hours), Vatoharanana 150,000 Ar (3–4 hours), Valohoaka 180,000 Ar (5–7 hours), Sahamalaotra 120,000 Ar (2 hours), specialist herpetology, ornithology, botany or trek 250,000 Ar. Switch guideFees and specialistFee to these in January 2027. Also pinned there: a Ministry of Tourism letter dated 3 Oct 2026 and MNP 'Parc Phare' / 'Annexes nouveaux tarifs' sheets that seem to set new entry fees for flagship parks, Ranomafana possibly among them; they are too small in the photo to read reliably, so nothing on the site is taken from them.",
     desc: "UNESCO World Heritage montane rainforest holding fourteen lemur species, including the critically endangered golden bamboo lemur. A certified guide is mandatory for international visitors — arrange one through your hotel, or choose from the guides working that day when you arrive.",
     /* Longer introduction for the National Park page (the card uses desc). */
     intro: [
@@ -1203,7 +1228,9 @@ const doData = [
       { src: "images/ranomafana-national-park-weevil.jpg", alt: "A yellow-and-black weevil on a twisted vine in the forest, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-millipede-orange.jpg", alt: "A black millipede with orange spots curled on a mossy tree trunk, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-millipede-black.jpg", alt: "A black millipede coiled on a tree trunk in the forest, Ranomafana National Park" },
-      { src: "images/ranomafana-national-park-land-snail.jpg", alt: "A large land snail on a tree trunk among long, spiky leaves, Ranomafana National Park" }
+      { src: "images/ranomafana-national-park-land-snail.jpg", alt: "A large land snail on a tree trunk among long, spiky leaves, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-bird-nest.jpg", alt: "A small olive bird with a yellow throat sitting on its mossy nest, half-hidden by leaves, Ranomafana National Park" },
+      { src: "images/ranomafana-national-park-gecko-hanging.jpg", alt: "A leaf-tailed gecko hanging head-down from a leaf, itself looking like a dead leaf, Ranomafana National Park" }
     ],
     contact: { phone: "", email: "", website: "https://parcs-madagascar.com/en/parc/ranomafana-2/", social: "" }
   },
@@ -1250,7 +1277,8 @@ const doData = [
     verified: false,
     photoNeeded: false,
     asOf: "2026-10",
-    sourceNote: "Added 26 Oct 2026 at Kyle's request, with his six photos of the same day (used as received). Name from the stone at its gate (\u201cLa Nature est l\u00e0 ! Mahakaty Reserve \u00b7 Bienvenue \u00b7 Welcome\u201d). Opening hours read from the partly faded sign beside the reception door (\u201cHeure d'ouverture 8h \u00e0 15h 30mn 7j/7\u201d): confirm. Who runs it, where exactly it is, entry and guide fees and contact details are not yet known: ask Kyle. The pop-up map searches Google for the name: check it lands on the reserve, or add a mapPin.",
+    mapPin: "-21.2794454,47.530062",   // Google Maps' listing for the reserve; a name search finds other parks
+    sourceNote: "Added 26 Oct 2026 at Kyle's request, with his six photos of the same day (used as received). Name from the stone at its gate (\u201cLa Nature est l\u00e0 ! Mahakaty Reserve \u00b7 Bienvenue \u00b7 Welcome\u201d). Opening hours read from the partly faded sign beside the reception door (\u201cHeure d'ouverture 8h \u00e0 15h 30mn 7j/7\u201d): confirm. Who runs it, entry and guide fees and contact details are not yet known: ask Kyle. Map pin from Google Maps' own listing for Mahakaty Reserve (a park, plus code PGCJ+62F, near Kelilalina on the RN25; its photo shows the same rocky river, and it opens at 8 am like the sign), checked 27 Oct 2026: a Google search for the name plus 'Ranomafana Madagascar' found nothing and fell back on other parks, Andasibe's among them.",
     desc: "A forest reserve with a painted welcome stone at its gate: “La Nature est là !” (nature is here). A log-cabin reception and a gravel courtyard lead through a wooden gateway into the trees, where a trail of stone steps climbs to a view over a river running through rocky rapids. Open every day from 08:00 to 15:30.",
     tips: ["Open 08:00–15:30, seven days a week (the sign at the reception)", "Ask at the reception for entry and guide rates", "Wear shoes with grip: the trail has stone steps under fallen leaves"],
     gallery: [
@@ -1303,7 +1331,8 @@ const doData = [
       { src: "images/ranomafana-national-park-paradise-flycatcher.jpg", alt: "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-ground-roller.jpg", alt: "A scaly ground-roller, one of the shy birds of the forest floor, in close-up, Ranomafana National Park" },
       { src: "images/ranomafana-national-park-bird.jpg", alt: "A bird perched in the understory, Ranomafana National Park" },
-      { src: "images/night-walk-pygmy-kingfisher.jpg", alt: "A Madagascar pygmy kingfisher perched on a twig after dark" }
+      { src: "images/night-walk-pygmy-kingfisher.jpg", alt: "A Madagascar pygmy kingfisher perched on a twig after dark" },
+      { src: "images/ranomafana-national-park-bird-nest.jpg", alt: "A small olive bird with a yellow throat sitting on its mossy nest, half-hidden by leaves, Ranomafana National Park" }
     ],
     tips: ["Ask at the park office for a specialist bird guide (ornithology) by name", "The park opens at 07:00, and birds are most active in the morning", "Bring binoculars: the guides may not have spare pairs", "Vohiparara is cooler and wetter than Talatakely: bring a warm layer and a rain shell", "The Birders’ Two Days plan builds a visit around it"],
     contact: { phone: "", email: "", website: "", social: "" }
@@ -1473,19 +1502,23 @@ const doData = [
     rating: "3.9 (Tripadvisor, 23 reviews)",
     duration: "About 1 hour",
     status: "open",
-    img: "images/placeholder-ranomafana-arboretum.jpg",
+    img: "images/ranomafana-arboretum-flora.jpg",
     verified: true,
     asOf: "2026-10",
-    photoNeeded: true,
-    sourceNote: "Ticket price, guided loop, founder, tree and animal details from Kyle's notes (received 11 Oct 2026). Unresolved: his notes say founded 1991 by Dan Turk, an earlier source here said 1994; they say 4 km east of town but also 'a two-minute drive or 20-minute walk', which fits the earlier 2 km better. The page gives the travel times and no distance or year until confirmed. The previously listed ~$5 entry fee was an estimate and has been removed.",
+    photoNeeded: false,
+    sourceNote: "Ticket price, guided loop, founder, tree and animal details from Kyle's notes (received 11 Oct 2026). Unresolved: his notes say founded 1991 by Dan Turk, an earlier source here said 1994; they say 4 km east of town but also 'a two-minute drive or 20-minute walk', which fits the earlier 2 km better. The page gives the travel times and no distance or year until confirmed. The previously listed ~$5 entry fee was an estimate and has been removed. Photos: Kyle's, 1 Nov 2026 (used as received; seven of ten, look-alikes left out). Phone numbers read from the painted Arboretum sign by the road in the entrance photo; Kyle confirmed them on 1 Nov 2026.",
     gallery: [
-      { src: "images/ranomafana-arboretum-entrance.jpg", fallback: "images/placeholder-ranomafana-arboretum.jpg", alt: "Ranomafana Arboretum entrance" },
-      { src: "images/ranomafana-arboretum-path.jpg", fallback: "images/placeholder-ranomafana-arboretum.jpg", alt: "Path through Ranomafana Arboretum" },
-      { src: "images/ranomafana-arboretum-flora.jpg", fallback: "images/placeholder-ranomafana-arboretum.jpg", alt: "Endemic flora at Ranomafana Arboretum" }
+      { src: "images/ranomafana-arboretum-flora.jpg", alt: "Traveller's palms and a roofed shelter on a grassy hillside, Ranomafana Arboretum" },
+      { src: "images/ranomafana-arboretum-valley-view.jpg", alt: "A stone table and bench on the lawn, looking out over the green hills of the valley, Ranomafana Arboretum" },
+      { src: "images/ranomafana-arboretum-path.jpg", alt: "A path between palms, past small labelled signs, Ranomafana Arboretum" },
+      { src: "images/ranomafana-arboretum-trees-board.jpg", alt: "The “Famous and amazing trees” board, in Malagasy, English and French, beside a path, Ranomafana Arboretum" },
+      { src: "images/ranomafana-arboretum-nursery.jpg", alt: "Rows of young trees in a nursery, shaded by palm fronds, Ranomafana Arboretum" },
+      { src: "images/ranomafana-arboretum-building.jpg", alt: "Stone steps up to the green Arboretum building, Ranomafana Arboretum" },
+      { src: "images/ranomafana-arboretum-entrance.jpg", alt: "The painted Arboretum sign by the road, with a tree, a chameleon and phone numbers, Ranomafana Arboretum" }
     ],
     desc: "A hidden gem just east of town on the RN25, founded by Dan Turk: more than 50 kinds of tree, some native to south-east Madagascar and some brought to the island by trade centuries ago, plus a young baobab. A guide speaking English, French and Malagasy leads a loop of the grounds, with stunning views of the valley, unusual fruits to try, and lowland streaked tenrecs, chameleons, butterflies and frogs along the way.",
     tips: ["A two-minute drive, or an easy 20-minute walk, from town", "Expect the guided loop to take an hour or more", "Be ready to feed a giant Parson's chameleon an insect snack", "Gentle walking — suits varied mobility", "Good option in heavy rain or on a rest day"],
-    contact: { phone: "", email: "", website: "", social: "" }
+    contact: { phone: "+261 34 99 164 66 / +261 33 62 077 42 / +261 34 23 408 73", email: "", website: "", social: "" }
   },
   {
     slug: "centre-valbio-tour",
@@ -1547,6 +1580,46 @@ const doData = [
     contact: { phone: "", email: "", website: "", social: "" }
   },
   {
+    slug: "namorona-farm",
+    name: "Namorona Farm",
+    category: "Farm visit",
+    price: "Ask the farm for tour, workshop, meal and bungalow prices",
+    rating: "\u2014",
+    duration: "",
+    status: "open",
+    img: "images/namorona-farm-team.jpg",
+    verified: true,
+    photoNeeded: false,
+    asOf: "2026-11",
+    mapPin: "-21.264826,47.462889",   // Kyle's Google Maps pin for the farm (1 Nov 2026); a name search finds nothing
+    sourceNote: "Added 1 Nov 2026 at Kyle's request (he wrote 'namorana farm'; the gate sign and the flier spell it Namorona Farm), with his 20 photos of the same visit (used as received). Every detail comes from the farm's own flier and activity list on its noticeboard (photo namorona-farm-noticeboards.jpg): the services (restaurant 'farm to table'; wooden bungalows and camping; guided farm visits of the beehives, poultry, pond, vegetable gardens, cash crops and agroforestry; workshops: fruit picking, cooking class, processing; direct sale of fresh organic produce; cultural activities), who it welcomes, its place ('1Km de Ranomafana vers l'EST'), the two numbers (034 56 907 95, marked WhatsApp, and 033 11 803 64), the Facebook name 'Namorona FARM' and namorona.farm@gmail.com (read from the photo: confirm the dot). The rabbits and cattle are on its activity list and in the photos. The visitor rules are from the sign at the gate to the fields. No prices or opening hours are on the flier: ask the farm. Map pin from Kyle's own Google Maps link to the farm (maps.app.goo.gl/wSHDGqGoZE5RnuNH9, 1 Nov 2026), about 0.9 km east-south-east of the village marketplace, which fits the flier's '1 km east of Ranomafana'; Google Maps has no listing for the farm, so a name search finds nothing.",
+    desc: "A working farm 1 km east of Ranomafana, open to visitors. Guided tours of the farm take in the vegetable gardens, cash crops and agroforestry, the beehives, the chicken run and the fish pond, with rabbits and cattle too. There are workshops (fruit picking, a cooking class, turning the harvest into food that keeps), a farm-to-table restaurant, wooden bungalows and camping, fresh organic produce for sale, and cultural activities. Families, couples, retirees, school groups and other groups are welcome.",
+    tips: ["1 km east of Ranomafana village", "Call or WhatsApp ahead to book a tour, a workshop or a meal", "The farm's rules: stay on the marked paths, don't wander off alone, and ask before picking or eating anything", "Wash your hands before you leave the farm"],
+    gallery: [
+      { src: "images/namorona-farm-team.jpg", alt: "The Namorona Farm team at the farm gate, under its sign" },
+      { src: "images/namorona-farm-guide-rules.jpg", alt: "A farm guide beside the visitor rules at the gate to the fields, under a lychee tree, Namorona Farm" },
+      { src: "images/namorona-farm-vegetable-garden.jpg", alt: "Stone steps down to the vegetable garden, with a labelled bed of parsley, Namorona Farm" },
+      { src: "images/namorona-farm-dining-shelter.jpg", alt: "The open-sided wooden shelter with tables, beside the path into the fields, Namorona Farm" },
+      { src: "images/namorona-farm-snack-table.jpg", alt: "A table laid for visitors with juice, leaf-wrapped parcels, fried snacks and a flask, Namorona Farm" },
+      { src: "images/namorona-farm-terraced-fields.jpg", alt: "Terraced fields below a forested hill with a bare rock face, Namorona Farm" },
+      { src: "images/namorona-farm-vegetable-beds.jpg", alt: "A path between a wooden rail and rows of young vegetables, with banana plants alongside, Namorona Farm" },
+      { src: "images/namorona-farm-agroforestry.jpg", alt: "Banana plants and young trees growing together, Namorona Farm" },
+      { src: "images/namorona-farm-banana-plantation.jpg", alt: "Rows of banana plants on the hillside, Namorona Farm" },
+      { src: "images/namorona-farm-fish-pond.jpg", alt: "The “Pisciculture” (fish farming) sign on a bamboo fence in front of the fish pond, Namorona Farm" },
+      { src: "images/namorona-farm-tree-nursery.jpg", alt: "Seedlings growing in black bags at the farm's nursery, Namorona Farm" },
+      { src: "images/namorona-farm-fodder-crops.jpg", alt: "Papaya trees and a freshly dug plot marked “Culture fourragère” (fodder crops), Namorona Farm" },
+      { src: "images/namorona-farm-compost.jpg", alt: "A member of the farm team at the compost shelter, “Zone de compostage”, Namorona Farm" },
+      { src: "images/namorona-farm-compost-worms.jpg", alt: "A hand turning dark compost full of worms and sprouting seeds, Namorona Farm" },
+      { src: "images/namorona-farm-games-area.jpg", alt: "A table-football game under a wooden shelter, and a garden table with a parasol, Namorona Farm" },
+      { src: "images/namorona-farm-chickens.jpg", alt: "Chickens and chicks in their fenced run, Namorona Farm" },
+      { src: "images/namorona-farm-rabbits.jpg", alt: "The “Elevage lapins” (rabbit farming) sign by the path to the raised wooden livestock shed, Namorona Farm" },
+      { src: "images/namorona-farm-cattle.jpg", alt: "Two cattle in their wooden stall, seen through the fence, Namorona Farm" },
+      { src: "images/namorona-farm-washrooms.jpg", alt: "The visitors' washroom block, with toilets, showers and a basin, Namorona Farm" },
+      { src: "images/namorona-farm-noticeboards.jpg", alt: "The farm's noticeboards: its flier, the list of activities and a site plan, Namorona Farm" }
+    ],
+    contact: { phone: "+261 34 56 907 95 / +261 33 11 803 64", whatsapp: "+261 34 56 907 95", email: "namorona.farm@gmail.com", website: "", social: "", note: "Facebook: Namorona FARM. The first number takes WhatsApp." }
+  },
+  {
     slug: "village-artisan-market",
     name: "Village Artisan Market",
     category: "Market",
@@ -1571,38 +1644,45 @@ const doData = [
     slug: "voi-ambohimagneva",
     name: "VOI Ambohimagneva Community Reserve",
     category: "Community conservation",
-    price: "In development — contact for access",
+    price: "Entry 35,000 Ar per person (Malagasy visitors 2,000 Ar), plus a guide from 35,000 Ar per group of 1–4",
     rating: "—",
     duration: "Half day",
     status: "coming-soon",
     img: "images/voi-ambohimagneva-waterfall-ambony.jpg",
     verified: false,
     photoNeeded: false,
-    sourceNote: "Project in development, not yet a published visitor attraction. Replaces the earlier 'Reserve Ambohimaneva' entry. Photos added 2026-09-12 from a site visit, and four more waterfall photos on 2026-10-11 (Kyle confirmed they were taken here). Two tree-frog photos and a waterfall from Kyle on 2026-10-20; the frogs are not named. That visitor fees go directly to the village and its people is from Kyle, 20 Oct 2026. Spelling corrected to 'Ambohimagneva' 2026-09-12 per Kyle. Map pin from 'Ambohimaneva Reserve' on Google Maps (checked 23 Oct 2026): a park listing with its own photo and phone number, where the forest starts on the north edge of town, so probably the way in; 'roughly 3 km from town' may describe the walk to the circuits. A Google search for the listing's name pinned the national park offices. The phone (034 31 153 32) is that Google listing's; Kyle confirmed it is correct on 23 Oct 2026. Kyle also settled the size that day as 75 hectares; the VOI Ambohimagneva review pack in his source folder says 120.",
+    sourceNote: "Project in development, not yet a published visitor attraction. Replaces the earlier 'Reserve Ambohimaneva' entry. Photos added 2026-09-12 from a site visit, and four more waterfall photos on 2026-10-11 (Kyle confirmed they were taken here). Two tree-frog photos and a waterfall from Kyle on 2026-10-20; the frogs are not named. That visitor fees go directly to the village and its people is from Kyle, 20 Oct 2026. Spelling corrected to 'Ambohimagneva' 2026-09-12 per Kyle. Map pin from 'Ambohimaneva Reserve' on Google Maps (checked 23 Oct 2026): a park listing with its own photo and phone number, where the forest starts on the north edge of town, so probably the way in; 'roughly 3 km from town' may describe the walk to the circuits. A Google search for the listing's name pinned the national park offices. The phone (034 31 153 32) is that Google listing's; Kyle confirmed it is correct on 23 Oct 2026. Kyle also settled the size that day as 75 hectares; the VOI Ambohimagneva review pack in his source folder says 120. Entry and guide fees from the reserve's own fee sign, as copied into Kyle's brochure review pack (VOI_Ambohimagneva_Review_Pack.docx, source folder), added 27 Oct 2026; no website for the reserve was found. Kyle confirmed the same day that these fees are current. Two cells on the sign are blank (night entry for researchers, filming at night). Five wildlife photos from Kyle on 2026-11-01 (a boa, a moth, a longhorn beetle, a mantis, a freshwater crab); none is named to species, as the photos don't make them certain.",
     mapPin: "-21.2563,47.4570",   // Google Maps "Ambohimaneva Reserve", the forest edge north of town
-    gallery: [
+    entryFees: [   // per person, from the reserve's fee sign; for: intl / mg / all drives the price switch
+      { for: "intl", who: "Foreign visitor, day or night", price: "35,000 Ar" },
+      { for: "mg", who: "Malagasy visitor, day or night", price: "2,000 Ar" },
+      { for: "mg", who: "Malagasy student, day / night", price: "1,500 / 5,000 Ar" },
+      { for: "intl", who: "Foreign researcher", price: "25,000 Ar" },
+      { for: "mg", who: "Malagasy researcher", price: "12,000 Ar" },
+      { for: "all", who: "Filming, per day", price: "100,000 Ar" }
+    ],
+    guideFees: [   // per group of 1–4, by circuit
+      { for: "all", walk: "Picnic circuit · 2 hours", price: "40,000 Ar" },
+      { for: "all", walk: "Cascade–EVA circuit · 3 hours", price: "60,000 Ar" },
+      { for: "all", walk: "Lemur circuit · 4 hours", price: "75,000 Ar" },
+      { for: "all", walk: "Varicia circuit · 5 hours", price: "90,000 Ar" },
+      { for: "all", walk: "Tracking circuit", price: "150,000 Ar" },
+      { for: "all", walk: "Night circuit", price: "35,000 Ar" },
+      { for: "mg", walk: "Malagasy students and researchers, day / night", price: "15,000 / 20,000 Ar" }
+    ],
+    gallery: [   // Kyle, 27 Oct 2026: the best 12, look-alikes left out (the files stay in images/); 1 Nov 2026: five wildlife photos swapped in for four waterfalls and a frog, still 12
       { src: "images/voi-ambohimagneva-waterfall-ambony.jpg", alt: "Tall waterfall inside the reserve at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-waterfall-ambany.jpg", alt: "Tall waterfall lower on the trail at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-waterfall-pool.jpg", alt: "Waterfall dropping into a deep pool at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-waterfall-1.jpg", alt: "Waterfall along the VOI Ambohimagneva trail" },
+      { src: "images/voi-ambohimagneva-boa.jpg", alt: "A large boa crossing a muddy path at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-waterfall-visitor.jpg", alt: "A visitor with arms outstretched in front of a waterfall at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-waterfall-swim.jpg", alt: "A swimmer standing in the spray of a waterfall at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-waterfall-sunlit.jpg", alt: "Sunlight falling on a waterfall between dark rocks at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-cascade-pool.jpg", alt: "A mossy cascade spilling into a forest pool at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-waterfall-split.jpg", alt: "Water sliding down a mossy rock face in two streams at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-river-pool.jpg", alt: "A river pool at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-river-pool-2.jpg", alt: "Another river pool along the VOI Ambohimagneva trail" },
-      { src: "images/voi-ambohimagneva-river.jpg", alt: "The river running through VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-water-channel.jpg", alt: "A hand-cut wooden water channel on the VOI Ambohimagneva trail" },
-      { src: "images/voi-ambohimagneva-forest-view.jpg", alt: "Rainforest interior at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-valley-view.jpg", alt: "View over the valley near VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-leaf-tailed-gecko.jpg", alt: "Mossy leaf-tailed gecko camouflaged on a branch at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-frog-species.jpg", alt: "A frog species found at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-frog-species-2.jpg", alt: "A second frog species found at VOI Ambohimagneva" },
+      { src: "images/voi-ambohimagneva-cascade-pool.jpg", alt: "A mossy cascade spilling into a forest pool at VOI Ambohimagneva" },
+      { src: "images/voi-ambohimagneva-moth.jpg", alt: "A large pink-and-orange moth with eyespots, resting on moss at VOI Ambohimagneva" },
+      { src: "images/voi-ambohimagneva-valley-view.jpg", alt: "View over the valley near VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-tree-frogs.jpg", alt: "Several tree frogs resting together on a branch in front of the waterfall at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-tree-frogs-2.jpg", alt: "The tree frogs' leafy roost in the sun at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-hiking-trail.jpg", alt: "Hiking the trail at VOI Ambohimagneva" },
-      { src: "images/voi-ambohimagneva-guide-adrien.jpg", alt: "Guide Adrien on the boardwalk trail at VOI Ambohimagneva" }
+      { src: "images/voi-ambohimagneva-longhorn-beetle.jpg", alt: "A red, white-spotted longhorn beetle on a broken stem at VOI Ambohimagneva" },
+      { src: "images/voi-ambohimagneva-guide-adrien.jpg", alt: "Guide Adrien on the boardwalk trail at VOI Ambohimagneva" },
+      { src: "images/voi-ambohimagneva-mantis.jpg", alt: "A brown mantis on a visitor's hand at VOI Ambohimagneva" },
+      { src: "images/voi-ambohimagneva-crab.jpg", alt: "A small freshwater crab on a wet rock at VOI Ambohimagneva" }
     ],
     desc: "A 75-hectare community-managed reserve bordering the national park, governed through a VOI partnership under Madagascar's GELOSE framework, with MNP-certified guide access and Centre ValBio research collaboration. Trails and a river waterfall site are being opened to visitors. Visitor fees go directly to the village and the people who live there.",
     tips: ["Access on foot, roughly 3 km from town", "Contact ahead — visitor access is still being established"],

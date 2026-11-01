@@ -249,14 +249,20 @@ see sections 0 and 7.)
 3. **Centre ValBio Conservation Series** — confirm the talks still run Wednesday
    evenings and whether visitors can attend.
 4. **VOI Ambohimagneva** — your own project; marked coming-soon until access opens.
+   Its entry and guide fees went on the site on 27 Oct 2026, copied from the reserve's
+   fee sign as set out in your brochure review pack (no website for the reserve was
+   found; send its address if it has one). You confirmed on 27 Oct 2026 that they are
+   current. Still to check: the two blank cells on the sign (night entry for researchers, filming at night); whether it
+   is now open, so "coming soon" can go; and its size — the brochure says 120 ha and
+   five circuits, the site says 75 ha.
 5. **VOI Mitsinjo Reserve** — entry and guide rates, and opening arrangements, to be
    confirmed with VOI Ambatolahy.
 6. **Weekly Village Artisan Market** (the What's on entry for item 2).
-7. **Mahakaty Reserve** (added 26 Oct 2026 from your six photos) — who runs it, where
-   exactly it is, entry and guide fees, and a phone number. The hours (08:00–15:30,
-   every day) were read from the faded sign by the reception door: please check them.
-   Its pop-up map searches Google for the name; if that lands somewhere else, send the
-   location and it will be pinned.
+7. **Mahakaty Reserve** (added 26 Oct 2026 from your six photos) — who runs it, entry
+   and guide fees, and a phone number. The hours (08:00–15:30, every day) were read from
+   the faded sign by the reception door: please check them. Its map is pinned (27 Oct
+   2026) to Google Maps' own listing for the reserve, near Kelilalina on the RN25: check
+   that is where it is.
 
 **La Palmeraie** — see section 0; probably resolved.
 
@@ -414,6 +420,36 @@ The **home page welcome** now has photos too: the yellow footbridge into the par
 tree with red fruit beside a banana plant was in the same download but not in your
 messages, so it is not on the site.
 
+### Added 1 November 2026 — Ranomafana Arboretum
+
+Seven of your ten photos, used as received (all under 500 KB). They fill the three
+pre-wired slots (`entrance`, `path`, `flora`) and add four: `valley-view`, `trees-board`,
+`nursery`, `building`. The card photo is the hillside of traveller's palms (`flora`).
+Left out as look-alikes: the second nursery photo (potted palms), the "Palms of
+Madagascar" board (same spot as the palm path) and the lawn path with a sign (the
+valley view and the hillside cover it).
+
+The painted sign by the road gives three phone numbers, now on the listing:
+034 99 164 66, 033 62 077 42 and 034 23 408 73. They were read from the photo, and you
+confirmed them on 1 November 2026.
+
+### Added 1 November 2026 — Ny Tanàna Hotel
+
+Nine of your fourteen photos (all used as received except the bar, resized to stay
+under 500 KB): the gate with its sign (now the card photo), the pool, the main building
+above the lawn, the garden rooms, a room with its balcony, a bathroom, the dining room,
+the bar and the lounge. They fill the `exterior`, `room` and `restaurant` slots and add
+six; `view` is still waiting. Left out as look-alikes: the straight-on view of the
+courtyard, the second pool photo (through the hanging-chair frame), the close-up of
+the bed and the desk. The chalkboard menu was left out too: it is the day's set menu
+(52,000 Ar), which changes.
+
+The hotel's rate sheet and menus gave the listing its room rates (135,000–200,000 Ar,
+extra bed 20,000 Ar), two phone numbers (034 02 246 64, 038 39 755 41), the email
+contact@nytanana-hotel-ranomafana.mg (the sheet writes it with an underscore; you
+confirmed this spelling on 1 November 2026), and meal prices. **Still to check:** the
+sheet doesn't say whether breakfast is included, so the listing asks guests to check.
+
 Every photo-less listing now has a **designed placeholder** (`images/placeholder-<slug>.jpg`)
 rather than sharing one of two landscapes. They are obviously graphics — property name
 on a colour panel, "Photograph coming soon" — so nobody mistakes one for a picture of
@@ -438,7 +474,7 @@ Exterior/approach · a made-up room · restaurant or common area · the view.
 | **La Palmeraie** | `la-palmeraie-exterior.jpg` · `la-palmeraie-room.jpg` · `la-palmeraie-restaurant.jpg` · `la-palmeraie-view.jpg` |
 | **Manja Hotel** | `manja-hotel-exterior.jpg` · `manja-hotel-room.jpg` · `manja-hotel-restaurant.jpg` · `manja-hotel-view.jpg` |
 | **Ihary Hotel** | `ihary-hotel-exterior.jpg` · `ihary-hotel-room.jpg` · `ihary-hotel-restaurant.jpg` · `ihary-hotel-view.jpg` |
-| **Ny Tanàna Hotel** | `ny-tanana-hotel-exterior.jpg` · `ny-tanana-hotel-room.jpg` · `ny-tanana-hotel-restaurant.jpg` · `ny-tanana-hotel-view.jpg` |
+| **Ny Tanàna Hotel** | `ny-tanana-hotel-view.jpg` — the view from the hotel (the other slots are in, 1 Nov 2026) |
 | **Lemur Coffee Hotel** | `lemur-coffee-hotel-exterior.jpg` · `lemur-coffee-hotel-room.jpg` · `lemur-coffee-hotel-restaurant.jpg` · `lemur-coffee-hotel-view.jpg` |
 | **Coin d’or** | `coin-dor-exterior.jpg` · `coin-dor-room.jpg` · `coin-dor-restaurant.jpg` · `coin-dor-view.jpg` |
 | **Akamasoa Guest House** | `akamasoa-guest-house-exterior.jpg` · `akamasoa-guest-house-room.jpg` · `akamasoa-guest-house-restaurant.jpg` · `akamasoa-guest-house-view.jpg` |
@@ -471,7 +507,6 @@ Frontage · dining room · a signature dish.
 | **Thermal Massage** | `thermal-massage-room.jpg` — same rule: nothing borrowed from Hotel Thermal |
 | **Cascade Andriamamovoka** | `cascade-andriamamovoka-falls.jpg` · `cascade-andriamamovoka-trail.jpg` · `cascade-andriamamovoka-river.jpg` |
 | **Namorona River Kayaking** | `namorona-kayaking-group.jpg` — paddlers out on the river (the river, launch and a paddler at the launch are in, 26 Oct 2026) |
-| **Ranomafana Arboretum** | `ranomafana-arboretum-entrance.jpg` · `ranomafana-arboretum-path.jpg` · `ranomafana-arboretum-flora.jpg` |
 | **Village Artisan Market** | `village-artisan-market-stalls.jpg` · `village-artisan-market-crafts.jpg` |
 
 ### Shoot these first

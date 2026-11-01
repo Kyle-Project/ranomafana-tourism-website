@@ -456,7 +456,7 @@ const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
 const TRANSLATED_FIELDS = {
   stays: ['desc', 'price', 'wifiNote', 'rooms', 'meals', 'features', 'ratesNote', 'contact.note', 'gallery[].alt'],
   eat: ['desc', 'highlights', 'meals', 'contact.note', 'gallery[].alt'],
-  do: ['desc', 'price', 'duration', 'tips', 'intro', 'wildlife', 'circuits', 'guideFees', 'contact.note', 'gallery[].alt'],
+  do: ['desc', 'price', 'duration', 'tips', 'intro', 'wildlife', 'circuits', 'guideFees', 'entryFees', 'contact.note', 'gallery[].alt'],
   itineraries: ['badge', 'title', 'level', 'bestFor', 'parkTicket', 'desc', 'stops'],
   events: ['title', 'dayBadge', 'monthBadge', 'whenLabel', 'desc'],
   blog: ['title', 'excerpt', 'body'],

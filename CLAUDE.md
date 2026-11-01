@@ -370,6 +370,11 @@ Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026.
   - **Short pin labels:** pins carry short labels; the panel gives the full name.
   - **Check after any change:** check pin labels for overlap at 320–375 px in all four
     languages.
+  - **South-east towns** (Kyle, 26 Oct 2026): Fianarantsoa, Mananjary and Manakara have
+    small pins (`small: true`) with panel text built only from Getting here's facts, and
+    the dashed road has a spur down to Manakara. On phones (≤520 px) they are too close
+    for labels, so small pins drop theirs and a row of place buttons (`#mapPlacesMg`)
+    does the choosing.
 - **Its tab:** Why visit had its own header tab until 23 Oct 2026; it now sits in the
   About tab's menu and tab bar (see "Header tabs and sections"). The welcome's link,
   the menu drawer and the footer's About column lead to it.
@@ -465,7 +470,19 @@ shows. Prefer a dated report from someone who paid at the gate over a fee-guide
 website. MNP publishes no official list online.
 
 The park's fees exist twice in its `doData` entry: the `price` sentence, and broken
-out as `entryFee`, `childFee`, `communityFee`, `guideFees` and `feesAsOf` (year-month).
+out as `entryFee`, `childFee`, `malagasyFee`, `malagasyChildFee`, `communityFee`,
+`guideFees` and `feesAsOf` (year-month). The Malagasy citizens' fees (2,000 / 500 Ar,
+Kyle's request of 27 Oct 2026) come from MNP's own fee board, the "Fees and charges"
+document linked from the official park page.
+
+**The price switch** (Kyle, 27 Oct 2026: "make the pricing clickable. Malagasy Citizen,
+International Guest"): two buttons, `priceToggle()`, on the park page's fee box and
+on any activity pop-up with its own fee lists (VOI Ambohimagneva). International shows
+the foreign entry fee, its child fee and the community fee; Malagasy shows
+`malagasyFee` / `malagasyChildFee` and drops the community fee (MNP's page puts that
+on foreign visitors). In fee lists each row's `for` (`intl`, `mg` or `all`) decides
+where it shows. The choice is remembered in the visitor's browser (`localStorage`,
+key `ranomafana-price-for`); everyone starts on International.
 The home page, the park page and the Hiring a guide page read the broken-out fields.
 **Change both together.**
 
@@ -585,7 +602,7 @@ listings — was written without a native speaker and should be checked by one.
 
 ## Current state
 
-25 stays · 16 restaurants · 17 things to do · 7 itineraries · 8 events · 10 blog
+25 stays · 16 restaurants · 18 things to do · 7 itineraries · 8 events · 10 blog
 seeds. **Birdwatching** (`do`, slug `birdwatching`, 23 Oct 2026) is built only from
 facts on the park listing (125 species, Vohiparara, the specialist guide fee): when
 the park's guide fees change in January 2027, change its `price` too. All 25 stays are verified, against published sources or on Kyle's
@@ -660,12 +677,56 @@ Kyle's other photos of 26 October 2026 (WhatsApp copies, used as received):
   category in `DO_GROUPS` (forest) and `CATEGORY_LABEL`): a new listing at Kyle's request
   with his six photos. Its description holds only what the photos show; the hours
   (08:00–15:30, every day) come from the faded sign by the reception door. Who runs it,
-  where it is, fees and contacts are unknown, so it is `verified: false`, with no
-  `mapPin`, until Kyle confirms (section 6 of `PHOTO-AND-DATA-GAPS.md`).
+  fees and contacts are unknown, so it is `verified: false` until Kyle confirms
+  (section 6 of `PHOTO-AND-DATA-GAPS.md`). Its `mapPin` (27 Oct 2026) is Google Maps'
+  own listing for the reserve, near Kelilalina on the RN25: the usual name search (with
+  "Ranomafana Madagascar" added) found nothing and fell back on other parks.
+- **VOI Ambohimagneva** (27 Oct 2026, Kyle: "limit … to top 12 photos and remove any
+  similar images"): its gallery holds 12. Left out as look-alikes: waterfall-pool,
+  waterfall-1, waterfall-sunlit, river-pool-2, river, water-channel, forest-view,
+  frog-species-2, tree-frogs-2, hiking-trail. The files stay in `images/` (forest-view
+  and hiking-trail are also page banners and story images); don't add them back.
+  On 1 Nov 2026 Kyle sent ten more ("keep the number limited, with a wide diversity"):
+  the boa on the path, the moth, the red longhorn beetle, the mantis and the crab
+  replaced waterfall-ambany, waterfall-swim, waterfall-split, river-pool and
+  frog-species, so it is still 12. Not used: two more of the same boa (one held),
+  a katydid, a striped snake and a forest stream view; his video of the boa is not
+  on the site (there is no place for video).
+- **VOI Ambohimagneva fees** (27 Oct 2026, Kyle: "take from the ambohimagneva
+  website"): no website exists that could be found, so the fees come from the reserve's
+  fee sign as copied into Kyle's brochure review pack (`VOI_Ambohimagneva_Review_Pack.docx`
+  in the source folder). They are `entryFees` and `guideFees` on the listing, shown as
+  two lists in its pop-up (`feeTable()`), plus the `price` sentence. Kyle confirmed
+  the same day that they are current. The pack's 120 ha
+  and five circuits differ from the site's 75 ha: not changed, asked of Kyle.
 - **Centre ValBio at night** (`cvb-buildings-night.jpg`), fourth in its stay gallery.
+  The same day Kyle had the leaf-tailed gecko and the "researcher and guide" slot
+  (`cvb-researcher-guide.jpg`) taken out of that gallery; don't put them back. The guide
+  photo is still the image of the draft story "Hiring a Guide".
 - **Kayaking:** the launch slot (`namorona-kayaking-launch.jpg`) is filled, and a
   paddler waving at the launch (`namorona-kayaking-paddler.jpg`) added after it; the
   group slot is still waiting.
+
+Kyle's photos of 1 November 2026 (used as received):
+- **Park and Birdwatching:** a small olive bird with a yellow throat on its nest (no species named:
+  the photo doesn't make it certain) and a leaf-tailed gecko hanging from a leaf joined the park
+  gallery; the bird also joined the Birdwatching gallery and has a "Hidden nests" card on the
+  Birdwatching page.
+- **Namorona Farm** (`do`, slug `namorona-farm`, category "Farm visit", new in `DO_GROUPS`
+  (village) and `CATEGORY_LABEL`): a farm 1 km east of the village, with Kyle's 20 photos. Every
+  detail (services, who it welcomes, phones, WhatsApp, Facebook name, email) comes from its own
+  flier on the noticeboard; the email was read from a photo, so confirm the dot. Google Maps has
+  no listing for it, so `mapPin` is Kyle's own pin for the farm. No prices or hours yet.
+- **Ranomafana Arboretum:** seven of ten photos (look-alikes left out: a second nursery shot,
+  the "Palms of Madagascar" board, a lawn path) fill its three slots and add four; the card
+  photo is the traveller's palms hillside (`ranomafana-arboretum-flora.jpg`). Its three phone
+  numbers come from the painted roadside sign in the entrance photo (Kyle confirmed them).
+- **Ny Tanàna Hotel:** nine of fourteen photos (left out: a second courtyard and a second
+  pool shot, the bed close-up, the desk, and the chalkboard day menu, whose price changes);
+  the gate with its sign is the card photo, and `view` is still waiting. Rates, phones,
+  email and meal prices come from the hotel's own rate sheet and menus. The sheet writes
+  the email with an underscore, so it is given on the hotel's confirmed
+  nytanana-hotel-ranomafana.mg domain (Kyle confirmed it); whether breakfast is included isn't stated.
 
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide
@@ -681,7 +742,7 @@ details of its own** — never fill them with Hotel Thermal's, which is what the
 did until 11 October 2026.
 
 Open editorial work is tracked in `PHOTO-AND-DATA-GAPS.md`: 6 unconfirmed listings,
-26 entries awaiting a real photograph (95 individual photo slots, all pre-wired),
+24 entries awaiting a real photograph (88 individual photo slots, all pre-wired),
 and the conflicts listed in its section 0. The team profiles on the About page are
 placeholders, hidden (`hidden` on `.team-grid`, with a note in the markup) until
 Kyle has names; the About page shows the credit line and the email box meanwhile. Kyle's notes had headings for a donation link and a town map with no

@@ -39,7 +39,7 @@ each one in all four languages (`placeholder-<slug>.jpg`, `-fr.jpg`, `-de.jpg`,
 |---|---|---|
 | `stayData` | 25 | Places to stay |
 | `eatData` | 16 | Places to eat |
-| `doData` | 15 | Things to do (the national park entry also feeds the National Park page) |
+| `doData` | 18 | Things to do (the national park entry also feeds the National Park page) |
 | `itineraryData` | 7 | Itineraries, and the "What kind of traveller are you?" picker on the home page |
 | `eventData` | 8 | What's on, the home page, and the When to visit month picker |
 | `blogData` | 10 | Stories, and "Field notes" on the home page |
@@ -108,6 +108,13 @@ the design canvas — see "Stories and the design canvas" in `CLAUDE.md`.
   (opening hours, e.g. `"07:00–17:00"`) and `feesAsOf` (year-month, e.g. `"2026-10"`).
   The home page, the National Park page, When to visit and Hiring a guide read the
   broken-out fields. Change both together, and record the source in `sourceNote`.
+- **Any other activity's fee list** (27 Oct 2026, first used by VOI Ambohimagneva):
+  `entryFees` (`for`, `who`, `price`) and `guideFees` (`for`, `walk`, `price`) show as
+  two lists in its pop-up, under the International guest / Malagasy citizen switch
+  (`for`: `intl`, `mg` or `all` — which side of the switch shows the row; keep the same
+  `for` in every language's rows in the translations file), "Entry fees, per person" and "Guide fees, per group of 1–4". Keep the
+  `price` sentence in step with them. Both are translated listing text: add each
+  language's rows to the listing's entry in `ranomafana-translations.js`.
 - **The park page's own text.** `intro` (paragraphs at the top of the National Park
   page; the card keeps the short `desc`), `wildlife` (groups of species with a note)
   and `circuits`.

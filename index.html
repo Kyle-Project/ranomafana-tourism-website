@@ -529,6 +529,8 @@
     }
     .kind-btn:hover { border-color: var(--gold); }
     .kind-btn[aria-pressed="true"] { background: var(--gold); color: var(--canopy); border-color: var(--gold); }
+    .price-toggle { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .price-toggle .kind-btn { min-height: 40px; padding: 0 14px; font-size: 14px; }
     .plan-card { background: var(--under); border: 1px solid var(--moss); border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 18px; min-height: 360px; }
     .plan-card-badge { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
     .plan-card h3 { font-family: var(--serif); font-weight: 500; font-size: clamp(28px, 2.8vw, 40px); line-height: 1.1; }
@@ -1033,6 +1035,24 @@
     .map-pin--below .map-pin-label { top: 36px; left: 50%; transform: translateX(-50%); }
     .map-pin--left .map-pin-label { right: 36px; }
     .map-pin--right .map-pin-label { left: 36px; }
+    /* Towns on the way: a smaller dot, under the main pins unless chosen. */
+    .map-pin--small { z-index: 0; }
+    .map-pin--small .map-pin-dot { width: 12px; height: 12px; border-width: 2px; }
+    .map-pin--small.map-pin--above .map-pin-label { bottom: 32px; }
+    .map-pin--small.map-pin--below .map-pin-label { top: 32px; }
+    .map-pin--small.map-pin--left .map-pin-label { right: 32px; }
+    .map-pin--small.map-pin--right .map-pin-label { left: 32px; }
+    .map-pin:not(.map-pin--small) { z-index: 1; }
+    .map-pin[aria-pressed="true"] { z-index: 2; }
+    /* On phones the south-east towns are too close for every label, so the small
+       pins lose theirs and this row of names does the choosing instead. */
+    .map-places { display: none; flex-wrap: wrap; gap: 8px; }
+    .map-place { min-height: 40px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--moss-2); background: none; color: var(--mist); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+    .map-place[aria-pressed="true"] { border-color: var(--gold); color: var(--gold); }
+    @media (max-width: 520px) {
+      .map-pin--small .map-pin-label { display: none; }
+      .map-places { display: flex; }
+    }
     .map-panel { background: var(--under); border: 1px solid var(--moss); border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 10px; }
     .map-panel h3 { font-family: var(--serif); font-size: 30px; font-weight: 500; line-height: 1.1; }
     .map-panel p { font-size: 16px; line-height: 1.6; color: var(--fern); }
@@ -1914,6 +1934,11 @@
             <p data-i18n="birdKingText">Seen perched on a twig on the night walk.</p>
           </div>
           <div class="wild-group">
+            <div class="wild-photo"><img src="images/ranomafana-national-park-bird-nest.jpg" alt="A small olive bird with a yellow throat sitting on its mossy nest, half-hidden by leaves, Ranomafana National Park" data-i18n-alt="altBirdNest" loading="lazy"></div>
+            <h3 data-i18n="birdNestTitle">Hidden nests</h3>
+            <p data-i18n="birdNestText">A small olive bird with a yellow throat, photographed on its nest deep in the leaves. Ask your guide to name it.</p>
+          </div>
+          <div class="wild-group">
             <div class="wild-photo"><img src="images/ranomafana-national-park-bird.jpg" alt="A bird perched in the understory, Ranomafana National Park" data-i18n-alt="altBirdUnder" loading="lazy"></div>
             <h3 data-i18n="birdAlsoTitle">Also look for</h3>
             <div class="chips"><span class="chip" data-i18n="birdAlso1">Forest ibis</span><span class="chip" data-i18n="birdAlso2">Blue vanga</span><span class="chip" data-i18n="birdAlso3">Ground-rollers</span><span class="chip" data-i18n="birdAlso4">Asities</span></div>
@@ -2315,15 +2340,14 @@
         </div>
         <div class="map-split">
           <div class="map-box" id="mapMg">
-            <img src="images/map-madagascar.svg" alt="Map of Madagascar off the south-east coast of Africa, with the road from Antananarivo to Ranomafana" data-i18n-alt="altMapMadagascar" width="900" height="958" loading="lazy">
+            <img src="images/map-madagascar.svg" alt="Map of Madagascar off the south-east coast of Africa, with the road from Antananarivo through Ranomafana to the east coast at Mananjary and Manakara" data-i18n-alt="altMapMadagascar" width="900" height="958" loading="lazy">
             <span class="map-label map-label--caps" style="left: 10%; top: 15%;" data-i18n="mapAfrica">Africa</span>
             <span class="map-label" style="left: 22%; top: 68%;" data-i18n="mapChannel">Mozambique Channel</span>
             <span class="map-label map-label--edge-r" style="left: 96%; top: 90%;" data-i18n="mapOcean">Indian Ocean</span>
-            <span class="map-dot" style="left: 72.01%; top: 67.95%;"></span>
-            <span class="map-label map-label--left" style="left: 72.01%; top: 67.95%;">Fianarantsoa</span>
             <div class="map-pins" id="mapPinsMg"></div>
           </div>
           <div class="stack g-16">
+            <div class="map-places" id="mapPlacesMg"></div>
             <div class="map-panel" id="mapPanelMg" aria-live="polite"></div>
             <p class="map-credit" data-i18n="mapCreditMg">Map: Natural Earth. The dashed line is the road, simplified.</p>
           </div>
@@ -3180,6 +3204,9 @@
         birdRollerText: "One of the shy birds of the forest floor.",
         birdKingTitle: "Madagascar pygmy kingfisher",
         birdKingText: "Seen perched on a twig on the night walk.",
+        birdNestTitle: "Hidden nests",
+        birdNestText: "A small olive bird with a yellow throat, photographed on its nest deep in the leaves. Ask your guide to name it.",
+        altBirdNest: "A small olive bird with a yellow throat sitting on its mossy nest, half-hidden by leaves, Ranomafana National Park",
         birdAlsoTitle: "Also look for",
         birdAlso1: "Forest ibis",
         birdAlso2: "Blue vanga",
@@ -3320,6 +3347,12 @@
         inDevelopment: "In development: visitor access is still being set up.",
         knownFor: "Known for", moreInfo: "More info", walkingCircuits: "Walking circuits",
         circuitsNote: "All circuits are inside the park; the entry fee and a certified guide cover any of them.",
+        priceForLabel: "Show prices for",
+        priceIntl: "International guest",
+        priceMg: "Malagasy citizen",
+        perAdultMg: "per adult, per day · {child} per child",
+        entryFeesHeading: "Entry fees, per person",
+        guideFeesHeading: "Guide fees, per group of 1–4",
         practicalTips: "Practical tips", mapFor: "Map of", openParkPage: "Open the park guide",
         // October 2026: welcome, room rates, park hours, getting here, why your visit matters
         readStory: "Read the story",
@@ -3565,7 +3598,7 @@
         catGarden: "Garden",
         catResearch: "Research & conservation",
         catArtCulture: "Art & culture",
-        catMarket: "Market",
+        catMarket: "Market", catFarm: "Farm visit",
         catPractical: "Practical",
         catFood: "Food",
         catCulture: "Culture",
@@ -3603,13 +3636,16 @@
         bnavWhy: "Why",
         whyMapHeading: "Where in <em>the world</em>",
         whyMapIntro: "Madagascar is the world’s fourth-largest island, off the south-east coast of Africa. Ranomafana is in its south-east, on the road that drops from the highlands to the Indian Ocean.",
-        altMapMadagascar: "Map of Madagascar off the south-east coast of Africa, with the road from Antananarivo to Ranomafana",
+        altMapMadagascar: "Map of Madagascar off the south-east coast of Africa, with the road from Antananarivo through Ranomafana to the east coast at Mananjary and Manakara",
         mapAfrica: "Africa",
         mapChannel: "Mozambique Channel",
         mapOcean: "Indian Ocean",
         mapHint: "Tap a place on the map",
         mapTanaText: "The capital. Ranomafana is 412 km away by road: about 12 hours by car, through Antsirabe, Ambositra and Fianarantsoa.",
         mapRanoText: "Where the highlands drop into rainforest on the way to the coast: 65 km from Fianarantsoa, the nearest city, and 139 km from Mananjary on the Indian Ocean.",
+        mapFianarText: "The nearest city, 65 km up the RN25: about 2 to 2½ hours. Cotisse buses from Antananarivo stop here, and taxi-brousses (7,000 Ar) leave its bus station for Ranomafana at any time of day. A charter flight from Antananarivo to its airport takes about an hour.",
+        mapMananjaryText: "A town on the Indian Ocean, 139 km east of Ranomafana along the RN25, the road that runs on down through the valley to the coast.",
+        mapManakaraText: "A town further south on the Indian Ocean coast. The overnight Soatrans bus from Antananarivo to Manakara (65,000 Ar) passes Ranomafana at around 03:00, and taxi-brousses come up from Manakara too.",
         mapSeeValley: "Map of the valley",
         mapCreditMg: "Map: Natural Earth. The dashed line is the road, simplified.",
         whyValleyHeading: "The valley <em>up close</em>",
@@ -3760,6 +3796,9 @@
         birdRollerText: "L’un des oiseaux discrets du sous-bois.",
         birdKingTitle: "Martin-chasseur malgache",
         birdKingText: "Vu perché sur une brindille pendant la balade de nuit.",
+        birdNestTitle: "Nids cachés",
+        birdNestText: "Un petit oiseau olive à la gorge jaune, photographié sur son nid au fond du feuillage. Demandez son nom à votre guide.",
+        altBirdNest: "Un petit oiseau olive à la gorge jaune posé sur son nid de mousse, à demi caché par les feuilles, parc national de Ranomafana",
         birdAlsoTitle: "À chercher aussi",
         birdAlso1: "Ibis huppé",
         birdAlso2: "Vanga bleu",
@@ -3892,6 +3931,12 @@
         inDevelopment: "En cours d’aménagement : l’accès des visiteurs se met en place.",
         knownFor: "Spécialités", moreInfo: "Plus d’infos", walkingCircuits: "Circuits de randonnée",
         circuitsNote: "Tous les circuits sont dans le parc : le billet d’entrée et un guide agréé valent pour chacun d’eux.",
+        priceForLabel: "Afficher les prix pour",
+        priceIntl: "Visiteur international",
+        priceMg: "Citoyen malgache",
+        perAdultMg: "par adulte et par jour · {child} par enfant",
+        entryFeesHeading: "Droits d’entrée, par personne",
+        guideFeesHeading: "Tarifs des guides, par groupe de 1 à 4",
         practicalTips: "Conseils pratiques", mapFor: "Carte :", openParkPage: "Ouvrir le guide du parc",
         // October 2026: welcome, room rates, park hours, getting here, why your visit matters
         readStory: "Lire le récit",
@@ -4137,7 +4182,7 @@
         catGarden: "Jardin",
         catResearch: "Recherche et conservation",
         catArtCulture: "Art et culture",
-        catMarket: "Marché",
+        catMarket: "Marché", catFarm: "Visite de ferme",
         catPractical: "Pratique",
         catFood: "Cuisine",
         catCulture: "Culture",
@@ -4174,13 +4219,16 @@
         bnavWhy: "Pourquoi",
         whyMapHeading: "Sur la <em>carte du monde</em>",
         whyMapIntro: "Madagascar est la quatrième plus grande île du monde, au large de la côte sud-est de l’Afrique. Ranomafana se trouve dans son sud-est, sur la route qui descend des hautes terres vers l’océan Indien.",
-        altMapMadagascar: "Carte de Madagascar au large de la côte sud-est de l’Afrique, avec la route d’Antananarivo à Ranomafana",
+        altMapMadagascar: "Carte de Madagascar au large de la côte sud-est de l’Afrique, avec la route d’Antananarivo à la côte est, par Ranomafana, jusqu’à Mananjary et Manakara",
         mapAfrica: "Afrique",
         mapChannel: "Canal du Mozambique",
         mapOcean: "Océan Indien",
         mapHint: "Touchez un lieu sur la carte",
         mapTanaText: "La capitale. Ranomafana est à 412 km par la route : environ 12 heures en voiture, par Antsirabe, Ambositra et Fianarantsoa.",
         mapRanoText: "Là où les hautes terres plongent dans la forêt tropicale en route vers la côte : à 65 km de Fianarantsoa, la ville la plus proche, et à 139 km de Mananjary, sur l’océan Indien.",
+        mapFianarText: "La ville la plus proche, à 65 km par la RN25 : environ 2 heures à 2 h 30. Les cars Cotisse d’Antananarivo s’y arrêtent, et des taxis-brousses (7 000 Ar) partent de sa gare routière pour Ranomafana à toute heure de la journée. Un vol charter depuis Antananarivo jusqu’à son aéroport dure environ une heure.",
+        mapMananjaryText: "Une ville sur l’océan Indien, à 139 km à l’est de Ranomafana par la RN25, la route qui descend la vallée jusqu’à la côte.",
+        mapManakaraText: "Une ville plus au sud, sur la côte de l’océan Indien. Le car de nuit Soatrans d’Antananarivo à Manakara (65 000 Ar) passe à Ranomafana vers 03:00, et des taxis-brousses montent aussi depuis Manakara.",
         mapSeeValley: "Carte de la vallée",
         mapCreditMg: "Carte : Natural Earth. La ligne en tirets est la route, simplifiée.",
         whyValleyHeading: "La vallée <em>de près</em>",
@@ -4331,6 +4379,9 @@
         birdRollerText: "Einer der scheuen Vögel des Waldbodens.",
         birdKingTitle: "Madagaskar-Zwergfischer",
         birdKingText: "Auf der Nachtwanderung auf einem Zweig gesehen.",
+        birdNestTitle: "Versteckte Nester",
+        birdNestText: "Ein kleiner olivgrüner Vogel mit gelber Kehle, fotografiert auf seinem Nest tief im Laub. Fragen Sie Ihren Guide nach seinem Namen.",
+        altBirdNest: "Ein kleiner olivgrüner Vogel mit gelber Kehle sitzt, halb von Blättern verdeckt, auf seinem moosigen Nest, Ranomafana-Nationalpark",
         birdAlsoTitle: "Achten Sie auch auf",
         birdAlso1: "Schopfibis",
         birdAlso2: "Blauvanga",
@@ -4463,6 +4514,12 @@
         inDevelopment: "Im Aufbau: Der Besucherzugang wird gerade eingerichtet.",
         knownFor: "Bekannt für", moreInfo: "Mehr Infos", walkingCircuits: "Rundwege",
         circuitsNote: "Alle Rundwege liegen im Park; Eintritt und ein zertifizierter Guide gelten für jeden von ihnen.",
+        priceForLabel: "Preise anzeigen für",
+        priceIntl: "Internationale Gäste",
+        priceMg: "Madagassische Staatsangehörige",
+        perAdultMg: "pro Erwachsenem und Tag · {child} pro Kind",
+        entryFeesHeading: "Eintritt, pro Person",
+        guideFeesHeading: "Guide, pro Gruppe von 1–4",
         practicalTips: "Praktische Tipps", mapFor: "Karte:", openParkPage: "Zum Park-Führer",
         // October 2026: welcome, room rates, park hours, getting here, why your visit matters
         readStory: "Geschichte lesen",
@@ -4708,7 +4765,7 @@
         catGarden: "Garten",
         catResearch: "Forschung und Naturschutz",
         catArtCulture: "Kunst und Kultur",
-        catMarket: "Markt",
+        catMarket: "Markt", catFarm: "Hofbesuch",
         catPractical: "Praktisches",
         catFood: "Essen",
         catCulture: "Kultur",
@@ -4745,13 +4802,16 @@
         bnavWhy: "Warum",
         whyMapHeading: "Wo auf <em>der Welt</em>",
         whyMapIntro: "Madagaskar ist die viertgrößte Insel der Welt und liegt vor der Südostküste Afrikas. Ranomafana liegt im Südosten der Insel, an der Straße, die vom Hochland zum Indischen Ozean hinabführt.",
-        altMapMadagascar: "Karte von Madagaskar vor der Südostküste Afrikas, mit der Straße von Antananarivo nach Ranomafana",
+        altMapMadagascar: "Karte von Madagaskar vor der Südostküste Afrikas, mit der Straße von Antananarivo über Ranomafana an die Ostküste bei Mananjary und Manakara",
         mapAfrica: "Afrika",
         mapChannel: "Straße von Mosambik",
         mapOcean: "Indischer Ozean",
         mapHint: "Tippen Sie auf einen Ort auf der Karte",
         mapTanaText: "Die Hauptstadt. Ranomafana liegt 412 km entfernt: etwa 12 Stunden mit dem Auto, über Antsirabe, Ambositra und Fianarantsoa.",
         mapRanoText: "Dort, wo das Hochland auf dem Weg zur Küste in den Regenwald abfällt: 65 km von Fianarantsoa, der nächsten Stadt, und 139 km von Mananjary am Indischen Ozean.",
+        mapFianarText: "Die nächste Stadt, 65 km die RN25 hinauf: etwa 2 bis 2½ Stunden. Die Cotisse-Busse aus Antananarivo halten hier, und Taxi-Brousses (7.000 Ar) fahren zu jeder Tageszeit vom Busbahnhof nach Ranomafana. Ein Charterflug von Antananarivo zum Flughafen dauert etwa eine Stunde.",
+        mapMananjaryText: "Eine Stadt am Indischen Ozean, 139 km östlich von Ranomafana an der RN25, der Straße, die durch das Tal hinunter zur Küste führt.",
+        mapManakaraText: "Eine Stadt weiter südlich an der Küste des Indischen Ozeans. Der Nachtbus von Soatrans von Antananarivo nach Manakara (65.000 Ar) kommt gegen 03:00 durch Ranomafana, und auch von Manakara kommen Taxi-Brousses herauf.",
         mapSeeValley: "Karte des Tals",
         mapCreditMg: "Karte: Natural Earth. Die gestrichelte Linie ist die Straße, vereinfacht.",
         whyValleyHeading: "Das Tal <em>aus der Nähe</em>",
@@ -4902,6 +4962,9 @@
         birdRollerText: "Iray amin'ireo vorona saro-kenatra miaina eny amin'ny tany ao an'ala.",
         birdKingTitle: "Vintsy kely",
         birdKingText: "Hita nipetraka teo amin'ny rantsankazo kely nandritra ny fitsangatsanganana amin'ny alina.",
+        birdNestTitle: "Akanin-borona miafina",
+        birdNestText: "Vorona kely maitso sy mavo tenda, nalaina sary teo amin'ny akaniny tao anatin'ny ravina. Anontanio ny mpitarika anao ny anarany.",
+        altBirdNest: "Vorona kely maitso sy mavo tenda mipetraka eo amin'ny akaniny feno volon-kazo, takonan'ny ravina ny ampahany, valan-javaboaharin'i Ranomafana",
         birdAlsoTitle: "Jereo koa",
         birdAlso1: "Akohonala",
         birdAlso2: "Vanga manga",
@@ -5034,6 +5097,12 @@
         inDevelopment: "Eo am-panomanana: mbola apetraka ny fidiran'ny mpitsidika.",
         knownFor: "Malaza amin'ny", moreInfo: "Fanazavana fanampiny", walkingCircuits: "Lalana an-tongotra",
         circuitsNote: "Ao anatin'ny valan-javaboahary daholo ireo lalana: ny saran'ny fidirana sy mpitari-dalana iray no mandrakotra azy rehetra.",
+        priceForLabel: "Asehoy ny vidiny ho an'ny",
+        priceIntl: "Vahiny avy any ivelany",
+        priceMg: "Olom-pirenena malagasy",
+        perAdultMg: "isan'olon-dehibe isan'andro · {child} isan-jaza",
+        entryFeesHeading: "Saran'ny fidirana, isan'olona",
+        guideFeesHeading: "Saran'ny mpitari-dalana, isaky ny vondrona olona 1–4",
         practicalTips: "Torohevitra azo ampiharina", mapFor: "Sarintany:", openParkPage: "Sokafy ny torolàlana momba ny valan-javaboahary",
         // October 2026: welcome, room rates, park hours, getting here, why your visit matters
         readStory: "Vakio ny tantara",
@@ -5280,7 +5349,7 @@
         catGarden: "Zaridaina",
         catResearch: "Fikarohana sy fiarovana",
         catArtCulture: "Zavakanto sy kolontsaina",
-        catMarket: "Tsena",
+        catMarket: "Tsena", catFarm: "Fitsidihana toeram-pambolena",
         catPractical: "Torohevitra",
         catFood: "Sakafo",
         catCulture: "Kolontsaina",
@@ -5317,13 +5386,16 @@
         bnavWhy: "Nahoana",
         whyMapHeading: "Aiza eo amin'ny <em>tontolo</em>",
         whyMapIntro: "Madagasikara no nosy fahefatra lehibe indrindra eran-tany, eo anilan'ny morontsiraka atsimo atsinanan'i Afrika. Any atsimo atsinanan'ny nosy i Ranomafana, eo amin'ny lalana midina avy any amin'ny tany avo mankany amin'ny Ranomasimbe Indianina.",
-        altMapMadagascar: "Sarintanin'i Madagasikara eo anilan'ny morontsiraka atsimo atsinanan'i Afrika, miaraka amin'ny lalana avy any Antananarivo mankany Ranomafana",
+        altMapMadagascar: "Sarintanin'i Madagasikara eo anilan'ny morontsiraka atsimo atsinanan'i Afrika, miaraka amin'ny lalana avy any Antananarivo mandalo an'i Ranomafana mankany amin'ny morontsiraka atsinanana any Mananjary sy Manakara",
         mapAfrica: "Afrika",
         mapChannel: "Lakandranon'i Mozambika",
         mapOcean: "Ranomasimbe Indianina",
         mapHint: "Tsindrio ny toerana iray eo amin'ny sarintany",
         mapTanaText: "Ny renivohitra. 412 km amin'ny lalana i Ranomafana: eo amin'ny 12 ora amin'ny fiara, mandalo an'i Antsirabe, Ambositra ary Fianarantsoa.",
         mapRanoText: "Eo amin'ny toerana idinan'ny tany avo ho ala mando eny an-dalana mankany amoron-dranomasina: 65 km miala an'i Fianarantsoa, tanàna lehibe akaiky indrindra, ary 139 km miala an'i Mananjary eo amoron'ny Ranomasimbe Indianina.",
+        mapFianarText: "Tanàna lehibe akaiky indrindra, 65 km miakatra amin'ny RN25: eo amin'ny 2 ora ka hatramin'ny 2 ora sy sasany. Mijanona eto ny fiaran'ny Cotisse avy any Antananarivo, ary miainga avy amin'ny fiantsonany mankany Ranomafana isaky ny ora mandritra ny andro ny taxi-brousse (7 000 Ar). Eo amin'ny adiny iray ny sidina charter avy any Antananarivo mankany amin'ny seranam-piaramanidiny.",
+        mapMananjaryText: "Tanàna eo amoron'ny Ranomasimbe Indianina, 139 km atsinanan'i Ranomafana amin'ny RN25, ilay lalana midina mamaky ny lohasaha hatrany amoron-dranomasina.",
+        mapManakaraText: "Tanàna any atsimo kokoa eo amoron'ny Ranomasimbe Indianina. Mandalo an'i Ranomafana amin'ny 03:00 eo ho eo ny fiaran'ny Soatrans mandeha alina avy any Antananarivo mankany Manakara (65 000 Ar), ary misy taxi-brousse miakatra avy any Manakara koa.",
         mapSeeValley: "Sarintanin'ny lohasaha",
         mapCreditMg: "Sarintany: Natural Earth. Ny tsipika tapatapaka no lalana, natao tsotra.",
         whyValleyHeading: "Ny lohasaha <em>akaiky</em>",
@@ -5686,7 +5758,8 @@
       'Waterfall': 'water',
       'Water activity': 'water',
       'Art & culture': 'village',
-      'Market': 'village'
+      'Market': 'village',
+      'Farm visit': 'village'
     };
     const doGroup = (item) => DO_GROUPS[item.category] || 'other';
 
@@ -5705,6 +5778,7 @@
       'Water activity': 'catWaterActivity',
       'Art & culture': 'catArtCulture',
       'Market': 'catMarket',
+      'Farm visit': 'catFarm',
       'Practical': 'catPractical',
       'Food': 'catFood',
       'Culture': 'catCulture',
@@ -5881,6 +5955,37 @@
         </div>` : '');
     // A listing's mapPin ("latitude,longitude") wins over a search for its name.
     const mapHTML = (name, pin) => `<iframe class="map-frame" title="${esc(t('mapFor'))} ${esc(name)}" src="https://maps.google.com/maps?q=${encodeURIComponent(pin || name + ' Ranomafana Madagascar')}&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" allowfullscreen></iframe>`;
+    /* Prices for an international guest or a Malagasy citizen (Kyle, 27 Oct 2026: "make
+       the pricing clickable"). The switch sits on the park's fee box and on any activity
+       with its own fee lists; the choice is remembered in this browser. */
+    const PRICE_FOR_KEY = 'ranomafana-price-for';
+    let priceFor = 'intl';
+    try { if (localStorage.getItem(PRICE_FOR_KEY) === 'mg') priceFor = 'mg'; } catch (e) { /* private window */ }
+    const priceToggle = () => `
+        <div class="price-toggle" role="group" aria-label="${esc(t('priceForLabel'))}">
+          ${[['intl', 'priceIntl'], ['mg', 'priceMg']].map(([v, k]) => `<button type="button" class="kind-btn" aria-pressed="${priceFor === v}" onclick="setPriceFor('${v}')">${esc(t(k))}</button>`).join('')}
+        </div>`;
+    function setPriceFor(v) {
+      priceFor = v;
+      try { localStorage.setItem(PRICE_FOR_KEY, v); } catch (e) { /* not kept */ }
+      renderPark();
+      const box = document.getElementById('feeLists');
+      if (box) box.innerHTML = feeLists(bySlug(doData, box.dataset.slug));
+    }
+    /* An activity's own fee lists (entryFees: who / price, guideFees: walk / price), as on
+       VOI Ambohimagneva's fee sign. Each row's `for` (intl, mg or all) says whose price it
+       is. The park's guide fees have their own place on its page. */
+    const feeTable = (heading, item, field, key) => {
+      const tags = english(item, field) || [];
+      const rows = (item[field] || []).filter((r, i) => ['all', priceFor].includes((tags[i] || r).for || 'all'));
+      return rows.length ? `
+        <div class="m-section">
+          <h3 class="m-h">${esc(heading)}</h3>
+          <ul class="info-list">${rows.map((r) => `<li>${icon('tag')}<span>${esc(r[key])}: <strong>${esc(localNumbers(r.price))}</strong></span></li>`).join('')}</ul>
+        </div>` : '';
+    };
+    const hasFeeLists = (item) => (item.entryFees && item.entryFees.length) || (item.slug !== PARK.slug && item.guideFees && item.guideFees.length);
+    const feeLists = (item) => `${priceToggle()}${feeTable(t('entryFeesHeading'), item, 'entryFees', 'who')}${item.slug !== PARK.slug ? feeTable(t('guideFeesHeading'), item, 'guideFees', 'walk') : ''}`;
     const ownPhotos = (item) => (item.gallery && item.gallery.length ? item.gallery : (!item.photoNeeded && item.img ? [{ src: item.img, alt: item.name }] : []));
 
     function openStayModal(name) {
@@ -5981,6 +6086,7 @@
             ${c.note ? `<li>${icon('info')}<span>${esc(c.note)}</span></li>` : ''}
           </ul>
         </div>
+        ${hasFeeLists(item) ? `<div class="m-section" id="feeLists" data-slug="${esc(item.slug)}">${feeLists(item)}</div>` : ''}
         ${item.circuits && item.circuits.length ? `
         <div class="m-section">
           <h3 class="m-h">${esc(t('walkingCircuits'))}</h3>
@@ -6417,15 +6523,21 @@
         ['night-walk', 'station-thermale', 'hotel-thermal-pools', 'centre-valbio-tour'].map((slug) => miniCard(bySlug(doData, slug))).join('');
 
       const guideFees = (PARK.guideFees || []).map((g) => `<span>${esc(localNumbers(g.price))} <small>· ${esc(g.walk)}</small></span>`).join('');
+      // Malagasy citizens pay their own entry; MNP's page puts the communal tax on foreign visitors.
+      const mgPrices = priceFor === 'mg' && PARK.malagasyFee;
       document.getElementById('parkAside').innerHTML = `
         <div class="visit-head">
+          ${PARK.malagasyFee ? priceToggle() : ''}
           <span class="eyebrow">${esc(t('entry'))}</span>
+          ${mgPrices ? `
+          <span class="visit-fee">${esc(localNumbers(PARK.malagasyFee))}</span>
+          <span class="small-muted">${esc(t('perAdultMg').replace('{child}', localNumbers(PARK.malagasyChildFee || '')))}</span>` : `
           <span class="visit-fee">${esc(localNumbers(PARK.entryFee || ''))}</span>
-          <span class="small-muted">${esc(t('perAdult'))}${roughForeign(arAmount(PARK.entryFee)) ? ` · ${esc(roughForeign(arAmount(PARK.entryFee)))}` : ''}</span>
+          <span class="small-muted">${esc(t('perAdult'))}${roughForeign(arAmount(PARK.entryFee)) ? ` · ${esc(roughForeign(arAmount(PARK.entryFee)))}` : ''}</span>`}
         </div>
         <dl class="facts">
           ${PARK.hours ? `<div><dt>${esc(t('parkHoursLabel'))}</dt><dd>${esc(PARK.hours)}</dd></div>` : ''}
-          <div><dt>${esc(t('communityFee'))}</dt><dd><span>${esc(localNumbers(PARK.communityFee || ''))} <small>· ${esc(t('separateBooth'))}</small></span></dd></div>
+          ${mgPrices ? '' : `<div><dt>${esc(t('communityFee'))}</dt><dd><span>${esc(localNumbers(PARK.communityFee || ''))} <small>· ${esc(t('separateBooth'))}</small></span></dd></div>`}
           ${guideFees ? `<div class="col"><dt>${esc(t('guidePerGroup'))}</dt><dd>${guideFees}</dd></div>` : ''}
           ${PARK.specialistFee ? `<div><dt>${esc(t('specialistGuide'))}</dt><dd>${esc(localNumbers(PARK.specialistFee))}</dd></div>` : ''}
           ${NIGHT_WALK.price ? `<div><dt>${esc(t('nightWalk'))}</dt><dd>${esc(NIGHT_WALK.price)}</dd></div>` : ''}
@@ -6620,9 +6732,12 @@
        coordinates (OpenStreetMap, checked 16 Oct 2026). Places only 250 m apart share a
        pin, so they never overlap on a phone. */
     const MAPS = {
-      mg: { pins: 'mapPinsMg', panel: 'mapPanelMg', selected: 'rano', places: [
+      mg: { pins: 'mapPinsMg', panel: 'mapPanelMg', chips: 'mapPlacesMg', selected: 'rano', places: [
         { id: 'tana', x: 75.0, y: 50.74, label: 'left', name: 'Antananarivo', text: 'mapTanaText', links: [['#getting-here', 'tabGettingHere']] },
-        { id: 'rano', x: 74.52, y: 66.62, label: 'above', name: 'Ranomafana', text: 'mapRanoText', links: [['valley', 'mapSeeValley'], ['#getting-here', 'tabGettingHere']] }
+        { id: 'fianar', x: 72.01, y: 67.95, label: 'left', small: true, name: 'Fianarantsoa', text: 'mapFianarText', links: [['#getting-here', 'tabGettingHere']] },
+        { id: 'rano', x: 74.52, y: 66.62, label: 'above', name: 'Ranomafana', text: 'mapRanoText', links: [['valley', 'mapSeeValley'], ['#getting-here', 'tabGettingHere']] },
+        { id: 'mananjary', x: 80.59, y: 66.48, label: 'right', small: true, name: 'Mananjary', text: 'mapMananjaryText', links: [['#getting-here', 'tabGettingHere']] },
+        { id: 'manakara', x: 78.31, y: 72.6, label: 'below', small: true, name: 'Manakara', text: 'mapManakaraText', links: [['#getting-here', 'tabGettingHere']] }
       ] },
       valley: { pins: 'mapPinsValley', panel: 'mapPanelValley', selected: 'village', places: [
         { id: 'park', x: 27.15, y: 43.64, label: 'below', pinKey: 'mapParkPin', nameKey: 'mapParkName', text: 'mapParkText', links: [['#park', 'linkPark'], ['do:centre-valbio-tour', 'mapCvbLink']] },
@@ -6639,9 +6754,11 @@
       const pins = document.getElementById(m.pins);
       if (!pins) return;
       pins.innerHTML = m.places.map((p) => `
-        <button type="button" class="map-pin map-pin--${p.label}" style="left: ${p.x}%; top: ${p.y}%;" aria-pressed="${p.id === m.selected}" onclick="selectMapPlace('${id}', '${p.id}')">
+        <button type="button" class="map-pin map-pin--${p.label}${p.small ? ' map-pin--small' : ''}" style="left: ${p.x}%; top: ${p.y}%;" aria-pressed="${p.id === m.selected}" onclick="selectMapPlace('${id}', '${p.id}')">
           <span class="map-pin-dot"></span><span class="map-pin-label">${esc(pinLabel(p))}</span>
         </button>`).join('');
+      const chips = m.chips && document.getElementById(m.chips);
+      if (chips) chips.innerHTML = m.places.map((p) => `<button type="button" class="map-place" aria-pressed="${p.id === m.selected}" onclick="selectMapPlace('${id}', '${p.id}')">${esc(pinLabel(p))}</button>`).join('');
       const p = m.places.find((place) => place.id === m.selected);
       document.getElementById(m.panel).innerHTML = `
         <span class="eyebrow">${esc(t('mapHint'))}</span>

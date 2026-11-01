@@ -143,9 +143,16 @@ CITIES = {
     'fianar': (47.0851, -21.4564),
     'rano': (47.4547, -21.2595),
     'mananjary': (48.3463, -21.2385),
+    'manakara': (48.0114, -22.1450),     # Nominatim, 26 Oct 2026
 }
+IRONDRO = (47.9832, -21.4027)            # where the RN12 leaves the RN25 for Manakara (Nominatim)
 route = [proj_mg(*CITIES[c]) for c in ('tana', 'fianar', 'rano', 'mananjary')]
 svg.append('<path fill="none" stroke="#E5B53D" stroke-width="2.5" stroke-dasharray="7 6" stroke-linecap="round" d="%s"/>' % line_d(route))
+# The spur south to Manakara, starting on the simplified RN25 line above Irondro.
+(rx, ry), (mx, my) = proj_mg(*CITIES['rano']), proj_mg(*CITIES['mananjary'])
+ix = proj_mg(*IRONDRO)[0]
+spur = [(ix, ry + (my - ry) * (ix - rx) / (mx - rx)), proj_mg(*CITIES['manakara'])]
+svg.append('<path fill="none" stroke="#E5B53D" stroke-width="2.5" stroke-dasharray="7 6" stroke-linecap="round" d="%s"/>' % line_d(spur))
 svg.append('</svg>')
 io.open(OUT + '/map-madagascar.svg', 'w', encoding='utf-8', newline='\n').write('\n'.join(svg) + '\n')
 markers = {'madagascar': {k: pct(*proj_mg(*v), W, H) for k, v in CITIES.items()}, 'madagascarSize': [W, H]}

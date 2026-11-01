@@ -46,12 +46,10 @@ const LISTING_TRANSLATIONS = {
           "Tables on the terrace outside the conference room at dusk, Centre ValBio",
           "The Centre ValBio buildings lit up at nightfall, with the forest behind",
           "Visitors at the Centre ValBio entrance",
-          "Centre ValBio researcher and guide",
           "Community event at Centre ValBio",
           "Centre ValBio team",
           "Centre ValBio staff in green team shirts beside a Centre ValBio sign",
-          "World Lemur Day with Centre ValBio: staff and guests with a ruffed lemur mascot",
-          "Satanic leaf-tailed gecko near Centre ValBio"
+          "World Lemur Day with Centre ValBio: staff and guests with a ruffed lemur mascot"
         ],
         "fr": [
           "Centre ValBio vu du ciel",
@@ -59,12 +57,10 @@ const LISTING_TRANSLATIONS = {
           "Des tables sur la terrasse devant la salle de conférence, au crépuscule, Centre ValBio",
           "Les bâtiments du Centre ValBio éclairés à la tombée de la nuit, la forêt derrière",
           "Des visiteurs à l’entrée du Centre ValBio",
-          "Un membre de l’équipe de recherche et un guide du Centre ValBio",
           "Un événement communautaire au Centre ValBio",
           "L’équipe du Centre ValBio",
           "Le personnel du Centre ValBio en polos verts, à côté d’un panneau du Centre ValBio",
-          "La Journée mondiale des lémuriens avec le Centre ValBio : personnel et invités avec une mascotte de vari",
-          "Un uroplate fantastique près du Centre ValBio"
+          "La Journée mondiale des lémuriens avec le Centre ValBio : personnel et invités avec une mascotte de vari"
         ],
         "de": [
           "Centre ValBio aus der Luft",
@@ -72,12 +68,10 @@ const LISTING_TRANSLATIONS = {
           "Tische auf der Terrasse vor dem Konferenzraum in der Abenddämmerung, Centre ValBio",
           "Die Gebäude des Centre ValBio, beleuchtet bei Einbruch der Nacht, dahinter der Wald",
           "Besucher am Eingang des Centre ValBio",
-          "Ein Mitglied des Forschungsteams und ein Guide des Centre ValBio",
           "Gemeindeveranstaltung im Centre ValBio",
           "Das Team des Centre ValBio",
           "Mitarbeitende des Centre ValBio in grünen Teamshirts neben einem Centre-ValBio-Schild",
-          "Welt-Lemuren-Tag mit dem Centre ValBio: Mitarbeitende und Gäste mit einem Vari-Maskottchen",
-          "Satanischer Plattschwanzgecko nahe dem Centre ValBio"
+          "Welt-Lemuren-Tag mit dem Centre ValBio: Mitarbeitende und Gäste mit einem Vari-Maskottchen"
         ],
         "mg": [
           "Centre ValBio jerena avy eny ambony",
@@ -85,12 +79,10 @@ const LISTING_TRANSLATIONS = {
           "Latabatra eo amin'ny lavarangana eo anoloan'ny efitrano fivoriana, amin'ny takariva, Centre ValBio",
           "Ireo tranon'ny Centre ValBio mirehitra jiro rehefa alina, misy ala ao aoriany",
           "Mpitsidika eo amin'ny fidirana ao amin'ny Centre ValBio",
-          "Mpikaroka sy mpitari-dalana ao amin'ny Centre ValBio",
           "Hetsika iarahan'ny fiaraha-monina ao amin'ny Centre ValBio",
           "Ny ekipan'ny Centre ValBio",
           "Mpiasan'ny Centre ValBio manao akanjo maitso, eo akaikin'ny takelaka Centre ValBio",
-          "Andro iraisam-pirenena ho an'ny gidro niaraka tamin'ny Centre ValBio: mpiasa sy vahiny miaraka amin'ny saribakoly varikandana",
-          "Androngo rambo ravina (Uroplatus phantasticus) akaikin'ny Centre ValBio"
+          "Andro iraisam-pirenena ho an'ny gidro niaraka tamin'ny Centre ValBio: mpiasa sy vahiny miaraka amin'ny saribakoly varikandana"
         ]
       }
     },
@@ -1327,16 +1319,188 @@ const LISTING_TRANSLATIONS = {
     },
     "ny-tanana-hotel": {
       "desc": {
-        "en": "Small hotel and restaurant at Ankevoevo offering authentic Malagasy hospitality, budget rooms and simple home-style meals.",
-        "fr": "Petit hôtel-restaurant à Ankevoevo offrant une hospitalité malgache authentique, des chambres à petit prix et une cuisine simple et familiale.",
-        "de": "Kleines Hotel mit Restaurant in Ankevoevo, mit echter madagassischer Gastfreundschaft, günstigen Zimmern und einfacher Hausmannskost.",
-        "mg": "Hotely sy trano fisakafoana kely ao Ankevoevo, manolotra fandraisana malagasy tena izy, efitrano mora vidy ary sakafo tsotra sahala amin'ny an-trano."
+        "en": "A hotel and restaurant at Ankevoevo, set around a gravel courtyard: rooms in a two-storey main building with balconies and in single-storey wings along the garden, a swimming pool on a stone terrace, a dining room hung with paintings of Madagascar, a bar with its own infused rum, and a lounge of wicker armchairs. The menu runs from Malagasy dishes such as romazava and tilapia to house specials, pizzas and sandwiches.",
+        "fr": "Un hôtel-restaurant à Ankevoevo, disposé autour d’une cour de gravier : des chambres dans un bâtiment principal à étage avec balcons et dans des ailes de plain-pied le long du jardin, une piscine sur une terrasse de pierre, une salle à manger ornée de peintures de Madagascar, un bar qui fait son propre rhum arrangé, et un salon de fauteuils en osier. La carte va des plats malgaches comme le romazava et le tilapia aux spécialités de la maison, pizzas et sandwichs.",
+        "de": "Ein Hotel mit Restaurant in Ankevoevo rund um einen Kieshof: Zimmer in einem zweistöckigen Haupthaus mit Balkonen und in ebenerdigen Flügeln am Garten, ein Pool auf einer Steinterrasse, ein Speisesaal mit Gemälden von Madagaskar, eine Bar mit eigenem aromatisiertem Rum und eine Lounge mit Korbsesseln. Die Karte reicht von madagassischen Gerichten wie Romazava und Tilapia bis zu Spezialitäten des Hauses, Pizzen und Sandwiches.",
+        "mg": "Hotely sy trano fisakafoana ao Ankevoevo, manodidina tokotany feno vatokely: efitrano ao amin'ny trano lehibe misy rihana sy lavarangana, ary ao amin'ireo trano tsy misy rihana manaraka ny zaridaina, dobo filomanosana eo amin'ny lampivato, efitra fisakafoanana voaravaka sary hosodoko momba an'i Madagasikara, bar manana toaka voatsabo vitany, ary efitra fialan-tsasatra misy seza harefo. Ny sakafo dia manomboka amin'ny sakafo malagasy toy ny romazava sy ny tilapia ka hatramin'ny sakafo manokan'ny trano, pizza ary sandwich."
       },
       "price": {
-        "en": "Budget — contact for rates",
-        "fr": "Petit budget — nous contacter pour les tarifs",
-        "de": "Günstig – Preise auf Anfrage",
-        "mg": "Mora vidy — anontanio ny vidiny"
+        "en": "135,000–200,000 Ar / night",
+        "fr": "135 000–200 000 Ar / nuit",
+        "de": "135.000–200.000 Ar / Nacht",
+        "mg": "135 000–200 000 Ar / alina"
+      },
+      "rooms": {
+        "en": [
+          {
+            "type": "Standard double",
+            "price": "135,000 Ar"
+          },
+          {
+            "type": "Superior double",
+            "price": "160,000 Ar"
+          },
+          {
+            "type": "Superior twin",
+            "price": "170,000 Ar"
+          },
+          {
+            "type": "Triple",
+            "price": "180,000 Ar"
+          },
+          {
+            "type": "Family",
+            "price": "200,000 Ar"
+          },
+          {
+            "type": "Extra bed",
+            "price": "20,000 Ar"
+          }
+        ],
+        "fr": [
+          {
+            "type": "Double standard",
+            "price": "135 000 Ar"
+          },
+          {
+            "type": "Double supérieure",
+            "price": "160 000 Ar"
+          },
+          {
+            "type": "Lits jumeaux supérieure",
+            "price": "170 000 Ar"
+          },
+          {
+            "type": "Triple",
+            "price": "180 000 Ar"
+          },
+          {
+            "type": "Familiale",
+            "price": "200 000 Ar"
+          },
+          {
+            "type": "Lit supplémentaire",
+            "price": "20 000 Ar"
+          }
+        ],
+        "de": [
+          {
+            "type": "Doppelzimmer Standard",
+            "price": "135.000 Ar"
+          },
+          {
+            "type": "Doppelzimmer Superior",
+            "price": "160.000 Ar"
+          },
+          {
+            "type": "Zweibettzimmer Superior",
+            "price": "170.000 Ar"
+          },
+          {
+            "type": "Dreibettzimmer",
+            "price": "180.000 Ar"
+          },
+          {
+            "type": "Familienzimmer",
+            "price": "200.000 Ar"
+          },
+          {
+            "type": "Zustellbett",
+            "price": "20.000 Ar"
+          }
+        ],
+        "mg": [
+          {
+            "type": "Efitrano roa olona tsotra",
+            "price": "135 000 Ar"
+          },
+          {
+            "type": "Efitrano roa olona ambony kalitao",
+            "price": "160 000 Ar"
+          },
+          {
+            "type": "Fandriana kely roa, ambony kalitao",
+            "price": "170 000 Ar"
+          },
+          {
+            "type": "Telo olona",
+            "price": "180 000 Ar"
+          },
+          {
+            "type": "Fianakaviana",
+            "price": "200 000 Ar"
+          },
+          {
+            "type": "Fandriana fanampiny",
+            "price": "20 000 Ar"
+          }
+        ]
+      },
+      "ratesNote": {
+        "en": "Per room per night. Ask whether breakfast is included.",
+        "fr": "Par chambre et par nuit. Demandez si le petit-déjeuner est compris.",
+        "de": "Pro Zimmer und Nacht. Fragen Sie, ob das Frühstück inbegriffen ist.",
+        "mg": "Isaky ny efitrano isan'alina. Anontanio raha tafiditra ny sakafo maraina."
+      },
+      "meals": {
+        "en": [
+          "Breakfast: 12,000–26,000 Ar (Malagasy, simple, continental, American or full)",
+          "Malagasy dishes: 19,000–32,000 Ar, with rice and rougail or achard",
+          "Other mains (chicken, zebu, pork, shrimp, pasta): 19,000–38,000 Ar",
+          "Pizzas, sandwiches and tacos: 17,000–26,000 Ar",
+          "Desserts: 10,000–15,000 Ar",
+          "Coffee from 4,000 Ar, tea 5,000 Ar, beer 5,000–9,000 Ar"
+        ],
+        "fr": [
+          "Petit-déjeuner : 12 000–26 000 Ar (malgache, simple, continental, américain ou complet)",
+          "Plats malgaches : 19 000–32 000 Ar, avec riz et rougail ou achards",
+          "Autres plats (poulet, zébu, porc, crevettes, pâtes) : 19 000–38 000 Ar",
+          "Pizzas, sandwichs et tacos : 17 000–26 000 Ar",
+          "Desserts : 10 000–15 000 Ar",
+          "Café à partir de 4 000 Ar, thé 5 000 Ar, bière 5 000–9 000 Ar"
+        ],
+        "de": [
+          "Frühstück: 12.000–26.000 Ar (madagassisch, einfach, kontinental, amerikanisch oder komplett)",
+          "Madagassische Gerichte: 19.000–32.000 Ar, mit Reis und Rougail oder Achards",
+          "Weitere Hauptgerichte (Huhn, Zebu, Schwein, Garnelen, Pasta): 19.000–38.000 Ar",
+          "Pizzen, Sandwiches und Tacos: 17.000–26.000 Ar",
+          "Desserts: 10.000–15.000 Ar",
+          "Kaffee ab 4.000 Ar, Tee 5.000 Ar, Bier 5.000–9.000 Ar"
+        ],
+        "mg": [
+          "Sakafo maraina: 12 000–26 000 Ar (malagasy, tsotra, kaontinantaly, amerikanina na feno)",
+          "Sakafo malagasy: 19 000–32 000 Ar, miaraka amin'ny vary sy rougail na lasary",
+          "Laoka hafa (akoho, hen'omby, henan-kisoa, makamba, paty): 19 000–38 000 Ar",
+          "Pizza, sandwich ary tacos: 17 000–26 000 Ar",
+          "Tsindrin-tsakafo: 10 000–15 000 Ar",
+          "Kafe manomboka amin'ny 4 000 Ar, dite 5 000 Ar, labiera 5 000–9 000 Ar"
+        ]
+      },
+      "features": {
+        "en": [
+          "Swimming pool",
+          "Bar with its own infused rum",
+          "Lounge with wicker armchairs and books",
+          "Parking in the courtyard"
+        ],
+        "fr": [
+          "Piscine",
+          "Bar avec son propre rhum arrangé",
+          "Salon avec fauteuils en osier et livres",
+          "Parking dans la cour"
+        ],
+        "de": [
+          "Pool",
+          "Bar mit eigenem aromatisiertem Rum",
+          "Lounge mit Korbsesseln und Büchern",
+          "Parkplätze im Hof"
+        ],
+        "mg": [
+          "Dobo filomanosana",
+          "Bar manana toaka voatsabo vitany",
+          "Efitra fialan-tsasatra misy seza harefo sy boky",
+          "Fiantsonana ao an-tokotany"
+        ]
       },
       "contact.note": {
         "en": "Ankevoevo, Ranomafana.",
@@ -1346,27 +1510,51 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
-          "Ny Tanàna Hotel exterior",
-          "Room at Ny Tanàna Hotel",
-          "Restaurant or common area at Ny Tanàna Hotel",
+          "The gate with its Ny Tanàna sign, and the hotel across the courtyard, Ny Tanàna Hotel",
+          "The swimming pool on a stone terrace, with parasols and hills behind, Ny Tanàna Hotel",
+          "The main building, with balconies, above a lawn and a stone staircase, Ny Tanàna Hotel",
+          "Single-storey garden rooms along a paved path between hedges, Ny Tanàna Hotel",
+          "A room with twin beds, a desk and doors open onto a balcony, Ny Tanàna Hotel",
+          "A bathroom with an open shower, Ny Tanàna Hotel",
+          "The dining room, with paintings of Madagascar along the walls, Ny Tanàna Hotel",
+          "The bar, with its stools and jars of infused rum, Ny Tanàna Hotel",
+          "A lounge of wicker armchairs, with a box of books, Ny Tanàna Hotel",
           "View from Ny Tanàna Hotel"
         ],
         "fr": [
-          "Ny Tanàna Hotel : vue extérieure",
-          "Ny Tanàna Hotel : une chambre",
-          "Ny Tanàna Hotel : restaurant ou espace commun",
+          "Le portail et son enseigne Ny Tanàna, et l’hôtel de l’autre côté de la cour, Ny Tanàna Hotel",
+          "La piscine sur une terrasse de pierre, avec parasols et collines au fond, Ny Tanàna Hotel",
+          "Le bâtiment principal et ses balcons, au-dessus d’une pelouse et d’un escalier de pierre, Ny Tanàna Hotel",
+          "Des chambres de plain-pied côté jardin, le long d’une allée dallée entre des haies, Ny Tanàna Hotel",
+          "Une chambre avec deux lits, un bureau et des portes ouvertes sur un balcon, Ny Tanàna Hotel",
+          "Une salle de bain avec une douche ouverte, Ny Tanàna Hotel",
+          "La salle à manger, avec des peintures de Madagascar le long des murs, Ny Tanàna Hotel",
+          "Le bar, avec ses tabourets et ses bocaux de rhum arrangé, Ny Tanàna Hotel",
+          "Un salon de fauteuils en osier, avec une caisse de livres, Ny Tanàna Hotel",
           "Ny Tanàna Hotel : la vue"
         ],
         "de": [
-          "Ny Tanàna Hotel: Außenansicht",
-          "Ny Tanàna Hotel: ein Zimmer",
-          "Ny Tanàna Hotel: Restaurant oder Gemeinschaftsbereich",
+          "Das Tor mit dem Ny-Tanàna-Schild und das Hotel jenseits des Hofs, Ny Tanàna Hotel",
+          "Der Pool auf einer Steinterrasse, mit Sonnenschirmen und Hügeln dahinter, Ny Tanàna Hotel",
+          "Das Haupthaus mit Balkonen über einem Rasen und einer Steintreppe, Ny Tanàna Hotel",
+          "Ebenerdige Gartenzimmer an einem gepflasterten Weg zwischen Hecken, Ny Tanàna Hotel",
+          "Ein Zimmer mit zwei Betten, einem Schreibtisch und offenen Türen zum Balkon, Ny Tanàna Hotel",
+          "Ein Bad mit offener Dusche, Ny Tanàna Hotel",
+          "Der Speisesaal mit Gemälden von Madagaskar an den Wänden, Ny Tanàna Hotel",
+          "Die Bar mit Hockern und Gläsern mit aromatisiertem Rum, Ny Tanàna Hotel",
+          "Eine Lounge mit Korbsesseln und einer Kiste Bücher, Ny Tanàna Hotel",
           "Ny Tanàna Hotel: die Aussicht"
         ],
         "mg": [
-          "Ny Tanàna Hotel: ny ivelany",
-          "Ny Tanàna Hotel: efitrano iray",
-          "Ny Tanàna Hotel: trano fisakafoana na toerana iombonana",
+          "Ny vavahady misy ny takelaka Ny Tanàna, sy ny hotely any ampitan'ny tokotany, Ny Tanàna Hotel",
+          "Ny dobo filomanosana eo amin'ny lampivato, misy elo sy havoana any aoriana, Ny Tanàna Hotel",
+          "Ny trano lehibe misy lavarangana, ambonin'ny bozaka sy tohatra vato, Ny Tanàna Hotel",
+          "Efitrano tsy misy rihana manaraka ny zaridaina, amoron'ny lalana voarafitra vato eo anelanelan'ny fefy maitso, Ny Tanàna Hotel",
+          "Efitrano misy fandriana roa, latabatra fanoratana ary varavarana misokatra mankany amin'ny lavarangana, Ny Tanàna Hotel",
+          "Efitra fandroana misy douche, Ny Tanàna Hotel",
+          "Ny efitra fisakafoanana, misy sary hosodoko momba an'i Madagasikara manaraka ny rindrina, Ny Tanàna Hotel",
+          "Ny bar, misy seza avo sy siny misy toaka voatsabo, Ny Tanàna Hotel",
+          "Efitra fialan-tsasatra misy seza harefo, sy boaty feno boky, Ny Tanàna Hotel",
           "Ny Tanàna Hotel: ny fijery"
         ]
       }
@@ -2368,10 +2556,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Ala mando an-tendrombohitra voasoratra ho lova iraisan'izao tontolo izao ao amin'ny UNESCO, onenan'ny karazana gidro efatra ambin'ny folo, anisan'izany ny gidro volamena mpihinam-bolo, izay atahorana ho lany tamingana tanteraka. Tsy maintsy miaraka amin'ny mpitari-dalana nahazo fahazoan-dalana ny mpitsidika vahiny — alaharo amin'ny alalan'ny hotelinao, na misafidiana amin'ireo mpitari-dalana miasa amin'io andro io rehefa tonga ianao."
       },
       "price": {
-        "en": "55,000 Ar adult/day · 25,000 Ar ages 5–12 · under 5 free · 5,000 Ar community fee · guide 90,000–150,000 Ar per group, by circuit",
-        "fr": "55 000 Ar adulte/jour · 25 000 Ar de 5 à 12 ans · gratuit avant 5 ans · taxe communautaire 5 000 Ar · guide 90 000–150 000 Ar par groupe, selon le circuit",
-        "de": "55.000 Ar Erwachsene/Tag · 25.000 Ar 5–12 Jahre · unter 5 frei · 5.000 Ar Gemeindeabgabe · Guide 90.000–150.000 Ar pro Gruppe, je nach Rundweg",
-        "mg": "55 000 Ar olon-dehibe/andro · 25 000 Ar ho an'ny 5–12 taona · maimaim-poana latsaky ny 5 taona · saran'ny fiaraha-monina 5 000 Ar · mpitari-dalana 90 000–150 000 Ar isaky ny vondrona, arakaraka ny lalana"
+        "en": "55,000 Ar adult/day · 25,000 Ar ages 5–12 · under 5 free · Malagasy citizens 2,000 Ar (children 500 Ar) · 5,000 Ar community fee · guide 90,000–150,000 Ar per group, by circuit",
+        "fr": "55 000 Ar adulte/jour · 25 000 Ar de 5 à 12 ans · gratuit avant 5 ans · citoyens malgaches 2 000 Ar (enfants 500 Ar) · taxe communautaire 5 000 Ar · guide 90 000–150 000 Ar par groupe, selon le circuit",
+        "de": "55.000 Ar Erwachsene/Tag · 25.000 Ar 5–12 Jahre · unter 5 frei · madagassische Staatsangehörige 2.000 Ar (Kinder 500 Ar) · 5.000 Ar Gemeindeabgabe · Guide 90.000–150.000 Ar pro Gruppe, je nach Rundweg",
+        "mg": "55 000 Ar olon-dehibe/andro · 25 000 Ar ho an'ny 5–12 taona · maimaim-poana latsaky ny 5 taona · olom-pirenena malagasy 2 000 Ar (ankizy 500 Ar) · saran'ny fiaraha-monina 5 000 Ar · mpitari-dalana 90 000–150 000 Ar isaky ny vondrona, arakaraka ny lalana"
       },
       "duration": {
         "en": "2 hours to 2 days, depending on circuit",
@@ -2934,7 +3122,9 @@ const LISTING_TRANSLATIONS = {
           "A yellow-and-black weevil on a twisted vine in the forest, Ranomafana National Park",
           "A black millipede with orange spots curled on a mossy tree trunk, Ranomafana National Park",
           "A black millipede coiled on a tree trunk in the forest, Ranomafana National Park",
-          "A large land snail on a tree trunk among long, spiky leaves, Ranomafana National Park"
+          "A large land snail on a tree trunk among long, spiky leaves, Ranomafana National Park",
+          "A small olive bird with a yellow throat sitting on its mossy nest, half-hidden by leaves, Ranomafana National Park",
+          "A leaf-tailed gecko hanging head-down from a leaf, itself looking like a dead leaf, Ranomafana National Park"
         ],
         "fr": [
           "Un hapalémur doré mangeant des feuilles de bambou, parc national de Ranomafana",
@@ -2987,7 +3177,9 @@ const LISTING_TRANSLATIONS = {
           "Un charançon jaune et noir sur une liane tordue en forêt, parc national de Ranomafana",
           "Un mille-pattes noir à taches orange enroulé sur un tronc moussu, parc national de Ranomafana",
           "Un mille-pattes noir enroulé sur un tronc d’arbre en forêt, parc national de Ranomafana",
-          "Un grand escargot terrestre sur un tronc, parmi de longues feuilles pointues, parc national de Ranomafana"
+          "Un grand escargot terrestre sur un tronc, parmi de longues feuilles pointues, parc national de Ranomafana",
+          "Un petit oiseau olive à la gorge jaune posé sur son nid de mousse, à demi caché par les feuilles, parc national de Ranomafana",
+          "Un uroplate suspendu tête en bas à une feuille, lui-même pareil à une feuille morte, parc national de Ranomafana"
         ],
         "de": [
           "Ein Goldener Bambuslemur frisst Bambusblätter, Nationalpark Ranomafana",
@@ -3040,7 +3232,9 @@ const LISTING_TRANSLATIONS = {
           "Ein gelb-schwarzer Rüsselkäfer auf einer gewundenen Liane im Wald, Ranomafana-Nationalpark",
           "Ein schwarzer Tausendfüßer mit orangefarbenen Flecken, eingerollt an einem bemoosten Stamm, Ranomafana-Nationalpark",
           "Ein schwarzer Tausendfüßer, eingerollt an einem Baumstamm im Wald, Ranomafana-Nationalpark",
-          "Eine große Landschnecke an einem Baumstamm zwischen langen, spitzen Blättern, Ranomafana-Nationalpark"
+          "Eine große Landschnecke an einem Baumstamm zwischen langen, spitzen Blättern, Ranomafana-Nationalpark",
+          "Ein kleiner olivgrüner Vogel mit gelber Kehle sitzt, halb von Blättern verdeckt, auf seinem moosigen Nest, Ranomafana-Nationalpark",
+          "Ein Plattschwanzgecko hängt kopfüber an einem Blatt und sieht selbst aus wie ein welkes Blatt, Ranomafana-Nationalpark"
         ],
         "mg": [
           "Gidro volamena mpihinam-bolo mihinana ravim-bolo, valan-javaboahary Ranomafana",
@@ -3093,7 +3287,9 @@ const LISTING_TRANSLATIONS = {
           "Voangory mavo sy mainty eo amin'ny vahy miolakolaka any anaty ala, valan-javaboaharin'i Ranomafana",
           "Biby maro tongotra mainty misy pentina volom-boasary miodina eo amin'ny vatan-kazo misy volom-bato, valan-javaboaharin'i Ranomafana",
           "Biby maro tongotra mainty miodina eo amin'ny vatan-kazo any anaty ala, valan-javaboaharin'i Ranomafana",
-          "Sifotra lehibe eo amin'ny vatan-kazo, eo anelanelan'ny ravina lava sy maranitra, valan-javaboaharin'i Ranomafana"
+          "Sifotra lehibe eo amin'ny vatan-kazo, eo anelanelan'ny ravina lava sy maranitra, valan-javaboaharin'i Ranomafana",
+          "Vorona kely maitso sy mavo tenda mipetraka eo amin'ny akaniny feno volon-kazo, takonan'ny ravina ny ampahany, valan-javaboaharin'i Ranomafana",
+          "Androngo rambo ravina mihantona mitsilany amin'ny ravina iray, mitovy amin'ny ravina maina, valan-javaboaharin'i Ranomafana"
         ]
       }
     },
@@ -3248,25 +3444,165 @@ const LISTING_TRANSLATIONS = {
           "A Madagascar paradise flycatcher sitting on its mossy nest, Ranomafana National Park",
           "A scaly ground-roller, one of the shy birds of the forest floor, in close-up, Ranomafana National Park",
           "A bird perched in the understory, Ranomafana National Park",
-          "A Madagascar pygmy kingfisher perched on a twig after dark"
+          "A Madagascar pygmy kingfisher perched on a twig after dark",
+          "A small olive bird with a yellow throat sitting on its mossy nest, half-hidden by leaves, Ranomafana National Park"
         ],
         "fr": [
           "Un tchitrec malgache posé sur son nid de mousse, parc national de Ranomafana",
           "Un brachyptérolle écailleux, l’un des oiseaux discrets du sous-bois, en gros plan, parc national de Ranomafana",
           "Un oiseau perché dans le sous-bois, parc national de Ranomafana",
-          "Un martin-chasseur malgache perché sur une brindille, à la nuit tombée"
+          "Un martin-chasseur malgache perché sur une brindille, à la nuit tombée",
+          "Un petit oiseau olive à la gorge jaune posé sur son nid de mousse, à demi caché par les feuilles, parc national de Ranomafana"
         ],
         "de": [
           "Ein Madagaskar-Paradiesschnäpper sitzt auf seinem moosigen Nest, Ranomafana-Nationalpark",
           "Eine Schuppenerdracke, einer der scheuen Vögel des Waldbodens, in Nahaufnahme, Ranomafana-Nationalpark",
           "Ein Vogel im Unterholz, Ranomafana-Nationalpark",
-          "Ein Madagaskar-Zwergfischer sitzt nach Einbruch der Dunkelheit auf einem Zweig"
+          "Ein Madagaskar-Zwergfischer sitzt nach Einbruch der Dunkelheit auf einem Zweig",
+          "Ein kleiner olivgrüner Vogel mit gelber Kehle sitzt, halb von Blättern verdeckt, auf seinem moosigen Nest, Ranomafana-Nationalpark"
         ],
         "mg": [
           "Tsingetry mipetraka eo amin'ny akaniny feno volon-kazo, valan-javaboaharin'i Ranomafana",
           "Fandikalalana, iray amin'ireo vorona saro-kenatra amin'ny tany ala, akaiky be, valan-javaboaharin'i Ranomafana",
           "Vorona mipetraka eo ambanin'ny ala, valan-javaboaharin'i Ranomafana",
-          "Vintsy kely mipetraka eo amin'ny rantsankazo kely rehefa maizina"
+          "Vintsy kely mipetraka eo amin'ny rantsankazo kely rehefa maizina",
+          "Vorona kely maitso sy mavo tenda mipetraka eo amin'ny akaniny feno volon-kazo, takonan'ny ravina ny ampahany, valan-javaboaharin'i Ranomafana"
+        ]
+      }
+    },
+    "namorona-farm": {
+      "desc": {
+        "en": "A working farm 1 km east of Ranomafana, open to visitors. Guided tours of the farm take in the vegetable gardens, cash crops and agroforestry, the beehives, the chicken run and the fish pond, with rabbits and cattle too. There are workshops (fruit picking, a cooking class, turning the harvest into food that keeps), a farm-to-table restaurant, wooden bungalows and camping, fresh organic produce for sale, and cultural activities. Families, couples, retirees, school groups and other groups are welcome.",
+        "fr": "Une ferme en activité à 1 km à l’est de Ranomafana, ouverte aux visiteurs. Les visites guidées passent par les cultures maraîchères, les cultures de rente et l’agroforesterie, les ruches, le poulailler et l’étang à poissons, sans oublier les lapins et les vaches. On y trouve aussi des ateliers (cueillette de fruits, cours de cuisine, transformation des produits), un restaurant de la ferme à l’assiette, des bungalows en bois et un camping, la vente directe de produits frais et biologiques, et des activités culturelles. Familles, couples, retraités, classes vertes et groupes sont les bienvenus.",
+        "de": "Ein bewirtschafteter Bauernhof 1 km östlich von Ranomafana, offen für Besucher. Geführte Hofrundgänge zeigen Gemüsegärten, Marktfrüchte und Agroforst, die Bienenstöcke, den Hühnerhof und den Fischteich, dazu Kaninchen und Rinder. Es gibt Workshops (Obstpflücken, Kochkurs, Verarbeitung der Ernte), ein Restaurant mit Zutaten vom Hof, Holzbungalows und Camping, Direktverkauf frischer Bio-Produkte und kulturelle Aktivitäten. Willkommen sind Familien, Paare, Senioren, Schulklassen und Gruppen.",
+        "mg": "Toeram-pambolena miasa, 1 km atsinanan'i Ranomafana, misokatra ho an'ny mpitsidika. Ny fitsidihana miaraka amin'ny mpitarika dia mandalo ny zaridainan-legioma, ny voly hamidy sy ny fambolena miaraka amin'ny hazo, ny tohon-tantely, ny akoho ary ny dobo trondro, miampy bitro sy omby. Misy atrikasa (fakana voankazo, fampianarana fandrahoan-tsakafo, fanodinana ny vokatra), trano fisakafoanana mampiasa ny vokatry ny toeram-pambolena, bungalow hazo sy toerana filasiana, fivarotana mivantana vokatra vaovao sy voajanahary, ary hetsika ara-kolontsaina. Raisina tsara ny fianakaviana, ny mpivady, ny zokiolona, ny mpianatra ary ny vondrona."
+      },
+      "price": {
+        "en": "Ask the farm for tour, workshop, meal and bungalow prices",
+        "fr": "Demandez à la ferme les prix des visites, ateliers, repas et bungalows",
+        "de": "Preise für Rundgänge, Workshops, Mahlzeiten und Bungalows beim Hof erfragen",
+        "mg": "Anontanio ny toeram-pambolena ny saran'ny fitsidihana, ny atrikasa, ny sakafo ary ny bungalow"
+      },
+      "tips": {
+        "en": [
+          "1 km east of Ranomafana village",
+          "Call or WhatsApp ahead to book a tour, a workshop or a meal",
+          "The farm's rules: stay on the marked paths, don't wander off alone, and ask before picking or eating anything",
+          "Wash your hands before you leave the farm"
+        ],
+        "fr": [
+          "À 1 km à l’est du village de Ranomafana",
+          "Appelez ou écrivez sur WhatsApp avant de venir pour réserver une visite, un atelier ou un repas",
+          "Les règles de la ferme : restez sur les chemins balisés, ne vous promenez pas seul et demandez avant de cueillir ou de goûter quoi que ce soit",
+          "Lavez-vous les mains avant de quitter la ferme"
+        ],
+        "de": [
+          "1 km östlich des Dorfes Ranomafana",
+          "Vorher anrufen oder per WhatsApp schreiben, um einen Rundgang, einen Workshop oder eine Mahlzeit zu buchen",
+          "Die Regeln des Hofs: auf den markierten Wegen bleiben, nicht allein herumlaufen und fragen, bevor Sie etwas pflücken oder essen",
+          "Vor dem Verlassen des Hofs gründlich die Hände waschen"
+        ],
+        "mg": [
+          "1 km atsinanan'ny tanànan'i Ranomafana",
+          "Antsoy na alefaso hafatra WhatsApp mialoha mba hamandrihana fitsidihana, atrikasa na sakafo",
+          "Ny fitsipiky ny toeram-pambolena: aza miala amin'ny lalana voamarika, aza mivezivezy irery, ary manontania alohan'ny hanotazana na hihinanana zavatra",
+          "Sasao tsara ny tananao alohan'ny hialana amin'ny toeram-pambolena"
+        ]
+      },
+      "contact.note": {
+        "en": "Facebook: Namorona FARM. The first number takes WhatsApp.",
+        "fr": "Facebook : Namorona FARM. Le premier numéro est sur WhatsApp.",
+        "de": "Facebook: Namorona FARM. Die erste Nummer ist per WhatsApp erreichbar.",
+        "mg": "Facebook: Namorona FARM. Ny laharana voalohany dia misy WhatsApp."
+      },
+      "gallery[].alt": {
+        "en": [
+          "The Namorona Farm team at the farm gate, under its sign",
+          "A farm guide beside the visitor rules at the gate to the fields, under a lychee tree, Namorona Farm",
+          "Stone steps down to the vegetable garden, with a labelled bed of parsley, Namorona Farm",
+          "The open-sided wooden shelter with tables, beside the path into the fields, Namorona Farm",
+          "A table laid for visitors with juice, leaf-wrapped parcels, fried snacks and a flask, Namorona Farm",
+          "Terraced fields below a forested hill with a bare rock face, Namorona Farm",
+          "A path between a wooden rail and rows of young vegetables, with banana plants alongside, Namorona Farm",
+          "Banana plants and young trees growing together, Namorona Farm",
+          "Rows of banana plants on the hillside, Namorona Farm",
+          "The “Pisciculture” (fish farming) sign on a bamboo fence in front of the fish pond, Namorona Farm",
+          "Seedlings growing in black bags at the farm's nursery, Namorona Farm",
+          "Papaya trees and a freshly dug plot marked “Culture fourragère” (fodder crops), Namorona Farm",
+          "A member of the farm team at the compost shelter, “Zone de compostage”, Namorona Farm",
+          "A hand turning dark compost full of worms and sprouting seeds, Namorona Farm",
+          "A table-football game under a wooden shelter, and a garden table with a parasol, Namorona Farm",
+          "Chickens and chicks in their fenced run, Namorona Farm",
+          "The “Elevage lapins” (rabbit farming) sign by the path to the raised wooden livestock shed, Namorona Farm",
+          "Two cattle in their wooden stall, seen through the fence, Namorona Farm",
+          "The visitors' washroom block, with toilets, showers and a basin, Namorona Farm",
+          "The farm's noticeboards: its flier, the list of activities and a site plan, Namorona Farm"
+        ],
+        "fr": [
+          "L’équipe de Namorona Farm devant le portail, sous son enseigne",
+          "Un guide de la ferme près du panneau des consignes aux visiteurs, à l’entrée des champs, sous un litchi, Namorona Farm",
+          "Des marches de pierre descendant vers le jardin maraîcher, avec une planche de persil étiquetée, Namorona Farm",
+          "L’abri en bois ouvert avec ses tables, au bord du chemin vers les champs, Namorona Farm",
+          "Une table dressée pour les visiteurs : jus, petits paquets enveloppés de feuilles, beignets et thermos, Namorona Farm",
+          "Des champs en terrasses au pied d’une colline boisée à la paroi rocheuse, Namorona Farm",
+          "Un chemin entre une rambarde en bois et des rangs de jeunes légumes, le long des bananiers, Namorona Farm",
+          "Bananiers et jeunes arbres cultivés ensemble, Namorona Farm",
+          "Des rangs de bananiers à flanc de colline, Namorona Farm",
+          "Le panneau « Pisciculture » sur une clôture de bambou devant l’étang à poissons, Namorona Farm",
+          "De jeunes plants en sachets noirs à la pépinière de la ferme, Namorona Farm",
+          "Des papayers et une parcelle fraîchement bêchée marquée « Culture fourragère », Namorona Farm",
+          "Un membre de l’équipe de la ferme devant l’abri à compost, « Zone de compostage », Namorona Farm",
+          "Une main qui retourne un compost sombre plein de vers et de graines qui germent, Namorona Farm",
+          "Un baby-foot sous un abri en bois, et une table de jardin avec un parasol, Namorona Farm",
+          "Poules et poussins dans leur enclos grillagé, Namorona Farm",
+          "Le panneau « Elevage lapins » au bord du chemin menant à l’étable en bois surélevée, Namorona Farm",
+          "Deux vaches dans leur stalle en bois, vues à travers le grillage, Namorona Farm",
+          "Le bloc sanitaire des visiteurs, avec toilettes, douches et lavabo, Namorona Farm",
+          "Les tableaux d’affichage de la ferme : son dépliant, la liste des activités et un plan du site, Namorona Farm"
+        ],
+        "de": [
+          "Das Team von Namorona Farm am Hoftor unter seinem Schild",
+          "Ein Hofführer neben den Besucherregeln am Tor zu den Feldern, unter einem Litschibaum, Namorona Farm",
+          "Steinstufen hinunter zum Gemüsegarten mit einem beschilderten Petersilienbeet, Namorona Farm",
+          "Der offene Holzunterstand mit Tischen am Weg zu den Feldern, Namorona Farm",
+          "Ein für Besucher gedeckter Tisch mit Saft, in Blätter gewickelten Päckchen, frittierten Snacks und einer Thermoskanne, Namorona Farm",
+          "Terrassierte Felder unter einem bewaldeten Hügel mit kahler Felswand, Namorona Farm",
+          "Ein Weg zwischen einem Holzgeländer und Reihen junger Gemüsepflanzen, gesäumt von Bananenstauden, Namorona Farm",
+          "Bananenstauden und junge Bäume wachsen zusammen, Namorona Farm",
+          "Reihen von Bananenstauden am Hang, Namorona Farm",
+          "Das Schild „Pisciculture“ (Fischzucht) an einem Bambuszaun vor dem Fischteich, Namorona Farm",
+          "Setzlinge in schwarzen Pflanzbeuteln in der Baumschule des Hofs, Namorona Farm",
+          "Papayabäume und ein frisch umgegrabenes Feld mit dem Schild „Culture fourragère“ (Futterpflanzen), Namorona Farm",
+          "Ein Mitglied des Hofteams am Kompostunterstand, „Zone de compostage“, Namorona Farm",
+          "Eine Hand wendet dunklen Kompost voller Würmer und keimender Samen, Namorona Farm",
+          "Ein Tischkicker unter einem Holzunterstand und ein Gartentisch mit Sonnenschirm, Namorona Farm",
+          "Hühner und Küken in ihrem eingezäunten Auslauf, Namorona Farm",
+          "Das Schild „Elevage lapins“ (Kaninchenzucht) am Weg zum erhöhten Holzstall, Namorona Farm",
+          "Zwei Rinder in ihrem Holzstall, durch den Zaun gesehen, Namorona Farm",
+          "Das Sanitärgebäude für Besucher mit Toiletten, Duschen und Waschbecken, Namorona Farm",
+          "Die Anschlagtafeln des Hofs: sein Flyer, die Liste der Aktivitäten und ein Lageplan, Namorona Farm"
+        ],
+        "mg": [
+          "Ny ekipan'i Namorona Farm eo am-bavahady, eo ambanin'ny takelaka",
+          "Mpitarika eo akaikin'ny takelaka misy ny fitsipika ho an'ny mpitsidika, eo am-bavahadin'ny tanimboly, ambanin'ny hazo letisia, Namorona Farm",
+          "Tohatra vato midina mankany amin'ny zaridainan-legioma, misy takelaka eo amin'ny tanim-persily, Namorona Farm",
+          "Fialofana hazo malalaka misy latabatra, eo amoron'ny lalana mankany amin'ny tanimboly, Namorona Farm",
+          "Latabatra voaomana ho an'ny mpitsidika: ranom-boankazo, sakafo nofonosina ravina, mofo nendasina ary thermos, Namorona Farm",
+          "Tanimboly an-tohatra eo ambanin'ny havoana misy ala sy vatolampy, Namorona Farm",
+          "Lalana eo anelanelan'ny fefy hazo sy andalana legioma mbola kely, amoron'ny akondro, Namorona Farm",
+          "Akondro sy hazo tanora mitombo miaraka, Namorona Farm",
+          "Andalana akondro eo amin'ny tehezan-tendrombohitra, Namorona Farm",
+          "Ny takelaka « Pisciculture » (fiompiana trondro) eo amin'ny fefy volotsangana manoloana ny dobo trondro, Namorona Farm",
+          "Zanakazo ao anaty kitapo mainty ao amin'ny toeram-pambolena zanakazo, Namorona Farm",
+          "Hazo papay sy tany vao nasiana angady misy takelaka « Culture fourragère » (voly sakafon'ny biby), Namorona Farm",
+          "Mpiasan'ny toeram-pambolena eo amin'ny fialofana fanaovana zezika, « Zone de compostage », Namorona Farm",
+          "Tanana mamadika zezika mainty feno kankana sy voa mitsimoka, Namorona Farm",
+          "Baby-foot eo ambanin'ny fialofana hazo, sy latabatra misy elo, Namorona Farm",
+          "Akoho sy zanak'akoho ao anaty valan'akoho voafefy, Namorona Farm",
+          "Ny takelaka « Elevage lapins » (fiompiana bitro) eo amoron'ny lalana mankany amin'ny tranon-biby hazo avo, Namorona Farm",
+          "Omby roa ao amin'ny vala hazo, hita tamin'ny alalan'ny fefy, Namorona Farm",
+          "Ny trano fidiovana ho an'ny mpitsidika, misy kabone, fandroana ary lavabo, Namorona Farm",
+          "Ny takelaka filazana ao amin'ny toeram-pambolena: ny taratasy fampahafantarana, ny lisitry ny asa ary ny drafitry ny toerana, Namorona Farm"
         ]
       }
     },
@@ -3917,24 +4253,40 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
-          "Ranomafana Arboretum entrance",
-          "Path through Ranomafana Arboretum",
-          "Endemic flora at Ranomafana Arboretum"
+          "Traveller's palms and a roofed shelter on a grassy hillside, Ranomafana Arboretum",
+          "A stone table and bench on the lawn, looking out over the green hills of the valley, Ranomafana Arboretum",
+          "A path between palms, past small labelled signs, Ranomafana Arboretum",
+          "The “Famous and amazing trees” board, in Malagasy, English and French, beside a path, Ranomafana Arboretum",
+          "Rows of young trees in a nursery, shaded by palm fronds, Ranomafana Arboretum",
+          "Stone steps up to the green Arboretum building, Ranomafana Arboretum",
+          "The painted Arboretum sign by the road, with a tree, a chameleon and phone numbers, Ranomafana Arboretum"
         ],
         "fr": [
-          "L’entrée de l’arboretum de Ranomafana",
-          "Un sentier à travers l’arboretum de Ranomafana",
-          "La flore endémique de l’arboretum de Ranomafana"
+          "Des arbres du voyageur et un abri couvert sur une colline herbeuse, arboretum de Ranomafana",
+          "Une table et un banc de pierre sur la pelouse, face aux collines vertes de la vallée, arboretum de Ranomafana",
+          "Un sentier entre les palmiers, le long de petits panneaux explicatifs, arboretum de Ranomafana",
+          "Le panneau « Arbres célèbres et étonnants », en malgache, anglais et français, au bord d’un sentier, arboretum de Ranomafana",
+          "Des rangées de jeunes arbres en pépinière, à l’ombre de palmes, arboretum de Ranomafana",
+          "Des marches de pierre montant vers le bâtiment vert de l’Arboretum, arboretum de Ranomafana",
+          "L’enseigne peinte de l’Arboretum au bord de la route, avec un arbre, un caméléon et des numéros de téléphone, arboretum de Ranomafana"
         ],
         "de": [
-          "Eingang des Arboretums Ranomafana",
-          "Weg durch das Arboretum Ranomafana",
-          "Endemische Pflanzen im Arboretum Ranomafana"
+          "Baum der Reisenden und ein überdachter Unterstand an einem grasbewachsenen Hang, Arboretum Ranomafana",
+          "Ein Steintisch mit Bank auf dem Rasen, mit Blick auf die grünen Hügel des Tals, Arboretum Ranomafana",
+          "Ein Weg zwischen Palmen, vorbei an kleinen Schildern, Arboretum Ranomafana",
+          "Die Tafel „Berühmte und erstaunliche Bäume“, auf Madagassisch, Englisch und Französisch, an einem Weg, Arboretum Ranomafana",
+          "Reihen junger Bäume in einer Baumschule, mit Palmwedeln beschattet, Arboretum Ranomafana",
+          "Steinstufen hinauf zum grünen Arboretum-Gebäude, Arboretum Ranomafana",
+          "Das bemalte Arboretum-Schild an der Straße, mit Baum, Chamäleon und Telefonnummern, Arboretum Ranomafana"
         ],
         "mg": [
-          "Ny fidirana ao amin'ny Arboretum Ranomafana",
-          "Lalana mamakivaky ny Arboretum Ranomafana",
-          "Zava-maniry tsy hita afa-tsy eto ao amin'ny Arboretum Ranomafana"
+          "Ravinala sy trano fialofana misy tafo eo amin'ny havoana feno ahitra, Arboretum Ranomafana",
+          "Latabatra sy dabilio vato eo amin'ny bozaka, manatrika ny havoana maitson'ny lohasaha, Arboretum Ranomafana",
+          "Lalana eo anelanelan'ny rofia, mandalo takelaka fanazavana kely, Arboretum Ranomafana",
+          "Ny takelaka « Hazo malaza sy mahagaga », amin'ny teny malagasy, anglisy ary frantsay, eo amoron-dalana, Arboretum Ranomafana",
+          "Zana-kazo milahatra ao amin'ny toeram-pambolena zana-kazo, alofan'ny ravin-drofia, Arboretum Ranomafana",
+          "Tohatra vato miakatra mankany amin'ny tranon'ny Arboretum maitso, Arboretum Ranomafana",
+          "Ny takelaka voaloko an'ny Arboretum eo amoron-dalana, misy hazo, tana ary laharana finday, Arboretum Ranomafana"
         ]
       }
     },
@@ -4151,10 +4503,290 @@ const LISTING_TRANSLATIONS = {
         "mg": "Tahiry 75 hektara tantanan'ny fiaraha-monina, mifanila amin'ny valan-javaboahary, tantanana amin'ny alalan'ny fiaraha-miasa amin'ny VOI araka ny lalàna GELOSE eto Madagasikara, misy mpitari-dalana nahazo fahazoan-dalana avy amin'ny MNP ary fiaraha-miasa amin'ny Centre ValBio amin'ny fikarohana. Efa sokafana ho an'ny mpitsidika ny lalana sy riandrano iray eo amin'ny renirano. Mankany amin'ny tanàna sy ny mponina ao aminy mivantana ny saran'ny mpitsidika."
       },
       "price": {
-        "en": "In development — contact for access",
-        "fr": "En cours d’aménagement — nous contacter pour l’accès",
-        "de": "Im Aufbau – Zugang auf Anfrage",
-        "mg": "Mbola eo am-panomanana — mifandraisa aminay momba ny fidirana"
+        "en": "Entry 35,000 Ar per person (Malagasy visitors 2,000 Ar), plus a guide from 35,000 Ar per group of 1–4",
+        "fr": "Entrée 35 000 Ar par personne (visiteurs malgaches 2 000 Ar), plus un guide à partir de 35 000 Ar par groupe de 1 à 4",
+        "de": "Eintritt 35.000 Ar pro Person (madagassische Besucher 2.000 Ar), dazu ein Guide ab 35.000 Ar pro Gruppe von 1–4",
+        "mg": "Fidirana 35 000 Ar isan'olona (mpitsidika malagasy 2 000 Ar), miampy mpitari-dalana manomboka amin'ny 35 000 Ar isaky ny vondrona olona 1–4"
+      },
+      "entryFees": {
+        "en": [
+          {
+            "for": "intl",
+            "who": "Foreign visitor, day or night",
+            "price": "35,000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Malagasy visitor, day or night",
+            "price": "2,000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Malagasy student, day / night",
+            "price": "1,500 / 5,000 Ar"
+          },
+          {
+            "for": "intl",
+            "who": "Foreign researcher",
+            "price": "25,000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Malagasy researcher",
+            "price": "12,000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Filming, per day",
+            "price": "100,000 Ar"
+          }
+        ],
+        "fr": [
+          {
+            "for": "intl",
+            "who": "Visiteur étranger, de jour ou de nuit",
+            "price": "35 000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Visiteur malgache, de jour ou de nuit",
+            "price": "2 000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Étudiant malgache, jour / nuit",
+            "price": "1 500 / 5 000 Ar"
+          },
+          {
+            "for": "intl",
+            "who": "Chercheur étranger",
+            "price": "25 000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Chercheur malgache",
+            "price": "12 000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Tournage, par jour",
+            "price": "100 000 Ar"
+          }
+        ],
+        "de": [
+          {
+            "for": "intl",
+            "who": "Ausländische Besucher, tags oder nachts",
+            "price": "35.000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Madagassische Besucher, tags oder nachts",
+            "price": "2.000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Madagassische Studierende, Tag / Nacht",
+            "price": "1.500 / 5.000 Ar"
+          },
+          {
+            "for": "intl",
+            "who": "Ausländische Forschende",
+            "price": "25.000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Madagassische Forschende",
+            "price": "12.000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Filmaufnahmen, pro Tag",
+            "price": "100.000 Ar"
+          }
+        ],
+        "mg": [
+          {
+            "for": "intl",
+            "who": "Mpitsidika vahiny, atoandro na alina",
+            "price": "35 000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Mpitsidika malagasy, atoandro na alina",
+            "price": "2 000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Mpianatra malagasy, atoandro / alina",
+            "price": "1 500 / 5 000 Ar"
+          },
+          {
+            "for": "intl",
+            "who": "Mpikaroka vahiny",
+            "price": "25 000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Mpikaroka malagasy",
+            "price": "12 000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Fakana sary mihetsika, isan'andro",
+            "price": "100 000 Ar"
+          }
+        ]
+      },
+      "guideFees": {
+        "en": [
+          {
+            "for": "all",
+            "walk": "Picnic circuit · 2 hours",
+            "price": "40,000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Cascade–EVA circuit · 3 hours",
+            "price": "60,000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Lemur circuit · 4 hours",
+            "price": "75,000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Varicia circuit · 5 hours",
+            "price": "90,000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Tracking circuit",
+            "price": "150,000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Night circuit",
+            "price": "35,000 Ar"
+          },
+          {
+            "for": "mg",
+            "walk": "Malagasy students and researchers, day / night",
+            "price": "15,000 / 20,000 Ar"
+          }
+        ],
+        "fr": [
+          {
+            "for": "all",
+            "walk": "Circuit Picnic · 2 heures",
+            "price": "40 000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Circuit Cascade–EVA · 3 heures",
+            "price": "60 000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Circuit des lémuriens · 4 heures",
+            "price": "75 000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Circuit Varicia · 5 heures",
+            "price": "90 000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Circuit de pistage",
+            "price": "150 000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Circuit de nuit",
+            "price": "35 000 Ar"
+          },
+          {
+            "for": "mg",
+            "walk": "Étudiants et chercheurs malgaches, jour / nuit",
+            "price": "15 000 / 20 000 Ar"
+          }
+        ],
+        "de": [
+          {
+            "for": "all",
+            "walk": "Rundweg Picnic · 2 Stunden",
+            "price": "40.000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Rundweg Cascade–EVA · 3 Stunden",
+            "price": "60.000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Lemuren-Rundweg · 4 Stunden",
+            "price": "75.000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Rundweg Varicia · 5 Stunden",
+            "price": "90.000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Spurensuche-Rundweg",
+            "price": "150.000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Nacht-Rundweg",
+            "price": "35.000 Ar"
+          },
+          {
+            "for": "mg",
+            "walk": "Madagassische Studierende und Forschende, Tag / Nacht",
+            "price": "15.000 / 20.000 Ar"
+          }
+        ],
+        "mg": [
+          {
+            "for": "all",
+            "walk": "Lalana Picnic · 2 ora",
+            "price": "40 000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Lalana Cascade–EVA · 3 ora",
+            "price": "60 000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Lalana Varika · 4 ora",
+            "price": "75 000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Lalana Varicia · 5 ora",
+            "price": "90 000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Lalana fanarahan-dia",
+            "price": "150 000 Ar"
+          },
+          {
+            "for": "all",
+            "walk": "Lalana alina",
+            "price": "35 000 Ar"
+          },
+          {
+            "for": "mg",
+            "walk": "Mpianatra sy mpikaroka malagasy, atoandro / alina",
+            "price": "15 000 / 20 000 Ar"
+          }
+        ]
       },
       "duration": { "en": "Half day", "fr": "Une demi-journée", "de": "Halber Tag", "mg": "Antsasak'andro" },
       "tips": {
@@ -4178,99 +4810,59 @@ const LISTING_TRANSLATIONS = {
       "gallery[].alt": {
         "en": [
           "Tall waterfall inside the reserve at VOI Ambohimagneva",
-          "Tall waterfall lower on the trail at VOI Ambohimagneva",
-          "Waterfall dropping into a deep pool at VOI Ambohimagneva",
-          "Waterfall along the VOI Ambohimagneva trail",
+          "A large boa crossing a muddy path at VOI Ambohimagneva",
           "A visitor with arms outstretched in front of a waterfall at VOI Ambohimagneva",
-          "A swimmer standing in the spray of a waterfall at VOI Ambohimagneva",
-          "Sunlight falling on a waterfall between dark rocks at VOI Ambohimagneva",
-          "A mossy cascade spilling into a forest pool at VOI Ambohimagneva",
-          "Water sliding down a mossy rock face in two streams at VOI Ambohimagneva",
-          "A river pool at VOI Ambohimagneva",
-          "Another river pool along the VOI Ambohimagneva trail",
-          "The river running through VOI Ambohimagneva",
-          "A hand-cut wooden water channel on the VOI Ambohimagneva trail",
-          "Rainforest interior at VOI Ambohimagneva",
-          "View over the valley near VOI Ambohimagneva",
           "Mossy leaf-tailed gecko camouflaged on a branch at VOI Ambohimagneva",
-          "A frog species found at VOI Ambohimagneva",
-          "A second frog species found at VOI Ambohimagneva",
+          "A mossy cascade spilling into a forest pool at VOI Ambohimagneva",
+          "A large pink-and-orange moth with eyespots, resting on moss at VOI Ambohimagneva",
+          "View over the valley near VOI Ambohimagneva",
           "Several tree frogs resting together on a branch in front of the waterfall at VOI Ambohimagneva",
-          "The tree frogs' leafy roost in the sun at VOI Ambohimagneva",
-          "Hiking the trail at VOI Ambohimagneva",
-          "Guide Adrien on the boardwalk trail at VOI Ambohimagneva"
+          "A red, white-spotted longhorn beetle on a broken stem at VOI Ambohimagneva",
+          "Guide Adrien on the boardwalk trail at VOI Ambohimagneva",
+          "A brown mantis on a visitor's hand at VOI Ambohimagneva",
+          "A small freshwater crab on a wet rock at VOI Ambohimagneva"
         ],
         "fr": [
           "Une haute cascade dans la réserve VOI Ambohimagneva",
-          "Une haute cascade plus bas sur le sentier, VOI Ambohimagneva",
-          "Une cascade plongeant dans un bassin profond, VOI Ambohimagneva",
-          "Une cascade le long du sentier de VOI Ambohimagneva",
+          "Un grand boa traverse un sentier boueux à VOI Ambohimagneva",
           "Une personne, bras grands ouverts, devant une cascade à VOI Ambohimagneva",
-          "Une personne qui se baigne, debout dans les embruns d’une cascade à VOI Ambohimagneva",
-          "Le soleil sur une cascade entre des rochers sombres, VOI Ambohimagneva",
-          "Une cascade moussue qui se déverse dans un bassin en forêt, VOI Ambohimagneva",
-          "L’eau glisse en deux filets sur une paroi rocheuse moussue, à VOI Ambohimagneva",
-          "Un bassin de rivière à VOI Ambohimagneva",
-          "Un autre bassin de rivière le long du sentier de VOI Ambohimagneva",
-          "La rivière qui traverse VOI Ambohimagneva",
-          "Une rigole en bois taillée à la main sur le sentier de VOI Ambohimagneva",
-          "Au cœur de la forêt tropicale, VOI Ambohimagneva",
-          "Vue sur la vallée près de VOI Ambohimagneva",
           "Un uroplate de Sikora camouflé sur une branche, VOI Ambohimagneva",
-          "Une espèce de grenouille de VOI Ambohimagneva",
-          "Une autre espèce de grenouille de VOI Ambohimagneva",
+          "Une cascade moussue qui se déverse dans un bassin en forêt, VOI Ambohimagneva",
+          "Un grand papillon de nuit rose et orangé, à ocelles, posé sur la mousse à VOI Ambohimagneva",
+          "Vue sur la vallée près de VOI Ambohimagneva",
           "Plusieurs rainettes qui se reposent ensemble sur une branche devant la cascade, à VOI Ambohimagneva",
-          "Le perchoir feuillu des rainettes, au soleil, à VOI Ambohimagneva",
-          "Randonnée sur le sentier de VOI Ambohimagneva",
-          "Le guide Adrien sur la passerelle du sentier de VOI Ambohimagneva"
+          "Un longicorne rouge tacheté de blanc sur une tige cassée, VOI Ambohimagneva",
+          "Le guide Adrien sur la passerelle du sentier de VOI Ambohimagneva",
+          "Une mante brune sur la main d’un visiteur, VOI Ambohimagneva",
+          "Un petit crabe d’eau douce sur un rocher mouillé, VOI Ambohimagneva"
         ],
         "de": [
           "Hoher Wasserfall im Reservat VOI Ambohimagneva",
-          "Hoher Wasserfall weiter unten am Weg, VOI Ambohimagneva",
-          "Wasserfall, der in ein tiefes Becken stürzt, VOI Ambohimagneva",
-          "Wasserfall am Weg durch VOI Ambohimagneva",
+          "Eine große Boa überquert einen schlammigen Pfad, VOI Ambohimagneva",
           "Eine Person mit ausgebreiteten Armen vor einem Wasserfall, VOI Ambohimagneva",
-          "Eine badende Person steht in der Gischt eines Wasserfalls, VOI Ambohimagneva",
-          "Sonnenlicht auf einem Wasserfall zwischen dunklen Felsen, VOI Ambohimagneva",
-          "Eine moosige Kaskade ergießt sich in ein Waldbecken, VOI Ambohimagneva",
-          "Wasser gleitet in zwei Strömen über eine moosige Felswand, VOI Ambohimagneva",
-          "Ein Flussbecken in VOI Ambohimagneva",
-          "Ein weiteres Flussbecken am Weg durch VOI Ambohimagneva",
-          "Der Fluss, der durch VOI Ambohimagneva fließt",
-          "Eine handgeschnitzte Holzrinne am Weg durch VOI Ambohimagneva",
-          "Im Inneren des Regenwalds, VOI Ambohimagneva",
-          "Blick über das Tal bei VOI Ambohimagneva",
           "Moosiger Plattschwanzgecko, getarnt auf einem Ast, VOI Ambohimagneva",
-          "Eine Froschart aus VOI Ambohimagneva",
-          "Eine zweite Froschart aus VOI Ambohimagneva",
+          "Eine moosige Kaskade ergießt sich in ein Waldbecken, VOI Ambohimagneva",
+          "Ein großer rosa-orangefarbener Nachtfalter mit Augenflecken auf Moos, VOI Ambohimagneva",
+          "Blick über das Tal bei VOI Ambohimagneva",
           "Mehrere Laubfrösche ruhen gemeinsam auf einem Zweig vor dem Wasserfall, VOI Ambohimagneva",
-          "Der belaubte Ruheplatz der Laubfrösche in der Sonne, VOI Ambohimagneva",
-          "Wandern auf dem Weg durch VOI Ambohimagneva",
-          "Guide Adrien auf dem Bohlenweg in VOI Ambohimagneva"
+          "Ein roter, weiß gefleckter Bockkäfer auf einem abgebrochenen Stängel, VOI Ambohimagneva",
+          "Guide Adrien auf dem Bohlenweg in VOI Ambohimagneva",
+          "Eine braune Gottesanbeterin auf der Hand eines Besuchers, VOI Ambohimagneva",
+          "Eine kleine Süßwasserkrabbe auf einem nassen Felsen, VOI Ambohimagneva"
         ],
         "mg": [
           "Riandrano avo ao anatin'ny tahiry VOI Ambohimagneva",
-          "Riandrano avo any ambany kokoa amin'ny lalana, VOI Ambohimagneva",
-          "Riandrano milatsaka ao anaty dobo lalina, VOI Ambohimagneva",
-          "Riandrano eo amoron'ny lalan'ny VOI Ambohimagneva",
+          "Do lehibe miampita lalana feno fotaka ao VOI Ambohimagneva",
           "Mpitsidika manitatra ny sandriny eo anoloan'ny riandrano iray ao VOI Ambohimagneva",
-          "Mpilomano mijoro eo amin'ny tsiranoka avy amin'ny riandrano ao VOI Ambohimagneva",
-          "Taratry ny masoandro amin'ny riandrano eo anelanelan'ny vato maizina, VOI Ambohimagneva",
-          "Riandrano misy volon-ketsa milatsaka ao anaty dobo an'ala, VOI Ambohimagneva",
-          "Rano mikoriana roa sakana eo amin'ny hantsam-bato misy volon-ketsa, ao amin'ny VOI Ambohimagneva",
-          "Dobo eo amin'ny renirano ao VOI Ambohimagneva",
-          "Dobo iray hafa eo amin'ny renirano manaraka ny lalan'ny VOI Ambohimagneva",
-          "Ny renirano mamakivaky ny VOI Ambohimagneva",
-          "Lakan-drano hazo voasokitra tanana eo amin'ny lalan'ny VOI Ambohimagneva",
-          "Ao afovoan'ny ala mando, VOI Ambohimagneva",
-          "Fijery ny lohasaha akaikin'ny VOI Ambohimagneva",
           "Androngo rambo ravina (Uroplatus sikorae) miafina eo amin'ny sampan-kazo, VOI Ambohimagneva",
-          "Karazana sahona iray hita ao VOI Ambohimagneva",
-          "Karazana sahona iray hafa hita ao VOI Ambohimagneva",
+          "Riandrano misy volon-ketsa milatsaka ao anaty dobo an'ala, VOI Ambohimagneva",
+          "Lolo lehibe mavokely sy volom-boasary misy pentina toy ny maso, mipetraka eo amin'ny volon-ketsa, VOI Ambohimagneva",
+          "Fijery ny lohasaha akaikin'ny VOI Ambohimagneva",
           "Sahona maromaro mipetraka miaraka eo amin'ny sampan-kazo eo anoloan'ny riandrano, ao amin'ny VOI Ambohimagneva",
-          "Ny toerana fialan-tsasatry ny sahona eo anivon'ny ravina, amin'ny masoandro, ao amin'ny VOI Ambohimagneva",
-          "Dia an-tongotra eo amin'ny lalan'ny VOI Ambohimagneva",
-          "Adrien, mpitari-dalana, eo amin'ny tetezana hazo ao VOI Ambohimagneva"
+          "Voangory mena misy pentina fotsy sy tsamatsama lava, eo amin'ny tahon-kazo tapaka, VOI Ambohimagneva",
+          "Adrien, mpitari-dalana, eo amin'ny tetezana hazo ao VOI Ambohimagneva",
+          "Bibikely mante volontany eo amin'ny tanan'ny mpitsidika, VOI Ambohimagneva",
+          "Foza kely an-dranomamy eo amin'ny vato mando, VOI Ambohimagneva"
         ]
       }
     }
