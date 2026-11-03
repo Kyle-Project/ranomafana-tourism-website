@@ -125,6 +125,7 @@ const stayData = [
       { src: "images/cvb-campus-aerial.jpg", alt: "The Centre ValBio buildings from the air, beside the road with the forest behind" },
       { src: "images/cvb-terrace-dusk.jpg", alt: "Tables on the terrace outside the conference room at dusk, Centre ValBio" },
       { src: "images/cvb-buildings-night.jpg", alt: "The Centre ValBio buildings lit up at nightfall, with the forest behind" },   // Kyle, 26 Oct 2026
+      { src: "images/cvb-insect-collection.jpg", alt: "Four display drawers of pinned butterflies and moths, from blue-banded butterflies to large yellow moths with long tails, at Centre ValBio" },   // Kyle, 1 Nov 2026
       { src: "images/cvb-front-entrance-shot.jpg", alt: "Visitors at the Centre ValBio entrance" },
       { src: "images/cvb-community-event.jpg", fallback: "images/independence-day-cvb-team-shot.jpg", alt: "Community event at Centre ValBio" },
       { src: "images/cvb-team-group.jpg", fallback: "images/group-staff-shot.jpg", alt: "Centre ValBio team" },
@@ -269,33 +270,39 @@ const stayData = [
     slug: "centrest-sejour",
     name: "Centrest Sejour Hotel",
     type: "hotel",
-    price: "165,000–220,000 Ar / night",
+    price: "204,000–274,000 Ar / night",
     toGate: 5.5,
     rating: "3.5 (Tripadvisor, 212 reviews)",
-    img: "images/centrest-sejour-exterior.jpg",
+    img: "images/centrest-sejour-panorama.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
-    wifiNote: "In the restaurant",
+    wifiNote: "Free, throughout the hotel",
     verified: true,
-    asOf: "2026-10",
-    sourceNote: "Rates, meals and facilities from Kyle's notes (received 11 Oct 2026), which confirm +261 34 16 524 33 and the email. His notes say both 'breakfast included' and a 25,000–30,000 Ar breakfast price; read here as breakfast included with the room, priced for non-residents — confirm.",
-    desc: "Mid-range hotel at the entrance to Ranomafana village, with spacious rooms, private bungalows, a swimming pool, sports courts and Malagasy and French dining. Registered with the Ministry of Tourism.",
+    asOf: "2026-11",
+    sourceNote: "Rates, meals, facilities, rating, the +261 38 60 594 02 phone, WhatsApp (+33 7 88 68 49 25) and contact@centrest-sejour.com from the hotel's own description (Kyle, 1 Nov 2026), with its 12 photos (used as received). It replaces the rates in Kyle's notes of 11 Oct 2026 (165,000–220,000 Ar, breakfast 25,000–30,000 Ar, meals from 40,000 Ar), which also said 'breakfast included': the hotel's description prices breakfast separately and doesn't say it is included, so that line was taken off. +261 34 16 524 33 (Kyle's notes) and centrestsejour@gmail.com are kept from before. The description's Facebook link is a bare facebook.com address, so the earlier page is kept. Its facilities list includes 'Mahakajy Private Park' (see the Mahakajy Reserve listing).",
+    desc: "Hotel at the entrance to Ranomafana village since 2000, with a welcome inspired by Tanala culture. Rooms and bungalows sit in landscaped gardens around a swimming pool, with massage, basketball and bocce courts, billiards, and a restaurant and lounge bar serving Malagasy and French food. Registered with the Ministry of Tourism.",
     rooms: [
-      { type: "Double", price: "165,000 Ar" },
-      { type: "Double bungalow", price: "170,000 Ar" },
-      { type: "Triple", price: "190,000 Ar" },
-      { type: "Family (1 double + 2 single beds)", price: "220,000 Ar" }
+      { type: "Double or twin room", price: "204,000 Ar" },
+      { type: "Double or twin bungalow", price: "224,000 Ar" },
+      { type: "Triple room", price: "244,000 Ar" },
+      { type: "Family room (1 double + 2 single beds)", price: "274,000 Ar" }
     ],
-    ratesNote: "Breakfast is included.",
-    meals: ["Breakfast: 25,000–30,000 Ar (continental or American)", "Lunch or dinner: from 40,000 Ar"],
-    features: ["Swimming pool and pool area", "Basketball and bocce courts", "Billiards"],
+    meals: ["Breakfast: 40,000 Ar continental, 45,000 Ar American", "Lunch or dinner: from 35,000 Ar"],
+    features: ["Swimming pool and pool area", "Massage and wellness", "Basketball and bocce courts", "Billiards", "Restaurant and lounge bar", "Mahakajy private park"],
     gallery: [
-      { src: "images/centrest-sejour-exterior.jpg", alt: "Centrest Sejour Hotel exterior" },
-      { src: "images/centrest-sejour-room.jpg", alt: "Room at Centrest Sejour Hotel" },
-      { src: "images/centrest-sejour-lounge.jpg", alt: "Lounge at Centrest Sejour Hotel" },
-      { src: "images/centrest-sejour-restaurant.jpg", alt: "Restaurant at Centrest Sejour Hotel" },
-      { src: "images/centrest-sejour-landscaping.jpg", alt: "Landscaping at Centrest Sejour Hotel" }
+      { src: "images/centrest-sejour-panorama.jpg", alt: "Centrest Sejour Hotel's gardens behind its name wall, with misty forested hills" },
+      { src: "images/centrest-sejour-reception.jpg", alt: "Reception and courtyard at Centrest Sejour Hotel" },
+      { src: "images/centrest-sejour-bungalows.jpg", alt: "Red-roofed bungalows at Centrest Sejour Hotel, seen from above" },
+      { src: "images/centrest-sejour-pool.jpg", alt: "The swimming pool at Centrest Sejour Hotel, seen from above" },
+      { src: "images/centrest-sejour-room-garden.jpg", alt: "Double room at Centrest Sejour Hotel with a glass door to the garden" },
+      { src: "images/centrest-sejour-room-double.jpg", alt: "Double bed with towel swans and flowers at Centrest Sejour Hotel" },
+      { src: "images/centrest-sejour-room-twin.jpg", alt: "Twin room at Centrest Sejour Hotel" },
+      { src: "images/centrest-sejour-room-triple.jpg", alt: "Triple room at Centrest Sejour Hotel" },
+      { src: "images/centrest-sejour-restaurant-bar.jpg", alt: "Restaurant and lounge bar at Centrest Sejour Hotel" },
+      { src: "images/centrest-sejour-breakfast.jpg", alt: "Breakfast of eggs, fruit, coffee and a pastry at Centrest Sejour Hotel" },
+      { src: "images/centrest-sejour-massage.jpg", alt: "A massage at Centrest Sejour Hotel" },
+      { src: "images/centrest-sejour-basketball.jpg", alt: "The basketball court at Centrest Sejour Hotel in the rain" }
     ],
-    contact: { phone: "+261 34 16 524 33 / +261 38 60 594 02", email: "centrestsejour@gmail.com", website: "", social: "https://www.facebook.com/profile.php?id=61579310794179" }
+    contact: { phone: "+261 38 60 594 02 / +261 34 16 524 33", whatsapp: "+33 7 88 68 49 25", email: "contact@centrest-sejour.com", website: "", social: "https://www.facebook.com/profile.php?id=61579310794179", note: "Also centrestsejour@gmail.com. Contact the hotel directly to confirm availability." }
   },
   {
     slug: "cristo-hotel",
@@ -304,16 +311,26 @@ const stayData = [
     price: "Contact property for rates",
     toGate: 12,
     rating: "3.9 (Tripadvisor, 49 reviews)",
-    img: "images/cristo-hotel-exterior.jpg",
+    img: "images/cristo-hotel-sign.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     verified: true,
+    asOf: "2026-11",
+    sourceNote: "Meal prices and the event space for 40 people from Kyle, 3 Nov 2026. Photos: ten of Kyle's 22 of 3 Nov 2026 (look-alikes and distracting shots left out); they replace four older low-resolution web photos, whose files stay in images/ unused.",
     desc: "Mid-range rooms and bungalows in a lush Namorona River landscape 5 km from Ranomafana, with dining, a bar, and kayaking or local excursions on request.",
     gallery: [
-      { src: "images/cristo-hotel-exterior.jpg", alt: "Cristo Hotel exterior" },
-      { src: "images/cristo-hotel-room.jpg", alt: "Room at Cristo Hotel" },
-      { src: "images/cristo-hotel-room-2.jpg", alt: "Second room at Cristo Hotel" },
-      { src: "images/cristo-hotel-view.jpg", alt: "View of Cristo Hotel" }
+      { src: "images/cristo-hotel-sign.jpg", alt: "The Cristo sign in front of the yellow main building at Cristo Hotel" },
+      { src: "images/cristo-hotel-entrance.jpg", alt: "Stone steps up to the entrance of Cristo Hotel" },
+      { src: "images/cristo-hotel-terrace.jpg", alt: "The covered terrace at Cristo Hotel, looking out over green hills" },
+      { src: "images/cristo-hotel-reception.jpg", alt: "The stone reception desk at Cristo Hotel" },
+      { src: "images/cristo-hotel-dining-room.jpg", alt: "The dining room and bar at Cristo Hotel" },
+      { src: "images/cristo-hotel-room-double.jpg", alt: "A room with two beds at Cristo Hotel" },
+      { src: "images/cristo-hotel-bathroom.jpg", alt: "A bathroom with a shower at Cristo Hotel" },
+      { src: "images/cristo-hotel-bungalow.jpg", alt: "An A-frame bungalow on the lawn at Cristo Hotel" },
+      { src: "images/cristo-hotel-garden-path.jpg", alt: "A stone path under tree ferns in the grounds of Cristo Hotel" },
+      { src: "images/cristo-hotel-garden.jpg", alt: "Wooden benches under a thatched shade in the garden at Cristo Hotel" }
     ],
+    meals: ["Set menu: 45,000 Ar", "À la carte: starter 15,000 Ar, main course 30,000 Ar, dessert 15,000 Ar"],
+    features: ["Event space for up to 40 people"],
     contact: { phone: "+261 38 95 657 07", email: "cristomadagascar@gmail.com", website: "", social: "https://www.facebook.com/p/Cristo-HOTEL-Ranomafana-100092747982904/" }
   },
   {
@@ -921,12 +938,12 @@ const eatData = [
     type: "french",
     rating: "3.5 (Tripadvisor, 212 reviews)",
     price: "$$",
-    img: "images/centrest-sejour-restaurant.jpg",
+    img: "images/centrest-sejour-restaurant-bar.jpg",
     verified: true,
-    desc: "Hotel restaurant at the village entrance serving both Malagasy and French cuisine, open to non-residents.",
-    highlights: ["Malagasy and French menu", "Village entrance"],
-    meals: ["Breakfast: 25,000–30,000 Ar (continental or American)", "Lunch or dinner: from 40,000 Ar"],
-    contact: { phone: "+261 34 16 524 33 / +261 38 60 594 02", email: "centrestsejour@gmail.com", website: "", social: "https://www.facebook.com/profile.php?id=61579310794179" }
+    desc: "Hotel restaurant and lounge bar at the village entrance serving both Malagasy and French cuisine, open to non-residents.",
+    highlights: ["Malagasy and French menu", "Lounge bar", "Village entrance"],
+    meals: ["Breakfast: 40,000 Ar continental, 45,000 Ar American", "Lunch or dinner: from 35,000 Ar"],
+    contact: { phone: "+261 38 60 594 02 / +261 34 16 524 33", whatsapp: "+33 7 88 68 49 25", email: "contact@centrest-sejour.com", website: "", social: "https://www.facebook.com/profile.php?id=61579310794179", note: "Also centrestsejour@gmail.com." }
   },
   {
     slug: "au-domnatur-restaurant",
@@ -947,8 +964,11 @@ const eatData = [
     type: "malagasy",
     rating: "3.9 (Tripadvisor, 49 reviews)",
     price: "$$",
-    img: "images/cristo-hotel-view.jpg",
+    img: "images/cristo-hotel-dining-room.jpg",
     verified: true,
+    asOf: "2026-11",
+    sourceNote: "Meal prices from Kyle, 3 Nov 2026 (the same as on the Cristo Hotel listing). Card photo: the dining room, from Kyle's photos of 3 Nov 2026.",
+    meals: ["Set menu: 45,000 Ar", "À la carte: starter 15,000 Ar, main course 30,000 Ar, dessert 15,000 Ar"],
     desc: "Riverside bar and dining room 5 km from the village, often combined with the hotel's kayaking and excursion offers.",
     highlights: ["River setting", "Bar", "Excursions on request"],
     contact: { phone: "+261 38 95 657 07", email: "cristomadagascar@gmail.com", website: "", social: "https://www.facebook.com/p/Cristo-HOTEL-Ranomafana-100092747982904/" }
@@ -1278,15 +1298,18 @@ const doData = [
     photoNeeded: false,
     asOf: "2026-10",
     mapPin: "-21.2794454,47.530062",   // Google Maps' listing for the reserve; a name search finds other parks
-    sourceNote: "Added 26 Oct 2026 at Kyle's request, with his six photos of the same day (used as received). Name from the stone at its gate (\u201cLa Nature est l\u00e0 ! Mahakajy Reserve \u00b7 Bienvenue \u00b7 Welcome\u201d); first misread as 'Mahakaty' from the stylised J, corrected by Kyle on 1 Nov 2026 (the slug and photo file names keep the old spelling, as the listing's link was already online)). Opening hours read from the partly faded sign beside the reception door (\u201cHeure d'ouverture 8h \u00e0 15h 30mn 7j/7\u201d): confirm. Who runs it, entry and guide fees and contact details are not yet known: ask Kyle. Map pin from Google Maps' own listing for the reserve (a park, plus code PGCJ+62F, near Kelilalina on the RN25; its photo shows the same rocky river, and it opens at 8 am like the sign), checked 27 Oct 2026: a Google search for the name plus 'Ranomafana Madagascar' found nothing and fell back on other parks, Andasibe's among them.",
-    desc: "A forest reserve with a painted welcome stone at its gate: “La Nature est là !” (nature is here). A log-cabin reception and a gravel courtyard lead through a wooden gateway into the trees, where a trail of stone steps climbs to a view over a river running through rocky rapids. Open every day from 08:00 to 15:30.",
+    sourceNote: "Added 26 Oct 2026 at Kyle's request, with his six photos of the same day (used as received). Name from the stone at its gate (\u201cLa Nature est l\u00e0 ! Mahakajy Reserve \u00b7 Bienvenue \u00b7 Welcome\u201d); first misread as 'Mahakaty' from the stylised J, corrected by Kyle on 1 Nov 2026 (the slug and photo file names keep the old spelling, as the listing's link was already online)). Opening hours read from the partly faded sign beside the reception door (\u201cHeure d'ouverture 8h \u00e0 15h 30mn 7j/7\u201d): confirm. Who runs it, entry and guide fees and contact details are not yet known: ask Kyle. Centrest Hôtel's own description (1 Nov 2026) lists 'Mahakajy Private Park' among its facilities, so it may be Centrest's. Three more photos from Kyle on 1 Nov 2026 (used as received): the roadside sign, which lists 'Parc Naturel, Piscine et Snack, Aire de Jeux Enfants, Aire de Pik Nik' (the source of the pool, snack bar, play area and picnic area in the description; the start of the last two lines is hidden by the hedge), the paved drive in, and the 'Entrée Parc' gateway. Map pin from Google Maps' own listing for the reserve (a park, plus code PGCJ+62F, near Kelilalina on the RN25; its photo shows the same rocky river, and it opens at 8 am like the sign), checked 27 Oct 2026: a Google search for the name plus 'Ranomafana Madagascar' found nothing and fell back on other parks, Andasibe's among them.",
+    desc: "A forest reserve with a painted welcome stone at its gate: “La Nature est là !” (nature is here). A log-cabin reception and a gravel courtyard lead through a wooden gateway into the trees, where a trail of stone steps climbs to a view over a river running through rocky rapids. A sign by the road also lists a pool and snack bar, a children's play area and a picnic area. Open every day from 08:00 to 15:30.",
     tips: ["Open 08:00–15:30, seven days a week (the sign at the reception)", "Ask at the reception for entry and guide rates", "Wear shoes with grip: the trail has stone steps under fallen leaves"],
     gallery: [
       { src: "images/mahakaty-reserve-river-view.jpg", alt: "A river running through rocky rapids below forested hills, seen from the trail, Mahakajy Reserve" },
+      { src: "images/mahakaty-reserve-roadside-sign.jpg", alt: "The hand-painted sign by the road: “Mahakajy · Parc Naturel · Piscine et Snack”, with a play area and picnic area, Mahakajy Reserve" },
       { src: "images/mahakaty-reserve-sign.jpg", alt: "The painted welcome stone at the gate: “La Nature est là ! Mahakajy Reserve”, Mahakajy Reserve" },
       { src: "images/mahakaty-reserve-entrance.jpg", alt: "The entrance drive between two carved, tree-shaped posts, with a dog in front, Mahakajy Reserve" },
+      { src: "images/mahakaty-reserve-entrance-path.jpg", alt: "The paved drive in, between the carved tree-shaped posts and tall trees, Mahakajy Reserve" },
       { src: "images/mahakaty-reserve-reception.jpg", alt: "The log-cabin reception, with its “Accueil” sign and opening hours, Mahakajy Reserve" },
       { src: "images/mahakaty-reserve-gateway.jpg", alt: "Crossing the gravel courtyard to the wooden gateway into the forest, Mahakajy Reserve" },
+      { src: "images/mahakaty-reserve-entree-parc.jpg", alt: "The wooden gateway into the forest, with its “Entrée Parc” sign, Mahakajy Reserve" },
       { src: "images/mahakaty-reserve-trail.jpg", alt: "A trail of stone steps under fallen leaves through the forest, Mahakajy Reserve" }
     ],
     contact: { phone: "", email: "", website: "", social: "" }
@@ -1498,27 +1521,36 @@ const doData = [
     slug: "ranomafana-arboretum",
     name: "Ranomafana Arboretum",
     category: "Garden",
-    price: "10,000 Ar per person (non-Malagasy), guide included",
+    price: "20,000 Ar per person (Malagasy adults 2,000 Ar)",
     rating: "3.9 (Tripadvisor, 23 reviews)",
     duration: "About 1 hour",
     status: "open",
     img: "images/ranomafana-arboretum-flora.jpg",
     verified: true,
-    asOf: "2026-10",
+    asOf: "2026-11",
     photoNeeded: false,
-    sourceNote: "Ticket price, guided loop, founder, tree and animal details from Kyle's notes (received 11 Oct 2026). Unresolved: his notes say founded 1991 by Dan Turk, an earlier source here said 1994; they say 4 km east of town but also 'a two-minute drive or 20-minute walk', which fits the earlier 2 km better. The page gives the travel times and no distance or year until confirmed. The previously listed ~$5 entry fee was an estimate and has been removed. Photos: Kyle's, 1 Nov 2026 (used as received; seven of ten, look-alikes left out). Phone numbers read from the painted Arboretum sign by the road in the entrance photo; Kyle confirmed them on 1 Nov 2026.",
+    sourceNote: "Entry, night-visit, picnic and filming fees from the price board at the entrance (“Arboretum MFEE Ranomafana – Affichage de prix”, dated 11 Feb 2026, signed by the president of the C.GAV and the mayor), photographed by Kyle on 1 Nov 2026; it replaces the 10,000 Ar (guide included) in Kyle's notes of 11 Oct 2026, and says nothing about guides. History (first 36 native tree species planted June 1994 with Eucalyptus robusta and Pinus kesiya; laid out as an arboretum in 2005), the 2 km east of the town centre, the species counts, the nursery and the picnic chalet from the arboretum's own flier and history sheet (same day). This settles the old conflicts: the year is 1994 for the first planting (Kyle's notes said founded 1991), and the distance 2 km (his notes said 4 km). Founder, guided loop, fruits, chameleon feeding and animals from Kyle's notes. Phones and email from the price board (the flier gives two of the same numbers); the painted roadside sign also shows 033 62 077 42 and 034 23 408 73, left off because the newer board and flier don't list them. Photos Kyle's, 1 Nov 2026.",
+    entryFees: [   // from the price board of 11 Feb 2026; for: intl / mg / all drives the price switch
+      { for: "intl", who: "Foreign visitor or resident", price: "20,000 Ar" },
+      { for: "mg", who: "Malagasy adult", price: "2,000 Ar" },
+      { for: "mg", who: "Malagasy student", price: "1,000 Ar" },
+      { for: "all", who: "Night visit", price: "30,000 Ar" },
+      { for: "all", who: "Picnic, per group, on top of entry (1–8 people to 50 or more)", price: "3,000–12,000 Ar" },
+      { for: "all", who: "Filming, with written permission, on top of entry", price: "50,000 Ar" }
+    ],
     gallery: [
       { src: "images/ranomafana-arboretum-flora.jpg", alt: "Traveller's palms and a roofed shelter on a grassy hillside, Ranomafana Arboretum" },
       { src: "images/ranomafana-arboretum-valley-view.jpg", alt: "A stone table and bench on the lawn, looking out over the green hills of the valley, Ranomafana Arboretum" },
       { src: "images/ranomafana-arboretum-path.jpg", alt: "A path between palms, past small labelled signs, Ranomafana Arboretum" },
+      { src: "images/ranomafana-arboretum-woodland-path.jpg", alt: "A shaded path through young trees, with a stone bench, Ranomafana Arboretum" },
       { src: "images/ranomafana-arboretum-trees-board.jpg", alt: "The “Famous and amazing trees” board, in Malagasy, English and French, beside a path, Ranomafana Arboretum" },
       { src: "images/ranomafana-arboretum-nursery.jpg", alt: "Rows of young trees in a nursery, shaded by palm fronds, Ranomafana Arboretum" },
       { src: "images/ranomafana-arboretum-building.jpg", alt: "Stone steps up to the green Arboretum building, Ranomafana Arboretum" },
       { src: "images/ranomafana-arboretum-entrance.jpg", alt: "The painted Arboretum sign by the road, with a tree, a chameleon and phone numbers, Ranomafana Arboretum" }
     ],
-    desc: "A hidden gem just east of town on the RN25, founded by Dan Turk: more than 50 kinds of tree, some native to south-east Madagascar and some brought to the island by trade centuries ago, plus a young baobab. A guide speaking English, French and Malagasy leads a loop of the grounds, with stunning views of the valley, unusual fruits to try, and lowland streaked tenrecs, chameleons, butterflies and frogs along the way.",
-    tips: ["A two-minute drive, or an easy 20-minute walk, from town", "Expect the guided loop to take an hour or more", "Be ready to feed a giant Parson's chameleon an insect snack", "Gentle walking — suits varied mobility", "Good option in heavy rain or on a rest day"],
-    contact: { phone: "+261 34 99 164 66 / +261 33 62 077 42 / +261 34 23 408 73", email: "", website: "", social: "" }
+    desc: "A hidden gem 2 km east of the town centre on the RN25, founded by Dan Turk: its first 36 native tree species were planted in June 1994, and it was laid out as an arboretum in 2005. It now holds more than 250 species of native tree, more than 65 native palms and more than 200 selected varieties of fruit tree, each with an information plaque, and a nursery that raises palms. A guide speaking English, French and Malagasy leads a loop of the grounds, with stunning views of the valley, unusual fruits to try, and lowland streaked tenrecs, chameleons, butterflies and frogs along the way. A chalet and wide lawns make it a good place for a picnic.",
+    tips: ["2 km east of the town centre: a two-minute drive or an easy 20-minute walk", "Expect the guided loop to take an hour or more", "Be ready to feed a giant Parson's chameleon an insect snack", "Night visits too (30,000 Ar per person)", "Bring a picnic: there is a chalet and plenty of lawn", "Gentle walking — suits varied mobility", "Good option in heavy rain or on a rest day"],
+    contact: { phone: "+261 34 99 164 66 / +261 34 90 404 60 / +261 38 11 411 36", email: "arboretum.rmfna@gmail.com", website: "", social: "" }
   },
   {
     slug: "centre-valbio-tour",

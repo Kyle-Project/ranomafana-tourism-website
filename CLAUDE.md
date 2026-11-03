@@ -682,6 +682,9 @@ Kyle's other photos of 26 October 2026 (WhatsApp copies, used as received):
   (section 6 of `PHOTO-AND-DATA-GAPS.md`). Its `mapPin` (27 Oct 2026) is Google Maps'
   own listing for the reserve, near Kelilalina on the RN25: the usual name search (with
   "Ranomafana Madagascar" added) found nothing and fell back on other parks.
+  On 1 Nov 2026 Kyle sent three more (nine in all): the roadside sign, the paved drive
+  in, and the "Entrée Parc" gateway. The sign lists a pool and snack bar, a children's
+  play area and a picnic area, which the description now repeats.
 - **VOI Ambohimagneva** (27 Oct 2026, Kyle: "limit … to top 12 photos and remove any
   similar images"): its gallery holds 12. Left out as look-alikes: waterfall-pool,
   waterfall-1, waterfall-sunlit, river-pool-2, river, water-channel, forest-view,
@@ -703,7 +706,9 @@ Kyle's other photos of 26 October 2026 (WhatsApp copies, used as received):
 - **Centre ValBio at night** (`cvb-buildings-night.jpg`), fourth in its stay gallery.
   The same day Kyle had the leaf-tailed gecko and the "researcher and guide" slot
   (`cvb-researcher-guide.jpg`) taken out of that gallery; don't put them back. The guide
-  photo is still the image of the draft story "Hiring a Guide".
+  photo is still the image of the draft story "Hiring a Guide". On 1 Nov 2026 Kyle added
+  four drawers of pinned butterflies and moths (`cvb-insect-collection.jpg`) after the
+  night photo; no species are named.
 - **Kayaking:** the launch slot (`namorona-kayaking-launch.jpg`) is filled, and a
   paddler waving at the launch (`namorona-kayaking-paddler.jpg`) added after it; the
   group slot is still waiting.
@@ -720,14 +725,34 @@ Kyle's photos of 1 November 2026 (used as received):
   no listing for it, so `mapPin` is Kyle's own pin for the farm. No prices or hours yet.
 - **Ranomafana Arboretum:** seven of ten photos (look-alikes left out: a second nursery shot,
   the "Palms of Madagascar" board, a lawn path) fill its three slots and add four; the card
-  photo is the traveller's palms hillside (`ranomafana-arboretum-flora.jpg`). Its three phone
-  numbers come from the painted roadside sign in the entrance photo (Kyle confirmed them).
+  photo is the traveller's palms hillside (`ranomafana-arboretum-flora.jpg`). Later that day a
+  woodland path photo was added, and the arboretum's flier, history sheet and price board
+  (dated 11 Feb 2026; copies in `photo-originals/2026-11-01 Arboretum/`) gave its fees as
+  `entryFees` with the price switch (20,000 Ar foreign, 2,000 Ar Malagasy; the old 10,000 Ar
+  from Kyle's notes is gone, so the plan costs rose too), its history (planted 1994, an
+  arboretum since 2005), 2 km from the centre, species counts, phones and email. The two
+  painted-sign numbers not on the board were taken off.
 - **Ny Tanàna Hotel:** nine of fourteen photos (left out: a second courtyard and a second
   pool shot, the bed close-up, the desk, and the chalkboard day menu, whose price changes);
   the gate with its sign is the card photo, and `view` is still waiting. Rates, phones,
   email and meal prices come from the hotel's own rate sheet and menus. The sheet writes
   the email with an underscore, so it is given on the hotel's confirmed
   nytanana-hotel-ranomafana.mg domain (Kyle confirmed it); whether breakfast is included isn't stated.
+- **Centrest Sejour Hotel:** the hotel's own description (`Centrest Hôtel Ranomafana -
+  Description.docx`) and its 12 photos replaced the old five-photo gallery (the old files
+  stay in `images/`, unused). New rates (204,000–274,000 Ar), meals, facilities, WhatsApp
+  (a French +33 number) and contact@centrest-sejour.com; the old number and gmail address
+  are kept. Its Facebook link was a bare facebook.com, so the old page stays. "Breakfast
+  included" was taken off. It lists "Mahakajy Private Park" as a facility: asked of Kyle
+  whether Centrest runs the Mahakajy Reserve.
+
+Kyle's photos of 3 November 2026 (Kyle: "choose the best while removing duplicates or
+distracting photos"): **Cristo Hotel** has ten of his 22, the sign before the yellow
+main building as its card photo; they replace the four old low-resolution web photos
+(files kept in `images/`, unused). The dining room is now the Bar & Restaurant's card
+photo. Kyle gave its meal prices the same day (set menu 45,000 Ar; starter 15,000, main
+30,000, dessert 15,000 Ar), on both listings, and an event space for 40 people (hotel).
+What was left out, and why, is in section 7 of `PHOTO-AND-DATA-GAPS.md`.
 
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide

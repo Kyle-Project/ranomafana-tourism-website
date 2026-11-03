@@ -45,6 +45,7 @@ const LISTING_TRANSLATIONS = {
           "The Centre ValBio buildings from the air, beside the road with the forest behind",
           "Tables on the terrace outside the conference room at dusk, Centre ValBio",
           "The Centre ValBio buildings lit up at nightfall, with the forest behind",
+          "Four display drawers of pinned butterflies and moths, from blue-banded butterflies to large yellow moths with long tails, at Centre ValBio",
           "Visitors at the Centre ValBio entrance",
           "Community event at Centre ValBio",
           "Centre ValBio team",
@@ -56,6 +57,7 @@ const LISTING_TRANSLATIONS = {
           "Les bâtiments du Centre ValBio vus du ciel, au bord de la route, la forêt derrière",
           "Des tables sur la terrasse devant la salle de conférence, au crépuscule, Centre ValBio",
           "Les bâtiments du Centre ValBio éclairés à la tombée de la nuit, la forêt derrière",
+          "Quatre tiroirs de collection de papillons et de papillons de nuit épinglés, des papillons à bandes bleues aux grands papillons jaunes à longues queues, au Centre ValBio",
           "Des visiteurs à l’entrée du Centre ValBio",
           "Un événement communautaire au Centre ValBio",
           "L’équipe du Centre ValBio",
@@ -67,6 +69,7 @@ const LISTING_TRANSLATIONS = {
           "Die Gebäude des Centre ValBio aus der Luft, an der Straße, dahinter der Wald",
           "Tische auf der Terrasse vor dem Konferenzraum in der Abenddämmerung, Centre ValBio",
           "Die Gebäude des Centre ValBio, beleuchtet bei Einbruch der Nacht, dahinter der Wald",
+          "Vier Schaukästen mit aufgespießten Schmetterlingen und Nachtfaltern, von blau gebänderten Faltern bis zu großen gelben Faltern mit langen Schwänzen, im Centre ValBio",
           "Besucher am Eingang des Centre ValBio",
           "Gemeindeveranstaltung im Centre ValBio",
           "Das Team des Centre ValBio",
@@ -78,6 +81,7 @@ const LISTING_TRANSLATIONS = {
           "Ireo tranon'ny Centre ValBio jerena avy eny ambony, eo amoron-dalana, misy ala ao ambadika",
           "Latabatra eo amin'ny lavarangana eo anoloan'ny efitrano fivoriana, amin'ny takariva, Centre ValBio",
           "Ireo tranon'ny Centre ValBio mirehitra jiro rehefa alina, misy ala ao aoriany",
+          "Vata fampisehoana efatra misy lolo voatsatoka maro karazana, manomboka amin'ny lolo misy tsipika manga ka hatramin'ny lolo mavo lehibe manana rambo lava, ao amin'ny Centre ValBio",
           "Mpitsidika eo amin'ny fidirana ao amin'ny Centre ValBio",
           "Hetsika iarahan'ny fiaraha-monina ao amin'ny Centre ValBio",
           "Ny ekipan'ny Centre ValBio",
@@ -482,104 +486,132 @@ const LISTING_TRANSLATIONS = {
     },
     "centrest-sejour": {
       "desc": {
-        "en": "Mid-range hotel at the entrance to Ranomafana village, with spacious rooms, private bungalows, a swimming pool, sports courts and Malagasy and French dining. Registered with the Ministry of Tourism.",
-        "fr": "Hôtel de milieu de gamme à l’entrée du village de Ranomafana, avec des chambres spacieuses, des bungalows privés, une piscine, des terrains de sport et une cuisine malgache et française. Enregistré auprès du ministère du Tourisme.",
-        "de": "Mittelklassehotel am Ortseingang von Ranomafana, mit geräumigen Zimmern, eigenen Bungalows, Schwimmbad, Sportplätzen und madagassischer und französischer Küche. Beim Tourismusministerium registriert.",
-        "mg": "Hotely antonony eo amin'ny fidirana ao an-tanànan'i Ranomafana, misy efitrano malalaka, bungalow manokana, dobo filomanosana, kianja fanatanjahantena, ary sakafo malagasy sy frantsay. Voasoratra ao amin'ny Minisiteran'ny Fizahantany."
+        "en": "Hotel at the entrance to Ranomafana village since 2000, with a welcome inspired by Tanala culture. Rooms and bungalows sit in landscaped gardens around a swimming pool, with massage, basketball and bocce courts, billiards, and a restaurant and lounge bar serving Malagasy and French food. Registered with the Ministry of Tourism.",
+        "fr": "Hôtel à l’entrée du village de Ranomafana depuis 2000, à l’accueil inspiré de la culture tanala. Chambres et bungalows dans des jardins aménagés autour d’une piscine, avec massages, terrains de basket et de pétanque, billard, et un restaurant et lounge-bar à la cuisine malgache et française. Enregistré auprès du ministère du Tourisme.",
+        "de": "Hotel am Ortseingang von Ranomafana seit 2000, mit einem Empfang im Geist der Tanala-Kultur. Zimmer und Bungalows liegen in gepflegten Gärten um ein Schwimmbad, dazu Massagen, Basketball- und Boccia-Platz, Billard sowie Restaurant und Lounge-Bar mit madagassischer und französischer Küche. Beim Tourismusministerium registriert.",
+        "mg": "Hotely eo amin'ny fidirana ao an-tanànan'i Ranomafana nanomboka tamin'ny 2000, manana fandraisana vahiny aingam-panahy avy amin'ny kolontsaina tanala. Efitrano sy bungalow ao anaty zaridaina voakarakara manodidina dobo filomanosana, misy fanorana, kianja basikety sy petanka, biliara, ary trano fisakafoana sy bara manome sakafo malagasy sy frantsay. Voasoratra ao amin'ny Minisiteran'ny Fizahantany."
       },
       "price": {
-        "en": "165,000–220,000 Ar / night",
-        "fr": "165 000–220 000 Ar / nuit",
-        "de": "165.000–220.000 Ar / Nacht",
-        "mg": "165 000–220 000 Ar / alina"
+        "en": "204,000–274,000 Ar / night",
+        "fr": "204 000–274 000 Ar / nuit",
+        "de": "204.000–274.000 Ar / Nacht",
+        "mg": "204 000–274 000 Ar / alina"
       },
       "wifiNote": {
-        "en": "In the restaurant",
-        "fr": "Au restaurant",
-        "de": "Im Restaurant",
-        "mg": "Ao amin'ny trano fisakafoana"
+        "en": "Free, throughout the hotel",
+        "fr": "Gratuit, dans tout l’hôtel",
+        "de": "Kostenlos, im ganzen Hotel",
+        "mg": "Maimaim-poana, manerana ny hotely"
       },
       "rooms": {
         "en": [
-          { "type": "Double", "price": "165,000 Ar" },
-          { "type": "Double bungalow", "price": "170,000 Ar" },
-          { "type": "Triple", "price": "190,000 Ar" },
-          { "type": "Family (1 double + 2 single beds)", "price": "220,000 Ar" }
+          { "type": "Double or twin room", "price": "204,000 Ar" },
+          { "type": "Double or twin bungalow", "price": "224,000 Ar" },
+          { "type": "Triple room", "price": "244,000 Ar" },
+          { "type": "Family room (1 double + 2 single beds)", "price": "274,000 Ar" }
         ],
         "fr": [
-          { "type": "Double", "price": "165 000 Ar" },
-          { "type": "Bungalow double", "price": "170 000 Ar" },
-          { "type": "Triple", "price": "190 000 Ar" },
-          { "type": "Familiale (1 lit double + 2 lits simples)", "price": "220 000 Ar" }
+          { "type": "Chambre double ou twin", "price": "204 000 Ar" },
+          { "type": "Bungalow double ou twin", "price": "224 000 Ar" },
+          { "type": "Chambre triple", "price": "244 000 Ar" },
+          { "type": "Chambre familiale (1 lit double + 2 lits simples)", "price": "274 000 Ar" }
         ],
         "de": [
-          { "type": "Doppelzimmer", "price": "165.000 Ar" },
-          { "type": "Doppelbungalow", "price": "170.000 Ar" },
-          { "type": "Dreibettzimmer", "price": "190.000 Ar" },
-          { "type": "Familienzimmer (1 Doppelbett + 2 Einzelbetten)", "price": "220.000 Ar" }
+          { "type": "Doppel- oder Zweibettzimmer", "price": "204.000 Ar" },
+          { "type": "Doppel- oder Zweibettbungalow", "price": "224.000 Ar" },
+          { "type": "Dreibettzimmer", "price": "244.000 Ar" },
+          { "type": "Familienzimmer (1 Doppelbett + 2 Einzelbetten)", "price": "274.000 Ar" }
         ],
         "mg": [
-          { "type": "Fandriana roa olona", "price": "165 000 Ar" },
-          { "type": "Bungalow roa olona", "price": "170 000 Ar" },
-          { "type": "Telo olona", "price": "190 000 Ar" },
-          { "type": "Fianakaviana (fandriana roa olona 1 + fandriana kely 2)", "price": "220 000 Ar" }
+          { "type": "Efitrano roa olona na fandriana kely roa", "price": "204 000 Ar" },
+          { "type": "Bungalow roa olona na fandriana kely roa", "price": "224 000 Ar" },
+          { "type": "Efitrano telo olona", "price": "244 000 Ar" },
+          { "type": "Efitrano fianakaviana (fandriana roa olona 1 + fandriana kely 2)", "price": "274 000 Ar" }
         ]
       },
       "meals": {
-        "en": ["Breakfast: 25,000–30,000 Ar (continental or American)", "Lunch or dinner: from 40,000 Ar"],
+        "en": ["Breakfast: 40,000 Ar continental, 45,000 Ar American", "Lunch or dinner: from 35,000 Ar"],
         "fr": [
-          "Petit-déjeuner : 25 000–30 000 Ar (continental ou américain)",
-          "Déjeuner ou dîner : à partir de 40 000 Ar"
+          "Petit-déjeuner : 40 000 Ar continental, 45 000 Ar américain",
+          "Déjeuner ou dîner : à partir de 35 000 Ar"
         ],
         "de": [
-          "Frühstück: 25.000–30.000 Ar (kontinental oder amerikanisch)",
-          "Mittag- oder Abendessen: ab 40.000 Ar"
+          "Frühstück: 40.000 Ar kontinental, 45.000 Ar amerikanisch",
+          "Mittag- oder Abendessen: ab 35.000 Ar"
         ],
         "mg": [
-          "Sakafo maraina: 25 000–30 000 Ar (kaontinantaly na amerikanina)",
-          "Sakafo antoandro na hariva: manomboka amin'ny 40 000 Ar"
+          "Sakafo maraina: 40 000 Ar kaontinantaly, 45 000 Ar amerikanina",
+          "Sakafo antoandro na hariva: manomboka amin'ny 35 000 Ar"
         ]
       },
       "features": {
-        "en": ["Swimming pool and pool area", "Basketball and bocce courts", "Billiards"],
-        "fr": ["Piscine et espace piscine", "Terrains de basket et de pétanque", "Billard"],
-        "de": ["Schwimmbad mit Liegebereich", "Basketball- und Boccia-Platz", "Billard"],
-        "mg": ["Dobo filomanosana sy ny manodidina azy", "Kianja basikety sy petanka", "Biliara"]
+        "en": ["Swimming pool and pool area", "Massage and wellness", "Basketball and bocce courts", "Billiards", "Restaurant and lounge bar", "Mahakajy private park"],
+        "fr": ["Piscine et espace détente", "Massages et bien-être", "Terrains de basket et de pétanque", "Billard", "Restaurant et lounge-bar", "Parc privé de Mahakajy"],
+        "de": ["Schwimmbad mit Liegebereich", "Massagen und Wellness", "Basketball- und Boccia-Platz", "Billard", "Restaurant und Lounge-Bar", "Privatpark Mahakajy"],
+        "mg": ["Dobo filomanosana sy ny manodidina azy", "Fanorana sy fahasalamana", "Kianja basikety sy petanka", "Biliara", "Trano fisakafoana sy bara", "Valan-javaboahary tsy miankina Mahakajy"]
       },
-      "ratesNote": {
-        "en": "Breakfast is included.",
-        "fr": "Petit-déjeuner inclus.",
-        "de": "Frühstück inklusive.",
-        "mg": "Tafiditra ao ny sakafo maraina."
+      "contact.note": {
+        "en": "Also centrestsejour@gmail.com. Contact the hotel directly to confirm availability.",
+        "fr": "Aussi centrestsejour@gmail.com. Contactez directement l’hôtel pour vérifier les disponibilités.",
+        "de": "Auch centrestsejour@gmail.com. Verfügbarkeit bitte direkt beim Hotel erfragen.",
+        "mg": "Misy koa centrestsejour@gmail.com. Mifandraisa mivantana amin'ny hotely hanamarinana raha mbola misy toerana."
       },
       "gallery[].alt": {
         "en": [
-          "Centrest Sejour Hotel exterior",
-          "Room at Centrest Sejour Hotel",
-          "Lounge at Centrest Sejour Hotel",
-          "Restaurant at Centrest Sejour Hotel",
-          "Landscaping at Centrest Sejour Hotel"
+          "Centrest Sejour Hotel's gardens behind its name wall, with misty forested hills",
+          "Reception and courtyard at Centrest Sejour Hotel",
+          "Red-roofed bungalows at Centrest Sejour Hotel, seen from above",
+          "The swimming pool at Centrest Sejour Hotel, seen from above",
+          "Double room at Centrest Sejour Hotel with a glass door to the garden",
+          "Double bed with towel swans and flowers at Centrest Sejour Hotel",
+          "Twin room at Centrest Sejour Hotel",
+          "Triple room at Centrest Sejour Hotel",
+          "Restaurant and lounge bar at Centrest Sejour Hotel",
+          "Breakfast of eggs, fruit, coffee and a pastry at Centrest Sejour Hotel",
+          "A massage at Centrest Sejour Hotel",
+          "The basketball court at Centrest Sejour Hotel in the rain"
         ],
         "fr": [
-          "Centrest Sejour Hotel : vue extérieure",
-          "Centrest Sejour Hotel : une chambre",
-          "Centrest Sejour Hotel : le salon",
-          "Centrest Sejour Hotel : le restaurant",
-          "Centrest Sejour Hotel : les jardins"
+          "Centrest Sejour Hotel : les jardins derrière le mur à son nom, sur fond de collines boisées dans la brume",
+          "Centrest Sejour Hotel : la réception et la cour",
+          "Centrest Sejour Hotel : les bungalows aux toits rouges, vus d’en haut",
+          "Centrest Sejour Hotel : la piscine, vue d’en haut",
+          "Centrest Sejour Hotel : une chambre double avec porte vitrée sur le jardin",
+          "Centrest Sejour Hotel : un lit double orné de cygnes en serviettes et de fleurs",
+          "Centrest Sejour Hotel : une chambre twin",
+          "Centrest Sejour Hotel : une chambre triple",
+          "Centrest Sejour Hotel : le restaurant et le lounge-bar",
+          "Centrest Sejour Hotel : petit-déjeuner d’œufs, fruits, café et viennoiserie",
+          "Centrest Sejour Hotel : un massage",
+          "Centrest Sejour Hotel : le terrain de basket sous la pluie"
         ],
         "de": [
-          "Centrest Sejour Hotel: Außenansicht",
-          "Centrest Sejour Hotel: ein Zimmer",
-          "Centrest Sejour Hotel: die Lounge",
-          "Centrest Sejour Hotel: das Restaurant",
-          "Centrest Sejour Hotel: die Gartenanlage"
+          "Centrest Sejour Hotel: die Gärten hinter der Mauer mit seinem Namen, vor nebligen bewaldeten Hügeln",
+          "Centrest Sejour Hotel: Rezeption und Innenhof",
+          "Centrest Sejour Hotel: die Bungalows mit roten Dächern von oben",
+          "Centrest Sejour Hotel: das Schwimmbad von oben",
+          "Centrest Sejour Hotel: ein Doppelzimmer mit Glastür zum Garten",
+          "Centrest Sejour Hotel: ein Doppelbett mit Handtuchschwänen und Blumen",
+          "Centrest Sejour Hotel: ein Zweibettzimmer",
+          "Centrest Sejour Hotel: ein Dreibettzimmer",
+          "Centrest Sejour Hotel: Restaurant und Lounge-Bar",
+          "Centrest Sejour Hotel: Frühstück mit Eiern, Obst, Kaffee und Gebäck",
+          "Centrest Sejour Hotel: eine Massage",
+          "Centrest Sejour Hotel: der Basketballplatz im Regen"
         ],
         "mg": [
-          "Centrest Sejour Hotel: ny ivelany",
-          "Centrest Sejour Hotel: efitrano iray",
-          "Centrest Sejour Hotel: ny efitrano fandraisana",
-          "Centrest Sejour Hotel: ny trano fisakafoana",
-          "Centrest Sejour Hotel: ny zaridaina"
+          "Centrest Sejour Hotel: ny zaridaina ao ambadiky ny rindrina misy ny anarany, sy ny havoana feno ala rakotra zavona",
+          "Centrest Sejour Hotel: ny fandraisana sy ny tokotany",
+          "Centrest Sejour Hotel: ireo bungalow mena tafo, jerena avy any ambony",
+          "Centrest Sejour Hotel: ny dobo filomanosana, jerena avy any ambony",
+          "Centrest Sejour Hotel: efitrano roa olona misy varavarana fitaratra mivoaka amin'ny zaridaina",
+          "Centrest Sejour Hotel: fandriana roa olona voaravaka sisina vita amin'ny servieta sy voninkazo",
+          "Centrest Sejour Hotel: efitrano misy fandriana kely roa",
+          "Centrest Sejour Hotel: efitrano telo olona",
+          "Centrest Sejour Hotel: ny trano fisakafoana sy ny bara",
+          "Centrest Sejour Hotel: sakafo maraina misy atody, voankazo, kafe ary mofomamy",
+          "Centrest Sejour Hotel: fanorana",
+          "Centrest Sejour Hotel: ny kianja basikety amin'ny andro orana"
         ]
       }
     },
@@ -596,30 +628,66 @@ const LISTING_TRANSLATIONS = {
         "de": "Preise beim Haus erfragen",
         "mg": "Anontanio amin'ny tompony ny vidiny"
       },
+      "meals": {
+        "en": ["Set menu: 45,000 Ar", "À la carte: starter 15,000 Ar, main course 30,000 Ar, dessert 15,000 Ar"],
+        "fr": ["Menu : 45 000 Ar", "À la carte : entrée 15 000 Ar, plat 30 000 Ar, dessert 15 000 Ar"],
+        "de": ["Menü: 45.000 Ar", "À la carte: Vorspeise 15.000 Ar, Hauptgericht 30.000 Ar, Dessert 15.000 Ar"],
+        "mg": ["Sakafo voalamina: 45 000 Ar", "Isaky ny lovia: fanombohana 15 000 Ar, sakafo fototra 30 000 Ar, tsindrin-tsakafo 15 000 Ar"]
+      },
+      "features": {
+        "en": ["Event space for up to 40 people"],
+        "fr": ["Salle pour événements jusqu’à 40 personnes"],
+        "de": ["Veranstaltungsraum für bis zu 40 Personen"],
+        "mg": ["Toerana fanaovana hetsika ho an'olona hatramin'ny 40"]
+      },
       "gallery[].alt": {
         "en": [
-          "Cristo Hotel exterior",
-          "Room at Cristo Hotel",
-          "Second room at Cristo Hotel",
-          "View of Cristo Hotel"
+          "The Cristo sign in front of the yellow main building at Cristo Hotel",
+          "Stone steps up to the entrance of Cristo Hotel",
+          "The covered terrace at Cristo Hotel, looking out over green hills",
+          "The stone reception desk at Cristo Hotel",
+          "The dining room and bar at Cristo Hotel",
+          "A room with two beds at Cristo Hotel",
+          "A bathroom with a shower at Cristo Hotel",
+          "An A-frame bungalow on the lawn at Cristo Hotel",
+          "A stone path under tree ferns in the grounds of Cristo Hotel",
+          "Wooden benches under a thatched shade in the garden at Cristo Hotel"
         ],
         "fr": [
-          "Cristo Hotel : vue extérieure",
-          "Cristo Hotel : une chambre",
-          "Cristo Hotel : une autre chambre",
-          "Cristo Hotel : vue d’ensemble"
+          "L’enseigne Cristo devant le bâtiment principal jaune du Cristo Hotel",
+          "L’escalier de pierre qui mène à l’entrée du Cristo Hotel",
+          "La terrasse couverte du Cristo Hotel, face aux collines verdoyantes",
+          "Le comptoir de réception en pierre du Cristo Hotel",
+          "La salle à manger et le bar du Cristo Hotel",
+          "Une chambre à deux lits au Cristo Hotel",
+          "Une salle de bains avec douche au Cristo Hotel",
+          "Un bungalow en A sur la pelouse du Cristo Hotel",
+          "Un sentier de pierre sous les fougères arborescentes, dans le parc du Cristo Hotel",
+          "Des bancs en bois sous un abri de chaume, dans le jardin du Cristo Hotel"
         ],
         "de": [
-          "Cristo Hotel: Außenansicht",
-          "Cristo Hotel: ein Zimmer",
-          "Cristo Hotel: ein weiteres Zimmer",
-          "Cristo Hotel: Gesamtansicht"
+          "Das Cristo-Schild vor dem gelben Hauptgebäude des Cristo Hotel",
+          "Steinstufen hinauf zum Eingang des Cristo Hotel",
+          "Die überdachte Terrasse des Cristo Hotel mit Blick auf grüne Hügel",
+          "Die steinerne Rezeption des Cristo Hotel",
+          "Speisesaal und Bar des Cristo Hotel",
+          "Ein Zimmer mit zwei Betten im Cristo Hotel",
+          "Ein Bad mit Dusche im Cristo Hotel",
+          "Ein Bungalow mit Spitzdach auf dem Rasen des Cristo Hotel",
+          "Ein Steinweg unter Baumfarnen auf dem Gelände des Cristo Hotel",
+          "Holzbänke unter einem Strohdach im Garten des Cristo Hotel"
         ],
         "mg": [
-          "Cristo Hotel: ny ivelany",
-          "Cristo Hotel: efitrano iray",
-          "Cristo Hotel: efitrano iray hafa",
-          "Cristo Hotel: fijery ankapobeny"
+          "Ny takelaka Cristo eo anoloan'ny trano lehibe mavo ao amin'ny Cristo Hotel",
+          "Tohatra vato miakatra mankany amin'ny fidirana ao amin'ny Cristo Hotel",
+          "Ny lavarangana misy tafo ao amin'ny Cristo Hotel, manatrika havoana maitso",
+          "Ny fandraisana vita amin'ny vato ao amin'ny Cristo Hotel",
+          "Ny efitrano fisakafoana sy ny bar ao amin'ny Cristo Hotel",
+          "Efitrano misy fandriana roa ao amin'ny Cristo Hotel",
+          "Efitra fandroana misy douche ao amin'ny Cristo Hotel",
+          "Bungalow miendrika A eo amin'ny bozaka ao amin'ny Cristo Hotel",
+          "Lalana vato ambanin'ny fanjana ao amin'ny tokotanin'ny Cristo Hotel",
+          "Dabilio hazo ambanin'ny fialofana bozaka ao amin'ny zaridainan'ny Cristo Hotel"
         ]
       }
     },
@@ -2265,31 +2333,37 @@ const LISTING_TRANSLATIONS = {
         "mg": "Trano fisakafoan'ny Centrest Sejour"
       },
       "desc": {
-        "en": "Hotel restaurant at the village entrance serving both Malagasy and French cuisine, open to non-residents.",
-        "fr": "Restaurant d’hôtel à l’entrée du village, avec une cuisine malgache et française, ouvert aux clients extérieurs.",
-        "de": "Hotelrestaurant am Ortseingang mit madagassischer und französischer Küche, auch für Gäste, die nicht im Hotel wohnen.",
-        "mg": "Trano fisakafoana ao amin'ny hotely eo amin'ny fidirana ao an-tanàna, manome sakafo malagasy sy frantsay, misokatra ho an'ny vahiny tsy matory ao."
+        "en": "Hotel restaurant and lounge bar at the village entrance serving both Malagasy and French cuisine, open to non-residents.",
+        "fr": "Restaurant et lounge-bar d’hôtel à l’entrée du village, avec une cuisine malgache et française, ouvert aux clients extérieurs.",
+        "de": "Hotelrestaurant mit Lounge-Bar am Ortseingang, mit madagassischer und französischer Küche, auch für Gäste, die nicht im Hotel wohnen.",
+        "mg": "Trano fisakafoana sy bara ao amin'ny hotely eo amin'ny fidirana ao an-tanàna, manome sakafo malagasy sy frantsay, misokatra ho an'ny vahiny tsy matory ao."
       },
       "highlights": {
-        "en": ["Malagasy and French menu", "Village entrance"],
-        "fr": ["Carte malgache et française", "À l’entrée du village"],
-        "de": ["Madagassische und französische Karte", "Am Ortseingang"],
-        "mg": ["Sakafo malagasy sy frantsay", "Eo amin'ny fidirana ao an-tanàna"]
+        "en": ["Malagasy and French menu", "Lounge bar", "Village entrance"],
+        "fr": ["Carte malgache et française", "Lounge-bar", "À l’entrée du village"],
+        "de": ["Madagassische und französische Karte", "Lounge-Bar", "Am Ortseingang"],
+        "mg": ["Sakafo malagasy sy frantsay", "Bara", "Eo amin'ny fidirana ao an-tanàna"]
       },
       "meals": {
-        "en": ["Breakfast: 25,000–30,000 Ar (continental or American)", "Lunch or dinner: from 40,000 Ar"],
+        "en": ["Breakfast: 40,000 Ar continental, 45,000 Ar American", "Lunch or dinner: from 35,000 Ar"],
         "fr": [
-          "Petit-déjeuner : 25 000–30 000 Ar (continental ou américain)",
-          "Déjeuner ou dîner : à partir de 40 000 Ar"
+          "Petit-déjeuner : 40 000 Ar continental, 45 000 Ar américain",
+          "Déjeuner ou dîner : à partir de 35 000 Ar"
         ],
         "de": [
-          "Frühstück: 25.000–30.000 Ar (kontinental oder amerikanisch)",
-          "Mittag- oder Abendessen: ab 40.000 Ar"
+          "Frühstück: 40.000 Ar kontinental, 45.000 Ar amerikanisch",
+          "Mittag- oder Abendessen: ab 35.000 Ar"
         ],
         "mg": [
-          "Sakafo maraina: 25 000–30 000 Ar (kaontinantaly na amerikanina)",
-          "Sakafo antoandro na hariva: manomboka amin'ny 40 000 Ar"
+          "Sakafo maraina: 40 000 Ar kaontinantaly, 45 000 Ar amerikanina",
+          "Sakafo antoandro na hariva: manomboka amin'ny 35 000 Ar"
         ]
+      },
+      "contact.note": {
+        "en": "Also centrestsejour@gmail.com.",
+        "fr": "Aussi centrestsejour@gmail.com.",
+        "de": "Auch centrestsejour@gmail.com.",
+        "mg": "Misy koa centrestsejour@gmail.com."
       }
     },
     "au-domnatur-restaurant": {
@@ -2345,6 +2419,12 @@ const LISTING_TRANSLATIONS = {
         "fr": ["Cadre au bord de la rivière", "Bar", "Excursions sur demande"],
         "de": ["Lage am Fluss", "Bar", "Ausflüge auf Wunsch"],
         "mg": ["Eo amoron'ny renirano", "Bar", "Fitsangatsanganana raha angatahina"]
+      },
+      "meals": {
+        "en": ["Set menu: 45,000 Ar", "À la carte: starter 15,000 Ar, main course 30,000 Ar, dessert 15,000 Ar"],
+        "fr": ["Menu : 45 000 Ar", "À la carte : entrée 15 000 Ar, plat 30 000 Ar, dessert 15 000 Ar"],
+        "de": ["Menü: 45.000 Ar", "À la carte: Vorspeise 15.000 Ar, Hauptgericht 30.000 Ar, Dessert 15.000 Ar"],
+        "mg": ["Sakafo voalamina: 45 000 Ar", "Isaky ny lovia: fanombohana 15 000 Ar, sakafo fototra 30 000 Ar, tsindrin-tsakafo 15 000 Ar"]
       }
     },
     "setam-lodge-dining": {
@@ -3608,10 +3688,10 @@ const LISTING_TRANSLATIONS = {
     },
     "mahakaty-reserve": {
       "desc": {
-        "en": "A forest reserve with a painted welcome stone at its gate: “La Nature est là !” (nature is here). A log-cabin reception and a gravel courtyard lead through a wooden gateway into the trees, where a trail of stone steps climbs to a view over a river running through rocky rapids. Open every day from 08:00 to 15:30.",
-        "fr": "Une réserve forestière dont l’entrée est marquée par une pierre d’accueil peinte : « La Nature est là ! ». Un accueil en rondins et une cour de gravier mènent, par un portail en bois, sous les arbres, où un sentier de marches de pierre monte jusqu’à une vue sur une rivière qui file entre des rapides rocheux. Ouvert tous les jours de 8 h à 15 h 30.",
-        "de": "Ein Waldreservat mit einem bemalten Begrüßungsstein am Tor: „La Nature est là !“ (Die Natur ist da). Vom Empfang im Blockhaus und einem Kieshof führt ein Holztor unter die Bäume, wo ein Pfad aus Steinstufen zu einem Blick auf einen Fluss mit felsigen Stromschnellen hinaufführt. Täglich von 8:00 bis 15:30 Uhr geöffnet.",
-        "mg": "Tahiry ala misy vato fandraisana voaloko eo am-bavahadiny: « La Nature est là ! » (eto ny zavaboahary). Avy amin'ny fandraisana vahiny vita amin'ny vatan-kazo sy tokotany feno vatokely, misy vavahady hazo miditra any ambanin'ny hazo, ary lalankely misy tohatra vato miakatra mankany amin'ny toerana ahitana renirano mikoriana amin'ny riandrano kely be vato. Misokatra isan'andro, amin'ny 8 ora maraina ka hatramin'ny 3 ora sy sasany hariva."
+        "en": "A forest reserve with a painted welcome stone at its gate: “La Nature est là !” (nature is here). A log-cabin reception and a gravel courtyard lead through a wooden gateway into the trees, where a trail of stone steps climbs to a view over a river running through rocky rapids. A sign by the road also lists a pool and snack bar, a children's play area and a picnic area. Open every day from 08:00 to 15:30.",
+        "fr": "Une réserve forestière dont l’entrée est marquée par une pierre d’accueil peinte : « La Nature est là ! ». Un accueil en rondins et une cour de gravier mènent, par un portail en bois, sous les arbres, où un sentier de marches de pierre monte jusqu’à une vue sur une rivière qui file entre des rapides rocheux. Un panneau au bord de la route annonce aussi une piscine et un snack, une aire de jeux pour enfants et une aire de pique-nique. Ouvert tous les jours de 8 h à 15 h 30.",
+        "de": "Ein Waldreservat mit einem bemalten Begrüßungsstein am Tor: „La Nature est là !“ (Die Natur ist da). Vom Empfang im Blockhaus und einem Kieshof führt ein Holztor unter die Bäume, wo ein Pfad aus Steinstufen zu einem Blick auf einen Fluss mit felsigen Stromschnellen hinaufführt. Ein Schild an der Straße nennt außerdem ein Schwimmbad mit Snackbar, einen Kinderspielplatz und einen Picknickplatz. Täglich von 8:00 bis 15:30 Uhr geöffnet.",
+        "mg": "Tahiry ala misy vato fandraisana voaloko eo am-bavahadiny: « La Nature est là ! » (eto ny zavaboahary). Avy amin'ny fandraisana vahiny vita amin'ny vatan-kazo sy tokotany feno vatokely, misy vavahady hazo miditra any ambanin'ny hazo, ary lalankely misy tohatra vato miakatra mankany amin'ny toerana ahitana renirano mikoriana amin'ny riandrano kely be vato. Misy takelaka eo amoron-dalana milaza koa fa misy dobo filomanosana sy toeram-pisakafoana maivana, toerana filalaovan'ny ankizy ary toerana fanaovana pique-nique. Misokatra isan'andro, amin'ny 8 ora maraina ka hatramin'ny 3 ora sy sasany hariva."
       },
       "price": {
         "en": "Ask at the reception for entry and guide rates",
@@ -3644,34 +3724,46 @@ const LISTING_TRANSLATIONS = {
       "gallery[].alt": {
         "en": [
           "A river running through rocky rapids below forested hills, seen from the trail, Mahakajy Reserve",
+          "The hand-painted sign by the road: “Mahakajy · Parc Naturel · Piscine et Snack”, with a play area and picnic area, Mahakajy Reserve",
           "The painted welcome stone at the gate: “La Nature est là ! Mahakajy Reserve”, Mahakajy Reserve",
           "The entrance drive between two carved, tree-shaped posts, with a dog in front, Mahakajy Reserve",
+          "The paved drive in, between the carved tree-shaped posts and tall trees, Mahakajy Reserve",
           "The log-cabin reception, with its “Accueil” sign and opening hours, Mahakajy Reserve",
           "Crossing the gravel courtyard to the wooden gateway into the forest, Mahakajy Reserve",
+          "The wooden gateway into the forest, with its “Entrée Parc” sign, Mahakajy Reserve",
           "A trail of stone steps under fallen leaves through the forest, Mahakajy Reserve"
         ],
         "fr": [
           "Une rivière qui file entre des rapides rocheux sous des collines boisées, vue depuis le sentier, réserve de Mahakajy",
+          "Le panneau peint à la main au bord de la route : « Mahakajy · Parc Naturel · Piscine et Snack », avec aire de jeux et aire de pique-nique, réserve de Mahakajy",
           "La pierre d’accueil peinte à l’entrée : « La Nature est là ! Mahakajy Reserve », réserve de Mahakajy",
           "L’allée d’entrée entre deux poteaux sculptés en forme d’arbre, un chien devant, réserve de Mahakajy",
+          "L’allée pavée d’entrée, encadrée des poteaux sculptés en forme d’arbre et de grands arbres, réserve de Mahakajy",
           "L’accueil en rondins, avec son enseigne « Accueil » et ses horaires d’ouverture, réserve de Mahakajy",
           "La traversée de la cour de gravier jusqu’au portail en bois qui ouvre sur la forêt, réserve de Mahakajy",
+          "Le portail en bois qui ouvre sur la forêt, avec son panneau « Entrée Parc », réserve de Mahakajy",
           "Un sentier de marches de pierre sous les feuilles mortes, à travers la forêt, réserve de Mahakajy"
         ],
         "de": [
           "Ein Fluss, der unter bewaldeten Hügeln durch felsige Stromschnellen läuft, vom Pfad aus gesehen, Reservat Mahakajy",
+          "Das handgemalte Schild an der Straße: „Mahakajy · Parc Naturel · Piscine et Snack“, dazu Spielplatz und Picknickplatz, Reservat Mahakajy",
           "Der bemalte Begrüßungsstein am Tor: „La Nature est là ! Mahakajy Reserve“, Reservat Mahakajy",
           "Die Einfahrt zwischen zwei geschnitzten, baumförmigen Pfosten, davor ein Hund, Reservat Mahakajy",
+          "Der gepflasterte Weg hinein, zwischen den geschnitzten, baumförmigen Pfosten und hohen Bäumen, Reservat Mahakajy",
           "Der Empfang im Blockhaus mit seinem Schild „Accueil“ und den Öffnungszeiten, Reservat Mahakajy",
           "Über den Kieshof zum Holztor in den Wald, Reservat Mahakajy",
+          "Das Holztor in den Wald mit seinem Schild „Entrée Parc“, Reservat Mahakajy",
           "Ein Pfad aus Steinstufen unter Falllaub durch den Wald, Reservat Mahakajy"
         ],
         "mg": [
           "Renirano mikoriana amin'ny riandrano kely be vato eo ambanin'ny havoana misy ala, hita avy eo amin'ny lalankely, Tahiry Mahakajy",
+          "Ny takelaka voaloko tanana eo amoron-dalana: « Mahakajy · Parc Naturel · Piscine et Snack », misy toerana filalaovana sy toerana fanaovana pique-nique, Tahiry Mahakajy",
           "Ny vato fandraisana voaloko eo am-bavahady: « La Nature est là ! Mahakajy Reserve », Tahiry Mahakajy",
           "Ny lalana fidirana eo anelanelan'ny andry roa voasokitra endrika hazo, misy alika eo aloha, Tahiry Mahakajy",
+          "Ny lalana voarafitra vato miditra, eo anelanelan'ny andry voasokitra endrika hazo sy hazo avo, Tahiry Mahakajy",
           "Ny fandraisana vahiny vita amin'ny vatan-kazo, misy ny takelaka « Accueil » sy ny ora fisokafana, Tahiry Mahakajy",
           "Mamakivaky ny tokotany feno vatokely mankany amin'ny vavahady hazo miditra any anaty ala, Tahiry Mahakajy",
+          "Ny vavahady hazo miditra any anaty ala, misy ny takelaka « Entrée Parc », Tahiry Mahakajy",
           "Lalankely misy tohatra vato ambanin'ny ravina maina, mamakivaky ny ala, Tahiry Mahakajy"
         ]
       }
@@ -4209,46 +4301,189 @@ const LISTING_TRANSLATIONS = {
         "mg": "Arboretum Ranomafana"
       },
       "desc": {
-        "en": "A hidden gem just east of town on the RN25, founded by Dan Turk: more than 50 kinds of tree, some native to south-east Madagascar and some brought to the island by trade centuries ago, plus a young baobab. A guide speaking English, French and Malagasy leads a loop of the grounds, with stunning views of the valley, unusual fruits to try, and lowland streaked tenrecs, chameleons, butterflies and frogs along the way.",
-        "fr": "Un trésor caché juste à l’est du village sur la RN25, fondé par Dan Turk : plus de 50 espèces d’arbres, certaines originaires du sud-est de Madagascar, d’autres apportées sur l’île par le commerce il y a des siècles, et un jeune baobab. Un guide parlant anglais, français et malgache vous fait faire le tour du domaine, avec des vues splendides sur la vallée, des fruits insolites à goûter, et en chemin des tenrecs rayés, des caméléons, des papillons et des grenouilles.",
-        "de": "Ein verstecktes Juwel gleich östlich des Orts an der RN25, gegründet von Dan Turk: mehr als 50 Baumarten, manche heimisch im Südosten Madagaskars, andere vor Jahrhunderten über den Handel auf die Insel gekommen, dazu ein junger Baobab. Ein Guide, der Englisch, Französisch und Madagassisch spricht, führt eine Runde über das Gelände, mit herrlichem Blick ins Tal, ungewöhnlichen Früchten zum Probieren und unterwegs Streifentanreks, Chamäleons, Schmetterlingen und Fröschen.",
-        "mg": "Harena miafina eo atsinanan'ny tanàna eo amin'ny RN25, naorin'i Dan Turk: karazan-kazo mihoatra ny 50, ny sasany teratany avy any atsimo atsinanan'i Madagasikara ary ny sasany nentin'ny varotra teto amin'ny nosy taonjato maro lasa izay, ary koa reniala tanora iray. Mpitari-dalana miteny anglisy, frantsay ary malagasy no mitondra anao manodidina ny toerana, misy fijery mahavariana ny lohasaha, voankazo hafahafa azo andramana, ary sora, tana, lolo ary sahona eny an-dalana."
+        "en": "A hidden gem 2 km east of the town centre on the RN25, founded by Dan Turk: its first 36 native tree species were planted in June 1994, and it was laid out as an arboretum in 2005. It now holds more than 250 species of native tree, more than 65 native palms and more than 200 selected varieties of fruit tree, each with an information plaque, and a nursery that raises palms. A guide speaking English, French and Malagasy leads a loop of the grounds, with stunning views of the valley, unusual fruits to try, and lowland streaked tenrecs, chameleons, butterflies and frogs along the way. A chalet and wide lawns make it a good place for a picnic.",
+        "fr": "Un trésor caché à 2 km à l’est du centre du village sur la RN25, fondé par Dan Turk : ses 36 premières espèces d’arbres autochtones ont été plantées en juin 1994, et il est devenu un arboretum en 2005. Il compte aujourd’hui plus de 250 espèces d’arbres autochtones, plus de 65 palmiers autochtones et plus de 200 variétés sélectionnées d’arbres fruitiers, chacun avec sa plaque d’information, ainsi qu’une pépinière où l’on multiplie les palmiers. Un guide parlant anglais, français et malgache vous fait faire le tour du domaine, avec des vues splendides sur la vallée, des fruits insolites à goûter, et en chemin des tenrecs rayés, des caméléons, des papillons et des grenouilles. Un chalet et de grandes pelouses en font un bon lieu de pique-nique.",
+        "de": "Ein verstecktes Juwel 2 km östlich des Ortszentrums an der RN25, gegründet von Dan Turk: Die ersten 36 heimischen Baumarten wurden im Juni 1994 gepflanzt, 2005 wurde daraus ein Arboretum. Heute wachsen hier mehr als 250 heimische Baumarten, mehr als 65 heimische Palmen und mehr als 200 ausgewählte Obstbaumsorten, jede mit einer Infotafel, dazu eine Baumschule, die Palmen zieht. Ein Guide, der Englisch, Französisch und Madagassisch spricht, führt eine Runde über das Gelände, mit herrlichem Blick ins Tal, ungewöhnlichen Früchten zum Probieren und unterwegs Streifentanreks, Chamäleons, Schmetterlingen und Fröschen. Ein Pavillon und weite Rasenflächen machen es zu einem guten Ort für ein Picknick.",
+        "mg": "Harena miafina 2 km atsinanan'ny afovoan-tanàna eo amin'ny RN25, naorin'i Dan Turk: ny karazan-kazo teratany 36 voalohany dia nambolena tamin'ny jona 1994, ary lasa arboretum izy tamin'ny 2005. Ankehitriny dia misy karazan-kazo teratany mihoatra ny 250, karazana rofia sy palmie teratany mihoatra ny 65 ary karazana hazo fihinam-boa voafantina mihoatra ny 200, samy manana takelaka fanazavana, ary toeram-pambolena zana-kazo mampitombo palmie. Mpitari-dalana miteny anglisy, frantsay ary malagasy no mitondra anao manodidina ny toerana, misy fijery mahavariana ny lohasaha, voankazo hafahafa azo andramana, ary sora, tana, lolo ary sahona eny an-dalana. Trano kely sy bozaka midadasika no mahatonga azy ho toerana tsara hanaovana pique-nique."
       },
       "price": {
-        "en": "10,000 Ar per person (non-Malagasy), guide included",
-        "fr": "10 000 Ar par personne (non-Malgaches), guide compris",
-        "de": "10.000 Ar pro Person (Nicht-Madagassen), Guide inklusive",
-        "mg": "10 000 Ar isan'olona (tsy Malagasy), tafiditra ny mpitari-dalana"
+        "en": "20,000 Ar per person (Malagasy adults 2,000 Ar)",
+        "fr": "20 000 Ar par personne (Malgaches adultes 2 000 Ar)",
+        "de": "20.000 Ar pro Person (madagassische Erwachsene 2.000 Ar)",
+        "mg": "20 000 Ar isan'olona (Malagasy olon-dehibe 2 000 Ar)"
       },
-      "duration": { "en": "About 1 hour", "fr": "Environ 1 heure", "de": "Etwa 1 Stunde", "mg": "Adiny 1 eo ho eo" },
+      "duration": {
+        "en": "About 1 hour",
+        "fr": "Environ 1 heure",
+        "de": "Etwa 1 Stunde",
+        "mg": "Adiny 1 eo ho eo"
+      },
       "tips": {
         "en": [
-          "A two-minute drive, or an easy 20-minute walk, from town",
+          "2 km east of the town centre: a two-minute drive or an easy 20-minute walk",
           "Expect the guided loop to take an hour or more",
           "Be ready to feed a giant Parson's chameleon an insect snack",
+          "Night visits too (30,000 Ar per person)",
+          "Bring a picnic: there is a chalet and plenty of lawn",
           "Gentle walking — suits varied mobility",
           "Good option in heavy rain or on a rest day"
         ],
         "fr": [
-          "À deux minutes en voiture, ou à 20 minutes de marche facile, du village",
+          "À 2 km à l’est du centre du village : deux minutes en voiture ou 20 minutes de marche facile",
           "Comptez une heure ou plus pour la boucle guidée",
           "Préparez-vous à donner un insecte à un caméléon de Parson géant",
+          "Visites de nuit aussi (30 000 Ar par personne)",
+          "Apportez un pique-nique : il y a un chalet et beaucoup de pelouse",
           "Marche facile — convient à des niveaux de mobilité variés",
           "Une bonne option sous une forte pluie ou un jour de repos"
         ],
         "de": [
-          "Zwei Minuten mit dem Auto oder ein leichter Spaziergang von 20 Minuten vom Ort",
+          "2 km östlich des Ortszentrums: zwei Minuten mit dem Auto oder ein leichter Spaziergang von 20 Minuten",
           "Rechnen Sie mit einer Stunde oder mehr für die geführte Runde",
           "Seien Sie bereit, einem riesigen Parson-Chamäleon einen Insektensnack zu füttern",
+          "Auch Nachtbesuche (30.000 Ar pro Person)",
+          "Bringen Sie ein Picknick mit: Es gibt einen Pavillon und viel Rasen",
           "Leichtes Gehen – geeignet für unterschiedliche Mobilität",
           "Gut bei starkem Regen oder an einem Ruhetag"
         ],
         "mg": [
-          "Roa minitra amin'ny fiara, na 20 minitra an-tongotra mora, avy ao an-tanàna",
+          "2 km atsinanan'ny afovoan-tanàna: roa minitra amin'ny fiara, na 20 minitra an-tongotra mora",
           "Adiny iray na mihoatra no maharitra ny fitsidihana miaraka amin'ny mpitari-dalana",
           "Miomàna hanome bibikely ho sakafon'ny tana lehibe Parson",
+          "Misy fitsidihana amin'ny alina koa (30 000 Ar isan'olona)",
+          "Mitondrà sakafo ho an'ny pique-nique: misy trano kely sy bozaka be",
           "Dia mora — mety amin'ny olona samihafa ny fahaizany mandeha",
           "Safidy tsara rehefa be orana na amin'ny andro fialan-tsasatra"
+        ]
+      },
+      "entryFees": {
+        "en": [
+          {
+            "for": "intl",
+            "who": "Foreign visitor or resident",
+            "price": "20,000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Malagasy adult",
+            "price": "2,000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Malagasy student",
+            "price": "1,000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Night visit",
+            "price": "30,000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Picnic, per group, on top of entry (1–8 people to 50 or more)",
+            "price": "3,000–12,000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Filming, with written permission, on top of entry",
+            "price": "50,000 Ar"
+          }
+        ],
+        "fr": [
+          {
+            "for": "intl",
+            "who": "Visiteur étranger ou résident",
+            "price": "20 000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Malgache adulte",
+            "price": "2 000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Étudiant malgache",
+            "price": "1 000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Visite de nuit",
+            "price": "30 000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Pique-nique, par groupe, en plus de l’entrée (de 1–8 personnes à 50 et plus)",
+            "price": "3 000–12 000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Tournage, avec autorisation écrite, en plus de l’entrée",
+            "price": "50 000 Ar"
+          }
+        ],
+        "de": [
+          {
+            "for": "intl",
+            "who": "Ausländische Besucher oder Ansässige",
+            "price": "20.000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Madagassische Erwachsene",
+            "price": "2.000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Madagassische Studierende",
+            "price": "1.000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Nachtbesuch",
+            "price": "30.000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Picknick, pro Gruppe, zusätzlich zum Eintritt (1–8 Personen bis 50 und mehr)",
+            "price": "3.000–12.000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Filmaufnahmen, mit schriftlicher Genehmigung, zusätzlich zum Eintritt",
+            "price": "50.000 Ar"
+          }
+        ],
+        "mg": [
+          {
+            "for": "intl",
+            "who": "Mpitsidika vahiny na vahiny monina eto",
+            "price": "20 000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Malagasy olon-dehibe",
+            "price": "2 000 Ar"
+          },
+          {
+            "for": "mg",
+            "who": "Mpianatra malagasy",
+            "price": "1 000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Fitsidihana amin'ny alina",
+            "price": "30 000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Pique-nique, isaky ny vondrona, fanampin'ny fidirana (olona 1–8 ka hatramin'ny 50 no mihoatra)",
+            "price": "3 000–12 000 Ar"
+          },
+          {
+            "for": "all",
+            "who": "Fakana sary mihetsika, miaraka amin'ny fahazoan-dalana an-tsoratra, fanampin'ny fidirana",
+            "price": "50 000 Ar"
+          }
         ]
       },
       "gallery[].alt": {
@@ -4256,6 +4491,7 @@ const LISTING_TRANSLATIONS = {
           "Traveller's palms and a roofed shelter on a grassy hillside, Ranomafana Arboretum",
           "A stone table and bench on the lawn, looking out over the green hills of the valley, Ranomafana Arboretum",
           "A path between palms, past small labelled signs, Ranomafana Arboretum",
+          "A shaded path through young trees, with a stone bench, Ranomafana Arboretum",
           "The “Famous and amazing trees” board, in Malagasy, English and French, beside a path, Ranomafana Arboretum",
           "Rows of young trees in a nursery, shaded by palm fronds, Ranomafana Arboretum",
           "Stone steps up to the green Arboretum building, Ranomafana Arboretum",
@@ -4265,6 +4501,7 @@ const LISTING_TRANSLATIONS = {
           "Des arbres du voyageur et un abri couvert sur une colline herbeuse, arboretum de Ranomafana",
           "Une table et un banc de pierre sur la pelouse, face aux collines vertes de la vallée, arboretum de Ranomafana",
           "Un sentier entre les palmiers, le long de petits panneaux explicatifs, arboretum de Ranomafana",
+          "Un sentier ombragé entre de jeunes arbres, avec un banc de pierre, arboretum de Ranomafana",
           "Le panneau « Arbres célèbres et étonnants », en malgache, anglais et français, au bord d’un sentier, arboretum de Ranomafana",
           "Des rangées de jeunes arbres en pépinière, à l’ombre de palmes, arboretum de Ranomafana",
           "Des marches de pierre montant vers le bâtiment vert de l’Arboretum, arboretum de Ranomafana",
@@ -4274,6 +4511,7 @@ const LISTING_TRANSLATIONS = {
           "Baum der Reisenden und ein überdachter Unterstand an einem grasbewachsenen Hang, Arboretum Ranomafana",
           "Ein Steintisch mit Bank auf dem Rasen, mit Blick auf die grünen Hügel des Tals, Arboretum Ranomafana",
           "Ein Weg zwischen Palmen, vorbei an kleinen Schildern, Arboretum Ranomafana",
+          "Ein schattiger Weg zwischen jungen Bäumen, mit einer Steinbank, Arboretum Ranomafana",
           "Die Tafel „Berühmte und erstaunliche Bäume“, auf Madagassisch, Englisch und Französisch, an einem Weg, Arboretum Ranomafana",
           "Reihen junger Bäume in einer Baumschule, mit Palmwedeln beschattet, Arboretum Ranomafana",
           "Steinstufen hinauf zum grünen Arboretum-Gebäude, Arboretum Ranomafana",
@@ -4283,6 +4521,7 @@ const LISTING_TRANSLATIONS = {
           "Ravinala sy trano fialofana misy tafo eo amin'ny havoana feno ahitra, Arboretum Ranomafana",
           "Latabatra sy dabilio vato eo amin'ny bozaka, manatrika ny havoana maitson'ny lohasaha, Arboretum Ranomafana",
           "Lalana eo anelanelan'ny rofia, mandalo takelaka fanazavana kely, Arboretum Ranomafana",
+          "Lalana alokaloka eo anelanelan'ny hazo tanora, misy dabilio vato, Arboretum Ranomafana",
           "Ny takelaka « Hazo malaza sy mahagaga », amin'ny teny malagasy, anglisy ary frantsay, eo amoron-dalana, Arboretum Ranomafana",
           "Zana-kazo milahatra ao amin'ny toeram-pambolena zana-kazo, alofan'ny ravin-drofia, Arboretum Ranomafana",
           "Tohatra vato miakatra mankany amin'ny tranon'ny Arboretum maitso, Arboretum Ranomafana",

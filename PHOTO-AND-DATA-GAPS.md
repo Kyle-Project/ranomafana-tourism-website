@@ -32,12 +32,12 @@ stated. Please check these:
 | 14 | **Hotel Manja** | three phones marked "(Check all)", www.hotelmanja.mg | no phone, manjahotel.com | Your three phones. hotelmanja.mg does not exist online, so manjahotel.com stays |
 | 15 | **Forêt Australe website** | groupeaustralhotel.com and a subdomain | none | Neither address exists online, so no website is linked |
 | 16 | **Hotel Thermal email** | thermal@leralais.mg | thermal@lerelais.mg (FHORM) | Read as a typo; lerelais kept |
-| 17 | **"Breakfast included" + a breakfast price** | Centrest and Karibotel | — | Shown as "Breakfast is included" with the price listed as a meal price. Is the price for non-guests? |
+| 17 | **"Breakfast included" + a breakfast price** | Centrest and Karibotel | — | Karibotel: shown as "Breakfast is included" with the price listed as a meal price. Is the price for non-guests? Centrest: settled 1 Nov 2026 by the hotel's own description, which prices breakfast (40,000 / 45,000 Ar) and doesn't say it is included, so "included" was taken off |
 | 18 | **Karibotel meals** | lunch/dinner from 45,000 Ar | 16,000 Ar à la carte, 30,000 Ar set menu | Yours |
 | 19 | **Chez Jose** | no dining | listed as having a restaurant | Restaurant filter now off; "coffee and the bar only" |
 | 20 | **Kayaking** | no guide comes with you | "guided descents, guides speak three languages" | Self-guided, on both the kayak and Varibolo Resto listings |
 | 21 | **Station Thermale** (updated again from your booth photo — see section 7) | pool 06:00–17:00 and 19:00–21:00; baths 06:00–17:00; no sulphur smell; swim cap for everyone | Petit Futé hours; "sulphurous"; cap for long hair | Yours. Your notes say the riverside restaurant was being built "as of 2023" — is it open now? |
-| 22 | **Arboretum** | founded 1991 by Dan Turk; 4 km east, but "a 2-minute drive or 20-minute walk" | 1994; 2 km east | Founder named; **no year and no distance shown** until you confirm both. 20 minutes on foot fits 2 km better than 4 |
+| 22 | **Arboretum** | founded 1991 by Dan Turk; 4 km east, but "a 2-minute drive or 20-minute walk"; 10,000 Ar with guide | 1994; 2 km east | **Settled 1 Nov 2026** by the arboretum's own flier, history sheet and price board: first planted June 1994, an arboretum since 2005, 2 km east of the centre, entry 20,000 Ar (board of 11 Feb 2026). The board says nothing about a guide being included |
 | 23 | **Night walk length** | about 1 hour | 1.5–2 h (the 40,000 Ar price was for a 2-hour walk) | About 1 hour, price kept |
 | 24 | **The waterfall walk from the piscine** | not named | "Jirama Waterfall Hike", unconfirmed | Your route added to the Jirama listing. **Resolved 11 Oct:** you identified your big-falls photos as this walk, so it is now verified and illustrated — unconfirmed. Is this the Jirama cascade? |
 | 25 | **Donation link and town map** | headings with nothing under them | — | Nothing added. Send the MNP donation link and a map when you have them |
@@ -258,7 +258,7 @@ see sections 0 and 7.)
 5. **VOI Mitsinjo Reserve** — entry and guide rates, and opening arrangements, to be
    confirmed with VOI Ambatolahy.
 6. **Weekly Village Artisan Market** (the What's on entry for item 2).
-7. **Mahakajy Reserve** (added 26 Oct 2026 from your six photos) — who runs it, entry
+7. **Mahakajy Reserve** (added 26 Oct 2026 from your six photos) — Centrest Hôtel's own description (1 Nov 2026) lists "Mahakajy Private Park" among its facilities: does Centrest run it? Also who runs it, entry
    and guide fees, and a phone number. The hours (08:00–15:30, every day) were read from
    the faded sign by the reception door: please check them. Its map is pinned (27 Oct
    2026) to Google Maps' own listing for the reserve, near Kelilalina on the RN25: check
@@ -429,7 +429,18 @@ Left out as look-alikes: the second nursery photo (potted palms), the "Palms of
 Madagascar" board (same spot as the palm path) and the lawn path with a sign (the
 valley view and the hillside cover it).
 
-The painted sign by the road gives three phone numbers, now on the listing:
+**Later the same day:** a shaded woodland path with a bench joined the gallery, and the
+arboretum's flier, history sheet and price board (copies in `photo-originals/2026-11-01
+Arboretum/`) updated the listing: entry 20,000 Ar for foreign visitors and residents,
+2,000 Ar Malagasy adults, 1,000 Ar Malagasy students, night visits 30,000 Ar, picnics
+3,000–12,000 Ar a group, filming 50,000 Ar; first planted in 1994, an arboretum since
+2005, more than 250 native tree species, 65 native palms and 200 fruit varieties; 2 km
+east of the centre; email arboretum.rmfna@gmail.com. The phones are now the board's
+three (034 99 164 66, 034 90 404 60, 038 11 411 36). Two numbers from the painted sign,
+033 62 077 42 and 034 23 408 73, are on neither the board nor the flier, so they were
+taken off; say if they should go back.
+
+Earlier, the painted sign by the road gave three phone numbers:
 034 99 164 66, 033 62 077 42 and 034 23 408 73. They were read from the photo, and you
 confirmed them on 1 November 2026.
 
@@ -449,6 +460,24 @@ extra bed 20,000 Ar), two phone numbers (034 02 246 64, 038 39 755 41), the emai
 contact@nytanana-hotel-ranomafana.mg (the sheet writes it with an underscore; you
 confirmed this spelling on 1 November 2026), and meal prices. **Still to check:** the
 sheet doesn't say whether breakfast is included, so the listing asks guests to check.
+
+### Added 3 November 2026 — Cristo Hotel
+
+Ten of your 22 photos (resized to 1600 px): the Cristo sign before the yellow main
+building (now the card photo), the entrance steps, the terrace over the hills, the
+reception, the dining room and bar (also the Bar & Restaurant card), a room with two
+beds, a bathroom, an A-frame bungalow, the stone path under tree ferns and the garden
+benches. They replace the four older web photos (small, out of date, one a collage
+with text on it); those files stay in `images/`, unused. Left out: the roadside sign
+with the chalkboard (same sign, and the board changes), the dark corridor, the two
+towel close-ups, the glazed doors (the terrace again), the second pair of bungalows,
+the bamboo arch (washed out), the room's chairs and table, and the photo of a woman
+reading on the terrace (say if you want her in). The two bungalow bathroom photos sent
+in chat came without files, so they aren't on the site.
+
+You also gave meal prices (set menu 45,000 Ar; starter 15,000, main 30,000, dessert
+15,000 Ar), now on the hotel and the Bar & Restaurant, and an event space for 40
+people, on the hotel. Room rates are still "contact the property".
 
 Every photo-less listing now has a **designed placeholder** (`images/placeholder-<slug>.jpg`)
 rather than sharing one of two landscapes. They are obviously graphics — property name
