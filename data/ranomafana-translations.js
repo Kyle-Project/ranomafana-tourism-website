@@ -1695,58 +1695,74 @@ const LISTING_TRANSLATIONS = {
       "rooms": {
         "en": [
           {
+            "type": "Price range",
+            "price": "75,000–145,000 Ar"
+          },
+          {
             "type": "Standard double (2 people; TV, balcony)",
-            "price": "75,000 Ar"
+            "price": ""
           },
           {
             "type": "Superior double (2 people; panoramic view, TV, balcony)",
-            "price": "125,000 Ar"
+            "price": ""
           },
           {
             "type": "Family (2–4 people; double bed, bunk bed, panoramic view, balcony)",
-            "price": "145,000 Ar"
+            "price": ""
           }
         ],
         "fr": [
           {
+            "type": "Fourchette de prix",
+            "price": "75 000–145 000 Ar"
+          },
+          {
             "type": "Double standard (2 personnes ; télévision, balcon)",
-            "price": "75 000 Ar"
+            "price": ""
           },
           {
             "type": "Double supérieure (2 personnes ; vue panoramique, télévision, balcon)",
-            "price": "125 000 Ar"
+            "price": ""
           },
           {
             "type": "Familiale (2 à 4 personnes ; lit double, lits superposés, vue panoramique, balcon)",
-            "price": "145 000 Ar"
+            "price": ""
           }
         ],
         "de": [
           {
+            "type": "Preisspanne",
+            "price": "75.000–145.000 Ar"
+          },
+          {
             "type": "Doppelzimmer Standard (2 Personen; Fernseher, Balkon)",
-            "price": "75.000 Ar"
+            "price": ""
           },
           {
             "type": "Doppelzimmer Superior (2 Personen; Panoramablick, Fernseher, Balkon)",
-            "price": "125.000 Ar"
+            "price": ""
           },
           {
             "type": "Familienzimmer (2–4 Personen; Doppelbett, Etagenbett, Panoramablick, Balkon)",
-            "price": "145.000 Ar"
+            "price": ""
           }
         ],
         "mg": [
           {
+            "type": "Elanelam-bidy",
+            "price": "75 000–145 000 Ar"
+          },
+          {
             "type": "Efitrano roa olona tsotra (olona 2; fahitalavitra, lavarangana)",
-            "price": "75 000 Ar"
+            "price": ""
           },
           {
             "type": "Efitrano roa olona ambony (olona 2; fijery midadasika, fahitalavitra, lavarangana)",
-            "price": "125 000 Ar"
+            "price": ""
           },
           {
             "type": "Efitrano ho an'ny fianakaviana (olona 2–4; fandriana lehibe, fandriana mifanongoa, fijery midadasika, lavarangana)",
-            "price": "145 000 Ar"
+            "price": ""
           }
         ]
       },

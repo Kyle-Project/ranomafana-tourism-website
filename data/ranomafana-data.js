@@ -642,7 +642,7 @@ const stayData = [
     wifiNote: "Free",
     verified: true,
     asOf: "2026-11",
-    sourceNote: "Own website and Facebook page confirmed. The +261 34 94 302 10 phone and lemurcoffeehotel@gmail.com address in Kyle's folder are unconfirmed and have been left out. Room rates, room types, free Wi-Fi, drink prices and extras from the hotel's two laminated, undated sheets, 'Tarifs des Chambres' and 'Tarifs des Services & Extras', photographed by Kyle (received 4 Nov 2026). The sheets don't say whether breakfast is included. Photos Kyle's (4 Nov 2026); room 25 is the family room, from the sheet and the door number in the photo.",
+    sourceNote: "Own website and Facebook page confirmed. The +261 34 94 302 10 phone and lemurcoffeehotel@gmail.com address in Kyle's folder are unconfirmed and have been left out. Room rates, room types, free Wi-Fi, drink prices and extras from the hotel's two laminated, undated sheets, 'Tarifs des Chambres' and 'Tarifs des Services & Extras', photographed by Kyle (received 4 Nov 2026). The sheets don't say whether breakfast is included. Kyle asked on 4 Nov 2026 for the room types and the overall range only, with no room-by-room prices. Photos Kyle's (4 Nov 2026); room 25 is the family room, from the sheet and the door number in the photo.",
     gallery: [
       { src: "images/lemur-coffee-hotel-room.jpg", alt: "A double bed under a mosquito net, and someone sitting in one of two armchairs at a window looking out on greenery, Lemur Coffee Hotel" },
       { src: "images/lemur-coffee-hotel-family-room-bed.jpg", alt: "The double bed in the family room, room 25, with terracotta walls, Lemur Coffee Hotel" },
@@ -655,9 +655,10 @@ const stayData = [
     ],
     desc: "A hybrid address combining accommodation, a specialty coffee house and a meeting space — the newest opening in Ranomafana, aimed at travellers who want a proper coffee and somewhere to sit and work.",
     rooms: [
-      { type: "Standard double (2 people; TV, balcony)", price: "75,000 Ar" },
-      { type: "Superior double (2 people; panoramic view, TV, balcony)", price: "125,000 Ar" },
-      { type: "Family (2–4 people; double bed, bunk bed, panoramic view, balcony)", price: "145,000 Ar" }
+      { type: "Price range", price: "75,000–145,000 Ar" },
+      { type: "Standard double (2 people; TV, balcony)", price: "" },
+      { type: "Superior double (2 people; panoramic view, TV, balcony)", price: "" },
+      { type: "Family (2–4 people; double bed, bunk bed, panoramic view, balcony)", price: "" }
     ],
     ratesNote: "Per room per night. Ask whether breakfast is included.",
     features: [

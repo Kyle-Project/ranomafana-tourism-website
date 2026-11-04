@@ -494,8 +494,9 @@ The hotel's two laminated sheets, "Tarifs des Chambres" and "Tarifs des Services
 Extras" (undated), gave the listing its room rates (75,000–145,000 Ar), free Wi-Fi,
 guided visits, bike hire, games and drink prices. They were read from the photos sent
 in chat, which came without files, so no copy is in `photo-originals/`; the third photo
-sent with them repeats the family room shot already in. **Still to check:** the sheets
-don't say whether breakfast is included, and they give no phone number or email.
+sent with them repeats the family room shot already in. At your request the listing
+gives the three room types and the overall range, not a price for each room. **Still to
+check:** the sheets don't say whether breakfast is included, and they give no phone number or email.
 
 ### Added 4 November 2026 — Forêt Australe
 

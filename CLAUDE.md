@@ -759,7 +759,8 @@ room with the mosquito net is its card photo, and `exterior` and `view` are stil
 waiting. The Wi-Fi sign in `lemur-coffee-hotel-restaurant.jpg` showed the hotel's
 password, so that line is blurred. Check any new photo for readable passwords: the
 repo and the site are public. Its rates (75,000–145,000 Ar), extras and drink prices
-come from the hotel's two undated tariff sheets, sent the same day; the hotel's own
+come from the hotel's two undated tariff sheets, sent the same day. Kyle asked the same
+day for the room types and the range only: don't add room-by-room prices back. The hotel's own
 park visit price (from 90,000 Ar) is on its sheet, so leave it when the park's guide
 fees change in January 2027 unless the hotel changes it.
 
