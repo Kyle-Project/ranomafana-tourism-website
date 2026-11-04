@@ -772,6 +772,22 @@ gave the bungalow rates (68,000–90,000 Ar), and the BRED sign above it contact
 The sheet prints the email as `austhotel309@gmail.coms`; the site reads that as
 gmail.com, in the contact note beside `austhotel@moov.mg`, until Kyle confirms it.
 
+Kyle's four photos of the park's interpretation centre, 4 November 2026 (used as
+received), follow the two older ones in the park gallery: the painted sign, the desk,
+the Tanala village display and the wildlife artwork. The artwork is marked "Artwork:
+Jessie Jordan ©", so its description names the artist; permission is still to confirm.
+
+Kyle's ten photos of **Setam Lodge**, 4 November 2026, lead its gallery, ahead of the four
+older web photos, and the bungalows on the hillside are its card photo; the bar and the
+valley view are also in the Setam Lodge Dining Hall pop-up. Kyle gave its prices the same
+day: single, double or twin 200,000 Ar, family for 3 225,000 Ar, for 4 250,000 Ar, and a
+70,000 Ar menu (both listings and the "Eating in Ranomafana" story's price line). Breakfast
+is still from his notes of 11 Oct 2026.
+
+Kyle's two photos of **Studio oloNala**, 4 November 2026 (used as received), end its
+gallery: an artist at the worktable with a white cat, and the sketchbook close up. No name
+came with them, so the descriptions say "an artist"; the card photo is unchanged.
+
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide
 fees from **January 2027** (120,000 / 150,000 / 180,000 Ar, specialists 250,000 Ar),

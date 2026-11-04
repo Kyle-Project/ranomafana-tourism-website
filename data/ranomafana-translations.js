@@ -98,10 +98,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Bungalow roapolo eo ambony havoana, 800 m an-tongotra avy amin'ny fidirana amin'ny valan-javaboahary, samy manana fijery ny tampon'ny ala mando, efitra fandroana manokana misy rano mafana, ary bar sy trano fisakafoana misy toerana 70. Ny lodge lehibe indrindra sady efa ela indrindra eto Ranomafana."
       },
       "price": {
-        "en": "160,000–200,000 Ar / night",
-        "fr": "160 000–200 000 Ar / nuit",
-        "de": "160.000–200.000 Ar / Nacht",
-        "mg": "160 000–200 000 Ar / alina"
+        "en": "200,000–250,000 Ar / night",
+        "fr": "200 000–250 000 Ar / nuit",
+        "de": "200.000–250.000 Ar / Nacht",
+        "mg": "200 000–250 000 Ar / alina"
       },
       "wifiNote": {
         "en": "In the restaurant",
@@ -111,43 +111,39 @@ const LISTING_TRANSLATIONS = {
       },
       "rooms": {
         "en": [
-          { "type": "Double", "price": "160,000 Ar" },
-          { "type": "Twin", "price": "160,000 Ar" },
-          { "type": "Triple (1 double + 1 single bed)", "price": "180,000 Ar" },
-          { "type": "Family (1 double + 2 single beds)", "price": "200,000 Ar" }
+          { "type": "Single, double or twin", "price": "200,000 Ar" },
+          { "type": "Family, for 3 people", "price": "225,000 Ar" },
+          { "type": "Family, for 4 people", "price": "250,000 Ar" }
         ],
         "fr": [
-          { "type": "Double", "price": "160 000 Ar" },
-          { "type": "Lits jumeaux", "price": "160 000 Ar" },
-          { "type": "Triple (1 lit double + 1 lit simple)", "price": "180 000 Ar" },
-          { "type": "Familiale (1 lit double + 2 lits simples)", "price": "200 000 Ar" }
+          { "type": "Simple, double ou lits jumeaux", "price": "200 000 Ar" },
+          { "type": "Familiale, pour 3 personnes", "price": "225 000 Ar" },
+          { "type": "Familiale, pour 4 personnes", "price": "250 000 Ar" }
         ],
         "de": [
-          { "type": "Doppelzimmer", "price": "160.000 Ar" },
-          { "type": "Zweibettzimmer", "price": "160.000 Ar" },
-          { "type": "Dreibettzimmer (1 Doppelbett + 1 Einzelbett)", "price": "180.000 Ar" },
-          { "type": "Familienzimmer (1 Doppelbett + 2 Einzelbetten)", "price": "200.000 Ar" }
+          { "type": "Einzel-, Doppel- oder Zweibettzimmer", "price": "200.000 Ar" },
+          { "type": "Familienzimmer für 3 Personen", "price": "225.000 Ar" },
+          { "type": "Familienzimmer für 4 Personen", "price": "250.000 Ar" }
         ],
         "mg": [
-          { "type": "Fandriana roa olona", "price": "160 000 Ar" },
-          { "type": "Fandriana kely roa", "price": "160 000 Ar" },
-          { "type": "Telo olona (fandriana roa olona 1 + fandriana kely 1)", "price": "180 000 Ar" },
-          { "type": "Fianakaviana (fandriana roa olona 1 + fandriana kely 2)", "price": "200 000 Ar" }
+          { "type": "Olona iray, fandriana roa olona na fandriana kely roa", "price": "200 000 Ar" },
+          { "type": "Fianakaviana, olona 3", "price": "225 000 Ar" },
+          { "type": "Fianakaviana, olona 4", "price": "250 000 Ar" }
         ]
       },
       "meals": {
-        "en": ["Breakfast: 25,000 Ar continental, 30,000 Ar American", "Lunch or dinner: 50,000 Ar set price"],
+        "en": ["Breakfast: 25,000 Ar continental, 30,000 Ar American", "Lunch or dinner: 70,000 Ar set price"],
         "fr": [
           "Petit-déjeuner : 25 000 Ar continental, 30 000 Ar américain",
-          "Déjeuner ou dîner : menu à 50 000 Ar"
+          "Déjeuner ou dîner : menu à 70 000 Ar"
         ],
         "de": [
           "Frühstück: 25.000 Ar kontinental, 30.000 Ar amerikanisch",
-          "Mittag- oder Abendessen: Menü für 50.000 Ar"
+          "Mittag- oder Abendessen: Menü für 70.000 Ar"
         ],
         "mg": [
           "Sakafo maraina: 25 000 Ar kaontinantaly, 30 000 Ar amerikanina",
-          "Sakafo antoandro na hariva: sakafo voalamina 50 000 Ar"
+          "Sakafo antoandro na hariva: sakafo voalamina 70 000 Ar"
         ]
       },
       "features": {
@@ -164,24 +160,64 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
+          "Bungalows on a green hillside below the rainforest at Setam Lodge",
+          "Stone steps with a wooden handrail up to the bungalows at Setam Lodge",
+          "A bungalow with carved shutters and flowers along the path at Setam Lodge",
+          "A stone path past the bungalows at Setam Lodge",
+          "A room with a mosquito net over the bed and its own bathroom at Setam Lodge",
+          "A desk and framed photographs in a room at Setam Lodge",
+          "A bathroom with a shower at Setam Lodge",
+          "Forested hills seen from the terrace at Setam Lodge",
+          "The wooden bar at Setam Lodge",
+          "Woven bags and toy lemurs on a table in the dining room at Setam Lodge",
           "Aerial view of Setam Lodge",
           "Entrance path at Setam Lodge",
           "Dining hall at Setam Lodge",
           "Terrace view at Setam Lodge"
         ],
         "fr": [
+          "Setam Lodge : des bungalows sur une pente verte, sous la forêt tropicale",
+          "Setam Lodge : des marches de pierre et une rampe en bois vers les bungalows",
+          "Setam Lodge : un bungalow aux volets sculptés, des fleurs le long de l’allée",
+          "Setam Lodge : une allée de pierre le long des bungalows",
+          "Setam Lodge : une chambre avec moustiquaire et sa salle de bain",
+          "Setam Lodge : un bureau et des photographies encadrées dans une chambre",
+          "Setam Lodge : une salle de bain avec douche",
+          "Setam Lodge : les collines boisées vues de la terrasse",
+          "Setam Lodge : le bar en bois",
+          "Setam Lodge : des sacs tressés et des lémuriens en peluche sur une table de la salle à manger",
           "Setam Lodge vu du ciel",
           "Setam Lodge : l’allée d’entrée",
           "Setam Lodge : la salle à manger",
           "Setam Lodge : la vue depuis la terrasse"
         ],
         "de": [
+          "Setam Lodge: Bungalows an einem grünen Hang unterhalb des Regenwalds",
+          "Setam Lodge: Steinstufen mit Holzgeländer hinauf zu den Bungalows",
+          "Setam Lodge: ein Bungalow mit geschnitzten Fensterläden und Blumen am Weg",
+          "Setam Lodge: ein Steinweg an den Bungalows entlang",
+          "Setam Lodge: ein Zimmer mit Moskitonetz und eigenem Bad",
+          "Setam Lodge: ein Schreibtisch und gerahmte Fotografien in einem Zimmer",
+          "Setam Lodge: ein Bad mit Dusche",
+          "Setam Lodge: bewaldete Hügel, von der Terrasse aus gesehen",
+          "Setam Lodge: die Holzbar",
+          "Setam Lodge: geflochtene Taschen und Stofflemuren auf einem Tisch im Speisesaal",
           "Setam Lodge aus der Luft",
           "Setam Lodge: der Weg zum Eingang",
           "Setam Lodge: der Speisesaal",
           "Setam Lodge: Blick von der Terrasse"
         ],
         "mg": [
+          "Setam Lodge: bungalow eo amin'ny havoana maitso, eo ambanin'ny ala mando",
+          "Setam Lodge: tohatra vato misy fihazonana hazo miakatra any amin'ireo bungalow",
+          "Setam Lodge: bungalow misy varavarankely voasokitra sy voninkazo eo amoron-dalana",
+          "Setam Lodge: lalana vato mandalo eo amin'ireo bungalow",
+          "Setam Lodge: efitrano misy lay moka sy efitra fandroana manokana",
+          "Setam Lodge: latabatra fanoratana sy sary misy rafitra ao amin'ny efitrano",
+          "Setam Lodge: efitra fandroana misy douche",
+          "Setam Lodge: ireo havoana misy ala jerena avy eo amin'ny terasy",
+          "Setam Lodge: ny bar hazo",
+          "Setam Lodge: kitapo natenona sy varika kilalao eo ambony latabatra ao amin'ny efitrano fisakafoana",
           "Setam Lodge jerena avy eny ambony",
           "Setam Lodge: ny lalana fidirana",
           "Setam Lodge: ny efitrano fisakafoana",
@@ -2629,18 +2665,40 @@ const LISTING_TRANSLATIONS = {
         "mg": ["Sakafo voalamina", "Fijery ny tampon'ny ala", "Toerana 70 — tongasoa ny vondrona"]
       },
       "meals": {
-        "en": ["Breakfast: 25,000 Ar continental, 30,000 Ar American", "Lunch or dinner: 50,000 Ar set price"],
+        "en": ["Breakfast: 25,000 Ar continental, 30,000 Ar American", "Lunch or dinner: 70,000 Ar set price"],
         "fr": [
           "Petit-déjeuner : 25 000 Ar continental, 30 000 Ar américain",
-          "Déjeuner ou dîner : menu à 50 000 Ar"
+          "Déjeuner ou dîner : menu à 70 000 Ar"
         ],
         "de": [
           "Frühstück: 25.000 Ar kontinental, 30.000 Ar amerikanisch",
-          "Mittag- oder Abendessen: Menü für 50.000 Ar"
+          "Mittag- oder Abendessen: Menü für 70.000 Ar"
         ],
         "mg": [
           "Sakafo maraina: 25 000 Ar kaontinantaly, 30 000 Ar amerikanina",
-          "Sakafo antoandro na hariva: sakafo voalamina 50 000 Ar"
+          "Sakafo antoandro na hariva: sakafo voalamina 70 000 Ar"
+        ]
+      },
+      "gallery[].alt": {
+        "en": [
+          "Dining hall at Setam Lodge",
+          "The wooden bar at Setam Lodge",
+          "Forested hills seen from the terrace at Setam Lodge"
+        ],
+        "fr": [
+          "Setam Lodge : la salle à manger",
+          "Setam Lodge : le bar en bois",
+          "Setam Lodge : les collines boisées vues de la terrasse"
+        ],
+        "de": [
+          "Setam Lodge: der Speisesaal",
+          "Setam Lodge: die Holzbar",
+          "Setam Lodge: bewaldete Hügel, von der Terrasse aus gesehen"
+        ],
+        "mg": [
+          "Setam Lodge: ny efitrano fisakafoana",
+          "Setam Lodge: ny bar hazo",
+          "Setam Lodge: ireo havoana misy ala jerena avy eo amin'ny terasy"
         ]
       }
     },
@@ -3378,6 +3436,10 @@ const LISTING_TRANSLATIONS = {
           "A group of visitors at the Parc National Ranomafana sign",
           "The sign at the park's interpretation centre, topped by a wooden lemur: “Veloma — Good bye — Au revoir”",
           "Inside the park's interpretation centre: a display of a Tanala village",
+          "The painted sign to the park's interpretation centre: “Visite gratuite” (free to visit) and a welcome in Malagasy, English and French",
+          "Three people at the desk in the park's interpretation centre, beside the Tanala village display",
+          "The Tanala village display in the park's interpretation centre: small thatched huts, a woven vest, an eel trap and a pot for collecting honey",
+          "A large artwork by Jessie Jordan in the park's interpretation centre: lemurs, birds, butterflies and other forest animals around a stream",
           "The board mapping the park's walking circuits",
           "A lemur on a branch high in the forest canopy, Ranomafana National Park",
           "A pale frog with orange feet on a red earth path, Ranomafana National Park",
@@ -3433,6 +3495,10 @@ const LISTING_TRANSLATIONS = {
           "Un groupe de visiteurs devant le panneau du Parc National Ranomafana",
           "Le panneau du centre d’interprétation du parc, surmonté d’un lémurien en bois : « Veloma — Good bye — Au revoir »",
           "Dans le centre d’interprétation du parc : la reconstitution d’un village tanala",
+          "Le panneau peint menant au centre d’interprétation du parc : « Visite gratuite » et un accueil en malgache, en anglais et en français",
+          "Trois personnes au bureau du centre d’interprétation du parc, à côté de la reconstitution du village tanala",
+          "La reconstitution du village tanala au centre d’interprétation du parc : petites cases en chaume, gilet tressé, piège à anguilles et pot pour récolter le miel",
+          "Une grande œuvre de Jessie Jordan au centre d’interprétation du parc : lémuriens, oiseaux, papillons et autres animaux de la forêt autour d’un ruisseau",
           "Le panneau qui présente la carte des circuits de randonnée du parc",
           "Un lémurien sur une branche, haut dans la canopée, parc national de Ranomafana",
           "Une grenouille pâle aux pattes orange sur un sentier de terre rouge, parc national de Ranomafana",
@@ -3488,6 +3554,10 @@ const LISTING_TRANSLATIONS = {
           "Eine Besuchergruppe am Schild des Parc National Ranomafana",
           "Das Schild am Informationszentrum des Parks, mit einem Holzlemur obendrauf: „Veloma – Good bye – Au revoir“",
           "Im Informationszentrum des Parks: eine Ausstellung über ein Tanala-Dorf",
+          "Das bemalte Schild zum Informationszentrum des Parks: „Visite gratuite“ (Eintritt frei) und ein Willkommen auf Madagassisch, Englisch und Französisch",
+          "Drei Personen am Schreibtisch im Informationszentrum des Parks, neben der Ausstellung über ein Tanala-Dorf",
+          "Die Ausstellung über ein Tanala-Dorf im Informationszentrum des Parks: kleine strohgedeckte Hütten, eine geflochtene Weste, eine Aalreuse und ein Topf zum Honigsammeln",
+          "Ein großes Kunstwerk von Jessie Jordan im Informationszentrum des Parks: Lemuren, Vögel, Schmetterlinge und andere Waldtiere rund um einen Bach",
           "Die Tafel mit der Karte der Rundwege des Parks",
           "Ein Lemur auf einem Ast hoch oben im Kronendach, Ranomafana-Nationalpark",
           "Ein heller Frosch mit orangefarbenen Füßen auf einem Weg aus roter Erde, Ranomafana-Nationalpark",
@@ -3543,6 +3613,10 @@ const LISTING_TRANSLATIONS = {
           "Vondrona mpitsidika eo anoloan'ny takelaka Parc National Ranomafana",
           "Ny takelaka eo amin'ny foibe fanazavana ao amin'ny valan-javaboahary, misy gidro vita amin'ny hazo eo amboniny: « Veloma — Good bye — Au revoir »",
           "Ao anatin'ny foibe fanazavana ao amin'ny valan-javaboahary: fampisehoana tanàna Tanala",
+          "Ny takelaka voaloko mankany amin'ny foibe fanazavana ao amin'ny valan-javaboahary: « Visite gratuite » (maimaim-poana ny fitsidihana) sy fandraisana amin'ny teny malagasy, anglisy ary frantsay",
+          "Olona telo eo amin'ny latabatra ao amin'ny foibe fanazavana ao amin'ny valan-javaboahary, eo akaikin'ny fampisehoana tanàna Tanala",
+          "Ny fampisehoana tanàna Tanala ao amin'ny foibe fanazavana ao amin'ny valan-javaboahary: trano bozaka kely, akanjo tenona, fandrika amalona ary vilany fanangonana tantely",
+          "Sanganasa lehibe nataon'i Jessie Jordan ao amin'ny foibe fanazavana ao amin'ny valan-javaboahary: gidro, vorona, lolo ary biby hafa any an'ala manodidina renirano kely",
           "Ny takelaka misy ny sarintanin'ny lalana fitsangatsanganana ao amin'ny valan-javaboahary",
           "Varika eo amin'ny sampana avo ao amin'ny tampon'ala, valan-javaboaharin'i Ranomafana",
           "Sahona fotsy tongotra volom-boasary eo amin'ny lalana tany mena, valan-javaboaharin'i Ranomafana",
@@ -4792,28 +4866,36 @@ const LISTING_TRANSLATIONS = {
           "A wall of framed wildlife paintings inside Studio oloNala",
           "Carved wooden plants on a striped wooden wall, beside framed paintings, at Studio oloNala",
           "An artist's worktable under the window at Studio oloNala",
-          "A small gallery room hung with framed pictures at Studio oloNala"
+          "A small gallery room hung with framed pictures at Studio oloNala",
+          "An artist at the worktable at Studio oloNala, with a paint box, a long sketchbook and a white cat stretched out on the mat",
+          "An artist painting a rocky gorge in watercolour in a sketchbook at Studio oloNala, with a cat resting beside the page"
         ],
         "fr": [
           "La porte en arc de l’oloNala Art Studio & Shop, dans un mur peint comme de la pierre moussue",
           "Un mur de peintures animalières encadrées dans le Studio oloNala",
           "Des plantes sculptées dans le bois sur un mur rayé, à côté de tableaux encadrés, au Studio oloNala",
           "La table de travail d’un artiste sous la fenêtre, au Studio oloNala",
-          "Une petite salle d’exposition aux murs couverts de tableaux encadrés, au Studio oloNala"
+          "Une petite salle d’exposition aux murs couverts de tableaux encadrés, au Studio oloNala",
+          "Un artiste à la table de travail du Studio oloNala, avec une boîte d’aquarelle, un long carnet et un chat blanc allongé sur le tapis",
+          "Un artiste peint à l’aquarelle une gorge rocheuse dans un carnet, au Studio oloNala, avec un chat couché à côté de la page"
         ],
         "de": [
           "Der Bogeneingang des oloNala Art Studio & Shop, in einer Wand, die wie bemooster Stein bemalt ist",
           "Eine Wand mit gerahmten Tierbildern im Studio oloNala",
           "Holzgeschnitzte Pflanzen an einer gestreiften Holzwand neben gerahmten Bildern, Studio oloNala",
           "Ein Arbeitstisch für Künstler unter dem Fenster im Studio oloNala",
-          "Ein kleiner Ausstellungsraum mit gerahmten Bildern im Studio oloNala"
+          "Ein kleiner Ausstellungsraum mit gerahmten Bildern im Studio oloNala",
+          "Am Arbeitstisch im Studio oloNala: Malkasten, ein langes Skizzenbuch und eine weiße Katze, ausgestreckt auf der Matte",
+          "Aquarell einer Felsschlucht entsteht in einem Skizzenbuch im Studio oloNala, neben der Seite ruht eine Katze"
         ],
         "mg": [
           "Ny varavarana miendrika andohalambo an'ny oloNala Art Studio & Shop, amin'ny rindrina voaloko ho toy ny vato misy volon-ketsa",
           "Rindrina feno sary hosodoko misy biby, voafefy, ao anatin'ny Studio oloNala",
           "Zavamaniry voasokitra amin'ny hazo eo amin'ny rindrina hazo misy tsipika, eo akaikin'ny sary hosodoko voafefy, ao amin'ny Studio oloNala",
           "Latabatra fiasan'ny mpanakanto eo ambanin'ny varavarankely, ao amin'ny Studio oloNala",
-          "Efitrano fampirantiana kely misy sary voafefy, ao amin'ny Studio oloNala"
+          "Efitrano fampirantiana kely misy sary voafefy, ao amin'ny Studio oloNala",
+          "Mpanakanto eo amin'ny latabatra fiasana ao amin'ny Studio oloNala, misy boaty loko, kahie lava ary saka fotsy mivelatra eo ambony tsihy",
+          "Mpanakanto mandoko hantsana vato amin'ny loko rano ao anaty kahie, ao amin'ny Studio oloNala, misy saka mandry eo anilan'ny pejy"
         ]
       }
     },
@@ -6273,7 +6355,7 @@ const LISTING_TRANSLATIONS = {
           "## Worth ordering",
           "Romazava, the classic meat-and-greens broth, on a cool evening after the rain. Voanjobory, a stew of Bambara groundnuts: the one at Hotel Manja’s restaurant is exceptional. Zebu steak, at Grenat Hotel’s restaurant among others.",
           "## What things cost",
-          "At a local hotely, a plate costs around 10,000–30,000 Ar. Hotel restaurants are mostly 12,000–35,000 Ar for a main, and the set dinners at Chez Gaspard and Setam Lodge are 45,000–50,000 Ar.",
+          "At a local hotely, a plate costs around 10,000–30,000 Ar. Hotel restaurants are mostly 12,000–35,000 Ar for a main, and the set dinners at Chez Gaspard and Setam Lodge are 45,000–70,000 Ar.",
           "Some lodge kitchens cook to order, so ask ahead if you are eating where you are not staying."
         ],
         "fr": [
@@ -6281,7 +6363,7 @@ const LISTING_TRANSLATIONS = {
           "## À commander",
           "Le romazava, le bouillon classique de viande et de brèdes, par une soirée fraîche après la pluie. Le voanjobory, un ragoût de pois bambara : celui du restaurant de l’Hôtel Manja est exceptionnel. Le steak de zébu, entre autres au restaurant du Grenat Hotel.",
           "## Combien ça coûte",
-          "Dans un hotely local, une assiette coûte environ 10 000–30 000 Ar. Dans les restaurants d’hôtel, un plat coûte le plus souvent 12 000–35 000 Ar, et les dîners en menu chez Gaspard et au Setam Lodge 45 000–50 000 Ar.",
+          "Dans un hotely local, une assiette coûte environ 10 000–30 000 Ar. Dans les restaurants d’hôtel, un plat coûte le plus souvent 12 000–35 000 Ar, et les dîners en menu chez Gaspard et au Setam Lodge 45 000–70 000 Ar.",
           "Certaines cuisines de lodge préparent à la commande : prévenez à l’avance si vous mangez là où vous ne logez pas."
         ],
         "de": [
@@ -6289,7 +6371,7 @@ const LISTING_TRANSLATIONS = {
           "## Lohnt sich",
           "Romazava, die klassische Brühe aus Fleisch und Blattgemüse, an einem kühlen Abend nach dem Regen. Voanjobory, ein Eintopf aus Bambara-Erdnüssen: Der im Restaurant des Hotel Manja ist hervorragend. Zebusteak, unter anderem im Restaurant des Grenat Hotel.",
           "## Was es kostet",
-          "In einem einfachen Hotely kostet ein Teller etwa 10.000–30.000 Ar. In Hotelrestaurants kostet ein Hauptgericht meist 12.000–35.000 Ar, die Abendmenüs bei Chez Gaspard und in der Setam Lodge 45.000–50.000 Ar.",
+          "In einem einfachen Hotely kostet ein Teller etwa 10.000–30.000 Ar. In Hotelrestaurants kostet ein Hauptgericht meist 12.000–35.000 Ar, die Abendmenüs bei Chez Gaspard und in der Setam Lodge 45.000–70.000 Ar.",
           "Manche Lodge-Küchen kochen auf Bestellung – sagen Sie also vorher Bescheid, wenn Sie dort essen, wo Sie nicht wohnen."
         ],
         "mg": [
@@ -6297,7 +6379,7 @@ const LISTING_TRANSLATIONS = {
           "## Mendrika hanafarana",
           "Romazava, ilay ro hena sy anana mahazatra, amin'ny hariva mangatsiatsiaka aorian'ny orana. Voanjobory: tsara mihoatra ilay ao amin'ny trano fisakafoan'ny Hotel Manja. Hen'omby natono, ao amin'ny trano fisakafoan'ny Grenat Hotel sy any an-kafa.",
           "## Ohatrinona",
-          "Ao amin'ny hotely eto an-toerana dia eo amin'ny 10 000–30 000 Ar eo ho eo ny lovia iray. Ao amin'ny trano fisakafoan'ny hotely dia matetika 12 000–35 000 Ar ny sakafo iray, ary 45 000–50 000 Ar ny sakafo hariva voalamina ao Chez Gaspard sy Setam Lodge.",
+          "Ao amin'ny hotely eto an-toerana dia eo amin'ny 10 000–30 000 Ar eo ho eo ny lovia iray. Ao amin'ny trano fisakafoan'ny hotely dia matetika 12 000–35 000 Ar ny sakafo iray, ary 45 000–70 000 Ar ny sakafo hariva voalamina ao Chez Gaspard sy Setam Lodge.",
           "Misy lakozian'ny lodge mahandro araka ny baiko, ka manontania mialoha raha hisakafo any amin'ny toerana tsy hatoriana ianao."
         ]
       }

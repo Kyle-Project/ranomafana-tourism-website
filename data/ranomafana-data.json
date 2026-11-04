@@ -72,39 +72,36 @@
       "slug": "setam-lodge",
       "name": "Setam Lodge",
       "type": "eco",
-      "price": "160,000–200,000 Ar / night",
+      "price": "200,000–250,000 Ar / night",
       "toGate": 1,
       "rating": "3.6 (Tripadvisor, 294 reviews)",
-      "img": "images/setam-lodge-aerial-view.jpg",
+      "img": "images/setam-lodge-bungalows-hillside.jpg",
       "wifi": true,
       "hotWater": true,
       "restaurant": true,
       "parking": true,
       "wifiNote": "In the restaurant",
       "verified": true,
-      "sourceNote": "Contacts corrected from setam-madagascar.com and FHORM. The previously listed setam-lodge.com and setamlodge@yahoo.fr are not the property's own details. Rates, meals, amenities and the 800 m distance from Kyle's notes ('Website information.docx', received 11 Oct 2026), which confirm the phone and email. 'The closest place to stay' was dropped on 23 Oct 2026: Centre ValBio, beside the gate, is closer (OpenStreetMap).",
+      "asOf": "2026-11",
+      "sourceNote": "Contacts corrected from setam-madagascar.com and FHORM. The previously listed setam-lodge.com and setamlodge@yahoo.fr are not the property's own details. Room rates and the 70,000 Ar set menu from Kyle, 4 Nov 2026 (they replace the 160,000–200,000 Ar rooms and 50,000 Ar menu in his notes of 11 Oct 2026). Breakfast prices, amenities and the 800 m distance from Kyle's notes ('Website information.docx', received 11 Oct 2026), which confirm the phone and email. 'The closest place to stay' was dropped on 23 Oct 2026: Centre ValBio, beside the gate, is closer (OpenStreetMap). Photos: Kyle's ten of 4 Nov 2026 lead the gallery, ahead of the four older web photos.",
       "desc": "Twenty bungalows on a ridge an 800 m walk from the park entrance, each looking out over the rainforest canopy, with private hot-water bathrooms and a 70-seat bar and restaurant. The largest and most established lodge in Ranomafana.",
       "rooms": [
         {
-          "type": "Double",
-          "price": "160,000 Ar"
-        },
-        {
-          "type": "Twin",
-          "price": "160,000 Ar"
-        },
-        {
-          "type": "Triple (1 double + 1 single bed)",
-          "price": "180,000 Ar"
-        },
-        {
-          "type": "Family (1 double + 2 single beds)",
+          "type": "Single, double or twin",
           "price": "200,000 Ar"
+        },
+        {
+          "type": "Family, for 3 people",
+          "price": "225,000 Ar"
+        },
+        {
+          "type": "Family, for 4 people",
+          "price": "250,000 Ar"
         }
       ],
       "meals": [
         "Breakfast: 25,000 Ar continental, 30,000 Ar American",
-        "Lunch or dinner: 50,000 Ar set price"
+        "Lunch or dinner: 70,000 Ar set price"
       ],
       "features": [
         "An 800 m walk from the park entrance",
@@ -112,6 +109,46 @@
         "Look for giraffe-necked weevils in the grounds"
       ],
       "gallery": [
+        {
+          "src": "images/setam-lodge-bungalows-hillside.jpg",
+          "alt": "Bungalows on a green hillside below the rainforest at Setam Lodge"
+        },
+        {
+          "src": "images/setam-lodge-steps.jpg",
+          "alt": "Stone steps with a wooden handrail up to the bungalows at Setam Lodge"
+        },
+        {
+          "src": "images/setam-lodge-bungalow-front.jpg",
+          "alt": "A bungalow with carved shutters and flowers along the path at Setam Lodge"
+        },
+        {
+          "src": "images/setam-lodge-stone-path.jpg",
+          "alt": "A stone path past the bungalows at Setam Lodge"
+        },
+        {
+          "src": "images/setam-lodge-room.jpg",
+          "alt": "A room with a mosquito net over the bed and its own bathroom at Setam Lodge"
+        },
+        {
+          "src": "images/setam-lodge-room-desk.jpg",
+          "alt": "A desk and framed photographs in a room at Setam Lodge"
+        },
+        {
+          "src": "images/setam-lodge-bathroom.jpg",
+          "alt": "A bathroom with a shower at Setam Lodge"
+        },
+        {
+          "src": "images/setam-lodge-valley-view.jpg",
+          "alt": "Forested hills seen from the terrace at Setam Lodge"
+        },
+        {
+          "src": "images/setam-lodge-bar.jpg",
+          "alt": "The wooden bar at Setam Lodge"
+        },
+        {
+          "src": "images/setam-lodge-gift-table.jpg",
+          "alt": "Woven bags and toy lemurs on a table in the dining room at Setam Lodge"
+        },
         {
           "src": "images/setam-lodge-aerial-view.jpg",
           "alt": "Aerial view of Setam Lodge"
@@ -2009,6 +2046,8 @@
       "price": "$$$",
       "img": "images/setam-lodge-dining-hall.jpg",
       "verified": true,
+      "asOf": "2026-11",
+      "sourceNote": "The 70,000 Ar set menu from Kyle, 4 Nov 2026 (the same as on the Setam Lodge listing). Breakfast prices from his notes of 11 Oct 2026. The bar and terrace view are from Kyle's photos of 4 Nov 2026.",
       "desc": "A 70-seat bar and restaurant above the canopy — the largest and most formal dining room in the area. Reserve ahead if you are not staying at the lodge.",
       "highlights": [
         "Set menus",
@@ -2017,7 +2056,21 @@
       ],
       "meals": [
         "Breakfast: 25,000 Ar continental, 30,000 Ar American",
-        "Lunch or dinner: 50,000 Ar set price"
+        "Lunch or dinner: 70,000 Ar set price"
+      ],
+      "gallery": [
+        {
+          "src": "images/setam-lodge-dining-hall.jpg",
+          "alt": "Dining hall at Setam Lodge"
+        },
+        {
+          "src": "images/setam-lodge-bar.jpg",
+          "alt": "The wooden bar at Setam Lodge"
+        },
+        {
+          "src": "images/setam-lodge-valley-view.jpg",
+          "alt": "Forested hills seen from the terrace at Setam Lodge"
+        }
       ],
       "contact": {
         "phone": "+261 34 07 324 33",
@@ -2557,6 +2610,22 @@
         {
           "src": "images/ranomafana-national-park-interpretation-centre.jpg",
           "alt": "Inside the park's interpretation centre: a display of a Tanala village"
+        },
+        {
+          "src": "images/ranomafana-national-park-interpretation-welcome-sign.jpg",
+          "alt": "The painted sign to the park's interpretation centre: “Visite gratuite” (free to visit) and a welcome in Malagasy, English and French"
+        },
+        {
+          "src": "images/ranomafana-national-park-interpretation-desk.jpg",
+          "alt": "Three people at the desk in the park's interpretation centre, beside the Tanala village display"
+        },
+        {
+          "src": "images/ranomafana-national-park-tanala-village-display.jpg",
+          "alt": "The Tanala village display in the park's interpretation centre: small thatched huts, a woven vest, an eel trap and a pot for collecting honey"
+        },
+        {
+          "src": "images/ranomafana-national-park-wildlife-artwork.jpg",
+          "alt": "A large artwork by Jessie Jordan in the park's interpretation centre: lemurs, birds, butterflies and other forest animals around a stream"
         },
         {
           "src": "images/ranomafana-national-park-circuit-map.jpg",
@@ -3245,7 +3314,7 @@
       "img": "images/studio-olonala-frontage.jpg",
       "verified": true,
       "photoNeeded": false,
-      "sourceNote": "Photos from Kyle, received 19 Oct 2026; the sign over the door reads 'oloNala Art Studio & Shop'.",
+      "sourceNote": "Photos from Kyle, received 19 Oct and 4 Nov 2026; the sign over the door reads 'oloNala Art Studio & Shop'.",
       "gallery": [
         {
           "src": "images/studio-olonala-frontage.jpg",
@@ -3266,6 +3335,14 @@
         {
           "src": "images/studio-olonala-gallery.jpg",
           "alt": "A small gallery room hung with framed pictures at Studio oloNala"
+        },
+        {
+          "src": "images/studio-olonala-artist-cat.jpg",
+          "alt": "An artist at the worktable at Studio oloNala, with a paint box, a long sketchbook and a white cat stretched out on the mat"
+        },
+        {
+          "src": "images/studio-olonala-artist-sketchbook.jpg",
+          "alt": "An artist painting a rocky gorge in watercolour in a sketchbook at Studio oloNala, with a cat resting beside the page"
         }
       ],
       "desc": "Art studio and shop at the park entrance, and the public face of oloNala — Madagascar's first environmentally focused art residency, working with Malagasy artists on conservation themes. The building itself incorporates Zafimaniry woodwork.",
@@ -4027,7 +4104,7 @@
         "## Worth ordering",
         "Romazava, the classic meat-and-greens broth, on a cool evening after the rain. Voanjobory, a stew of Bambara groundnuts: the one at Hotel Manja’s restaurant is exceptional. Zebu steak, at Grenat Hotel’s restaurant among others.",
         "## What things cost",
-        "At a local hotely, a plate costs around 10,000–30,000 Ar. Hotel restaurants are mostly 12,000–35,000 Ar for a main, and the set dinners at Chez Gaspard and Setam Lodge are 45,000–50,000 Ar.",
+        "At a local hotely, a plate costs around 10,000–30,000 Ar. Hotel restaurants are mostly 12,000–35,000 Ar for a main, and the set dinners at Chez Gaspard and Setam Lodge are 45,000–70,000 Ar.",
         "Some lodge kitchens cook to order, so ask ahead if you are eating where you are not staying."
       ]
     },

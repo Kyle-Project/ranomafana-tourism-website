@@ -518,6 +518,43 @@ site gives as `austhotel309@gmail.com`, beside `austhotel@moov.mg` from your not
 which one does the hotel use? Meal prices are still from your notes. One man's face
 can be seen in the reception photo (`foret-australe-reception.jpg`).
 
+### Added 4 November 2026 — the park's interpretation centre
+
+Your four photos are in the park's “See all photos” pop-up and the Photo gallery, as
+received, right after the two older interpretation centre photos: the painted sign
+(“Visite gratuite”), three people at the desk, the Tanala village display, and the big
+wildlife artwork. **Still to check:** the artwork is marked “Artwork: Jessie Jordan ©”,
+so its description names the artist; do you have Jessie Jordan's permission to show it?
+Three people's faces can be seen in the desk photo. The two labels readable on the
+display gave “eel trap” and “honey collection” in the description.
+
+### Added 4 November 2026 — Setam Lodge
+
+All ten of your photos now lead the listing's gallery, ahead of the four older web
+photos: the bungalows on the hillside (the new card photo), the steps, a bungalow front,
+the stone path, a room, its desk, a bathroom, the view from the terrace, the bar and the
+table of bags and toy lemurs. The bar and the view also joined the Setam Lodge Dining
+Hall pop-up. Three photos were saved slightly smaller to stay under 500 KB; the rest are
+as received.
+
+Your prices replace those in your notes of 11 Oct 2026: single, double or twin 200,000 Ar,
+family room for 3 at 225,000 Ar, for 4 at 250,000 Ar, and the set menu 70,000 Ar (on both
+listings, and in the "Eating in Ranomafana" story's price line). The old Triple and
+Family rooms with their bed layouts are gone. **Still to check:** breakfast (25,000 Ar
+continental, 30,000 Ar American) is still from your October notes: has it changed too?
+Is the 70,000 Ar menu for both lunch and dinner, as the 50,000 Ar one was? A woman's
+face can be seen in the bar photo (`setam-lodge-bar.jpg`).
+
+### Added 4 November 2026 — Studio oloNala
+
+Your two photos, as received, follow the older five in the listing's gallery, and so
+appear in the Photo gallery too: an artist at the worktable with a white cat on the mat
+(`studio-olonala-artist-cat.jpg`) and a close view of the sketchbook, a watercolour of a
+rocky gorge (`studio-olonala-artist-sketchbook.jpg`). The card photo is still the arched
+doorway. **Still to check:** the descriptions say “an artist” because no name came with
+the photos; the artist's face doesn't show, but do they want to be named, and are they
+happy to have their painting shown?
+
 Every photo-less listing now has a **designed placeholder** (`images/placeholder-<slug>.jpg`)
 rather than sharing one of two landscapes. They are obviously graphics — property name
 on a colour panel, "Photograph coming soon" — so nobody mistakes one for a picture of
