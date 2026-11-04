@@ -1063,25 +1063,29 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
-          "Kambana Résidence exterior",
+          "The Kambana Résidence sign, offering guest rooms, meals and a furnished apartment, with terraced gardens behind it",
+          "The paved drive climbing between stone walls, past tree ferns and banana plants, Kambana Résidence",
           "Room at Kambana Résidence",
           "Restaurant or common area at Kambana Résidence",
           "View from Kambana Résidence"
         ],
         "fr": [
-          "Kambana Résidence : vue extérieure",
+          "Le panneau de Kambana Résidence, qui annonce chambres d’hôtes, table d’hôtes et appartement meublé, devant des jardins en terrasses",
+          "L’allée bétonnée qui monte entre des murs de pierre, parmi les fougères arborescentes et les bananiers, Kambana Résidence",
           "Kambana Résidence : une chambre",
           "Kambana Résidence : restaurant ou espace commun",
           "Kambana Résidence : la vue"
         ],
         "de": [
-          "Kambana Résidence: Außenansicht",
+          "Das Schild der Kambana Résidence mit Gästezimmern, Mahlzeiten und möblierter Wohnung, dahinter Terrassengärten",
+          "Die befestigte Zufahrt zwischen Steinmauern, vorbei an Baumfarnen und Bananenstauden, Kambana Résidence",
           "Kambana Résidence: ein Zimmer",
           "Kambana Résidence: Restaurant oder Gemeinschaftsbereich",
           "Kambana Résidence: die Aussicht"
         ],
         "mg": [
-          "Kambana Résidence: ny ivelany",
+          "Ny takelaka famantarana an'i Kambana Résidence, milaza efitrano, sakafo ary trano misy fanaka, miaraka amin'ny zaridaina mitohatohatra ao ambadika",
+          "Ny lalana mihanika eo anelanelan'ny rindrina vato, mandalo ny fanjana sy ny akondro, Kambana Résidence",
           "Kambana Résidence: efitrano iray",
           "Kambana Résidence: trano fisakafoana na toerana iombonana",
           "Kambana Résidence: ny fijery"
@@ -2838,6 +2842,38 @@ const LISTING_TRANSLATIONS = {
           "Alaharo iray andro mialoha",
           "Sakafon'ny mpikaroka sy ny mpitsidika"
         ]
+      }
+    },
+    "hotely-zafimahery": {
+      "desc": {
+        "en": "Malagasy restaurant in a two-storey green-and-white building, with tables on the covered terrace and in the dining room. A chalkboard out front lists the day's dishes: when photographed, chicken or beef in sauce and pork several ways, including trotters and ears.",
+        "fr": "Restaurant malgache dans un bâtiment à étage vert et blanc, avec des tables sur la terrasse couverte et dans la salle. Une ardoise devant la porte annonce les plats du jour : le jour de la photo, du poulet ou du bœuf en sauce et du porc préparé de plusieurs façons, dont les pieds et les oreilles.",
+        "de": "Madagassisches Restaurant in einem zweistöckigen grün-weißen Haus, mit Tischen auf der überdachten Terrasse und im Gastraum. Eine Kreidetafel vor dem Haus nennt die Gerichte des Tages: am Tag des Fotos Huhn oder Rind in Soße und Schweinefleisch in mehreren Varianten, auch Füße und Ohren.",
+        "mg": "Trano fisakafoanana malagasy ao amin'ny trano misy rihana maitso sy fotsy, misy latabatra eo amin'ny lavarangana misy tafo sy ao amin'ny efitrano fisakafoana. Misy solaitrabe eo anoloana mitanisa ny laokan'ny andro: tamin'ny andro nakana ny sary dia akoho na omby misy saosy, ary kisoa nomanina amin'ny fomba maro, anisan'izany ny tongony sy ny sofiny."
+      },
+      "highlights": {
+        "en": ["Malagasy food", "Day's dishes on a chalkboard", "Covered terrace"],
+        "fr": ["Cuisine malgache", "Plats du jour à l’ardoise", "Terrasse couverte"],
+        "de": ["Madagassische Küche", "Tagesgerichte auf der Kreidetafel", "Überdachte Terrasse"],
+        "mg": ["Sakafo malagasy", "Laokan'ny andro eo amin'ny solaitrabe", "Lavarangana misy tafo"]
+      },
+      "meals": {
+        "en": ["Meals: 6,000–10,000 Ar"],
+        "fr": ["Repas : 6 000–10 000 Ar"],
+        "de": ["Mahlzeiten: 6.000–10.000 Ar"],
+        "mg": ["Sakafo: 6 000–10 000 Ar"]
+      },
+      "contact.note": {
+        "en": "Beside the RN25, just east of the village.",
+        "fr": "Au bord de la RN25, juste à l’est du village.",
+        "de": "An der RN25, direkt östlich des Dorfes.",
+        "mg": "Eo amoron'ny RN25, eo atsinanan'ny tanàna."
+      },
+      "gallery[].alt": {
+        "en": ["The green-and-white front of Hotely Zafimahery, with its sign for Malagasy food and a chalkboard menu outside", "Wooden chairs and blue-covered tables on the covered terrace at Hotely Zafimahery", "The dining room at Hotely Zafimahery, with wooden chairs and patterned tablecloths", "A plate of rice and a bowl of chicken in broth at Hotely Zafimahery", "The chalkboard at Hotely Zafimahery, headed “Misy sakafo” (food available), listing the day's dishes"],
+        "fr": ["La façade verte et blanche de l’Hotely Zafimahery, avec son enseigne de cuisine malgache et une ardoise dehors", "Chaises en bois et tables à nappe bleue sur la terrasse couverte de l’Hotely Zafimahery", "La salle de l’Hotely Zafimahery, avec ses chaises en bois et ses nappes à motifs", "Une assiette de riz et un bol de poulet en bouillon à l’Hotely Zafimahery", "L’ardoise de l’Hotely Zafimahery, titrée « Misy sakafo » (il y a à manger), qui annonce les plats du jour"],
+        "de": ["Die grün-weiße Front des Hotely Zafimahery mit dem Schild für madagassische Küche und einer Kreidetafel davor", "Holzstühle und Tische mit blauen Decken auf der überdachten Terrasse des Hotely Zafimahery", "Der Gastraum des Hotely Zafimahery mit Holzstühlen und gemusterten Tischdecken", "Ein Teller Reis und eine Schale Huhn in Brühe im Hotely Zafimahery", "Die Kreidetafel des Hotely Zafimahery mit der Überschrift „Misy sakafo“ (Es gibt Essen) und den Gerichten des Tages"],
+        "mg": ["Ny tarehin'ny Hotely Zafimahery maitso sy fotsy, misy ny takelaka sakafo malagasy sy solaitrabe eo ivelany", "Seza hazo sy latabatra rakotra manga eo amin'ny lavarangana misy tafo ao amin'ny Hotely Zafimahery", "Ny efitrano fisakafoana ao amin'ny Hotely Zafimahery, misy seza hazo sy lamban-databatra misy sary", "Vary iray lovia sy akoho misy ron-kena ao amin'ny Hotely Zafimahery", "Ny solaitraben'ny Hotely Zafimahery, misy ny lohateny hoe “Misy sakafo”, mitanisa ny laokan'ny andro"]
       }
     },
     "ellies-snack": {

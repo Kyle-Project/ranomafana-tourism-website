@@ -38,7 +38,7 @@ each one in all four languages (`placeholder-<slug>.jpg`, `-fr.jpg`, `-de.jpg`,
 | Array | Count | Page |
 |---|---|---|
 | `stayData` | 25 | Places to stay |
-| `eatData` | 16 | Places to eat |
+| `eatData` | 17 | Places to eat |
 | `doData` | 18 | Things to do (the national park entry also feeds the National Park page) |
 | `itineraryData` | 7 | Itineraries, and the "What kind of traveller are you?" picker on the home page |
 | `eventData` | 8 | What's on, the home page, and the When to visit month picker |

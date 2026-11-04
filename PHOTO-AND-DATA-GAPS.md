@@ -236,7 +236,7 @@ been removed — the charge exists but isn't published anywhere.
 
 ---
 
-## 6. Still unverified — 7 items needing you on the ground
+## 6. Still unverified — 8 items needing you on the ground
 
 Everything below shows a "details unconfirmed" note on the page. (Mirary Hotel, the
 thermal massage and the Jirama Waterfall Hike came off this list in October 2026 —
@@ -263,6 +263,11 @@ see sections 0 and 7.)
    the faded sign by the reception door: please check them. Its map is pinned (27 Oct
    2026) to Google Maps' own listing for the reserve, near Kelilalina on the RN25: check
    that is where it is.
+8. **Hotely Zafimahery** (added 4 Nov 2026 from your five photos) — its map uses your own
+   Google Maps pin, beside the RN25 east of the village (Google has no listing for it, and a
+   name search lands on Mirary Hotel). Meals are 6,000–10,000 Ar (from you, 4 Nov 2026).
+   Still needed: opening hours, a phone number, and whether it has rooms (its signs say
+   "Hotel" and show a bed; if it does, it could have a listing under Hotels too).
 
 **La Palmeraie** — see section 0; probably resolved.
 
@@ -523,9 +528,9 @@ can be seen in the reception photo (`foret-australe-reception.jpg`).
 Your four photos are in the park's “See all photos” pop-up and the Photo gallery, as
 received, right after the two older interpretation centre photos: the painted sign
 (“Visite gratuite”), three people at the desk, the Tanala village display, and the big
-wildlife artwork. **Still to check:** the artwork is marked “Artwork: Jessie Jordan ©”,
-so its description names the artist; do you have Jessie Jordan's permission to show it?
-Three people's faces can be seen in the desk photo. The two labels readable on the
+wildlife artwork. The artwork is marked “Artwork: Jessie Jordan ©”, so its description
+names the artist. You confirmed on 4 Nov 2026 that it can be shown, and the three faces
+in the desk photo too. The two labels readable on the
 display gave “eel trap” and “honey collection” in the description.
 
 ### Added 4 November 2026 — Setam Lodge
@@ -543,7 +548,8 @@ listings, and in the "Eating in Ranomafana" story's price line). The old Triple 
 Family rooms with their bed layouts are gone. **Still to check:** breakfast (25,000 Ar
 continental, 30,000 Ar American) is still from your October notes: has it changed too?
 Is the 70,000 Ar menu for both lunch and dinner, as the 50,000 Ar one was? A woman's
-face can be seen in the bar photo (`setam-lodge-bar.jpg`).
+face can be seen in the bar photo (`setam-lodge-bar.jpg`); you confirmed on 4 Nov 2026
+that it can be shown.
 
 ### Added 4 November 2026 — Studio oloNala
 
@@ -551,9 +557,33 @@ Your two photos, as received, follow the older five in the listing's gallery, an
 appear in the Photo gallery too: an artist at the worktable with a white cat on the mat
 (`studio-olonala-artist-cat.jpg`) and a close view of the sketchbook, a watercolour of a
 rocky gorge (`studio-olonala-artist-sketchbook.jpg`). The card photo is still the arched
-doorway. **Still to check:** the descriptions say “an artist” because no name came with
-the photos; the artist's face doesn't show, but do they want to be named, and are they
-happy to have their painting shown?
+doorway. The descriptions say “an artist” because no name came with the photos. You
+confirmed on 4 Nov 2026 that the photos and the painting can be shown. If the artist
+gives a name to use, it can be added to both descriptions.
+
+### Added 4 November 2026 — Kambana Résidence
+
+Both of your photos, the listing's first real ones, used as received. The roadside sign
+is now the card photo and fills the `exterior` slot; the paved drive between the stone
+walls is added after it (`kambana-residence-drive.jpg`). `room`, `restaurant` and `view`
+are still waiting. The sign shows the same phone number as the listing (034 95 932 86).
+The new French, German and Malagasy descriptions need the usual native-speaker check.
+
+### Added 4 November 2026 — Hotely Zafimahery
+
+A new restaurant listing with all five of your photos, used as received: the frontage (card
+photo), the covered terrace, the dining room, a plate of rice with chicken in broth, and
+the chalkboard. No faces show clearly: two people are seen from behind or in shadow, and
+the dish photo shows only hands.
+
+The chalkboard is headed "Misy sakafo" (food available) and "Laoka anio" (today's dishes).
+It lists akoho sauce, kisoa ritra, omby sauce, tongon-kisoa, sofi-kisoa, Pirina and a last
+line starting "Kisoa sy t…" that is half rubbed out. The description sums these up as
+chicken or beef in sauce and pork several ways, including trotters and ears, and says they
+are the dishes on the day of the photo. "Pirina" and the rubbed-out line are left out:
+please tell me what they are if you want them named. Calling the bowl chicken comes from
+the photo and the board, so check that too. The new French, German and Malagasy text needs
+the usual native-speaker check.
 
 Every photo-less listing now has a **designed placeholder** (`images/placeholder-<slug>.jpg`)
 rather than sharing one of two landscapes. They are obviously graphics — property name
@@ -573,7 +603,7 @@ Exterior/approach · a made-up room · restaurant or common area · the view.
 | Listing | Files it is waiting for |
 |---|---|
 | **Karibotel** | `karibotel-exterior.jpg` · `karibotel-room.jpg` · `karibotel-restaurant.jpg` · `karibotel-view.jpg` |
-| **Kambana Résidence** | `kambana-residence-exterior.jpg` · `kambana-residence-room.jpg` · `kambana-residence-restaurant.jpg` · `kambana-residence-view.jpg` |
+| **Kambana Résidence** | `kambana-residence-room.jpg` · `kambana-residence-restaurant.jpg` · `kambana-residence-view.jpg` (the exterior slot is in, 4 Nov 2026) |
 | **Soa Lodge** | `soa-lodge-exterior.jpg` · `soa-lodge-room.jpg` · `soa-lodge-restaurant.jpg` · `soa-lodge-view.jpg` |
 | **Minerva Apart** | `minerva-apart-exterior.jpg` · `minerva-apart-room.jpg` · `minerva-apart-restaurant.jpg` · `minerva-apart-view.jpg` |
 | **La Palmeraie** | `la-palmeraie-exterior.jpg` · `la-palmeraie-room.jpg` · `la-palmeraie-restaurant.jpg` · `la-palmeraie-view.jpg` |

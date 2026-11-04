@@ -451,13 +451,14 @@ const stayData = [
     price: "From about 105,000 Ar (€21) / night",
     toGate: 4.5,
     rating: "—",
-    img: "images/placeholder-kambana-residence.jpg",
+    img: "images/kambana-residence-exterior.jpg",
+    imgPosition: "center 26%",   // a tall photo: keep the sign's logo in a wide card's frame
     wifi: false, hotWater: true, restaurant: true, parking: true,
     verified: true,
-    photoNeeded: true,
-    sourceNote: "Contacts corrected via the property's own site and Aty Aminay. The previously listed +261 34 04 882 11 and kambana.residence@gmail.com were not the property's details. '8 km from the park' was dropped on 23 Oct 2026: Tsararano is about 4.5 km from the gate by road (OpenStreetMap routing). The Ariary price is the property's €21 at the XE rate of 23 Oct 2026, rounded.",
+    sourceNote: "Contacts corrected via the property's own site and Aty Aminay. The previously listed +261 34 04 882 11 and kambana.residence@gmail.com were not the property's details. '8 km from the park' was dropped on 23 Oct 2026: Tsararano is about 4.5 km from the gate by road (OpenStreetMap routing). The Ariary price is the property's €21 at the XE rate of 23 Oct 2026, rounded. The roadside sign (Kyle's photo, 4 Nov 2026) shows the same phone number.",
     gallery: [
-      { src: "images/kambana-residence-exterior.jpg", fallback: "images/placeholder-kambana-residence.jpg", alt: "Kambana Résidence exterior" },
+      { src: "images/kambana-residence-exterior.jpg", alt: "The Kambana Résidence sign, offering guest rooms, meals and a furnished apartment, with terraced gardens behind it" },
+      { src: "images/kambana-residence-drive.jpg", alt: "The paved drive climbing between stone walls, past tree ferns and banana plants, Kambana Résidence" },
       { src: "images/kambana-residence-room.jpg", fallback: "images/placeholder-kambana-residence.jpg", alt: "Room at Kambana Résidence" },
       { src: "images/kambana-residence-restaurant.jpg", fallback: "images/placeholder-kambana-residence.jpg", alt: "Restaurant or common area at Kambana Résidence" },
       { src: "images/kambana-residence-view.jpg", fallback: "images/placeholder-kambana-residence.jpg", alt: "View from Kambana Résidence" }
@@ -1101,6 +1102,30 @@ const eatData = [
     desc: "Three-course meals at the research station. Not a walk-in restaurant — meals must be arranged with the campus at least a day in advance.",
     highlights: ["Three-course set meals", "Arrange one day ahead", "Researcher and visitor dining"],
     contact: { phone: "+261 34 13 581 71", email: "ask@valb.io", website: "https://www.stonybrook.edu/commcms/centre-valbio/", social: "https://www.facebook.com/CentreValBio" }
+  },
+  {
+    slug: "hotely-zafimahery",
+    name: "Hotely Zafimahery",
+    type: "malagasy",
+    rating: "—",
+    price: "$",
+    img: "images/hotely-zafimahery-exterior.jpg",
+    verified: false,
+    asOf: "2026-11",
+    photoNeeded: false,
+    sourceNote: "Added from Kyle's five photos of 4 Nov 2026; the name, 'Sakafo Malagasy' and the dishes are read from its signs and chalkboard ('Laoka anio': today's dishes, so they change). Two chalkboard lines are left out: 'Pirina' (meaning not certain) and a last line half rubbed out. Meal prices (6,000–10,000 Ar) from Kyle, 4 Nov 2026. No hours or contacts came with the photos, and nothing was found online. The roof sign shows a bed and the pillars say 'Hotel', so it may have rooms too: to confirm. Map pin is Kyle's own Google Maps pin (4 Nov 2026), beside the RN25 east of the village: a Google search for the name lands on Mirary Hotel.",
+    mapPin: "-21.263404,47.461670",   // Kyle's Google Maps pin (4 Nov 2026); the name search finds Mirary Hotel
+    gallery: [
+      { src: "images/hotely-zafimahery-exterior.jpg", alt: "The green-and-white front of Hotely Zafimahery, with its sign for Malagasy food and a chalkboard menu outside" },
+      { src: "images/hotely-zafimahery-terrace.jpg", alt: "Wooden chairs and blue-covered tables on the covered terrace at Hotely Zafimahery" },
+      { src: "images/hotely-zafimahery-dining.jpg", alt: "The dining room at Hotely Zafimahery, with wooden chairs and patterned tablecloths" },
+      { src: "images/hotely-zafimahery-dish.jpg", alt: "A plate of rice and a bowl of chicken in broth at Hotely Zafimahery" },
+      { src: "images/hotely-zafimahery-menu-board.jpg", alt: "The chalkboard at Hotely Zafimahery, headed “Misy sakafo” (food available), listing the day's dishes" }
+    ],
+    desc: "Malagasy restaurant in a two-storey green-and-white building, with tables on the covered terrace and in the dining room. A chalkboard out front lists the day's dishes: when photographed, chicken or beef in sauce and pork several ways, including trotters and ears.",
+    highlights: ["Malagasy food", "Day's dishes on a chalkboard", "Covered terrace"],
+    meals: ["Meals: 6,000–10,000 Ar"],
+    contact: { phone: "", email: "", website: "", social: "", note: "Beside the RN25, just east of the village." }
   },
   {
     slug: "ellies-snack",

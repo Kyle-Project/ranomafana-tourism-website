@@ -602,7 +602,7 @@ listings — was written without a native speaker and should be checked by one.
 
 ## Current state
 
-25 stays · 16 restaurants · 18 things to do · 7 itineraries · 8 events · 10 blog
+25 stays · 17 restaurants · 18 things to do · 7 itineraries · 8 events · 10 blog
 seeds. **Birdwatching** (`do`, slug `birdwatching`, 23 Oct 2026) is built only from
 facts on the park listing (125 species, Vohiparara, the specialist guide fee): when
 the park's guide fees change in January 2027, change its `price` too. All 25 stays are verified, against published sources or on Kyle's
@@ -775,7 +775,8 @@ gmail.com, in the contact note beside `austhotel@moov.mg`, until Kyle confirms i
 Kyle's four photos of the park's interpretation centre, 4 November 2026 (used as
 received), follow the two older ones in the park gallery: the painted sign, the desk,
 the Tanala village display and the wildlife artwork. The artwork is marked "Artwork:
-Jessie Jordan ©", so its description names the artist; permission is still to confirm.
+Jessie Jordan ©", so its description names the artist; Kyle confirmed permission the same
+day, and for the faces in the desk photo and in Setam Lodge's bar photo.
 
 Kyle's ten photos of **Setam Lodge**, 4 November 2026, lead its gallery, ahead of the four
 older web photos, and the bungalows on the hillside are its card photo; the bar and the
@@ -786,7 +787,21 @@ is still from his notes of 11 Oct 2026.
 
 Kyle's two photos of **Studio oloNala**, 4 November 2026 (used as received), end its
 gallery: an artist at the worktable with a white cat, and the sketchbook close up. No name
-came with them, so the descriptions say "an artist"; the card photo is unchanged.
+came with them, so the descriptions say "an artist"; Kyle confirmed the same day that the
+photos and the painting can be shown. The card photo is unchanged.
+
+Kyle's two photos of **Kambana Résidence**, 4 November 2026 (used as received), are its
+first real ones: the roadside sign is the card photo and fills `exterior` (a tall photo,
+so `imgPosition` keeps the logo in the wide card frame), and the paved drive is added
+after it (`kambana-residence-drive.jpg`). `room`, `restaurant` and `view` are still waiting.
+
+Kyle's five photos of **Hotely Zafimahery**, 4 November 2026 (used as received), started a
+new restaurant listing (`eat`, slug `hotely-zafimahery`, type `malagasy`). Its text holds
+only what the photos show, so it is `verified: false` until Kyle confirms it. Its meal
+prices (6,000–10,000 Ar, so the `$` tier) are from Kyle the same day; it has no rating,
+hours or contacts yet. Google has no listing for it, and searching the name lands on Mirary Hotel, so its `mapPin` is Kyle's own Google
+Maps pin, beside the RN25 east of the village. Its signs also say "Hotel" and show a bed, so
+it may need a stay listing too.
 
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide
@@ -801,8 +816,8 @@ October 2026): 10,000 Ar / residents 2,000 Ar, pool closed Tuesdays. It has **no
 details of its own** — never fill them with Hotel Thermal's, which is what the site
 did until 11 October 2026.
 
-Open editorial work is tracked in `PHOTO-AND-DATA-GAPS.md`: 7 unconfirmed listings,
-23 entries awaiting a real photograph (86 individual photo slots, all pre-wired),
+Open editorial work is tracked in `PHOTO-AND-DATA-GAPS.md`: 8 unconfirmed listings,
+22 entries awaiting a real photograph (85 individual photo slots, all pre-wired),
 and the conflicts listed in its section 0. The team profiles on the About page are
 placeholders, hidden (`hidden` on `.team-grid`, with a note in the markup) until
 Kyle has names; the About page shows the credit line and the email box meanwhile. Kyle's notes had headings for a donation link and a town map with no
