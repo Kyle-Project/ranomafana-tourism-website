@@ -763,6 +763,14 @@ come from the hotel's two undated tariff sheets, sent the same day; the hotel's 
 park visit price (from 90,000 Ar) is on its sheet, so leave it when the park's guide
 fees change in January 2027 unless the hotel changes it.
 
+Kyle's photos of **Forêt Australe**, 4 November 2026: nine lead its gallery, ahead of the
+four older web photos, and the thatched bungalows are its card photo. The two very dark
+bathroom photos were brightened; the originals, the rate sheet and the reception phone
+plate are in `photo-originals/2026-11-04 Foret Australe/`. The hotel's undated rate sheet
+gave the bungalow rates (68,000–90,000 Ar), and the BRED sign above it contactless cards.
+The sheet prints the email as `austhotel309@gmail.coms`; the site reads that as
+gmail.com, in the contact note beside `austhotel@moov.mg`, until Kyle confirms it.
+
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide
 fees from **January 2027** (120,000 / 150,000 / 180,000 Ar, specialists 250,000 Ar),

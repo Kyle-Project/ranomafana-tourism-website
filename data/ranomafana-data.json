@@ -142,27 +142,31 @@
       "slug": "foret-australe",
       "name": "Forêt Australe",
       "type": "eco",
-      "price": "60,000–80,000 Ar / night",
+      "price": "68,000–90,000 Ar / night",
       "toGate": 1.5,
       "rating": "3.1 (Tripadvisor, 24 reviews)",
-      "img": "images/foret-astral-exterior.jpg",
+      "img": "images/foret-australe-bungalows.jpg",
       "wifi": true,
       "hotWater": true,
       "restaurant": true,
       "parking": true,
       "wifiNote": "In the rooms",
       "verified": true,
-      "asOf": "2026-10",
-      "sourceNote": "Name corrected from 'Foret Astral' — Tripadvisor and Petit Futé both list it as Forêt Australe, at Ambatolahy. Rates, meals, Wi-Fi and features from Kyle's notes (received 11 Oct 2026), which confirm the phone and email. His notes also give www.groupeaustralhotel.com and www.foretaustral.groupeaustralhotel.com, but neither address resolved when checked on 11 Oct 2026, so no website is linked.",
+      "asOf": "2026-11",
+      "sourceNote": "Name corrected from 'Foret Astral' — Tripadvisor and Petit Futé both list it as Forêt Australe, at Ambatolahy. Rates, meals, Wi-Fi and features from Kyle's notes (received 11 Oct 2026), which confirm the phone and email. His notes also give www.groupeaustralhotel.com and www.foretaustral.groupeaustralhotel.com, but neither address resolved when checked on 11 Oct 2026, so no website is linked. Bungalow rates, the private bathroom and terrace, and austhotel309@gmail.com from the hotel's own rate sheet, photographed by Kyle (4 Nov 2026; copy in photo-originals/2026-11-04 Foret Australe/). It replaces the 60,000 and 80,000 Ar in his notes of 11 Oct 2026. The sheet prints the address as 'gmail.coms', read here as gmail.com: to be confirmed. It also confirms the phone, as does the plate at reception. Contactless cards from the BRED sign above the rate sheet. Meal prices are still from his notes. Photos: nine of Kyle's of 4 Nov 2026 (used as received, except that the two very dark bathroom photos were brightened; originals in the same folder) lead the gallery, ahead of the four older web photos.",
       "desc": "Eco-lodge at Ambatolahy immersed in nature, with rustic bungalows along the Namorona River near Ranomafana National Park, a private walking circuit, and lemurs in the hotel's own trees.",
       "rooms": [
         {
-          "type": "Double",
-          "price": "60,000 Ar"
+          "type": "Bungalow, 1 double bed (1–2 guests)",
+          "price": "68,000 Ar"
         },
         {
-          "type": "Family (1 double + 2 single beds)",
-          "price": "80,000 Ar"
+          "type": "Bungalow, 1 double + 1 single bed (up to 3 guests)",
+          "price": "78,000 Ar"
+        },
+        {
+          "type": "Bungalow, 1 double + 2 single beds (up to 4 guests)",
+          "price": "90,000 Ar"
         }
       ],
       "meals": [
@@ -170,10 +174,48 @@
         "Lunch or dinner: 20,000–25,000 Ar"
       ],
       "features": [
+        "Private bathroom and terrace in every bungalow",
         "Private walking circuit in the grounds",
-        "Lemurs in the hotel's trees"
+        "Lemurs in the hotel's trees",
+        "Contactless card payment (Visa, Mastercard, American Express, UnionPay)"
       ],
       "gallery": [
+        {
+          "src": "images/foret-australe-bungalows.jpg",
+          "alt": "Thatched bungalows among the trees at Forêt Australe"
+        },
+        {
+          "src": "images/foret-australe-bungalow-path.jpg",
+          "alt": "A stone path between red bungalows at Forêt Australe"
+        },
+        {
+          "src": "images/foret-australe-garden-path.jpg",
+          "alt": "A stone path through the gardens at Forêt Australe"
+        },
+        {
+          "src": "images/foret-australe-room.jpg",
+          "alt": "A room with a double bed at Forêt Australe"
+        },
+        {
+          "src": "images/foret-australe-bathroom-shower.jpg",
+          "alt": "A shower and basin at Forêt Australe"
+        },
+        {
+          "src": "images/foret-australe-bathroom-toilet.jpg",
+          "alt": "A basin and toilet at Forêt Australe"
+        },
+        {
+          "src": "images/foret-australe-reception.jpg",
+          "alt": "Terrace tables outside reception at Forêt Australe"
+        },
+        {
+          "src": "images/foret-australe-dining-room.jpg",
+          "alt": "The dining room at Forêt Australe"
+        },
+        {
+          "src": "images/foret-australe-road-signs.jpg",
+          "alt": "The Forêt Australe signs on the road"
+        },
         {
           "src": "images/foret-astral-exterior.jpg",
           "alt": "Forêt Australe exterior"
@@ -195,7 +237,8 @@
         "phone": "+261 34 16 391 74",
         "email": "austhotel@moov.mg",
         "website": "",
-        "social": "https://www.facebook.com/p/For%C3%AAt-Australe-61553678471858/"
+        "social": "https://www.facebook.com/p/For%C3%AAt-Australe-61553678471858/",
+        "note": "Also austhotel309@gmail.com."
       }
     },
     {

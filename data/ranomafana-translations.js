@@ -197,28 +197,32 @@ const LISTING_TRANSLATIONS = {
         "mg": "Eco-lodge ao Ambatolahy eo afovoan'ny zavaboary, misy bungalow tsotra eo amoron'ny renirano Namorona akaikin'ny valan-javaboahary Ranomafana, lalana fitsangatsanganana manokana, ary gidro eny amin'ireo hazon'ny hotely."
       },
       "price": {
-        "en": "60,000–80,000 Ar / night",
-        "fr": "60 000–80 000 Ar / nuit",
-        "de": "60.000–80.000 Ar / Nacht",
-        "mg": "60 000–80 000 Ar / alina"
+        "en": "68,000–90,000 Ar / night",
+        "fr": "68 000–90 000 Ar / nuit",
+        "de": "68.000–90.000 Ar / Nacht",
+        "mg": "68 000–90 000 Ar / alina"
       },
       "wifiNote": { "en": "In the rooms", "fr": "Dans les chambres", "de": "In den Zimmern", "mg": "Ao amin'ny efitrano" },
       "rooms": {
         "en": [
-          { "type": "Double", "price": "60,000 Ar" },
-          { "type": "Family (1 double + 2 single beds)", "price": "80,000 Ar" }
+          { "type": "Bungalow, 1 double bed (1–2 guests)", "price": "68,000 Ar" },
+          { "type": "Bungalow, 1 double + 1 single bed (up to 3 guests)", "price": "78,000 Ar" },
+          { "type": "Bungalow, 1 double + 2 single beds (up to 4 guests)", "price": "90,000 Ar" }
         ],
         "fr": [
-          { "type": "Double", "price": "60 000 Ar" },
-          { "type": "Familiale (1 lit double + 2 lits simples)", "price": "80 000 Ar" }
+          { "type": "Bungalow, 1 lit double (1 ou 2 personnes)", "price": "68 000 Ar" },
+          { "type": "Bungalow, 1 lit double + 1 lit simple (jusqu’à 3 personnes)", "price": "78 000 Ar" },
+          { "type": "Bungalow, 1 lit double + 2 lits simples (jusqu’à 4 personnes)", "price": "90 000 Ar" }
         ],
         "de": [
-          { "type": "Doppelzimmer", "price": "60.000 Ar" },
-          { "type": "Familienzimmer (1 Doppelbett + 2 Einzelbetten)", "price": "80.000 Ar" }
+          { "type": "Bungalow, 1 Doppelbett (1–2 Gäste)", "price": "68.000 Ar" },
+          { "type": "Bungalow, 1 Doppelbett + 1 Einzelbett (bis zu 3 Gäste)", "price": "78.000 Ar" },
+          { "type": "Bungalow, 1 Doppelbett + 2 Einzelbetten (bis zu 4 Gäste)", "price": "90.000 Ar" }
         ],
         "mg": [
-          { "type": "Fandriana roa olona", "price": "60 000 Ar" },
-          { "type": "Fianakaviana (fandriana roa olona 1 + fandriana kely 2)", "price": "80 000 Ar" }
+          { "type": "Bungalow, fandriana roa olona 1 (olona 1–2)", "price": "68 000 Ar" },
+          { "type": "Bungalow, fandriana roa olona 1 + fandriana kely 1 (hatramin'ny olona 3)", "price": "78 000 Ar" },
+          { "type": "Bungalow, fandriana roa olona 1 + fandriana kely 2 (hatramin'ny olona 4)", "price": "90 000 Ar" }
         ]
       },
       "meals": {
@@ -228,31 +232,73 @@ const LISTING_TRANSLATIONS = {
         "mg": ["Sakafo maraina: 10 000 Ar", "Sakafo antoandro na hariva: 20 000–25 000 Ar"]
       },
       "features": {
-        "en": ["Private walking circuit in the grounds", "Lemurs in the hotel's trees"],
-        "fr": ["Circuit de promenade privé dans le domaine", "Des lémuriens dans les arbres de l’hôtel"],
-        "de": ["Eigener Rundweg auf dem Gelände", "Lemuren in den Bäumen des Hotels"],
-        "mg": ["Lalana fitsangatsanganana manokana ao an-tokotany", "Gidro eny amin'ireo hazon'ny hotely"]
+        "en": ["Private bathroom and terrace in every bungalow", "Private walking circuit in the grounds", "Lemurs in the hotel's trees", "Contactless card payment (Visa, Mastercard, American Express, UnionPay)"],
+        "fr": ["Salle de bain privée et terrasse dans chaque bungalow", "Circuit de promenade privé dans le domaine", "Des lémuriens dans les arbres de l’hôtel", "Paiement par carte sans contact (Visa, Mastercard, American Express, UnionPay)"],
+        "de": ["Eigenes Bad und Terrasse in jedem Bungalow", "Eigener Rundweg auf dem Gelände", "Lemuren in den Bäumen des Hotels", "Kontaktlose Kartenzahlung (Visa, Mastercard, American Express, UnionPay)"],
+        "mg": ["Trano fidiovana manokana sy terasy isaky ny bungalow", "Lalana fitsangatsanganana manokana ao an-tokotany", "Gidro eny amin'ireo hazon'ny hotely", "Fandoavam-bola amin'ny karatra tsy mila mikasika (Visa, Mastercard, American Express, UnionPay)"]
+      },
+      "contact.note": {
+        "en": "Also austhotel309@gmail.com.",
+        "fr": "Également austhotel309@gmail.com.",
+        "de": "Auch austhotel309@gmail.com.",
+        "mg": "Ary koa austhotel309@gmail.com."
       },
       "gallery[].alt": {
         "en": [
+          "Thatched bungalows among the trees at Forêt Australe",
+          "A stone path between red bungalows at Forêt Australe",
+          "A stone path through the gardens at Forêt Australe",
+          "A room with a double bed at Forêt Australe",
+          "A shower and basin at Forêt Australe",
+          "A basin and toilet at Forêt Australe",
+          "Terrace tables outside reception at Forêt Australe",
+          "The dining room at Forêt Australe",
+          "The Forêt Australe signs on the road",
           "Forêt Australe exterior",
           "Room at Forêt Australe",
           "Landscaping at Forêt Australe",
           "Reception at Forêt Australe"
         ],
         "fr": [
+          "Forêt Australe : des bungalows au toit de chaume parmi les arbres",
+          "Forêt Australe : une allée de pierre entre les bungalows rouges",
+          "Forêt Australe : une allée de pierre à travers les jardins",
+          "Forêt Australe : une chambre avec un lit double",
+          "Forêt Australe : une douche et un lavabo",
+          "Forêt Australe : un lavabo et des toilettes",
+          "Forêt Australe : les tables de la terrasse devant la réception",
+          "Forêt Australe : la salle à manger",
+          "Forêt Australe : les panneaux au bord de la route",
           "Forêt Australe : vue extérieure",
           "Forêt Australe : une chambre",
           "Forêt Australe : les jardins",
           "Forêt Australe : la réception"
         ],
         "de": [
+          "Forêt Australe: strohgedeckte Bungalows zwischen den Bäumen",
+          "Forêt Australe: ein Steinweg zwischen roten Bungalows",
+          "Forêt Australe: ein Steinweg durch die Gärten",
+          "Forêt Australe: ein Zimmer mit Doppelbett",
+          "Forêt Australe: Dusche und Waschbecken",
+          "Forêt Australe: Waschbecken und Toilette",
+          "Forêt Australe: Tische auf der Terrasse vor der Rezeption",
+          "Forêt Australe: der Speisesaal",
+          "Forêt Australe: die Schilder an der Straße",
           "Forêt Australe: Außenansicht",
           "Forêt Australe: ein Zimmer",
           "Forêt Australe: die Gartenanlage",
           "Forêt Australe: die Rezeption"
         ],
         "mg": [
+          "Forêt Australe: bungalow misy tafo bozaka eny anelanelan'ny hazo",
+          "Forêt Australe: lalana vato eo anelanelan'ireo bungalow mena",
+          "Forêt Australe: lalana vato mamakivaky ny zaridaina",
+          "Forêt Australe: efitrano misy fandriana roa olona",
+          "Forêt Australe: fandroana sy lavabo",
+          "Forêt Australe: lavabo sy kabone",
+          "Forêt Australe: latabatra eo amin'ny terasy manoloana ny fandraisana vahiny",
+          "Forêt Australe: ny efitrano fisakafoana",
+          "Forêt Australe: ireo takelaka eo amoron-dalana",
           "Forêt Australe: ny ivelany",
           "Forêt Australe: efitrano iray",
           "Forêt Australe: ny zaridaina",

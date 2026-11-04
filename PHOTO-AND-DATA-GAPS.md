@@ -497,6 +497,26 @@ in chat, which came without files, so no copy is in `photo-originals/`; the thir
 sent with them repeats the family room shot already in. **Still to check:** the sheets
 don't say whether breakfast is included, and they give no phone number or email.
 
+### Added 4 November 2026 — Forêt Australe
+
+Nine of your eleven photos now lead the listing's gallery: the thatched bungalows among
+the trees (the new card photo), the path between the bungalows, the garden path, a room,
+two of a bathroom, the terrace at reception, the dining room and the road signs. The
+four older web photos stay after them. The two bathroom photos were nearly black, so
+they were brightened; everything else is as received, and the originals are in
+`photo-originals/2026-11-04 Foret Australe/`. The rate sheet and the reception phone
+plate are in that folder too and are not on the site. The three Lemur Coffee images
+that came in the same batch were left out, as you asked.
+
+The hotel's rate sheet (undated) replaced the rates in your notes of 11 Oct 2026:
+bungalows at 68,000 Ar (1 double bed), 78,000 Ar (1 double + 1 single) and 90,000 Ar
+(1 double + 2 singles), each with a private bathroom and terrace. The BRED sign above
+it gave contactless card payment (Visa, Mastercard, American Express, UnionPay).
+**Still to check:** the sheet prints the email as `austhotel309@gmail.coms`, which the
+site gives as `austhotel309@gmail.com`, beside `austhotel@moov.mg` from your notes:
+which one does the hotel use? Meal prices are still from your notes. One man's face
+can be seen in the reception photo (`foret-australe-reception.jpg`).
+
 Every photo-less listing now has a **designed placeholder** (`images/placeholder-<slug>.jpg`)
 rather than sharing one of two landscapes. They are obviously graphics — property name
 on a colour panel, "Photograph coming soon" — so nobody mistakes one for a picture of
