@@ -479,6 +479,24 @@ You also gave meal prices (set menu 45,000 Ar; starter 15,000, main 30,000, dess
 15,000 Ar), now on the hotel and the Bar & Restaurant, and an event space for 40
 people, on the hotel. Room rates are still "contact the property".
 
+### Added 4 November 2026 — Lemur Coffee Hotel
+
+All six of your photos, the listing's first real ones: the room with the mosquito net
+and armchairs at the window (now the card photo), the family room (room 25) from two
+sides, a bathroom, the café counter and a glazed door beside a carved figure. They fill
+the `room` and `restaurant` slots and add four; `exterior` and `view` are still waiting.
+All used as received except the counter: the Wi-Fi sign on the pillar showed the
+hotel's password clearly enough to read, so that one line is blurred. The unblurred
+copy is not kept in this folder, because the repository is public. The large egg on
+the counter is described only as an egg: the photo doesn't say what it is.
+
+The hotel's two laminated sheets, "Tarifs des Chambres" and "Tarifs des Services &
+Extras" (undated), gave the listing its room rates (75,000–145,000 Ar), free Wi-Fi,
+guided visits, bike hire, games and drink prices. They were read from the photos sent
+in chat, which came without files, so no copy is in `photo-originals/`; the third photo
+sent with them repeats the family room shot already in. **Still to check:** the sheets
+don't say whether breakfast is included, and they give no phone number or email.
+
 Every photo-less listing now has a **designed placeholder** (`images/placeholder-<slug>.jpg`)
 rather than sharing one of two landscapes. They are obviously graphics — property name
 on a colour panel, "Photograph coming soon" — so nobody mistakes one for a picture of
@@ -504,7 +522,7 @@ Exterior/approach · a made-up room · restaurant or common area · the view.
 | **Manja Hotel** | `manja-hotel-exterior.jpg` · `manja-hotel-room.jpg` · `manja-hotel-restaurant.jpg` · `manja-hotel-view.jpg` |
 | **Ihary Hotel** | `ihary-hotel-exterior.jpg` · `ihary-hotel-room.jpg` · `ihary-hotel-restaurant.jpg` · `ihary-hotel-view.jpg` |
 | **Ny Tanàna Hotel** | `ny-tanana-hotel-view.jpg` — the view from the hotel (the other slots are in, 1 Nov 2026) |
-| **Lemur Coffee Hotel** | `lemur-coffee-hotel-exterior.jpg` · `lemur-coffee-hotel-room.jpg` · `lemur-coffee-hotel-restaurant.jpg` · `lemur-coffee-hotel-view.jpg` |
+| **Lemur Coffee Hotel** | `lemur-coffee-hotel-exterior.jpg` · `lemur-coffee-hotel-view.jpg` (the room and restaurant slots are in, 4 Nov 2026) |
 | **Coin d’or** | `coin-dor-exterior.jpg` · `coin-dor-room.jpg` · `coin-dor-restaurant.jpg` · `coin-dor-view.jpg` |
 | **Akamasoa Guest House** | `akamasoa-guest-house-exterior.jpg` · `akamasoa-guest-house-room.jpg` · `akamasoa-guest-house-restaurant.jpg` · `akamasoa-guest-house-view.jpg` |
 | **Chez Liantsoa** | `chez-liantsoa-exterior.jpg` · `chez-liantsoa-room.jpg` · `chez-liantsoa-restaurant.jpg` · `chez-liantsoa-view.jpg` |

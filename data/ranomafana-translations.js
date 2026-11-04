@@ -1635,34 +1635,154 @@ const LISTING_TRANSLATIONS = {
         "mg": "Toerana mitambatra misy fandriana, trano fisotroana kafe manokana ary efitrano fivoriana — ny vao nisokatra farany teto Ranomafana, natao ho an'ny mpizahatany mila kafe tsara sy toerana hipetrahana hiasa."
       },
       "price": {
-        "en": "Contact property for rates",
-        "fr": "Contacter l’établissement pour les tarifs",
-        "de": "Preise beim Haus erfragen",
-        "mg": "Anontanio amin'ny tompony ny vidiny"
+        "en": "75,000–145,000 Ar / night",
+        "fr": "75 000–145 000 Ar / nuit",
+        "de": "75.000–145.000 Ar / Nacht",
+        "mg": "75 000–145 000 Ar / alina"
+      },
+      "wifiNote": {
+        "en": "Free",
+        "fr": "Gratuit",
+        "de": "Kostenlos",
+        "mg": "Maimaim-poana"
+      },
+      "rooms": {
+        "en": [
+          {
+            "type": "Standard double (2 people; TV, balcony)",
+            "price": "75,000 Ar"
+          },
+          {
+            "type": "Superior double (2 people; panoramic view, TV, balcony)",
+            "price": "125,000 Ar"
+          },
+          {
+            "type": "Family (2–4 people; double bed, bunk bed, panoramic view, balcony)",
+            "price": "145,000 Ar"
+          }
+        ],
+        "fr": [
+          {
+            "type": "Double standard (2 personnes ; télévision, balcon)",
+            "price": "75 000 Ar"
+          },
+          {
+            "type": "Double supérieure (2 personnes ; vue panoramique, télévision, balcon)",
+            "price": "125 000 Ar"
+          },
+          {
+            "type": "Familiale (2 à 4 personnes ; lit double, lits superposés, vue panoramique, balcon)",
+            "price": "145 000 Ar"
+          }
+        ],
+        "de": [
+          {
+            "type": "Doppelzimmer Standard (2 Personen; Fernseher, Balkon)",
+            "price": "75.000 Ar"
+          },
+          {
+            "type": "Doppelzimmer Superior (2 Personen; Panoramablick, Fernseher, Balkon)",
+            "price": "125.000 Ar"
+          },
+          {
+            "type": "Familienzimmer (2–4 Personen; Doppelbett, Etagenbett, Panoramablick, Balkon)",
+            "price": "145.000 Ar"
+          }
+        ],
+        "mg": [
+          {
+            "type": "Efitrano roa olona tsotra (olona 2; fahitalavitra, lavarangana)",
+            "price": "75 000 Ar"
+          },
+          {
+            "type": "Efitrano roa olona ambony (olona 2; fijery midadasika, fahitalavitra, lavarangana)",
+            "price": "125 000 Ar"
+          },
+          {
+            "type": "Efitrano ho an'ny fianakaviana (olona 2–4; fandriana lehibe, fandriana mifanongoa, fijery midadasika, lavarangana)",
+            "price": "145 000 Ar"
+          }
+        ]
+      },
+      "ratesNote": {
+        "en": "Per room per night. Ask whether breakfast is included.",
+        "fr": "Par chambre et par nuit. Demandez si le petit-déjeuner est compris.",
+        "de": "Pro Zimmer und Nacht. Fragen Sie, ob das Frühstück inbegriffen ist.",
+        "mg": "Isaky ny efitrano isan'alina. Anontanio raha tafiditra ny sakafo maraina."
+      },
+      "features": {
+        "en": [
+          "Guided park visit: from 90,000 Ar for 1–4 people",
+          "Guided arboretum visit: from 20,000 Ar per person",
+          "Bike hire: 10,000 Ar an hour, by reservation",
+          "Chess: 5,000 Ar an hour; dominoes: 7,000 Ar an hour",
+          "Drinks: Gold Blanche or large THB 8,000 Ar, large Coca-Cola 7,000 Ar, Le Fruit (1 L) 10,000 Ar",
+          "Bottled water: Eau Vive (1.5 L) 7,000 Ar, Cristalline (2 L) 8,000 Ar"
+        ],
+        "fr": [
+          "Visite guidée du parc : à partir de 90 000 Ar pour 1 à 4 personnes",
+          "Visite guidée de l’arboretum : à partir de 20 000 Ar par personne",
+          "Location de vélo : 10 000 Ar l’heure, sur réservation",
+          "Échecs : 5 000 Ar l’heure ; dominos : 7 000 Ar l’heure",
+          "Boissons : Gold Blanche ou grande THB 8 000 Ar, grand Coca-Cola 7 000 Ar, Le Fruit (1 L) 10 000 Ar",
+          "Eau en bouteille : Eau Vive (1,5 L) 7 000 Ar, Cristalline (2 L) 8 000 Ar"
+        ],
+        "de": [
+          "Geführter Parkbesuch: ab 90.000 Ar für 1–4 Personen",
+          "Geführter Arboretumsbesuch: ab 20.000 Ar pro Person",
+          "Fahrradverleih: 10.000 Ar pro Stunde, auf Reservierung",
+          "Schach: 5.000 Ar pro Stunde; Domino: 7.000 Ar pro Stunde",
+          "Getränke: Gold Blanche oder großes THB 8.000 Ar, große Coca-Cola 7.000 Ar, Le Fruit (1 l) 10.000 Ar",
+          "Wasser in Flaschen: Eau Vive (1,5 l) 7.000 Ar, Cristalline (2 l) 8.000 Ar"
+        ],
+        "mg": [
+          "Fitsidihana ny valan-javaboary miaraka amin'ny mpitari-dalana: manomboka amin'ny 90 000 Ar ho an'ny olona 1–4",
+          "Fitsidihana ny arboretum miaraka amin'ny mpitari-dalana: manomboka amin'ny 20 000 Ar isan'olona",
+          "Fanofana bisikileta: 10 000 Ar isan'ora, raha mamandrika mialoha",
+          "Échecs: 5 000 Ar isan'ora; domino: 7 000 Ar isan'ora",
+          "Zava-pisotro: Gold Blanche na THB lehibe 8 000 Ar, Coca-Cola lehibe 7 000 Ar, Le Fruit (1 L) 10 000 Ar",
+          "Rano anaty tavoahangy: Eau Vive (1,5 L) 7 000 Ar, Cristalline (2 L) 8 000 Ar"
+        ]
       },
       "gallery[].alt": {
         "en": [
+          "A double bed under a mosquito net, and someone sitting in one of two armchairs at a window looking out on greenery, Lemur Coffee Hotel",
+          "The double bed in the family room, room 25, with terracotta walls, Lemur Coffee Hotel",
+          "The family room, with bunk beds and a double bed, and someone looking out of its wide window, Lemur Coffee Hotel",
+          "A bathroom with a shower, washbasin and toilet, Lemur Coffee Hotel",
+          "The counter, with a glass case of biscuits, a large egg on a wooden stand and a globe, Lemur Coffee Hotel",
+          "A glazed wooden door beside a dark carved figure on the wall, Lemur Coffee Hotel",
           "Lemur Coffee Hotel exterior",
-          "Room at Lemur Coffee Hotel",
-          "Restaurant or common area at Lemur Coffee Hotel",
           "View from Lemur Coffee Hotel"
         ],
         "fr": [
+          "Lit double sous une moustiquaire, et une personne assise dans l’un des deux fauteuils, devant une fenêtre donnant sur la verdure, Lemur Coffee Hotel",
+          "Le lit double de la chambre familiale, chambre 25, aux murs couleur terre cuite, Lemur Coffee Hotel",
+          "La chambre familiale, avec lits superposés et lit double, et une personne qui regarde par la grande fenêtre, Lemur Coffee Hotel",
+          "Salle de bain avec douche, lavabo et toilettes, Lemur Coffee Hotel",
+          "Le comptoir, avec une vitrine de biscuits, un gros œuf sur un support en bois et un globe, Lemur Coffee Hotel",
+          "Porte en bois vitrée, à côté d’une figure sculptée sombre au mur, Lemur Coffee Hotel",
           "Lemur Coffee Hotel : vue extérieure",
-          "Lemur Coffee Hotel : une chambre",
-          "Lemur Coffee Hotel : restaurant ou espace commun",
           "Lemur Coffee Hotel : la vue"
         ],
         "de": [
+          "Doppelbett unter einem Moskitonetz; eine Person sitzt in einem der beiden Sessel am Fenster mit Blick ins Grüne, Lemur Coffee Hotel",
+          "Das Doppelbett im Familienzimmer, Zimmer 25, mit terrakottafarbenen Wänden, Lemur Coffee Hotel",
+          "Das Familienzimmer mit Etagenbett und Doppelbett; eine Person schaut aus dem breiten Fenster, Lemur Coffee Hotel",
+          "Bad mit Dusche, Waschbecken und Toilette, Lemur Coffee Hotel",
+          "Die Theke mit einer Vitrine voller Kekse, einem großen Ei auf einem Holzständer und einem Globus, Lemur Coffee Hotel",
+          "Holztür mit Glasfenstern neben einer dunklen geschnitzten Figur an der Wand, Lemur Coffee Hotel",
           "Lemur Coffee Hotel: Außenansicht",
-          "Lemur Coffee Hotel: ein Zimmer",
-          "Lemur Coffee Hotel: Restaurant oder Gemeinschaftsbereich",
           "Lemur Coffee Hotel: die Aussicht"
         ],
         "mg": [
+          "Fandriana lehibe ao anaty lay moka, ary olona mipetraka amin'ny iray amin'ireo seza roa eo am-baravarankely mitazana ny maitso, Lemur Coffee Hotel",
+          "Ny fandriana lehibe ao amin'ny efitrano ho an'ny fianakaviana, efitrano 25, rindrina miloko tanimanga, Lemur Coffee Hotel",
+          "Ny efitrano ho an'ny fianakaviana, misy fandriana mifanongoa sy fandriana lehibe, ary olona mijery eo am-baravarankely malalaka, Lemur Coffee Hotel",
+          "Efitra fandroana misy douche, lavabo ary kabine, Lemur Coffee Hotel",
+          "Ny kaontera, misy vata fitaratra feno biskuit, atody lehibe eo amin'ny fitoeran-kazo ary tany kely boribory, Lemur Coffee Hotel",
+          "Varavarana hazo misy fitaratra, eo anilan'ny sary sokitra mainty eo amin'ny rindrina, Lemur Coffee Hotel",
           "Lemur Coffee Hotel: ny ivelany",
-          "Lemur Coffee Hotel: efitrano iray",
-          "Lemur Coffee Hotel: trano fisakafoana na toerana iombonana",
           "Lemur Coffee Hotel: ny fijery"
         ]
       }

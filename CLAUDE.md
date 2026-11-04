@@ -754,6 +754,15 @@ photo. Kyle gave its meal prices the same day (set menu 45,000 Ar; starter 15,00
 30,000, dessert 15,000 Ar), on both listings, and an event space for 40 people (hotel).
 What was left out, and why, is in section 7 of `PHOTO-AND-DATA-GAPS.md`.
 
+Kyle's six photos of 4 November 2026 are **Lemur Coffee Hotel**'s first real ones; the
+room with the mosquito net is its card photo, and `exterior` and `view` are still
+waiting. The Wi-Fi sign in `lemur-coffee-hotel-restaurant.jpg` showed the hotel's
+password, so that line is blurred. Check any new photo for readable passwords: the
+repo and the site are public. Its rates (75,000–145,000 Ar), extras and drink prices
+come from the hotel's two undated tariff sheets, sent the same day; the hotel's own
+park visit price (from 90,000 Ar) is on its sheet, so leave it when the park's guide
+fees change in January 2027 unless the hotel changes it.
+
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide
 fees from **January 2027** (120,000 / 150,000 / 180,000 Ar, specialists 250,000 Ar),
@@ -767,8 +776,8 @@ October 2026): 10,000 Ar / residents 2,000 Ar, pool closed Tuesdays. It has **no
 details of its own** — never fill them with Hotel Thermal's, which is what the site
 did until 11 October 2026.
 
-Open editorial work is tracked in `PHOTO-AND-DATA-GAPS.md`: 6 unconfirmed listings,
-24 entries awaiting a real photograph (88 individual photo slots, all pre-wired),
+Open editorial work is tracked in `PHOTO-AND-DATA-GAPS.md`: 7 unconfirmed listings,
+23 entries awaiting a real photograph (86 individual photo slots, all pre-wired),
 and the conflicts listed in its section 0. The team profiles on the About page are
 placeholders, hidden (`hidden` on `.team-grid`, with a note in the markup) until
 Kyle has names; the About page shows the credit line and the email box meanwhile. Kyle's notes had headings for a donation link and a town map with no

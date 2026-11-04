@@ -1187,32 +1187,47 @@
       "slug": "lemur-coffee-hotel",
       "name": "Lemur Coffee Hotel",
       "type": "hotel",
-      "price": "Contact property for rates",
+      "price": "75,000–145,000 Ar / night",
       "toGate": 7,
       "rating": "—",
-      "img": "images/placeholder-lemur-coffee-hotel.jpg",
+      "img": "images/lemur-coffee-hotel-room.jpg",
       "wifi": true,
       "hotWater": true,
       "restaurant": true,
       "parking": true,
+      "wifiNote": "Free",
       "verified": true,
-      "photoNeeded": true,
-      "sourceNote": "Own website and Facebook page confirmed. The +261 34 94 302 10 phone and lemurcoffeehotel@gmail.com address in Kyle's folder are unconfirmed and have been left out.",
+      "asOf": "2026-11",
+      "sourceNote": "Own website and Facebook page confirmed. The +261 34 94 302 10 phone and lemurcoffeehotel@gmail.com address in Kyle's folder are unconfirmed and have been left out. Room rates, room types, free Wi-Fi, drink prices and extras from the hotel's two laminated, undated sheets, 'Tarifs des Chambres' and 'Tarifs des Services & Extras', photographed by Kyle (received 4 Nov 2026). The sheets don't say whether breakfast is included. Photos Kyle's (4 Nov 2026); room 25 is the family room, from the sheet and the door number in the photo.",
       "gallery": [
+        {
+          "src": "images/lemur-coffee-hotel-room.jpg",
+          "alt": "A double bed under a mosquito net, and someone sitting in one of two armchairs at a window looking out on greenery, Lemur Coffee Hotel"
+        },
+        {
+          "src": "images/lemur-coffee-hotel-family-room-bed.jpg",
+          "alt": "The double bed in the family room, room 25, with terracotta walls, Lemur Coffee Hotel"
+        },
+        {
+          "src": "images/lemur-coffee-hotel-family-room.jpg",
+          "alt": "The family room, with bunk beds and a double bed, and someone looking out of its wide window, Lemur Coffee Hotel"
+        },
+        {
+          "src": "images/lemur-coffee-hotel-bathroom.jpg",
+          "alt": "A bathroom with a shower, washbasin and toilet, Lemur Coffee Hotel"
+        },
+        {
+          "src": "images/lemur-coffee-hotel-restaurant.jpg",
+          "alt": "The counter, with a glass case of biscuits, a large egg on a wooden stand and a globe, Lemur Coffee Hotel"
+        },
+        {
+          "src": "images/lemur-coffee-hotel-door.jpg",
+          "alt": "A glazed wooden door beside a dark carved figure on the wall, Lemur Coffee Hotel"
+        },
         {
           "src": "images/lemur-coffee-hotel-exterior.jpg",
           "fallback": "images/placeholder-lemur-coffee-hotel.jpg",
           "alt": "Lemur Coffee Hotel exterior"
-        },
-        {
-          "src": "images/lemur-coffee-hotel-room.jpg",
-          "fallback": "images/placeholder-lemur-coffee-hotel.jpg",
-          "alt": "Room at Lemur Coffee Hotel"
-        },
-        {
-          "src": "images/lemur-coffee-hotel-restaurant.jpg",
-          "fallback": "images/placeholder-lemur-coffee-hotel.jpg",
-          "alt": "Restaurant or common area at Lemur Coffee Hotel"
         },
         {
           "src": "images/lemur-coffee-hotel-view.jpg",
@@ -1221,6 +1236,29 @@
         }
       ],
       "desc": "A hybrid address combining accommodation, a specialty coffee house and a meeting space — the newest opening in Ranomafana, aimed at travellers who want a proper coffee and somewhere to sit and work.",
+      "rooms": [
+        {
+          "type": "Standard double (2 people; TV, balcony)",
+          "price": "75,000 Ar"
+        },
+        {
+          "type": "Superior double (2 people; panoramic view, TV, balcony)",
+          "price": "125,000 Ar"
+        },
+        {
+          "type": "Family (2–4 people; double bed, bunk bed, panoramic view, balcony)",
+          "price": "145,000 Ar"
+        }
+      ],
+      "ratesNote": "Per room per night. Ask whether breakfast is included.",
+      "features": [
+        "Guided park visit: from 90,000 Ar for 1–4 people",
+        "Guided arboretum visit: from 20,000 Ar per person",
+        "Bike hire: 10,000 Ar an hour, by reservation",
+        "Chess: 5,000 Ar an hour; dominoes: 7,000 Ar an hour",
+        "Drinks: Gold Blanche or large THB 8,000 Ar, large Coca-Cola 7,000 Ar, Le Fruit (1 L) 10,000 Ar",
+        "Bottled water: Eau Vive (1.5 L) 7,000 Ar, Cristalline (2 L) 8,000 Ar"
+      ],
       "contact": {
         "phone": "",
         "email": "",
