@@ -1301,10 +1301,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Bungalow eo amin'ny havoana manatrika ny tanàna, misy bar ary iray amin'ireo trano fisakafoana be mpanjifa indrindra eto Ranomafana. Efa antitra ny efitrano saingy madio — rano mafana, lay, vantilatera. Mideza ny fiakarana mankany amin'ny efitrano, misy mpitondra entana manampy."
       },
       "price": {
-        "en": "70,000–90,000 Ar / night",
-        "fr": "70 000–90 000 Ar / nuit",
-        "de": "70.000–90.000 Ar / Nacht",
-        "mg": "70 000–90 000 Ar / alina"
+        "en": "80,000–100,000 Ar / night",
+        "fr": "80 000–100 000 Ar / nuit",
+        "de": "80.000–100.000 Ar / Nacht",
+        "mg": "80 000–100 000 Ar / alina"
       },
       "wifiNote": {
         "en": "In the restaurant",
@@ -1314,78 +1314,166 @@ const LISTING_TRANSLATIONS = {
       },
       "rooms": {
         "en": [
-          { "type": "Double", "price": "70,000–80,000 Ar" },
-          { "type": "Twin", "price": "70,000–80,000 Ar" },
-          { "type": "Triple", "price": "80,000–90,000 Ar" }
+          { "type": "New bungalow: double or twin", "price": "90,000 Ar" },
+          { "type": "New bungalow: triple", "price": "100,000 Ar" },
+          { "type": "Standard bungalow: double or twin", "price": "80,000 Ar" },
+          { "type": "Standard bungalow: mezzanine", "price": "100,000 Ar" },
+          { "type": "Room in the building: double or twin", "price": "80,000 Ar" },
+          { "type": "Room in the building: triple", "price": "90,000 Ar" },
+          { "type": "Room in the building: mezzanine", "price": "100,000 Ar" }
         ],
         "fr": [
-          { "type": "Double", "price": "70 000–80 000 Ar" },
-          { "type": "Lits jumeaux", "price": "70 000–80 000 Ar" },
-          { "type": "Triple", "price": "80 000–90 000 Ar" }
+          { "type": "Nouveau bungalow : double ou lits jumeaux", "price": "90 000 Ar" },
+          { "type": "Nouveau bungalow : triple", "price": "100 000 Ar" },
+          { "type": "Bungalow standard : double ou lits jumeaux", "price": "80 000 Ar" },
+          { "type": "Bungalow standard : mezzanine", "price": "100 000 Ar" },
+          { "type": "Chambre dans le bâtiment : double ou lits jumeaux", "price": "80 000 Ar" },
+          { "type": "Chambre dans le bâtiment : triple", "price": "90 000 Ar" },
+          { "type": "Chambre dans le bâtiment : mezzanine", "price": "100 000 Ar" }
         ],
         "de": [
-          { "type": "Doppelzimmer", "price": "70.000–80.000 Ar" },
-          { "type": "Zweibettzimmer", "price": "70.000–80.000 Ar" },
-          { "type": "Dreibettzimmer", "price": "80.000–90.000 Ar" }
+          { "type": "Neuer Bungalow: Doppel- oder Zweibettzimmer", "price": "90.000 Ar" },
+          { "type": "Neuer Bungalow: Dreibettzimmer", "price": "100.000 Ar" },
+          { "type": "Standard-Bungalow: Doppel- oder Zweibettzimmer", "price": "80.000 Ar" },
+          { "type": "Standard-Bungalow: Zwischengeschoss", "price": "100.000 Ar" },
+          { "type": "Zimmer im Gebäude: Doppel- oder Zweibettzimmer", "price": "80.000 Ar" },
+          { "type": "Zimmer im Gebäude: Dreibettzimmer", "price": "90.000 Ar" },
+          { "type": "Zimmer im Gebäude: Zwischengeschoss", "price": "100.000 Ar" }
         ],
         "mg": [
-          { "type": "Fandriana roa olona", "price": "70 000–80 000 Ar" },
-          { "type": "Fandriana kely roa", "price": "70 000–80 000 Ar" },
-          { "type": "Telo olona", "price": "80 000–90 000 Ar" }
+          { "type": "Bungalow vaovao: fandriana roa olona na fandriana kely roa", "price": "90 000 Ar" },
+          { "type": "Bungalow vaovao: telo olona", "price": "100 000 Ar" },
+          { "type": "Bungalow mahazatra: fandriana roa olona na fandriana kely roa", "price": "80 000 Ar" },
+          { "type": "Bungalow mahazatra: mezzanine", "price": "100 000 Ar" },
+          { "type": "Efitrano ao amin'ny trano: fandriana roa olona na fandriana kely roa", "price": "80 000 Ar" },
+          { "type": "Efitrano ao amin'ny trano: telo olona", "price": "90 000 Ar" },
+          { "type": "Efitrano ao amin'ny trano: mezzanine", "price": "100 000 Ar" }
         ]
+      },
+      "ratesNote": {
+        "en": "The hotel's rates for 2026, per room per night, all with a private shower and toilet and hot water. Ask whether breakfast is included.",
+        "fr": "Tarifs de l’hôtel pour 2026, par chambre et par nuit, tous avec douche et toilettes privées et eau chaude. Demandez si le petit-déjeuner est compris.",
+        "de": "Preise des Hotels für 2026, pro Zimmer und Nacht, alle mit eigener Dusche und Toilette und Warmwasser. Fragen Sie, ob das Frühstück inbegriffen ist.",
+        "mg": "Ny vidin'ny hotely ho an'ny taona 2026, isaky ny efitrano isan'alina, samy misy douche sy trano fidiovana manokana ary rano mafana. Anontanio raha tafiditra ny sakafo maraina."
       },
       "meals": {
         "en": [
           "Breakfast: from 8,000 Ar",
-          "Lunch or dinner: 12,000–25,000 Ar",
+          "Malagasy breakfast (rice dishes; order the evening before): 2,000–15,000 Ar",
+          "Lunch or dinner: 15,000–30,000 Ar",
+          "Vegetarian dishes: 10,000–18,000 Ar",
+          "Desserts: 2,000–7,000 Ar",
+          "Beer 5,000–10,000 Ar, wine 10,000 Ar a glass",
           "The voanjobory (Bambara groundnut stew) is exceptional"
         ],
         "fr": [
           "Petit-déjeuner : à partir de 8 000 Ar",
-          "Déjeuner ou dîner : 12 000–25 000 Ar",
+          "Petit-déjeuner malgache (plats de riz, à commander la veille au soir) : 2 000–15 000 Ar",
+          "Déjeuner ou dîner : 15 000–30 000 Ar",
+          "Plats végétariens : 10 000–18 000 Ar",
+          "Desserts : 2 000–7 000 Ar",
+          "Bière 5 000–10 000 Ar, vin 10 000 Ar le verre",
           "Le voanjobory (ragoût de pois bambara) est exceptionnel"
         ],
         "de": [
           "Frühstück: ab 8.000 Ar",
-          "Mittag- oder Abendessen: 12.000–25.000 Ar",
+          "Madagassisches Frühstück (Reisgerichte, am Vorabend bestellen): 2.000–15.000 Ar",
+          "Mittag- oder Abendessen: 15.000–30.000 Ar",
+          "Vegetarische Gerichte: 10.000–18.000 Ar",
+          "Desserts: 2.000–7.000 Ar",
+          "Bier 5.000–10.000 Ar, Wein 10.000 Ar das Glas",
           "Das Voanjobory (Eintopf aus Bambara-Erdnüssen) ist hervorragend"
         ],
         "mg": [
           "Sakafo maraina: manomboka amin'ny 8 000 Ar",
-          "Sakafo antoandro na hariva: 12 000–25 000 Ar",
+          "Sakafo maraina malagasy (vary, ampahafantaro ny hariva alohan'io): 2 000–15 000 Ar",
+          "Sakafo antoandro na hariva: 15 000–30 000 Ar",
+          "Sakafo tsy misy hena: 10 000–18 000 Ar",
+          "Tsindrin-tsakafo: 2 000–7 000 Ar",
+          "Labiera 5 000–10 000 Ar, divay 10 000 Ar ny vera",
           "Tsara mihoatra ny voanjobory eto"
         ]
       },
+      "features": {
+        "en": [
+          "Restaurant open every day: 06:15–08:00, 12:00–15:00 and 18:00–21:00",
+          "Going on the park's night walk? Order dinner at the restaurant at 16:30",
+          "Rooms must be free by 10:00",
+          "Leaving on a Sunday? Hand in your key and pay before 08:00"
+        ],
+        "fr": [
+          "Restaurant ouvert tous les jours : 06:15–08:00, 12:00–15:00 et 18:00–21:00",
+          "Visite nocturne du parc ? Commandez votre dîner au restaurant à 16h30",
+          "Les chambres doivent être libérées avant 10h",
+          "Départ un dimanche ? Rendez la clé et réglez avant 8h"
+        ],
+        "de": [
+          "Restaurant täglich geöffnet: 06:15–08:00, 12:00–15:00 und 18:00–21:00",
+          "Nachtwanderung im Park? Bestellen Sie Ihr Abendessen um 16:30 Uhr im Restaurant",
+          "Die Zimmer müssen bis 10:00 Uhr frei sein",
+          "Abreise an einem Sonntag? Geben Sie den Schlüssel ab und zahlen Sie vor 8:00 Uhr"
+        ],
+        "mg": [
+          "Misokatra isan'andro ny trano fisakafoana: 06:15–08:00, 12:00–15:00 ary 18:00–21:00",
+          "Handeha hitsidika ny valan-javaboary amin'ny alina? Mandrosoa mandidy ny sakafo hariva ao amin'ny trano fisakafoana amin'ny 16:30",
+          "Tsy maintsy foana alohan'ny 10:00 ny efitrano",
+          "Handeha amin'ny alahady? Avereno ny lakile ary aloavy ny vola alohan'ny 08:00"
+        ]
+      },
       "contact.note": {
-        "en": "If one number doesn't answer, try the others.",
-        "fr": "Si un numéro ne répond pas, essayez les autres.",
-        "de": "Wenn eine Nummer nicht antwortet, versuchen Sie die anderen.",
-        "mg": "Raha tsy mamaly ny laharana iray, andramo ireo hafa."
+        "en": "If one number doesn't answer, try the others. The hotel's menu also gives otelmanja@gmail.com.",
+        "fr": "Si un numéro ne répond pas, essayez les autres. La carte de l’hôtel indique aussi otelmanja@gmail.com.",
+        "de": "Wenn eine Nummer nicht antwortet, versuchen Sie die anderen. Die Speisekarte des Hotels nennt auch otelmanja@gmail.com.",
+        "mg": "Raha tsy mamaly ny laharana iray, andramo ireo hafa. Ny lisitry ny sakafon'ny hotely dia manome koa ny otelmanja@gmail.com."
       },
       "gallery[].alt": {
         "en": [
-          "Manja Hotel exterior",
-          "Room at Manja Hotel",
-          "Restaurant or common area at Manja Hotel",
-          "View from Manja Hotel"
+          "Red-leaved shrubs in the garden at Manja Hotel, with green hills across the valley",
+          "The Hotel Manja sign and the restaurant terrace behind yellow trumpet flowers",
+          "A row of white bungalows with tin roofs at Manja Hotel",
+          "The two-storey block of rooms and its outside staircase at Manja Hotel",
+          "A room with a large bed and a mosquito net at Manja Hotel",
+          "A room with two beds, mosquito nets and a wall fan at Manja Hotel",
+          "A bathroom with a shower at Manja Hotel",
+          "Two mattresses on the mezzanine under the roof at Manja Hotel",
+          "The wood-panelled dining room at Manja Hotel, with a gecko wall hanging in front",
+          "The wooden bar at Manja Hotel"
         ],
         "fr": [
-          "Manja Hotel : vue extérieure",
-          "Manja Hotel : une chambre",
-          "Manja Hotel : restaurant ou espace commun",
-          "Manja Hotel : la vue"
+          "Manja Hotel : des arbustes aux feuilles rouges dans le jardin, et des collines vertes de l’autre côté de la vallée",
+          "Manja Hotel : l’enseigne et la terrasse du restaurant derrière des fleurs jaunes en trompette",
+          "Manja Hotel : une rangée de bungalows blancs aux toits de tôle",
+          "Manja Hotel : le bâtiment de chambres à un étage et son escalier extérieur",
+          "Manja Hotel : une chambre avec un grand lit et une moustiquaire",
+          "Manja Hotel : une chambre à deux lits, avec moustiquaires et ventilateur mural",
+          "Manja Hotel : une salle de bain avec douche",
+          "Manja Hotel : deux matelas dans une mezzanine sous le toit",
+          "Manja Hotel : la salle à manger lambrissée, derrière une tenture aux geckos",
+          "Manja Hotel : le bar en bois"
         ],
         "de": [
-          "Manja Hotel: Außenansicht",
-          "Manja Hotel: ein Zimmer",
-          "Manja Hotel: Restaurant oder Gemeinschaftsbereich",
-          "Manja Hotel: die Aussicht"
+          "Manja Hotel: Sträucher mit roten Blättern im Garten, grüne Hügel jenseits des Tals",
+          "Manja Hotel: das Schild und die Restaurantterrasse hinter gelben Trompetenblüten",
+          "Manja Hotel: eine Reihe weißer Bungalows mit Blechdächern",
+          "Manja Hotel: das zweistöckige Zimmergebäude mit seiner Außentreppe",
+          "Manja Hotel: ein Zimmer mit großem Bett und Moskitonetz",
+          "Manja Hotel: ein Zimmer mit zwei Betten, Moskitonetzen und Wandventilator",
+          "Manja Hotel: ein Bad mit Dusche",
+          "Manja Hotel: zwei Matratzen im Zwischengeschoss unter dem Dach",
+          "Manja Hotel: der holzverkleidete Speisesaal, davor ein Wandbehang mit Geckos",
+          "Manja Hotel: die Holzbar"
         ],
         "mg": [
-          "Manja Hotel: ny ivelany",
-          "Manja Hotel: efitrano iray",
-          "Manja Hotel: trano fisakafoana na toerana iombonana",
-          "Manja Hotel: ny fijery"
+          "Manja Hotel: zavamaniry mena ravina ao amin'ny zaridaina, ary havoana maitso any ampitan'ny lohasaha",
+          "Manja Hotel: ny takelaka sy ny terasin'ny trano fisakafoana ao ambadiky ny voninkazo mavo",
+          "Manja Hotel: bungalow fotsy mifanesy misy tafo vy",
+          "Manja Hotel: ny trano misy efitrano roa rihana sy ny tohatra ivelany",
+          "Manja Hotel: efitrano misy fandriana lehibe sy lay moka",
+          "Manja Hotel: efitrano misy fandriana roa, lay moka ary vantilatera amin'ny rindrina",
+          "Manja Hotel: efitra fandroana misy douche",
+          "Manja Hotel: kidoro roa ao amin'ny mezzanine ambanin'ny tafo",
+          "Manja Hotel: ny efitrano fisakafoana misy rindrina hazo, ary lamba misy sarin'androngo eo aloha",
+          "Manja Hotel: ny bar hazo"
         ]
       }
     },
@@ -2406,30 +2494,94 @@ const LISTING_TRANSLATIONS = {
         "mg": ["Voanjobory", "Sakafo malagasy voalamina", "Wi-Fi ao amin'ny efitrano fisakafoana"]
       },
       "meals": {
-        "en": ["Breakfast: from 8,000 Ar", "Lunch or dinner: 12,000–25,000 Ar"],
-        "fr": ["Petit-déjeuner : à partir de 8 000 Ar", "Déjeuner ou dîner : 12 000–25 000 Ar"],
-        "de": ["Frühstück: ab 8.000 Ar", "Mittag- oder Abendessen: 12.000–25.000 Ar"],
-        "mg": ["Sakafo maraina: manomboka amin'ny 8 000 Ar", "Sakafo antoandro na hariva: 12 000–25 000 Ar"]
+        "en": [
+          "Open every day: 06:15–08:00, 12:00–15:00 and 18:00–21:00",
+          "Breakfast: from 8,000 Ar",
+          "Malagasy breakfast (rice dishes; order the evening before): 2,000–15,000 Ar",
+          "Dishes of the day, with rice: 15,000–20,000 Ar (zebu, pork, chicken, pork with voanjobory, romazava)",
+          "Starters, to order: 6,000–20,000 Ar",
+          "Main courses, to order: 20,000–30,000 Ar, depending on the side (zebu skewers, grilled or fried chicken, zebu in sauce)",
+          "Vegetarian dishes, to order: 10,000–18,000 Ar (beans, sautéed vegetables, omelettes, spaghetti with cheese)",
+          "Prawns or crayfish in sauce, to order: 15,000–20,000 Ar",
+          "Desserts, to order: 2,000–7,000 Ar (flambéed banana or pineapple, yoghurt, fruit salad)",
+          "Beer: 5,000–10,000 Ar",
+          "Soft drinks from 5,000 Ar, bottled water 4,000–6,000 Ar, fresh juice 4,000 Ar a glass",
+          "Malagasy wine: 10,000 Ar a glass, 40,000–50,000 Ar a bottle",
+          "Rum and punch: 5,000 Ar a glass",
+          "Going on the park's night walk? Order dinner at the restaurant at 16:30"
+        ],
+        "fr": [
+          "Ouvert tous les jours : 06:15–08:00, 12:00–15:00 et 18:00–21:00",
+          "Petit-déjeuner : à partir de 8 000 Ar",
+          "Petit-déjeuner malgache (plats de riz, à commander la veille au soir) : 2 000–15 000 Ar",
+          "Plats du jour, avec riz : 15 000–20 000 Ar (zébu, porc, poulet, porc au voanjobory, romazava)",
+          "Entrées, sur commande : 6 000–20 000 Ar",
+          "Plats, sur commande : 20 000–30 000 Ar selon l’accompagnement (brochettes de zébu, poulet grillé ou frit, zébu en sauce)",
+          "Plats végétariens, sur commande : 10 000–18 000 Ar (haricots, légumes sautés, omelettes, spaghettis au fromage)",
+          "Crevettes ou écrevisses en sauce, sur commande : 15 000–20 000 Ar",
+          "Desserts, sur commande : 2 000–7 000 Ar (banane ou ananas flambés, yaourt, salade de fruits)",
+          "Bière : 5 000–10 000 Ar",
+          "Sodas à partir de 5 000 Ar, eau en bouteille 4 000–6 000 Ar, jus frais 4 000 Ar le verre",
+          "Vin malgache : 10 000 Ar le verre, 40 000–50 000 Ar la bouteille",
+          "Rhum et punch : 5 000 Ar le verre",
+          "Visite nocturne du parc ? Commandez votre dîner au restaurant à 16h30"
+        ],
+        "de": [
+          "Täglich geöffnet: 06:15–08:00, 12:00–15:00 und 18:00–21:00",
+          "Frühstück: ab 8.000 Ar",
+          "Madagassisches Frühstück (Reisgerichte, am Vorabend bestellen): 2.000–15.000 Ar",
+          "Tagesgerichte mit Reis: 15.000–20.000 Ar (Zebu, Schwein, Huhn, Schwein mit Voanjobory, Romazava)",
+          "Vorspeisen, auf Bestellung: 6.000–20.000 Ar",
+          "Hauptgerichte, auf Bestellung: 20.000–30.000 Ar je nach Beilage (Zebu-Spieße, gegrilltes oder frittiertes Huhn, Zebu in Sauce)",
+          "Vegetarische Gerichte, auf Bestellung: 10.000–18.000 Ar (Bohnen, gebratenes Gemüse, Omeletts, Spaghetti mit Käse)",
+          "Garnelen oder Flusskrebse in Sauce, auf Bestellung: 15.000–20.000 Ar",
+          "Desserts, auf Bestellung: 2.000–7.000 Ar (flambierte Banane oder Ananas, Joghurt, Obstsalat)",
+          "Bier: 5.000–10.000 Ar",
+          "Limonaden ab 5.000 Ar, Wasser in Flaschen 4.000–6.000 Ar, frischer Saft 4.000 Ar das Glas",
+          "Madagassischer Wein: 10.000 Ar das Glas, 40.000–50.000 Ar die Flasche",
+          "Rum und Punsch: 5.000 Ar das Glas",
+          "Nachtwanderung im Park? Bestellen Sie Ihr Abendessen um 16:30 Uhr im Restaurant"
+        ],
+        "mg": [
+          "Misokatra isan'andro: 06:15–08:00, 12:00–15:00 ary 18:00–21:00",
+          "Sakafo maraina: manomboka amin'ny 8 000 Ar",
+          "Sakafo maraina malagasy (vary, ampahafantaro ny hariva alohan'io): 2 000–15 000 Ar",
+          "Sakafon'ny andro, miaraka amin'ny vary: 15 000–20 000 Ar (hen'omby, henan-kisoa, akoho, henan-kisoa sy voanjobory, romazava)",
+          "Fanombohana, mila mandidy: 6 000–20 000 Ar",
+          "Sakafo fototra, mila mandidy: 20 000–30 000 Ar arakaraka ny miaraka aminy (brochette hen'omby, akoho natono na nendasina, hen'omby misy saosy)",
+          "Sakafo tsy misy hena, mila mandidy: 10 000–18 000 Ar (tsaramaso, legioma nendasina, atody nendasina, spaghetti misy fromazy)",
+          "Makamba na orana misy saosy, mila mandidy: 15 000–20 000 Ar",
+          "Tsindrin-tsakafo, mila mandidy: 2 000–7 000 Ar (akondro na mananasy flambé, yaourt, salady voankazo)",
+          "Labiera: 5 000–10 000 Ar",
+          "Zava-pisotro mamy manomboka amin'ny 5 000 Ar, rano anaty tavoahangy 4 000–6 000 Ar, ranom-boankazo 4 000 Ar ny vera",
+          "Divay malagasy: 10 000 Ar ny vera, 40 000–50 000 Ar ny tavoahangy",
+          "Toaka sy punch: 5 000 Ar ny vera",
+          "Handeha hitsidika ny valan-javaboary amin'ny alina? Mandrosoa mandidy ny sakafo hariva ao amin'ny trano fisakafoana amin'ny 16:30"
+        ]
       },
       "gallery[].alt": {
         "en": [
-          "Hotel Manja Restaurant frontage",
-          "Dining room at Hotel Manja Restaurant",
+          "The wood-panelled dining room at Hotel Manja Restaurant, with a gecko wall hanging in front",
+          "The restaurant terrace and the Hotel Manja sign behind yellow trumpet flowers",
+          "The wooden bar at Hotel Manja Restaurant",
           "A dish at Hotel Manja Restaurant"
         ],
         "fr": [
-          "Restaurant de l’Hôtel Manja : la devanture",
-          "Restaurant de l’Hôtel Manja : la salle",
+          "Restaurant de l’Hôtel Manja : la salle lambrissée, derrière une tenture aux geckos",
+          "Restaurant de l’Hôtel Manja : la terrasse et l’enseigne derrière des fleurs jaunes en trompette",
+          "Restaurant de l’Hôtel Manja : le bar en bois",
           "Restaurant de l’Hôtel Manja : un plat"
         ],
         "de": [
-          "Restaurant des Hotel Manja: von außen",
-          "Restaurant des Hotel Manja: der Gastraum",
+          "Restaurant des Hotel Manja: der holzverkleidete Gastraum, davor ein Wandbehang mit Geckos",
+          "Restaurant des Hotel Manja: die Terrasse und das Schild hinter gelben Trompetenblüten",
+          "Restaurant des Hotel Manja: die Holzbar",
           "Restaurant des Hotel Manja: ein Gericht"
         ],
         "mg": [
-          "Trano fisakafoan'ny Hotel Manja: ny ivelany",
-          "Trano fisakafoan'ny Hotel Manja: ny efitrano fisakafoana",
+          "Trano fisakafoan'ny Hotel Manja: ny efitrano fisakafoana misy rindrina hazo, ary lamba misy sarin'androngo eo aloha",
+          "Trano fisakafoan'ny Hotel Manja: ny terasy sy ny takelaka ao ambadiky ny voninkazo mavo",
+          "Trano fisakafoan'ny Hotel Manja: ny bar hazo",
           "Trano fisakafoan'ny Hotel Manja: sakafo iray"
         ]
       }

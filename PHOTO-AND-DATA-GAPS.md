@@ -29,7 +29,7 @@ stated. Please check these:
 | 11 | **Ihary Hotel** | three mobiles, iharyhotel@gmail.com, hot water | landline only; reviews said cold showers; earlier sources mention a pool | All four numbers, your email, hot water ✓. Is the pool still there? |
 | 12 | **Chez Gaspard email** | hotelchezgaspard@gmail.com, +261 32 01 115 15 | bungalow@hotelchezgaspard.com, +261 38 02 115 02 | Your email; all four numbers |
 | 13 | **Au Domnatur** | two WhatsApp numbers, **audomnaturr**@gmail.com (double r) | +261 32 42 952 37 | All three numbers; email as you spelled it. Is the double r right? |
-| 14 | **Hotel Manja** | three phones marked "(Check all)", www.hotelmanja.mg | no phone, manjahotel.com | Your three phones. hotelmanja.mg does not exist online, so manjahotel.com stays |
+| 14 | **Hotel Manja** | three phones marked "(Check all)", www.hotelmanja.mg | no phone, manjahotel.com | Your three phones (the hotel's menu cover lists the same three, 4 Nov 2026). hotelmanja.mg does not exist online, so manjahotel.com stays |
 | 15 | **Forêt Australe website** | groupeaustralhotel.com and a subdomain | none | Neither address exists online, so no website is linked |
 | 16 | **Hotel Thermal email** | thermal@leralais.mg | thermal@lerelais.mg (FHORM) | Read as a typo; lerelais kept |
 | 17 | **"Breakfast included" + a breakfast price** | Centrest and Karibotel | — | Karibotel: shown as "Breakfast is included" with the price listed as a meal price. Is the price for non-guests? Centrest: settled 1 Nov 2026 by the hotel's own description, which prices breakfast (40,000 / 45,000 Ar) and doesn't say it is included, so "included" was taken off |
@@ -585,6 +585,49 @@ please tell me what they are if you want them named. Calling the bowl chicken co
 the photo and the board, so check that too. The new French, German and Malagasy text needs
 the usual native-speaker check.
 
+### Added 4 November 2026 — Manja Hotel and its restaurant
+
+Ten of your 17 photos, the listings' first real ones, used as received except the bar:
+the garden and valley view (now the hotel's card photo), the frontage with the yellow
+sign, the row of bungalows, the two-storey room block, a room with a large bed, a room
+with two beds, a bathroom, the loft, the dining room and the bar. That fills all four of
+the hotel's slots and adds six. The restaurant shares three of them (the dining room is
+its card photo, then the frontage and the bar); its `dish` slot is still waiting.
+
+Left out as look-alikes or weaker shots: the roadside sign (the same sign, half hidden by
+leaves), the garden path (the garden again), the two photos of the room with the rose
+bedspread (same room type as the two-bed photo), the two beds with orange covers (the
+picture is tilted), the second bathroom photo and the ladder close-up.
+
+The bar photo showed the Wi-Fi password on a card on the counter, so that card is
+blurred. The unblurred copy is not kept in this folder, because the repository is public.
+
+Your nine photos of the hotel's sheets (copies in `photo-originals/2026-11-04 Hotel Manja/`)
+gave both listings new details. The rate sheet for 2026 has three kinds of room (new
+bungalow, standard bungalow, room in the building), 80,000–100,000 Ar, replacing the
+70,000–90,000 Ar in your October notes. Meals, drinks and restaurant hours (every day,
+06:15–08:00, 12:00–15:00, 18:00–21:00) come from the undated menus and the notice. Both
+listings show a summary or the fuller menu, not every wine and whisky. The menu cover
+lists the listing's three phones, so 032 07 540 03 stands (032 40 292 28 appears only on
+the bar's mobile money notice), and it adds otelmanja@gmail.com, now in the contact note.
+The photo called the loft is the rate sheet's Mezzanine.
+
+**Still to check:**
+- Three people can be recognised, none named: a man at a bungalow door
+  (`manja-hotel-bungalows.jpg`), a man behind the bar (`manja-hotel-bar.jpg`) and a woman
+  by the sign (`manja-hotel-exterior.jpg`). Are they happy to be shown?
+- The rate sheet's Standard bungalow double reads "80 000 +Ar". The site shows 80,000 Ar:
+  is there an extra charge? The sheet leaves the Standard bungalow triple and the new
+  bungalow mezzanine empty, so the site doesn't list them.
+- The 8,000 Ar breakfast is from your October notes; the photos show only the Malagasy
+  breakfast sheet (2,000–15,000 Ar, order the evening before). Is it still right?
+- The notice puts the 08:00 key-and-payment rule and the 10:00 room rule under "On Sunday".
+  The site gives the first for Sundays and the second for every day: is that right?
+- The menu's vegetarian page includes prawns and crayfish, so the site lists them apart.
+- The bar's notice shows that the hotel takes mobile money, which the listing doesn't say
+  yet. Should it?
+- The new French, German and Malagasy text needs the usual native-speaker check.
+
 Every photo-less listing now has a **designed placeholder** (`images/placeholder-<slug>.jpg`)
 rather than sharing one of two landscapes. They are obviously graphics — property name
 on a colour panel, "Photograph coming soon" — so nobody mistakes one for a picture of
@@ -607,7 +650,6 @@ Exterior/approach · a made-up room · restaurant or common area · the view.
 | **Soa Lodge** | `soa-lodge-exterior.jpg` · `soa-lodge-room.jpg` · `soa-lodge-restaurant.jpg` · `soa-lodge-view.jpg` |
 | **Minerva Apart** | `minerva-apart-exterior.jpg` · `minerva-apart-room.jpg` · `minerva-apart-restaurant.jpg` · `minerva-apart-view.jpg` |
 | **La Palmeraie** | `la-palmeraie-exterior.jpg` · `la-palmeraie-room.jpg` · `la-palmeraie-restaurant.jpg` · `la-palmeraie-view.jpg` |
-| **Manja Hotel** | `manja-hotel-exterior.jpg` · `manja-hotel-room.jpg` · `manja-hotel-restaurant.jpg` · `manja-hotel-view.jpg` |
 | **Ihary Hotel** | `ihary-hotel-exterior.jpg` · `ihary-hotel-room.jpg` · `ihary-hotel-restaurant.jpg` · `ihary-hotel-view.jpg` |
 | **Ny Tanàna Hotel** | `ny-tanana-hotel-view.jpg` — the view from the hotel (the other slots are in, 1 Nov 2026) |
 | **Lemur Coffee Hotel** | `lemur-coffee-hotel-exterior.jpg` · `lemur-coffee-hotel-view.jpg` (the room and restaurant slots are in, 4 Nov 2026) |
@@ -625,7 +667,7 @@ Frontage · dining room · a signature dish.
 | Listing | Files it is waiting for |
 |---|---|
 | **Varibolo Resto** | `varibolo-resto-dish.jpg` (the frontage and terrace are in) |
-| **Hotel Manja Restaurant** | `manja-restaurant-exterior.jpg` · `manja-restaurant-dining.jpg` · `manja-restaurant-dish.jpg` |
+| **Hotel Manja Restaurant** | `manja-restaurant-dish.jpg` (the frontage and dining room are in, 4 Nov 2026, shared with the hotel) |
 | **Rianala Gite Restaurant** | `rianala-gite-restaurant-exterior.jpg` · `rianala-gite-restaurant-dining.jpg` · `rianala-gite-restaurant-dish.jpg` |
 | **Karibotel Restaurant** | `karibotel-restaurant-exterior.jpg` · `karibotel-restaurant-dining.jpg` · `karibotel-restaurant-dish.jpg` |
 | **Ihary Hotel Restaurant** | `ihary-restaurant-exterior.jpg` · `ihary-restaurant-dining.jpg` · `ihary-restaurant-dish.jpg` |
@@ -646,9 +688,9 @@ Frontage · dining room · a signature dish.
 
 ### Shoot these first
 
-The four best-rated properties with no photo — these are the listings travellers
+The best-rated properties with no photo — these are the listings travellers
 are most likely to click: **Soa Lodge** (4.1), **Minerva Apart** (9.0/10),
-**Karibotel**, **Manja Hotel**. Then **Cascade Andriamamovoka**, which is the
+**Karibotel**. Then **Cascade Andriamamovoka**, which is the
 marquee landscape image for the whole site.
 
 ### Photos you can get without a camera

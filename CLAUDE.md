@@ -803,6 +803,21 @@ hours or contacts yet. Google has no listing for it, and searching the name land
 Maps pin, beside the RN25 east of the village. Its signs also say "Hotel" and show a bed, so
 it may need a stay listing too.
 
+Kyle's 17 photos of **Manja Hotel**, 4 November 2026 (asked for: "the highest quality
+photos for maximum effect", no duplicates or similar images): ten are in, its first real
+ones, filling all four slots and adding six. The garden and valley view is the card photo.
+The Wi-Fi password card on the bar counter in `manja-hotel-bar.jpg` is blurred, and no
+unblurred copy is kept. **Hotel Manja Restaurant** shares three (dining room as its card
+photo, frontage, bar) by pointing at the hotel's files, so the Photo gallery shows each
+once; its `dish` slot is still waiting. Its rates (80,000–100,000 Ar, three kinds of room),
+meal and drink prices, restaurant hours and room rules come from nine photos of the hotel's
+sheets, sent the same day (copies in `photo-originals/2026-11-04 Hotel Manja/`): the rate
+sheet is for 2026, the menus and notice are undated. The fuller menu is on the restaurant,
+a summary on the hotel. The menu's vegetarian page includes prawns and crayfish, so the site
+lists them on their own line. The menu cover adds otelmanja@gmail.com (in the contact note)
+and confirms the three phones. What was left out, and the questions for Kyle, are in
+section 7 of `PHOTO-AND-DATA-GAPS.md`.
+
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide
 fees from **January 2027** (120,000 / 150,000 / 180,000 Ar, specialists 250,000 Ar),
@@ -817,7 +832,7 @@ details of its own** — never fill them with Hotel Thermal's, which is what the
 did until 11 October 2026.
 
 Open editorial work is tracked in `PHOTO-AND-DATA-GAPS.md`: 8 unconfirmed listings,
-22 entries awaiting a real photograph (85 individual photo slots, all pre-wired),
+20 entries awaiting a real photograph (79 individual photo slots, all pre-wired),
 and the conflicts listed in its section 0. The team profiles on the About page are
 placeholders, hidden (`hidden` on `.team-grid`, with a note in the markup) until
 Kyle has names; the About page shows the credit line and the email box meanwhile. Kyle's notes had headings for a donation link and a town map with no

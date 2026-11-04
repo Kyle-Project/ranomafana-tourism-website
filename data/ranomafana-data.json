@@ -1030,67 +1030,113 @@
       "slug": "manja-hotel",
       "name": "Manja Hotel",
       "type": "hotel",
-      "price": "70,000–90,000 Ar / night",
+      "price": "80,000–100,000 Ar / night",
       "toGate": 6.5,
       "rating": "3.2 (Tripadvisor, 114 reviews)",
-      "img": "images/placeholder-manja-hotel.jpg",
+      "img": "images/manja-hotel-view.jpg",
       "wifi": true,
       "hotWater": true,
       "restaurant": true,
       "parking": true,
       "wifiNote": "In the restaurant",
       "verified": true,
-      "asOf": "2026-10",
-      "photoNeeded": true,
-      "sourceNote": "Website manjahotel.com confirmed earlier. Rates, meals, the three phone numbers and hotelmanja@gmail.com from Kyle's notes (received 11 Oct 2026); they replace the 58,000–67,000 Ar Wikivoyage range. His notes mark the phones '(Check all)' and give www.hotelmanja.mg as the website, but that address did not resolve when checked on 11 Oct 2026, so manjahotel.com stays. '4 km from the park' was dropped on 23 Oct 2026: by road it is about 6.5 km (OpenStreetMap routing).",
+      "asOf": "2026-11",
+      "sourceNote": "Website manjahotel.com confirmed earlier. Room rates from the hotel's own sheet for 2026 (Kyle's photo, 4 Nov 2026; its Standard bungalow double reads '80 000 +Ar', taken as 80,000 Ar), replacing the 70,000–90,000 Ar in his notes of 11 Oct 2026. Meal and drink prices, restaurant hours and the room and night-walk rules from the hotel's undated menus and notice, same photos (copies in photo-originals/2026-11-04 Hotel Manja/); the 8,000 Ar breakfast is still from his notes, as the photos show only the Malagasy breakfast sheet. The menu cover lists the same three phones as his notes, plus otelmanja@gmail.com beside hotelmanja@gmail.com. His notes give www.hotelmanja.mg as the website, but that address did not resolve when checked on 11 Oct 2026, so manjahotel.com stays. '4 km from the park' was dropped on 23 Oct 2026: by road it is about 6.5 km (OpenStreetMap routing). Photos: Kyle, 4 Nov 2026 (10 of 17; the Wi-Fi password card in the bar photo is blurred).",
       "gallery": [
         {
+          "src": "images/manja-hotel-view.jpg",
+          "alt": "Red-leaved shrubs in the garden at Manja Hotel, with green hills across the valley"
+        },
+        {
           "src": "images/manja-hotel-exterior.jpg",
-          "fallback": "images/placeholder-manja-hotel.jpg",
-          "alt": "Manja Hotel exterior"
+          "alt": "The Hotel Manja sign and the restaurant terrace behind yellow trumpet flowers"
+        },
+        {
+          "src": "images/manja-hotel-bungalows.jpg",
+          "alt": "A row of white bungalows with tin roofs at Manja Hotel"
+        },
+        {
+          "src": "images/manja-hotel-room-block.jpg",
+          "alt": "The two-storey block of rooms and its outside staircase at Manja Hotel"
         },
         {
           "src": "images/manja-hotel-room.jpg",
-          "fallback": "images/placeholder-manja-hotel.jpg",
-          "alt": "Room at Manja Hotel"
+          "alt": "A room with a large bed and a mosquito net at Manja Hotel"
+        },
+        {
+          "src": "images/manja-hotel-room-twin.jpg",
+          "alt": "A room with two beds, mosquito nets and a wall fan at Manja Hotel"
+        },
+        {
+          "src": "images/manja-hotel-bathroom.jpg",
+          "alt": "A bathroom with a shower at Manja Hotel"
+        },
+        {
+          "src": "images/manja-hotel-loft.jpg",
+          "alt": "Two mattresses on the mezzanine under the roof at Manja Hotel"
         },
         {
           "src": "images/manja-hotel-restaurant.jpg",
-          "fallback": "images/placeholder-manja-hotel.jpg",
-          "alt": "Restaurant or common area at Manja Hotel"
+          "alt": "The wood-panelled dining room at Manja Hotel, with a gecko wall hanging in front"
         },
         {
-          "src": "images/manja-hotel-view.jpg",
-          "fallback": "images/placeholder-manja-hotel.jpg",
-          "alt": "View from Manja Hotel"
+          "src": "images/manja-hotel-bar.jpg",
+          "alt": "The wooden bar at Manja Hotel"
         }
       ],
       "desc": "Hillside bungalows overlooking the village, with a bar and one of Ranomafana's busiest restaurants. Rooms are dated but clean — hot water, mosquito net, fan. A steep climb to the rooms, with porter help available.",
       "rooms": [
         {
-          "type": "Double",
-          "price": "70,000–80,000 Ar"
+          "type": "New bungalow: double or twin",
+          "price": "90,000 Ar"
         },
         {
-          "type": "Twin",
-          "price": "70,000–80,000 Ar"
+          "type": "New bungalow: triple",
+          "price": "100,000 Ar"
         },
         {
-          "type": "Triple",
-          "price": "80,000–90,000 Ar"
+          "type": "Standard bungalow: double or twin",
+          "price": "80,000 Ar"
+        },
+        {
+          "type": "Standard bungalow: mezzanine",
+          "price": "100,000 Ar"
+        },
+        {
+          "type": "Room in the building: double or twin",
+          "price": "80,000 Ar"
+        },
+        {
+          "type": "Room in the building: triple",
+          "price": "90,000 Ar"
+        },
+        {
+          "type": "Room in the building: mezzanine",
+          "price": "100,000 Ar"
         }
       ],
+      "ratesNote": "The hotel's rates for 2026, per room per night, all with a private shower and toilet and hot water. Ask whether breakfast is included.",
       "meals": [
         "Breakfast: from 8,000 Ar",
-        "Lunch or dinner: 12,000–25,000 Ar",
+        "Malagasy breakfast (rice dishes; order the evening before): 2,000–15,000 Ar",
+        "Lunch or dinner: 15,000–30,000 Ar",
+        "Vegetarian dishes: 10,000–18,000 Ar",
+        "Desserts: 2,000–7,000 Ar",
+        "Beer 5,000–10,000 Ar, wine 10,000 Ar a glass",
         "The voanjobory (Bambara groundnut stew) is exceptional"
+      ],
+      "features": [
+        "Restaurant open every day: 06:15–08:00, 12:00–15:00 and 18:00–21:00",
+        "Going on the park's night walk? Order dinner at the restaurant at 16:30",
+        "Rooms must be free by 10:00",
+        "Leaving on a Sunday? Hand in your key and pay before 08:00"
       ],
       "contact": {
         "phone": "+261 33 09 010 22 / +261 34 13 176 22 / +261 32 07 540 03",
         "email": "hotelmanja@gmail.com",
         "website": "https://manjahotel.com/",
         "social": "",
-        "note": "If one number doesn't answer, try the others."
+        "note": "If one number doesn't answer, try the others. The hotel's menu also gives otelmanja@gmail.com."
       }
     },
     {
@@ -1822,19 +1868,22 @@
       "type": "malagasy",
       "rating": "3.5 (Tripadvisor, 63 reviews)",
       "price": "$",
-      "img": "images/placeholder-manja-restaurant.jpg",
+      "img": "images/manja-hotel-restaurant.jpg",
       "verified": true,
-      "photoNeeded": true,
+      "asOf": "2026-11",
+      "sourceNote": "Photos: Kyle, 4 Nov 2026, shared with the Manja Hotel listing. The dish slot is still waiting. Hours, meal and drink prices from the hotel's undated menus and notice (Kyle's photos, 4 Nov 2026; copies in photo-originals/2026-11-04 Hotel Manja/). The menu's vegetarian page also lists prawns and crayfish, so they are shown on their own line. The 8,000 Ar breakfast is from his notes of 11 Oct 2026.",
       "gallery": [
         {
-          "src": "images/manja-restaurant-exterior.jpg",
-          "fallback": "images/placeholder-manja-restaurant.jpg",
-          "alt": "Hotel Manja Restaurant frontage"
+          "src": "images/manja-hotel-restaurant.jpg",
+          "alt": "The wood-panelled dining room at Hotel Manja Restaurant, with a gecko wall hanging in front"
         },
         {
-          "src": "images/manja-restaurant-dining.jpg",
-          "fallback": "images/placeholder-manja-restaurant.jpg",
-          "alt": "Dining room at Hotel Manja Restaurant"
+          "src": "images/manja-hotel-exterior.jpg",
+          "alt": "The restaurant terrace and the Hotel Manja sign behind yellow trumpet flowers"
+        },
+        {
+          "src": "images/manja-hotel-bar.jpg",
+          "alt": "The wooden bar at Hotel Manja Restaurant"
         },
         {
           "src": "images/manja-restaurant-dish.jpg",
@@ -1849,8 +1898,20 @@
         "Wi-Fi in the dining room"
       ],
       "meals": [
+        "Open every day: 06:15–08:00, 12:00–15:00 and 18:00–21:00",
         "Breakfast: from 8,000 Ar",
-        "Lunch or dinner: 12,000–25,000 Ar"
+        "Malagasy breakfast (rice dishes; order the evening before): 2,000–15,000 Ar",
+        "Dishes of the day, with rice: 15,000–20,000 Ar (zebu, pork, chicken, pork with voanjobory, romazava)",
+        "Starters, to order: 6,000–20,000 Ar",
+        "Main courses, to order: 20,000–30,000 Ar, depending on the side (zebu skewers, grilled or fried chicken, zebu in sauce)",
+        "Vegetarian dishes, to order: 10,000–18,000 Ar (beans, sautéed vegetables, omelettes, spaghetti with cheese)",
+        "Prawns or crayfish in sauce, to order: 15,000–20,000 Ar",
+        "Desserts, to order: 2,000–7,000 Ar (flambéed banana or pineapple, yoghurt, fruit salad)",
+        "Beer: 5,000–10,000 Ar",
+        "Soft drinks from 5,000 Ar, bottled water 4,000–6,000 Ar, fresh juice 4,000 Ar a glass",
+        "Malagasy wine: 10,000 Ar a glass, 40,000–50,000 Ar a bottle",
+        "Rum and punch: 5,000 Ar a glass",
+        "Going on the park's night walk? Order dinner at the restaurant at 16:30"
       ],
       "contact": {
         "phone": "+261 33 09 010 22 / +261 34 13 176 22 / +261 32 07 540 03",
