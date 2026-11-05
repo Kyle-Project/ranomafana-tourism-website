@@ -818,6 +818,26 @@ lists them on their own line. The menu cover adds otelmanja@gmail.com (in the co
 and confirms the three phones. What was left out, and the questions for Kyle, are in
 section 7 of `PHOTO-AND-DATA-GAPS.md`.
 
+Kyle's 18 photos of **Soa Lodge**, 4 November 2026: 13 are in, its first real ones,
+filling all four slots and adding nine. The two bungalows are the card photo. The desk
+photo (`soa-lodge-reception.jpg`) is cropped to take out a leg at its edge; the rest are as
+received. Left out: one gate photo showing a woman's face, the bed close-up, a blown-out
+garden shot and two more of the same washroom. Asked of Kyle: "hand-painted bungalows" in
+the description doesn't match the plain timber in the photos, and whether the washroom is
+shared. Details in section 7 of `PHOTO-AND-DATA-GAPS.md`.
+
+Kyle's 17 photos of **Karibotel**, 4 November 2026 ("choose the best images, do not use
+duplicate or similar images"): ten are in, its first real ones, filling all four slots and
+adding six. The bungalows above the lawn are the card photo. The sign photo is cropped and
+the dining room recompressed (originals in `photo-originals/2026-11-04 Karibotel/`); the
+rest are as received. **Karibotel Restaurant** shares three (dining room as its card photo,
+pool, sign), and its frontage and `dish` slots are still waiting: the one frontage photo
+shows a woman's face, so it was left out. Rates (196,000–220,000 Ar, breakfast included),
+half board (50,000 Ar), full board (100,000 Ar) and WhatsApp (+261 34 24 567 19) are from
+Kyle the same day, on both listings, replacing the figures from his notes of 11 Oct 2026.
+Whether the board prices are per person is not stated, so the site doesn't say. Details in
+section 7 of `PHOTO-AND-DATA-GAPS.md`.
+
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide
 fees from **January 2027** (120,000 / 150,000 / 180,000 Ar, specialists 250,000 Ar),
@@ -832,7 +852,7 @@ details of its own** — never fill them with Hotel Thermal's, which is what the
 did until 11 October 2026.
 
 Open editorial work is tracked in `PHOTO-AND-DATA-GAPS.md`: 8 unconfirmed listings,
-20 entries awaiting a real photograph (79 individual photo slots, all pre-wired),
+17 entries awaiting a real photograph (70 individual photo slots, all pre-wired),
 and the conflicts listed in its section 0. The team profiles on the About page are
 placeholders, hidden (`hidden` on `.team-grid`, with a note in the markup) until
 Kyle has names; the About page shows the credit line and the email box meanwhile. Kyle's notes had headings for a donation link and a town map with no

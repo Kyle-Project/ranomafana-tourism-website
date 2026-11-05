@@ -958,56 +958,53 @@ const LISTING_TRANSLATIONS = {
     },
     "karibotel": {
       "desc": {
-        "en": "Hotel and restaurant at Tsararano, just before the village, on the hillside above the river, with a swimming pool. Doubles 143,000 Ar and family rooms 168,000 Ar, breakfast included.",
-        "fr": "Hôtel-restaurant à Tsararano, juste avant le village, à flanc de colline au-dessus de la rivière, avec piscine. Chambres doubles à 143 000 Ar et familiales à 168 000 Ar, petit-déjeuner inclus.",
-        "de": "Hotel mit Restaurant in Tsararano, kurz vor dem Ort, am Hang über dem Fluss, mit Schwimmbad. Doppelzimmer 143.000 Ar und Familienzimmer 168.000 Ar, Frühstück inklusive.",
-        "mg": "Hotely sy trano fisakafoana ao Tsararano, alohan'ny tanàna, eo amin'ny tehezan-tendrombohitra ambonin'ny renirano, misy dobo filomanosana. Efitrano roa olona 143 000 Ar ary efitrano fianakaviana 168 000 Ar, tafiditra ny sakafo maraina."
+        "en": "Hotel and restaurant at Tsararano, just before the village, on the hillside above the river, with a swimming pool. Standard rooms for two 196,000 Ar and family rooms for four 220,000 Ar, breakfast included.",
+        "fr": "Hôtel-restaurant à Tsararano, juste avant le village, à flanc de colline au-dessus de la rivière, avec piscine. Chambres standard pour deux à 196 000 Ar et familiales pour quatre à 220 000 Ar, petit-déjeuner inclus.",
+        "de": "Hotel mit Restaurant in Tsararano, kurz vor dem Ort, am Hang über dem Fluss, mit Schwimmbad. Standardzimmer für zwei 196.000 Ar und Familienzimmer für vier 220.000 Ar, Frühstück inklusive.",
+        "mg": "Hotely sy trano fisakafoana ao Tsararano, alohan'ny tanàna, eo amin'ny tehezan-tendrombohitra ambonin'ny renirano, misy dobo filomanosana. Efitrano mahazatra ho an'olona roa 196 000 Ar ary efitrano fianakaviana ho an'olona efatra 220 000 Ar, tafiditra ny sakafo maraina."
       },
       "price": {
-        "en": "143,000–168,000 Ar / night",
-        "fr": "143 000–168 000 Ar / nuit",
-        "de": "143.000–168.000 Ar / Nacht",
-        "mg": "143 000–168 000 Ar / alina"
+        "en": "196,000–220,000 Ar / night",
+        "fr": "196 000–220 000 Ar / nuit",
+        "de": "196.000–220.000 Ar / Nacht",
+        "mg": "196 000–220 000 Ar / alina"
       },
       "wifiNote": { "en": "In the rooms", "fr": "Dans les chambres", "de": "In den Zimmern", "mg": "Ao amin'ny efitrano" },
       "rooms": {
         "en": [
-          { "type": "Double", "price": "143,000 Ar" },
-          { "type": "Family (1 double + 1 single bed)", "price": "168,000 Ar" }
+          { "type": "Standard, for 2 people", "price": "196,000 Ar" },
+          { "type": "Family, for 4 people", "price": "220,000 Ar" }
         ],
         "fr": [
-          { "type": "Double", "price": "143 000 Ar" },
-          { "type": "Familiale (1 lit double + 1 lit simple)", "price": "168 000 Ar" }
+          { "type": "Standard, pour 2 personnes", "price": "196 000 Ar" },
+          { "type": "Familiale, pour 4 personnes", "price": "220 000 Ar" }
         ],
         "de": [
-          { "type": "Doppelzimmer", "price": "143.000 Ar" },
-          { "type": "Familienzimmer (1 Doppelbett + 1 Einzelbett)", "price": "168.000 Ar" }
+          { "type": "Standard, für 2 Personen", "price": "196.000 Ar" },
+          { "type": "Familienzimmer, für 4 Personen", "price": "220.000 Ar" }
         ],
         "mg": [
-          { "type": "Fandriana roa olona", "price": "143 000 Ar" },
-          { "type": "Fianakaviana (fandriana roa olona 1 + fandriana kely 1)", "price": "168 000 Ar" }
+          { "type": "Mahazatra, ho an'olona 2", "price": "196 000 Ar" },
+          { "type": "Fianakaviana, ho an'olona 4", "price": "220 000 Ar" }
         ]
       },
       "meals": {
-        "en": ["Breakfast: from 8,000 Ar", "Lunch or dinner: from 45,000 Ar"],
-        "fr": ["Petit-déjeuner : à partir de 8 000 Ar", "Déjeuner ou dîner : à partir de 45 000 Ar"],
-        "de": ["Frühstück: ab 8.000 Ar", "Mittag- oder Abendessen: ab 45.000 Ar"],
-        "mg": [
-          "Sakafo maraina: manomboka amin'ny 8 000 Ar",
-          "Sakafo antoandro na hariva: manomboka amin'ny 45 000 Ar"
-        ]
+        "en": ["Half board: 50,000 Ar", "Full board: 100,000 Ar"],
+        "fr": ["Demi-pension : 50 000 Ar", "Pension complète : 100 000 Ar"],
+        "de": ["Halbpension: 50.000 Ar", "Vollpension: 100.000 Ar"],
+        "mg": ["Sakafo roa isan'andro: 50 000 Ar", "Sakafo telo isan'andro: 100 000 Ar"]
       },
       "features": {
-        "en": ["Swimming pool and pool area"],
-        "fr": ["Piscine et espace piscine"],
-        "de": ["Schwimmbad mit Liegebereich"],
-        "mg": ["Dobo filomanosana sy ny manodidina azy"]
+        "en": ["Swimming pool and pool area", "Bar lounge", "Lodging for drivers"],
+        "fr": ["Piscine et espace piscine", "Bar lounge", "Logement pour les chauffeurs"],
+        "de": ["Schwimmbad mit Liegebereich", "Bar-Lounge", "Unterkunft für Fahrer"],
+        "mg": ["Dobo filomanosana sy ny manodidina azy", "Bar lounge", "Fandriana ho an'ny mpamily"]
       },
       "ratesNote": {
-        "en": "Breakfast is included.",
-        "fr": "Petit-déjeuner inclus.",
-        "de": "Frühstück inklusive.",
-        "mg": "Tafiditra ao ny sakafo maraina."
+        "en": "Breakfast is included for everyone in the room (continental in the standard room).",
+        "fr": "Petit-déjeuner inclus pour tous les occupants de la chambre (continental en chambre standard).",
+        "de": "Frühstück für alle Gäste im Zimmer inklusive (im Standardzimmer ein kontinentales Frühstück).",
+        "mg": "Tafiditra ny sakafo maraina ho an'izay rehetra ao amin'ny efitrano (sakafo maraina kontinantaly ao amin'ny efitrano mahazatra)."
       },
       "contact.note": {
         "en": "Tsararano, Ranomafana — just before the village on the RN25.",
@@ -1017,28 +1014,52 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
-          "Karibotel exterior",
-          "Room at Karibotel",
-          "Restaurant or common area at Karibotel",
-          "View from Karibotel"
+          "Bungalows with steep roofs along the top of a green lawn at Karibotel, with the hotel's name in blue letters and a forested hill behind",
+          "The swimming pool at Karibotel, with a traveller's palm on its far side and the village and green hills beyond",
+          "The river and valley from the open doors of a bungalow at Karibotel",
+          "A bedroom at Karibotel with a double bed, a mosquito net, timber shelves and a lemur picture on the wall",
+          "A shower with walls of river stones at Karibotel",
+          "The dining room at Karibotel, with red tablecloths and windows all round",
+          "A seating area at Karibotel with big windows over the valley and a painted forest on the wall",
+          "The reception desk at Karibotel, in front of a wall painting of forest, a waterfall and a lemur",
+          "Stone steps and timber railings climbing the garden slope at Karibotel, with tree ferns and a traveller's palm",
+          "The Karibotel sign beside the road, with stone steps climbing through the garden to the bungalows"
         ],
         "fr": [
-          "Karibotel : vue extérieure",
-          "Karibotel : une chambre",
-          "Karibotel : restaurant ou espace commun",
-          "Karibotel : la vue"
+          "Karibotel : des bungalows aux toits pentus en haut d’une pelouse verte, avec le nom de l’hôtel en lettres bleues et une colline boisée derrière",
+          "Karibotel : la piscine, avec un arbre du voyageur de l’autre côté, le village et les collines vertes au loin",
+          "Karibotel : la rivière et la vallée vues depuis les portes ouvertes d’un bungalow",
+          "Karibotel : une chambre avec un grand lit, une moustiquaire, des étagères en bois et un tableau de lémuriens au mur",
+          "Karibotel : une douche aux murs de galets de rivière",
+          "Karibotel : la salle à manger, avec ses nappes rouges et ses baies vitrées tout autour",
+          "Karibotel : un coin salon avec de grandes fenêtres sur la vallée et une forêt peinte au mur",
+          "Karibotel : la réception, devant une fresque de forêt, de cascade et de lémurien",
+          "Karibotel : des marches de pierre et des rampes en bois sur la pente du jardin, avec des fougères arborescentes et un arbre du voyageur",
+          "Karibotel : l’enseigne au bord de la route, avec des marches de pierre qui montent par le jardin jusqu’aux bungalows"
         ],
         "de": [
-          "Karibotel: Außenansicht",
-          "Karibotel: ein Zimmer",
-          "Karibotel: Restaurant oder Gemeinschaftsbereich",
-          "Karibotel: die Aussicht"
+          "Karibotel: Bungalows mit steilen Dächern oben an einer grünen Wiese, mit dem Hotelnamen in blauen Buchstaben und einem bewaldeten Hügel dahinter",
+          "Karibotel: das Schwimmbad, dahinter ein Baum der Reisenden, der Ort und grüne Hügel",
+          "Karibotel: Fluss und Tal, gesehen durch die offenen Türen eines Bungalows",
+          "Karibotel: ein Zimmer mit Doppelbett, Moskitonetz, Holzregal und einem Lemurenbild an der Wand",
+          "Karibotel: eine Dusche mit Wänden aus Flusssteinen",
+          "Karibotel: der Speisesaal mit roten Tischdecken und Fenstern ringsum",
+          "Karibotel: eine Sitzecke mit großen Fenstern zum Tal und einem gemalten Wald an der Wand",
+          "Karibotel: die Rezeption vor einem Wandbild mit Wald, Wasserfall und Lemur",
+          "Karibotel: Steinstufen und Holzgeländer am Gartenhang, mit Baumfarnen und einem Baum der Reisenden",
+          "Karibotel: das Schild an der Straße, Steinstufen führen durch den Garten zu den Bungalows"
         ],
         "mg": [
-          "Karibotel: ny ivelany",
-          "Karibotel: efitrano iray",
-          "Karibotel: trano fisakafoana na toerana iombonana",
-          "Karibotel: ny fijery"
+          "Karibotel: bungalow manana tafo mideza eo an-tampon'ny bozaka maitso, misy ny anaran'ny hotely amin'ny litera manga ary havoana misy ala any aoriana",
+          "Karibotel: ny dobo filomanosana, misy ravinala eo ampitany, ary ny tanàna sy ny havoana maitso any lavitra",
+          "Karibotel: ny renirano sy ny lohasaha hita avy eo amin'ny varavaran'ny bungalow misokatra",
+          "Karibotel: efitrano misy fandriana lehibe, lay moka, talantalana hazo ary sarin'ny varika eo amin'ny rindrina",
+          "Karibotel: efitra fandroana misy rindrina vato avy amin'ny renirano",
+          "Karibotel: ny efitrano fisakafoana, misy lamba latabatra mena sy varavarankely manodidina",
+          "Karibotel: toerana fipetrahana misy varavarankely lehibe manatrika ny lohasaha sy ala hosodoko eo amin'ny rindrina",
+          "Karibotel: ny fandraisana, eo anoloan'ny sary hosodoko misy ala, riandrano ary varika",
+          "Karibotel: tohatra vato sy fefy hazo mianika ny tehezan'ny zaridaina, misy ampangabe sy ravinala",
+          "Karibotel: ny takelaka eo amoron-dalana, misy tohatra vato miakatra mamakivaky ny zaridaina mankany amin'ny bungalow"
         ]
       }
     },
@@ -1176,28 +1197,64 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
-          "Soa Lodge exterior",
-          "Room at Soa Lodge",
-          "Restaurant or common area at Soa Lodge",
-          "View from Soa Lodge"
+          "Two timber bungalows with steep roofs among the garden plants on the hillside at Soa Lodge",
+          "The view from Soa Lodge over the village and valley, with timber bungalows on the slope and green hills beyond",
+          "Gateposts painted Tongasoa and Welcome at the foot of Soa Lodge's stone steps, with two people climbing them",
+          "Stone steps with a rope handrail up to a timber building at Soa Lodge",
+          "A room at Soa Lodge through its open doors, with a double bed, a mosquito net and a sunburst of dark wood on the wall",
+          "Three beds under the sloping timber roof of a loft at Soa Lodge",
+          "Wooden stairs up to the loft at Soa Lodge, the rail cut into figures carrying pots on their heads",
+          "Wooden tables in the dining room at Soa Lodge, with a hatch through to the kitchen",
+          "A wooden desk at Soa Lodge with three white cut-out figures, lit from behind",
+          "A timber verandah with a table and a view of the forested hills at Soa Lodge",
+          "A chair made of branches on a balcony above the bungalows at Soa Lodge",
+          "The valley seen between carved wooden figures on the covered terrace at Soa Lodge",
+          "A tiled washroom at Soa Lodge with three basins and a shower"
         ],
         "fr": [
-          "Soa Lodge : vue extérieure",
-          "Soa Lodge : une chambre",
-          "Soa Lodge : restaurant ou espace commun",
-          "Soa Lodge : la vue"
+          "Soa Lodge : deux bungalows en bois au toit pentu, parmi les plantes du jardin sur la colline",
+          "Soa Lodge : la vue sur le village et la vallée, avec des bungalows en bois sur la pente et les collines vertes au loin",
+          "Soa Lodge : des piliers peints « Tongasoa » et « Welcome » en bas des marches de pierre, que montent deux personnes",
+          "Soa Lodge : des marches de pierre et une main courante en corde montent vers un bâtiment en bois",
+          "Soa Lodge : une chambre vue par ses portes ouvertes, avec un lit double, une moustiquaire et un soleil de bois sombre au mur",
+          "Soa Lodge : trois lits sous le toit en pente d’une mezzanine en bois",
+          "Soa Lodge : l’escalier de bois vers la mezzanine, sa rampe découpée en silhouettes portant des cruches sur la tête",
+          "Soa Lodge : des tables en bois dans la salle à manger, avec un passe-plat vers la cuisine",
+          "Soa Lodge : un comptoir en bois orné de trois silhouettes blanches découpées, éclairées par l’arrière",
+          "Soa Lodge : une véranda en bois avec une table et la vue sur les collines boisées",
+          "Soa Lodge : un siège en branches sur un balcon, au-dessus des bungalows",
+          "Soa Lodge : la vallée entre des statues de bois sculpté, sur la terrasse couverte",
+          "Soa Lodge : une salle d’eau carrelée avec trois lavabos et une douche"
         ],
         "de": [
-          "Soa Lodge: Außenansicht",
-          "Soa Lodge: ein Zimmer",
-          "Soa Lodge: Restaurant oder Gemeinschaftsbereich",
-          "Soa Lodge: die Aussicht"
+          "Soa Lodge: zwei Holzbungalows mit steilen Dächern zwischen Gartenpflanzen am Hang",
+          "Soa Lodge: Blick auf Ort und Tal, mit Holzbungalows am Hang und grünen Hügeln dahinter",
+          "Soa Lodge: Torpfeiler mit der Aufschrift „Tongasoa“ und „Welcome“ am Fuß der Steinstufen, zwei Menschen steigen hinauf",
+          "Soa Lodge: Steinstufen mit Seilgeländer führen zu einem Holzgebäude",
+          "Soa Lodge: ein Zimmer durch die offenen Türen gesehen, mit Doppelbett, Moskitonetz und einer Sonne aus dunklem Holz an der Wand",
+          "Soa Lodge: drei Betten unter dem schrägen Holzdach im Dachgeschoss",
+          "Soa Lodge: Holztreppe ins Dachgeschoss, das Geländer ausgesägt als Figuren mit Krügen auf dem Kopf",
+          "Soa Lodge: Holztische im Speisesaal, mit einer Durchreiche zur Küche",
+          "Soa Lodge: ein Holztresen mit drei ausgesägten weißen Figuren, von hinten beleuchtet",
+          "Soa Lodge: eine Holzveranda mit Tisch und Blick auf die bewaldeten Hügel",
+          "Soa Lodge: ein Stuhl aus Ästen auf einem Balkon über den Bungalows",
+          "Soa Lodge: das Tal zwischen geschnitzten Holzfiguren auf der überdachten Terrasse",
+          "Soa Lodge: ein gefliester Waschraum mit drei Waschbecken und einer Dusche"
         ],
         "mg": [
-          "Soa Lodge: ny ivelany",
-          "Soa Lodge: efitrano iray",
-          "Soa Lodge: trano fisakafoana na toerana iombonana",
-          "Soa Lodge: ny fijery"
+          "Soa Lodge: bungalow hazo roa misy tafo mideza, eo anivon'ny zavamaniry ao amin'ny zaridaina eo amin'ny havoana",
+          "Soa Lodge: ny fijery ny tanàna sy ny lohasaha, misy bungalow hazo eo amin'ny havoana sy tendrombohitra maitso any ambadika",
+          "Soa Lodge: andry vavahady misy soratra hoe Tongasoa sy Welcome eo am-pototry ny tohatra vato, misy olona roa miakatra",
+          "Soa Lodge: tohatra vato misy fihazonana tady miakatra any amin'ny trano hazo",
+          "Soa Lodge: efitrano hita avy eo am-baravarana misokatra, misy fandriana lehibe, lay moka ary masoandro hazo eo amin'ny rindrina",
+          "Soa Lodge: fandriana telo ao ambanin'ny tafo hazo mideza, eo amin'ny mezzanine",
+          "Soa Lodge: tohatra hazo miakatra any amin'ny mezzanine, misy sarin'olona mitondra siny eo an-doha voatetika eo amin'ny fihazonana",
+          "Soa Lodge: latabatra hazo ao amin'ny efitrano fisakafoana, misy varavarankely mankany an-dakozia",
+          "Soa Lodge: birao hazo misy sarin'olona fotsy telo voatetika, misy jiro ao ambadika",
+          "Soa Lodge: lavarangana hazo misy latabatra, mijery ny havoana misy ala",
+          "Soa Lodge: seza vita amin'ny rantsan-kazo eo amin'ny lavarangana, mijery ireo bungalow",
+          "Soa Lodge: ny lohasaha hita eo anelanelan'ny sarivongana hazo, eo amin'ny lavarangana misy tafo",
+          "Soa Lodge: efitra fandroana misy taila, misy lavabo telo sy douche"
         ]
       }
     },
@@ -2662,39 +2719,44 @@ const LISTING_TRANSLATIONS = {
         "mg": "Trano fisakafoana ao amin'ny Karibotel, Tsararano, alohan'ny tanàna, eo amin'ny tehezan-tendrombohitra ambonin'ny renirano."
       },
       "highlights": {
-        "en": ["Terrace above the river", "Breakfast from 8,000 Ar"],
-        "fr": ["Terrasse au-dessus de la rivière", "Petit-déjeuner à partir de 8 000 Ar"],
-        "de": ["Terrasse über dem Fluss", "Frühstück ab 8.000 Ar"],
-        "mg": ["Terasy ambonin'ny renirano", "Sakafo maraina manomboka amin'ny 8 000 Ar"]
+        "en": ["Terrace above the river", "Half board 50,000 Ar"],
+        "fr": ["Terrasse au-dessus de la rivière", "Demi-pension 50 000 Ar"],
+        "de": ["Terrasse über dem Fluss", "Halbpension 50.000 Ar"],
+        "mg": ["Terasy ambonin'ny renirano", "Sakafo roa isan'andro 50 000 Ar"]
       },
       "meals": {
-        "en": ["Breakfast: from 8,000 Ar", "Lunch or dinner: from 45,000 Ar"],
-        "fr": ["Petit-déjeuner : à partir de 8 000 Ar", "Déjeuner ou dîner : à partir de 45 000 Ar"],
-        "de": ["Frühstück: ab 8.000 Ar", "Mittag- oder Abendessen: ab 45.000 Ar"],
-        "mg": [
-          "Sakafo maraina: manomboka amin'ny 8 000 Ar",
-          "Sakafo antoandro na hariva: manomboka amin'ny 45 000 Ar"
-        ]
+        "en": ["Half board: 50,000 Ar", "Full board: 100,000 Ar"],
+        "fr": ["Demi-pension : 50 000 Ar", "Pension complète : 100 000 Ar"],
+        "de": ["Halbpension: 50.000 Ar", "Vollpension: 100.000 Ar"],
+        "mg": ["Sakafo roa isan'andro: 50 000 Ar", "Sakafo telo isan'andro: 100 000 Ar"]
       },
       "gallery[].alt": {
         "en": [
+          "The dining room at Karibotel Restaurant, with red tablecloths and windows all round",
+          "The pool beside Karibotel Restaurant, with a traveller's palm and the village and green hills beyond",
+          "The roadside sign for Karibotel, its restaurant, bungalows and bar lounge",
           "Karibotel Restaurant frontage",
-          "Dining room at Karibotel Restaurant",
           "A dish at Karibotel Restaurant"
         ],
         "fr": [
+          "Restaurant du Karibotel : la salle, avec ses nappes rouges et ses baies vitrées tout autour",
+          "Restaurant du Karibotel : la piscine voisine, avec un arbre du voyageur, le village et les collines vertes au loin",
+          "Restaurant du Karibotel : l’enseigne au bord de la route, pour l’hôtel, le restaurant, les bungalows et le bar lounge",
           "Restaurant du Karibotel : la devanture",
-          "Restaurant du Karibotel : la salle",
           "Restaurant du Karibotel : un plat"
         ],
         "de": [
+          "Restaurant des Karibotel: der Gastraum mit roten Tischdecken und Fenstern ringsum",
+          "Restaurant des Karibotel: das Schwimmbad nebenan, mit einem Baum der Reisenden, dem Ort und grünen Hügeln",
+          "Restaurant des Karibotel: das Schild an der Straße für Hotel, Restaurant, Bungalows und Bar-Lounge",
           "Restaurant des Karibotel: von außen",
-          "Restaurant des Karibotel: der Gastraum",
           "Restaurant des Karibotel: ein Gericht"
         ],
         "mg": [
+          "Trano fisakafoan'ny Karibotel: ny efitrano fisakafoana, misy lamba latabatra mena sy varavarankely manodidina",
+          "Trano fisakafoan'ny Karibotel: ny dobo filomanosana eo akaiky, misy ravinala, ary ny tanàna sy ny havoana maitso any lavitra",
+          "Trano fisakafoan'ny Karibotel: ny takelaka eo amoron-dalana ho an'ny hotely, ny trano fisakafoana, ny bungalow ary ny bar lounge",
           "Trano fisakafoan'ny Karibotel: ny ivelany",
-          "Trano fisakafoan'ny Karibotel: ny efitrano fisakafoana",
           "Trano fisakafoan'ny Karibotel: sakafo iray"
         ]
       }

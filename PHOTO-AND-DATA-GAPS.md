@@ -32,8 +32,8 @@ stated. Please check these:
 | 14 | **Hotel Manja** | three phones marked "(Check all)", www.hotelmanja.mg | no phone, manjahotel.com | Your three phones (the hotel's menu cover lists the same three, 4 Nov 2026). hotelmanja.mg does not exist online, so manjahotel.com stays |
 | 15 | **Forêt Australe website** | groupeaustralhotel.com and a subdomain | none | Neither address exists online, so no website is linked |
 | 16 | **Hotel Thermal email** | thermal@leralais.mg | thermal@lerelais.mg (FHORM) | Read as a typo; lerelais kept |
-| 17 | **"Breakfast included" + a breakfast price** | Centrest and Karibotel | — | Karibotel: shown as "Breakfast is included" with the price listed as a meal price. Is the price for non-guests? Centrest: settled 1 Nov 2026 by the hotel's own description, which prices breakfast (40,000 / 45,000 Ar) and doesn't say it is included, so "included" was taken off |
-| 18 | **Karibotel meals** | lunch/dinner from 45,000 Ar | 16,000 Ar à la carte, 30,000 Ar set menu | Yours |
+| 17 | **"Breakfast included" + a breakfast price** | Centrest and Karibotel | — | Karibotel: settled 4 Nov 2026 by your new rates, which include breakfast, and the old breakfast price is gone. Centrest: settled 1 Nov 2026 by the hotel's own description, which prices breakfast (40,000 / 45,000 Ar) and doesn't say it is included, so "included" was taken off |
+| 18 | **Karibotel meals** | lunch/dinner from 45,000 Ar | 16,000 Ar à la carte, 30,000 Ar set menu | **Settled 4 Nov 2026** by your new prices: half board 50,000 Ar, full board 100,000 Ar |
 | 19 | **Chez Jose** | no dining | listed as having a restaurant | Restaurant filter now off; "coffee and the bar only" |
 | 20 | **Kayaking** | no guide comes with you | "guided descents, guides speak three languages" | Self-guided, on both the kayak and Varibolo Resto listings |
 | 21 | **Station Thermale** (updated again from your booth photo — see section 7) | pool 06:00–17:00 and 19:00–21:00; baths 06:00–17:00; no sulphur smell; swim cap for everyone | Petit Futé hours; "sulphurous"; cap for long hair | Yours. Your notes say the riverside restaurant was being built "as of 2023" — is it open now? |
@@ -628,6 +628,68 @@ The photo called the loft is the rate sheet's Mezzanine.
   yet. Should it?
 - The new French, German and Malagasy text needs the usual native-speaker check.
 
+### Added 4 November 2026 — Soa Lodge
+
+Thirteen of your 18 photos, the listing's first real ones, used as received except the
+desk: the two bungalows (now the card photo), the view over the village and valley, the
+Tongasoa/Welcome gate, the steps with the rope rail, a room, the loft, the carved stairs
+up to it, the dining room, the lit desk with its three white figures, the verandah, the
+chair of branches on a balcony, the carved figures on the terrace and the washroom. That
+fills all four slots and adds nine. The desk photo was cropped on the left to take out
+someone's leg at the edge of the frame.
+
+Left out as look-alikes or weaker shots: the steps up to the same gate (a woman's face can
+be seen there), the bed close-up (same room), the hillside from the garden (the sky is
+blown out white), the very dark photo of the basins and the basins with the toilet (the
+same washroom).
+
+The welcome sheet on the bed and the cards on the desk can't be read at this size, and no
+passwords show.
+
+**Still to check:**
+- The listing says "three hand-painted bungalows". The photos show plain timber ones, and
+  more buildings than three. Is that line still right?
+- The washroom has three basins side by side, so it looks shared. Is it, and do any rooms
+  have their own bathroom? The listing doesn't say.
+- The new French, German and Malagasy descriptions need the usual native-speaker check.
+
+### Added 4 November 2026 — Karibotel and its restaurant
+
+Ten of your 17 photos, the listings' first real ones: the bungalows above the lawn (now the
+hotel's card photo), the pool with the traveller's palm, the river and valley from a
+bungalow's doors, a bedroom, the stone shower, the dining room, the lounge with its big
+windows, the reception with its wall painting, the steps through the garden, and the
+roadside sign. That fills all four of the hotel's slots and adds six. The restaurant shares
+three of them (the dining room is its card photo, then the pool and the sign); its frontage
+and `dish` slots are still waiting.
+
+All are as received except two. The sign photo is cropped to lose the white sky and the bare
+road, and the dining room was saved a little smaller to get under 500 KB. The originals of
+those two are in `photo-originals/2026-11-04 Karibotel/`.
+
+Left out as look-alikes or weaker shots: the stone wall and stairs below the bungalows (the
+same bungalows again), the second bed photo and the room seen through the glass doors (same
+room), the steps with the blue signs (the steps again), the broken concrete blocks on the
+terrace, the bungalow B02 (the sky is blown out white and a woman's face can be seen), and
+the pool with the restaurant behind it (a woman can be seen on the terrace, and the pool is
+already in).
+
+Your new prices are on both listings: standard room 196,000 Ar with continental breakfast
+for two, family room 220,000 Ar with breakfast for four, half board 50,000 Ar, full board
+100,000 Ar. They replace the 143,000–168,000 Ar rates and the old breakfast and lunch or
+dinner prices. The old "1 double + 1 single bed" description of the family room is gone,
+since that sleeps three and your price is for four. WhatsApp +261 34 24 567 19 is on both
+listings; the phone +261 33 15 629 50 stays as it was. The signs in the photos also gave
+"Bar lounge" (the roadside sign) and "Lodging for drivers" (a sign in the grounds).
+
+**Still to check:**
+- Are half board and full board prices per person, and are they on top of the room rate?
+  The listing gives them as you sent them, without saying.
+- Does +261 33 15 629 50 still answer calls, or should the WhatsApp number replace it?
+- The sign reads "Restaurant Bel View", with some letters worn. If that is the restaurant's
+  name, the listing could say so.
+- The new French, German and Malagasy text needs the usual native-speaker check.
+
 Every photo-less listing now has a **designed placeholder** (`images/placeholder-<slug>.jpg`)
 rather than sharing one of two landscapes. They are obviously graphics — property name
 on a colour panel, "Photograph coming soon" — so nobody mistakes one for a picture of
@@ -645,9 +707,7 @@ Exterior/approach · a made-up room · restaurant or common area · the view.
 
 | Listing | Files it is waiting for |
 |---|---|
-| **Karibotel** | `karibotel-exterior.jpg` · `karibotel-room.jpg` · `karibotel-restaurant.jpg` · `karibotel-view.jpg` |
 | **Kambana Résidence** | `kambana-residence-room.jpg` · `kambana-residence-restaurant.jpg` · `kambana-residence-view.jpg` (the exterior slot is in, 4 Nov 2026) |
-| **Soa Lodge** | `soa-lodge-exterior.jpg` · `soa-lodge-room.jpg` · `soa-lodge-restaurant.jpg` · `soa-lodge-view.jpg` |
 | **Minerva Apart** | `minerva-apart-exterior.jpg` · `minerva-apart-room.jpg` · `minerva-apart-restaurant.jpg` · `minerva-apart-view.jpg` |
 | **La Palmeraie** | `la-palmeraie-exterior.jpg` · `la-palmeraie-room.jpg` · `la-palmeraie-restaurant.jpg` · `la-palmeraie-view.jpg` |
 | **Ihary Hotel** | `ihary-hotel-exterior.jpg` · `ihary-hotel-room.jpg` · `ihary-hotel-restaurant.jpg` · `ihary-hotel-view.jpg` |
@@ -669,7 +729,7 @@ Frontage · dining room · a signature dish.
 | **Varibolo Resto** | `varibolo-resto-dish.jpg` (the frontage and terrace are in) |
 | **Hotel Manja Restaurant** | `manja-restaurant-dish.jpg` (the frontage and dining room are in, 4 Nov 2026, shared with the hotel) |
 | **Rianala Gite Restaurant** | `rianala-gite-restaurant-exterior.jpg` · `rianala-gite-restaurant-dining.jpg` · `rianala-gite-restaurant-dish.jpg` |
-| **Karibotel Restaurant** | `karibotel-restaurant-exterior.jpg` · `karibotel-restaurant-dining.jpg` · `karibotel-restaurant-dish.jpg` |
+| **Karibotel Restaurant** | `karibotel-restaurant-exterior.jpg` · `karibotel-restaurant-dish.jpg` (the dining room is in, 4 Nov 2026, shared with the hotel) |
 | **Ihary Hotel Restaurant** | `ihary-restaurant-exterior.jpg` · `ihary-restaurant-dining.jpg` · `ihary-restaurant-dish.jpg` |
 | **Coin d’or** | `coin-dor-restaurant-exterior.jpg` · `coin-dor-restaurant-dining.jpg` · `coin-dor-restaurant-dish.jpg` |
 | **Park Entrance Restaurant** | `park-entrance-restaurant-exterior.jpg` · `park-entrance-restaurant-dining.jpg` · `park-entrance-restaurant-dish.jpg` |
@@ -689,8 +749,8 @@ Frontage · dining room · a signature dish.
 ### Shoot these first
 
 The best-rated properties with no photo — these are the listings travellers
-are most likely to click: **Soa Lodge** (4.1), **Minerva Apart** (9.0/10),
-**Karibotel**. Then **Cascade Andriamamovoka**, which is the
+are most likely to click: **Minerva Apart** (9.0/10).
+Then **Cascade Andriamamovoka**, which is the
 marquee landscape image for the whole site.
 
 ### Photos you can get without a camera
