@@ -2706,9 +2706,9 @@
     </section>
 
     <!-- ========================================================= DOCUMENTS -->
-    <!-- Two pages under one "Documents" tab bar (Kyle, 23 Oct 2026). Their files
-         come from documentData in the data file: a row with section "tourism-plan"
-         or "investors" is listed on that page (renderDocuments()).
+    <!-- Three pages under one "Documents" tab bar (Kyle, 23 Oct 2026). Their files
+         come from documentData in the data file: a row with section "tourism-plan",
+         "development-plan" or "investors" is listed on that page (renderDocuments()).
          Until a file is added each page says it is on its way; nothing about the
          plans themselves is written here, because the documents are the source. -->
     <section id="page-tourism-plan" class="page-view" aria-labelledby="tourism-plan-h">
@@ -2726,6 +2726,26 @@
         <h2 id="tourism-plan-dl-h" class="display d-56" data-i18n="docsToDownload">Documents to download</h2>
         <ul class="doc-list" data-doc-section="tourism-plan"></ul>
         <div class="soon-box" data-doc-empty="tourism-plan" hidden>
+          <p data-i18n="docSectionEmpty">This document has not been published here yet. It will be available to download on this page.</p>
+        </div>
+      </section>
+    </section>
+
+    <section id="page-development-plan" class="page-view" aria-labelledby="development-plan-h">
+      <div class="page-hero page-hero--plan">
+        <img class="bg-photo" src="images/ranomafana-village.jpg" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="wrap page-hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <a href="#documents" data-i18n="docsGroup">Documents</a> / <span data-i18n="tabDevPlan">Ranomafana Development Plan</span></nav>
+          <h1 id="development-plan-h" class="page-title" data-i18n="tabDevPlan">Ranomafana Development Plan</h1>
+          <p class="page-intro" data-i18n="devPlanIntro">The Commune of Ranomafana’s plan for the development of the town and its communities, to read and download.</p>
+        </div>
+      </div>
+      <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 64px;" aria-labelledby="development-plan-dl-h">
+        <span class="eyebrow" data-i18n="docsEyebrow">Downloads</span>
+        <h2 id="development-plan-dl-h" class="display d-56" data-i18n="docsToDownload">Documents to download</h2>
+        <ul class="doc-list" data-doc-section="development-plan"></ul>
+        <div class="soon-box" data-doc-empty="development-plan" hidden>
           <p data-i18n="docSectionEmpty">This document has not been published here yet. It will be available to download on this page.</p>
         </div>
       </section>
@@ -2854,6 +2874,7 @@
         <nav class="footer-col" aria-label="Documents" data-i18n-aria-label="docsGroup">
           <a class="footer-head" href="#documents" data-i18n="docsGroup">Documents</a>
           <a href="#tourism-plan" data-i18n="tabTourismPlan">Regional Tourism Plan</a>
+          <a href="#development-plan" data-i18n="tabDevPlan">Ranomafana Development Plan</a>
           <a href="#investors" data-i18n="tabInvestors">Investor information</a>
           <a href="#public-documents" data-i18n="docsHeadingPlain">Public documents</a>
         </nav>
@@ -3520,8 +3541,10 @@
         docsPublicCard: "Decrees, notices and other public documents from the Commune of Ranomafana, to download.",
         docsGroup: "Documents",
         tabTourismPlan: "Regional Tourism Plan",
+        tabDevPlan: "Ranomafana Development Plan",
         tabInvestors: "Investor information",
         tourismPlanIntro: "The region’s plan for developing tourism, with Ranomafana’s place in it, to read and download.",
+        devPlanIntro: "The Commune of Ranomafana’s plan for the development of the town and its communities, to read and download.",
         investorsIntro: "For anyone thinking of investing in Ranomafana: the documents to read first, and who to talk to.",
         docsToDownload: "Documents to download",
         docSectionEmpty: "This document has not been published here yet. It will be available to download on this page.",
@@ -4102,8 +4125,10 @@
         docsPublicCard: "Arrêtés, avis et autres documents publics de la Commune de Ranomafana, à télécharger.",
         docsGroup: "Documents",
         tabTourismPlan: "Plan régional du tourisme",
+        tabDevPlan: "Plan de développement de Ranomafana",
         tabInvestors: "Informations pour les investisseurs",
         tourismPlanIntro: "Le plan de la région pour le développement du tourisme, et la place qu’y tient Ranomafana, à lire et à télécharger.",
+        devPlanIntro: "Le plan de la Commune de Ranomafana pour le développement de la ville et de ses communautés, à lire et à télécharger.",
         investorsIntro: "Pour toute personne qui envisage d’investir à Ranomafana : les documents à lire d’abord, et à qui s’adresser.",
         docsToDownload: "Documents à télécharger",
         docSectionEmpty: "Ce document n’est pas encore publié ici. Il pourra être téléchargé sur cette page.",
@@ -4683,8 +4708,10 @@
         docsPublicCard: "Erlasse, Bekanntmachungen und andere öffentliche Dokumente der Gemeinde Ranomafana zum Herunterladen.",
         docsGroup: "Dokumente",
         tabTourismPlan: "Regionaler Tourismusplan",
+        tabDevPlan: "Entwicklungsplan Ranomafana",
         tabInvestors: "Informationen für Investoren",
         tourismPlanIntro: "Der Plan der Region für die Entwicklung des Tourismus und Ranomafanas Platz darin, zum Lesen und Herunterladen.",
+        devPlanIntro: "Der Plan der Gemeinde Ranomafana für die Entwicklung des Ortes und seiner Dörfer, zum Lesen und Herunterladen.",
         investorsIntro: "Für alle, die an eine Investition in Ranomafana denken: die Dokumente, die Sie zuerst lesen sollten, und wer Ihr Ansprechpartner ist.",
         docsToDownload: "Dokumente zum Herunterladen",
         docSectionEmpty: "Dieses Dokument ist hier noch nicht veröffentlicht. Es steht dann auf dieser Seite zum Herunterladen bereit.",
@@ -5265,8 +5292,10 @@
         docsPublicCard: "Didim-pitondrana, filazana ary antontan-taratasy hafa avoakan'ny Kaominin'i Ranomafana, azo alaina.",
         docsGroup: "Antontan-taratasy",
         tabTourismPlan: "Drafitra rezionaly momba ny fizahantany",
+        tabDevPlan: "Drafitra fampandrosoana an'i Ranomafana",
         tabInvestors: "Fampahalalana ho an'ny mpampiasa vola",
         tourismPlanIntro: "Ny drafitry ny faritra amin'ny fampandrosoana ny fizahantany, sy ny toeran'i Ranomafana ao anatiny, azo vakiana sy alaina.",
+        devPlanIntro: "Ny drafitry ny Kaominin'i Ranomafana amin'ny fampandrosoana ny tanàna sy ny fokonolona ao aminy, azo vakiana sy alaina.",
         investorsIntro: "Ho an'izay mieritreritra ny hampiasa vola ao Ranomafana: ireo antontan-taratasy tokony hovakiana aloha, sy ireo olona tokony hifandraisana.",
         docsToDownload: "Antontan-taratasy azo alaina",
         docSectionEmpty: "Mbola tsy navoaka eto ity antontan-taratasy ity. Ho azo alaina eto amin'ity pejy ity izy.",
@@ -6927,7 +6956,7 @@
       }).join('');
     }
 
-    /* The Documents pages (Regional Tourism Plan,
+    /* The Documents pages (Regional Tourism Plan, Ranomafana Development Plan,
        Investor information) list the documentData rows filed under their section. */
     function renderDocuments() {
       const docs = typeof documentData === 'undefined' ? [] : documentData;
@@ -6991,7 +7020,7 @@
         more: [['itineraries', 'tabItineraries', 'tabItineraries'], ['when', 'tabWhen', 'tabWhen'], ['guides', 'tabGuides', 'guidesIntro']] },
       services: { label: 'navServices', pages: [['commune', 'tabCommune', 'tabCommune'], ['gendarmerie', 'tabGendarmerie', 'tabGendarmerie'], ['hospital', 'tabHospital', 'tabHospital']],
         more: [['public-documents', 'docsHeadingPlain', 'docsPublicCard']] },
-      documents: { label: 'docsGroup', pages: [['tourism-plan', 'tabTourismPlan', 'tabTourismPlan'], ['investors', 'tabInvestors', 'tabInvestors'], ['public-documents', 'docsHeadingPlain', 'docsHeadingPlain']] }
+      documents: { label: 'docsGroup', pages: [['tourism-plan', 'tabTourismPlan', 'tabTourismPlan'], ['development-plan', 'tabDevPlan', 'tabDevPlan'], ['investors', 'tabInvestors', 'tabInvestors'], ['public-documents', 'docsHeadingPlain', 'docsHeadingPlain']] }
     };
     /* Once, at start-up: put the section's tab bar under the hero of the overview
        and of each of its pages. The labels carry data-i18n, so setLanguage()
@@ -7045,7 +7074,7 @@
     /* One page is shown at a time. The address bar carries the page as a hash
        (#stay, #park…) so the browser's back button and shared links work. */
 
-    const PAGES = ['home', 'why', 'stay', 'eat', 'do', 'park', 'birdwatching', 'itineraries', 'getting-here', 'when', 'know', 'events', 'blog', 'gallery', 'services', 'tourism-plan', 'investors', 'contact', 'explore', 'plan', 'documents', 'commune', 'gendarmerie', 'hospital', 'public-documents', 'ranomafana'];
+    const PAGES = ['home', 'why', 'stay', 'eat', 'do', 'park', 'birdwatching', 'itineraries', 'getting-here', 'when', 'know', 'events', 'blog', 'gallery', 'services', 'tourism-plan', 'development-plan', 'investors', 'contact', 'explore', 'plan', 'documents', 'commune', 'gendarmerie', 'hospital', 'public-documents', 'ranomafana'];
     // Pages that were renamed or merged: an old link opens the new page ({ old: 'new' }),
     // and SCROLL_TO names the part of that page to show.
     const PAGE_ALIAS = { guides: 'park', about: 'ranomafana' };
@@ -7055,7 +7084,7 @@
       if (el) requestAnimationFrame(() => el.scrollIntoView({ block: 'start' }));
     }
     const NAV_GROUP = { ranomafana: 'about', why: 'about', gallery: 'about', contact: 'about', itineraries: 'do', when: 'events', commune: 'services', gendarmerie: 'services', hospital: 'services', park: 'do', birdwatching: 'do', plan: 'plan', 'getting-here': 'plan', know: 'plan' };
-    const PAGE_TITLE = { why: 'navWhy', stay: 'stayHeading', eat: 'eatHeading', do: 'doHeading', park: 'crumbPark', birdwatching: 'birdCrumb', itineraries: 'tabItineraries', 'getting-here': 'tabGettingHere', when: 'tabWhen', know: 'tabKnow', events: 'navEvents', blog: 'storiesHeading', gallery: 'navGallery', services: 'navServices', 'tourism-plan': 'tabTourismPlan', investors: 'tabInvestors', contact: 'footerContact', explore: 'exploreHeading', plan: 'crumbPlan', documents: 'docsGroup', commune: 'tabCommune', gendarmerie: 'tabGendarmerie', hospital: 'tabHospital', 'public-documents': 'docsHeadingPlain', ranomafana: 'aboutHubHeading' };
+    const PAGE_TITLE = { why: 'navWhy', stay: 'stayHeading', eat: 'eatHeading', do: 'doHeading', park: 'crumbPark', birdwatching: 'birdCrumb', itineraries: 'tabItineraries', 'getting-here': 'tabGettingHere', when: 'tabWhen', know: 'tabKnow', events: 'navEvents', blog: 'storiesHeading', gallery: 'navGallery', services: 'navServices', 'tourism-plan': 'tabTourismPlan', 'development-plan': 'tabDevPlan', investors: 'tabInvestors', contact: 'footerContact', explore: 'exploreHeading', plan: 'crumbPlan', documents: 'docsGroup', commune: 'tabCommune', gendarmerie: 'tabGendarmerie', hospital: 'tabHospital', 'public-documents': 'docsHeadingPlain', ranomafana: 'aboutHubHeading' };
     let currentPage = 'home';
 
     const setCurrent = (el, on) => (on ? el.setAttribute('aria-current', 'page') : el.removeAttribute('aria-current'));

@@ -273,7 +273,7 @@ for (const b of DATA.blog ?? []) {
     if (mb > 5) warn(`${d.file} is ${mb.toFixed(1)} MB — slow to download in Ranomafana; try a smaller PDF`);
     if (d.date && !/^\d{4}-\d{2}$/.test(d.date)) err(`${where} date should be year-month, like "2026-10"`);
     if (d.language && !['en', 'fr', 'de', 'mg'].includes(d.language)) err(`${where} language should be en, fr, de or mg`);
-    if (d.section && !['public', 'tourism-plan', 'investors'].includes(d.section)) err(`${where} section should be public, tourism-plan or investors`);
+    if (d.section && !['public', 'tourism-plan', 'development-plan', 'investors'].includes(d.section)) err(`${where} section should be public, tourism-plan, development-plan or investors`);
   }
 }
 
