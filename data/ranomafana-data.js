@@ -2286,8 +2286,8 @@ const municipalData = [];
 
 /* --------------------------------------------------- 8. PUBLIC DOCUMENTS */
 /* Files anyone can download: the Commune's public documents (Public documents
-   page) and the other Documents pages (Regional Tourism Plan, Ranomafana
-   Development Plan, Investor information), chosen by `section`. Save the file in
+   page) and the other Documents pages (Regional Tourism Plan,
+   Investor information), chosen by `section`. Save the file in
    the documents/ folder (a PDF, as small as possible: connections here are
    slow) and add a row. npm run check fails if the file is missing. One row each:
    {
@@ -2298,7 +2298,7 @@ const municipalData = [];
      date: "2026-10",                   // year-month the document is dated
      language: "fr",                    // the document's own language: en, fr, de or mg
      section: "public",                 // which page lists it: "public" (Public documents),
-                                        // "tourism-plan", "development-plan" or "investors"
+                                        // "tourism-plan" or "investors"
      sourceNote: "Who provided it, and when"
    } */
 const documentData = [];
