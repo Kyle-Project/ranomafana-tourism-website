@@ -170,7 +170,7 @@ All four sit in the data file; the comment above each shows its fields.
 - **`documentData`** (section 8): files to download, kept in the `documents/` folder
   (see `documents/README.md`). `npm run check` fails if a listed file is missing.
   Its `section` picks the page: `"public"` (or none) for Public documents,
-  `"tourism-plan"`, `"development-plan"` or `"investors"` for the Documents pages.
+  `"development-plan"` or `"investors"` for the Documents pages.
 
 A title or description in the last two may be plain English or
 `{ en: "…", fr: "…", de: "…", mg: "…" }` for all four languages.

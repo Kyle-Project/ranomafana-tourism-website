@@ -1,7 +1,7 @@
 # Public documents
 
 Files in this folder can be downloaded from the website's **Documents** pages:
-Regional Tourism Plan, Ranomafana Development Plan, Investor information and
+Ranomafana Development Plan, Investor information and
 Public documents (the Commune of Ranomafana's own). To add one:
 
 1. Save the file here, with a short name and no spaces, such as

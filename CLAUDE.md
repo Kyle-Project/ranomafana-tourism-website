@@ -141,9 +141,9 @@ plan into `#itineraryDetail`. Alongside the six, `renderHome()`, `renderPark()`,
 
 ### Pages
 
-Twenty-seven `<section id="page-x" class="page-view">` elements, one shown at a time by
+Twenty-six `<section id="page-x" class="page-view">` elements, one shown at a time by
 `switchPage(id)`: `home`, `why`, `stay`, `eat`, `do`, `park`, `birdwatching`, `itineraries`, `getting-here`,
-`when`, `know`, `events`, `blog`, `gallery`, `services`, `tourism-plan`,
+`when`, `know`, `events`, `blog`, `gallery`, `services`,
 `development-plan`, `investors`, `contact`, `ranomafana`, `commune`, `gendarmerie`,
 `hospital`, `public-documents`, and four section overviews: `explore`, `plan`,
 `services`, `documents`.
@@ -181,7 +181,7 @@ Everything else is at the foot of the site: the footer's five columns are Explor
 the same six as Explore's tab bar and overview cards; Kyle, 26 Oct 2026, asked for the
 park there), Plan (the four
 planning pages and Hiring a guide), About, Municipal services (commune, gendarmerie, hospital) and
-Documents (tourism-plan, development-plan, investors, public-documents). The phone menu
+Documents (development-plan, investors, public-documents). The phone menu
 holds only Home and the five header tabs (Kyle, 26 Oct 2026: "only show main
 headers") — no sub-pages; don't add them back. The phone bottom bar is Home, About,
 Stay, Eat, Do, Events.
@@ -210,8 +210,8 @@ linked back to About Ranomafana. Then comes the text: "The valley of hot water" 
 cards — every fact taken from elsewhere on the site, with a Sources line. Service entries are `municipalData` rows with `section`
 "commune", "gendarmerie" or "hospital"; none have been confirmed, so each page shows an
 "on its way" note. Never fill the Gendarmerie or hospital with unconfirmed numbers.
-**Documents** (23 Oct 2026): `tourism-plan` (Regional Tourism Plan), `development-plan`
-(Ranomafana Development Plan) and `investors` (Investor information) share a tab bar,
+**Documents** (23 Oct 2026): `development-plan`
+(Ranomafana Development Plan) and `investors` (Investor information) share a tab bar (the Regional Tourism Plan page was removed 12 Nov 2026 at Kyle's request),
 and a fourth footer column, "Documents", beside Explore, Plan and About (with a link to
 the Commune's public documents too). Each lists the `documentData` rows whose
 `section` names it; until then it says the document is on its way. Write nothing about
