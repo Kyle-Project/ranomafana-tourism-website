@@ -1788,6 +1788,32 @@ const doData = [
     desc: "A 75-hectare community-managed reserve bordering the national park, governed through a VOI partnership under Madagascar's GELOSE framework, with MNP-certified guide access and Centre ValBio research collaboration. Trails and a river waterfall site are being opened to visitors. Visitor fees go directly to the village and the people who live there.",
     tips: ["Access on foot, roughly 3 km from town", "Contact ahead — visitor access is still being established"],
     contact: { phone: "+261 34 31 153 32", email: "", website: "", social: "" }
+  },
+  {
+    slug: "trail-ranomafana-2027",
+    name: "Trail Ranomafana 2027",
+    category: "Community event",
+    price: "Entry details to be announced",
+    rating: "—",
+    duration: "One day · dates to be confirmed",
+    status: "open",
+    img: "images/trail-ranomafana-runners-forest.jpg",
+    verified: false,
+    photoNeeded: false,
+    noMap: true,   // no start point or course for 2027 yet, and a name search finds nothing useful
+    film: { src: "videos/trail-ranomafana-tv-report.mp4", poster: "images/trail-ranomafana-tv-report-poster.jpg" },
+    sourceNote: "Added 16 Nov 2026 at Kyle's request: a 2027 edition of Trail Ranomafana, dates to be confirmed. The 2026 facts (30 August 2026, 20 km, organised by PCDT-R) are from the banners in Kyle's photos and drone footage of the day. The film is TV Plus Mananjary's news report on the 2026 trail (credited on screen), which Kyle sent as a WhatsApp video (VID-20260909-WA0000, 9 Sep 2026), re-encoded to 640 px. Nothing about the 2027 course, distance or entry is known yet.",
+    desc: "Trail Ranomafana comes back in 2027, organised by PCDT-R, Ranomafana's tourism platform. The dates are still to be confirmed. In 2026 runners and walkers covered 20 km on red-earth tracks through the forest and over the hills around the valley, on 30 August. Watch TV Plus Mananjary's report on the 2026 trail below.",
+    tips: ["Dates, course and entry are still to be announced: they will be on the Events calendar as soon as they are set", "The 2026 trail was 20 km on red-earth tracks, steep and muddy in places: bring shoes with grip"],
+    gallery: [
+      { src: "images/trail-ranomafana-runners-forest.jpg", alt: "Runners on a red-earth track through the forest, seen from a drone" },
+      { src: "images/trail-ranomafana-start-drone.jpg", alt: "Trail Ranomafana from the air: participants gather under the “Départ” banner beside the road, with a minibus parked alongside" },
+      { src: "images/trail-ranomafana-start-group.jpg", alt: "Participants with their race numbers lined up under the Trail Ranomafana “Départ” banner" },
+      { src: "images/trail-ranomafana-hill-track.jpg", alt: "The trail’s red-earth track winding over a forested hill, with misty hills beyond" },
+      { src: "images/trail-ranomafana-valley-walkers.jpg", alt: "Four participants with race numbers on the trail, with green hills and cloud behind" },
+      { src: "images/trail-ranomafana-finish.jpg", alt: "Participants with their race numbers in front of the PCDT-R tents" }
+    ],
+    contact: { phone: "", email: "", website: "", social: "" }
   }
 ];
 
@@ -2004,18 +2030,19 @@ const eventData = [
   {
     // From the banners in Kyle's photos and drone footage of the day (sent 16 Nov 2026):
     // "Trail Ranomafana", 20 km, PCDT-R. Whether it runs again, and when, is not known yet,
-    // so it is verified: false and stays off the home page and When to visit. Its date has
-    // passed, so What's on shows it as "August 2027 · exact date to be confirmed".
+    // so it is verified: false and stays off the home page and When to visit. Kyle, 16 Nov
+    // 2026: a 2027 edition, dates to be confirmed. `months` only sorts it (the 2026 trail
+    // was in August); when the date is set, put it in `date` and the badges.
     slug: "trail-ranomafana",
-    title: "Trail Ranomafana",
-    dayBadge: "30",
-    monthBadge: "AUG",
-    whenLabel: "Sunday 30 August 2026 · organised by PCDT-R",
+    title: "Trail Ranomafana 2027",
+    dayBadge: "2027",
+    monthBadge: "TBC",
+    whenLabel: "2027 · dates to be confirmed · organised by PCDT-R",
     recurring: true,
     months: [8],
     verified: false,
-    desc: "A 20 km trail through the forest and hills around Ranomafana for runners and walkers, organised by PCDT-R, the town's tourism platform. Held on 30 August 2026; the next date is still to be set. Photos and drone film further down this page.",
-    date: "2026-08-30"
+    desc: "A trail through the forest and hills around Ranomafana for runners and walkers, organised by PCDT-R, the town's tourism platform. The 2027 dates are still to be confirmed. The 2026 trail, 20 km on 30 August, is in the TV report, photos and drone film further down this page.",
+    date: null
   },
   {
     slug: "world-lemur-festival",

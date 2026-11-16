@@ -5430,6 +5430,78 @@ const LISTING_TRANSLATIONS = {
           "Foza kely an-dranomamy eo amin'ny vato mando, VOI Ambohimagneva"
         ]
       }
+    },
+    "trail-ranomafana-2027": {
+      "desc": {
+        "en": "Trail Ranomafana comes back in 2027, organised by PCDT-R, Ranomafana's tourism platform. The dates are still to be confirmed. In 2026 runners and walkers covered 20 km on red-earth tracks through the forest and over the hills around the valley, on 30 August. Watch TV Plus Mananjary's report on the 2026 trail below.",
+        "fr": "Le Trail Ranomafana revient en 2027, organisé par le PCDT-R, la plateforme touristique de Ranomafana. Les dates restent à confirmer. En 2026, coureurs et marcheurs ont parcouru 20 km sur des pistes de terre rouge à travers la forêt et sur les collines autour de la vallée, le 30 août. Regardez ci-dessous le reportage de TV Plus Mananjary sur le trail 2026.",
+        "de": "Trail Ranomafana kommt 2027 wieder, veranstaltet von PCDT-R, der Tourismusplattform von Ranomafana. Die Termine stehen noch nicht fest. 2026 legten Läufer und Wanderer am 30. August 20 km auf roten Erdwegen durch den Wald und über die Hügel rund um das Tal zurück. Unten der Bericht von TV Plus Mananjary über den Trail 2026.",
+        "mg": "Hiverina amin'ny 2027 ny Trail Ranomafana, karakarain'ny PCDT-R, sehatra ara-pizahan-tany ao Ranomafana. Mbola hamarinina ny daty. Tamin'ny 2026, nandeha 20 km teny amin'ny lalana tany mena namakivaky ny ala sy ny havoana manodidina ny lohasaha ireo mpihazakazaka sy mpandeha an-tongotra, tamin'ny 30 Aogositra. Jereo eo ambany ny tatitry ny TV Plus Mananjary momba ny trail 2026."
+      },
+      "price": {
+        "en": "Entry details to be announced",
+        "fr": "Modalités d’inscription à venir",
+        "de": "Anmeldung und Startgeld folgen",
+        "mg": "Mbola hambara ny fepetra fidirana"
+      },
+      "duration": {
+        "en": "One day · dates to be confirmed",
+        "fr": "Une journée · dates à confirmer",
+        "de": "Ein Tag · Termine folgen",
+        "mg": "Iray andro · mbola hamarinina ny daty"
+      },
+      "tips": {
+        "en": [
+          "Dates, course and entry are still to be announced: they will be on the Events calendar as soon as they are set",
+          "The 2026 trail was 20 km on red-earth tracks, steep and muddy in places: bring shoes with grip"
+        ],
+        "fr": [
+          "Dates, parcours et inscription restent à annoncer : ils seront dans le calendrier des événements dès qu’ils seront fixés",
+          "Le trail 2026 faisait 20 km sur des pistes de terre rouge, raides et boueuses par endroits : prévoyez des chaussures qui accrochent"
+        ],
+        "de": [
+          "Termine, Strecke und Anmeldung werden noch bekannt gegeben: Sie stehen im Veranstaltungskalender, sobald sie feststehen",
+          "Der Trail 2026 war 20 km lang, auf roten Erdwegen, stellenweise steil und schlammig: Schuhe mit gutem Profil mitbringen"
+        ],
+        "mg": [
+          "Mbola hambara ny daty, ny lalana ary ny fidirana: ho hita ao amin'ny tetiandron'ny hetsika izy ireo raha vao voafaritra",
+          "20 km teny amin'ny lalana tany mena ny trail 2026, mideza sy feno fotaka amin'ny toerana sasany: mitondrà kiraro tsy mampihisaka"
+        ]
+      },
+      "gallery[].alt": {
+        "en": [
+          "Runners on a red-earth track through the forest, seen from a drone",
+          "Trail Ranomafana from the air: participants gather under the “Départ” banner beside the road, with a minibus parked alongside",
+          "Participants with their race numbers lined up under the Trail Ranomafana “Départ” banner",
+          "The trail’s red-earth track winding over a forested hill, with misty hills beyond",
+          "Four participants with race numbers on the trail, with green hills and cloud behind",
+          "Participants with their race numbers in front of the PCDT-R tents"
+        ],
+        "fr": [
+          "Des coureurs sur une piste de terre rouge à travers la forêt, vus d’un drone",
+          "Le Trail Ranomafana vu du ciel : les participants réunis sous la banderole « Départ » au bord de la route, un minibus garé à côté",
+          "Les participants avec leurs dossards, alignés sous la banderole « Départ » du Trail Ranomafana",
+          "La piste de terre rouge du trail serpentant sur une colline boisée, avec des collines dans la brume au loin",
+          "Quatre participantes avec leurs dossards sur le parcours, devant des collines vertes et des nuages",
+          "Les participants avec leurs dossards devant les tentes du PCDT-R"
+        ],
+        "de": [
+          "Läufer auf einem roten Erdweg durch den Wald, von einer Drohne aus gesehen",
+          "Trail Ranomafana von oben: Die Teilnehmer sammeln sich unter dem „Départ“-Banner am Straßenrand, daneben parkt ein Kleinbus",
+          "Teilnehmer mit Startnummern aufgereiht unter dem „Départ“-Banner von Trail Ranomafana",
+          "Der rote Erdweg des Trails windet sich über einen bewaldeten Hügel, dahinter Hügel im Dunst",
+          "Vier Teilnehmerinnen mit Startnummern auf der Strecke, dahinter grüne Hügel und Wolken",
+          "Teilnehmer mit Startnummern vor den Zelten von PCDT-R"
+        ],
+        "mg": [
+          "Mpihazakazaka eny amin'ny lalana tany mena mamakivaky ny ala, hita avy amin'ny drône",
+          "Trail Ranomafana hita avy any ambony: mivory eo ambanin'ny sorabaventy « Départ » amoron-dalana ireo mpandray anjara, misy minibus mijanona eo akaiky",
+          "Mpandray anjara manao ny laharany, milahatra eo ambanin'ny sorabaventy « Départ » an'ny Trail Ranomafana",
+          "Ny lalana tany mena an'ny trail miolikolika eny amin'ny havoana misy ala, misy havoana feno zavona any lavitra",
+          "Mpandray anjara efatra manao laharana eny an-dalana, misy havoana maitso sy rahona ao aoriana",
+          "Mpandray anjara manao ny laharany eo anoloan'ny lay an'ny PCDT-R"
+        ]
+      }
     }
   },
   "itineraries": {
@@ -5996,24 +6068,24 @@ const LISTING_TRANSLATIONS = {
     },
     "trail-ranomafana": {
       "title": {
-        "en": "Trail Ranomafana",
-        "fr": "Trail Ranomafana",
-        "de": "Trail Ranomafana",
-        "mg": "Trail Ranomafana"
+        "en": "Trail Ranomafana 2027",
+        "fr": "Trail Ranomafana 2027",
+        "de": "Trail Ranomafana 2027",
+        "mg": "Trail Ranomafana 2027"
       },
-      "dayBadge": { "en": "30", "fr": "30", "de": "30", "mg": "30" },
-      "monthBadge": { "en": "AUG", "fr": "AOÛT", "de": "AUG", "mg": "AOG" },
+      "dayBadge": { "en": "2027", "fr": "2027", "de": "2027", "mg": "2027" },
+      "monthBadge": { "en": "TBC", "fr": "À CONF.", "de": "FOLGT", "mg": "HO AMBARA" },
       "whenLabel": {
-        "en": "Sunday 30 August 2026 · organised by PCDT-R",
-        "fr": "Dimanche 30 août 2026 · organisé par le PCDT-R",
-        "de": "Sonntag, 30. August 2026 · veranstaltet von PCDT-R",
-        "mg": "Alahady 30 Aogositra 2026 · karakarain'ny PCDT-R"
+        "en": "2027 · dates to be confirmed · organised by PCDT-R",
+        "fr": "2027 · dates à confirmer · organisé par le PCDT-R",
+        "de": "2027 · Termine folgen · veranstaltet von PCDT-R",
+        "mg": "2027 · mbola hamarinina ny daty · karakarain'ny PCDT-R"
       },
       "desc": {
-        "en": "A 20 km trail through the forest and hills around Ranomafana for runners and walkers, organised by PCDT-R, the town's tourism platform. Held on 30 August 2026; the next date is still to be set. Photos and drone film further down this page.",
-        "fr": "Un trail de 20 km à travers la forêt et les collines autour de Ranomafana, pour coureurs et marcheurs, organisé par le PCDT-R, la plateforme touristique de la ville. Tenu le 30 août 2026 ; la prochaine date reste à fixer. Photos et film de drone plus bas sur cette page.",
-        "de": "Ein 20-km-Trail durch den Wald und die Hügel rund um Ranomafana für Läufer und Wanderer, veranstaltet von PCDT-R, der Tourismusplattform des Orts. Ausgetragen am 30. August 2026; der nächste Termin steht noch nicht fest. Fotos und Drohnenfilm weiter unten auf dieser Seite.",
-        "mg": "Trail 20 km mamakivaky ny ala sy ny havoana manodidina an'i Ranomafana, ho an'ny mpihazakazaka sy ny mpandeha an-tongotra, karakarain'ny PCDT-R, sehatra ara-pizahan-tany ao an-tanàna. Natao tamin'ny 30 Aogositra 2026; mbola tsy voafaritra ny daty manaraka. Misy sary sy sarimihetsika drône eo ambany amin'ity pejy ity."
+        "en": "A trail through the forest and hills around Ranomafana for runners and walkers, organised by PCDT-R, the town's tourism platform. The 2027 dates are still to be confirmed. The 2026 trail, 20 km on 30 August, is in the TV report, photos and drone film further down this page.",
+        "fr": "Un trail à travers la forêt et les collines autour de Ranomafana, pour coureurs et marcheurs, organisé par le PCDT-R, la plateforme touristique de la ville. Les dates de 2027 restent à confirmer. Le trail de 2026, 20 km le 30 août, est à voir plus bas sur cette page : reportage télévisé, photos et film de drone.",
+        "de": "Ein Trail durch den Wald und die Hügel rund um Ranomafana für Läufer und Wanderer, veranstaltet von PCDT-R, der Tourismusplattform des Orts. Die Termine für 2027 stehen noch nicht fest. Den Trail 2026, 20 km am 30. August, zeigen der Fernsehbericht, die Fotos und der Drohnenfilm weiter unten auf dieser Seite.",
+        "mg": "Trail mamakivaky ny ala sy ny havoana manodidina an'i Ranomafana, ho an'ny mpihazakazaka sy ny mpandeha an-tongotra, karakarain'ny PCDT-R, sehatra ara-pizahan-tany ao an-tanàna. Mbola hamarinina ny daty amin'ny 2027. Ny trail 2026, 20 km tamin'ny 30 Aogositra, dia hita eo ambany amin'ity pejy ity: tatitra amin'ny fahitalavitra, sary ary sarimihetsika drône."
       }
     },
     "world-lemur-festival": {

@@ -612,7 +612,7 @@ listings — was written without a native speaker and should be checked by one.
 
 ## Current state
 
-23 stays · 16 restaurants · 18 things to do · 7 itineraries · 9 events · 10 blog
+23 stays · 16 restaurants · 19 things to do · 7 itineraries · 9 events · 10 blog
 seeds. **Birdwatching** (`do`, slug `birdwatching`, 23 Oct 2026) is built only from
 facts on the park listing (125 species, Vohiparara, the specialist guide fee): when
 the park's guide fees change in January 2027, change its `price` too. All 23 stays are verified, against published sources or on Kyle's
@@ -866,6 +866,16 @@ PCDT-R on Sunday 30 Aug 2026; facts only from its banners):
 - Photo originals are in `photo-originals/2026-08-30 Trail Ranomafana/`; the film
   originals (about 1 GB) are not in the repo. Questions for Kyle are in section 7 of
   `PHOTO-AND-DATA-GAPS.md`.
+- **Trail Ranomafana 2027** (Kyle, 16 Nov 2026: "add this under the events and things to
+  do tab for the 2027 version… dates to be confirmed"): the `eventData` row is now the
+  2027 edition (`date: null`, badges "2027 / TBC"; `months: [8]` only sorts it), and a
+  new `doData` listing, `trail-ranomafana-2027` (category "Community event", village
+  layer, `verified: false`, `noMap`), shares the trail photos. Both play
+  `videos/trail-ranomafana-tv-report.mp4`: TV Plus Mananjary's 2-minute news report on
+  the 2026 trail, in Malagasy with sound, from Kyle's WhatsApp video of 9 Sep 2026
+  (re-encoded to 640 px, 8 MB). It is credited on the page; the station's permission
+  was not recorded. When the date is set, put it in the event's `date` and badges, and
+  in the listing's `duration`, in all four languages.
 
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide

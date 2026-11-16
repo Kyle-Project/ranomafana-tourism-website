@@ -78,6 +78,11 @@ eleven are pinned; each one's `sourceNote` says where its pin came from. A new
 listing's map is worth a look: if Google finds the wrong place, or scatters several
 pins, give it a `mapPin`.
 
+A thing to do with no fixed place (an event whose course isn't known yet) can carry
+`noMap: true` to leave the map out. A thing to do can also carry
+`film: { src: "videos/….mp4", poster: "images/….jpg" }`, played in its pop-up under
+the photos (Trail Ranomafana 2027 uses both).
+
 ## Stories (`blogData`)
 
 Every story card opens a reader. Its text is the `body` list — one line per
