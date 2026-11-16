@@ -741,14 +741,16 @@ Frontage · dining room · a signature dish.
 | **VOI Mitsinjo Reserve** | `voi-mitsinjo-wildlife.jpg` (the forest and community slots are in) |
 | **Station Thermale (Thermal Pool & Baths)** | `station-thermale-baths.jpg` — a private bath room (the pool and booth are in); never anything from Hotel Thermal |
 | **Thermal Massage** | `thermal-massage-room.jpg` — same rule: nothing borrowed from Hotel Thermal |
-| **Cascade Andriamamovoka** | `cascade-andriamamovoka-falls.jpg` · `cascade-andriamamovoka-trail.jpg` · `cascade-andriamamovoka-river.jpg` |
 | **Namorona River Kayaking** | `namorona-kayaking-group.jpg` — paddlers out on the river (the river, launch and a paddler at the launch are in, 26 Oct 2026) |
 | **Village Artisan Market** | `village-artisan-market-stalls.jpg` · `village-artisan-market-crafts.jpg` |
 
 ### Shoot these first
 
-**Cascade Andriamamovoka**, which is the
-marquee landscape image for the whole site.
+**Cascade Andriamamovoka** — done 16 Nov 2026: Kyle's photos of the falls and of the MNP
+sign at the viewpoint are on the listing, with his map pin near Vorondolo. Its old text
+described the Jirama falls and was replaced. Still to confirm with Kyle: price (free?),
+how long a visit takes ("half day" is from the first draft) and the 4.5 rating, then set
+`verified: true`.
 
 ### Trail Ranomafana photos and drone footage (sent 16 Nov 2026)
 

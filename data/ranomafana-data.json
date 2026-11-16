@@ -3074,32 +3074,26 @@
       "rating": "4.5 (Tripadvisor)",
       "duration": "Half day",
       "status": "open",
-      "img": "images/placeholder-cascade-andriamamovoka.jpg",
-      "verified": true,
-      "photoNeeded": true,
-      "sourceNote": "Coordinates 21°15′15″S 47°25′18″E. They are Wikidata's for Andriamamovoka Falls (taken from English Wikipedia) and fall on Centre ValBio, so they look rough. The map pin is the roadside viewpoint Google Maps calls 'Chutes Andriamamovoka' (checked 23 Oct 2026): it is downstream of the park gate, as 'below the park' says, and the nearest named place to Wikidata's point; its reviews describe falls beside the road to the park, and the Commons photo of the falls (Hardscarf, 2013) is taken from a railed roadside platform like it. Google's other 'Cascade Andriamamovoka', a hiking area at Vorondolo about 3 km further up the RN25, is upstream of the park gate.",
-      "mapPin": "-21.2515,47.4280",
+      "img": "images/cascade-andriamamovoka-falls.jpg",
+      "imgPosition": "center 62%",
+      "verified": false,
+      "photoNeeded": false,
+      "sourceNote": "Map pin from Kyle (16 Nov 2026, his Google Maps link: -21.245406, 47.396927): near Vorondolo, about 3 km west of the park gate along the RN25 (the place Google calls Cascade Andriamamovoka, upstream of the park). Until then the pin was the roadside 'Chutes Andriamamovoka' viewpoint below the park gate, and the description (big falls on the Namorona below the park, a riverside walk, the most photographed waterfall) described the Jirama falls, as Kyle pointed out on 16 Nov 2026; both were taken out. Wikidata's coordinates (21°15′15″S 47°25′18″E) fall on Centre ValBio and are wrong. Price, duration and rating are from the original draft and unconfirmed, so the listing is marked unverified until Kyle confirms how it is reached. Kyle's two photos of 16 Nov 2026: the falls, and the Madagascar National Parks sign at the walled viewpoint, which reads 'Entrée du parc à 4 km' and carries a 'Danger de mort' warning; the 4 km is taken from that sign.",
+      "mapPin": "-21.245406,47.396927",
       "gallery": [
         {
           "src": "images/cascade-andriamamovoka-falls.jpg",
-          "fallback": "images/placeholder-cascade-andriamamovoka.jpg",
-          "alt": "Cascade Andriamamovoka"
+          "alt": "The falls pouring through a cleft in dark rock, below a riverbed of huge boulders"
         },
         {
-          "src": "images/cascade-andriamamovoka-trail.jpg",
-          "fallback": "images/placeholder-cascade-andriamamovoka.jpg",
-          "alt": "Trail to Cascade Andriamamovoka"
-        },
-        {
-          "src": "images/cascade-andriamamovoka-river.jpg",
-          "fallback": "images/placeholder-cascade-andriamamovoka.jpg",
-          "alt": "River below Cascade Andriamamovoka"
+          "src": "images/cascade-andriamamovoka-sign.jpg",
+          "alt": "The Madagascar National Parks sign at the viewpoint wall: Cascade Andriamamovoka, park entrance 4 km, with a red 'Danger de mort' warning"
         }
       ],
-      "desc": "The big falls on the Namorona River below the park, reached on a scenic riverside walk. The most photographed waterfall in the Ranomafana area.",
+      "desc": "A waterfall near Vorondolo, on the RN25 towards Fianarantsoa, upstream of the park. You look down on it from a walled viewpoint with a Madagascar National Parks sign, which puts the park entrance 4 km away. Not to be confused with the big falls at the end of the Jirama walk, east of the village.",
       "tips": [
-        "Rocks are slippery — this is not a handrail trail",
-        "Go with a village guide"
+        "Stay behind the wall: the sign at the viewpoint warns of mortal danger",
+        "Easy to combine with a day in the park, 4 km away"
       ],
       "contact": {
         "phone": "",
@@ -3120,8 +3114,8 @@
       "verified": true,
       "asOf": "2026-10",
       "photoNeeded": false,
-      "sourceNote": "Local knowledge from the original site draft — no published source found under this name. The route (start at the public pool, about an hour upriver to the biggest waterfall on the Namorona, not visible from the road) is from Kyle's notes (received 11 Oct 2026), which describe the walk but do not name the falls. On 11 Oct 2026 Kyle identified his photos of the big granite falls as the end of this walk, and placed them on this listing, so it is now marked verified. Two more photos of the falls (high water, and the pool below) from Kyle on 20 Oct 2026. Map pin at the start of the walk, the public pool (checked 23 Oct 2026): a Google search for the name scattered three waterfall and park pins. The falls themselves are probably Google Maps' 'Ranomafana Waterfalls' (-21.2569, 47.4360), on the river beside the Namorona hydropower station (OpenStreetMap), away from the road; its photo looks like Kyle's.",
-      "mapPin": "-21.2593,47.4516",
+      "sourceNote": "Local knowledge from the original site draft — no published source found under this name. The route (start at the public pool, about an hour upriver to the biggest waterfall on the Namorona, not visible from the road) is from Kyle's notes (received 11 Oct 2026), which describe the walk but do not name the falls. On 11 Oct 2026 Kyle identified his photos of the big granite falls as the end of this walk, and placed them on this listing, so it is now marked verified. Two more photos of the falls (high water, and the pool below) from Kyle on 20 Oct 2026. Map pin at the start of the walk, the public pool (checked 23 Oct 2026): a Google search for the name scattered three waterfall and park pins. On 16 Nov 2026 Kyle confirmed the falls' location with his own Google Maps link (-21.256684, 47.436171), beside the Namorona hydropower station (OpenStreetMap), away from the road, and pointed out that the old Cascade Andriamamovoka description was really about these falls. The map pin is now the falls themselves; the walk still starts at the public pool (-21.2593, 47.4516).",
+      "mapPin": "-21.256684,47.436171",
       "gallery": [
         {
           "src": "images/jirama-waterfall-hike-falls.jpg",

@@ -4404,10 +4404,10 @@ const LISTING_TRANSLATIONS = {
     },
     "cascade-andriamamovoka": {
       "desc": {
-        "en": "The big falls on the Namorona River below the park, reached on a scenic riverside walk. The most photographed waterfall in the Ranomafana area.",
-        "fr": "Les grandes chutes de la Namorona en contrebas du parc, accessibles par une belle promenade au bord de la rivière. La cascade la plus photographiée de la région de Ranomafana.",
-        "de": "Die großen Fälle der Namorona unterhalb des Parks, erreichbar über einen schönen Weg am Fluss. Der meistfotografierte Wasserfall der Gegend um Ranomafana.",
-        "mg": "Ny riandrano lehibe amin'ny renirano Namorona ambanin'ny valan-javaboahary, tratrarina amin'ny dia mahafinaritra eo amoron'ny renirano. Ny riandrano be maka sary indrindra amin'ny faritr'i Ranomafana."
+        "en": "A waterfall near Vorondolo, on the RN25 towards Fianarantsoa, upstream of the park. You look down on it from a walled viewpoint with a Madagascar National Parks sign, which puts the park entrance 4 km away. Not to be confused with the big falls at the end of the Jirama walk, east of the village.",
+        "fr": "Une cascade près de Vorondolo, sur la RN25 en direction de Fianarantsoa, en amont du parc. On la domine depuis un belvédère muré portant un panneau de Madagascar National Parks, qui indique l’entrée du parc à 4 km. À ne pas confondre avec les grandes chutes au bout de la promenade de la Jirama, à l’est du village.",
+        "de": "Ein Wasserfall bei Vorondolo, an der RN25 Richtung Fianarantsoa, flussaufwärts vom Park. Man blickt von einem ummauerten Aussichtspunkt mit einem Schild von Madagascar National Parks auf ihn hinab; laut Schild ist der Parkeingang 4 km entfernt. Nicht zu verwechseln mit den großen Fällen am Ende des Jirama-Wegs östlich des Dorfes.",
+        "mg": "Riandrano akaikin'i Vorondolo, amin'ny RN25 mankany Fianarantsoa, ambonin'ny valan-javaboahary. Jerena avy eo amin'ny toerana fijerena misy rindrina sy takelaka an'ny Madagascar National Parks izy, izay milaza fa 4 km no halavirana mankany amin'ny fidirana amin'ny valan-javaboahary. Aza afangaro amin'ny riandrano lehibe eo amin'ny faran'ny dia mankany amin'ny Jirama, atsinanan'ny tanàna."
       },
       "price": {
         "en": "Free access; local guide recommended",
@@ -4417,31 +4417,16 @@ const LISTING_TRANSLATIONS = {
       },
       "duration": { "en": "Half day", "fr": "Une demi-journée", "de": "Halber Tag", "mg": "Antsasak'andro" },
       "tips": {
-        "en": ["Rocks are slippery — this is not a handrail trail", "Go with a village guide"],
-        "fr": ["Les rochers sont glissants — ce n’est pas un sentier aménagé", "Partez avec un guide du village"],
-        "de": ["Die Felsen sind rutschig – kein Weg mit Geländer", "Mit einem Guide aus dem Ort gehen"],
-        "mg": [
-          "Malama ny vato — tsy lalana misy fihazonana",
-          "Mandehana miaraka amin'ny mpitari-dalana avy ao an-tanàna"
-        ]
+        "en": ["Stay behind the wall: the sign at the viewpoint warns of mortal danger", "Easy to combine with a day in the park, 4 km away"],
+        "fr": ["Restez derrière le muret : le panneau du belvédère avertit d’un danger de mort", "Facile à combiner avec une journée au parc, à 4 km"],
+        "de": ["Hinter der Mauer bleiben: Das Schild am Aussichtspunkt warnt vor Lebensgefahr", "Gut mit einem Tag im Park verbinden, 4 km entfernt"],
+        "mg": ["Aza mihoatra ny rindrina: misy takelaka eo amin'ny toerana fijerena milaza fa loza mahafaty", "Mora atambatra amin'ny andro iray any amin'ny valan-javaboahary, 4 km miala eo"]
       },
       "gallery[].alt": {
-        "en": ["Cascade Andriamamovoka", "Trail to Cascade Andriamamovoka", "River below Cascade Andriamamovoka"],
-        "fr": [
-          "La cascade Andriamamovoka",
-          "Le sentier vers la cascade Andriamamovoka",
-          "La rivière en contrebas de la cascade Andriamamovoka"
-        ],
-        "de": [
-          "Der Wasserfall Andriamamovoka",
-          "Weg zum Wasserfall Andriamamovoka",
-          "Der Fluss unterhalb des Wasserfalls Andriamamovoka"
-        ],
-        "mg": [
-          "Ny riandranon'Andriamamovoka",
-          "Ny lalana mankany amin'ny riandranon'Andriamamovoka",
-          "Ny renirano ambanin'ny riandranon'Andriamamovoka"
-        ]
+        "en": ["The falls pouring through a cleft in dark rock, below a riverbed of huge boulders", "The Madagascar National Parks sign at the viewpoint wall: Cascade Andriamamovoka, park entrance 4 km, with a red 'Danger de mort' warning"],
+        "fr": ["La cascade jaillissant dans une fente de roche sombre, sous un lit de rivière semé d’énormes blocs", "Le panneau de Madagascar National Parks sur le muret du belvédère : Cascade Andriamamovoka, entrée du parc à 4 km, avec un panneau rouge « Danger de mort »"],
+        "de": ["Der Wasserfall stürzt durch eine Spalte im dunklen Fels, unter einem Flussbett voller riesiger Felsblöcke", "Das Schild von Madagascar National Parks an der Mauer des Aussichtspunkts: Cascade Andriamamovoka, Parkeingang 4 km, mit einem roten Warnschild „Danger de mort“"],
+        "mg": ["Ny riandrano mikoriana amin'ny triatry ny vato mainty, ambanin'ny fandehanan'ny renirano feno vato goavana", "Ny takelaka an'ny Madagascar National Parks eo amin'ny rindrin'ny toerana fijerena: Cascade Andriamamovoka, 4 km ny fidirana amin'ny valan-javaboahary, miaraka amin'ny fampitandremana mena « Danger de mort »"]
       }
     },
     "jirama-waterfall-hike": {
