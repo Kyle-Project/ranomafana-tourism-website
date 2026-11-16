@@ -809,6 +809,7 @@
     @media (max-width: 720px) {
       .town-photos { grid-template-columns: 1fr 1fr; gap: 10px; }
       .town-photo { aspect-ratio: 1; }
+      .town-photo:last-child:nth-child(odd) { grid-column: span 2; aspect-ratio: 2 / 1; }
     }
     .photo-slot { height: 100%; border-radius: 16px; border: 1px dashed var(--moss-2); display: flex; align-items: center; justify-content: center; text-align: center; font-size: 14px; color: var(--lichen); padding: 12px; background: var(--canopy); }
     .mini-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; }
@@ -1067,6 +1068,7 @@
     .map-credit { font-size: 12px; line-height: 1.5; color: var(--muted); }
     .film { margin-top: 16px; }
     .film video { display: block; width: 100%; height: auto; aspect-ratio: 640 / 338; border-radius: 12px; background: #000; }
+    .film video.film-wide { aspect-ratio: 16 / 9; }
     .map-credit a { color: var(--lichen); }
     .why-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
     .why-card {
@@ -2042,7 +2044,7 @@
           <article class="info-card">
             <span class="eyebrow" data-i18n="waySoaEyebrow">From Antananarivo · Soatrans</span>
             <h3 data-i18n="waySoaTitle">Straight through the night</h3>
-            <p data-i18n="waySoaText">Book by calling +261 32 11 905 00 or at the station, and pay in person at least 24 hours ahead. The bus to Manakara (65,000 Ar) leaves Antananarivo at 13:30 and passes Ranomafana at around 03:00, where you can get off. Ranomafana is safe and calm at night. Staying at Setam Lodge, Forêt Australe, Au Domnatur or Karibotel? Get off outside your hotel rather than in town. Seats to Fianarantsoa cost 45,000 Ar if you would rather change there.</p>
+            <p data-i18n="waySoaText">Book by calling +261 32 11 905 00 or at the station, and pay in person at least 24 hours ahead. The bus to Manakara (65,000 Ar) leaves Antananarivo at 13:30 and passes Ranomafana at around 03:00, where you can get off. Ranomafana is safe and calm at night. Staying at Setam Lodge, Forêt Australe or Karibotel? Get off outside your hotel rather than in town. Seats to Fianarantsoa cost 45,000 Ar if you would rather change there.</p>
           </article>
           <article class="info-card">
             <span class="eyebrow" data-i18n="way4Eyebrow">Charter a car</span>
@@ -2293,9 +2295,29 @@
           <p class="page-intro" data-i18n="eventsSubtitle">Weekly markets and talks, national holidays, and the festivals of the highland year.</p>
         </div>
       </div>
-      <section class="wrap" style="padding-top: 48px; padding-bottom: 96px;" aria-label="Calendar" data-i18n-aria-label="ariaCalendar">
+      <section class="wrap" style="padding-top: 48px; padding-bottom: 48px;" aria-label="Calendar" data-i18n-aria-label="ariaCalendar">
         <div class="event-rows" id="eventList"></div>
         <p class="page-note" style="padding: 24px 0 0;" data-i18n="eventsNote">Dates for national holidays are fixed; village events can move. Check locally before you plan around one.</p>
+      </section>
+      <!-- Trail Ranomafana, 30 Aug 2026: drone film and photos Kyle sent on 16 Nov 2026
+           ("PHOTO.VIDEO TRAIL"). Facts only from the banners in the photos (name, 20 km, PCDT-R,
+           motto). The film leaves out clip 0014, marked by its sender to be cut. Photos come from
+           TRAIL_PHOTOS in the script and also appear in the Photo gallery. -->
+      <section class="wrap stack g-24" style="padding-top: 24px; padding-bottom: 96px;" aria-labelledby="trail-h">
+        <h2 id="trail-h" class="display d-56" data-i18n="trailHeading" data-i18n-html>Trail <em>Ranomafana</em></h2>
+        <div class="split film" style="align-items: center;">
+          <video class="film-wide" controls preload="none" playsinline muted width="960" height="540"
+                 poster="images/trail-ranomafana-runners-forest.jpg"
+                 aria-label="Film: Trail Ranomafana from the air" data-i18n-aria-label="trailFilmLabel">
+            <source src="videos/trail-ranomafana-2026.mp4" type="video/mp4">
+          </video>
+          <div class="stack g-16">
+            <p class="lede-serif" data-i18n="trailLede">20 km on foot through the forest and hills around the valley.</p>
+            <p class="lede" data-i18n="trailText">On 30 August 2026, runners and walkers set off under the “Départ” banner of Trail Ranomafana, organised by PCDT-R, Ranomafana’s tourism platform, with the motto “Ensemble, vivons l’aventure !” (together, let’s live the adventure). The course followed red-earth tracks through the forest and over open hillsides.</p>
+            <p class="map-credit" data-i18n="trailNote">Drone footage from the day, no sound. The next Trail Ranomafana has no date yet; it will appear in the calendar when it does.</p>
+          </div>
+        </div>
+        <div class="town-photos" id="trailPhotos"></div>
       </section>
     </section>
 
@@ -2554,7 +2576,8 @@
          park). -->
     <section id="page-ranomafana" class="page-view" aria-labelledby="ranomafana-h">
       <div class="page-hero page-hero--plan">
-        <img class="bg-photo" src="images/ranomafana-national-park-namorona.jpg" alt="" loading="lazy">
+        <!-- Drone photo of the village (still from Trail Ranomafana's footage, 30 Aug 2026). -->
+        <img class="bg-photo" src="images/ranomafana-village-aerial.jpg" alt="" loading="lazy">
         <div class="shade"></div>
         <div class="wrap page-hero-inner">
           <nav class="crumbs" aria-label="Breadcrumb" data-i18n-aria-label="ariaBreadcrumb"><a href="#home" data-i18n="crumbHome">Home</a> / <span data-i18n="aboutHubHeading">About Ranomafana</span></nav>
@@ -2578,6 +2601,20 @@
         <h2 id="rano-photos-h" class="display d-44" data-i18n="ranoPhotosHeading" data-i18n-html>The village and <em>the valley</em></h2>
         <p class="lede" data-i18n="ranoPhotosIntro">Life along the RN25, the river and the hills around town. Tap a photo to see it larger.</p>
         <div class="town-photos" id="townPhotos"></div>
+        <!-- Drone footage of the village, 30 Aug 2026 (from the Trail Ranomafana footage Kyle
+             sent on 16 Nov 2026). Silent: the drone records no sound. preload="none": nothing
+             downloads until someone presses play. -->
+        <div class="split film" style="align-items: center;">
+          <video class="film-wide" controls preload="none" playsinline muted width="960" height="540"
+                 poster="images/ranomafana-village-aerial.jpg"
+                 aria-label="Film: Ranomafana from the air" data-i18n-aria-label="airFilmLabel">
+            <source src="videos/ranomafana-from-the-air.mp4" type="video/mp4">
+          </video>
+          <div class="stack g-16">
+            <h3 class="display d-44" data-i18n="airFilmHeading" data-i18n-html>Ranomafana <em>from the air.</em></h3>
+            <p class="lede" data-i18n="airFilmText">A drone flight over the village on a cloudy morning at the end of August: the Namorona River on one side, the RN25 and the town’s roofs on the other, and the forested hills above. Forty seconds, no sound.</p>
+          </div>
+        </div>
       </section>
       <section class="wrap stack g-24" style="padding-top: 56px; padding-bottom: 24px;" aria-labelledby="rano-valley-h">
         <h2 id="rano-valley-h" class="display d-44" data-i18n="ranoPageHeading" data-i18n-html>The valley of <em>hot water</em></h2>
@@ -3390,7 +3427,7 @@
         itinNote: "These plans come from this guide’s own itinerary data. Times are suggestions; your guide will adjust them to the weather and the animals.",
         ghWaysIntro: "Ranomafana is in the Vatovavy region of south-east Madagascar, 65 km from Fianarantsoa, the nearest city. Getting here from Antananarivo can be tricky, but every option below works.",
         way2Text: "Book a seat by calling or WhatsApp-ing the Cotisse station in Antananarivo on +261 32 11 027 10, or in person. Pay at least 24 hours before departure: online with PayPal or MVola, or at any Cotisse station. Seats to Fianarantsoa cost 40,000 Ar, with buses by day and by night. The drive takes about 12 hours, with regular toilet stops and a lunch break. You then change in Fianarantsoa (see below).",
-        waySoaText: "Book by calling +261 32 11 905 00 or at the station, and pay in person at least 24 hours ahead. The bus to Manakara (65,000 Ar) leaves Antananarivo at 13:30 and passes Ranomafana at around 03:00, where you can get off. Ranomafana is safe and calm at night. Staying at Setam Lodge, Forêt Australe, Au Domnatur or Karibotel? Get off outside your hotel rather than in town. Seats to Fianarantsoa cost 45,000 Ar if you would rather change there.",
+        waySoaText: "Book by calling +261 32 11 905 00 or at the station, and pay in person at least 24 hours ahead. The bus to Manakara (65,000 Ar) leaves Antananarivo at 13:30 and passes Ranomafana at around 03:00, where you can get off. Ranomafana is safe and calm at night. Staying at Setam Lodge, Forêt Australe or Karibotel? Get off outside your hotel rather than in town. Seats to Fianarantsoa cost 45,000 Ar if you would rather change there.",
         way4Text: "Buses and rough roads are not exactly relaxing, so many visitors hire a car and driver in Antananarivo. Search for private car hire or drivers there; we suggest Dadamanga as a good place to start. Expect roughly US$100–300 per car, depending on the company, whether you have a driver, how many of you there are and the time of year. The drive takes about 12 hours, stopping where and when you like: Antsirabe (5 hours in) and Ambositra (8 hours in, home to beautiful wood carving) are popular.",
         wayFlyText: "A private charter plane to Fianarantsoa airport takes about an hour. It has to be booked through a travel agency, and prices vary. From Fianarantsoa, continue by bus or car.",
         way1Text: "65 km on the RN25. Regional taxi-brousses (shared minibuses) leave the bus station at any time of day: 7,000 Ar per person, about 2½ hours. Use the toilet before you get in.",
@@ -3565,6 +3602,23 @@
         altTownRiver: "A river running over smooth boulders below the valley’s green hills",
         altTownNamorona: "The Namorona River tumbling down rocky cascades through misty forest",
         altTownZebu: "Zebu grazing on a riverbank below a rocky, forested hill, with someone wading in the river",
+        altTownAerial: "Ranomafana from the air: the Namorona River beside the RN25 and the village’s roofs, with cloud on the forested hills above",
+        altTownAerialStreet: "The RN25 through Ranomafana village seen from the air, between the Namorona River and the town’s red roofs",
+        altTownRiverAerial: "Houses and a sports court beside the RN25, with the river running over rocks below, seen from the air",
+        airFilmLabel: "Film: Ranomafana from the air",
+        airFilmHeading: "Ranomafana <em>from the air.</em>",
+        airFilmText: "A drone flight over the village on a cloudy morning at the end of August: the Namorona River on one side, the RN25 and the town’s roofs on the other, and the forested hills above. Forty seconds, no sound.",
+        trailHeading: "Trail <em>Ranomafana</em>",
+        trailFilmLabel: "Film: Trail Ranomafana from the air",
+        trailLede: "20 km on foot through the forest and hills around the valley.",
+        trailText: "On 30 August 2026, runners and walkers set off under the “Départ” banner of Trail Ranomafana, organised by PCDT-R, Ranomafana’s tourism platform, with the motto “Ensemble, vivons l’aventure !” (together, let’s live the adventure). The course followed red-earth tracks through the forest and over open hillsides.",
+        trailNote: "Drone footage from the day, no sound. The next Trail Ranomafana has no date yet; it will appear in the calendar when it does.",
+        altTrailStart: "Trail Ranomafana from the air: participants gather under the “Départ” banner beside the road, with a minibus parked alongside",
+        altTrailGroup: "Participants with their race numbers lined up under the Trail Ranomafana “Départ” banner",
+        altTrailRunners: "Runners on a red-earth track through the forest, seen from a drone",
+        altTrailHill: "The trail’s red-earth track winding over a forested hill, with misty hills beyond",
+        altTrailValley: "Four participants with race numbers on the trail, with green hills and cloud behind",
+        altTrailFinish: "Participants with their race numbers in front of the PCDT-R tents",
         galleryFrom: "Taken at",
         galleryPrev: "Previous photo",
         galleryNext: "Next photo",
@@ -3976,7 +4030,7 @@
         itinNote: "Ces programmes s’appuient sur les itinéraires de ce guide. Les horaires sont indicatifs ; votre guide les adaptera à la météo et aux animaux.",
         ghWaysIntro: "Ranomafana se trouve dans la région Vatovavy, dans le sud-est de Madagascar, à 65 km de Fianarantsoa, la ville la plus proche. Venir depuis Antananarivo peut être compliqué, mais toutes les options ci-dessous fonctionnent.",
         way2Text: "Réservez une place en appelant ou en écrivant sur WhatsApp à la gare Cotisse d’Antananarivo au +261 32 11 027 10, ou sur place. Payez au moins 24 heures avant le départ : en ligne par PayPal ou MVola, ou dans n’importe quelle agence Cotisse. Une place pour Fianarantsoa coûte 40 000 Ar, avec des cars de jour et de nuit. Le trajet dure environ 12 heures, avec des arrêts toilettes réguliers et une pause déjeuner. Vous changez ensuite à Fianarantsoa (voir ci-dessous).",
-        waySoaText: "Réservez en appelant le +261 32 11 905 00 ou à la gare, et payez sur place au moins 24 heures à l’avance. Le car pour Manakara (65 000 Ar) quitte Antananarivo à 13:30 et passe à Ranomafana vers 03:00, où vous pouvez descendre. Ranomafana est sûr et calme la nuit. Vous logez au Setam Lodge, à Forêt Australe, à Au Domnatur ou au Karibotel ? Descendez devant votre hôtel plutôt qu’au village. Une place pour Fianarantsoa coûte 45 000 Ar si vous préférez changer là-bas.",
+        waySoaText: "Réservez en appelant le +261 32 11 905 00 ou à la gare, et payez sur place au moins 24 heures à l’avance. Le car pour Manakara (65 000 Ar) quitte Antananarivo à 13:30 et passe à Ranomafana vers 03:00, où vous pouvez descendre. Ranomafana est sûr et calme la nuit. Vous logez au Setam Lodge, à Forêt Australe ou au Karibotel ? Descendez devant votre hôtel plutôt qu’au village. Une place pour Fianarantsoa coûte 45 000 Ar si vous préférez changer là-bas.",
         way4Text: "Les cars et les routes cabossées ne sont pas vraiment reposants : beaucoup de visiteurs louent une voiture avec chauffeur à Antananarivo. Cherchez sur place une location de voiture ou un chauffeur privé ; Dadamanga est un bon point de départ. Comptez environ 100 à 300 dollars américains par voiture, selon l’agence, la présence d’un chauffeur, le nombre de voyageurs et la saison. Le trajet dure environ 12 heures, avec des arrêts où et quand vous voulez : Antsirabe (après 5 heures) et Ambositra (après 8 heures, haut lieu de la sculpture sur bois) sont des étapes appréciées.",
         wayFlyText: "Un avion charter privé jusqu’à l’aéroport de Fianarantsoa met environ une heure. Il se réserve auprès d’une agence de voyages, et les prix varient. Depuis Fianarantsoa, continuez en car ou en voiture.",
         way1Text: "65 km sur la RN25. Les taxis-brousses régionaux (minibus partagés) partent de la gare routière à toute heure de la journée : 7 000 Ar par personne, environ 2 h 30. Passez aux toilettes avant de monter.",
@@ -4151,6 +4205,23 @@
         altTownRiver: "Une rivière qui court sur de gros rochers lisses, au pied des collines vertes de la vallée",
         altTownNamorona: "La Namorona dévale des cascades rocheuses à travers la forêt dans la brume",
         altTownZebu: "Des zébus paissent au bord d’une rivière, sous une colline rocheuse et boisée ; quelqu’un marche dans l’eau",
+        altTownAerial: "Ranomafana vu du ciel : la rivière Namorona le long de la RN25 et les toits du village, avec des nuages sur les collines boisées",
+        altTownAerialStreet: "La RN25 traversant le village de Ranomafana vue du ciel, entre la rivière Namorona et les toits rouges",
+        altTownRiverAerial: "Des maisons et un terrain de sport au bord de la RN25, avec la rivière qui coule sur les rochers en contrebas, vus du ciel",
+        airFilmLabel: "Film : Ranomafana vu du ciel",
+        airFilmHeading: "Ranomafana <em>vu du ciel.</em>",
+        airFilmText: "Un vol de drone au-dessus du village, par un matin nuageux de fin août : la rivière Namorona d’un côté, la RN25 et les toits de l’autre, et les collines boisées au-dessus. Quarante secondes, sans son.",
+        trailHeading: "Trail <em>Ranomafana</em>",
+        trailFilmLabel: "Film : le Trail Ranomafana vu du ciel",
+        trailLede: "20 km à pied à travers la forêt et les collines autour de la vallée.",
+        trailText: "Le 30 août 2026, coureurs et marcheurs se sont élancés sous la banderole « Départ » du Trail Ranomafana, organisé par le PCDT-R, la plateforme touristique de Ranomafana, avec pour devise « Ensemble, vivons l’aventure ! ». Le parcours suivait des pistes de terre rouge à travers la forêt et sur les collines dégagées.",
+        trailNote: "Images de drone de la journée, sans son. Le prochain Trail Ranomafana n’a pas encore de date ; il apparaîtra dans le calendrier dès qu’elle sera fixée.",
+        altTrailStart: "Le Trail Ranomafana vu du ciel : les participants réunis sous la banderole « Départ » au bord de la route, un minibus garé à côté",
+        altTrailGroup: "Les participants avec leurs dossards, alignés sous la banderole « Départ » du Trail Ranomafana",
+        altTrailRunners: "Des coureurs sur une piste de terre rouge à travers la forêt, vus d’un drone",
+        altTrailHill: "La piste de terre rouge du trail serpentant sur une colline boisée, avec des collines dans la brume au loin",
+        altTrailValley: "Quatre participantes avec leurs dossards sur le parcours, devant des collines vertes et des nuages",
+        altTrailFinish: "Les participants avec leurs dossards devant les tentes du PCDT-R",
         galleryFrom: "Prise à",
         galleryPrev: "Photo précédente",
         galleryNext: "Photo suivante",
@@ -4561,7 +4632,7 @@
         itinNote: "Diese Pläne beruhen auf den Reiserouten dieses Führers. Die Zeiten sind Vorschläge; Ihr Guide passt sie an Wetter und Tiere an.",
         ghWaysIntro: "Ranomafana liegt in der Region Vatovavy im Südosten Madagaskars, 65 km von Fianarantsoa, der nächsten Stadt. Die Anreise aus Antananarivo kann mühsam sein, aber jede der folgenden Möglichkeiten funktioniert.",
         way2Text: "Reservieren Sie einen Platz telefonisch oder per WhatsApp beim Cotisse-Busbahnhof in Antananarivo unter +261 32 11 027 10 oder vor Ort. Bezahlen Sie mindestens 24 Stunden vor Abfahrt: online mit PayPal oder MVola oder an jeder Cotisse-Station. Ein Platz nach Fianarantsoa kostet 40.000 Ar, mit Bussen tagsüber und nachts. Die Fahrt dauert etwa 12 Stunden, mit regelmäßigen Toilettenstopps und einer Mittagspause. Danach steigen Sie in Fianarantsoa um (siehe unten).",
-        waySoaText: "Buchen Sie telefonisch unter +261 32 11 905 00 oder am Busbahnhof und bezahlen Sie mindestens 24 Stunden vorher persönlich. Der Bus nach Manakara (65.000 Ar) fährt um 13:30 in Antananarivo ab und kommt gegen 03:00 durch Ranomafana, wo Sie aussteigen können. Ranomafana ist nachts sicher und ruhig. Sie wohnen in der Setam Lodge, in Forêt Australe, im Au Domnatur oder im Karibotel? Steigen Sie direkt vor Ihrem Hotel aus statt im Ort. Ein Platz nach Fianarantsoa kostet 45.000 Ar, falls Sie lieber dort umsteigen.",
+        waySoaText: "Buchen Sie telefonisch unter +261 32 11 905 00 oder am Busbahnhof und bezahlen Sie mindestens 24 Stunden vorher persönlich. Der Bus nach Manakara (65.000 Ar) fährt um 13:30 in Antananarivo ab und kommt gegen 03:00 durch Ranomafana, wo Sie aussteigen können. Ranomafana ist nachts sicher und ruhig. Sie wohnen in der Setam Lodge, in Forêt Australe oder im Karibotel? Steigen Sie direkt vor Ihrem Hotel aus statt im Ort. Ein Platz nach Fianarantsoa kostet 45.000 Ar, falls Sie lieber dort umsteigen.",
         way4Text: "Busse und holprige Straßen sind nicht gerade erholsam, deshalb mieten viele Besucher in Antananarivo ein Auto mit Fahrer. Suchen Sie dort nach Mietwagen oder privaten Fahrern; Dadamanga ist ein guter Ausgangspunkt. Rechnen Sie mit etwa 100–300 US-Dollar pro Auto, je nach Anbieter, ob mit Fahrer, wie viele Sie sind und zu welcher Jahreszeit. Die Fahrt dauert etwa 12 Stunden, mit Stopps, wo und wann Sie möchten: Antsirabe (nach 5 Stunden) und Ambositra (nach 8 Stunden, Heimat wunderschöner Holzschnitzerei) sind beliebt.",
         wayFlyText: "Ein privates Charterflugzeug zum Flughafen Fianarantsoa braucht etwa eine Stunde. Es muss über ein Reisebüro gebucht werden, und die Preise schwanken. Ab Fianarantsoa geht es mit Bus oder Auto weiter.",
         way1Text: "65 km auf der RN25. Regionale Taxi-Brousses (Sammelkleinbusse) fahren zu jeder Tageszeit am Busbahnhof ab: 7.000 Ar pro Person, etwa 2½ Stunden. Gehen Sie vor dem Einsteigen noch zur Toilette.",
@@ -4736,6 +4807,23 @@
         altTownRiver: "Ein Fluss über glatte Felsblöcke unterhalb der grünen Hügel des Tals",
         altTownNamorona: "Die Namorona stürzt über felsige Kaskaden durch den nebligen Wald",
         altTownZebu: "Zebus grasen am Flussufer unter einem felsigen, bewaldeten Hügel; jemand watet durch den Fluss",
+        altTownAerial: "Ranomafana aus der Luft: der Fluss Namorona neben der RN25 und den Dächern des Orts, Wolken über den bewaldeten Hügeln",
+        altTownAerialStreet: "Die RN25 durch Ranomafana aus der Luft, zwischen dem Fluss Namorona und den roten Dächern des Orts",
+        altTownRiverAerial: "Häuser und ein Sportplatz an der RN25, darunter der Fluss über Felsen, aus der Luft gesehen",
+        airFilmLabel: "Film: Ranomafana aus der Luft",
+        airFilmHeading: "Ranomafana <em>aus der Luft.</em>",
+        airFilmText: "Ein Drohnenflug über den Ort an einem bewölkten Morgen Ende August: auf der einen Seite der Fluss Namorona, auf der anderen die RN25 und die Dächer, darüber die bewaldeten Hügel. Vierzig Sekunden, ohne Ton.",
+        trailHeading: "Trail <em>Ranomafana</em>",
+        trailFilmLabel: "Film: der Trail Ranomafana aus der Luft",
+        trailLede: "20 km zu Fuß durch den Wald und die Hügel rund um das Tal.",
+        trailText: "Am 30. August 2026 starteten Läufer und Wanderer unter dem „Départ“-Banner des Trail Ranomafana, veranstaltet von PCDT-R, der Tourismusplattform von Ranomafana, unter dem Motto „Ensemble, vivons l’aventure !“ (Gemeinsam das Abenteuer erleben). Die Strecke führte über rote Erdpisten durch den Wald und über offene Hügel.",
+        trailNote: "Drohnenaufnahmen vom Tag, ohne Ton. Für den nächsten Trail Ranomafana steht noch kein Termin fest; er erscheint im Kalender, sobald es einen gibt.",
+        altTrailStart: "Der Trail Ranomafana aus der Luft: Teilnehmende unter dem „Départ“-Banner am Straßenrand, daneben ein Kleinbus",
+        altTrailGroup: "Teilnehmende mit Startnummern unter dem „Départ“-Banner des Trail Ranomafana",
+        altTrailRunners: "Läufer auf einer roten Erdpiste durch den Wald, von einer Drohne aus gesehen",
+        altTrailHill: "Die rote Erdpiste des Trails windet sich über einen bewaldeten Hügel, dahinter Hügel im Dunst",
+        altTrailValley: "Vier Teilnehmerinnen mit Startnummern auf der Strecke, dahinter grüne Hügel und Wolken",
+        altTrailFinish: "Teilnehmende mit Startnummern vor den Zelten von PCDT-R",
         galleryFrom: "Aufgenommen bei",
         galleryPrev: "Vorheriges Foto",
         galleryNext: "Nächstes Foto",
@@ -5147,7 +5235,7 @@
         itinNote: "Avy amin'ny lalana voaomana ao amin'ity torolàlana ity ireo fandaharana ireo. Soso-kevitra fotsiny ny ora; hampifanarahan'ny mpitari-dalanao amin'ny toetr'andro sy ny biby izany.",
         ghWaysIntro: "Ao amin'ny faritra Vatovavy any atsimo atsinanan'i Madagasikara i Ranomafana, 65 km miala an'i Fianarantsoa, ilay tanàn-dehibe akaiky indrindra. Mety ho sarotra ny avy any Antananarivo, saingy mandeha avokoa ireo safidy rehetra etsy ambany.",
         way2Text: "Mamandriha toerana amin'ny fiantsoana na amin'ny WhatsApp ny fiantsonan'ny Cotisse ao Antananarivo amin'ny +261 32 11 027 10, na mivantana any. Aloa farafahakeliny 24 ora alohan'ny fiaingana: amin'ny aterineto amin'ny PayPal na MVola, na any amin'ny biraon'ny Cotisse rehetra. 40 000 Ar ny toerana mankany Fianarantsoa, misy fiara antoandro sy alina. Adiny 12 eo ho eo ny dia, misy fijanonana tsy tapaka ho an'ny kabone sy fiatoana hisakafoana antoandro. Avy eo dia miova fiara any Fianarantsoa ianao (jereo etsy ambany).",
-        waySoaText: "Mamandriha amin'ny fiantsoana ny +261 32 11 905 00 na any amin'ny fiantsonana, ary aloa mivantana farafahakeliny 24 ora mialoha. Miainga avy any Antananarivo amin'ny 13:30 ny fiara mankany Manakara (65 000 Ar) ary mandalo an'i Ranomafana amin'ny 03:00 eo ho eo, izay ahafahanao midina. Milamina sady azo antoka i Ranomafana amin'ny alina. Matory ao Setam Lodge, Forêt Australe, Au Domnatur na Karibotel ve ianao? Midina eo anoloan'ny hotelinao fa aza any an-tanàna. 45 000 Ar ny toerana mankany Fianarantsoa raha aleonao miova fiara any.",
+        waySoaText: "Mamandriha amin'ny fiantsoana ny +261 32 11 905 00 na any amin'ny fiantsonana, ary aloa mivantana farafahakeliny 24 ora mialoha. Miainga avy any Antananarivo amin'ny 13:30 ny fiara mankany Manakara (65 000 Ar) ary mandalo an'i Ranomafana amin'ny 03:00 eo ho eo, izay ahafahanao midina. Milamina sady azo antoka i Ranomafana amin'ny alina. Matory ao Setam Lodge, Forêt Australe na Karibotel ve ianao? Midina eo anoloan'ny hotelinao fa aza any an-tanàna. 45 000 Ar ny toerana mankany Fianarantsoa raha aleonao miova fiara any.",
         way4Text: "Tsy dia mampiala sasatra loatra ny fiara fitateram-bahoaka sy ny lalana ratsy, ka maro ny mpitsidika manofa fiara miaraka amin'ny mpamily any Antananarivo. Mitadiava fanofana fiara na mpamily manokana any; tsara hanombohana ny Dadamanga. Eo amin'ny 100–300 dolara amerikanina eo ho eo isaky ny fiara, arakaraka ny orinasa, raha misy mpamily na tsia, ny isanareo ary ny vanim-potoana. Adiny 12 eo ho eo ny dia, mijanona amin'izay toerana sy fotoana tianao: tian'ny maro i Antsirabe (aorian'ny adiny 5) sy Ambositra (aorian'ny adiny 8, tanànan'ny sokitra hazo mahafinaritra).",
         wayFlyText: "Adiny iray eo ho eo ny sidina manokana mankany amin'ny seranam-piaramanidin'i Fianarantsoa. Tsy maintsy amandrihana amin'ny alalan'ny masoivoho fitsangatsanganana izany, ary miovaova ny vidiny. Avy any Fianarantsoa dia mitohiza amin'ny fiara fitateram-bahoaka na fiara.",
         way1Text: "65 km amin'ny RN25. Miainga avy eo amin'ny fiantsonana amin'ny ora rehetra amin'ny andro ny taxi-brousse (fiara kely iombonana): 7 000 Ar isan'olona, adiny 2½ eo ho eo. Mankanesa any amin'ny kabone alohan'ny hiakarana.",
@@ -5322,6 +5410,23 @@
         altTownRiver: "Renirano mikoriana amin'ny vatobe malama eo ambanin'ny havoana maitso ao amin'ny lohasaha",
         altTownNamorona: "Ny renirano Namorona midina amin'ny riandrano be vato mamakivaky ny ala feno zavona",
         altTownZebu: "Omby miraoka eo amoron'ny renirano eo ambanin'ny havoana be vato misy ala, ary misy olona mandeha an-drano",
+        altTownAerial: "Ranomafana jerena avy eny ambony: ny reniranon'i Namorona eo anilan'ny RN25 sy ny tafon-tranon'ny tanàna, misy rahona eny amin'ireo havoana misy ala",
+        altTownAerialStreet: "Ny RN25 mamakivaky ny tanànan'i Ranomafana jerena avy eny ambony, eo anelanelan'ny reniranon'i Namorona sy ireo tafo mena",
+        altTownRiverAerial: "Trano sy kianja filalaovana eo anilan'ny RN25, ary ny renirano mikoriana amin'ny vato eo ambany, jerena avy eny ambony",
+        airFilmLabel: "Sarimihetsika: Ranomafana jerena avy eny ambony",
+        airFilmHeading: "Ranomafana <em>jerena avy eny ambony.</em>",
+        airFilmText: "Sidina drône eny ambonin'ny tanàna, tamin'ny maraina feno rahona tamin'ny faran'ny volana aogositra: ny reniranon'i Namorona amin'ny ilany iray, ny RN25 sy ny tafon-trano amin'ny ilany iray, ary ireo havoana misy ala eny ambony. Efapolo segondra, tsy misy feo.",
+        trailHeading: "Trail <em>Ranomafana</em>",
+        trailFilmLabel: "Sarimihetsika: ny Trail Ranomafana jerena avy eny ambony",
+        trailLede: "20 km an-tongotra mamakivaky ny ala sy ny havoana manodidina ny lohasaha.",
+        trailText: "Tamin'ny 30 Aogositra 2026, nanomboka teo ambanin'ny sorabaventy « Départ » an'ny Trail Ranomafana ireo mpihazakazaka sy mpandeha an-tongotra. Ny PCDT-R, sehatra ara-pizahan-tany ao Ranomafana, no nikarakara azy, miaraka amin'ny teny filamatra hoe « Ensemble, vivons l’aventure ! » (Andao hiara-hiaina ny fitsangatsanganana). Nandalo lalana tany mena namakivaky ny ala sy ireo havoana malalaka ny lalana.",
+        trailNote: "Sary drône tamin'io andro io, tsy misy feo. Mbola tsy misy daty ny Trail Ranomafana manaraka; hiseho ao amin'ny tetiandro izy rehefa voafaritra.",
+        altTrailStart: "Ny Trail Ranomafana jerena avy eny ambony: ireo mpandray anjara mivory eo ambanin'ny sorabaventy « Départ » amoron-dalana, misy minibus mijanona eo akaiky",
+        altTrailGroup: "Ireo mpandray anjara manao ny laharany, milahatra eo ambanin'ny sorabaventy « Départ » an'ny Trail Ranomafana",
+        altTrailRunners: "Mpihazakazaka eny amin'ny lalana tany mena mamakivaky ny ala, jerena avy amin'ny drône",
+        altTrailHill: "Ny lalana tany mena an'ny trail miolikolika eny amin'ny havoana misy ala, ary havoana misy zavona any lavitra",
+        altTrailValley: "Mpandray anjara efatra manao ny laharany eny an-dalana, misy havoana maitso sy rahona ao aoriana",
+        altTrailFinish: "Ireo mpandray anjara manao ny laharany eo anoloan'ny tranolay an'ny PCDT-R",
         galleryFrom: "Nalaina tao amin'ny",
         galleryPrev: "Sary teo aloha",
         galleryNext: "Sary manaraka",
@@ -5604,6 +5709,7 @@
       renderGuides();
       renderWhy();
       renderTownPhotos();
+      renderTrailPhotos();
       renderGallery();
       renderServices();
       renderDocuments();
@@ -6671,7 +6777,38 @@
       { src: 'images/ranomafana-river-boulders.jpg', alt: 'altTownRiver' },
       { src: 'images/namorona-river-cascades-mist.jpg', alt: 'altTownNamorona' },
       { src: 'images/ranomafana-zebu-riverbank.jpg', alt: 'altTownZebu' },
+      // Drone stills from the Trail Ranomafana footage, 30 Aug 2026 (sent 16 Nov 2026).
+      { src: 'images/ranomafana-village-aerial.jpg', alt: 'altTownAerial' },
+      { src: 'images/ranomafana-village-aerial-street.jpg', alt: 'altTownAerialStreet' },
+      { src: 'images/ranomafana-rn25-river-aerial.jpg', alt: 'altTownRiverAerial' },
     ];
+    /* Trail Ranomafana, 30 Aug 2026, on the Events page (renderTrailPhotos()); they also
+       appear in the Photo gallery under "Village & culture". */
+    const TRAIL_PHOTOS = [
+      { src: 'images/trail-ranomafana-start-drone.jpg', alt: 'altTrailStart' },
+      { src: 'images/trail-ranomafana-start-group.jpg', alt: 'altTrailGroup' },
+      { src: 'images/trail-ranomafana-runners-forest.jpg', alt: 'altTrailRunners' },
+      { src: 'images/trail-ranomafana-hill-track.jpg', alt: 'altTrailHill' },
+      { src: 'images/trail-ranomafana-valley-walkers.jpg', alt: 'altTrailValley' },
+      { src: 'images/trail-ranomafana-finish.jpg', alt: 'altTrailFinish' },
+    ];
+    const trailPhotoList = () => TRAIL_PHOTOS.map((p) => ({ src: p.src, alt: t(p.alt) }));
+    function renderTrailPhotos() {
+      document.getElementById('trailPhotos').innerHTML = trailPhotoList().map((p, i) => `
+        <button type="button" class="town-photo" onclick="openTrailPhotos(${i})" aria-label="${esc(p.alt)}">
+          <img src="${esc(p.src)}" alt="" loading="lazy">
+        </button>`).join('');
+    }
+    function openTrailPhotos(i) {
+      const list = trailPhotoList();
+      const name = stripTags(t('trailHeading'));
+      showModal(`
+        <div class="m-head">
+          <span class="m-kicker">${esc(t('navEvents'))}</span>
+          <h2 class="m-title" id="modalTitle">${esc(name)}</h2>
+        </div>
+        ${galleryHTML(name, [...list.slice(i), ...list.slice(0, i)], true)}`);
+    }
     const townPhotoList = () => TOWN_PHOTOS.map((p) => ({ src: p.src, alt: t(p.alt) }));
     function renderTownPhotos() {
       document.getElementById('townPhotos').innerHTML = townPhotoList().map((p, i) => `
@@ -6853,6 +6990,12 @@
         seen.add(p.src);
         out.push({ src: p.src, alt: p.alt, name: t('aboutHubHeading'), page: 'ranomafana', group: 'village' });
       }
+      // Trail Ranomafana's photos too, linked to the Events page.
+      for (const p of trailPhotoList()) {
+        if (seen.has(p.src) || !photoReady(p.src)) continue;
+        seen.add(p.src);
+        out.push({ src: p.src, alt: p.alt, name: stripTags(t('trailHeading')), page: 'events', group: 'village' });
+      }
       // Liked photos first, the most recently liked at the very top.
       const rank = (p) => (isLiked(p.src) ? likedPhotos.indexOf(p.src) : likedPhotos.length);
       return out.map((p, i) => ({ p, i })).sort((a, b) => rank(a.p) - rank(b.p) || a.i - b.i).map((x) => x.p);
@@ -6891,7 +7034,7 @@
       const p = galleryShown[i];
       if (p.missing) { openGalleryPhoto(i + step, step); return; }
       const opener = p.page === 'stay' ? 'openStayModal' : p.page === 'eat' ? 'openEatModal' : 'openDoModal';
-      const from = p.page === 'park' || p.page === 'ranomafana' ? `<a class="text-link" href="#${p.page}">${esc(p.name)} →</a>`
+      const from = p.page === 'park' || p.page === 'ranomafana' || p.page === 'events' ?`<a class="text-link" href="#${p.page}">${esc(p.name)} →</a>`
         : `<button type="button" class="text-link print-btn" data-name="${esc(p.name)}" onclick="${opener}(this.dataset.name)">${esc(p.name)} →</button>`;
       showModal(`
         <div class="m-head">

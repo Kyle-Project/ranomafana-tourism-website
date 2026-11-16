@@ -342,113 +342,6 @@ const LISTING_TRANSLATIONS = {
         ]
       }
     },
-    "au-domnatur": {
-      "desc": {
-        "en": "Quiet nature lodge 2 km above Ranomafana, with comfortable bungalows and rooms amid lush vegetation, canopy views, waterfalls in the grounds, a bar and an on-site restaurant. Previously known as Domaine Nature.",
-        "fr": "Lodge nature au calme, 2 km au-dessus de Ranomafana, avec des bungalows et des chambres confortables dans une végétation luxuriante, vue sur la canopée, des cascades dans le domaine, un bar et un restaurant sur place. Anciennement Domaine Nature.",
-        "de": "Ruhige Natur-Lodge 2 km oberhalb von Ranomafana, mit komfortablen Bungalows und Zimmern inmitten üppiger Vegetation, Blick auf das Blätterdach, Wasserfällen auf dem Gelände, einer Bar und einem eigenen Restaurant. Früher bekannt als Domaine Nature.",
-        "mg": "Lodge mangina eo afovoan'ny zavaboary, 2 km ambonin'i Ranomafana, misy bungalow sy efitrano mahafinaritra eo anivon'ny zava-maniry maitso, fijery ny tampon'ny ala, riandrano ao an-tokotany, bar ary trano fisakafoana. Domaine Nature no anarany taloha."
-      },
-      "price": {
-        "en": "120,000–210,000 Ar / night",
-        "fr": "120 000–210 000 Ar / nuit",
-        "de": "120.000–210.000 Ar / Nacht",
-        "mg": "120 000–210 000 Ar / alina"
-      },
-      "wifiNote": {
-        "en": "In the restaurant",
-        "fr": "Au restaurant",
-        "de": "Im Restaurant",
-        "mg": "Ao amin'ny trano fisakafoana"
-      },
-      "rooms": {
-        "en": [
-          { "type": "Single", "price": "120,000–140,000 Ar" },
-          { "type": "Double", "price": "160,000–180,000 Ar" },
-          { "type": "Double suite", "price": "180,000–210,000 Ar" },
-          { "type": "Family (1 double + 1 single bed)", "price": "160,000–190,000 Ar" },
-          { "type": "Family (1 double + 2 single beds)", "price": "180,000–210,000 Ar" }
-        ],
-        "fr": [
-          { "type": "Simple", "price": "120 000–140 000 Ar" },
-          { "type": "Double", "price": "160 000–180 000 Ar" },
-          { "type": "Suite double", "price": "180 000–210 000 Ar" },
-          { "type": "Familiale (1 lit double + 1 lit simple)", "price": "160 000–190 000 Ar" },
-          { "type": "Familiale (1 lit double + 2 lits simples)", "price": "180 000–210 000 Ar" }
-        ],
-        "de": [
-          { "type": "Einzelzimmer", "price": "120.000–140.000 Ar" },
-          { "type": "Doppelzimmer", "price": "160.000–180.000 Ar" },
-          { "type": "Doppelsuite", "price": "180.000–210.000 Ar" },
-          { "type": "Familienzimmer (1 Doppelbett + 1 Einzelbett)", "price": "160.000–190.000 Ar" },
-          { "type": "Familienzimmer (1 Doppelbett + 2 Einzelbetten)", "price": "180.000–210.000 Ar" }
-        ],
-        "mg": [
-          { "type": "Olona iray", "price": "120 000–140 000 Ar" },
-          { "type": "Fandriana roa olona", "price": "160 000–180 000 Ar" },
-          { "type": "Suite roa olona", "price": "180 000–210 000 Ar" },
-          { "type": "Fianakaviana (fandriana roa olona 1 + fandriana kely 1)", "price": "160 000–190 000 Ar" },
-          { "type": "Fianakaviana (fandriana roa olona 1 + fandriana kely 2)", "price": "180 000–210 000 Ar" }
-        ]
-      },
-      "meals": {
-        "en": ["Breakfast: 20,000 Ar continental, 25,000–30,000 Ar American", "Lunch or dinner: 40,000–50,000 Ar"],
-        "fr": [
-          "Petit-déjeuner : 20 000 Ar continental, 25 000–30 000 Ar américain",
-          "Déjeuner ou dîner : 40 000–50 000 Ar"
-        ],
-        "de": [
-          "Frühstück: 20.000 Ar kontinental, 25.000–30.000 Ar amerikanisch",
-          "Mittag- oder Abendessen: 40.000–50.000 Ar"
-        ],
-        "mg": [
-          "Sakafo maraina: 20 000 Ar kaontinantaly, 25 000–30 000 Ar amerikanina",
-          "Sakafo antoandro na hariva: 40 000–50 000 Ar"
-        ]
-      },
-      "features": {
-        "en": ["Waterfalls in the grounds", "Bar", "A swimming pool is nearly finished"],
-        "fr": ["Des cascades dans le domaine", "Bar", "Une piscine presque terminée"],
-        "de": ["Wasserfälle auf dem Gelände", "Bar", "Ein Schwimmbad ist fast fertig"],
-        "mg": ["Riandrano ao an-tokotany", "Bar", "Efa ho vita ny dobo filomanosana"]
-      },
-      "contact.note": {
-        "en": "The first two numbers are on WhatsApp. Also bookable on Hotels.com and Expedia.",
-        "fr": "Les deux premiers numéros sont sur WhatsApp. Réservable aussi sur Hotels.com et Expedia.",
-        "de": "Die ersten beiden Nummern sind auf WhatsApp. Auch über Hotels.com und Expedia buchbar.",
-        "mg": "Ao amin'ny WhatsApp ireo laharana roa voalohany. Azo amandrihana ihany koa amin'ny Hotels.com sy Expedia."
-      },
-      "gallery[].alt": {
-        "en": [
-          "Au Domnatur exterior",
-          "Restaurant at Au Domnatur",
-          "Room at Au Domnatur",
-          "Forest view from Au Domnatur",
-          "Nature view at Au Domnatur"
-        ],
-        "fr": [
-          "Au Domnatur : vue extérieure",
-          "Au Domnatur : le restaurant",
-          "Au Domnatur : une chambre",
-          "Au Domnatur : vue sur la forêt",
-          "Au Domnatur : la nature alentour"
-        ],
-        "de": [
-          "Au Domnatur: Außenansicht",
-          "Au Domnatur: das Restaurant",
-          "Au Domnatur: ein Zimmer",
-          "Au Domnatur: Blick auf den Wald",
-          "Au Domnatur: die Natur ringsum"
-        ],
-        "mg": [
-          "Au Domnatur: ny ivelany",
-          "Au Domnatur: ny trano fisakafoana",
-          "Au Domnatur: efitrano iray",
-          "Au Domnatur: fijery ny ala",
-          "Au Domnatur: ny zavaboary manodidina"
-        ]
-      }
-    },
     "hotel-thermal": {
       "desc": {
         "en": "Three-star hotel beside the thermal springs, run by Association Le Relais Madagascar. Twenty-one air-conditioned rooms (2 single, 7 twin, 12 double) with hot water, satellite TV, Wi-Fi and safes, a 60-seat restaurant terrace, and three private hot-spring tubs of its own, plus a spa, gym and bar.",
@@ -2754,41 +2647,6 @@ const LISTING_TRANSLATIONS = {
         "fr": "Aussi centrestsejour@gmail.com.",
         "de": "Auch centrestsejour@gmail.com.",
         "mg": "Misy koa centrestsejour@gmail.com."
-      }
-    },
-    "au-domnatur-restaurant": {
-      "name": {
-        "en": "Au Domnatur Restaurant",
-        "fr": "Restaurant Au Domnatur",
-        "de": "Restaurant Au Domnatur",
-        "mg": "Trano fisakafoan'ny Au Domnatur"
-      },
-      "desc": {
-        "en": "On-site restaurant at the forest-edge lodge 2 km above town, with canopy views from the dining terrace.",
-        "fr": "Le restaurant du lodge en lisière de forêt, 2 km au-dessus du village, avec vue sur la canopée depuis la terrasse.",
-        "de": "Das Restaurant der Lodge am Waldrand, 2 km oberhalb des Orts, mit Blick auf das Blätterdach von der Terrasse.",
-        "mg": "Trano fisakafoana ao amin'ilay lodge eo amoron'ny ala, 2 km ambonin'ny tanàna, manana fijery ny tampon'ny ala avy eo amin'ny terasy."
-      },
-      "highlights": {
-        "en": ["Canopy views", "Order ahead"],
-        "fr": ["Vue sur la canopée", "Commander à l’avance"],
-        "de": ["Blick auf das Blätterdach", "Vorher bestellen"],
-        "mg": ["Fijery ny tampon'ny ala", "Mandidia mialoha"]
-      },
-      "meals": {
-        "en": ["Breakfast: 20,000 Ar continental, 25,000–30,000 Ar American", "Lunch or dinner: 40,000–50,000 Ar"],
-        "fr": [
-          "Petit-déjeuner : 20 000 Ar continental, 25 000–30 000 Ar américain",
-          "Déjeuner ou dîner : 40 000–50 000 Ar"
-        ],
-        "de": [
-          "Frühstück: 20.000 Ar kontinental, 25.000–30.000 Ar amerikanisch",
-          "Mittag- oder Abendessen: 40.000–50.000 Ar"
-        ],
-        "mg": [
-          "Sakafo maraina: 20 000 Ar kaontinantaly, 25 000–30 000 Ar amerikanina",
-          "Sakafo antoandro na hariva: 40 000–50 000 Ar"
-        ]
       }
     },
     "cristo-bar-restaurant": {
@@ -6136,6 +5994,28 @@ const LISTING_TRANSLATIONS = {
         "mg": "Ny lanonana famadihana razana any afovoan-tany. Fotoana ara-pianakaviana manokana ireo — aza manatrika raha tsy tena nasaina."
       }
     },
+    "trail-ranomafana": {
+      "title": {
+        "en": "Trail Ranomafana",
+        "fr": "Trail Ranomafana",
+        "de": "Trail Ranomafana",
+        "mg": "Trail Ranomafana"
+      },
+      "dayBadge": { "en": "30", "fr": "30", "de": "30", "mg": "30" },
+      "monthBadge": { "en": "AUG", "fr": "AOÛT", "de": "AUG", "mg": "AOG" },
+      "whenLabel": {
+        "en": "Sunday 30 August 2026 · organised by PCDT-R",
+        "fr": "Dimanche 30 août 2026 · organisé par le PCDT-R",
+        "de": "Sonntag, 30. August 2026 · veranstaltet von PCDT-R",
+        "mg": "Alahady 30 Aogositra 2026 · karakarain'ny PCDT-R"
+      },
+      "desc": {
+        "en": "A 20 km trail through the forest and hills around Ranomafana for runners and walkers, organised by PCDT-R, the town's tourism platform. Held on 30 August 2026; the next date is still to be set. Photos and drone film further down this page.",
+        "fr": "Un trail de 20 km à travers la forêt et les collines autour de Ranomafana, pour coureurs et marcheurs, organisé par le PCDT-R, la plateforme touristique de la ville. Tenu le 30 août 2026 ; la prochaine date reste à fixer. Photos et film de drone plus bas sur cette page.",
+        "de": "Ein 20-km-Trail durch den Wald und die Hügel rund um Ranomafana für Läufer und Wanderer, veranstaltet von PCDT-R, der Tourismusplattform des Orts. Ausgetragen am 30. August 2026; der nächste Termin steht noch nicht fest. Fotos und Drohnenfilm weiter unten auf dieser Seite.",
+        "mg": "Trail 20 km mamakivaky ny ala sy ny havoana manodidina an'i Ranomafana, ho an'ny mpihazakazaka sy ny mpandeha an-tongotra, karakarain'ny PCDT-R, sehatra ara-pizahan-tany ao an-tanàna. Natao tamin'ny 30 Aogositra 2026; mbola tsy voafaritra ny daty manaraka. Misy sary sy sarimihetsika drône eo ambany amin'ity pejy ity."
+      }
+    },
     "world-lemur-festival": {
       "title": {
         "en": "World Lemur Festival",
@@ -6287,7 +6167,7 @@ const LISTING_TRANSLATIONS = {
           "## By coach, via Fianarantsoa",
           "Cotisse runs day and night coaches from Antananarivo to Fianarantsoa for 40,000 Ar; the drive takes about 12 hours. The daytime coach arrives after the last buses to Ranomafana, so stay the night (Zomatel and Hotel Vannie are close to the station) and take a regional taxi-brousse in the morning: 7,000 Ar, about two and a half hours.",
           "## Straight through the night",
-          "Soatrans’ 13:30 coach to Manakara (65,000 Ar) passes Ranomafana at around 03:00, and you can get off there. Staying at Setam Lodge, Forêt Australe, Au Domnatur or Karibotel? Ask to be dropped outside your hotel.",
+          "Soatrans’ 13:30 coach to Manakara (65,000 Ar) passes Ranomafana at around 03:00, and you can get off there. Staying at Setam Lodge, Forêt Australe or Karibotel? Ask to be dropped outside your hotel.",
           "## By car or by air",
           "A car and driver from Antananarivo costs roughly US$100–300 and takes about 12 hours, stopping where you like: Antsirabe and Ambositra are popular breaks. A charter flight to Fianarantsoa takes about an hour, booked through a travel agency."
         ],
@@ -6296,7 +6176,7 @@ const LISTING_TRANSLATIONS = {
           "## En car, via Fianarantsoa",
           "Cotisse assure des cars de jour et de nuit d’Antananarivo à Fianarantsoa pour 40 000 Ar ; le trajet dure environ 12 heures. Le car de jour arrive après les derniers bus pour Ranomafana : passez la nuit sur place (le Zomatel et l’Hôtel Vannie sont près de la gare) et prenez un taxi-brousse régional le matin : 7 000 Ar, environ deux heures et demie.",
           "## D’une traite, de nuit",
-          "Le car Soatrans de 13:30 pour Manakara (65 000 Ar) passe à Ranomafana vers 03:00, et vous pouvez y descendre. Vous logez au Setam Lodge, à Forêt Australe, à Au Domnatur ou au Karibotel ? Demandez à être déposé devant votre hôtel.",
+          "Le car Soatrans de 13:30 pour Manakara (65 000 Ar) passe à Ranomafana vers 03:00, et vous pouvez y descendre. Vous logez au Setam Lodge, à Forêt Australe ou au Karibotel ? Demandez à être déposé devant votre hôtel.",
           "## En voiture ou en avion",
           "Une voiture avec chauffeur depuis Antananarivo coûte environ 100 à 300 dollars américains et met environ 12 heures, avec des arrêts où vous voulez : Antsirabe et Ambositra sont des étapes appréciées. Un vol charter jusqu’à Fianarantsoa dure environ une heure, à réserver auprès d’une agence de voyages."
         ],
@@ -6305,7 +6185,7 @@ const LISTING_TRANSLATIONS = {
           "## Mit dem Reisebus über Fianarantsoa",
           "Cotisse fährt tagsüber und nachts von Antananarivo nach Fianarantsoa für 40.000 Ar; die Fahrt dauert etwa 12 Stunden. Der Tagesbus kommt erst nach den letzten Bussen nach Ranomafana an, also übernachten Sie dort (Zomatel und Hotel Vannie liegen nahe am Busbahnhof) und nehmen morgens ein regionales Taxi-Brousse: 7.000 Ar, etwa zweieinhalb Stunden.",
           "## Durch die Nacht",
-          "Der Soatrans-Bus nach Manakara um 13:30 (65.000 Ar) kommt gegen 03:00 durch Ranomafana, und Sie können dort aussteigen. Sie wohnen in der Setam Lodge, in Forêt Australe, im Au Domnatur oder im Karibotel? Lassen Sie sich direkt vor Ihrem Hotel absetzen.",
+          "Der Soatrans-Bus nach Manakara um 13:30 (65.000 Ar) kommt gegen 03:00 durch Ranomafana, und Sie können dort aussteigen. Sie wohnen in der Setam Lodge, in Forêt Australe oder im Karibotel? Lassen Sie sich direkt vor Ihrem Hotel absetzen.",
           "## Mit dem Auto oder dem Flugzeug",
           "Ein Auto mit Fahrer ab Antananarivo kostet etwa 100–300 US-Dollar und braucht rund 12 Stunden, mit Stopps, wo Sie möchten: Antsirabe und Ambositra sind beliebte Pausen. Ein Charterflug nach Fianarantsoa dauert etwa eine Stunde und wird über ein Reisebüro gebucht."
         ],
@@ -6314,7 +6194,7 @@ const LISTING_TRANSLATIONS = {
           "## Amin'ny fiara fitateram-bahoaka, mandalo an'i Fianarantsoa",
           "Ny Cotisse dia manana fiara mandeha antoandro sy alina avy any Antananarivo mankany Fianarantsoa amin'ny 40 000 Ar; adiny 12 eo ho eo ny dia. Tonga aorian'ny fiara farany mankany Ranomafana ilay fiara antoandro, ka matory any (akaikin'ny fiantsonana ny Zomatel sy ny Hotel Vannie) ary mandehana taxi-brousse amin'ny maraina: 7 000 Ar, adiny roa sy sasany eo ho eo.",
           "## Mivantana mandritra ny alina",
-          "Ny fiaran'ny Soatrans mankany Manakara amin'ny 13:30 (65 000 Ar) dia mandalo an'i Ranomafana amin'ny 03:00 eo ho eo, ary afaka midina eo ianao. Matory ao Setam Lodge, Forêt Australe, Au Domnatur na Karibotel ve ianao? Angataho ny hampidinana anao eo anoloan'ny hotelinao.",
+          "Ny fiaran'ny Soatrans mankany Manakara amin'ny 13:30 (65 000 Ar) dia mandalo an'i Ranomafana amin'ny 03:00 eo ho eo, ary afaka midina eo ianao. Matory ao Setam Lodge, Forêt Australe na Karibotel ve ianao? Angataho ny hampidinana anao eo anoloan'ny hotelinao.",
           "## Amin'ny fiara na amin'ny fiaramanidina",
           "Ny fiara miaraka amin'ny mpamily avy any Antananarivo dia mitentina 100–300 dolara amerikanina eo ho eo ary adiny 12 eo ho eo, mijanona amin'izay tianao: tian'ny maro ny mijanona any Antsirabe sy Ambositra. Adiny iray eo ho eo ny sidina manokana mankany Fianarantsoa, amandrihana amin'ny alalan'ny masoivoho fitsangatsanganana."
         ]

@@ -612,10 +612,10 @@ listings — was written without a native speaker and should be checked by one.
 
 ## Current state
 
-24 stays · 17 restaurants · 18 things to do · 7 itineraries · 8 events · 10 blog
+23 stays · 16 restaurants · 18 things to do · 7 itineraries · 9 events · 10 blog
 seeds. **Birdwatching** (`do`, slug `birdwatching`, 23 Oct 2026) is built only from
 facts on the park listing (125 species, Vohiparara, the specialist guide fee): when
-the park's guide fees change in January 2027, change its `price` too. All 24 stays are verified, against published sources or on Kyle's
+the park's guide fees change in January 2027, change its `price` too. All 23 stays are verified, against published sources or on Kyle's
 authority. The whole site — interface, page text and listings — is in English,
 French, German and Malagasy (since 12 Oct 2026).
 
@@ -849,6 +849,24 @@ Kyle the same day, on both listings, replacing the figures from his notes of 11 
 Whether the board prices are per person is not stated, so the site doesn't say. Details in
 section 7 of `PHOTO-AND-DATA-GAPS.md`.
 
+Kyle's **Trail Ranomafana** photos and drone footage, 16 Nov 2026 (a 20 km trail held by
+PCDT-R on Sunday 30 Aug 2026; facts only from its banners):
+- **About Ranomafana:** a drone still of the village is the page's banner photo
+  (`ranomafana-village-aerial.jpg`); it and two more stills are in `TOWN_PHOTOS` (nine
+  now; on phones a lone last tile spans the row), and a 40-second silent film,
+  `videos/ranomafana-from-the-air.mp4`, follows them.
+- **Events calendar:** an `eventData` row (`trail-ranomafana`, `verified: false` until
+  the next date is known, so it stays off the home page and When to visit) and, under the
+  calendar, a "Trail Ranomafana" section: `videos/trail-ranomafana-2026.mp4` (47 s,
+  silent) and six photos in `TRAIL_PHOTOS` (`renderTrailPhotos()`), which also join the
+  Photo gallery under Village & culture, linked to `#events`.
+- Both films are 960 px, made by ffmpeg (installed through winget) from the drone clips,
+  `preload="none"`, class `film-wide` (16:9). Drone clip 0014 is left out on purpose: its
+  file name says to cut someone relieving themself out of it. Don't use it.
+- Photo originals are in `photo-originals/2026-08-30 Trail Ranomafana/`; the film
+  originals (about 1 GB) are not in the repo. Questions for Kyle are in section 7 of
+  `PHOTO-AND-DATA-GAPS.md`.
+
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide
 fees from **January 2027** (120,000 / 150,000 / 180,000 Ar, specialists 250,000 Ar),
@@ -902,10 +920,10 @@ recommendations"):
   weekly events; the two unconfirmed weekly ones stay on What's on, with their note.
   The World Lemur Festival's `date` is 2026-10-30: after the festival, set next
   year's date (the last Friday of October) or it drops off the home page.
-- **WhatsApp:** `contact.whatsapp` on Setam Lodge, Au Domnatur (the two numbers its
-  note names) and Kambana, from their own notes. Add others only on the business's
-  word.
-- **Park-gate distances:** `toGate` on 23 stays (not Soa Lodge, which is not on
+- **WhatsApp:** `contact.whatsapp` on Setam Lodge and Kambana, from their own notes.
+  Add others only on the business's word. (Au Domnatur, hotel and restaurant, was
+  removed from the site at Kyle's request, 16 Nov 2026; don't add it back.)
+- **Park-gate distances:** `toGate` on 22 stays (not Soa Lodge, which is not on
   OpenStreetMap), measured by OpenStreetMap routing to the park reception
   (-21.25625, 47.42129). By road the village centre is about 5.8 km from the gate;
   the site's "6.5 km" and "about 7 km" (MNP and Kyle's notes) were left as they are.

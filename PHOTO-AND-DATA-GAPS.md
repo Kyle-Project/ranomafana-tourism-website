@@ -28,7 +28,7 @@ stated. Please check these:
 | 10 | **Grenat Hotel contacts** | +261 34 12 780 84 · legrenatran@gmail.com | +261 34 20 622 88 · hotelgrenat@gmail.com | Your number first, the old one second; your email only |
 | 11 | **Ihary Hotel** | three mobiles, iharyhotel@gmail.com, hot water | landline only; reviews said cold showers; earlier sources mention a pool | All four numbers, your email, hot water ✓. Is the pool still there? |
 | 12 | **Chez Gaspard email** | hotelchezgaspard@gmail.com, +261 32 01 115 15 | bungalow@hotelchezgaspard.com, +261 38 02 115 02 | Your email; all four numbers |
-| 13 | **Au Domnatur** | two WhatsApp numbers, **audomnaturr**@gmail.com (double r) | +261 32 42 952 37 | All three numbers; email as you spelled it. Is the double r right? |
+| 13 | **Au Domnatur** | two WhatsApp numbers, **audomnaturr**@gmail.com (double r) | +261 32 42 952 37 | The hotel and its restaurant were taken off the site at Kyle's request, 16 Nov 2026 |
 | 14 | **Hotel Manja** | three phones marked "(Check all)", www.hotelmanja.mg | no phone, manjahotel.com | Your three phones (the hotel's menu cover lists the same three, 4 Nov 2026). hotelmanja.mg does not exist online, so manjahotel.com stays |
 | 15 | **Forêt Australe website** | groupeaustralhotel.com and a subdomain | none | Neither address exists online, so no website is linked |
 | 16 | **Hotel Thermal email** | thermal@leralais.mg | thermal@lerelais.mg (FHORM) | Read as a typo; lerelais kept |
@@ -231,8 +231,8 @@ been removed — the charge exists but isn't published anywhere.
   other listings now rate higher.)*
 - **Varibolo**: +261 34 90 823 03, inflatable Sea Eagle kayaks, 2–3 hour guided
   tours with all equipment, guides speaking English, French and Malagasy.
-- **Au Domnatur** was formerly **Domaine Nature** — noted in the listing so the two
-  names don't get filed as separate properties.
+- **Au Domnatur** (formerly **Domaine Nature**): the hotel and its restaurant were
+  taken off the site at Kyle's request, 16 Nov 2026.
 
 ---
 
@@ -750,6 +750,38 @@ Frontage · dining room · a signature dish.
 **Cascade Andriamamovoka**, which is the
 marquee landscape image for the whole site.
 
+### Trail Ranomafana photos and drone footage (sent 16 Nov 2026)
+
+`PHOTO.VIDEO TRAIL (small).zip`: 9 drone photos, 9 drone films (no sound), 5 phone photos
+and 6 short phone clips from Trail Ranomafana, 30 Aug 2026. What went on the site:
+
+- **About Ranomafana:** a drone still of the village and the Namorona is the page's
+  banner photo (`ranomafana-village-aerial.jpg`), and it plus two more stills
+  (`…-aerial-street.jpg`, `ranomafana-rn25-river-aerial.jpg`) join "The village and the
+  valley" (now nine). Under them, a 40-second film, "Ranomafana from the air"
+  (`videos/ranomafana-from-the-air.mp4`, 3.3 MB).
+- **Events calendar:** Trail Ranomafana is in What's on (details unconfirmed, because
+  the next date isn't known), and below the calendar a "Trail Ranomafana" section has a
+  47-second drone film (`videos/trail-ranomafana-2026.mp4`, 6.5 MB) and six photos. The
+  six also appear in the Photo gallery under Village & culture.
+- **Left out:** drone clip 0014 (its file name says to cut out someone relieving
+  themself; the whole clip was left out rather than trimmed), the six phone clips (small,
+  upright and short), the arrival photo with oranges (very like the valley photo), and the
+  other seven drone photos (all of the same start line, from slightly different angles).
+  The photo originals are in `photo-originals/2026-08-30 Trail Ranomafana/`. The films'
+  originals (about 1 GB) are not: they are too big for GitHub. Keep the zip somewhere
+  outside the website folder.
+
+**To check, Kyle:**
+- The text uses only what the banners say: the name, 20 km, PCDT-R and the motto
+  "Ensemble, vivons l'aventure !". It says "runners and walkers": correct it if it was
+  only a race. Does it run every year? If so, give next year's date and it moves onto
+  the home page and When to visit.
+- The photos show participants' faces (and the mayor's cap). Fine to show?
+- Where was the start, and was the PCDT-R tent the finish? The site doesn't say yet.
+- The village descriptions call the river by the RN25 in town the Namorona. The
+  third still (river over rocks beside the road) doesn't name where it is.
+
 ### Photos you can get without a camera
 
 Some slots are of public wildlife and landscape, not businesses — the lemurs, the
@@ -836,9 +868,9 @@ the site wherever the facts were already known. These need you or a partner:
   Wednesday Centre ValBio talks still run? Until confirmed they show only on What's
   on.
 - **Distances.** Soa Lodge is the one stay with no "km to the park gate": where is
-  it? The other 24 were measured on OpenStreetMap (the village centre is about
+  it? The other 22 were measured on OpenStreetMap (the village centre is about
   5.8 km from the gate by road).
-- **WhatsApp.** Only Setam Lodge, Au Domnatur and Kambana have a WhatsApp button,
+- **WhatsApp.** Only Setam Lodge and Kambana have a WhatsApp button,
   from their own notes. Ask the others which number takes WhatsApp.
 - **World Lemur Festival.** After 30 October, tell me the 2027 date (the last Friday
   of October is 29 October 2027) and anything about the programme.

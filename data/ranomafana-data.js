@@ -224,38 +224,6 @@ const stayData = [
     contact: { phone: "+261 34 16 391 74", email: "austhotel@moov.mg", website: "", social: "https://www.facebook.com/p/For%C3%AAt-Australe-61553678471858/", note: "Also austhotel309@gmail.com." }
   },
   {
-    slug: "au-domnatur",
-    name: "Au Domnatur",
-    type: "eco",
-    price: "120,000–210,000 Ar / night",
-    toGate: 4,
-    rating: "3.3 (Tripadvisor, 77 reviews)",
-    img: "images/au-domnatur-exterior.webp",
-    wifi: true, hotWater: true, restaurant: true, parking: true,
-    wifiNote: "In the restaurant",
-    verified: true,
-    asOf: "2026-10",
-    sourceNote: "Formerly trading as Domaine Nature — the two names are the same property, not separate listings. Rates, meals, amenities, both WhatsApp numbers and the email from Kyle's notes (received 11 Oct 2026); the email is spelled there with a double r ('audomnaturr'). +261 32 42 952 37 was listed before his notes and is kept as a third number. The earlier 'from about €40' rate is replaced.",
-    desc: "Quiet nature lodge 2 km above Ranomafana, with comfortable bungalows and rooms amid lush vegetation, canopy views, waterfalls in the grounds, a bar and an on-site restaurant. Previously known as Domaine Nature.",
-    rooms: [
-      { type: "Single", price: "120,000–140,000 Ar" },
-      { type: "Double", price: "160,000–180,000 Ar" },
-      { type: "Double suite", price: "180,000–210,000 Ar" },
-      { type: "Family (1 double + 1 single bed)", price: "160,000–190,000 Ar" },
-      { type: "Family (1 double + 2 single beds)", price: "180,000–210,000 Ar" }
-    ],
-    meals: ["Breakfast: 20,000 Ar continental, 25,000–30,000 Ar American", "Lunch or dinner: 40,000–50,000 Ar"],
-    features: ["Waterfalls in the grounds", "Bar", "A swimming pool is nearly finished"],
-    gallery: [
-      { src: "images/au-domnatur-exterior.webp", alt: "Au Domnatur exterior" },
-      { src: "images/au-domnatur-restaurant.webp", alt: "Restaurant at Au Domnatur" },
-      { src: "images/au-domnatur-room.jpg", alt: "Room at Au Domnatur" },
-      { src: "images/au-domnatur-view.jpg", alt: "Forest view from Au Domnatur" },
-      { src: "images/au-domnatur-view-2.jpg", alt: "Nature view at Au Domnatur" }
-    ],
-    contact: { phone: "+261 34 41 846 32 / +261 32 03 611 19 / +261 32 42 952 37", whatsapp: "+261 34 41 846 32 / +261 32 03 611 19", email: "audomnaturr@gmail.com", website: "", social: "https://www.facebook.com/p/H%C3%B4tel-Au-Domnatur-Ranomafana-100005913759576/", note: "The first two numbers are on WhatsApp. Also bookable on Hotels.com and Expedia." }
-  },
-  {
     slug: "hotel-thermal",
     name: "Hotel Thermal",
     type: "hotel",
@@ -1021,19 +989,6 @@ const eatData = [
     highlights: ["Malagasy and French menu", "Lounge bar", "Village entrance"],
     meals: ["Breakfast: 40,000 Ar continental, 45,000 Ar American", "Lunch or dinner: from 35,000 Ar"],
     contact: { phone: "+261 38 60 594 02 / +261 34 16 524 33", whatsapp: "+33 7 88 68 49 25", email: "contact@centrest-sejour.com", website: "", social: "https://www.facebook.com/profile.php?id=61579310794179", note: "Also centrestsejour@gmail.com." }
-  },
-  {
-    slug: "au-domnatur-restaurant",
-    name: "Au Domnatur Restaurant",
-    type: "malagasy",
-    rating: "3.3 (Tripadvisor, 77 reviews)",
-    price: "$$",
-    img: "images/au-domnatur-restaurant.webp",
-    verified: true,
-    desc: "On-site restaurant at the forest-edge lodge 2 km above town, with canopy views from the dining terrace.",
-    highlights: ["Canopy views", "Order ahead"],
-    meals: ["Breakfast: 20,000 Ar continental, 25,000–30,000 Ar American", "Lunch or dinner: 40,000–50,000 Ar"],
-    contact: { phone: "+261 34 41 846 32 / +261 32 03 611 19 / +261 32 42 952 37", email: "audomnaturr@gmail.com", website: "", social: "https://www.facebook.com/p/H%C3%B4tel-Au-Domnatur-Ranomafana-100005913759576/" }
   },
   {
     slug: "cristo-bar-restaurant",
@@ -2047,6 +2002,22 @@ const eventData = [
     date: null
   },
   {
+    // From the banners in Kyle's photos and drone footage of the day (sent 16 Nov 2026):
+    // "Trail Ranomafana", 20 km, PCDT-R. Whether it runs again, and when, is not known yet,
+    // so it is verified: false and stays off the home page and When to visit. Its date has
+    // passed, so What's on shows it as "August 2027 · exact date to be confirmed".
+    slug: "trail-ranomafana",
+    title: "Trail Ranomafana",
+    dayBadge: "30",
+    monthBadge: "AUG",
+    whenLabel: "Sunday 30 August 2026 · organised by PCDT-R",
+    recurring: true,
+    months: [8],
+    verified: false,
+    desc: "A 20 km trail through the forest and hills around Ranomafana for runners and walkers, organised by PCDT-R, the town's tourism platform. Held on 30 August 2026; the next date is still to be set. Photos and drone film further down this page.",
+    date: "2026-08-30"
+  },
+  {
     slug: "world-lemur-festival",
     title: "World Lemur Festival",
     dayBadge: "30",
@@ -2112,7 +2083,7 @@ const blogData = [
       "## By coach, via Fianarantsoa",
       "Cotisse runs day and night coaches from Antananarivo to Fianarantsoa for 40,000 Ar; the drive takes about 12 hours. The daytime coach arrives after the last buses to Ranomafana, so stay the night (Zomatel and Hotel Vannie are close to the station) and take a regional taxi-brousse in the morning: 7,000 Ar, about two and a half hours.",
       "## Straight through the night",
-      "Soatrans’ 13:30 coach to Manakara (65,000 Ar) passes Ranomafana at around 03:00, and you can get off there. Staying at Setam Lodge, Forêt Australe, Au Domnatur or Karibotel? Ask to be dropped outside your hotel.",
+      "Soatrans’ 13:30 coach to Manakara (65,000 Ar) passes Ranomafana at around 03:00, and you can get off there. Staying at Setam Lodge, Forêt Australe or Karibotel? Ask to be dropped outside your hotel.",
       "## By car or by air",
       "A car and driver from Antananarivo costs roughly US$100–300 and takes about 12 hours, stopping where you like: Antsirabe and Ambositra are popular breaks. A charter flight to Fianarantsoa takes about an hour, booked through a travel agency."
     ]
