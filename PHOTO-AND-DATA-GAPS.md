@@ -784,6 +784,25 @@ and 6 short phone clips from Trail Ranomafana, 30 Aug 2026. What went on the sit
 - The village descriptions call the river by the RN25 in town the Namorona. The
   third still (river over rocks beside the road) doesn't name where it is.
 
+### Sahamalaotra circuit photos (sent 16 Nov 2026)
+
+Eleven photos, for the birdwatching circuit. Nine are on the Birdwatching page under
+"The Sahamalaotra circuit": the welcome sign, the fauna and flora signs at the car park,
+two flights of steps, the wooden footbridge, a visitor hugging a tree, the toilets and
+the road. They also appear in the Photo gallery under Forest & wildlife. Resized to
+1600 px (`images/sahamalaotra-*.jpg`). The section's text, the birds, lemurs and plants
+listed under the photos, and the park listing's Sahamalaotra circuit text use only what
+the signs and photos show, plus the length and guide fee the site already had.
+
+- **Left out:** the car park with both signs (they are shown close up, and it shows a
+  number plate), and the bird on its nest (already on the site since 1 Nov 2026).
+
+**To check, Kyle:**
+- Is she happy to be on the site (the woman hugging the tree)? Her name isn't given.
+- Is the road photo near Sahamalaotra? Its description doesn't say where it is.
+- The site now calls Sahamalaotra the short birding circuit and Vohiparara the long
+  one. Are they two different places, or is Sahamalaotra the entrance to Vohiparara?
+
 ### Photos you can get without a camera
 
 Some slots are of public wildlife and landscape, not businesses — the lemurs, the

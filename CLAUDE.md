@@ -877,6 +877,18 @@ PCDT-R on Sunday 30 Aug 2026; facts only from its banners):
   was not recorded. When the date is set, put it in the event's `date` and badges, and
   in the listing's `duration`, in all four languages.
 
+Kyle's **Sahamalaotra circuit** photos, 16 Nov 2026 ("integrate these photos and
+information into the birdwatching circuit"): the Birdwatching page has a new section,
+"The Sahamalaotra circuit", between "Why birders come here" and "How to go birding",
+with nine photos (`CIRCUIT_PHOTOS`, `renderCircuitPhotos()`; they join the Photo
+gallery under Forest & wildlife, linked to `#birdwatching`) and the birds, lemurs and
+plants painted on the two signs at its car park, by their scientific names as on the signs.
+Step 3 is now "Walk Sahamalaotra or Vohiparara" (short and long), and the park listing's
+Sahamalaotra circuit text mentions the car park, toilets, signs and stone steps. Left out:
+a car-park photo and a repeat of the bird on its nest. Questions for Kyle (the visitor
+in the tree photo, where the road is, Sahamalaotra and Vohiparara) are in section 7 of
+`PHOTO-AND-DATA-GAPS.md`.
+
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide
 fees from **January 2027** (120,000 / 150,000 / 180,000 Ar, specialists 250,000 Ar),

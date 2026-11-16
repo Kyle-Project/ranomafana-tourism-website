@@ -3308,7 +3308,7 @@ const LISTING_TRANSLATIONS = {
             "name": "Sahamalaotra",
             "duration": "About 2 hours",
             "level": "Easy",
-            "desc": "A short circuit with its own entrance at Sahamalaotra, priced the same as Talatakely."
+            "desc": "A short circuit with its own entrance at Sahamalaotra, by the road, priced the same as Talatakely. A car park and toilets sit at the start, with signs listing the birds, lemurs and plants to look for, and the path climbs on stone steps under tree ferns. A good short walk for birders."
           },
           {
             "name": "Vatoharanana",
@@ -3340,7 +3340,7 @@ const LISTING_TRANSLATIONS = {
             "name": "Sahamalaotra",
             "duration": "Environ 2 heures",
             "level": "Facile",
-            "desc": "Un circuit court avec sa propre entrée à Sahamalaotra, au même prix que Talatakely."
+            "desc": "Un circuit court avec sa propre entrée à Sahamalaotra, au bord de la route, au même prix que Talatakely. Au départ, un parking, des toilettes et des panneaux qui listent les oiseaux, les lémuriens et les plantes à chercher ; le sentier monte par des marches de pierre sous les fougères arborescentes. Une bonne courte balade pour les ornithologues."
           },
           {
             "name": "Vatoharanana",
@@ -3372,7 +3372,7 @@ const LISTING_TRANSLATIONS = {
             "name": "Sahamalaotra",
             "duration": "Etwa 2 Stunden",
             "level": "Leicht",
-            "desc": "Ein kurzer Rundweg mit eigenem Eingang in Sahamalaotra, zum selben Preis wie Talatakely."
+            "desc": "Ein kurzer Rundweg mit eigenem Eingang in Sahamalaotra, an der Straße, zum selben Preis wie Talatakely. Am Start gibt es einen Parkplatz, Toiletten und Schilder mit den Vögeln, Lemuren und Pflanzen, nach denen man Ausschau halten kann; der Pfad steigt über Steinstufen unter Baumfarnen an. Ein guter kurzer Weg für Vogelkundler."
           },
           {
             "name": "Vatoharanana",
@@ -3404,7 +3404,7 @@ const LISTING_TRANSLATIONS = {
             "name": "Sahamalaotra",
             "duration": "Adiny 2 eo ho eo",
             "level": "Mora",
-            "desc": "Lalana fohy manana fidirana manokana ao Sahamalaotra, mitovy vidy amin'ny Talatakely."
+            "desc": "Lalana fohy manana fidirana manokana ao Sahamalaotra, eo amoron-dalana, mitovy vidy amin'ny Talatakely. Eo am-piandohana dia misy fijanonan'ny fiara, trano fivoahana ary takelaka milaza ireo vorona, varika ary zava-maniry tokony hojerena; miakatra amin'ny tohatra vato ambanin'ny fanjana ny lalana. Lalana fohy tsara ho an'ny mpijery vorona."
           },
           {
             "name": "Vatoharanana",
