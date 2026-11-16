@@ -32,8 +32,7 @@
                   wifiNote    where the Wi-Fi reaches ("In the restaurant")
                   toGate      km to the park gate by road, rounded to 0.5 km.
                               Measured 23 Oct 2026 with OpenStreetMap routing from
-                              the listing's place on OpenStreetMap (Minerva: from
-                              Centrest, opposite; Kambana: from Tsararano hamlet;
+                              the listing's place on OpenStreetMap (Kambana: from Tsararano hamlet;
                               Forêt Australe: from Ambatolahy). Shown in the pop-up
                               and used by the "Nearest the park" sort.
                 contact.whatsapp   the number(s) the owner says take WhatsApp,
@@ -510,27 +509,6 @@ const stayData = [
     contact: { phone: "+261 33 15 279 90 / +261 32 02 279 90", email: "soa_guesthouse@outlook.com", website: "", social: "", note: "Wi-Fi can be intermittent." }
   },
   {
-    slug: "minerva-apart",
-    name: "Minerva Apart",
-    type: "guest",
-    price: "About 160,000 Ar ($35) / night",
-    toGate: 5.5,
-    rating: "9.0/10 (Booking.com, 36 reviews)",
-    img: "images/placeholder-minerva-apart.jpg",
-    wifi: true, hotWater: true, restaurant: false, parking: false,
-    verified: true,
-    photoNeeded: true,
-    sourceNote: "Confirmed to exist — trades as 'Minerva Apart', formerly Chez Minerva. On the RN25 opposite Hôtel Centrest. The Ariary price is Booking.com's $35 at the XE rate of 23 Oct 2026, rounded.",
-    gallery: [
-      { src: "images/minerva-apart-exterior.jpg", fallback: "images/placeholder-minerva-apart.jpg", alt: "Minerva Apart exterior" },
-      { src: "images/minerva-apart-room.jpg", fallback: "images/placeholder-minerva-apart.jpg", alt: "Room at Minerva Apart" },
-      { src: "images/minerva-apart-restaurant.jpg", fallback: "images/placeholder-minerva-apart.jpg", alt: "Restaurant or common area at Minerva Apart" },
-      { src: "images/minerva-apart-view.jpg", fallback: "images/placeholder-minerva-apart.jpg", alt: "View from Minerva Apart" }
-    ],
-    desc: "Spacious 50 m² self-catering apartments on the RN25 opposite Centrest, with private entrances, balconies, kitchenettes and garden or mountain views. The owner, Jeannot, arranges guides and park transport. Cash only.",
-    contact: { phone: "", email: "", website: "", social: "", note: "Book via Booking.com. Check-in 13:00, check-out 11:00. Cash payment only; pets by prior arrangement." }
-  },
-  {
     slug: "la-palmeraie",
     name: "La Palmeraie",
     type: "guest",
@@ -558,16 +536,16 @@ const stayData = [
     price: "80,000–100,000 Ar / night",
     toGate: 6.5,
     rating: "3.2 (Tripadvisor, 114 reviews)",
-    img: "images/manja-hotel-view.jpg",
+    img: "images/manja-hotel-bungalows.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the restaurant",
     verified: true,
     asOf: "2026-11",
     sourceNote: "Website manjahotel.com confirmed earlier. Room rates from the hotel's own sheet for 2026 (Kyle's photo, 4 Nov 2026; its Standard bungalow double reads '80 000 +Ar', taken as 80,000 Ar), replacing the 70,000–90,000 Ar in his notes of 11 Oct 2026. Meal and drink prices, restaurant hours and the room and night-walk rules from the hotel's undated menus and notice, same photos (copies in photo-originals/2026-11-04 Hotel Manja/); the 8,000 Ar breakfast is still from his notes, as the photos show only the Malagasy breakfast sheet. The menu cover lists the same three phones as his notes, plus otelmanja@gmail.com beside hotelmanja@gmail.com. His notes give www.hotelmanja.mg as the website, but that address did not resolve when checked on 11 Oct 2026, so manjahotel.com stays. '4 km from the park' was dropped on 23 Oct 2026: by road it is about 6.5 km (OpenStreetMap routing). Photos: Kyle, 4 Nov 2026 (10 of 17; the Wi-Fi password card in the bar photo is blurred).",
     gallery: [
+      { src: "images/manja-hotel-bungalows.jpg", alt: "A row of white bungalows with tin roofs at Manja Hotel" },
       { src: "images/manja-hotel-view.jpg", alt: "Red-leaved shrubs in the garden at Manja Hotel, with green hills across the valley" },
       { src: "images/manja-hotel-exterior.jpg", alt: "The Hotel Manja sign and the restaurant terrace behind yellow trumpet flowers" },
-      { src: "images/manja-hotel-bungalows.jpg", alt: "A row of white bungalows with tin roofs at Manja Hotel" },
       { src: "images/manja-hotel-room-block.jpg", alt: "The two-storey block of rooms and its outside staircase at Manja Hotel" },
       { src: "images/manja-hotel-room.jpg", alt: "A room with a large bed and a mosquito net at Manja Hotel" },
       { src: "images/manja-hotel-room-twin.jpg", alt: "A room with two beds, mosquito nets and a wall fan at Manja Hotel" },

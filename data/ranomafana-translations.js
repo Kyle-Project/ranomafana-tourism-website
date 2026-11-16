@@ -1258,52 +1258,6 @@ const LISTING_TRANSLATIONS = {
         ]
       }
     },
-    "minerva-apart": {
-      "desc": {
-        "en": "Spacious 50 m² self-catering apartments on the RN25 opposite Centrest, with private entrances, balconies, kitchenettes and garden or mountain views. The owner, Jeannot, arranges guides and park transport. Cash only.",
-        "fr": "Appartements spacieux de 50 m² avec cuisine, sur la RN25 en face du Centrest, avec entrée privée, balcon, kitchenette et vue sur le jardin ou la montagne. Le propriétaire, Jeannot, organise guides et transport vers le parc. Espèces uniquement.",
-        "de": "Geräumige Ferienwohnungen mit 50 m² an der RN25 gegenüber dem Centrest, mit eigenem Eingang, Balkon, Kochnische und Blick auf Garten oder Berge. Der Besitzer Jeannot vermittelt Guides und Transport zum Park. Nur Barzahlung.",
-        "mg": "Trano fonenana malalaka 50 m² misy lakozia, eo amin'ny RN25 tandrifin'ny Centrest, misy varavarana fidirana manokana, lavarangana, lakozia kely ary fijery ny zaridaina na ny tendrombohitra. Ny tompony, Jeannot, no mikarakara mpitari-dalana sy fitaterana mankany amin'ny valan-javaboahary. Vola an-tanana ihany no raisina."
-      },
-      "price": {
-        "en": "About 160,000 Ar ($35) / night",
-        "fr": "Environ 160 000 Ar (35 $) / nuit",
-        "de": "Etwa 160.000 Ar (35 $) / Nacht",
-        "mg": "Manodidina ny 160 000 Ar (35 $) / alina"
-      },
-      "contact.note": {
-        "en": "Book via Booking.com. Check-in 13:00, check-out 11:00. Cash payment only; pets by prior arrangement.",
-        "fr": "Réservation sur Booking.com. Arrivée à 13:00, départ à 11:00. Paiement en espèces uniquement ; animaux sur accord préalable.",
-        "de": "Buchung über Booking.com. Check-in 13:00, Check-out 11:00. Nur Barzahlung; Haustiere nach Absprache.",
-        "mg": "Famandrihana amin'ny Booking.com. Fidirana 13:00, fivoahana 11:00. Vola an-tanana ihany; biby fiompy raha nifanarahana mialoha."
-      },
-      "gallery[].alt": {
-        "en": [
-          "Minerva Apart exterior",
-          "Room at Minerva Apart",
-          "Restaurant or common area at Minerva Apart",
-          "View from Minerva Apart"
-        ],
-        "fr": [
-          "Minerva Apart : vue extérieure",
-          "Minerva Apart : une chambre",
-          "Minerva Apart : restaurant ou espace commun",
-          "Minerva Apart : la vue"
-        ],
-        "de": [
-          "Minerva Apart: Außenansicht",
-          "Minerva Apart: ein Zimmer",
-          "Minerva Apart: Restaurant oder Gemeinschaftsbereich",
-          "Minerva Apart: die Aussicht"
-        ],
-        "mg": [
-          "Minerva Apart: ny ivelany",
-          "Minerva Apart: efitrano iray",
-          "Minerva Apart: trano fisakafoana na toerana iombonana",
-          "Minerva Apart: ny fijery"
-        ]
-      }
-    },
     "la-palmeraie": {
       "desc": {
         "en": "Six budget rooms with shared toilets in the middle of the village, behind the market. Mosquito nets, outdoor hot showers, European-style toilets and a night watchman. A restaurant sits across the street.",
@@ -1485,9 +1439,9 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
+          "A row of white bungalows with tin roofs at Manja Hotel",
           "Red-leaved shrubs in the garden at Manja Hotel, with green hills across the valley",
           "The Hotel Manja sign and the restaurant terrace behind yellow trumpet flowers",
-          "A row of white bungalows with tin roofs at Manja Hotel",
           "The two-storey block of rooms and its outside staircase at Manja Hotel",
           "A room with a large bed and a mosquito net at Manja Hotel",
           "A room with two beds, mosquito nets and a wall fan at Manja Hotel",
@@ -1497,9 +1451,9 @@ const LISTING_TRANSLATIONS = {
           "The wooden bar at Manja Hotel"
         ],
         "fr": [
+          "Manja Hotel : une rangée de bungalows blancs aux toits de tôle",
           "Manja Hotel : des arbustes aux feuilles rouges dans le jardin, et des collines vertes de l’autre côté de la vallée",
           "Manja Hotel : l’enseigne et la terrasse du restaurant derrière des fleurs jaunes en trompette",
-          "Manja Hotel : une rangée de bungalows blancs aux toits de tôle",
           "Manja Hotel : le bâtiment de chambres à un étage et son escalier extérieur",
           "Manja Hotel : une chambre avec un grand lit et une moustiquaire",
           "Manja Hotel : une chambre à deux lits, avec moustiquaires et ventilateur mural",
@@ -1509,9 +1463,9 @@ const LISTING_TRANSLATIONS = {
           "Manja Hotel : le bar en bois"
         ],
         "de": [
+          "Manja Hotel: eine Reihe weißer Bungalows mit Blechdächern",
           "Manja Hotel: Sträucher mit roten Blättern im Garten, grüne Hügel jenseits des Tals",
           "Manja Hotel: das Schild und die Restaurantterrasse hinter gelben Trompetenblüten",
-          "Manja Hotel: eine Reihe weißer Bungalows mit Blechdächern",
           "Manja Hotel: das zweistöckige Zimmergebäude mit seiner Außentreppe",
           "Manja Hotel: ein Zimmer mit großem Bett und Moskitonetz",
           "Manja Hotel: ein Zimmer mit zwei Betten, Moskitonetzen und Wandventilator",
@@ -1521,9 +1475,9 @@ const LISTING_TRANSLATIONS = {
           "Manja Hotel: die Holzbar"
         ],
         "mg": [
+          "Manja Hotel: bungalow fotsy mifanesy misy tafo vy",
           "Manja Hotel: zavamaniry mena ravina ao amin'ny zaridaina, ary havoana maitso any ampitan'ny lohasaha",
           "Manja Hotel: ny takelaka sy ny terasin'ny trano fisakafoana ao ambadiky ny voninkazo mavo",
-          "Manja Hotel: bungalow fotsy mifanesy misy tafo vy",
           "Manja Hotel: ny trano misy efitrano roa rihana sy ny tohatra ivelany",
           "Manja Hotel: efitrano misy fandriana lehibe sy lay moka",
           "Manja Hotel: efitrano misy fandriana roa, lay moka ary vantilatera amin'ny rindrina",

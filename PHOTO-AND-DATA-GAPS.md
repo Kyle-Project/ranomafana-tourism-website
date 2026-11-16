@@ -90,7 +90,7 @@ yet" rather than a number that rings nobody.
 |---|---|---|
 | Foret Astral | **Forêt Australe** | Tripadvisor and Petit Futé both list it this way; at Ambatolahy |
 | Soa Guest Lodge | **Soa Lodge** | Its registered trading name |
-| Chez Minerva | **Minerva Apart** | Renamed; still on Booking.com under both |
+| Chez Minerva | **Minerva Apart** | Renamed; still on Booking.com under both. The listing was taken off the site at Kyle's request, 16 Nov 2026 |
 | Hotel Palmarie | **La Palmeraie** | Petit Futé listing — see the warning below |
 | Kambana Residence | **Kambana Résidence** | Property's own spelling |
 | Ny Tanana Hotel | **Ny Tanàna Hotel** | FHORM and the property's own site |
@@ -708,7 +708,6 @@ Exterior/approach · a made-up room · restaurant or common area · the view.
 | Listing | Files it is waiting for |
 |---|---|
 | **Kambana Résidence** | `kambana-residence-room.jpg` · `kambana-residence-restaurant.jpg` · `kambana-residence-view.jpg` (the exterior slot is in, 4 Nov 2026) |
-| **Minerva Apart** | `minerva-apart-exterior.jpg` · `minerva-apart-room.jpg` · `minerva-apart-restaurant.jpg` · `minerva-apart-view.jpg` |
 | **La Palmeraie** | `la-palmeraie-exterior.jpg` · `la-palmeraie-room.jpg` · `la-palmeraie-restaurant.jpg` · `la-palmeraie-view.jpg` |
 | **Ihary Hotel** | `ihary-hotel-exterior.jpg` · `ihary-hotel-room.jpg` · `ihary-hotel-restaurant.jpg` · `ihary-hotel-view.jpg` |
 | **Ny Tanàna Hotel** | `ny-tanana-hotel-view.jpg` — the view from the hotel (the other slots are in, 1 Nov 2026) |
@@ -748,9 +747,7 @@ Frontage · dining room · a signature dish.
 
 ### Shoot these first
 
-The best-rated properties with no photo — these are the listings travellers
-are most likely to click: **Minerva Apart** (9.0/10).
-Then **Cascade Andriamamovoka**, which is the
+**Cascade Andriamamovoka**, which is the
 marquee landscape image for the whole site.
 
 ### Photos you can get without a camera

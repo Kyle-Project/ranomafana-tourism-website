@@ -612,10 +612,10 @@ listings — was written without a native speaker and should be checked by one.
 
 ## Current state
 
-25 stays · 17 restaurants · 18 things to do · 7 itineraries · 8 events · 10 blog
+24 stays · 17 restaurants · 18 things to do · 7 itineraries · 8 events · 10 blog
 seeds. **Birdwatching** (`do`, slug `birdwatching`, 23 Oct 2026) is built only from
 facts on the park listing (125 species, Vohiparara, the specialist guide fee): when
-the park's guide fees change in January 2027, change its `price` too. All 25 stays are verified, against published sources or on Kyle's
+the park's guide fees change in January 2027, change its `price` too. All 24 stays are verified, against published sources or on Kyle's
 authority. The whole site — interface, page text and listings — is in English,
 French, German and Malagasy (since 12 Oct 2026).
 
@@ -815,7 +815,8 @@ it may need a stay listing too.
 
 Kyle's 17 photos of **Manja Hotel**, 4 November 2026 (asked for: "the highest quality
 photos for maximum effect", no duplicates or similar images): ten are in, its first real
-ones, filling all four slots and adding six. The garden and valley view is the card photo.
+ones, filling all four slots and adding six. The row of bungalows is the card photo and
+leads the gallery (Kyle, 16 Nov 2026; it replaced the garden and valley view).
 The Wi-Fi password card on the bar counter in `manja-hotel-bar.jpg` is blurred, and no
 unblurred copy is kept. **Hotel Manja Restaurant** shares three (dining room as its card
 photo, frontage, bar) by pointing at the hotel's files, so the Photo gallery shows each
@@ -862,7 +863,7 @@ details of its own** — never fill them with Hotel Thermal's, which is what the
 did until 11 October 2026.
 
 Open editorial work is tracked in `PHOTO-AND-DATA-GAPS.md`: 8 unconfirmed listings,
-17 entries awaiting a real photograph (70 individual photo slots, all pre-wired),
+16 entries awaiting a real photograph (66 individual photo slots, all pre-wired),
 and the conflicts listed in its section 0. The team profiles on the About page are
 placeholders, hidden (`hidden` on `.team-grid`, with a note in the markup) until
 Kyle has names; the About page shows the credit line and the email box meanwhile. Kyle's notes had headings for a donation link and a town map with no
@@ -904,15 +905,16 @@ recommendations"):
 - **WhatsApp:** `contact.whatsapp` on Setam Lodge, Au Domnatur (the two numbers its
   note names) and Kambana, from their own notes. Add others only on the business's
   word.
-- **Park-gate distances:** `toGate` on 24 stays (not Soa Lodge, which is not on
+- **Park-gate distances:** `toGate` on 23 stays (not Soa Lodge, which is not on
   OpenStreetMap), measured by OpenStreetMap routing to the park reception
   (-21.25625, 47.42129). By road the village centre is about 5.8 km from the gate;
   the site's "6.5 km" and "about 7 km" (MNP and Kyle's notes) were left as they are.
   Shown on stay cards and pop-ups, and as the "Nearest the park" sort. "The closest
   place to stay" (Setam: Centre ValBio is closer), Manja's "4 km from the park" and
   Kambana's "8 km from the park" were taken out as wrong.
-- **Prices:** Kambana and Minerva now read Ariary first ("About 160,000 Ar ($35)"),
-  converted at the XE rate of 23 Oct 2026; their `sourceNote`s say so.
+- **Prices:** Kambana now reads Ariary first, converted at the XE rate of 23 Oct
+  2026; its `sourceNote` says so. (Minerva Apart was removed from the site at Kyle's
+  request, 16 Nov 2026; don't add it back.)
 - **Plan costs:** each itinerary's `costs` list adds up per adult (alone, 2 or 4
   sharing a guide) from the fees in the data. "Contact for rates" items show as
   "price on request". A seventh plan, **When It Rains** (`rainy-day`), uses only
