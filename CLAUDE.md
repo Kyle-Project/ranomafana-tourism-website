@@ -28,7 +28,7 @@ Live at <https://kyle-project.github.io/ranomafana-tourism-website/>, from the r
 to GitHub publishes the site through GitHub Pages — `.github/workflows/publish.yml`
 runs `npm run check` first and publishes nothing if it fails, so the live site keeps
 its last good version. Only `index.html`, `404.html`, `sitemap.xml`, `sw.js`,
-`data/` and `images/` go online. The repo is
+`data/`, `images/`, `documents/` and `videos/` go online. The repo is
 public (free GitHub Pages requires it), so notes, scripts and `photo-originals/` are
 readable on GitHub even though they are not part of the website.
 
@@ -331,7 +331,17 @@ Tourism Rationale", 15 Oct 2026) was worked into the site on 16 Oct 2026.
     who live here.
   - **"The valley up close":** a map of the valley with four tappable stops.
   - **"How your visit protects the forest":** the buffer zone and the four-step circle,
-    with pills to guides, stays, food and things to do.
+    with pills to guides, stays, food and things to do. Under the circle (16 Nov 2026,
+    Kyle: "integrate this into the website it is about protecting the forest… also add
+    english subtitles") is a 3-minute film against forest fires from the Ministry of the
+    Environment and Sustainable Development and partners (FOLUR Madagascar…), made for
+    the whole country, not filmed for Ranomafana. It is `videos/protect-the-forest.mp4`
+    (re-encoded to 640 px, 10 MB, `preload="none"`) with a poster in `images/`. Its
+    Malagasy is spoken and on screen; `videos/*.en/fr/de.vtt` translate only the
+    on-screen titles, shown at the top so they don't cover them. The dialogue is not
+    subtitled: it needs a transcript from a Malagasy speaker. `setFilmSubtitles()`
+    turns on the page language's track (none for Malagasy). `python -m http.server`
+    can't seek in a video; GitHub Pages can.
   - **"Why your visit matters":** "On the fence about visiting?", "Who your visit
     supports" (`who1`–`who8`) and "By the numbers" (visitors before and since the
     pandemic, the town's 20,000 people). It used to sit on the About page; Kyle asked on

@@ -1065,6 +1065,8 @@
     .sw-river { height: 4px; background: #6E9FC0; }
     .sw-road { height: 4px; background: var(--fern); }
     .map-credit { font-size: 12px; line-height: 1.5; color: var(--muted); }
+    .film { margin-top: 16px; }
+    .film video { display: block; width: 100%; height: auto; aspect-ratio: 640 / 338; border-radius: 12px; background: #000; }
     .map-credit a { color: var(--lichen); }
     .why-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
     .why-card {
@@ -2408,6 +2410,26 @@
             <li><span class="num">4</span><span data-i18n="circle4">Thriving wildlife keeps drawing visitors, and the circle begins again.</span></li>
           </ol>
         </div>
+        <!-- Film against forest fires, from the Ministry of the Environment and Sustainable
+             Development and partners (FOLUR Madagascar…), sent by Kyle on 16 Nov 2026. In
+             Malagasy; videos/*.vtt translate its on-screen titles (not its dialogue).
+             setFilmSubtitles() turns on the track for the page language. preload="none":
+             nothing downloads until someone presses play. -->
+        <div class="split film" style="align-items: center;">
+          <video controls preload="none" playsinline width="640" height="338"
+                 poster="images/video-protect-the-forest-poster.jpg"
+                 aria-label="Film: protect the forest from fire" data-i18n-aria-label="filmLabel">
+            <source src="videos/protect-the-forest.mp4" type="video/mp4">
+            <track kind="subtitles" srclang="en" label="English" src="videos/protect-the-forest.en.vtt" default>
+            <track kind="subtitles" srclang="fr" label="Français" src="videos/protect-the-forest.fr.vtt">
+            <track kind="subtitles" srclang="de" label="Deutsch" src="videos/protect-the-forest.de.vtt">
+          </video>
+          <div class="stack g-16">
+            <h3 class="display d-44" data-i18n="filmHeading" data-i18n-html>Watch: <em>stop the fires, plant trees.</em></h3>
+            <p class="lede" data-i18n="filmText">A three-minute film from Madagascar’s Ministry of the Environment and Sustainable Development and its partners, FOLUR Madagascar among them. It speaks to the whole country, not only Ranomafana: fire destroys forests, plantations and homes, and the answer is for everyone to stop the burning, keep watch and plant trees.</p>
+            <p class="map-credit" data-i18n="filmNote">In Malagasy. The English subtitles translate the film’s on-screen titles; its spoken lines are not subtitled yet.</p>
+          </div>
+        </div>
         <nav class="pill-row" aria-label="Start here" data-i18n-aria-label="ariaStartHere">
           <a class="pill-link lg" href="#guides" data-i18n="tabGuides">Hiring a guide</a>
           <a class="pill-link lg" href="#stay" data-i18n="drawerStay">Places to stay</a>
@@ -3651,6 +3673,10 @@
         circle2: "That income gives families a living tied to a standing forest, not a cleared one.",
         circle3: "A protected buffer zone shields the park and the animals inside it.",
         circle4: "Thriving wildlife keeps drawing visitors, and the circle begins again.",
+        filmLabel: "Film: protect the forest from fire",
+        filmHeading: "Watch: <em>stop the fires, plant trees.</em>",
+        filmText: "A three-minute film from Madagascar’s Ministry of the Environment and Sustainable Development and its partners, FOLUR Madagascar among them. It speaks to the whole country, not only Ranomafana: fire destroys forests, plantations and homes, and the answer is for everyone to stop the burning, keep watch and plant trees.",
+        filmNote: "In Malagasy. The English subtitles translate the film’s on-screen titles; its spoken lines are not subtitled yet.",
         footerCall: "Discover Ranomafana. Protect what exists nowhere else."
       },
 
@@ -4232,6 +4258,10 @@
         circle2: "Ce revenu donne aux familles de quoi vivre grâce à une forêt debout, et non défrichée.",
         circle3: "Une zone tampon protégée met à l’abri le parc et les animaux qui y vivent.",
         circle4: "Une faune florissante continue d’attirer les visiteurs, et le cercle recommence.",
+        filmLabel: "Film : protéger la forêt du feu",
+        filmHeading: "À voir : <em>arrêter les feux, planter des arbres.</em>",
+        filmText: "Un film de trois minutes du ministère de l’Environnement et du Développement durable de Madagascar et de ses partenaires, dont FOLUR Madagascar. Il s’adresse à tout le pays, pas seulement à Ranomafana : le feu détruit les forêts, les reboisements et les maisons, et la réponse est que chacun arrête les feux, reste vigilant et plante des arbres.",
+        filmNote: "En malgache. Les sous-titres français traduisent les titres à l’écran ; les dialogues ne sont pas encore sous-titrés.",
         footerCall: "Découvrez Ranomafana. Protégez ce qui n’existe nulle part ailleurs."
       },
 
@@ -4813,6 +4843,10 @@
         circle2: "Dieses Einkommen gibt Familien einen Lebensunterhalt, der an einen stehenden Wald gebunden ist, nicht an einen gerodeten.",
         circle3: "Eine geschützte Pufferzone schirmt den Park und die Tiere darin ab.",
         circle4: "Eine blühende Tierwelt lockt weiter Besucher an, und der Kreislauf beginnt von vorn.",
+        filmLabel: "Film: den Wald vor Feuer schützen",
+        filmHeading: "Film: <em>Feuer stoppen, Bäume pflanzen.</em>",
+        filmText: "Ein dreiminütiger Film des madagassischen Ministeriums für Umwelt und nachhaltige Entwicklung und seiner Partner, darunter FOLUR Madagascar. Er richtet sich an das ganze Land, nicht nur an Ranomafana: Feuer zerstört Wälder, Aufforstungen und Häuser, und die Antwort ist, dass alle mit dem Abbrennen aufhören, wachsam bleiben und Bäume pflanzen.",
+        filmNote: "Auf Malagasy. Die deutschen Untertitel übersetzen die eingeblendeten Titel; die gesprochenen Dialoge sind noch nicht untertitelt.",
         footerCall: "Entdecken Sie Ranomafana. Schützen Sie, was es nirgendwo sonst gibt."
       },
 
@@ -5395,6 +5429,10 @@
         circle2: "Io vola miditra io dia manome ny fianakaviana fivelomana mifamatotra amin'ny ala mbola misy, fa tsy amin'ny ala efa voakapa.",
         circle3: "Miaro ny valan-javaboahary sy ireo biby ao anatiny ny faritra fiarovana manodidina voaaro tsara.",
         circle4: "Ny biby mihamaro sy salama dia manohy misarika mpitsidika, ary manomboka indray ny fihodinana.",
+        filmLabel: "Sarimihetsika: arovy amin’ny afo ny ala",
+        filmHeading: "Jereo: <em>atsaharo ny doro tanety, mambolena hazo.</em>",
+        filmText: "Sarimihetsika telo minitra avy amin’ny Minisiteran’ny Tontolo Iainana sy ny Fampandrosoana Maharitra sy ireo mpiara-miasa aminy, anisan’izany FOLUR Madagascar. Ho an’ny firenena manontolo izy io, fa tsy ho an’i Ranomafana ihany: mandrava ala, toeram-pambolena hazo ary trano ny afo, ary ny vahaolana dia ny hampitsaharan’ny tsirairay ny doro tanety, ny hiambenana ary ny hambolena hazo.",
+        filmNote: "Amin’ny teny malagasy. Misy dikanteny anglisy, frantsay ary alemana ho an’ny lohateny eo amin’ny efijery.",
         footerCall: "Fantaro i Ranomafana. Arovy izay tsy hita afa-tsy eto."
       }
     };
@@ -5572,6 +5610,16 @@
       renderHubs();
       renderSocial();
       renderPartners();
+      setFilmSubtitles();
+    }
+
+    /* Show the film's subtitles in the page language (en, fr, de). Malagasy needs
+       none: the film's own titles are in Malagasy. A viewer can still change them
+       from the player's menu. */
+    function setFilmSubtitles() {
+      document.querySelectorAll('.film video').forEach((video) => {
+        for (const track of video.textTracks) track.mode = track.language === currentLang ? 'showing' : 'disabled';
+      });
     }
 
     // --- 2. LISTING CARDS ---------------------------------------------------

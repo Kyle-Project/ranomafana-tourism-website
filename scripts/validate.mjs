@@ -295,6 +295,11 @@ const htmlRefs = new Set(
 );
 for (const r of htmlRefs) referenced.add(r);
 
+// Films and their subtitle files live in videos/ (added 16 Nov 2026).
+for (const m of html.matchAll(/videos\/[A-Za-z0-9._-]+\.[A-Za-z0-9]+/g)) {
+  if (!fs.existsSync(path.join(ROOT, m[0]))) err(`${m[0]} is referenced in index.html but is not in the videos folder`);
+}
+
 /* A gallery slot may name a photo that has not been taken yet, as long as it
    carries a `fallback` that does exist — that is the planned-photo pattern, not
    a broken path. Collect those separately. */
