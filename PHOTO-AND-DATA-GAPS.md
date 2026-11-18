@@ -26,7 +26,7 @@ stated. Please check these:
 | 8 | **Distances** | 392 km from Tana, 63 km from Fianarantsoa | 412 km and 65 km (MNP) | MNP figures kept |
 | 9 | **Visitor drop** | "close to a 70% decrease" | — | 19,000 → 3,500 is an 82% drop, so the page gives the two numbers and says "fewer than one in five" |
 | 10 | **Grenat Hotel contacts** | +261 34 12 780 84 · legrenatran@gmail.com | +261 34 20 622 88 · hotelgrenat@gmail.com | Your number first, the old one second; your email only |
-| 11 | **Ihary Hotel** | three mobiles, iharyhotel@gmail.com, hot water | landline only; reviews said cold showers; earlier sources mention a pool | All four numbers, your email, hot water ✓. Is the pool still there? |
+| 11 | **Ihary Hotel** | three mobiles, iharyhotel@gmail.com, hot water | landline only; reviews said cold showers; earlier sources mention a pool | All four numbers, your email, hot water ✓. No pool (Kyle, 18 Nov 2026), so it is out of the description. |
 | 12 | **Chez Gaspard email** | hotelchezgaspard@gmail.com, +261 32 01 115 15 | bungalow@hotelchezgaspard.com, +261 38 02 115 02 | Your email; all four numbers |
 | 13 | **Au Domnatur** | two WhatsApp numbers, **audomnaturr**@gmail.com (double r) | +261 32 42 952 37 | The hotel and its restaurant were taken off the site at Kyle's request, 16 Nov 2026 |
 | 14 | **Hotel Manja** | three phones marked "(Check all)", www.hotelmanja.mg | no phone, manjahotel.com | Your three phones (the hotel's menu cover lists the same three, 4 Nov 2026). hotelmanja.mg does not exist online, so manjahotel.com stays |
@@ -709,12 +709,10 @@ Exterior/approach · a made-up room · restaurant or common area · the view.
 |---|---|
 | **Kambana Résidence** | `kambana-residence-room.jpg` · `kambana-residence-restaurant.jpg` · `kambana-residence-view.jpg` (the exterior slot is in, 4 Nov 2026) |
 | **La Palmeraie** | `la-palmeraie-exterior.jpg` · `la-palmeraie-room.jpg` · `la-palmeraie-restaurant.jpg` · `la-palmeraie-view.jpg` |
-| **Ihary Hotel** | `ihary-hotel-exterior.jpg` · `ihary-hotel-room.jpg` · `ihary-hotel-restaurant.jpg` · `ihary-hotel-view.jpg` |
 | **Ny Tanàna Hotel** | `ny-tanana-hotel-view.jpg` — the view from the hotel (the other slots are in, 1 Nov 2026) |
 | **Lemur Coffee Hotel** | `lemur-coffee-hotel-exterior.jpg` · `lemur-coffee-hotel-view.jpg` (the room and restaurant slots are in, 4 Nov 2026) |
 | **Coin d’or** | `coin-dor-exterior.jpg` · `coin-dor-room.jpg` · `coin-dor-restaurant.jpg` · `coin-dor-view.jpg` |
-| **Akamasoa Guest House** | `akamasoa-guest-house-exterior.jpg` · `akamasoa-guest-house-room.jpg` · `akamasoa-guest-house-restaurant.jpg` · `akamasoa-guest-house-view.jpg` |
-| **Chez Liantsoa** | `chez-liantsoa-exterior.jpg` · `chez-liantsoa-room.jpg` · `chez-liantsoa-restaurant.jpg` · `chez-liantsoa-view.jpg` |
+| **Chez Liantsoa** | `chez-liantsoa-restaurant.jpg` · `chez-liantsoa-view.jpg` (the exterior and room slots are in, 18 Nov 2026) |
 | **Mirary Hotel** | `mirary-hotel-exterior.jpg` · `mirary-hotel-room.jpg` · `mirary-hotel-restaurant.jpg` · `mirary-hotel-view.jpg` |
 | **Chez Rose** | `chez-rose-exterior.jpg` · `chez-rose-room.jpg` · `chez-rose-restaurant.jpg` · `chez-rose-view.jpg` |
 | **Hotel In-Kavana** | `hotel-in-kavana-exterior.jpg` · `hotel-in-kavana-room.jpg` · `hotel-in-kavana-restaurant.jpg` · `hotel-in-kavana-view.jpg` |
@@ -729,7 +727,7 @@ Frontage · dining room · a signature dish.
 | **Hotel Manja Restaurant** | `manja-restaurant-dish.jpg` (the frontage and dining room are in, 4 Nov 2026, shared with the hotel) |
 | **Rianala Gite Restaurant** | `rianala-gite-restaurant-exterior.jpg` · `rianala-gite-restaurant-dining.jpg` · `rianala-gite-restaurant-dish.jpg` |
 | **Karibotel Restaurant** | `karibotel-restaurant-exterior.jpg` · `karibotel-restaurant-dish.jpg` (the dining room is in, 4 Nov 2026, shared with the hotel) |
-| **Ihary Hotel Restaurant** | `ihary-restaurant-exterior.jpg` · `ihary-restaurant-dining.jpg` · `ihary-restaurant-dish.jpg` |
+| **Ihary Hotel Restaurant** | `ihary-restaurant-exterior.jpg` · `ihary-restaurant-dish.jpg` (the dining room and bar are in, 18 Nov 2026, shared with the hotel) |
 | **Coin d’or** | `coin-dor-restaurant-exterior.jpg` · `coin-dor-restaurant-dining.jpg` · `coin-dor-restaurant-dish.jpg` |
 | **Park Entrance Restaurant** | `park-entrance-restaurant-exterior.jpg` · `park-entrance-restaurant-dining.jpg` · `park-entrance-restaurant-dish.jpg` |
 | **Ellie’s Snack** | `ellies-snack-exterior.jpg` · `ellies-snack-dining.jpg` · `ellies-snack-dish.jpg` |
@@ -802,6 +800,145 @@ the signs and photos show, plus the length and guide fee the site already had.
 - Is the road photo near Sahamalaotra? Its description doesn't say where it is.
 - The site now calls Sahamalaotra the short birding circuit and Vohiparara the long
   one. Are they two different places, or is Sahamalaotra the entrance to Vohiparara?
+
+### Famiova: Traditional Weavers (sent 18 Nov 2026)
+
+A new Things to do listing (Art & culture, village layer), with all six photos: the
+weaver at her loom (card photo), the same weaver close up, a loom facing the shop,
+the table of soaps and embroidery, the Soa Be soaps and the niaouli honey. Resized to
+1600 px (`images/famiova-*.jpg`); originals in `photo-originals/2026-11-18 Famiova/`.
+The text uses only what could be checked: Centre ValBio's visiting page (a women's
+group in the old museum, scarves to order), a Facebook post on the cooperative (the
+name means "transformation", cotton, sisal and raffia), a Google Maps review (silk),
+and Google Maps' own pin for "Coopérative Famiova Ranomafana".
+
+- **Not on the site:** the July 2026 "back at work with new looms" and the October 2026
+  land blessing (from LinkedIn and Facebook posts that couldn't be opened). The 50,000 Ar
+  scarf price comes from an Instagram reel, so it is a tip ("ask for today's prices"),
+  not the price line.
+
+**To check, Kyle:**
+- Is the weaver happy to be on the site? Two photos show her face, and her name isn't given.
+- Opening hours and a phone number or Facebook page for the cooperative, if it has them.
+- Today's scarf prices.
+- Is the honey and soap theirs, or other producers' goods they sell? The site says the shop sells them.
+
+### Chez Liantsoa (sent 18 Nov 2026)
+
+All three photos are in, used as received: the yellow house with its sign (card photo,
+`chez-liantsoa-exterior.jpg`), a room (`chez-liantsoa-room.jpg`) and the open door of
+room 2 (`chez-liantsoa-doorway.jpg`). The price line is now "From 30,000 Ar / night"
+(Kyle, 18 Nov 2026). The sign shows the phone already on the listing.
+
+Kyle answered the same day: the bathrooms are shared and there is no hot water, and
+Chez Liantsoa is related to Hotel In-Kavana (the sign calls it an annexe) but a
+different hotel. The description now says both, in all four languages.
+
+### Ihary Hotel (sent 18 Nov 2026)
+
+Twelve of twenty photos are in, its first real ones, filling all four slots and adding
+eight. A thirteenth, sent later the same day, follows the garden path: the river beside the
+hotel with washing on the line by a blue-roofed bungalow (`river`). The lane between the brick bungalows is the card photo (`bungalows`); then the
+main building with its three gables (`exterior`), the garden path down to the river
+(`view`), the garden, three rooms (a double, one with three beds, one with a double and
+two singles, which matches the family room), the bathroom with the glass shower, the
+lounge, the dining room (`restaurant`), the bar and the roadside sign. The bungalows and
+dining room were recompressed to stay under 500 KB (originals in
+`photo-originals/2026-11-18 Ihary Hotel/`); the rest are as received. **Ihary Hotel
+Restaurant** shares three (dining room as its card photo, bar, sign); its frontage and
+`dish` slots are still waiting.
+
+Left out: a single bungalow (a look-alike of the lane), a second lane photo with a woman
+standing at a door, a twin room like the three-bed one, an older bathroom with a
+shower curtain, a washed-out photo of the main building and a correctly exposed one of
+the same wall of pot plants, and two very dark bedrooms. The garden-path photo shows a
+woman from behind, face not visible.
+
+Kyle confirmed the same day that there is no swimming pool, so it is out of the
+description in all four languages.
+
+Rates and meals (18 Nov 2026) come from the hotel's 2026 rate sheet (copy in the same
+originals folder): bungalows 75,000 Ar single, 85,000 double or twin, 120,000 triple,
+150,000 family for 4; rooms 140,000 double, 150,000 twin, 180,000 triple; tourist tax
+included; breakfast 18,000 Ar continental, 20,000 American; set menu 60,000 Ar. Kyle gave
+the à la carte prices the same day (starter 20,000, main 30,000, dessert 15,000 Ar; the
+menu changes daily). They replace the figures from his notes of 11 Oct 2026, on both the
+hotel and the restaurant; the restaurant moved from $ to $$ and lost "prices low".
+
+Question for Kyle:
+- The sign lists billiards. Add it to the listing's features?
+
+### Akamasoa Guest House (sent 18 Nov 2026)
+
+Eleven of sixteen photos are in, used as received (all under 500 KB), its first real
+ones, filling all four slots and adding seven. The garden with cycads and traveller's
+palms below the hills is the card photo (`view`); then the orange building under the
+rock-faced peak (`exterior`), the buildings above the stone steps, the pines and the
+thatched shelter, the dormitory, the bunk beds, two rooms, the kitchen, the washroom
+and the dining hall (`restaurant`). Left out as look-alikes or weak: a second blurry
+blue room, the double bed shot from above, a third garden view, the plain gable wall
+and the staircase. All 16 originals are in `photo-originals/2026-11-18 Akamasoa/`.
+The buildings photo has a woman walking down the steps, far off with her face shaded
+by her hat; take it out if you'd rather not show her.
+
+Prices and the reservations number (034 76 414 21) are from Kyle the same day:
+dormitory 4,000 Ar (middle school), 5,000 Ar (lycée), 6,000 Ar (university students);
+two rooms and a kitchen (no gas) 30,000 Ar.
+
+Kyle answered the same day: the prices are per person per night (the rooms per night),
+and the dormitory's bathrooms are shared while the rooms have their own. The site now
+says both, in all four languages.
+
+Still open:
+- What do non-students pay for a dormitory bed? The site says to ask when booking.
+- Is the dining hall for guests' meals?
+
+### Tianala (sent 18 Nov 2026)
+
+A new stay listing (`stay`, slug `tianala`, type guest house): there was none before.
+Prices and the phone (038 74 035 39) are from Kyle the same day: twin or double
+30,000 Ar, bungalow 45,000 Ar, family room 60,000 Ar. Ten of twelve photos are in,
+resized to 1600 px: the room with woven walls is the card photo (`room`), then the
+roadside sign "Tianala, Chambres d'hôtes" (`exterior`), four more rooms, the kitchen
+and three washrooms. Left out as look-alikes: a second shot of the family room and a
+darker second shower. All 12 originals are in `photo-originals/2026-11-18 Tianala/`.
+The kitchen photo shows a cook's hands, no face.
+
+Kyle sent its Google Maps pin the same day (-21.261162, 47.455211, in the village
+centre): it is the listing's `mapPin`, and OpenStreetMap routing puts it 5.9 km by road
+from the park reception (`toGate: 6`).
+
+Still open, Kyle:
+- Wi-Fi, hot water, meals, parking: all shown as "no" until known.
+- Which room in the photos is the bungalow?
+
+### Chez Jose (sent 18 Nov 2026)
+
+Nine photos and three photos of paper. Eight of the nine are in, as received, ranked
+most attractive first: the sign before the yellow-and-red building (card photo), the
+upstairs walkway, the lounge with its painted forest wall, the painted staircase, a
+double room, a twin room, the aye-aye and bamboo-lemur murals, the meeting hall, the
+bathroom. The walkway photo is cropped to take out a woman's face at its left edge
+(original in `photo-originals/2026-11-18 Chez Jose/`); the staircase photo shows a
+woman from behind, no face. They replace the four older web photos (`.avif`), which
+show the building before its repaint; the files stay in `images/`, unused.
+
+From the rate sheet ("from 1 January 2024", says the hotel belongs to the Catholic
+Church): 5 doubles and 5 twins at 60,000 Ar, 2 twins with shared bathroom at 45,000
+Ar; meeting hall 120,000 Ar a day (over 50 people 170,000, 100 people 200,000; no
+projector); small room for 18 at 70,000 Ar; extra bedding on request. The sound-system
+price is covered by a sticker, so it is left out. From the leaflet: private bathrooms
+with hot water, TV room, free Wi-Fi, reception 06:00–21:00 and closed Sunday
+08:00–11:30; it confirms the phone and email already on the site.
+
+The snack menus on the table are Chez Jose's own (Kyle, 18 Nov 2026), so they are on the
+listing: pizzas 23,000–30,000 Ar, sandwiches 10,000–12,000 Ar, ice cream 5,000 / 8,000 /
+10,000 Ar for 1 / 2 / 3 scoops, fresh juice from 5,000 Ar, to order on +261 34 55 359 54.
+The restaurant filter stays off: snacks to order, no set meals.
+
+Still open, Kyle:
+- Wi-Fi: the leaflet says free; your notes said it reaches some rooms. The site says both.
+- Is the 2024 rate sheet still current?
 
 ### Photos you can get without a camera
 

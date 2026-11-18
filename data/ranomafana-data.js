@@ -327,12 +327,12 @@ const stayData = [
     price: "80,000–120,000 Ar / night",
     toGate: 6,
     rating: "3.7 (Tripadvisor, 114 reviews)",
-    img: "images/grenat-hotel-exterior.webp",
+    img: "images/grenat-hotel-courtyard.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the rooms",
     verified: true,
-    asOf: "2026-10",
-    sourceNote: "Listed on Tripadvisor and Petit Futé as 'Le Grenat' / 'Hôtel Grenat', on the main road at the village exit. Rates, meals, features, +261 34 12 780 84 and legrenatran@gmail.com from Kyle's notes (received 11 Oct 2026). Previously listed: +261 34 20 622 88 (kept as a second number) and hotelgrenat@gmail.com (replaced by his email) — confirm which still work.",
+    asOf: "2026-11",
+    sourceNote: "Listed on Tripadvisor and Petit Futé as 'Le Grenat' / 'Hôtel Grenat', on the main road at the village exit. Rates, meals, features, +261 34 12 780 84 and legrenatran@gmail.com from Kyle's notes (received 11 Oct 2026). Previously listed: +261 34 20 622 88 (kept as a second number) and hotelgrenat@gmail.com (replaced by his email) — confirm which still work. Photos: Kyle, 18 Nov 2026 (11 of 17 used; originals in photo-originals/2026-11-18 Grenat Hotel/; the bathroom brightened, the rest resized only). They replace the five older web photos, whose files are kept, unused. Left out: the reception desk from inside (same desk as the doorway photo), the bar with a man at the counter and a bungalow with a man walking past (faces), a second twin room, the shower and the door of room 10 (look-alikes). Meals from the hotel's undated printed menu and laundry from its undated price sheet (Kyle's photos, 18 Nov 2026).",
     desc: "Comfortable mid-range accommodation on the main road at the edge of the village, with river and rainforest views, private en-suite rooms, guarded private parking, and one of the better-reviewed restaurants in Ranomafana.",
     rooms: [
       { type: "Single", price: "80,000 Ar" },
@@ -340,14 +340,20 @@ const stayData = [
       { type: "Triple", price: "120,000 Ar" },
       { type: "Family (1 double + 3 single beds)", price: "120,000 Ar" }
     ],
-    meals: ["Breakfast: from 10,000 Ar", "Lunch or dinner: 15,000–30,000 Ar"],
-    features: ["River view", "Private parking, watched from a guard tower"],
+    meals: ["Breakfast: continental 16,000 Ar, American 20,000 Ar, Malagasy rice with laoka 10,000 Ar", "Lunch or dinner, à la carte: starters 10,000–20,000 Ar, main courses 18,000–30,000 Ar, desserts 5,000–8,000 Ar"],
+    features: ["River view", "Private parking, watched from a guard tower", "Laundry, washed and ironed: 1,000–5,000 Ar an item"],
     gallery: [
-      { src: "images/grenat-hotel-exterior.webp", alt: "Grenat Hotel exterior" },
-      { src: "images/grenat-hotel-bungalow.jpg", alt: "Bungalow at Grenat Hotel" },
-      { src: "images/grenat-hotel-room.jpg", alt: "Room at Grenat Hotel" },
-      { src: "images/grenat-hotel-restaurant.jpg", alt: "Restaurant at Grenat Hotel" },
-      { src: "images/grenat-hotel-sign.jpg", alt: "Grenat Hotel sign" }
+      { src: "images/grenat-hotel-courtyard.jpg", alt: "A table under a parasol in the paved courtyard beside the red main building, with palms and hills behind" },
+      { src: "images/grenat-hotel-veranda.jpg", alt: "White chairs on a bungalow veranda, looking along the row of yellow bungalows" },
+      { src: "images/grenat-hotel-room-triple.jpg", alt: "A room with a double and a single bed, mosquito nets and a table" },
+      { src: "images/grenat-hotel-garden.jpg", alt: "A stone path through the garden, below forested hills" },
+      { src: "images/grenat-hotel-dining-room.jpg", alt: "The dining room, with carved wooden pillars and tables laid for a meal" },
+      { src: "images/grenat-hotel-terrace.jpg", alt: "A table on the covered terrace, looking into the dining room" },
+      { src: "images/grenat-hotel-room-mezzanine.jpg", alt: "A room with a double and a single bed under a carved wooden staircase" },
+      { src: "images/grenat-hotel-buildings.jpg", alt: "The two-storey red buildings around the courtyard" },
+      { src: "images/grenat-hotel-reception.jpg", alt: "Carved wooden doors open onto the reception" },
+      { src: "images/grenat-hotel-roadside-sign.jpg", alt: "The Grenat Hotel & Restaurant sign by the road, with the village behind" },
+      { src: "images/grenat-hotel-bathroom.jpg", alt: "A tiled bathroom with a toilet and washbasin" }
     ],
     contact: { phone: "+261 34 12 780 84 / +261 34 20 622 88", email: "legrenatran@gmail.com", website: "", social: "https://www.facebook.com/p/Hotel-Grenat-Ranomafana-100063624831201/" }
   },
@@ -355,30 +361,40 @@ const stayData = [
     slug: "chez-gaspard",
     name: "Chez Gaspard",
     type: "guest",
-    price: "70,000–140,000 Ar / night",
+    price: "75,000–150,000 Ar / night",
     toGate: 6,
     rating: "3.7 (Tripadvisor, 148 reviews)",
-    img: "images/chez-gaspard-exterior.jpg",
+    img: "images/chez-gaspard-garden.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the restaurant",
     verified: true,
-    asOf: "2026-10",
-    sourceNote: "Rates, meals, features, hotelchezgaspard@gmail.com and +261 32 01 115 15 from Kyle's notes (received 11 Oct 2026), which confirm the 034 and 033 numbers. Previously listed: +261 38 02 115 02 (kept as a fourth number) and bungalow@hotelchezgaspard.com (replaced by his email).",
+    asOf: "2026-11",
+    sourceNote: "Rates, meals, features, hotelchezgaspard@gmail.com and +261 32 01 115 15 from Kyle's notes (received 11 Oct 2026), which confirm the 034 and 033 numbers. Previously listed: +261 38 02 115 02 (kept as a fourth number) and bungalow@hotelchezgaspard.com (replaced by his email). Photos: Kyle, 18 Nov 2026, 11 of 20, used as received; they replace the four older web photos (files kept, unused). Left out: a dark, blurred shower, bed and bead-curtain photo, a second view down the staircase, a second photo of the pond gazebo, a second double room, a branded barrel, a close-up of the dining-room wall, and the bungalow plan sign (18 numbered bungalows). The logo on that wall confirms +261 34 02 115 15. Rooms, rates and features from the hotel's 2026 rate sheet ('Tarif 2026'), and meal prices from its menus (undated), photographed by Kyle on 18 Nov 2026 (copies in photo-originals/2026-11-18 Chez Gaspard/); they replace the rates and meal prices in his notes of 11 Oct 2026 (70,000–140,000 Ar rooms, 12,000–15,000 Ar breakfast, 45,000 Ar set menu). The sheet lists 6 double, 7 twin and 3 family bungalows plus 2 guide's rooms, and says the hotel belongs to the Roman Catholic Church. A flags photo joined the gallery the same day.",
     desc: "Budget-friendly guest house and restaurant behind the Catholic church, run by the Priests of the Sacred Heart of Jesus — a long-standing favourite with backpackers and guided tour groups, with a garden gazebo and water feature and a bar showing sport.",
     rooms: [
-      { type: "Double", price: "70,000 Ar" },
-      { type: "Twin", price: "70,000 Ar" },
-      { type: "Family (1 double + 2 single beds)", price: "120,000 Ar" },
-      { type: "Family (1 double + 3 single beds)", price: "140,000 Ar" },
+      { type: "Double bungalow (one double bed)", price: "75,000 Ar" },
+      { type: "Twin bungalow (two single beds)", price: "75,000 Ar" },
+      { type: "Family bungalow for 4 (1 double + 2 single beds)", price: "130,000 Ar" },
+      { type: "Family bungalow for 5 (1 double + 3 single beds)", price: "150,000 Ar" },
+      { type: "Guide's room (single bed)", price: "35,000 Ar" },
+      { type: "Guide's room (double bed)", price: "50,000 Ar" },
       { type: "Extra bed", price: "25,000 Ar" }
     ],
-    meals: ["Breakfast: 12,000–15,000 Ar", "Lunch or dinner: 12,000–35,000 Ar à la carte, or a 45,000 Ar set menu"],
-    features: ["Gazebo and water feature in the garden", "Bar with sport on TV"],
+    meals: ["Breakfast: 15,000–25,000 Ar", "Lunch or dinner: starters 20,000–25,000 Ar, main courses 35,000 Ar, desserts 15,000–25,000 Ar, or a 65,000 Ar set menu", "Picnic for the park: 15,000–45,000 Ar"],
+    features: ["Gazebo and water feature in the garden", "Bar with sport on TV", "Bathroom with hot water in every bungalow", "Extra blankets and pillows on request", "Meeting room: 160,000 Ar a day", "Free dormitory for up to 8 drivers"],
     gallery: [
-      { src: "images/chez-gaspard-exterior.jpg", alt: "Chez Gaspard exterior" },
-      { src: "images/chez-gaspard-bungalow.jpg", alt: "Bungalow at Chez Gaspard" },
-      { src: "images/chez-gaspard-restaurant.avif", alt: "Restaurant at Chez Gaspard" },
-      { src: "images/chez-gaspard-logo.jpg", alt: "Chez Gaspard logo" }
+      { src: "images/chez-gaspard-garden.jpg", alt: "The garden at Chez Gaspard: a lawn with palms and a small pond, and the bungalows behind" },
+      { src: "images/chez-gaspard-frontage.jpg", alt: "The front of Chez Gaspard: a white building painted with a giraffe weevil, beside the covered stone gateway, with forested hills behind" },
+      { src: "images/chez-gaspard-room-double.jpg", alt: "A double room with a timber floor, a mosquito net, a desk and a spiral staircase up to a mezzanine" },
+      { src: "images/chez-gaspard-gazebo.jpg", alt: "A round table in a thatched gazebo, looking out over the garden, banana plants and the hills" },
+      { src: "images/chez-gaspard-dining-room.jpg", alt: "The dining room and bar, with blue and white tablecloths and a rose on each table" },
+      { src: "images/chez-gaspard-room-twin.jpg", alt: "A twin room under a timber roof, with a bead curtain showing a lemur" },
+      { src: "images/chez-gaspard-mezzanine.jpg", alt: "Three more beds and a desk on the mezzanine under the timber roof" },
+      { src: "images/chez-gaspard-dining-hall.jpg", alt: "A second dining room with blue tablecloths, a tiled floor and windows onto the garden" },
+      { src: "images/chez-gaspard-gateway.jpg", alt: "The stone gateway, with a paved path leading down to the bungalows" },
+      { src: "images/chez-gaspard-flags.jpg", alt: "Three flags on red poles above a bed of red-leaved plants, with palms and forested hills behind" },
+      { src: "images/chez-gaspard-pond-gazebo.jpg", alt: "A red timber gazebo standing over the pond, with a lemur banner" },
+      { src: "images/chez-gaspard-roofs.jpg", alt: "Green bungalow roofs, with palms and forested hills beyond" }
     ],
     contact: { phone: "+261 34 02 115 15 / +261 33 01 155 05 / +261 32 01 115 15 / +261 38 02 115 02", email: "hotelchezgaspard@gmail.com", website: "https://hotelchezgaspard.com/", social: "https://www.facebook.com/chezgaspardhotel/?locale=fr_FR" }
   },
@@ -554,28 +570,42 @@ const stayData = [
     slug: "ihary-hotel",
     name: "Ihary Hotel",
     type: "hotel",
-    price: "70,000–120,000 Ar / night",
+    price: "75,000–180,000 Ar / night",
     toGate: 6,
     rating: "3.0 (Tripadvisor, 47 reviews)",
-    img: "images/placeholder-ihary-hotel.jpg",
+    img: "images/ihary-hotel-bungalows.jpg",
     wifi: true, hotWater: true, restaurant: true, parking: true,
     wifiNote: "In the restaurant",
     verified: true,
-    asOf: "2026-10",
-    photoNeeded: true,
-    sourceNote: "Landline +261 20 76 296 96 via Gondwana Explorer; Facebook page confirmed. Rates, meals, three mobile numbers, iharyhotel@gmail.com, hot water, Wi-Fi in the restaurant and river access from Kyle's notes (received 11 Oct 2026). Older reviews reported cold showers; his notes say hot water, so it is now marked available. His notes do not mention the swimming pool earlier sources describe — confirm it is still there.",
+    asOf: "2026-11",
+    sourceNote: "Photos: Kyle, 18 Nov 2026 (13 of 22; the bungalows and dining room recompressed to stay under 500 KB, originals in photo-originals/2026-11-18 Ihary Hotel/). Landline +261 20 76 296 96 via Gondwana Explorer; Facebook page confirmed. Rates, breakfast and set menu prices: the hotel's 2026 rate sheet (photo, Kyle, 18 Nov 2026; copy in photo-originals/2026-11-18 Ihary Hotel/), which says tourist tax is included; starter, main course and dessert prices from Kyle the same day (the menu changes daily). They replace the 70,000–120,000 Ar rates and 10,000–30,000 Ar meals in his notes of 11 Oct 2026. Three mobile numbers, iharyhotel@gmail.com, hot water, Wi-Fi in the restaurant and river access from Kyle's notes (received 11 Oct 2026). Older reviews reported cold showers; his notes say hot water, so it is now marked available. Earlier sources described a swimming pool; Kyle confirmed on 18 Nov 2026 that there is none, so it was taken out of the description.",
     gallery: [
-      { src: "images/ihary-hotel-exterior.jpg", fallback: "images/placeholder-ihary-hotel.jpg", alt: "Ihary Hotel exterior" },
-      { src: "images/ihary-hotel-room.jpg", fallback: "images/placeholder-ihary-hotel.jpg", alt: "Room at Ihary Hotel" },
-      { src: "images/ihary-hotel-restaurant.jpg", fallback: "images/placeholder-ihary-hotel.jpg", alt: "Restaurant or common area at Ihary Hotel" },
-      { src: "images/ihary-hotel-view.jpg", fallback: "images/placeholder-ihary-hotel.jpg", alt: "View from Ihary Hotel" }
+      { src: "images/ihary-hotel-bungalows.jpg", alt: "A paved path between brick bungalows with timber shutters at Ihary Hotel, with potted plants and a stone wall at the end" },
+      { src: "images/ihary-hotel-exterior.jpg", alt: "The main building at Ihary Hotel, with three tall brick gables, the reception and clipped shrubs in planters on a cobbled yard" },
+      { src: "images/ihary-hotel-view.jpg", alt: "A paved path through the garden at Ihary Hotel down to the river, with green hills beyond" },
+      { src: "images/ihary-hotel-river.jpg", alt: "The Namorona River beside Ihary Hotel, with washing on the line by a blue-roofed bungalow and forested hills beyond" },
+      { src: "images/ihary-hotel-garden.jpg", alt: "The garden at Ihary Hotel, with red and green shrubs, a stone table and forested hills behind" },
+      { src: "images/ihary-hotel-room.jpg", alt: "A double room at Ihary Hotel with a four-poster bed and mosquito net, a desk, a fan and its own washroom" },
+      { src: "images/ihary-hotel-room-triple.jpg", alt: "A room at Ihary Hotel with three beds under mosquito nets and a washroom at the back" },
+      { src: "images/ihary-hotel-room-family.jpg", alt: "A room at Ihary Hotel with a double bed and two single beds under mosquito nets" },
+      { src: "images/ihary-hotel-bathroom.jpg", alt: "A bathroom at Ihary Hotel with a glass shower, a round mirror and a basin on a timber stand" },
+      { src: "images/ihary-hotel-lounge.jpg", alt: "A sitting area at Ihary Hotel with red-cushioned timber sofas and a carved wooden plaque on the wall" },
+      { src: "images/ihary-hotel-restaurant.jpg", alt: "The dining room at Ihary Hotel, with red and blue tablecloths under a high timber ceiling" },
+      { src: "images/ihary-hotel-bar.jpg", alt: "The bar at Ihary Hotel, with six brightly painted stools and carved wooden panels above the counter" },
+      { src: "images/ihary-hotel-sign.jpg", alt: "The Ihary Hotel sign beside the road: bungalows, restaurant and bar, Wi-Fi and billiards" }
     ],
-    desc: "Twenty-two rooms on the bank of the Namorona, a few kilometres from the park entrance, with river access, a swimming pool and a riverside restaurant. Basic and ageing, with mosquito nets in the bungalows, but the river-facing rooms have the best view in the village.",
+    desc: "Twenty-two rooms on the bank of the Namorona, a few kilometres from the park entrance, with river access and a riverside restaurant. Basic and ageing, with mosquito nets in the bungalows, but the river-facing rooms have the best view in the village.",
     rooms: [
-      { type: "Double", price: "70,000–120,000 Ar" },
-      { type: "Family (1 double + 2 single beds)", price: "120,000 Ar" }
+      { type: "Bungalow, single", price: "75,000 Ar" },
+      { type: "Bungalow, double or twin", price: "85,000 Ar" },
+      { type: "Bungalow, triple (1 double + 1 single bed)", price: "120,000 Ar" },
+      { type: "Bungalow, family for 4 (1 double + 2 single beds)", price: "150,000 Ar" },
+      { type: "Room, double", price: "140,000 Ar" },
+      { type: "Room, twin", price: "150,000 Ar" },
+      { type: "Room, triple", price: "180,000 Ar" }
     ],
-    meals: ["Breakfast, lunch or dinner: 10,000–30,000 Ar"],
+    ratesNote: "Tourist tax included.",
+    meals: ["Breakfast: 18,000 Ar continental, 20,000 Ar American", "Set menu: 60,000 Ar", "À la carte (the menu changes daily): starter 20,000 Ar, main course 30,000 Ar, dessert 15,000 Ar"],
     features: ["River access"],
     contact: { phone: "+261 34 13 434 57 / +261 33 12 857 98 / +261 32 02 526 98 / +261 20 76 296 96", email: "iharyhotel@gmail.com", website: "", social: "https://www.facebook.com/iharyhotel/", note: "16 Poste, Ranomafana 312. Free accommodation for drivers; packed lunches for park visitors." }
   },
@@ -673,25 +703,45 @@ const stayData = [
     price: "45,000–60,000 Ar / night",
     toGate: 6,
     rating: "—",
-    img: "images/chez-jose-exterior.avif",
+    img: "images/chez-jose-sign.jpg",
+    imgPosition: "center 40%",
     wifi: true, hotWater: true, restaurant: false, parking: true,
-    wifiNote: "In some rooms",
+    wifiNote: "Free; reaches some rooms",
     verified: true,
-    asOf: "2026-10",
-    sourceNote: "Rates, Wi-Fi, bar, coffee, the conference room and 'no dining' from Kyle's notes (received 11 Oct 2026), which confirm the phone and email; the restaurant flag is now off. His notes describe it as strongly Catholic — it is run by ECAR, the Catholic Church in Madagascar.",
-    desc: "Centrally located, low-cost Catholic guest house in Ranomafana village — simple overnight lodging within walking distance of the thermal baths, with a bar and coffee but no meals.",
+    asOf: "2026-11",
+    sourceNote: "Rates, meeting-hall hire and extra bedding from the hotel's rate sheet ('from 1 January 2024', photo from Kyle, 18 Nov 2026); room count, private bathrooms with hot water, TV room, free Wi-Fi, reception hours, phone and email from its leaflet (same day). Bar, coffee and 'no dining' from Kyle's notes (received 11 Oct 2026), which say Wi-Fi reaches some rooms. The rate sheet says the hotel belongs to the Catholic Church; it is run by ECAR. Kyle's photos of 18 Nov 2026 replaced four older web photos that showed the building before its yellow-and-red repaint (files kept in images/, unused). Snack menus (pizza, sandwiches, ice cream, juice, 'sur commande', order number +261 34 55 359 54) from photos the same day; Kyle confirmed on 18 Nov 2026 that they are Chez Jose's own. The restaurant flag stays off: snacks to order, no set meals.",
+    desc: "Centrally located, low-cost Catholic guest house in Ranomafana village — simple overnight lodging within walking distance of the thermal baths, with a bar, coffee, and pizzas, sandwiches and ice cream to order.",
     rooms: [
-      { type: "Double", price: "60,000 Ar" },
-      { type: "Twin", price: "60,000 Ar" },
-      { type: "Twin with shared bathroom", price: "45,000 Ar" }
+      { type: "Double (5 rooms)", price: "60,000 Ar" },
+      { type: "Twin (5 rooms)", price: "60,000 Ar" },
+      { type: "Twin with shared bathroom (2 rooms)", price: "45,000 Ar" }
     ],
-    meals: ["No meals served — coffee and the bar only"],
-    features: ["Run by the Catholic Church (ECAR)", "Conference room for 18, 70,000 Ar per day"],
+    ratesNote: "Per room per night, from the hotel's rate sheet (from 1 January 2024). Extra blankets and pillows on request.",
+    meals: [
+      "No set meals — coffee, the bar, and snacks to order (+261 34 55 359 54)",
+      "Pizzas 23,000–30,000 Ar",
+      "Sandwiches 10,000–12,000 Ar",
+      "Ice cream: 1 scoop 5,000 Ar, 2 scoops 8,000 Ar, 3 scoops 10,000 Ar",
+      "Fresh juice from 5,000 Ar"
+    ],
+    features: [
+      "Run by the Catholic Church (ECAR)",
+      "Private bathroom with hot water in the ten main rooms",
+      "TV room",
+      "Meeting hall: 120,000 Ar a day; over 50 people 170,000 Ar; 100 people 200,000 Ar (no video projector)",
+      "Small meeting room for 18, 70,000 Ar a day",
+      "Reception open 06:00–21:00, closed Sunday 08:00–11:30"
+    ],
     gallery: [
-      { src: "images/chez-jose-exterior.avif", alt: "Chez Jose exterior" },
-      { src: "images/chez-jose-room.avif", alt: "Room at Chez Jose" },
-      { src: "images/chez-jose-reception.avif", alt: "Reception at Chez Jose" },
-      { src: "images/chez-jose-exterior-2.avif", alt: "Second exterior view of Chez Jose" }
+      { src: "images/chez-jose-sign.jpg", alt: "The Chez Jose Hotel sign before the yellow two-storey building with red pillars" },
+      { src: "images/chez-jose-balcony.jpg", alt: "The upstairs walkway past the room doors, looking out over the village and the hills" },
+      { src: "images/chez-jose-lounge.jpg", alt: "The lounge, with wooden sofas and tables before a painted rainforest wall" },
+      { src: "images/chez-jose-stairs.jpg", alt: "A guest climbing the staircase, its walls painted with forest, sky and a leaping lemur" },
+      { src: "images/chez-jose-room-double.jpg", alt: "A double room with a flowered bedspread and a mosquito net" },
+      { src: "images/chez-jose-room-twin.jpg", alt: "A twin room with two beds in blue covers and a bedside table" },
+      { src: "images/chez-jose-lemur-murals.jpg", alt: "Wall paintings of an aye-aye and of lemurs climbing bamboo" },
+      { src: "images/chez-jose-meeting-hall.jpg", alt: "The meeting hall, with tables in white and red cloths" },
+      { src: "images/chez-jose-bathroom.jpg", alt: "A tiled bathroom with a washbasin and a shower" }
     ],
     contact: { phone: "+261 34 64 950 73", email: "ecar.chezjose@gmail.com", website: "https://ecarchezjose.wixsite.com/ecar/chez-jos%C3%A9-ranomafana", social: "" }
   },
@@ -721,44 +771,94 @@ const stayData = [
     slug: "akamasoa-guest-house",
     name: "Akamasoa Guest House",
     type: "guest",
-    price: "Budget — contact for rates",
+    price: "Dormitory 4,000–6,000 Ar per person (students) · rooms 30,000 Ar / night",
     toGate: 7,
     rating: "—",
-    img: "images/placeholder-akamasoa-guest-house.jpg",
+    img: "images/akamasoa-guest-house-view.jpg",
     wifi: false, hotWater: true, restaurant: false, parking: true,
     verified: true,
-    photoNeeded: true,
-    sourceNote: "Local listing from Kyle's own records — not present on Tripadvisor or Petit Futé. Map pin from the 'Akamasoa' bed and breakfast on Google Maps (checked 23 Oct 2026): a Google search for the listing's full name landed on Soa Lodge.",
+    asOf: "2026-11",
+    sourceNote: "Local listing from Kyle's own records — not present on Tripadvisor or Petit Futé. Dormitory and room prices and the reservations number (034 76 414 21), and that prices are per person per night, bathrooms shared in the dormitory and private with the rooms: Kyle, 18 Nov 2026, with his 16 photos (11 used; originals in photo-originals/2026-11-18 Akamasoa/). Map pin from the 'Akamasoa' bed and breakfast on Google Maps (checked 23 Oct 2026): a Google search for the listing's full name landed on Soa Lodge.",
     mapPin: "-21.2632,47.4646",   // Google Maps "Akamasoa"; the name search finds Soa Lodge
-    gallery: [
-      { src: "images/akamasoa-guest-house-exterior.jpg", fallback: "images/placeholder-akamasoa-guest-house.jpg", alt: "Akamasoa Guest House exterior" },
-      { src: "images/akamasoa-guest-house-room.jpg", fallback: "images/placeholder-akamasoa-guest-house.jpg", alt: "Room at Akamasoa Guest House" },
-      { src: "images/akamasoa-guest-house-restaurant.jpg", fallback: "images/placeholder-akamasoa-guest-house.jpg", alt: "Restaurant or common area at Akamasoa Guest House" },
-      { src: "images/akamasoa-guest-house-view.jpg", fallback: "images/placeholder-akamasoa-guest-house.jpg", alt: "View from Akamasoa Guest House" }
+    rooms: [
+      { type: "Dormitory bed — middle-school students", price: "4,000 Ar per person" },
+      { type: "Dormitory bed — lycée students", price: "5,000 Ar per person" },
+      { type: "Dormitory bed — university students", price: "6,000 Ar per person" },
+      { type: "Two rooms and a kitchen (no gas)", price: "30,000 Ar" }
     ],
-    desc: "Simple, community-focused dormitory accommodation for park visitors, with basic clean rooms, local hospitality, and kitchen facilities.",
-    contact: { phone: "", email: "", website: "", social: "" }
+    ratesNote: "The dormitory prices are student rates; ask about others when you book.",
+    features: ["Shared bathrooms in the dormitory", "The rooms have their own bathroom"],
+    gallery: [
+      { src: "images/akamasoa-guest-house-view.jpg", alt: "Cycads and traveller's palms on a lawn beside a stone path, below forested hills, Akamasoa" },
+      { src: "images/akamasoa-guest-house-exterior.jpg", alt: "An orange building with a green roof beside a stone path, under a forested peak with a bare rock face, Akamasoa" },
+      { src: "images/akamasoa-guest-house-buildings.jpg", alt: "Two-storey buildings, grey and red, above wide stone steps, Akamasoa" },
+      { src: "images/akamasoa-guest-house-garden.jpg", alt: "Pines and traveller's palms on a grassy slope, with a small building and a thatched shelter, Akamasoa" },
+      { src: "images/akamasoa-guest-house-dormitory.jpg", alt: "Rows of single beds in the dormitory, green walls and an open window, Akamasoa" },
+      { src: "images/akamasoa-guest-house-bunk-beds.jpg", alt: "Wooden bunk beds in a green room, Akamasoa" },
+      { src: "images/akamasoa-guest-house-room.jpg", alt: "A double bed and a wooden chair in a blue room with an open window, Akamasoa" },
+      { src: "images/akamasoa-guest-house-room-yellow.jpg", alt: "A single bed, a table and chairs in a yellow room, Akamasoa" },
+      { src: "images/akamasoa-guest-house-kitchen.jpg", alt: "A tiled kitchen with a double sink, Akamasoa" },
+      { src: "images/akamasoa-guest-house-bathroom.jpg", alt: "A washroom with a basin, toilet and shower, Akamasoa" },
+      { src: "images/akamasoa-guest-house-restaurant.jpg", alt: "Long wooden tables and chairs in the dining hall, Akamasoa" }
+    ],
+    desc: "Simple, community-focused lodging in gardens below forested hills: a dormitory with student rates, and two rooms with their own kitchen. Basic, clean rooms and local hospitality.",
+    contact: { phone: "+261 34 76 414 21", email: "", website: "", social: "", note: "For reservations." }
   },
   {
     slug: "chez-liantsoa",
     name: "Chez Liantsoa",
     type: "guest",
-    price: "Budget — contact for rates",
+    price: "From 30,000 Ar / night",
     toGate: 5.5,
     rating: "—",
-    img: "images/placeholder-chez-liantsoa.jpg",
+    img: "images/chez-liantsoa-exterior.jpg",
+    imgPosition: "center 40%",   // a tall photo: keep the sign in a wide card's frame
     wifi: true, hotWater: false, restaurant: false, parking: false,
     verified: true,
-    photoNeeded: true,
-    sourceNote: "Local listing from Kyle's own records — not present on Tripadvisor or Petit Futé.",
+    asOf: "2026-11",
+    sourceNote: "Local listing from Kyle's own records — not present on Tripadvisor or Petit Futé. Rooms from 30,000 Ar: Kyle, 18 Nov 2026. The sign over the street (Kyle's photo, 18 Nov 2026) shows the same phone number, 034 89 594 20, and reads 'Annexe Hotelin-Kavana, Chambres Chez Liantsoa'. Kyle, 18 Nov 2026: shared bathrooms, no hot water; related to Hotel In-Kavana but a different hotel.",
     gallery: [
-      { src: "images/chez-liantsoa-exterior.jpg", fallback: "images/placeholder-chez-liantsoa.jpg", alt: "Chez Liantsoa exterior" },
-      { src: "images/chez-liantsoa-room.jpg", fallback: "images/placeholder-chez-liantsoa.jpg", alt: "Room at Chez Liantsoa" },
+      { src: "images/chez-liantsoa-exterior.jpg", alt: "The yellow two-storey house with its painted sign, 'Chambres Chez Liantsoa', over a cobbled street" },
+      { src: "images/chez-liantsoa-room.jpg", alt: "A double bed with a knotted mosquito net, against orange walls, Chez Liantsoa" },
+      { src: "images/chez-liantsoa-doorway.jpg", alt: "Wooden doors open on a pink curtain and a bed beyond, room 2, Chez Liantsoa" },
       { src: "images/chez-liantsoa-restaurant.jpg", fallback: "images/placeholder-chez-liantsoa.jpg", alt: "Restaurant or common area at Chez Liantsoa" },
       { src: "images/chez-liantsoa-view.jpg", fallback: "images/placeholder-chez-liantsoa.jpg", alt: "View from Chez Liantsoa" }
     ],
-    desc: "Cosy, budget-friendly inn with clean rooms and warm local hospitality, close to the village centre and to guides and transport.",
+    desc: "Cosy, budget-friendly inn with clean rooms and warm local hospitality, close to the village centre and to guides and transport. The bathrooms are shared and there is no hot water. Its sign calls it an annexe of Hotel In-Kavana: the two are linked but separate places to stay.",
     contact: { phone: "+261 34 89 594 20", email: "", website: "", social: "" }
+  },
+  {
+    slug: "tianala",
+    name: "Tianala",
+    type: "guest",
+    price: "30,000–60,000 Ar / night",
+    toGate: 6,
+    rating: "—",
+    img: "images/tianala-room.jpg",
+    wifi: false, hotWater: false, restaurant: false, parking: false,
+    verified: true,
+    asOf: "2026-11",
+    sourceNote: "Local listing from Kyle's own records — not present on Tripadvisor or Petit Futé. Added 18 Nov 2026 at Kyle's request: room prices (twin or double 30,000 Ar, bungalow 45,000 Ar, family 60,000 Ar) and the phone number (038 74 035 39) from Kyle the same day, with his 12 photos (10 used, resized to 1600 px; originals in photo-originals/2026-11-18 Tianala/; left out: a second family-room shot and a darker second shower shot). The roadside sign reads 'Tianala, Chambres d'hôtes'. Map pin: Kyle's own Google Maps pin (18 Nov 2026), in the village centre; 5.9 km to the park reception by OpenStreetMap routing (OSRM), so toGate 6. Not known yet: Wi-Fi, hot water, meals and parking, so those flags are off.",
+    mapPin: "-21.261162,47.455211",   // Kyle's Google Maps pin, 18 Nov 2026
+    rooms: [
+      { type: "Twin or double", price: "30,000 Ar" },
+      { type: "Bungalow", price: "45,000 Ar" },
+      { type: "Family room", price: "60,000 Ar" }
+    ],
+    gallery: [
+      { src: "images/tianala-room.jpg", alt: "A double bed and a single bed under a blue mosquito net, in a room with woven walls and a wooden floor, Tianala" },
+      { src: "images/tianala-exterior.jpg", alt: "The green roadside sign, 'Tianala, Chambres d'hôtes', under a small tin roof, Tianala" },
+      { src: "images/tianala-room-double.jpg", alt: "A double bed with a patchwork cover, a wooden chair and a curtained doorway to the washroom, Tianala" },
+      { src: "images/tianala-room-stairs.jpg", alt: "A double bed with a cane headboard beside a wooden staircase, Tianala" },
+      { src: "images/tianala-room-family.jpg", alt: "A wooden bunk bed and a double bed in a room with a slatted ceiling, Tianala" },
+      { src: "images/tianala-room-twin.jpg", alt: "Two beds, a cane armchair and a curtained doorway to the washroom, Tianala" },
+      { src: "images/tianala-kitchen.jpg", alt: "A wooden table in the kitchen, with a tiled charcoal stove and cooking pots beyond, Tianala" },
+      { src: "images/tianala-bathroom.jpg", alt: "A washroom with stone walls, a basin and a shower corner, Tianala" },
+      { src: "images/tianala-shower.jpg", alt: "A tiled shower corner with buckets, beside a basin, Tianala" },
+      { src: "images/tianala-toilet.jpg", alt: "A tiled washroom with a toilet and a corner basin, Tianala" }
+    ],
+    desc: "Simple chambres d'hôtes (guest rooms): twin and double rooms, bungalows and family rooms with bunk beds, with mosquito nets over the beds and simple washrooms with a basin and shower.",
+    contact: { phone: "+261 38 74 035 39", email: "", website: "", social: "" }
   },
   {
     slug: "mirary-hotel",
@@ -868,11 +968,17 @@ const eatData = [
     type: "french",
     rating: "3.7 (Tripadvisor, 148 reviews)",
     price: "$$",
-    img: "images/chez-gaspard-restaurant.avif",
+    img: "images/chez-gaspard-dining-room.jpg",
     verified: true,
+    sourceNote: "Meal prices from the hotel's menus (undated), photographed by Kyle on 18 Nov 2026 (copies in photo-originals/2026-11-18 Chez Gaspard/); they replace the figures in his notes of 11 Oct 2026. The menus have a vegetarian page, so 'Vegetarian on request' became 'Vegetarian dishes on the menu'. Photos: Kyle, 18 Nov 2026, shared with the Chez Gaspard listing; they replace the older web photo (file kept, unused).",
+    gallery: [
+      { src: "images/chez-gaspard-dining-room.jpg", alt: "The dining room and bar, with blue and white tablecloths and a rose on each table" },
+      { src: "images/chez-gaspard-dining-hall.jpg", alt: "A second dining room with blue tablecloths, a tiled floor and windows onto the garden" },
+      { src: "images/chez-gaspard-frontage.jpg", alt: "The front of Chez Gaspard: a white building painted with a giraffe weevil, beside the covered stone gateway, with forested hills behind" }
+    ],
     desc: "The dining room at Chez Gaspard, behind the Catholic church and run by the Priests of the Sacred Heart — the village's best-known sit-down meal and a standard stop for guided groups, with a bar showing sport.",
-    highlights: ["Set three-course dinners", "Zebu dishes", "Vegetarian on request"],
-    meals: ["Breakfast: 12,000–15,000 Ar", "Lunch or dinner: 12,000–35,000 Ar à la carte", "Set menu: 45,000 Ar"],
+    highlights: ["Set three-course dinners", "Zebu dishes", "Vegetarian dishes on the menu"],
+    meals: ["Breakfast: 15,000–25,000 Ar (simple, Malagasy, continental or American)", "Starters: 20,000–25,000 Ar", "Soups: 20,000–35,000 Ar", "Main courses: 35,000 Ar (grills, Malagasy dishes, pasta and house specialities); vegetarian dishes 25,000–35,000 Ar", "Desserts: 15,000–25,000 Ar", "Set menu: 65,000 Ar (three courses, four menus to choose from)", "Picnic for the park: sandwich 15,000 Ar, or a meal with water and fruit 45,000 Ar"],
     contact: { phone: "+261 34 02 115 15", email: "hotelchezgaspard@gmail.com", website: "https://hotelchezgaspard.com/", social: "https://www.facebook.com/chezgaspardhotel/?locale=fr_FR" }
   },
   {
@@ -881,11 +987,29 @@ const eatData = [
     type: "malagasy",
     rating: "4.0 (Tripadvisor, 21 reviews)",
     price: "$$–$$$",
-    img: "images/grenat-hotel-restaurant.jpg",
+    img: "images/grenat-hotel-dining-room.jpg",
     verified: true,
+    asOf: "2026-11",
+    sourceNote: "Photos: Kyle, 18 Nov 2026, shared with the Grenat Hotel listing. Meal and drink prices from the hotel's undated printed menu (Kyle's photos, 18 Nov 2026), which also gives Instagram @legrenatran.",
+    gallery: [
+      { src: "images/grenat-hotel-dining-room.jpg", alt: "The dining room, with carved wooden pillars and tables laid for a meal" },
+      { src: "images/grenat-hotel-terrace.jpg", alt: "A table on the covered terrace, looking into the dining room" },
+      { src: "images/grenat-hotel-roadside-sign.jpg", alt: "The Grenat Hotel & Restaurant sign by the road, with the village behind" }
+    ],
     desc: "Hotel restaurant with rainforest views on the main road at the village exit, serving traditional rice dishes alongside French-influenced plates.",
     highlights: ["Zebu steak", "Rice and laoka", "Terrace seating"],
-    meals: ["Breakfast: from 10,000 Ar", "Lunch or dinner: 15,000–30,000 Ar"],
+    meals: [
+      "Breakfast: continental 16,000 Ar, American 20,000 Ar, Malagasy rice with laoka 10,000 Ar, omelettes 6,000–12,000 Ar",
+      "Starters: 10,000–20,000 Ar (salads, vegetable soup, freshwater prawn gratin, chicken crêpe)",
+      "Zebu steak: 20,000–30,000 Ar (pan-fried, breaded, pepper sauce, grilled, or the house skewers)",
+      "Pork, chicken, pasta and noodles: 22,000–30,000 Ar (vegetarian mine sao 22,000 Ar)",
+      "Fish, freshwater prawns and crayfish: 20,000–23,000 Ar",
+      "Rice dishes and sandwiches: 18,000–22,000 Ar (Cantonese rice, romazava tanala)",
+      "Crêpes and fruit desserts: 5,000–8,000 Ar",
+      "Beer: 5,000–8,000 Ar; soft drinks 5,000–7,000 Ar",
+      "Fresh juice: 4,000 Ar a glass, 20,000 Ar a carafe",
+      "Rum arrangé 6,000 Ar, wine 15,000 Ar a glass"
+    ],
     contact: { phone: "+261 34 12 780 84 / +261 34 20 622 88", email: "legrenatran@gmail.com", website: "", social: "https://www.facebook.com/p/Hotel-Grenat-Ranomafana-100063624831201/" }
   },
   {
@@ -1030,18 +1154,20 @@ const eatData = [
     name: "Ihary Hotel Restaurant",
     type: "malagasy",
     rating: "3.0 (Tripadvisor, 47 reviews)",
-    price: "$",
-    img: "images/placeholder-ihary-restaurant.jpg",
+    price: "$$",
+    img: "images/ihary-hotel-restaurant.jpg",
     verified: true,
-    photoNeeded: true,
+    sourceNote: "Meal prices: the hotel's 2026 rate sheet (breakfast, set menu) and Kyle, 18 Nov 2026 (starter, main course, dessert; the menu changes daily), the same as on the Ihary Hotel listing; they replace the 10,000–30,000 Ar in his notes of 11 Oct 2026, so the price tier rose from $ to $$ and 'prices low' came out of the description. Photos: Kyle, 18 Nov 2026, shared with the Ihary Hotel listing. The frontage and dish slots are still waiting.",
     gallery: [
+      { src: "images/ihary-hotel-restaurant.jpg", alt: "The dining room at Ihary Hotel Restaurant, with red and blue tablecloths under a high timber ceiling" },
+      { src: "images/ihary-hotel-bar.jpg", alt: "The bar at Ihary Hotel Restaurant, with six brightly painted stools and carved wooden panels above the counter" },
+      { src: "images/ihary-hotel-sign.jpg", alt: "The roadside sign for Ihary Hotel, its bungalows, restaurant and bar" },
       { src: "images/ihary-restaurant-exterior.jpg", fallback: "images/placeholder-ihary-restaurant.jpg", alt: "Ihary Hotel Restaurant frontage" },
-      { src: "images/ihary-restaurant-dining.jpg", fallback: "images/placeholder-ihary-restaurant.jpg", alt: "Dining room at Ihary Hotel Restaurant" },
       { src: "images/ihary-restaurant-dish.jpg", fallback: "images/placeholder-ihary-restaurant.jpg", alt: "A dish at Ihary Hotel Restaurant" }
     ],
-    desc: "Riverside restaurant on the bank of the Namorona serving Malagasy cuisine. Quality is acceptable and prices low; service can be slow, so it is not the place to eat before an early park start.",
+    desc: "Riverside restaurant on the bank of the Namorona serving Malagasy cuisine. Quality is acceptable; service can be slow, so it is not the place to eat before an early park start.",
     highlights: ["River views", "Packed lunches for the park", "Allow extra time"],
-    meals: ["Breakfast, lunch or dinner: 10,000–30,000 Ar"],
+    meals: ["Breakfast: 18,000 Ar continental, 20,000 Ar American", "Set menu: 60,000 Ar", "À la carte (the menu changes daily): starter 20,000 Ar, main course 30,000 Ar, dessert 15,000 Ar"],
     contact: { phone: "+261 34 13 434 57 / +261 33 12 857 98 / +261 32 02 526 98 / +261 20 76 296 96", email: "iharyhotel@gmail.com", website: "", social: "https://www.facebook.com/iharyhotel/" }
   },
   {
@@ -1661,6 +1787,32 @@ const doData = [
     contact: { phone: "", email: "", website: "https://www.olonala.org/", social: "" }
   },
   {
+    slug: "famiova-weavers",
+    name: "Famiova: Traditional Weavers",
+    category: "Art & culture",
+    price: "Free to browse",
+    rating: "—",
+    duration: "30–60 minutes",
+    status: "open",
+    img: "images/famiova-weaver-at-loom.jpg",
+    verified: true,
+    photoNeeded: false,
+    asOf: "2026-11",
+    mapPin: "-21.2604375,47.4540781",   // Google Maps "Coopérative Famiova Ranomafana" (weaving mill), in the village
+    sourceNote: "Added 18 Nov 2026 at Kyle's request, with his six photos (resized to 1600 px; originals in photo-originals/2026-11-18 Famiova/); the weaver's polo shirt reads 'Koperativa Famiova Ranomafana'. A women's group that makes handmade scarves, in the old museum, and weaves scarves to order (material, style, colour) if asked early: Centre ValBio's 'Visiting Centre ValBio' page (stonybrook.edu, checked 18 Nov 2026). The name means 'transformation'; a cooperative of mainly women in the heart of Ranomafana, weaving cotton, sisal and raffia in the Malagasy tradition: a Facebook post 'Famiova, la coopérative qui fait vivre l'art du tissage à Ranomafana' (checked 18 Nov 2026). Silk: a Google Maps review ('silk and cotton fabrics'). Map pin from Google Maps' own listing, 'Coopérative Famiova Ranomafana' (weaving mill, PFQ3+RJG, checked 18 Nov 2026). Scarves 'around 50,000 Ar' is from Kyle's notes of 18 Nov 2026, which cite an Instagram reel; Centre ValBio's page gives no price, so it is a tip, not the price line. Kyle's notes also say Centre ValBio reported in July 2026 that the group was back at work with new looms, and a land blessing in October 2026; not checked, so not on the site. The honey (Miel de Niaouli by Tian'Soa) and soap (Soa Be) are other producers' goods on sale in the shop. No hours or contacts known.",
+    gallery: [
+      { src: "images/famiova-weaver-at-loom.jpg", alt: "A Famiova weaver at a wooden hand loom strung with turquoise and maroon stripes, in front of shelves of woven scarves and bags" },
+      { src: "images/famiova-weaver-close.jpg", alt: "A Famiova weaver passing the thread through the warp, with scarves hanging on the shelves behind her" },
+      { src: "images/famiova-loom-and-shop.jpg", alt: "A loom strung with black, pink and green thread, facing the shop's tote bags, sandals, baskets and woven bags" },
+      { src: "images/famiova-shop-table.jpg", alt: "Handmade soaps and embroidered pieces in woven baskets on a table, under a wall of striped scarves, at Famiova" },
+      { src: "images/famiova-soaps.jpg", alt: "Soa Be honey and rosemary soaps in a woven basket, for sale at Famiova" },
+      { src: "images/famiova-honey.jpg", alt: "Three bottles of niaouli honey on a wooden shelf, for sale at Famiova" }
+    ],
+    desc: "A women's weaving cooperative in the heart of Ranomafana village, in the old museum. At wooden hand looms, the weavers turn cotton, silk, sisal and raffia into scarves and cloth in the Malagasy weaving tradition, and you can watch them work and buy straight from the cooperative. Famiova means “transformation”: of raw fibre into cloth, and of the lives of the women who weave it. The shop also sells Ranomafana tote bags, baskets, leather sandals, honey and handmade soap.",
+    tips: ["Scarves can be woven to order (material, style, colour): ask well ahead", "Scarves have sold for around 50,000 Ar — ask for today's prices", "Ask before photographing the weavers", "Bring small Ariary notes"],
+    contact: { phone: "", email: "", website: "", social: "" }
+  },
+  {
     slug: "park-entrance-craft-shop",
     name: "Park Entrance Craft Shop",
     category: "Market",
@@ -2203,7 +2355,7 @@ const blogData = [
       "## Worth ordering",
       "Romazava, the classic meat-and-greens broth, on a cool evening after the rain. Voanjobory, a stew of Bambara groundnuts: the one at Hotel Manja’s restaurant is exceptional. Zebu steak, at Grenat Hotel’s restaurant among others.",
       "## What things cost",
-      "At a local hotely, a plate costs around 10,000–30,000 Ar. Hotel restaurants are mostly 12,000–35,000 Ar for a main, and the set dinners at Chez Gaspard and Setam Lodge are 45,000–70,000 Ar.",
+      "At a local hotely, a plate costs around 10,000–30,000 Ar. Hotel restaurants are mostly 12,000–35,000 Ar for a main, and the set dinners at Chez Gaspard and Setam Lodge are 65,000–70,000 Ar.",
       "Some lodge kitchens cook to order, so ask ahead if you are eating where you are not staying."
     ]
   },
@@ -2255,10 +2407,42 @@ const blogData = [
      desc: "Birth, marriage and death certificates.",   // text, or the same { en, fr, de, mg }
      where: "Town hall, ground floor",  // "" if unknown
      hours: "Mon–Fri 08:00–12:00",      // "" if unknown
-     contact: { phone: "", email: "" },
+     contact: { phone: "", email: "" },   // or phones: [{ label: "Mayor" (or { en, fr, de, mg }), number: "+261 …" }]
      sourceNote: "Who gave this, and when"
    } */
-const municipalData = [];
+const municipalData = [
+  {
+    slug: "town-hall",
+    section: "commune",
+    title: {
+      en: "Town hall (Lapan’ny Tanàna)",
+      fr: "Mairie (Lapan’ny Tanàna)",
+      de: "Rathaus (Lapan’ny Tanàna)",
+      mg: "Lapan’ny Tanàna"
+    },
+    desc: {
+      en: "The Commune of Ranomafana’s offices, behind the gate under the “Kaominina Mavitrika Ranomafana” sign. The main contact is the mayor; the deputy mayor can also help.",
+      fr: "Les bureaux de la Commune de Ranomafana, derrière le portail, sous le panneau « Kaominina Mavitrika Ranomafana ». Le premier contact est le maire ; l’adjoint au maire peut aussi aider.",
+      de: "Die Büros der Gemeinde Ranomafana, hinter dem Tor unter dem Schild „Kaominina Mavitrika Ranomafana“. Erster Ansprechpartner ist der Bürgermeister; auch der stellvertretende Bürgermeister hilft weiter.",
+      mg: "Ny biraon’ny Kaominina Ranomafana, ao ambadiky ny vavahady eo ambanin’ny takelaka « Kaominina Mavitrika Ranomafana ». Ny Ben’ny Tanàna no tompon’andraikitra voalohany; afaka manampy ihany koa ny Lefitry ny Ben’ny Tanàna."
+    },
+    where: "",
+    hours: {
+      en: "Monday to Friday, 09:00–11:30 and 14:00–16:30",
+      fr: "Du lundi au vendredi, 9 h – 11 h 30 et 14 h – 16 h 30",
+      de: "Montag bis Freitag, 9:00–11:30 und 14:00–16:30 Uhr",
+      mg: "Alatsinainy ka hatramin’ny Zoma, 9:00–11:30 sy 14:00–16:30"
+    },
+    contact: {
+      phones: [
+        { label: { en: "Mayor, Jose Rabemiafara", fr: "Maire, Jose Rabemiafara", de: "Bürgermeister Jose Rabemiafara", mg: "Ben’ny Tanàna, Jose Rabemiafara" }, number: "+261 32 91 327 11" },
+        { label: { en: "Deputy mayor", fr: "Adjoint au maire", de: "Stellvertretender Bürgermeister", mg: "Lefitry ny Ben’ny Tanàna" }, number: "+261 34 90 404 60" }
+      ],
+      email: ""
+    },
+    sourceNote: "Kyle, 18 Nov 2026: the mayor and deputy mayor's numbers and the opening days and hours (he wrote the deputy's as +261 034 90 404 60; the 0 is dropped after +261). Photos of the town hall, Kyle, 18 Nov 2026."
+  }
+];
 
 /* --------------------------------------------------- 8. PUBLIC DOCUMENTS */
 /* Files anyone can download: the Commune's public documents (Public documents

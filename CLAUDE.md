@@ -204,11 +204,18 @@ service get their own tab. **About** is about Ranomafana itself: `ranomafana` ("
 Ranomafana") opens with "At a glance" figures (Kyle, 26 Oct 2026: "put at a glance
 first, then the images, then the text"), then "The village and the valley", five of Kyle's photos (26 Oct 2026: the village under a
 rainbow, zebu on the main road, the RN25 welcome sign, a river over boulders, zebu on a
-riverbank; and later that day the Namorona in mist, a sixth), three across (two on phones). They are `TOWN_PHOTOS` in the script (`renderTownPhotos()`; a tap opens
+riverbank; and later that day the Namorona in mist, a sixth; three drone stills of
+16 Nov 2026; and on 18 Nov 2026 the main street, a spice stall on it and a road roller
+parked beside it, used as received — twelve in all), three across (two on phones). They are `TOWN_PHOTOS` in the script (`renderTownPhotos()`; a tap opens
 them in the pop-up) and also appear in the Photo gallery under "Village & culture",
 linked back to About Ranomafana. Then comes the text: "The valley of hot water" in six
 cards — every fact taken from elsewhere on the site, with a Sources line. Service entries are `municipalData` rows with `section`
-"commune", "gendarmerie" or "hospital"; none have been confirmed, so each page shows an
+"commune", "gendarmerie" or "hospital". The Commune has one (18 Nov 2026, from Kyle): the
+town hall, Monday–Friday 09:00–11:30 and 14:00–16:30, the mayor Jose Rabemiafara
+(+261 32 91 327 11) and the deputy mayor (+261 34 90 404 60), as `contact.phones`
+(each with a label, one per line); under it, "The town hall", six of Kyle's photos
+(`COMMUNE_PHOTOS`, also in the Photo gallery under Village & culture; originals in
+`photo-originals/2026-11-18 Commune/`). The Gendarmerie and hospital still show an
 "on its way" note. Never fill the Gendarmerie or hospital with unconfirmed numbers.
 **Documents** (23 Oct 2026): `development-plan`
 (Ranomafana Development Plan) and `investors` (Investor information) share a tab bar (the Regional Tourism Plan page was removed 12 Nov 2026 at Kyle's request),
@@ -612,10 +619,10 @@ listings — was written without a native speaker and should be checked by one.
 
 ## Current state
 
-23 stays · 16 restaurants · 19 things to do · 7 itineraries · 9 events · 10 blog
+24 stays · 16 restaurants · 20 things to do · 7 itineraries · 9 events · 10 blog
 seeds. **Birdwatching** (`do`, slug `birdwatching`, 23 Oct 2026) is built only from
 facts on the park listing (125 species, Vohiparara, the specialist guide fee): when
-the park's guide fees change in January 2027, change its `price` too. All 23 stays are verified, against published sources or on Kyle's
+the park's guide fees change in January 2027, change its `price` too. All 24 stays are verified, against published sources or on Kyle's
 authority. The whole site — interface, page text and listings — is in English,
 French, German and Malagasy (since 12 Oct 2026).
 
@@ -888,6 +895,69 @@ Sahamalaotra circuit text mentions the car park, toilets, signs and stone steps.
 a car-park photo and a repeat of the bird on its nest. Questions for Kyle (the visitor
 in the tree photo, where the road is, Sahamalaotra and Vohiparara) are in section 7 of
 `PHOTO-AND-DATA-GAPS.md`.
+
+Kyle's six photos of **Famiova: Traditional Weavers**, 18 Nov 2026 (`do`, slug
+`famiova-weavers`, "Art & culture"), started a new listing: a women's weaving
+cooperative in the old museum in the village. Facts come only from Centre ValBio's
+visiting page, a Facebook post on the cooperative, a Google Maps review, and Google
+Maps' own pin (`mapPin`); the sources are in its `sourceNote`. The 50,000 Ar scarf
+price (from an Instagram reel in Kyle's notes) is a tip, not the price line. The two
+photos showing the weaver's face are in, as Kyle sent them to be used; whether she
+agreed, and hours and contacts, are asked in section 7 of `PHOTO-AND-DATA-GAPS.md`.
+The honey and soap in the shop are other producers' (their labels), so the
+description says the shop sells them, not that the cooperative makes them.
+
+Kyle's 20 photos of **Ihary Hotel**, 18 Nov 2026: 12 are in, its first real ones,
+filling all four slots and adding eight, plus a river view he sent later that day; the lane between the brick bungalows is the
+card photo. The bungalows and dining room were recompressed (originals in
+`photo-originals/2026-11-18 Ihary Hotel/`). **Ihary Hotel Restaurant** shares the dining
+room (its card photo), bar and sign; its frontage and `dish` slots are still waiting.
+Kyle confirmed the same day that it has no swimming pool (earlier sources said it
+did), so the description no longer mentions one; don't add it back. Its rates (75,000–180,000
+Ar, bungalows and rooms), breakfast and 60,000 Ar set menu are from the hotel's 2026 rate
+sheet, and the à la carte prices (starter 20,000, main 30,000, dessert 15,000 Ar; the menu
+changes daily) from Kyle, all 18 Nov 2026, on both the hotel and the restaurant. What was left out
+is in section 7 of `PHOTO-AND-DATA-GAPS.md`.
+
+Kyle's 16 photos of **Akamasoa Guest House**, 18 Nov 2026 (11 used, as received;
+originals in `photo-originals/2026-11-18 Akamasoa/`), are its first real ones; the
+garden below the hills is the card photo. His prices the same day are its `rooms`:
+dormitory beds at student rates (4,000 / 5,000 / 6,000 Ar for middle-school, lycée
+and university students) and two rooms with a kitchen (no gas) for 30,000 Ar, plus
+the reservations number. Kyle confirmed the same day that the prices are per person
+per night (dormitory) and per night (rooms), and that the dormitory's bathrooms are
+shared while the rooms have their own (`features`). What non-students pay is asked in
+section 7 of `PHOTO-AND-DATA-GAPS.md`.
+
+**Tianala** (`stay`, slug `tianala`, 18 Nov 2026): a new guest-house listing ("Chambres
+d'hôtes" on its sign) at Kyle's request, with his prices (twin or double 30,000 Ar,
+bungalow 45,000 Ar, family room 60,000 Ar), phone (038 74 035 39) and ten of his 12
+photos (resized to 1600 px; originals in `photo-originals/2026-11-18 Tianala/`). Its
+`mapPin` is Kyle's own Google Maps pin, in the village centre (`toGate: 6`, 5.9 km by
+OpenStreetMap routing). Wi-Fi, hot water, meals and parking are off until Kyle says; questions in section 7 of `PHOTO-AND-DATA-GAPS.md`.
+
+Kyle's photos of **Chez Jose**, 18 Nov 2026: eight of nine are in, its sign before the
+yellow-and-red building as the card photo (`imgPosition` keeps the sign in the wide
+frame); they replace the four old `.avif` web photos, which show the building before its
+repaint (files kept, unused). The walkway photo is cropped to take out a woman's face.
+Rates, room counts, meeting-hall prices and reception hours come from its rate sheet
+(from 1 Jan 2024) and leaflet (copies in `photo-originals/2026-11-18 Chez Jose/`). Its snack
+menus (pizza, sandwiches, ice cream, juice, to order on +261 34 55 359 54) are in `meals`:
+Kyle confirmed the same day they are Chez Jose's own. No set meals, so `restaurant` stays false.
+
+Kyle's 20 photos of **Chez Gaspard**, 18 Nov 2026: 11 are in (used as received), ranked
+most attractive first, the garden with its pond and bungalows as the card photo; they
+replace the four old web photos (files kept, unused). **Chez Gaspard Restaurant** now has
+a gallery of three shared with the hotel (the dining room and bar as its card photo).
+Left out: the dark, blurred shower, bed and bead-curtain photos, a second staircase view,
+a second pond-gazebo photo, a second double room, a branded barrel, a wall close-up and
+the bungalow plan sign (18 bungalows; not added to the text). Later that day he sent a
+flags photo (added after the gateway; a repeat of the gateway was skipped), the hotel's
+2026 rate sheet and its menus (copies in `photo-originals/2026-11-18 Chez Gaspard/`):
+rooms now 75,000–150,000 Ar plus two guide's rooms, a meeting room, a free drivers'
+dormitory; breakfast 15,000–25,000 Ar, mains 35,000 Ar, set menu 65,000 Ar (was 45,000,
+so the "Eating in Ranomafana" story now says 65,000–70,000 Ar) and park picnics. The
+restaurant's "Vegetarian on request" became "Vegetarian dishes on the menu".
 
 The park office notice board (photo, 19 Oct 2026; copy in `photo-originals/2026-10-19
 Park office/`) confirms the entry and guide fees the site shows. It also posts new guide

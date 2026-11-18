@@ -801,6 +801,7 @@
     .park-photos > :first-child { grid-row: span 2; }
     .park-photo { position: relative; border-radius: 16px; overflow: hidden; background: var(--ph); }
     .park-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .service-phone { display: block; }
     .town-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
     .town-photo { display: block; width: 100%; aspect-ratio: 4 / 3; padding: 0; border: 0; border-radius: 16px; overflow: hidden; background: var(--ph); cursor: pointer; }
     .town-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
@@ -2754,6 +2755,12 @@
           <a class="btn btn-ghost" href="mailto:ask@valb.io?subject=Ranomafana%20The Commune" data-team-mail="Ranomafana: The Commune" data-i18n="emailTeamBtn">Email the team</a>
         </div>
       </section>
+      <!-- The town hall in Kyle's photos of 18 Nov 2026: COMMUNE_PHOTOS in the script
+           (renderCommunePhotos()); they also appear in the Photo gallery. -->
+      <section class="wrap stack g-24" style="padding-top: 16px; padding-bottom: 40px;" aria-labelledby="commune-photos-h">
+        <h2 id="commune-photos-h" class="display d-44" data-i18n="communePhotosHeading" data-i18n-html>The <em>town hall</em></h2>
+        <div class="town-photos" id="communePhotos"></div>
+      </section>
       <section class="wrap stack g-16" style="padding-top: 16px; padding-bottom: 64px;" aria-labelledby="sv-social-h" id="servicesSocial" hidden>
         <h2 id="sv-social-h" class="display d-44" data-i18n="followHeading">Follow Ranomafana</h2>
         <p class="lede" data-i18n="followText">News, events and photos from Ranomafana on social media.</p>
@@ -3612,6 +3619,13 @@
         tabGendarmerie: "Gendarmerie",
         tabHospital: "Hospital",
         communeIntro: "The town hall of Ranomafana: the Commune’s services for residents and visitors, and how to reach them.",
+        communePhotosHeading: "The <em>town hall</em>",
+        altCommuneHall: "The town hall of Ranomafana, Lapan’ny Tanàna, seen through its open gate, with the national flag beside it",
+        altCommuneSign: "The Commune’s sign: “Kaominina Mavitrika Ranomafana”, an active commune, well run, with its people taking part",
+        altCommuneDoors: "Door 1, the civil registry, and door 5, the administrative secretary, at the town hall",
+        altCommuneMeeting: "The town hall’s meeting room, its wall painted with the crest of the Commune and the logos of its partners",
+        altCommuneBoard: "The Commune’s public notice board under a green roof, with benches in front",
+        altCommuneBox: "A locked box at the town hall for complaints and suggestions",
         gendarmerieIntro: "The Gendarmerie nationale is the police force in rural Madagascar, Ranomafana included. Its post, hours and contacts will be listed here.",
         gendarmerieEmpty: "The Gendarmerie’s details have not been confirmed yet, so none are shown. In an emergency, your guide or your hotel can help you reach it.",
         hospitalIntro: "Medical care in Ranomafana: where to go, opening hours and contacts will be listed here.",
@@ -3654,6 +3668,9 @@
         altTownAerial: "Ranomafana from the air: the Namorona River beside the RN25 and the village’s roofs, with cloud on the forested hills above",
         altTownAerialStreet: "The RN25 through Ranomafana village seen from the air, between the Namorona River and the town’s red roofs",
         altTownRiverAerial: "Houses and a sports court beside the RN25, with the river running over rocks below, seen from the air",
+        altTownMainStreet: "Ranomafana’s main street, lined with shops and painted houses, with people walking and green hills behind",
+        altTownSpice: "A small spice stall in Ranomafana village, its blue board listing vanilla, pepper, cinnamon, ginger, cloves and other spices",
+        altTownRoller: "A road roller parked beside Ranomafana’s main street, with the busy street and forested hills behind",
         airFilmLabel: "Film: Ranomafana from the air",
         airFilmHeading: "Ranomafana <em>from the air.</em>",
         airFilmText: "A drone flight over the village on a cloudy morning at the end of August: the Namorona River on one side, the RN25 and the town’s roofs on the other, and the forested hills above. Forty seconds, no sound.",
@@ -4234,6 +4251,13 @@
         tabGendarmerie: "Gendarmerie",
         tabHospital: "Hôpital",
         communeIntro: "La mairie de Ranomafana : les services de la Commune pour les habitants et les visiteurs, et comment les joindre.",
+        communePhotosHeading: "La <em>mairie</em>",
+        altCommuneHall: "La mairie de Ranomafana, Lapan’ny Tanàna, vue par son portail ouvert, avec le drapeau national à côté",
+        altCommuneSign: "Le panneau de la Commune : « Kaominina Mavitrika Ranomafana », une commune active, bien gérée, où la population participe",
+        altCommuneDoors: "La porte 1, l’état civil, et la porte 5, le secrétaire administratif, à la mairie",
+        altCommuneMeeting: "La salle de réunion de la mairie, son mur peint aux armes de la Commune et aux logos de ses partenaires",
+        altCommuneBoard: "Le panneau d’affichage public de la Commune sous un toit vert, avec des bancs devant",
+        altCommuneBox: "Une boîte fermée à clé, à la mairie, pour les plaintes et les suggestions",
         gendarmerieIntro: "La Gendarmerie nationale assure la police dans les zones rurales de Madagascar, dont Ranomafana. Son poste, ses horaires et ses contacts seront indiqués ici.",
         gendarmerieEmpty: "Les coordonnées de la Gendarmerie ne sont pas encore confirmées, aucune n’est donc indiquée. En cas d’urgence, votre guide ou votre hôtel peut vous aider à la joindre.",
         hospitalIntro: "Les soins à Ranomafana : où aller, les horaires et les contacts seront indiqués ici.",
@@ -4276,6 +4300,9 @@
         altTownAerial: "Ranomafana vu du ciel : la rivière Namorona le long de la RN25 et les toits du village, avec des nuages sur les collines boisées",
         altTownAerialStreet: "La RN25 traversant le village de Ranomafana vue du ciel, entre la rivière Namorona et les toits rouges",
         altTownRiverAerial: "Des maisons et un terrain de sport au bord de la RN25, avec la rivière qui coule sur les rochers en contrebas, vus du ciel",
+        altTownMainStreet: "La rue principale de Ranomafana, bordée de boutiques et de maisons peintes, avec des passants et les collines vertes derrière",
+        altTownSpice: "Un petit étal d’épices dans le village de Ranomafana, dont le panneau bleu annonce vanille, poivre, cannelle, gingembre, clous de girofle et autres épices",
+        altTownRoller: "Un rouleau compresseur garé au bord de la rue principale de Ranomafana, avec la rue animée et les collines boisées derrière",
         airFilmLabel: "Film : Ranomafana vu du ciel",
         airFilmHeading: "Ranomafana <em>vu du ciel.</em>",
         airFilmText: "Un vol de drone au-dessus du village, par un matin nuageux de fin août : la rivière Namorona d’un côté, la RN25 et les toits de l’autre, et les collines boisées au-dessus. Quarante secondes, sans son.",
@@ -4855,6 +4882,13 @@
         tabGendarmerie: "Gendarmerie (Polizei)",
         tabHospital: "Krankenhaus",
         communeIntro: "Das Rathaus von Ranomafana: die Dienste der Gemeinde für Einwohner und Besucher und wie Sie sie erreichen.",
+        communePhotosHeading: "Das <em>Rathaus</em>",
+        altCommuneHall: "Das Rathaus von Ranomafana, Lapan’ny Tanàna, durch das offene Tor gesehen, daneben die Nationalflagge",
+        altCommuneSign: "Das Schild der Gemeinde: „Kaominina Mavitrika Ranomafana“, eine aktive, gut geführte Gemeinde, in der die Bevölkerung mitwirkt",
+        altCommuneDoors: "Tür 1, das Standesamt, und Tür 5, der Verwaltungssekretär, im Rathaus",
+        altCommuneMeeting: "Der Sitzungssaal des Rathauses, die Wand bemalt mit dem Wappen der Gemeinde und den Logos ihrer Partner",
+        altCommuneBoard: "Die öffentliche Anschlagtafel der Gemeinde unter einem grünen Dach, davor Bänke",
+        altCommuneBox: "Ein abgeschlossener Kasten im Rathaus für Beschwerden und Vorschläge",
         gendarmerieIntro: "Die Gendarmerie nationale ist die Polizei im ländlichen Madagaskar, auch in Ranomafana. Ihr Posten, ihre Zeiten und Kontakte werden hier stehen.",
         gendarmerieEmpty: "Die Angaben zur Gendarmerie sind noch nicht bestätigt und werden deshalb nicht gezeigt. Im Notfall hilft Ihnen Ihr Guide oder Ihr Hotel, sie zu erreichen.",
         hospitalIntro: "Medizinische Versorgung in Ranomafana: wohin man geht, Öffnungszeiten und Kontakte werden hier stehen.",
@@ -4897,6 +4931,9 @@
         altTownAerial: "Ranomafana aus der Luft: der Fluss Namorona neben der RN25 und den Dächern des Orts, Wolken über den bewaldeten Hügeln",
         altTownAerialStreet: "Die RN25 durch Ranomafana aus der Luft, zwischen dem Fluss Namorona und den roten Dächern des Orts",
         altTownRiverAerial: "Häuser und ein Sportplatz an der RN25, darunter der Fluss über Felsen, aus der Luft gesehen",
+        altTownMainStreet: "Die Hauptstraße von Ranomafana mit Läden und bunt gestrichenen Häusern, Passanten und grünen Hügeln dahinter",
+        altTownSpice: "Ein kleiner Gewürzstand im Ort Ranomafana; seine blaue Tafel nennt Vanille, Pfeffer, Zimt, Ingwer, Nelken und weitere Gewürze",
+        altTownRoller: "Eine Straßenwalze am Rand der Hauptstraße von Ranomafana, dahinter die belebte Straße und bewaldete Hügel",
         airFilmLabel: "Film: Ranomafana aus der Luft",
         airFilmHeading: "Ranomafana <em>aus der Luft.</em>",
         airFilmText: "Ein Drohnenflug über den Ort an einem bewölkten Morgen Ende August: auf der einen Seite der Fluss Namorona, auf der anderen die RN25 und die Dächer, darüber die bewaldeten Hügel. Vierzig Sekunden, ohne Ton.",
@@ -5477,6 +5514,13 @@
         tabGendarmerie: "Zandarimariam-pirenena",
         tabHospital: "Hopitaly",
         communeIntro: "Ny lapan'ny tanànan'i Ranomafana: ny tolotry ny Kaominina ho an'ny mponina sy ny mpitsidika, ary ny fomba ifandraisana aminy.",
+        communePhotosHeading: "Ny <em>Lapan’ny Tanàna</em>",
+        altCommuneHall: "Ny Lapan’ny Tanànan’i Ranomafana, hita amin’ny vavahady misokatra, miaraka amin’ny sainam-pirenena eo akaikiny",
+        altCommuneSign: "Ny takelaky ny Kaominina: « Kaominina Mavitrika Ranomafana », Kaominina tsara tantana, vahoaka mandray anjara",
+        altCommuneDoors: "Varavarana 1, ny sekretera misahana ny sata sivily, sy varavarana 5, ny sekretera mpitantan-draharaha, ao amin’ny Lapan’ny Tanàna",
+        altCommuneMeeting: "Ny efitrano fivoriana ao amin’ny Lapan’ny Tanàna, voaloko amin’ny tandindon’ny Kaominina sy ny sarin’ireo mpiara-miasa aminy ny rindrina",
+        altCommuneBoard: "Ny takelaka fanaovana filazana ho an’ny besinimaro an’ny Kaominina, eo ambanin’ny tafo maitso, misy dabilio eo anoloana",
+        altCommuneBox: "Boaty mihidy ao amin’ny Lapan’ny Tanàna hametrahana fitarainana sy soso-kevitra",
         gendarmerieIntro: "Ny Zandarimariam-pirenena no polisy any ambanivohitr'i Madagasikara, anisan'izany i Ranomafana. Ho voatanisa eto ny toerana misy azy, ny ora ary ny fifandraisana.",
         gendarmerieEmpty: "Mbola tsy voamarina ny momba ny Zandarimariam-pirenena, ka tsy misy aseho. Raha misy maika, afaka manampy anao hifandray aminy ny mpitari-dalanao na ny hotelinao.",
         hospitalIntro: "Fitsaboana ao Ranomafana: ho voatanisa eto ny toerana aleha, ny ora fisokafana ary ny fifandraisana.",
@@ -5519,6 +5563,9 @@
         altTownAerial: "Ranomafana jerena avy eny ambony: ny reniranon'i Namorona eo anilan'ny RN25 sy ny tafon-tranon'ny tanàna, misy rahona eny amin'ireo havoana misy ala",
         altTownAerialStreet: "Ny RN25 mamakivaky ny tanànan'i Ranomafana jerena avy eny ambony, eo anelanelan'ny reniranon'i Namorona sy ireo tafo mena",
         altTownRiverAerial: "Trano sy kianja filalaovana eo anilan'ny RN25, ary ny renirano mikoriana amin'ny vato eo ambany, jerena avy eny ambony",
+        altTownMainStreet: "Ny lalana lehibe ao Ranomafana, misy fivarotana sy trano voaloko eny amoron-dalana, olona mandeha, ary havoana maitso ao ambadika",
+        altTownSpice: "Toeram-pivarotana zava-manitra kely ao an-tanànan'i Ranomafana; ny takelaka manga ao aminy dia milaza lavanila, dipoavatra, kanela, sakamalao, jirofo sy zava-manitra hafa",
+        altTownRoller: "Fiara fanosehana lalana mijanona eo amoron'ny lalana lehibe ao Ranomafana, ary ny lalana be olona sy ireo havoana misy ala ao ambadika",
         airFilmLabel: "Sarimihetsika: Ranomafana jerena avy eny ambony",
         airFilmHeading: "Ranomafana <em>jerena avy eny ambony.</em>",
         airFilmText: "Sidina drône eny ambonin'ny tanàna, tamin'ny maraina feno rahona tamin'ny faran'ny volana aogositra: ny reniranon'i Namorona amin'ny ilany iray, ny RN25 sy ny tafon-trano amin'ny ilany iray, ary ireo havoana misy ala eny ambony. Efapolo segondra, tsy misy feo.",
@@ -5824,6 +5871,7 @@
       renderTownPhotos();
       renderTrailPhotos();
       renderCircuitPhotos();
+      renderCommunePhotos();
       renderGallery();
       renderServices();
       renderDocuments();
@@ -6898,6 +6946,10 @@
       { src: 'images/ranomafana-village-aerial.jpg', alt: 'altTownAerial' },
       { src: 'images/ranomafana-village-aerial-street.jpg', alt: 'altTownAerialStreet' },
       { src: 'images/ranomafana-rn25-river-aerial.jpg', alt: 'altTownRiverAerial' },
+      // The village's main street (Kyle, 18 Nov 2026, used as received).
+      { src: 'images/ranomafana-main-street.jpg', alt: 'altTownMainStreet' },
+      { src: 'images/ranomafana-spice-stall.jpg', alt: 'altTownSpice' },
+      { src: 'images/ranomafana-main-street-road-roller.jpg', alt: 'altTownRoller' },
     ];
     /* Trail Ranomafana, 30 Aug 2026, on the Events page (renderTrailPhotos()); they also
        appear in the Photo gallery under "Village & culture". */
@@ -6952,6 +7004,32 @@
       showModal(`
         <div class="m-head">
           <span class="m-kicker">${esc(t('birdCrumb'))}</span>
+          <h2 class="m-title" id="modalTitle">${esc(name)}</h2>
+        </div>
+        ${galleryHTML(name, [...list.slice(i), ...list.slice(0, i)], true)}`);
+    }
+    /* The Commune's town hall (Kyle's photos, 18 Nov 2026), on The Commune page. */
+    const COMMUNE_PHOTOS = [
+      { src: 'images/commune-town-hall.jpg', alt: 'altCommuneHall' },
+      { src: 'images/commune-ranomafana-sign.jpg', alt: 'altCommuneSign' },
+      { src: 'images/commune-office-doors.jpg', alt: 'altCommuneDoors' },
+      { src: 'images/commune-meeting-hall.jpg', alt: 'altCommuneMeeting' },
+      { src: 'images/commune-notice-board.jpg', alt: 'altCommuneBoard' },
+      { src: 'images/commune-suggestion-box.jpg', alt: 'altCommuneBox' },
+    ];
+    const communePhotoList = () => COMMUNE_PHOTOS.map((p) => ({ src: p.src, alt: t(p.alt) }));
+    function renderCommunePhotos() {
+      document.getElementById('communePhotos').innerHTML = communePhotoList().map((p, i) => `
+        <button type="button" class="town-photo" onclick="openCommunePhotos(${i})" aria-label="${esc(p.alt)}">
+          <img src="${esc(p.src)}" alt="" loading="lazy">
+        </button>`).join('');
+    }
+    function openCommunePhotos(i) {
+      const list = communePhotoList();
+      const name = stripTags(t('communePhotosHeading'));
+      showModal(`
+        <div class="m-head">
+          <span class="m-kicker">${esc(t('tabCommune'))}</span>
           <h2 class="m-title" id="modalTitle">${esc(name)}</h2>
         </div>
         ${galleryHTML(name, [...list.slice(i), ...list.slice(0, i)], true)}`);
@@ -7149,6 +7227,12 @@
         seen.add(p.src);
         out.push({ src: p.src, alt: p.alt, name: stripTags(t('birdSahaHeading')), page: 'birdwatching', group: 'forest' });
       }
+      // The town hall's photos join "Village & culture", linked to The Commune.
+      for (const p of communePhotoList()) {
+        if (seen.has(p.src) || !photoReady(p.src)) continue;
+        seen.add(p.src);
+        out.push({ src: p.src, alt: p.alt, name: t('tabCommune'), page: 'commune', group: 'village' });
+      }
       // Liked photos first, the most recently liked at the very top.
       const rank = (p) => (isLiked(p.src) ? likedPhotos.indexOf(p.src) : likedPhotos.length);
       return out.map((p, i) => ({ p, i })).sort((a, b) => rank(a.p) - rank(b.p) || a.i - b.i).map((x) => x.p);
@@ -7228,8 +7312,11 @@
       // Each page (The Commune, Gendarmerie, Hospital) lists the rows filed under it.
       const card = (m) => {
         const c = m.contact || {};
-        const contact = [
-          c.phone ? `<a href="tel:${esc(c.phone.replace(/[^\d+]/g, ''))}">${esc(c.phone)}</a>` : '',
+        const tel = (n) => `<a href="tel:${esc(n.replace(/[^\d+]/g, ''))}">${esc(n)}</a>`;
+        // phones: [{ label, number }] puts each named number on its own line.
+        const named = (c.phones || []).filter((x) => x.number).map((x) => `<span class="service-phone">${x.label ? `${esc(localText(x.label))}: ` : ''}${tel(x.number)}</span>`).join('');
+        const contact = named + [
+          c.phone ? tel(c.phone) : '',
           c.email ? `<a href="mailto:${esc(c.email)}">${esc(c.email)}</a>` : ''
         ].filter(Boolean).join(' · ');
         return `

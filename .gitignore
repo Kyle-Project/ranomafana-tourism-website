@@ -15,3 +15,6 @@ desktop.ini
 # Ignore local Claude Code session state only.
 .claude/settings.local.json
 .claude/state/
+
+# Large source archives (GitHub refuses files over 100 MB)
+*.zip

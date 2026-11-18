@@ -707,45 +707,97 @@ const LISTING_TRANSLATIONS = {
         ]
       },
       "meals": {
-        "en": ["Breakfast: from 10,000 Ar", "Lunch or dinner: 15,000–30,000 Ar"],
-        "fr": ["Petit-déjeuner : à partir de 10 000 Ar", "Déjeuner ou dîner : 15 000–30 000 Ar"],
-        "de": ["Frühstück: ab 10.000 Ar", "Mittag- oder Abendessen: 15.000–30.000 Ar"],
-        "mg": ["Sakafo maraina: manomboka amin'ny 10 000 Ar", "Sakafo antoandro na hariva: 15 000–30 000 Ar"]
+        "en": [
+          "Breakfast: continental 16,000 Ar, American 20,000 Ar, Malagasy rice with laoka 10,000 Ar",
+          "Lunch or dinner, à la carte: starters 10,000–20,000 Ar, main courses 18,000–30,000 Ar, desserts 5,000–8,000 Ar"
+        ],
+        "fr": [
+          "Petit-déjeuner : continental 16 000 Ar, américain 20 000 Ar, riz malgache avec laoka 10 000 Ar",
+          "Déjeuner ou dîner, à la carte : entrées 10 000–20 000 Ar, plats 18 000–30 000 Ar, desserts 5 000–8 000 Ar"
+        ],
+        "de": [
+          "Frühstück: kontinental 16.000 Ar, amerikanisch 20.000 Ar, madagassischer Reis mit Laoka 10.000 Ar",
+          "Mittag- oder Abendessen à la carte: Vorspeisen 10.000–20.000 Ar, Hauptgerichte 18.000–30.000 Ar, Desserts 5.000–8.000 Ar"
+        ],
+        "mg": [
+          "Sakafo maraina: continental 16 000 Ar, amerikanina 20 000 Ar, vary amin'anana sy laoka 10 000 Ar",
+          "Sakafo antoandro na hariva, araka ny safidy: fanombohana 10 000–20 000 Ar, sakafo fototra 18 000–30 000 Ar, tsindrin-tsakafo 5 000–8 000 Ar"
+        ]
       },
       "features": {
-        "en": ["River view", "Private parking, watched from a guard tower"],
-        "fr": ["Vue sur la rivière", "Parking privé, surveillé depuis une tour de garde"],
-        "de": ["Flussblick", "Privatparkplatz, von einem Wachturm aus bewacht"],
-        "mg": ["Fijery ny renirano", "Toeram-piantsonana manokana, ambenana avy amin'ny tilikambo fiambenana"]
+        "en": [
+          "River view",
+          "Private parking, watched from a guard tower",
+          "Laundry, washed and ironed: 1,000–5,000 Ar an item"
+        ],
+        "fr": [
+          "Vue sur la rivière",
+          "Parking privé, surveillé depuis une tour de garde",
+          "Blanchisserie, lavage et repassage : 1 000–5 000 Ar la pièce"
+        ],
+        "de": [
+          "Flussblick",
+          "Privatparkplatz, von einem Wachturm aus bewacht",
+          "Wäscheservice, gewaschen und gebügelt: 1.000–5.000 Ar pro Stück"
+        ],
+        "mg": [
+          "Fijery ny renirano",
+          "Toeram-piantsonana manokana, ambenana avy amin'ny tilikambo fiambenana",
+          "Fanasan-damba sy fanitsiana: 1 000–5 000 Ar isaky ny akanjo"
+        ]
       },
       "gallery[].alt": {
         "en": [
-          "Grenat Hotel exterior",
-          "Bungalow at Grenat Hotel",
-          "Room at Grenat Hotel",
-          "Restaurant at Grenat Hotel",
-          "Grenat Hotel sign"
+          "A table under a parasol in the paved courtyard beside the red main building, with palms and hills behind",
+          "White chairs on a bungalow veranda, looking along the row of yellow bungalows",
+          "A room with a double and a single bed, mosquito nets and a table",
+          "A stone path through the garden, below forested hills",
+          "The dining room, with carved wooden pillars and tables laid for a meal",
+          "A table on the covered terrace, looking into the dining room",
+          "A room with a double and a single bed under a carved wooden staircase",
+          "The two-storey red buildings around the courtyard",
+          "Carved wooden doors open onto the reception",
+          "The Grenat Hotel & Restaurant sign by the road, with the village behind",
+          "A tiled bathroom with a toilet and washbasin"
         ],
         "fr": [
-          "Grenat Hotel : vue extérieure",
-          "Grenat Hotel : un bungalow",
-          "Grenat Hotel : une chambre",
-          "Grenat Hotel : le restaurant",
-          "Grenat Hotel : l’enseigne"
+          "Une table sous un parasol dans la cour pavée, près du bâtiment principal rouge, avec palmiers et collines derrière",
+          "Chaises blanches sur la véranda d’un bungalow, le long de la rangée de bungalows jaunes",
+          "Une chambre avec un lit double et un lit simple, moustiquaires et table",
+          "Un chemin de pierre à travers le jardin, sous des collines boisées",
+          "La salle à manger, avec ses piliers en bois sculpté et ses tables dressées",
+          "Une table sur la terrasse couverte, donnant sur la salle à manger",
+          "Une chambre avec un lit double et un lit simple sous un escalier en bois sculpté",
+          "Les bâtiments rouges à étage autour de la cour",
+          "Des portes en bois sculpté ouvertes sur la réception",
+          "L’enseigne Grenat Hotel & Restaurant au bord de la route, avec le village derrière",
+          "Une salle de bain carrelée avec toilettes et lavabo"
         ],
         "de": [
-          "Grenat Hotel: Außenansicht",
-          "Grenat Hotel: ein Bungalow",
-          "Grenat Hotel: ein Zimmer",
-          "Grenat Hotel: das Restaurant",
-          "Grenat Hotel: das Schild"
+          "Ein Tisch unter einem Sonnenschirm im gepflasterten Hof neben dem roten Hauptgebäude, mit Palmen und Hügeln dahinter",
+          "Weiße Stühle auf der Veranda eines Bungalows, mit Blick entlang der Reihe gelber Bungalows",
+          "Ein Zimmer mit Doppel- und Einzelbett, Moskitonetzen und Tisch",
+          "Ein Steinweg durch den Garten unter bewaldeten Hügeln",
+          "Der Speisesaal mit geschnitzten Holzsäulen und gedeckten Tischen",
+          "Ein Tisch auf der überdachten Terrasse mit Blick in den Speisesaal",
+          "Ein Zimmer mit Doppel- und Einzelbett unter einer geschnitzten Holztreppe",
+          "Die zweistöckigen roten Gebäude rund um den Hof",
+          "Geschnitzte Holztüren, offen zur Rezeption",
+          "Das Schild „Grenat Hotel & Restaurant“ an der Straße, dahinter das Dorf",
+          "Ein gefliestes Bad mit Toilette und Waschbecken"
         ],
         "mg": [
-          "Grenat Hotel: ny ivelany",
-          "Grenat Hotel: bungalow iray",
-          "Grenat Hotel: efitrano iray",
-          "Grenat Hotel: ny trano fisakafoana",
-          "Grenat Hotel: ny takelaka famantarana"
+          "Latabatra eo ambanin'ny elo ao an-tokotany voarafitra vato, akaikin'ny trano lehibe mena, misy rofia sy havoana ao aoriana",
+          "Seza fotsy eo amin'ny lavarangan'ny bungalow iray, manatrika ny laharan'ireo bungalow mavo",
+          "Efitrano misy fandriana roa olona sy fandriana kely, lay moka ary latabatra",
+          "Lalana vato mamakivaky ny zaridaina, eo ambanin'ny havoana misy ala",
+          "Ny efitrano fisakafoana, misy andry hazo voasokitra sy latabatra voaomana",
+          "Latabatra eo amin'ny lavarangana misy tafo, manatrika ny efitrano fisakafoana",
+          "Efitrano misy fandriana roa olona sy fandriana kely eo ambanin'ny tohatra hazo voasokitra",
+          "Ireo trano mena misy rihana manodidina ny tokotany",
+          "Varavarana hazo voasokitra misokatra mankany amin'ny fandraisana",
+          "Ny takelaka Grenat Hotel & Restaurant amoron-dalana, ary ny tanàna ao aoriana",
+          "Efitra fandroana misy taila, misy kabone sy fanasana tanana"
         ]
       }
     },
@@ -757,10 +809,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Trano fandraisana vahiny sy trano fisakafoana mora vidy ao ambadiky ny fiangonana katolika, tantanan'ireo Pretra ao amin'ny Fo Masin'i Jesoa — efa ela no tian'ny mpizahatany mitondra kitapo sy ny vondrona miaraka amin'ny mpitari-dalana, misy trano kely sy dobo kely ao an-jaridaina, ary bar mampiseho fanatanjahantena."
       },
       "price": {
-        "en": "70,000–140,000 Ar / night",
-        "fr": "70 000–140 000 Ar / nuit",
-        "de": "70.000–140.000 Ar / Nacht",
-        "mg": "70 000–140 000 Ar / alina"
+        "en": "75,000–150,000 Ar / night",
+        "fr": "75 000–150 000 Ar / nuit",
+        "de": "75.000–150.000 Ar / Nacht",
+        "mg": "75 000–150 000 Ar / alina"
       },
       "wifiNote": {
         "en": "In the restaurant",
@@ -770,82 +822,154 @@ const LISTING_TRANSLATIONS = {
       },
       "rooms": {
         "en": [
-          { "type": "Double", "price": "70,000 Ar" },
-          { "type": "Twin", "price": "70,000 Ar" },
-          { "type": "Family (1 double + 2 single beds)", "price": "120,000 Ar" },
-          { "type": "Family (1 double + 3 single beds)", "price": "140,000 Ar" },
-          { "type": "Extra bed", "price": "25,000 Ar" }
+          {"type": "Double bungalow (one double bed)", "price": "75,000 Ar"},
+          {"type": "Twin bungalow (two single beds)", "price": "75,000 Ar"},
+          {"type": "Family bungalow for 4 (1 double + 2 single beds)", "price": "130,000 Ar"},
+          {"type": "Family bungalow for 5 (1 double + 3 single beds)", "price": "150,000 Ar"},
+          {"type": "Guide's room (single bed)", "price": "35,000 Ar"},
+          {"type": "Guide's room (double bed)", "price": "50,000 Ar"},
+          {"type": "Extra bed", "price": "25,000 Ar"}
         ],
         "fr": [
-          { "type": "Double", "price": "70 000 Ar" },
-          { "type": "Lits jumeaux", "price": "70 000 Ar" },
-          { "type": "Familiale (1 lit double + 2 lits simples)", "price": "120 000 Ar" },
-          { "type": "Familiale (1 lit double + 3 lits simples)", "price": "140 000 Ar" },
-          { "type": "Lit supplémentaire", "price": "25 000 Ar" }
+          {"type": "Bungalow double (un grand lit)", "price": "75 000 Ar"},
+          {"type": "Bungalow à lits jumeaux (deux lits simples)", "price": "75 000 Ar"},
+          {"type": "Bungalow familial pour 4 (1 grand lit + 2 lits simples)", "price": "130 000 Ar"},
+          {"type": "Bungalow familial pour 5 (1 grand lit + 3 lits simples)", "price": "150 000 Ar"},
+          {"type": "Chambre guide (un petit lit)", "price": "35 000 Ar"},
+          {"type": "Chambre guide (un grand lit)", "price": "50 000 Ar"},
+          {"type": "Lit supplémentaire", "price": "25 000 Ar"}
         ],
         "de": [
-          { "type": "Doppelzimmer", "price": "70.000 Ar" },
-          { "type": "Zweibettzimmer", "price": "70.000 Ar" },
-          { "type": "Familienzimmer (1 Doppelbett + 2 Einzelbetten)", "price": "120.000 Ar" },
-          { "type": "Familienzimmer (1 Doppelbett + 3 Einzelbetten)", "price": "140.000 Ar" },
-          { "type": "Zusatzbett", "price": "25.000 Ar" }
+          {"type": "Doppelbungalow (ein Doppelbett)", "price": "75.000 Ar"},
+          {"type": "Zweibettbungalow (zwei Einzelbetten)", "price": "75.000 Ar"},
+          {"type": "Familienbungalow für 4 (1 Doppelbett + 2 Einzelbetten)", "price": "130.000 Ar"},
+          {"type": "Familienbungalow für 5 (1 Doppelbett + 3 Einzelbetten)", "price": "150.000 Ar"},
+          {"type": "Zimmer für Guides (ein Einzelbett)", "price": "35.000 Ar"},
+          {"type": "Zimmer für Guides (ein Doppelbett)", "price": "50.000 Ar"},
+          {"type": "Zusatzbett", "price": "25.000 Ar"}
         ],
         "mg": [
-          { "type": "Fandriana roa olona", "price": "70 000 Ar" },
-          { "type": "Fandriana kely roa", "price": "70 000 Ar" },
-          { "type": "Fianakaviana (fandriana roa olona 1 + fandriana kely 2)", "price": "120 000 Ar" },
-          { "type": "Fianakaviana (fandriana roa olona 1 + fandriana kely 3)", "price": "140 000 Ar" },
-          { "type": "Fandriana fanampiny", "price": "25 000 Ar" }
+          {"type": "Bungalow misy fandriana roa olona", "price": "75 000 Ar"},
+          {"type": "Bungalow misy fandriana kely roa", "price": "75 000 Ar"},
+          {"type": "Bungalow ho an'ny fianakaviana olona 4 (fandriana roa olona 1 + fandriana kely 2)", "price": "130 000 Ar"},
+          {"type": "Bungalow ho an'ny fianakaviana olona 5 (fandriana roa olona 1 + fandriana kely 3)", "price": "150 000 Ar"},
+          {"type": "Efitra ho an'ny mpitari-dalana (fandriana kely 1)", "price": "35 000 Ar"},
+          {"type": "Efitra ho an'ny mpitari-dalana (fandriana roa olona 1)", "price": "50 000 Ar"},
+          {"type": "Fandriana fanampiny", "price": "25 000 Ar"}
         ]
       },
       "meals": {
         "en": [
-          "Breakfast: 12,000–15,000 Ar",
-          "Lunch or dinner: 12,000–35,000 Ar à la carte, or a 45,000 Ar set menu"
+          "Breakfast: 15,000–25,000 Ar",
+          "Lunch or dinner: starters 20,000–25,000 Ar, main courses 35,000 Ar, desserts 15,000–25,000 Ar, or a 65,000 Ar set menu",
+          "Picnic for the park: 15,000–45,000 Ar"
         ],
         "fr": [
-          "Petit-déjeuner : 12 000–15 000 Ar",
-          "Déjeuner ou dîner : 12 000–35 000 Ar à la carte, ou un menu à 45 000 Ar"
+          "Petit-déjeuner : 15 000–25 000 Ar",
+          "Déjeuner ou dîner : entrées 20 000–25 000 Ar, plats 35 000 Ar, desserts 15 000–25 000 Ar, ou un menu à 65 000 Ar",
+          "Pique-nique pour le parc : 15 000–45 000 Ar"
         ],
         "de": [
-          "Frühstück: 12.000–15.000 Ar",
-          "Mittag- oder Abendessen: 12.000–35.000 Ar à la carte oder ein Menü für 45.000 Ar"
+          "Frühstück: 15.000–25.000 Ar",
+          "Mittag- oder Abendessen: Vorspeisen 20.000–25.000 Ar, Hauptgerichte 35.000 Ar, Desserts 15.000–25.000 Ar oder ein Menü für 65.000 Ar",
+          "Picknick für den Park: 15.000–45.000 Ar"
         ],
         "mg": [
-          "Sakafo maraina: 12 000–15 000 Ar",
-          "Sakafo antoandro na hariva: 12 000–35 000 Ar araka ny safidy, na sakafo voalamina 45 000 Ar"
+          "Sakafo maraina: 15 000–25 000 Ar",
+          "Sakafo antoandro na hariva: fanombohana 20 000–25 000 Ar, sakafo fototra 35 000 Ar, tsindrin-tsakafo 15 000–25 000 Ar, na sakafo voalamina 65 000 Ar",
+          "Sakafo entina any amin'ny valan-javaboahary: 15 000–45 000 Ar"
         ]
       },
       "features": {
-        "en": ["Gazebo and water feature in the garden", "Bar with sport on TV"],
-        "fr": ["Kiosque et bassin dans le jardin", "Bar avec le sport à la télévision"],
-        "de": ["Pavillon und Wasserspiel im Garten", "Bar mit Sport im Fernsehen"],
-        "mg": ["Trano kely sy dobo kely ao an-jaridaina", "Bar mampiseho fanatanjahantena amin'ny fahitalavitra"]
+        "en": [
+          "Gazebo and water feature in the garden",
+          "Bar with sport on TV",
+          "Bathroom with hot water in every bungalow",
+          "Extra blankets and pillows on request",
+          "Meeting room: 160,000 Ar a day",
+          "Free dormitory for up to 8 drivers"
+        ],
+        "fr": [
+          "Kiosque et bassin dans le jardin",
+          "Bar avec le sport à la télévision",
+          "Salle de bains avec eau chaude dans chaque bungalow",
+          "Couvertures et oreillers supplémentaires sur demande",
+          "Salle de réunion : 160 000 Ar par jour",
+          "Dortoir gratuit pour 8 chauffeurs au plus"
+        ],
+        "de": [
+          "Pavillon und Wasserspiel im Garten",
+          "Bar mit Sport im Fernsehen",
+          "Bad mit Warmwasser in jedem Bungalow",
+          "Zusätzliche Decken und Kissen auf Wunsch",
+          "Tagungsraum: 160.000 Ar pro Tag",
+          "Kostenloser Schlafsaal für bis zu 8 Fahrer"
+        ],
+        "mg": [
+          "Trano kely sy dobo kely ao an-jaridaina",
+          "Bar mampiseho fanatanjahantena amin'ny fahitalavitra",
+          "Efitra fandroana misy rano mafana isaky ny bungalow",
+          "Bodofotsy sy ondana fanampiny raha angatahina",
+          "Efitrano fivoriana: 160 000 Ar isan'andro",
+          "Efitrano fatoriana maimaimpoana ho an'ny mpamily 8 farafahabetsany"
+        ]
       },
       "gallery[].alt": {
         "en": [
-          "Chez Gaspard exterior",
-          "Bungalow at Chez Gaspard",
-          "Restaurant at Chez Gaspard",
-          "Chez Gaspard logo"
+            "The garden at Chez Gaspard: a lawn with palms and a small pond, and the bungalows behind",
+            "The front of Chez Gaspard: a white building painted with a giraffe weevil, beside the covered stone gateway, with forested hills behind",
+            "A double room with a timber floor, a mosquito net, a desk and a spiral staircase up to a mezzanine",
+            "A round table in a thatched gazebo, looking out over the garden, banana plants and the hills",
+            "The dining room and bar, with blue and white tablecloths and a rose on each table",
+            "A twin room under a timber roof, with a bead curtain showing a lemur",
+            "Three more beds and a desk on the mezzanine under the timber roof",
+            "A second dining room with blue tablecloths, a tiled floor and windows onto the garden",
+            "The stone gateway, with a paved path leading down to the bungalows",
+            "Three flags on red poles above a bed of red-leaved plants, with palms and forested hills behind",
+            "A red timber gazebo standing over the pond, with a lemur banner",
+            "Green bungalow roofs, with palms and forested hills beyond"
         ],
         "fr": [
-          "Chez Gaspard : vue extérieure",
-          "Chez Gaspard : un bungalow",
-          "Chez Gaspard : le restaurant",
-          "Chez Gaspard : le logo"
+            "Le jardin de Chez Gaspard : une pelouse avec des palmiers et un petit bassin, et les bungalows derrière",
+            "La façade de Chez Gaspard : un bâtiment blanc peint d’un charançon girafe, à côté du portail couvert en pierre, avec des collines boisées derrière",
+            "Une chambre double avec parquet, moustiquaire, bureau et escalier en colimaçon vers une mezzanine",
+            "Une table ronde sous un kiosque au toit de chaume, avec vue sur le jardin, les bananiers et les collines",
+            "La salle à manger et le bar, avec des nappes bleues et blanches et une rose sur chaque table",
+            "Une chambre à deux lits sous une charpente en bois, avec un rideau de perles représentant un lémurien",
+            "Trois lits de plus et un bureau sur la mezzanine, sous la charpente en bois",
+            "Une seconde salle à manger avec des nappes bleues, un sol carrelé et des fenêtres sur le jardin",
+            "Le portail en pierre, avec une allée pavée qui descend vers les bungalows",
+            "Trois drapeaux sur des mâts rouges au-dessus d’un massif de plantes aux feuilles rouges, avec des palmiers et des collines boisées derrière",
+            "Un kiosque en bois rouge au-dessus du bassin, avec une bannière aux lémuriens",
+            "Les toits verts des bungalows, avec des palmiers et des collines boisées au-delà"
         ],
         "de": [
-          "Chez Gaspard: Außenansicht",
-          "Chez Gaspard: ein Bungalow",
-          "Chez Gaspard: das Restaurant",
-          "Chez Gaspard: das Logo"
+            "Der Garten von Chez Gaspard: Rasen mit Palmen und einem kleinen Teich, dahinter die Bungalows",
+            "Die Vorderseite von Chez Gaspard: ein weißes Gebäude mit einem gemalten Giraffenhalskäfer neben dem überdachten Steintor, dahinter bewaldete Hügel",
+            "Ein Doppelzimmer mit Holzboden, Moskitonetz, Schreibtisch und Wendeltreppe zu einer Empore",
+            "Ein runder Tisch in einem strohgedeckten Pavillon mit Blick auf Garten, Bananenstauden und Hügel",
+            "Speisesaal und Bar mit blau-weißen Tischdecken und einer Rose auf jedem Tisch",
+            "Ein Zweibettzimmer unter einem Holzdach, mit einem Perlenvorhang, der einen Lemuren zeigt",
+            "Drei weitere Betten und ein Schreibtisch auf der Empore unter dem Holzdach",
+            "Ein zweiter Speisesaal mit blauen Tischdecken, Fliesenboden und Fenstern zum Garten",
+            "Das Steintor mit einem gepflasterten Weg hinunter zu den Bungalows",
+            "Drei Fahnen an roten Masten über einem Beet mit rotblättrigen Pflanzen, dahinter Palmen und bewaldete Hügel",
+            "Ein roter Holzpavillon über dem Teich, mit einem Lemuren-Banner",
+            "Grüne Bungalowdächer, dahinter Palmen und bewaldete Hügel"
         ],
         "mg": [
-          "Chez Gaspard: ny ivelany",
-          "Chez Gaspard: bungalow iray",
-          "Chez Gaspard: ny trano fisakafoana",
-          "Chez Gaspard: ny sary famantarana"
+            "Ny zaridainan'i Chez Gaspard: bozaka misy palmie sy dobo kely, ary ireo bungalow ao ambadika",
+            "Ny tarehin'i Chez Gaspard: trano fotsy misy sary sokajy lava vozona, eo akaikin'ny vavahady vato misy tafo, ary havoana misy ala ao ambadika",
+            "Efitrano misy fandriana roa olona, gorodona hazo, lay moka, latabatra fanoratana ary tohatra miolikolika mankany amin'ny rihana kely",
+            "Latabatra boribory ao anaty trano kely mitafo bozaka, mijery ny zaridaina, ny akondro ary ny havoana",
+            "Ny efitrano fisakafoana sy ny bar, misy lamba latabatra manga sy fotsy ary raozy iray isaky ny latabatra",
+            "Efitrano misy fandriana roa samy hafa ambanin'ny tafo hazo, misy ridao vakana misy sarina varika",
+            "Fandriana telo hafa sy latabatra fanoratana eo amin'ny rihana kely ambanin'ny tafo hazo",
+            "Efitrano fisakafoana faharoa misy lamba latabatra manga, gorodona taila ary varavarankely mitodika amin'ny zaridaina",
+            "Ny vavahady vato, misy lalana voarafitra vato midina mankany amin'ireo bungalow",
+            "Saina telo amin'ny tsato-kazo mena ambonin'ny zavamaniry mena ravina, misy palmie sy havoana misy ala ao ambadika",
+            "Trano kely hazo mena mijoro eo ambonin'ny dobo, misy sora-baventy misy sarina varika",
+            "Tafon'ireo bungalow maitso, misy palmie sy havoana misy ala any ankoatra"
         ]
       }
     },
@@ -1383,16 +1507,16 @@ const LISTING_TRANSLATIONS = {
     },
     "ihary-hotel": {
       "desc": {
-        "en": "Twenty-two rooms on the bank of the Namorona, a few kilometres from the park entrance, with river access, a swimming pool and a riverside restaurant. Basic and ageing, with mosquito nets in the bungalows, but the river-facing rooms have the best view in the village.",
-        "fr": "Vingt-deux chambres au bord de la Namorona, à quelques kilomètres de l’entrée du parc, avec accès à la rivière, piscine et restaurant au bord de l’eau. Simple et vieillissant, avec des moustiquaires dans les bungalows, mais les chambres côté rivière ont la plus belle vue du village.",
-        "de": "Zweiundzwanzig Zimmer am Ufer der Namorona, wenige Kilometer vom Parkeingang, mit Zugang zum Fluss, Schwimmbad und Restaurant am Wasser. Einfach und in die Jahre gekommen, mit Moskitonetzen in den Bungalows, aber die Zimmer zum Fluss haben die schönste Aussicht im Ort.",
-        "mg": "Efitrano roa amby roapolo eo amoron'ny Namorona, kilaometatra vitsivitsy miala ny fidirana amin'ny valan-javaboahary, misy fidinana amin'ny renirano, dobo filomanosana ary trano fisakafoana amoron-drano. Tsotra sady efa antitra, misy lay ao amin'ny bungalow, saingy ireo efitrano manatrika ny renirano no manana fijery tsara indrindra ao an-tanàna."
+        "en": "Twenty-two rooms on the bank of the Namorona, a few kilometres from the park entrance, with river access and a riverside restaurant. Basic and ageing, with mosquito nets in the bungalows, but the river-facing rooms have the best view in the village.",
+        "fr": "Vingt-deux chambres au bord de la Namorona, à quelques kilomètres de l’entrée du parc, avec accès à la rivière et restaurant au bord de l’eau. Simple et vieillissant, avec des moustiquaires dans les bungalows, mais les chambres côté rivière ont la plus belle vue du village.",
+        "de": "Zweiundzwanzig Zimmer am Ufer der Namorona, wenige Kilometer vom Parkeingang, mit Zugang zum Fluss und Restaurant am Wasser. Einfach und in die Jahre gekommen, mit Moskitonetzen in den Bungalows, aber die Zimmer zum Fluss haben die schönste Aussicht im Ort.",
+        "mg": "Efitrano roa amby roapolo eo amoron'ny Namorona, kilaometatra vitsivitsy miala ny fidirana amin'ny valan-javaboahary, misy fidinana amin'ny renirano ary trano fisakafoana amoron-drano. Tsotra sady efa antitra, misy lay ao amin'ny bungalow, saingy ireo efitrano manatrika ny renirano no manana fijery tsara indrindra ao an-tanàna."
       },
       "price": {
-        "en": "70,000–120,000 Ar / night",
-        "fr": "70 000–120 000 Ar / nuit",
-        "de": "70.000–120.000 Ar / Nacht",
-        "mg": "70 000–120 000 Ar / alina"
+        "en": "75,000–180,000 Ar / night",
+        "fr": "75 000–180 000 Ar / nuit",
+        "de": "75.000–180.000 Ar / Nacht",
+        "mg": "75 000–180 000 Ar / alina"
       },
       "wifiNote": {
         "en": "In the restaurant",
@@ -1402,27 +1526,69 @@ const LISTING_TRANSLATIONS = {
       },
       "rooms": {
         "en": [
-          { "type": "Double", "price": "70,000–120,000 Ar" },
-          { "type": "Family (1 double + 2 single beds)", "price": "120,000 Ar" }
+          { "type": "Bungalow, single", "price": "75,000 Ar" },
+          { "type": "Bungalow, double or twin", "price": "85,000 Ar" },
+          { "type": "Bungalow, triple (1 double + 1 single bed)", "price": "120,000 Ar" },
+          { "type": "Bungalow, family for 4 (1 double + 2 single beds)", "price": "150,000 Ar" },
+          { "type": "Room, double", "price": "140,000 Ar" },
+          { "type": "Room, twin", "price": "150,000 Ar" },
+          { "type": "Room, triple", "price": "180,000 Ar" }
         ],
         "fr": [
-          { "type": "Double", "price": "70 000–120 000 Ar" },
-          { "type": "Familiale (1 lit double + 2 lits simples)", "price": "120 000 Ar" }
+          { "type": "Bungalow, simple", "price": "75 000 Ar" },
+          { "type": "Bungalow, double ou twin", "price": "85 000 Ar" },
+          { "type": "Bungalow, triple (1 lit double + 1 lit simple)", "price": "120 000 Ar" },
+          { "type": "Bungalow, familial pour 4 (1 lit double + 2 lits simples)", "price": "150 000 Ar" },
+          { "type": "Chambre, double", "price": "140 000 Ar" },
+          { "type": "Chambre, twin", "price": "150 000 Ar" },
+          { "type": "Chambre, triple", "price": "180 000 Ar" }
         ],
         "de": [
-          { "type": "Doppelzimmer", "price": "70.000–120.000 Ar" },
-          { "type": "Familienzimmer (1 Doppelbett + 2 Einzelbetten)", "price": "120.000 Ar" }
+          { "type": "Bungalow, Einzelzimmer", "price": "75.000 Ar" },
+          { "type": "Bungalow, Doppel- oder Zweibettzimmer", "price": "85.000 Ar" },
+          { "type": "Bungalow, Dreibettzimmer (1 Doppelbett + 1 Einzelbett)", "price": "120.000 Ar" },
+          { "type": "Bungalow, Familienzimmer für 4 (1 Doppelbett + 2 Einzelbetten)", "price": "150.000 Ar" },
+          { "type": "Zimmer, Doppelzimmer", "price": "140.000 Ar" },
+          { "type": "Zimmer, Zweibettzimmer", "price": "150.000 Ar" },
+          { "type": "Zimmer, Dreibettzimmer", "price": "180.000 Ar" }
         ],
         "mg": [
-          { "type": "Fandriana roa olona", "price": "70 000–120 000 Ar" },
-          { "type": "Fianakaviana (fandriana roa olona 1 + fandriana kely 2)", "price": "120 000 Ar" }
+          { "type": "Bungalow, olona iray", "price": "75 000 Ar" },
+          { "type": "Bungalow, fandriana roa olona na fandriana kely roa", "price": "85 000 Ar" },
+          { "type": "Bungalow, olona telo (fandriana roa olona 1 + fandriana kely 1)", "price": "120 000 Ar" },
+          { "type": "Bungalow, fianakaviana olona 4 (fandriana roa olona 1 + fandriana kely 2)", "price": "150 000 Ar" },
+          { "type": "Efitrano, fandriana roa olona", "price": "140 000 Ar" },
+          { "type": "Efitrano, fandriana kely roa", "price": "150 000 Ar" },
+          { "type": "Efitrano, olona telo", "price": "180 000 Ar" }
         ]
       },
+      "ratesNote": {
+        "en": "Tourist tax included.",
+        "fr": "Taxe et vignette touristiques incluses.",
+        "de": "Kurtaxe und Touristenvignette inbegriffen.",
+        "mg": "Tafiditra ao ny hetra sy ny vinheta ho an'ny mpizahatany."
+      },
       "meals": {
-        "en": ["Breakfast, lunch or dinner: 10,000–30,000 Ar"],
-        "fr": ["Petit-déjeuner, déjeuner ou dîner : 10 000–30 000 Ar"],
-        "de": ["Frühstück, Mittag- oder Abendessen: 10.000–30.000 Ar"],
-        "mg": ["Sakafo maraina, antoandro na hariva: 10 000–30 000 Ar"]
+        "en": [
+          "Breakfast: 18,000 Ar continental, 20,000 Ar American",
+          "Set menu: 60,000 Ar",
+          "À la carte (the menu changes daily): starter 20,000 Ar, main course 30,000 Ar, dessert 15,000 Ar"
+        ],
+        "fr": [
+          "Petit-déjeuner : 18 000 Ar continental, 20 000 Ar américain",
+          "Menu : 60 000 Ar",
+          "À la carte (la carte change chaque jour) : entrée 20 000 Ar, plat 30 000 Ar, dessert 15 000 Ar"
+        ],
+        "de": [
+          "Frühstück: 18.000 Ar kontinental, 20.000 Ar amerikanisch",
+          "Menü: 60.000 Ar",
+          "À la carte (die Karte wechselt täglich): Vorspeise 20.000 Ar, Hauptgericht 30.000 Ar, Dessert 15.000 Ar"
+        ],
+        "mg": [
+          "Sakafo maraina: 18 000 Ar kaontinantaly, 20 000 Ar amerikanina",
+          "Sakafo voalamina: 60 000 Ar",
+          "Isaky ny lovia (miova isan'andro ny sakafo): fanombohana 20 000 Ar, sakafo fototra 30 000 Ar, tsindrin-tsakafo 15 000 Ar"
+        ]
       },
       "features": {
         "en": ["River access"],
@@ -1438,28 +1604,64 @@ const LISTING_TRANSLATIONS = {
       },
       "gallery[].alt": {
         "en": [
-          "Ihary Hotel exterior",
-          "Room at Ihary Hotel",
-          "Restaurant or common area at Ihary Hotel",
-          "View from Ihary Hotel"
+          "A paved path between brick bungalows with timber shutters at Ihary Hotel, with potted plants and a stone wall at the end",
+          "The main building at Ihary Hotel, with three tall brick gables, the reception and clipped shrubs in planters on a cobbled yard",
+          "A paved path through the garden at Ihary Hotel down to the river, with green hills beyond",
+          "The Namorona River beside Ihary Hotel, with washing on the line by a blue-roofed bungalow and forested hills beyond",
+          "The garden at Ihary Hotel, with red and green shrubs, a stone table and forested hills behind",
+          "A double room at Ihary Hotel with a four-poster bed and mosquito net, a desk, a fan and its own washroom",
+          "A room at Ihary Hotel with three beds under mosquito nets and a washroom at the back",
+          "A room at Ihary Hotel with a double bed and two single beds under mosquito nets",
+          "A bathroom at Ihary Hotel with a glass shower, a round mirror and a basin on a timber stand",
+          "A sitting area at Ihary Hotel with red-cushioned timber sofas and a carved wooden plaque on the wall",
+          "The dining room at Ihary Hotel, with red and blue tablecloths under a high timber ceiling",
+          "The bar at Ihary Hotel, with six brightly painted stools and carved wooden panels above the counter",
+          "The Ihary Hotel sign beside the road: bungalows, restaurant and bar, Wi-Fi and billiards"
         ],
         "fr": [
-          "Ihary Hotel : vue extérieure",
-          "Ihary Hotel : une chambre",
-          "Ihary Hotel : restaurant ou espace commun",
-          "Ihary Hotel : la vue"
+          "Une allée pavée entre les bungalows de brique aux volets de bois de l’Ihary Hotel, avec des plantes en pot et un mur de pierre au fond",
+          "Le bâtiment principal de l’Ihary Hotel, avec trois hauts pignons de brique, la réception et des arbustes taillés en bacs sur une cour pavée",
+          "Une allée pavée à travers le jardin de l’Ihary Hotel jusqu’à la rivière, avec des collines vertes au-delà",
+          "La Namorona au pied de l’Ihary Hotel, avec du linge qui sèche près d’un bungalow au toit bleu et des collines boisées au-delà",
+          "Le jardin de l’Ihary Hotel, avec des arbustes rouges et verts, une table de pierre et des collines boisées derrière",
+          "Une chambre double de l’Ihary Hotel avec un lit à baldaquin et sa moustiquaire, un bureau, un ventilateur et son propre cabinet de toilette",
+          "Une chambre de l’Ihary Hotel avec trois lits sous moustiquaire et un cabinet de toilette au fond",
+          "Une chambre de l’Ihary Hotel avec un lit double et deux lits simples sous moustiquaire",
+          "Une salle de bains de l’Ihary Hotel avec une douche vitrée, un miroir rond et un lavabo sur un meuble en bois",
+          "Un coin salon de l’Ihary Hotel avec des canapés en bois aux coussins rouges et une plaque de bois sculpté au mur",
+          "La salle à manger de l’Ihary Hotel, avec des nappes rouges et bleues sous un haut plafond de bois",
+          "Le bar de l’Ihary Hotel, avec six tabourets aux couleurs vives et des panneaux de bois sculpté au-dessus du comptoir",
+          "L’enseigne de l’Ihary Hotel au bord de la route : bungalows, restaurant et bar, Wi-Fi et billard"
         ],
         "de": [
-          "Ihary Hotel: Außenansicht",
-          "Ihary Hotel: ein Zimmer",
-          "Ihary Hotel: Restaurant oder Gemeinschaftsbereich",
-          "Ihary Hotel: die Aussicht"
+          "Ein gepflasterter Weg zwischen Backstein-Bungalows mit Holzläden im Ihary Hotel, mit Topfpflanzen und einer Steinmauer am Ende",
+          "Das Haupthaus des Ihary Hotel mit drei hohen Backsteingiebeln, der Rezeption und geschnittenen Sträuchern in Kübeln auf einem gepflasterten Hof",
+          "Ein gepflasterter Weg durch den Garten des Ihary Hotel hinunter zum Fluss, dahinter grüne Hügel",
+          "Die Namorona neben dem Ihary Hotel, mit Wäsche auf der Leine an einem Bungalow mit blauem Dach und bewaldeten Hügeln dahinter",
+          "Der Garten des Ihary Hotel mit roten und grünen Sträuchern, einem Steintisch und bewaldeten Hügeln dahinter",
+          "Ein Doppelzimmer im Ihary Hotel mit Himmelbett und Moskitonetz, Schreibtisch, Ventilator und eigenem Bad",
+          "Ein Zimmer im Ihary Hotel mit drei Betten unter Moskitonetzen und einem Bad im hinteren Teil",
+          "Ein Zimmer im Ihary Hotel mit einem Doppelbett und zwei Einzelbetten unter Moskitonetzen",
+          "Ein Bad im Ihary Hotel mit Glasdusche, rundem Spiegel und einem Waschbecken auf einem Holzunterschrank",
+          "Eine Sitzecke im Ihary Hotel mit rot gepolsterten Holzsofas und einer geschnitzten Holztafel an der Wand",
+          "Der Speisesaal des Ihary Hotel mit roten und blauen Tischdecken unter einer hohen Holzdecke",
+          "Die Bar des Ihary Hotel mit sechs bunt bemalten Hockern und geschnitzten Holztafeln über dem Tresen",
+          "Das Schild des Ihary Hotel an der Straße: Bungalows, Restaurant und Bar, WLAN und Billard"
         ],
         "mg": [
-          "Ihary Hotel: ny ivelany",
-          "Ihary Hotel: efitrano iray",
-          "Ihary Hotel: trano fisakafoana na toerana iombonana",
-          "Ihary Hotel: ny fijery"
+          "Lalana voarakitra vato eo anelanelan'ireo bungalow biriky misy varavarankely hazo ao amin'ny Ihary Hotel, misy zavamaniry anaty vilia sy rindrina vato any amin'ny farany",
+          "Ny trano lehibe ao amin'ny Ihary Hotel, misy tampon-trano biriky avo telo, ny fandraisana ary hazo kely voakarakara anaty vilia eo amin'ny tokotany voarakitra vato",
+          "Lalana voarakitra vato mamakivaky ny zaridainan'ny Ihary Hotel mankany amin'ny renirano, misy havoana maitso any ankoatra",
+          "Ny reniranon'i Namorona eo akaikin'ny Ihary Hotel, misy lamba hahiana eo anilan'ny bungalow misy tafo manga ary havoana misy ala any ankoatra",
+          "Ny zaridainan'ny Ihary Hotel, misy hazo kely mena sy maitso, latabatra vato ary havoana misy ala any aoriana",
+          "Efitrano misy fandriana roa olona ao amin'ny Ihary Hotel, misy lay, latabatra fanoratana, fanamafana ary efitra fidiovana manokana",
+          "Efitrano ao amin'ny Ihary Hotel misy fandriana telo misy lay ary efitra fidiovana any aoriana",
+          "Efitrano ao amin'ny Ihary Hotel misy fandriana roa olona iray sy fandriana kely roa misy lay",
+          "Efitra fandroana ao amin'ny Ihary Hotel misy fandroana mitsiraka voahodidina fitaratra, fitaratra boribory ary lavabo eo ambony fanaka hazo",
+          "Toerana fipetrahana ao amin'ny Ihary Hotel misy seza lava hazo misy kousin mena ary takelaka hazo voasokitra eo amin'ny rindrina",
+          "Ny efitra fisakafoanana ao amin'ny Ihary Hotel, misy lambalatabatra mena sy manga ambanin'ny valindrihana hazo avo",
+          "Ny bar ao amin'ny Ihary Hotel, misy seza avo enina miloko mamirapiratra ary takelaka hazo voasokitra eo ambonin'ny kaontera",
+          "Ny takelaka anarana Ihary Hotel eo amoron-dalana: bungalow, trano fisakafoana sy bar, Wi-Fi ary billard"
         ]
       }
     },
@@ -1883,10 +2085,10 @@ const LISTING_TRANSLATIONS = {
     },
     "chez-jose": {
       "desc": {
-        "en": "Centrally located, low-cost Catholic guest house in Ranomafana village — simple overnight lodging within walking distance of the thermal baths, with a bar and coffee but no meals.",
-        "fr": "Maison d’hôtes catholique bon marché, au centre du village de Ranomafana — un hébergement simple pour la nuit, à distance de marche des bains thermaux, avec bar et café mais sans repas.",
-        "de": "Zentral gelegenes, günstiges katholisches Gästehaus im Ort Ranomafana – einfache Übernachtung in Gehweite der Thermalbäder, mit Bar und Kaffee, aber ohne Mahlzeiten.",
-        "mg": "Trano fandraisana vahiny katolika mora vidy eo afovoan'ny tanànan'i Ranomafana — toerana tsotra hatoriana, azo andehanana an-tongotra mankany amin'ny fandroana rano mafana, misy bar sy kafe fa tsy misy sakafo."
+        "en": "Centrally located, low-cost Catholic guest house in Ranomafana village — simple overnight lodging within walking distance of the thermal baths, with a bar, coffee, and pizzas, sandwiches and ice cream to order.",
+        "fr": "Maison d’hôtes catholique bon marché, au centre du village de Ranomafana — un hébergement simple pour la nuit, à distance de marche des bains thermaux, avec bar, café, et pizzas, sandwichs et glaces sur commande.",
+        "de": "Zentral gelegenes, günstiges katholisches Gästehaus im Ort Ranomafana – einfache Übernachtung in Gehweite der Thermalbäder, mit Bar, Kaffee sowie Pizza, Sandwiches und Eis auf Bestellung.",
+        "mg": "Trano fandraisana vahiny katolika mora vidy eo afovoan'ny tanànan'i Ranomafana — toerana tsotra hatoriana, azo andehanana an-tongotra mankany amin'ny fandroana rano mafana, misy bar sy kafe, ary pizza, sandwich ary glasy azo kaomandy."
       },
       "price": {
         "en": "45,000–60,000 Ar / night",
@@ -1895,69 +2097,147 @@ const LISTING_TRANSLATIONS = {
         "mg": "45 000–60 000 Ar / alina"
       },
       "wifiNote": {
-        "en": "In some rooms",
-        "fr": "Dans certaines chambres",
-        "de": "In manchen Zimmern",
-        "mg": "Ao amin'ny efitrano sasany"
+        "en": "Free; reaches some rooms",
+        "fr": "Gratuit ; capte dans certaines chambres",
+        "de": "Kostenlos; reicht in manche Zimmer",
+        "mg": "Maimaim-poana; tonga any amin'ny efitrano sasany"
       },
       "rooms": {
         "en": [
-          { "type": "Double", "price": "60,000 Ar" },
-          { "type": "Twin", "price": "60,000 Ar" },
-          { "type": "Twin with shared bathroom", "price": "45,000 Ar" }
+          { "type": "Double (5 rooms)", "price": "60,000 Ar" },
+          { "type": "Twin (5 rooms)", "price": "60,000 Ar" },
+          { "type": "Twin with shared bathroom (2 rooms)", "price": "45,000 Ar" }
         ],
         "fr": [
-          { "type": "Double", "price": "60 000 Ar" },
-          { "type": "Lits jumeaux", "price": "60 000 Ar" },
-          { "type": "Lits jumeaux, salle de bain partagée", "price": "45 000 Ar" }
+          { "type": "Double (5 chambres)", "price": "60 000 Ar" },
+          { "type": "Lits jumeaux (5 chambres)", "price": "60 000 Ar" },
+          { "type": "Lits jumeaux, salle de bain partagée (2 chambres)", "price": "45 000 Ar" }
         ],
         "de": [
-          { "type": "Doppelzimmer", "price": "60.000 Ar" },
-          { "type": "Zweibettzimmer", "price": "60.000 Ar" },
-          { "type": "Zweibettzimmer mit Gemeinschaftsbad", "price": "45.000 Ar" }
+          { "type": "Doppelzimmer (5 Zimmer)", "price": "60.000 Ar" },
+          { "type": "Zweibettzimmer (5 Zimmer)", "price": "60.000 Ar" },
+          { "type": "Zweibettzimmer mit Gemeinschaftsbad (2 Zimmer)", "price": "45.000 Ar" }
         ],
         "mg": [
-          { "type": "Fandriana roa olona", "price": "60 000 Ar" },
-          { "type": "Fandriana kely roa", "price": "60 000 Ar" },
-          { "type": "Fandriana kely roa, efitra fandroana iombonana", "price": "45 000 Ar" }
+          { "type": "Fandriana roa olona (efitrano 5)", "price": "60 000 Ar" },
+          { "type": "Fandriana kely roa (efitrano 5)", "price": "60 000 Ar" },
+          { "type": "Fandriana kely roa, efitra fandroana iombonana (efitrano 2)", "price": "45 000 Ar" }
         ]
       },
+      "ratesNote": {
+        "en": "Per room per night, from the hotel's rate sheet (from 1 January 2024). Extra blankets and pillows on request.",
+        "fr": "Par chambre et par nuit, d’après la grille tarifaire de l’hôtel (à partir du 1er janvier 2024). Couvertures et oreillers supplémentaires sur demande.",
+        "de": "Pro Zimmer und Nacht, laut Preisliste des Hotels (ab 1. Januar 2024). Zusätzliche Decken und Kissen auf Anfrage.",
+        "mg": "Isaky ny efitrano isan-alina, araka ny lisitry ny saran'ny hotely (nanomboka ny 1 Janoary 2024). Misy bodofotsy sy ondana fanampiny raha angatahina."
+      },
       "meals": {
-        "en": ["No meals served — coffee and the bar only"],
-        "fr": ["Pas de repas — seulement le café et le bar"],
-        "de": ["Keine Mahlzeiten – nur Kaffee und die Bar"],
-        "mg": ["Tsy misy sakafo — kafe sy bar ihany"]
+        "en": [
+          "No set meals — coffee, the bar, and snacks to order (+261 34 55 359 54)",
+          "Pizzas 23,000–30,000 Ar",
+          "Sandwiches 10,000–12,000 Ar",
+          "Ice cream: 1 scoop 5,000 Ar, 2 scoops 8,000 Ar, 3 scoops 10,000 Ar",
+          "Fresh juice from 5,000 Ar"
+        ],
+        "fr": [
+          "Pas de repas complets — café, bar et snacks sur commande (+261 34 55 359 54)",
+          "Pizzas 23 000–30 000 Ar",
+          "Sandwichs 10 000–12 000 Ar",
+          "Glaces : 1 boule 5 000 Ar, 2 boules 8 000 Ar, 3 boules 10 000 Ar",
+          "Jus naturels à partir de 5 000 Ar"
+        ],
+        "de": [
+          "Keine festen Mahlzeiten – Kaffee, Bar und Snacks auf Bestellung (+261 34 55 359 54)",
+          "Pizza 23.000–30.000 Ar",
+          "Sandwiches 10.000–12.000 Ar",
+          "Eis: 1 Kugel 5.000 Ar, 2 Kugeln 8.000 Ar, 3 Kugeln 10.000 Ar",
+          "Frische Säfte ab 5.000 Ar"
+        ],
+        "mg": [
+          "Tsy misy sakafo feno — kafe, bar ary sakafo maivana azo kaomandy (+261 34 55 359 54)",
+          "Pizza 23 000–30 000 Ar",
+          "Sandwich 10 000–12 000 Ar",
+          "Glasy: boribory 1 5 000 Ar, boribory 2 8 000 Ar, boribory 3 10 000 Ar",
+          "Ranom-boankazo voajanahary manomboka 5 000 Ar"
+        ]
       },
       "features": {
-        "en": ["Run by the Catholic Church (ECAR)", "Conference room for 18, 70,000 Ar per day"],
-        "fr": ["Tenu par l’Église catholique (ECAR)", "Salle de conférence pour 18 personnes, 70 000 Ar par jour"],
-        "de": ["Betrieben von der katholischen Kirche (ECAR)", "Konferenzraum für 18 Personen, 70.000 Ar pro Tag"],
-        "mg": ["Tantanan'ny Fiangonana Katolika (ECAR)", "Efitrano fivoriana ho an'olona 18, 70 000 Ar isan'andro"]
+        "en": [
+          "Run by the Catholic Church (ECAR)",
+          "Private bathroom with hot water in the ten main rooms",
+          "TV room",
+          "Meeting hall: 120,000 Ar a day; over 50 people 170,000 Ar; 100 people 200,000 Ar (no video projector)",
+          "Small meeting room for 18, 70,000 Ar a day",
+          "Reception open 06:00–21:00, closed Sunday 08:00–11:30"
+        ],
+        "fr": [
+          "Tenu par l’Église catholique (ECAR)",
+          "Salle de bain privée avec eau chaude dans les dix chambres principales",
+          "Salle TV",
+          "Grande salle : 120 000 Ar par jour ; plus de 50 personnes 170 000 Ar ; 100 personnes 200 000 Ar (pas de vidéoprojecteur)",
+          "Petite salle pour 18 personnes, 70 000 Ar par jour",
+          "Réception ouverte de 06:00 à 21:00, fermée le dimanche de 08:00 à 11:30"
+        ],
+        "de": [
+          "Betrieben von der katholischen Kirche (ECAR)",
+          "Eigenes Bad mit Warmwasser in den zehn Hauptzimmern",
+          "Fernsehraum",
+          "Saal: 120.000 Ar pro Tag; über 50 Personen 170.000 Ar; 100 Personen 200.000 Ar (kein Beamer)",
+          "Kleiner Raum für 18 Personen, 70.000 Ar pro Tag",
+          "Rezeption 06:00–21:00 geöffnet, sonntags 08:00–11:30 geschlossen"
+        ],
+        "mg": [
+          "Tantanan'ny Fiangonana Katolika (ECAR)",
+          "Efitra fandroana manokana misy rano mafana ao amin'ireo efitrano folo lehibe",
+          "Efitrano fijerena fahitalavitra",
+          "Efitrano fivoriana lehibe: 120 000 Ar isan'andro; mihoatra ny 50 olona 170 000 Ar; olona 100 200 000 Ar (tsy misy fitaovana fandefasana sary)",
+          "Efitrano fivoriana kely ho an'olona 18, 70 000 Ar isan'andro",
+          "Misokatra 06:00–21:00 ny fandraisana, mikatona ny Alahady 08:00–11:30"
+        ]
       },
       "gallery[].alt": {
         "en": [
-          "Chez Jose exterior",
-          "Room at Chez Jose",
-          "Reception at Chez Jose",
-          "Second exterior view of Chez Jose"
+          "The Chez Jose Hotel sign before the yellow two-storey building with red pillars",
+          "The upstairs walkway past the room doors, looking out over the village and the hills",
+          "The lounge, with wooden sofas and tables before a painted rainforest wall",
+          "A guest climbing the staircase, its walls painted with forest, sky and a leaping lemur",
+          "A double room with a flowered bedspread and a mosquito net",
+          "A twin room with two beds in blue covers and a bedside table",
+          "Wall paintings of an aye-aye and of lemurs climbing bamboo",
+          "The meeting hall, with tables in white and red cloths",
+          "A tiled bathroom with a washbasin and a shower"
         ],
         "fr": [
-          "Chez Jose : vue extérieure",
-          "Chez Jose : une chambre",
-          "Chez Jose : la réception",
-          "Chez Jose : autre vue extérieure"
+          "L’enseigne de Chez Jose Hotel devant le bâtiment jaune à deux étages et piliers rouges",
+          "La coursive de l’étage le long des portes des chambres, avec vue sur le village et les collines",
+          "Le salon, avec canapés et tables en bois devant un mur peint de forêt tropicale",
+          "Une cliente monte l’escalier, aux murs peints de forêt, de ciel et d’un lémurien qui saute",
+          "Une chambre double avec un couvre-lit fleuri et une moustiquaire",
+          "Une chambre à lits jumeaux, couvertures bleues et table de chevet",
+          "Peintures murales d’un aye-aye et de lémuriens grimpant dans les bambous",
+          "La grande salle, tables aux nappes blanches et rouges",
+          "Une salle de bain carrelée avec lavabo et douche"
         ],
         "de": [
-          "Chez Jose: Außenansicht",
-          "Chez Jose: ein Zimmer",
-          "Chez Jose: die Rezeption",
-          "Chez Jose: weitere Außenansicht"
+          "Das Schild von Chez Jose Hotel vor dem gelben zweistöckigen Gebäude mit roten Pfeilern",
+          "Der Laubengang im Obergeschoss vor den Zimmertüren, mit Blick über das Dorf und die Hügel",
+          "Die Lounge mit Holzsofas und Tischen vor einer bemalten Regenwaldwand",
+          "Ein Gast steigt die Treppe hinauf, deren Wände mit Wald, Himmel und einem springenden Lemuren bemalt sind",
+          "Ein Doppelzimmer mit geblümter Tagesdecke und Moskitonetz",
+          "Ein Zweibettzimmer mit blauen Decken und Nachttisch",
+          "Wandbilder eines Fingertiers und von Lemuren im Bambus",
+          "Der Saal mit Tischen in weißen und roten Tüchern",
+          "Ein gefliestes Bad mit Waschbecken und Dusche"
         ],
         "mg": [
-          "Chez Jose: ny ivelany",
-          "Chez Jose: efitrano iray",
-          "Chez Jose: ny fandraisana vahiny",
-          "Chez Jose: ny ivelany, fijery hafa"
+          "Ny takelaka Chez Jose Hotel eo anoloan'ny trano mavo misy rihana roa sy andry mena",
+          "Ny lalantsara ambony mandalo ny varavaran'ny efitrano, mijery ny tanàna sy ny havoana",
+          "Ny efitrano fandraisana, misy seza lava sy latabatra hazo eo anoloan'ny rindrina voaloko ala",
+          "Vahiny iray miakatra ny tohatra, voaloko ala, lanitra ary varika mitsambikina ny rindrina",
+          "Efitrano misy fandriana roa olona, lamba voninkazo ary lay moka",
+          "Efitrano misy fandriana kely roa, bodofotsy manga ary latabatra kely",
+          "Sary hosodoko amin'ny rindrina: aiay sy varika mananika volotsangana",
+          "Ny efitrano fivoriana lehibe, misy latabatra voasarona lamba fotsy sy mena",
+          "Efitra fandroana misy taila, fanasan-tanana ary douche"
         ]
       }
     },
@@ -2013,81 +2293,243 @@ const LISTING_TRANSLATIONS = {
     },
     "akamasoa-guest-house": {
       "desc": {
-        "en": "Simple, community-focused dormitory accommodation for park visitors, with basic clean rooms, local hospitality, and kitchen facilities.",
-        "fr": "Hébergement simple en dortoir, tourné vers la communauté, pour les visiteurs du parc : chambres basiques et propres, accueil local et cuisine à disposition.",
-        "de": "Einfache, gemeinschaftlich geführte Schlafsaalunterkunft für Parkbesucher, mit schlichten, sauberen Zimmern, herzlicher Gastfreundschaft und Küchenbenutzung.",
-        "mg": "Toerana hatoriana tsotra ao amin'ny efitrano iombonana, mifantoka amin'ny fiaraha-monina, ho an'ny mpitsidika ny valan-javaboahary: efitrano tsotra sady madio, fandraisana mafana avy amin'ny mponina, ary lakozia azo ampiasaina."
+        "en": "Simple, community-focused lodging in gardens below forested hills: a dormitory with student rates, and two rooms with their own kitchen. Basic, clean rooms and local hospitality.",
+        "fr": "Hébergement simple, tourné vers la communauté, dans des jardins au pied de collines boisées : un dortoir à tarifs étudiants, et deux chambres avec leur propre cuisine. Chambres simples et propres, accueil local.",
+        "de": "Einfache, gemeinschaftlich geführte Unterkunft in Gärten unterhalb bewaldeter Hügel: ein Schlafsaal mit Studententarifen und zwei Zimmer mit eigener Küche. Schlichte, saubere Zimmer und herzliche Gastfreundschaft.",
+        "mg": "Toerana hatoriana tsotra, mifantoka amin'ny fiaraha-monina, anaty zaridaina eo ambanin'ny havoana misy ala: efitrano fatoriana iombonana misy vidiny ho an'ny mpianatra, ary efitrano roa misy lakozia manokana. Efitrano tsotra sady madio, fandraisana mafana avy amin'ny mponina."
       },
       "price": {
-        "en": "Budget — contact for rates",
-        "fr": "Petit budget — nous contacter pour les tarifs",
-        "de": "Günstig – Preise auf Anfrage",
-        "mg": "Mora vidy — anontanio ny vidiny"
+        "en": "Dormitory 4,000–6,000 Ar per person (students) · rooms 30,000 Ar / night",
+        "fr": "Dortoir 4 000–6 000 Ar par personne (étudiants) · chambres 30 000 Ar / nuit",
+        "de": "Schlafsaal 4.000–6.000 Ar pro Person (Schüler und Studenten) · Zimmer 30.000 Ar / Nacht",
+        "mg": "Efitrano fatoriana iombonana 4 000–6 000 Ar isan'olona (mpianatra) · efitrano 30 000 Ar / alina"
+      },
+      "rooms": {
+        "en": [
+          { "type": "Dormitory bed — middle-school students", "price": "4,000 Ar per person" },
+          { "type": "Dormitory bed — lycée students", "price": "5,000 Ar per person" },
+          { "type": "Dormitory bed — university students", "price": "6,000 Ar per person" },
+          { "type": "Two rooms and a kitchen (no gas)", "price": "30,000 Ar" }
+        ],
+        "fr": [
+          { "type": "Lit en dortoir — collégiens", "price": "4 000 Ar par personne" },
+          { "type": "Lit en dortoir — lycéens", "price": "5 000 Ar par personne" },
+          { "type": "Lit en dortoir — étudiants", "price": "6 000 Ar par personne" },
+          { "type": "Deux chambres et une cuisine (sans gaz)", "price": "30 000 Ar" }
+        ],
+        "de": [
+          { "type": "Schlafsaalbett — Mittelschüler", "price": "4.000 Ar pro Person" },
+          { "type": "Schlafsaalbett — Gymnasiasten (Lycée)", "price": "5.000 Ar pro Person" },
+          { "type": "Schlafsaalbett — Studierende", "price": "6.000 Ar pro Person" },
+          { "type": "Zwei Zimmer und eine Küche (ohne Gas)", "price": "30.000 Ar" }
+        ],
+        "mg": [
+          { "type": "Fandriana ao amin'ny efitrano iombonana — mpianatra CEG", "price": "4 000 Ar isan'olona" },
+          { "type": "Fandriana ao amin'ny efitrano iombonana — mpianatra lycée", "price": "5 000 Ar isan'olona" },
+          { "type": "Fandriana ao amin'ny efitrano iombonana — mpianatra eny amin'ny oniversite", "price": "6 000 Ar isan'olona" },
+          { "type": "Efitrano roa sy lakozia iray (tsy misy entona)", "price": "30 000 Ar" }
+        ]
+      },
+      "features": {
+        "en": ["Shared bathrooms in the dormitory", "The rooms have their own bathroom"],
+        "fr": ["Salles d’eau partagées dans le dortoir", "Les chambres ont leur propre salle d’eau"],
+        "de": ["Gemeinschaftsbäder im Schlafsaal", "Die Zimmer haben ein eigenes Bad"],
+        "mg": ["Efitra fandroana iombonana ao amin'ny efitrano fatoriana iombonana", "Misy efitra fandroana manokana ireo efitrano"]
+      },
+      "ratesNote": {
+        "en": "The dormitory prices are student rates; ask about others when you book.",
+        "fr": "Les prix du dortoir sont des tarifs étudiants ; renseignez-vous pour les autres voyageurs en réservant.",
+        "de": "Die Schlafsaalpreise sind Schüler- und Studententarife; fragen Sie bei der Buchung nach den Preisen für andere Gäste.",
+        "mg": "Vidiny ho an'ny mpianatra ireo vidin'ny efitrano iombonana; anontanio ny an'ny hafa rehefa mamandrika."
+      },
+      "contact.note": {
+        "en": "For reservations.",
+        "fr": "Pour les réservations.",
+        "de": "Für Reservierungen.",
+        "mg": "Ho an'ny famandrihana."
       },
       "gallery[].alt": {
         "en": [
-          "Akamasoa Guest House exterior",
-          "Room at Akamasoa Guest House",
-          "Restaurant or common area at Akamasoa Guest House",
-          "View from Akamasoa Guest House"
+          "Cycads and traveller's palms on a lawn beside a stone path, below forested hills, Akamasoa",
+          "An orange building with a green roof beside a stone path, under a forested peak with a bare rock face, Akamasoa",
+          "Two-storey buildings, grey and red, above wide stone steps, Akamasoa",
+          "Pines and traveller's palms on a grassy slope, with a small building and a thatched shelter, Akamasoa",
+          "Rows of single beds in the dormitory, green walls and an open window, Akamasoa",
+          "Wooden bunk beds in a green room, Akamasoa",
+          "A double bed and a wooden chair in a blue room with an open window, Akamasoa",
+          "A single bed, a table and chairs in a yellow room, Akamasoa",
+          "A tiled kitchen with a double sink, Akamasoa",
+          "A washroom with a basin, toilet and shower, Akamasoa",
+          "Long wooden tables and chairs in the dining hall, Akamasoa"
         ],
         "fr": [
-          "Akamasoa Guest House : vue extérieure",
-          "Akamasoa Guest House : une chambre",
-          "Akamasoa Guest House : restaurant ou espace commun",
-          "Akamasoa Guest House : la vue"
+          "Cycas et arbres du voyageur sur une pelouse au bord d’une allée de pierre, au pied de collines boisées, Akamasoa",
+          "Un bâtiment orange au toit vert au bord d’une allée de pierre, sous un sommet boisé à la paroi rocheuse nue, Akamasoa",
+          "Bâtiments à étage, gris et rouge, au-dessus de larges marches de pierre, Akamasoa",
+          "Pins et arbres du voyageur sur une pente herbeuse, avec un petit bâtiment et un abri au toit de chaume, Akamasoa",
+          "Rangées de lits simples dans le dortoir, murs verts et fenêtre ouverte, Akamasoa",
+          "Lits superposés en bois dans une chambre verte, Akamasoa",
+          "Un lit double et une chaise en bois dans une chambre bleue à la fenêtre ouverte, Akamasoa",
+          "Un lit simple, une table et des chaises dans une chambre jaune, Akamasoa",
+          "Une cuisine carrelée avec un double évier, Akamasoa",
+          "Une salle d’eau avec lavabo, toilettes et douche, Akamasoa",
+          "Longues tables et chaises en bois dans le réfectoire, Akamasoa"
         ],
         "de": [
-          "Akamasoa Guest House: Außenansicht",
-          "Akamasoa Guest House: ein Zimmer",
-          "Akamasoa Guest House: Restaurant oder Gemeinschaftsbereich",
-          "Akamasoa Guest House: die Aussicht"
+          "Palmfarne und Bäume der Reisenden auf einer Wiese an einem Steinweg, unterhalb bewaldeter Hügel, Akamasoa",
+          "Ein orangefarbenes Gebäude mit grünem Dach an einem Steinweg, unter einem bewaldeten Gipfel mit kahler Felswand, Akamasoa",
+          "Zweistöckige Gebäude, grau und rot, über breiten Steinstufen, Akamasoa",
+          "Kiefern und Bäume der Reisenden an einem Grashang, mit einem kleinen Gebäude und einem strohgedeckten Unterstand, Akamasoa",
+          "Reihen von Einzelbetten im Schlafsaal, grüne Wände und ein offenes Fenster, Akamasoa",
+          "Hölzerne Etagenbetten in einem grünen Zimmer, Akamasoa",
+          "Ein Doppelbett und ein Holzstuhl in einem blauen Zimmer mit offenem Fenster, Akamasoa",
+          "Ein Einzelbett, ein Tisch und Stühle in einem gelben Zimmer, Akamasoa",
+          "Eine geflieste Küche mit Doppelspüle, Akamasoa",
+          "Ein Bad mit Waschbecken, Toilette und Dusche, Akamasoa",
+          "Lange Holztische und Stühle im Speisesaal, Akamasoa"
         ],
         "mg": [
-          "Akamasoa Guest House: ny ivelany",
-          "Akamasoa Guest House: efitrano iray",
-          "Akamasoa Guest House: trano fisakafoana na toerana iombonana",
-          "Akamasoa Guest House: ny fijery"
+          "Fanjana sy ravinala eo amin'ny bozaka akaikin'ny lalana vato, eo ambanin'ny havoana misy ala, Akamasoa",
+          "Trano volomboasary misy tafo maitso akaikin'ny lalana vato, eo ambanin'ny tendrombohitra misy ala sy vato miboridana, Akamasoa",
+          "Trano misy rihana, volondavenona sy mena, eo ambonin'ny tohatra vato malalaka, Akamasoa",
+          "Kesika sy ravinala eo amin'ny tehezana misy bozaka, miaraka amin'ny trano kely sy fialofana misy tafo bozaka, Akamasoa",
+          "Fandriana olona iray milahatra ao amin'ny efitrano fatoriana iombonana, rindrina maitso sy varavarankely misokatra, Akamasoa",
+          "Fandriana mifanongoa vita amin'ny hazo ao amin'ny efitrano maitso, Akamasoa",
+          "Fandriana roa olona sy seza hazo ao amin'ny efitrano manga misy varavarankely misokatra, Akamasoa",
+          "Fandriana olona iray, latabatra sy seza ao amin'ny efitrano mavo, Akamasoa",
+          "Lakozia misy taila sy fanasana roa, Akamasoa",
+          "Efitra fandroana misy fanasana tanana, kabone ary fandroana, Akamasoa",
+          "Latabatra lava sy seza hazo ao amin'ny efitrano fisakafoana, Akamasoa"
         ]
       }
     },
     "chez-liantsoa": {
       "desc": {
-        "en": "Cosy, budget-friendly inn with clean rooms and warm local hospitality, close to the village centre and to guides and transport.",
-        "fr": "Auberge chaleureuse et bon marché, aux chambres propres et à l’accueil local attentionné, près du centre du village, des guides et des transports.",
-        "de": "Gemütliche, günstige Herberge mit sauberen Zimmern und herzlicher Gastfreundschaft, nahe dem Ortszentrum, den Guides und den Verkehrsmitteln.",
-        "mg": "Trano fandraisana vahiny mafana sady mora vidy, misy efitrano madio sy fandraisana tsara avy amin'ny mponina, akaikin'ny afovoan-tanàna, ny mpitari-dalana ary ny fitaterana."
+        "en": "Cosy, budget-friendly inn with clean rooms and warm local hospitality, close to the village centre and to guides and transport. The bathrooms are shared and there is no hot water. Its sign calls it an annexe of Hotel In-Kavana: the two are linked but separate places to stay.",
+        "fr": "Auberge chaleureuse et bon marché, aux chambres propres et à l’accueil local attentionné, près du centre du village, des guides et des transports. Les salles de bain sont communes et il n’y a pas d’eau chaude. Son enseigne la présente comme une annexe de l’Hôtel In-Kavana : les deux sont liés, mais ce sont deux établissements distincts.",
+        "de": "Gemütliche, günstige Herberge mit sauberen Zimmern und herzlicher Gastfreundschaft, nahe dem Ortszentrum, den Guides und den Verkehrsmitteln. Die Bäder werden geteilt, warmes Wasser gibt es nicht. Ihr Schild nennt sie eine Dependance des Hotel In-Kavana: Beide gehören zusammen, sind aber getrennte Unterkünfte.",
+        "mg": "Trano fandraisana vahiny mafana sady mora vidy, misy efitrano madio sy fandraisana tsara avy amin'ny mponina, akaikin'ny afovoan-tanàna, ny mpitari-dalana ary ny fitaterana. Iombonana ny efitra fandroana ary tsy misy rano mafana. Ny takelany dia milaza azy ho sampan'ny Hotel In-Kavana: mifandray izy roa nefa toerana fandraisana vahiny samy hafa."
       },
       "price": {
-        "en": "Budget — contact for rates",
-        "fr": "Petit budget — nous contacter pour les tarifs",
-        "de": "Günstig – Preise auf Anfrage",
-        "mg": "Mora vidy — anontanio ny vidiny"
+        "en": "From 30,000 Ar / night",
+        "fr": "À partir de 30 000 Ar / nuit",
+        "de": "Ab 30.000 Ar / Nacht",
+        "mg": "Manomboka amin'ny 30 000 Ar / alina"
       },
       "gallery[].alt": {
         "en": [
-          "Chez Liantsoa exterior",
-          "Room at Chez Liantsoa",
+          "The yellow two-storey house with its painted sign, 'Chambres Chez Liantsoa', over a cobbled street",
+          "A double bed with a knotted mosquito net, against orange walls, Chez Liantsoa",
+          "Wooden doors open on a pink curtain and a bed beyond, room 2, Chez Liantsoa",
           "Restaurant or common area at Chez Liantsoa",
           "View from Chez Liantsoa"
         ],
         "fr": [
-          "Chez Liantsoa : vue extérieure",
-          "Chez Liantsoa : une chambre",
+          "La maison jaune à un étage et son enseigne peinte, « Chambres Chez Liantsoa », au-dessus d’une rue pavée",
+          "Un lit double et sa moustiquaire nouée, contre des murs orange, Chez Liantsoa",
+          "Des portes en bois ouvertes sur un rideau rose et un lit au fond, chambre 2, Chez Liantsoa",
           "Chez Liantsoa : restaurant ou espace commun",
           "Chez Liantsoa : la vue"
         ],
         "de": [
-          "Chez Liantsoa: Außenansicht",
-          "Chez Liantsoa: ein Zimmer",
+          "Das gelbe zweistöckige Haus mit seinem gemalten Schild „Chambres Chez Liantsoa“ über einer gepflasterten Gasse",
+          "Ein Doppelbett mit geknotetem Moskitonetz vor orangefarbenen Wänden, Chez Liantsoa",
+          "Offene Holztüren, dahinter ein rosa Vorhang und ein Bett, Zimmer 2, Chez Liantsoa",
           "Chez Liantsoa: Restaurant oder Gemeinschaftsbereich",
           "Chez Liantsoa: die Aussicht"
         ],
         "mg": [
-          "Chez Liantsoa: ny ivelany",
-          "Chez Liantsoa: efitrano iray",
+          "Ny trano mavo misy rihana sy ny takelaka voaloko, « Chambres Chez Liantsoa », eo ambonin'ny lalana voarafitra vato",
+          "Fandriana roa olona misy lay voafehy, manoloana ny rindrina volom-boasary, Chez Liantsoa",
+          "Varavarana hazo misokatra amin'ny ridao mavokely sy fandriana ao aoriany, efitrano faha-2, Chez Liantsoa",
           "Chez Liantsoa: trano fisakafoana na toerana iombonana",
           "Chez Liantsoa: ny fijery"
+        ]
+      }
+    },
+    "tianala": {
+      "desc": {
+        "en": "Simple chambres d'hôtes (guest rooms): twin and double rooms, bungalows and family rooms with bunk beds, with mosquito nets over the beds and simple washrooms with a basin and shower.",
+        "fr": "Chambres d’hôtes simples : chambres twin et doubles, bungalows et chambres familiales avec lits superposés, moustiquaires au-dessus des lits et salles d’eau simples avec lavabo et douche.",
+        "de": "Einfache Chambres d’hôtes (Gästezimmer): Zweibett- und Doppelzimmer, Bungalows und Familienzimmer mit Etagenbetten, Moskitonetze über den Betten und schlichte Waschräume mit Waschbecken und Dusche.",
+        "mg": "Efitrano fandraisana vahiny tsotra (chambres d'hôtes): efitrano misy fandriana roa na fandriana roa olona, bungalow ary efitrano ho an'ny fianakaviana misy fandriana mifanongoa, misy lay eo ambonin'ny fandriana ary efitra fisasana tsotra misy lavabo sy fandroana."
+      },
+      "price": {
+        "en": "30,000–60,000 Ar / night",
+        "fr": "30 000–60 000 Ar / nuit",
+        "de": "30.000–60.000 Ar / Nacht",
+        "mg": "30 000–60 000 Ar / alina"
+      },
+      "rooms": {
+        "en": [
+          { "type": "Twin or double", "price": "30,000 Ar" },
+          { "type": "Bungalow", "price": "45,000 Ar" },
+          { "type": "Family room", "price": "60,000 Ar" }
+        ],
+        "fr": [
+          { "type": "Twin ou double", "price": "30 000 Ar" },
+          { "type": "Bungalow", "price": "45 000 Ar" },
+          { "type": "Chambre familiale", "price": "60 000 Ar" }
+        ],
+        "de": [
+          { "type": "Zweibett- oder Doppelzimmer", "price": "30.000 Ar" },
+          { "type": "Bungalow", "price": "45.000 Ar" },
+          { "type": "Familienzimmer", "price": "60.000 Ar" }
+        ],
+        "mg": [
+          { "type": "Fandriana roa na fandriana roa olona", "price": "30 000 Ar" },
+          { "type": "Bungalow", "price": "45 000 Ar" },
+          { "type": "Efitrano ho an'ny fianakaviana", "price": "60 000 Ar" }
+        ]
+      },
+      "gallery[].alt": {
+        "en": [
+          "A double bed and a single bed under a blue mosquito net, in a room with woven walls and a wooden floor, Tianala",
+          "The green roadside sign, 'Tianala, Chambres d'hôtes', under a small tin roof, Tianala",
+          "A double bed with a patchwork cover, a wooden chair and a curtained doorway to the washroom, Tianala",
+          "A double bed with a cane headboard beside a wooden staircase, Tianala",
+          "A wooden bunk bed and a double bed in a room with a slatted ceiling, Tianala",
+          "Two beds, a cane armchair and a curtained doorway to the washroom, Tianala",
+          "A wooden table in the kitchen, with a tiled charcoal stove and cooking pots beyond, Tianala",
+          "A washroom with stone walls, a basin and a shower corner, Tianala",
+          "A tiled shower corner with buckets, beside a basin, Tianala",
+          "A tiled washroom with a toilet and a corner basin, Tianala"
+        ],
+        "fr": [
+          "Un lit double et un lit simple sous une moustiquaire bleue, dans une chambre aux murs tressés et au plancher de bois, Tianala",
+          "Le panneau vert au bord de la route, « Tianala, Chambres d’hôtes », sous un petit toit de tôle, Tianala",
+          "Un lit double au couvre-lit en patchwork, une chaise en bois et une porte à rideau vers la salle d’eau, Tianala",
+          "Un lit double à tête de lit en rotin à côté d’un escalier en bois, Tianala",
+          "Un lit superposé en bois et un lit double dans une chambre au plafond à lattes, Tianala",
+          "Deux lits, un fauteuil en rotin et une porte à rideau vers la salle d’eau, Tianala",
+          "Une table en bois dans la cuisine, avec un fourneau à charbon carrelé et des marmites au fond, Tianala",
+          "Une salle d’eau aux murs de pierre, avec lavabo et coin douche, Tianala",
+          "Un coin douche carrelé avec des seaux, à côté d’un lavabo, Tianala",
+          "Une salle d’eau carrelée avec WC et lavabo d’angle, Tianala"
+        ],
+        "de": [
+          "Ein Doppelbett und ein Einzelbett unter einem blauen Moskitonetz, in einem Zimmer mit geflochtenen Wänden und Holzboden, Tianala",
+          "Das grüne Schild an der Straße, „Tianala, Chambres d’hôtes“, unter einem kleinen Wellblechdach, Tianala",
+          "Ein Doppelbett mit Patchworkdecke, ein Holzstuhl und eine Tür mit Vorhang zum Waschraum, Tianala",
+          "Ein Doppelbett mit Rattan-Kopfteil neben einer Holztreppe, Tianala",
+          "Ein Etagenbett aus Holz und ein Doppelbett in einem Zimmer mit Lattendecke, Tianala",
+          "Zwei Betten, ein Rattansessel und eine Tür mit Vorhang zum Waschraum, Tianala",
+          "Ein Holztisch in der Küche, dahinter ein gefliester Holzkohleherd und Kochtöpfe, Tianala",
+          "Ein Waschraum mit Steinwänden, Waschbecken und Duschecke, Tianala",
+          "Eine geflieste Duschecke mit Eimern neben einem Waschbecken, Tianala",
+          "Ein gefliester Waschraum mit Toilette und Eckwaschbecken, Tianala"
+        ],
+        "mg": [
+          "Fandriana roa olona sy fandriana tokana eo ambanin'ny lay manga, ao amin'ny efitrano misy rindrina tenona sy gorodona hazo, Tianala",
+          "Ny takelaka maitso eo amoron-dalana, « Tianala, Chambres d'hôtes », eo ambanin'ny tafo fanitso kely, Tianala",
+          "Fandriana roa olona misy firakotra patchwork, seza hazo ary varavarana misy ridao mankany amin'ny efitra fisasana, Tianala",
+          "Fandriana roa olona misy lohany vita amin'ny rotin, eo akaikin'ny tohatra hazo, Tianala",
+          "Fandriana mifanongoa vita amin'ny hazo sy fandriana roa olona ao amin'ny efitrano misy valin-drihana vita amin'ny hazo madinika, Tianala",
+          "Fandriana roa, seza fipetrahana vita amin'ny rotin ary varavarana misy ridao mankany amin'ny efitra fisasana, Tianala",
+          "Latabatra hazo ao an-dakozia, misy fatana arina voapetaka taila sy vilany ao aoriany, Tianala",
+          "Efitra fisasana misy rindrina vato, lavabo ary fandroana, Tianala",
+          "Fandroana voapetaka taila misy siny, eo akaikin'ny lavabo, Tianala",
+          "Efitra fisasana voapetaka taila misy kabone sy lavabo an-joro, Tianala"
         ]
       }
     },
@@ -2324,31 +2766,85 @@ const LISTING_TRANSLATIONS = {
         "mg": "Ny efitrano fisakafoana ao Chez Gaspard, ao ambadiky ny fiangonana katolika, tantanan'ireo Pretra ao amin'ny Fo Masina — ny trano fisakafoana malaza indrindra ao an-tanàna ary fijanonana mahazatra ho an'ny vondrona miaraka amin'ny mpitari-dalana, misy bar mampiseho fanatanjahantena."
       },
       "highlights": {
-        "en": ["Set three-course dinners", "Zebu dishes", "Vegetarian on request"],
-        "fr": ["Dîners en menu trois plats", "Plats de zébu", "Végétarien sur demande"],
-        "de": ["Drei-Gänge-Abendmenüs", "Zebu-Gerichte", "Vegetarisch auf Wunsch"],
+        "en": [
+          "Set three-course dinners",
+          "Zebu dishes",
+          "Vegetarian dishes on the menu"
+        ],
+        "fr": [
+          "Dîners en menu trois plats",
+          "Plats de zébu",
+          "Plats végétariens à la carte"
+        ],
+        "de": [
+          "Drei-Gänge-Abendmenüs",
+          "Zebu-Gerichte",
+          "Vegetarische Gerichte auf der Karte"
+        ],
         "mg": [
           "Sakafo hariva voalamina misy lovia telo",
           "Sakafo vita amin'ny hen'omby",
-          "Sakafo tsy misy hena raha angatahina"
+          "Misy sakafo tsy misy hena ao amin'ny lisitra"
         ]
       },
       "meals": {
-        "en": ["Breakfast: 12,000–15,000 Ar", "Lunch or dinner: 12,000–35,000 Ar à la carte", "Set menu: 45,000 Ar"],
+        "en": [
+          "Breakfast: 15,000–25,000 Ar (simple, Malagasy, continental or American)",
+          "Starters: 20,000–25,000 Ar",
+          "Soups: 20,000–35,000 Ar",
+          "Main courses: 35,000 Ar (grills, Malagasy dishes, pasta and house specialities); vegetarian dishes 25,000–35,000 Ar",
+          "Desserts: 15,000–25,000 Ar",
+          "Set menu: 65,000 Ar (three courses, four menus to choose from)",
+          "Picnic for the park: sandwich 15,000 Ar, or a meal with water and fruit 45,000 Ar"
+        ],
         "fr": [
-          "Petit-déjeuner : 12 000–15 000 Ar",
-          "Déjeuner ou dîner : 12 000–35 000 Ar à la carte",
-          "Menu : 45 000 Ar"
+          "Petit-déjeuner : 15 000–25 000 Ar (simple, malgache, continental ou américain)",
+          "Entrées : 20 000–25 000 Ar",
+          "Soupes : 20 000–35 000 Ar",
+          "Plats : 35 000 Ar (grillades, plats malgaches, pâtes et spécialités de la maison) ; plats végétariens 25 000–35 000 Ar",
+          "Desserts : 15 000–25 000 Ar",
+          "Menu : 65 000 Ar (trois plats, quatre menus au choix)",
+          "Pique-nique pour le parc : sandwich 15 000 Ar, ou un repas avec eau et fruit 45 000 Ar"
         ],
         "de": [
-          "Frühstück: 12.000–15.000 Ar",
-          "Mittag- oder Abendessen: 12.000–35.000 Ar à la carte",
-          "Menü: 45.000 Ar"
+          "Frühstück: 15.000–25.000 Ar (einfach, madagassisch, kontinental oder amerikanisch)",
+          "Vorspeisen: 20.000–25.000 Ar",
+          "Suppen: 20.000–35.000 Ar",
+          "Hauptgerichte: 35.000 Ar (Gegrilltes, madagassische Gerichte, Pasta und Spezialitäten des Hauses); vegetarische Gerichte 25.000–35.000 Ar",
+          "Desserts: 15.000–25.000 Ar",
+          "Menü: 65.000 Ar (drei Gänge, vier Menüs zur Wahl)",
+          "Picknick für den Park: Sandwich 15.000 Ar oder eine Mahlzeit mit Wasser und Obst 45.000 Ar"
         ],
         "mg": [
-          "Sakafo maraina: 12 000–15 000 Ar",
-          "Sakafo antoandro na hariva: 12 000–35 000 Ar araka ny safidy",
-          "Sakafo voalamina: 45 000 Ar"
+          "Sakafo maraina: 15 000–25 000 Ar (tsotra, malagasy, kontinantaly na amerikanina)",
+          "Fanombohana: 20 000–25 000 Ar",
+          "Lasopy: 20 000–35 000 Ar",
+          "Sakafo fototra: 35 000 Ar (natono, sakafo malagasy, paty ary sakafo manokan'ny trano); sakafo tsy misy hena 25 000–35 000 Ar",
+          "Tsindrin-tsakafo: 15 000–25 000 Ar",
+          "Sakafo voalamina: 65 000 Ar (lovia telo, menio efatra azo safidiana)",
+          "Sakafo entina any amin'ny valan-javaboahary: sandwich 15 000 Ar, na sakafo misy rano sy voankazo 45 000 Ar"
+        ]
+      },
+      "gallery[].alt": {
+        "en": [
+            "The dining room and bar, with blue and white tablecloths and a rose on each table",
+            "A second dining room with blue tablecloths, a tiled floor and windows onto the garden",
+            "The front of Chez Gaspard: a white building painted with a giraffe weevil, beside the covered stone gateway, with forested hills behind"
+        ],
+        "fr": [
+            "La salle à manger et le bar, avec des nappes bleues et blanches et une rose sur chaque table",
+            "Une seconde salle à manger avec des nappes bleues, un sol carrelé et des fenêtres sur le jardin",
+            "La façade de Chez Gaspard : un bâtiment blanc peint d’un charançon girafe, à côté du portail couvert en pierre, avec des collines boisées derrière"
+        ],
+        "de": [
+            "Speisesaal und Bar mit blau-weißen Tischdecken und einer Rose auf jedem Tisch",
+            "Ein zweiter Speisesaal mit blauen Tischdecken, Fliesenboden und Fenstern zum Garten",
+            "Die Vorderseite von Chez Gaspard: ein weißes Gebäude mit einem gemalten Giraffenhalskäfer neben dem überdachten Steintor, dahinter bewaldete Hügel"
+        ],
+        "mg": [
+            "Ny efitrano fisakafoana sy ny bar, misy lamba latabatra manga sy fotsy ary raozy iray isaky ny latabatra",
+            "Efitrano fisakafoana faharoa misy lamba latabatra manga, gorodona taila ary varavarankely mitodika amin'ny zaridaina",
+            "Ny tarehin'i Chez Gaspard: trano fotsy misy sary sokajy lava vozona, eo akaikin'ny vavahady vato misy tafo, ary havoana misy ala ao ambadika"
         ]
       }
     },
@@ -2372,10 +2868,76 @@ const LISTING_TRANSLATIONS = {
         "mg": ["Hen'omby natono", "Vary sy laoka", "Toerana fisakafoana any ivelany"]
       },
       "meals": {
-        "en": ["Breakfast: from 10,000 Ar", "Lunch or dinner: 15,000–30,000 Ar"],
-        "fr": ["Petit-déjeuner : à partir de 10 000 Ar", "Déjeuner ou dîner : 15 000–30 000 Ar"],
-        "de": ["Frühstück: ab 10.000 Ar", "Mittag- oder Abendessen: 15.000–30.000 Ar"],
-        "mg": ["Sakafo maraina: manomboka amin'ny 10 000 Ar", "Sakafo antoandro na hariva: 15 000–30 000 Ar"]
+        "en": [
+          "Breakfast: continental 16,000 Ar, American 20,000 Ar, Malagasy rice with laoka 10,000 Ar, omelettes 6,000–12,000 Ar",
+          "Starters: 10,000–20,000 Ar (salads, vegetable soup, freshwater prawn gratin, chicken crêpe)",
+          "Zebu steak: 20,000–30,000 Ar (pan-fried, breaded, pepper sauce, grilled, or the house skewers)",
+          "Pork, chicken, pasta and noodles: 22,000–30,000 Ar (vegetarian mine sao 22,000 Ar)",
+          "Fish, freshwater prawns and crayfish: 20,000–23,000 Ar",
+          "Rice dishes and sandwiches: 18,000–22,000 Ar (Cantonese rice, romazava tanala)",
+          "Crêpes and fruit desserts: 5,000–8,000 Ar",
+          "Beer: 5,000–8,000 Ar; soft drinks 5,000–7,000 Ar",
+          "Fresh juice: 4,000 Ar a glass, 20,000 Ar a carafe",
+          "Rum arrangé 6,000 Ar, wine 15,000 Ar a glass"
+        ],
+        "fr": [
+          "Petit-déjeuner : continental 16 000 Ar, américain 20 000 Ar, riz malgache avec laoka 10 000 Ar, omelettes 6 000–12 000 Ar",
+          "Entrées : 10 000–20 000 Ar (salades, potage de légumes, gratin de crevettes d’eau douce, crêpe au poulet)",
+          "Steak de zébu : 20 000–30 000 Ar (poêlé, pané, sauce au poivre, grillé, ou la brochette maison)",
+          "Porc, poulet, pâtes et nouilles : 22 000–30 000 Ar (mine sao végétarien 22 000 Ar)",
+          "Poisson, crevettes d’eau douce et écrevisses : 20 000–23 000 Ar",
+          "Riz et sandwichs : 18 000–22 000 Ar (riz cantonais, romazava tanala)",
+          "Crêpes et desserts aux fruits : 5 000–8 000 Ar",
+          "Bière : 5 000–8 000 Ar ; boissons gazeuses 5 000–7 000 Ar",
+          "Jus frais : 4 000 Ar le verre, 20 000 Ar la carafe",
+          "Rhum arrangé 6 000 Ar, vin 15 000 Ar le verre"
+        ],
+        "de": [
+          "Frühstück: kontinental 16.000 Ar, amerikanisch 20.000 Ar, madagassischer Reis mit Laoka 10.000 Ar, Omeletts 6.000–12.000 Ar",
+          "Vorspeisen: 10.000–20.000 Ar (Salate, Gemüsesuppe, Süßwassergarnelen-Gratin, Hähnchen-Crêpe)",
+          "Zebusteak: 20.000–30.000 Ar (gebraten, paniert, mit Pfeffersauce, gegrillt oder als Spieß des Hauses)",
+          "Schwein, Hähnchen, Pasta und Nudeln: 22.000–30.000 Ar (vegetarisches Mine Sao 22.000 Ar)",
+          "Fisch, Süßwassergarnelen und Flusskrebse: 20.000–23.000 Ar",
+          "Reisgerichte und Sandwiches: 18.000–22.000 Ar (kantonesischer Reis, Romazava Tanala)",
+          "Crêpes und Fruchtdesserts: 5.000–8.000 Ar",
+          "Bier: 5.000–8.000 Ar; Softdrinks 5.000–7.000 Ar",
+          "Frischer Saft: 4.000 Ar das Glas, 20.000 Ar die Karaffe",
+          "Rhum arrangé 6.000 Ar, Wein 15.000 Ar das Glas"
+        ],
+        "mg": [
+          "Sakafo maraina: continental 16 000 Ar, amerikanina 20 000 Ar, vary amin'anana sy laoka 10 000 Ar, omelety 6 000–12 000 Ar",
+          "Fanombohana: 10 000–20 000 Ar (salady, lasopy legioma, gratin patsa, crêpe misy akoho)",
+          "Hen'omby natono: 20 000–30 000 Ar (nendasina, pané, saosy dipoavatra, natono, na brochette an'ny trano)",
+          "Henakisoa, akoho, paty sy mine sao: 22 000–30 000 Ar (mine sao tsy misy hena 22 000 Ar)",
+          "Trondro, patsa ary orana: 20 000–23 000 Ar",
+          "Vary sy sandwich: 18 000–22 000 Ar (vary cantonais, romazava tanala)",
+          "Crêpes sy tsindrin-tsakafo voankazo: 5 000–8 000 Ar",
+          "Labiera: 5 000–8 000 Ar; zava-pisotro mamy 5 000–7 000 Ar",
+          "Ranom-boankazo: 4 000 Ar ny vera, 20 000 Ar ny karafy",
+          "Toaka nafangaro 6 000 Ar, divay 15 000 Ar ny vera"
+        ]
+      },
+      "gallery[].alt": {
+        "en": [
+          "The dining room, with carved wooden pillars and tables laid for a meal",
+          "A table on the covered terrace, looking into the dining room",
+          "The Grenat Hotel & Restaurant sign by the road, with the village behind"
+        ],
+        "fr": [
+          "La salle à manger, avec ses piliers en bois sculpté et ses tables dressées",
+          "Une table sur la terrasse couverte, donnant sur la salle à manger",
+          "L’enseigne Grenat Hotel & Restaurant au bord de la route, avec le village derrière"
+        ],
+        "de": [
+          "Der Speisesaal mit geschnitzten Holzsäulen und gedeckten Tischen",
+          "Ein Tisch auf der überdachten Terrasse mit Blick in den Speisesaal",
+          "Das Schild „Grenat Hotel & Restaurant“ an der Straße, dahinter das Dorf"
+        ],
+        "mg": [
+          "Ny efitrano fisakafoana, misy andry hazo voasokitra sy latabatra voaomana",
+          "Latabatra eo amin'ny lavarangana misy tafo, manatrika ny efitrano fisakafoana",
+          "Ny takelaka Grenat Hotel & Restaurant amoron-dalana, ary ny tanàna ao aoriana"
+        ]
       }
     },
     "manja-restaurant": {
@@ -2740,10 +3302,10 @@ const LISTING_TRANSLATIONS = {
         "mg": "Trano fisakafoan'ny Ihary Hotel"
       },
       "desc": {
-        "en": "Riverside restaurant on the bank of the Namorona serving Malagasy cuisine. Quality is acceptable and prices low; service can be slow, so it is not the place to eat before an early park start.",
-        "fr": "Restaurant au bord de la Namorona servant une cuisine malgache. Qualité correcte et prix bas ; le service peut être lent, ce n’est donc pas l’endroit où manger avant un départ matinal pour le parc.",
-        "de": "Restaurant am Ufer der Namorona mit madagassischer Küche. Ordentliche Qualität und niedrige Preise; der Service kann langsam sein, also nicht der richtige Ort vor einem frühen Parkstart.",
-        "mg": "Trano fisakafoana eo amoron'ny Namorona manome sakafo malagasy. Antonony ny kalitao ary mora ny vidiny; mety ho miadana ny fanompoana, ka tsy toerana tokony hisakafoana alohan'ny fiaingana maraina be mankany amin'ny valan-javaboahary."
+        "en": "Riverside restaurant on the bank of the Namorona serving Malagasy cuisine. Quality is acceptable; service can be slow, so it is not the place to eat before an early park start.",
+        "fr": "Restaurant au bord de la Namorona servant une cuisine malgache. Qualité correcte ; le service peut être lent, ce n’est donc pas l’endroit où manger avant un départ matinal pour le parc.",
+        "de": "Restaurant am Ufer der Namorona mit madagassischer Küche. Ordentliche Qualität; der Service kann langsam sein, also nicht der richtige Ort vor einem frühen Parkstart.",
+        "mg": "Trano fisakafoana eo amoron'ny Namorona manome sakafo malagasy. Antonony ny kalitao; mety ho miadana ny fanompoana, ka tsy toerana tokony hisakafoana alohan'ny fiaingana maraina be mankany amin'ny valan-javaboahary."
       },
       "highlights": {
         "en": ["River views", "Packed lunches for the park", "Allow extra time"],
@@ -2752,30 +3314,54 @@ const LISTING_TRANSLATIONS = {
         "mg": ["Fijery ny renirano", "Sakafo entina ho an'ny valan-javaboahary", "Omeo fotoana bebe kokoa"]
       },
       "meals": {
-        "en": ["Breakfast, lunch or dinner: 10,000–30,000 Ar"],
-        "fr": ["Petit-déjeuner, déjeuner ou dîner : 10 000–30 000 Ar"],
-        "de": ["Frühstück, Mittag- oder Abendessen: 10.000–30.000 Ar"],
-        "mg": ["Sakafo maraina, antoandro na hariva: 10 000–30 000 Ar"]
+        "en": [
+          "Breakfast: 18,000 Ar continental, 20,000 Ar American",
+          "Set menu: 60,000 Ar",
+          "À la carte (the menu changes daily): starter 20,000 Ar, main course 30,000 Ar, dessert 15,000 Ar"
+        ],
+        "fr": [
+          "Petit-déjeuner : 18 000 Ar continental, 20 000 Ar américain",
+          "Menu : 60 000 Ar",
+          "À la carte (la carte change chaque jour) : entrée 20 000 Ar, plat 30 000 Ar, dessert 15 000 Ar"
+        ],
+        "de": [
+          "Frühstück: 18.000 Ar kontinental, 20.000 Ar amerikanisch",
+          "Menü: 60.000 Ar",
+          "À la carte (die Karte wechselt täglich): Vorspeise 20.000 Ar, Hauptgericht 30.000 Ar, Dessert 15.000 Ar"
+        ],
+        "mg": [
+          "Sakafo maraina: 18 000 Ar kaontinantaly, 20 000 Ar amerikanina",
+          "Sakafo voalamina: 60 000 Ar",
+          "Isaky ny lovia (miova isan'andro ny sakafo): fanombohana 20 000 Ar, sakafo fototra 30 000 Ar, tsindrin-tsakafo 15 000 Ar"
+        ]
       },
       "gallery[].alt": {
         "en": [
+          "The dining room at Ihary Hotel Restaurant, with red and blue tablecloths under a high timber ceiling",
+          "The bar at Ihary Hotel Restaurant, with six brightly painted stools and carved wooden panels above the counter",
+          "The roadside sign for Ihary Hotel, its bungalows, restaurant and bar",
           "Ihary Hotel Restaurant frontage",
-          "Dining room at Ihary Hotel Restaurant",
           "A dish at Ihary Hotel Restaurant"
         ],
         "fr": [
+          "La salle du restaurant de l’Ihary Hotel, avec des nappes rouges et bleues sous un haut plafond de bois",
+          "Le bar du restaurant de l’Ihary Hotel, avec six tabourets aux couleurs vives et des panneaux de bois sculpté au-dessus du comptoir",
+          "L’enseigne de l’Ihary Hotel au bord de la route : bungalows, restaurant et bar",
           "Restaurant de l’Ihary Hotel : la devanture",
-          "Restaurant de l’Ihary Hotel : la salle",
           "Restaurant de l’Ihary Hotel : un plat"
         ],
         "de": [
+          "Der Gastraum des Restaurants im Ihary Hotel mit roten und blauen Tischdecken unter einer hohen Holzdecke",
+          "Die Bar des Restaurants im Ihary Hotel mit sechs bunt bemalten Hockern und geschnitzten Holztafeln über dem Tresen",
+          "Das Schild des Ihary Hotel an der Straße: Bungalows, Restaurant und Bar",
           "Restaurant des Ihary Hotel: von außen",
-          "Restaurant des Ihary Hotel: der Gastraum",
           "Restaurant des Ihary Hotel: ein Gericht"
         ],
         "mg": [
+          "Ny efitra fisakafoanan'ny Ihary Hotel, misy lambalatabatra mena sy manga ambanin'ny valindrihana hazo avo",
+          "Ny bar ao amin'ny trano fisakafoan'ny Ihary Hotel, misy seza avo enina miloko mamirapiratra ary takelaka hazo voasokitra eo ambonin'ny kaontera",
+          "Ny takelaka anaran'ny Ihary Hotel eo amoron-dalana: bungalow, trano fisakafoana sy bar",
           "Trano fisakafoan'ny Ihary Hotel: ny ivelany",
-          "Trano fisakafoan'ny Ihary Hotel: ny efitrano fisakafoana",
           "Trano fisakafoan'ny Ihary Hotel: sakafo iray"
         ]
       }
@@ -4946,6 +5532,87 @@ const LISTING_TRANSLATIONS = {
         ]
       }
     },
+    "famiova-weavers": {
+      "name": {
+        "en": "Famiova: Traditional Weavers",
+        "fr": "Famiova : tisserandes traditionnelles",
+        "de": "Famiova: traditionelle Weberinnen",
+        "mg": "Famiova: mpanenona nentin-drazana"
+      },
+      "desc": {
+        "en": "A women's weaving cooperative in the heart of Ranomafana village, in the old museum. At wooden hand looms, the weavers turn cotton, silk, sisal and raffia into scarves and cloth in the Malagasy weaving tradition, and you can watch them work and buy straight from the cooperative. Famiova means “transformation”: of raw fibre into cloth, and of the lives of the women who weave it. The shop also sells Ranomafana tote bags, baskets, leather sandals, honey and handmade soap.",
+        "fr": "Une coopérative de tisserandes au cœur du village de Ranomafana, dans l’ancien musée. Sur des métiers à tisser en bois, les tisserandes transforment le coton, la soie, le sisal et le raphia en écharpes et en étoffes selon la tradition malgache du tissage ; on peut les regarder travailler et acheter directement à la coopérative. Famiova signifie « transformation » : celle de la fibre brute en tissu, et celle de la vie des femmes qui le tissent. La boutique vend aussi des sacs en toile Ranomafana, des paniers, des sandales en cuir, du miel et du savon artisanal.",
+        "de": "Eine Webkooperative von Frauen mitten im Ort Ranomafana, im alten Museum. An hölzernen Handwebstühlen verarbeiten die Weberinnen Baumwolle, Seide, Sisal und Raffia zu Schals und Stoffen in madagassischer Webtradition; man kann ihnen bei der Arbeit zusehen und direkt bei der Kooperative kaufen. Famiova bedeutet „Wandel“: von der Rohfaser zum Stoff und im Leben der Frauen, die ihn weben. Der Laden verkauft außerdem Ranomafana-Stofftaschen, Körbe, Ledersandalen, Honig und handgemachte Seife.",
+        "mg": "Koperativan'ny vehivavy mpanenona eo afovoan'ny tanànan'i Ranomafana, ao amin'ny tranom-bakoka taloha. Amin'ny tenona hazo, ny mpanenona dia manova ny landihazo, ny landy, ny sisal ary ny rafia ho lamba sy salovana araka ny fomban-drazana malagasy amin'ny fanenonana; afaka mijery azy ireo miasa ianao ary mividy mivantana amin'ny koperativa. Ny hoe Famiova dia midika hoe “fiovana”: ny fibra manta lasa lamba, ary ny fiainan'ny vehivavy manenona azy. Mivarotra kitapo lamba Ranomafana, harona, kapa hoditra, tantely ary savony vita tanana koa ny fivarotana."
+      },
+      "price": {
+        "en": "Free to browse",
+        "fr": "Entrée libre",
+        "de": "Stöbern kostenlos",
+        "mg": "Maimaim-poana ny mijery"
+      },
+      "duration": { "en": "30–60 minutes", "fr": "30 à 60 minutes", "de": "30–60 Minuten", "mg": "30–60 minitra" },
+      "tips": {
+        "en": [
+          "Scarves can be woven to order (material, style, colour): ask well ahead",
+          "Scarves have sold for around 50,000 Ar — ask for today's prices",
+          "Ask before photographing the weavers",
+          "Bring small Ariary notes"
+        ],
+        "fr": [
+          "Les écharpes peuvent être tissées sur commande (matière, style, couleur) : demandez bien à l’avance",
+          "Les écharpes se sont vendues autour de 50 000 Ar — demandez les prix du moment",
+          "Demandez avant de photographier les tisserandes",
+          "Prévoyez des petites coupures en ariary"
+        ],
+        "de": [
+          "Schals werden auch auf Bestellung gewebt (Material, Stil, Farbe): frühzeitig fragen",
+          "Schals kosteten zuletzt etwa 50.000 Ar – nach den aktuellen Preisen fragen",
+          "Vor dem Fotografieren der Weberinnen fragen",
+          "Kleine Ariary-Scheine mitbringen"
+        ],
+        "mg": [
+          "Azo kafarana ny salovana (fitaovana, endrika, loko): mangataha mialoha be",
+          "Manodidina ny 50 000 Ar ny salovana teo aloha — anontanio ny vidiny ankehitriny",
+          "Mangataha alalana alohan'ny haka sary ny mpanenona",
+          "Mitondrà vola ariary madinika"
+        ]
+      },
+      "gallery[].alt": {
+        "en": [
+          "A Famiova weaver at a wooden hand loom strung with turquoise and maroon stripes, in front of shelves of woven scarves and bags",
+          "A Famiova weaver passing the thread through the warp, with scarves hanging on the shelves behind her",
+          "A loom strung with black, pink and green thread, facing the shop's tote bags, sandals, baskets and woven bags",
+          "Handmade soaps and embroidered pieces in woven baskets on a table, under a wall of striped scarves, at Famiova",
+          "Soa Be honey and rosemary soaps in a woven basket, for sale at Famiova",
+          "Three bottles of niaouli honey on a wooden shelf, for sale at Famiova"
+        ],
+        "fr": [
+          "Une tisserande de Famiova à un métier à tisser en bois tendu de rayures turquoise et bordeaux, devant des étagères d’écharpes et de sacs tissés",
+          "Une tisserande de Famiova passe le fil dans la chaîne, avec des écharpes suspendues aux étagères derrière elle",
+          "Un métier à tisser tendu de fils noirs, roses et verts, face aux sacs en toile, sandales, paniers et sacs tissés de la boutique",
+          "Savons artisanaux et pièces brodées dans des paniers tressés sur une table, sous un mur d’écharpes rayées, chez Famiova",
+          "Savons Soa Be au miel et au romarin dans un panier tressé, en vente chez Famiova",
+          "Trois bouteilles de miel de niaouli sur une étagère en bois, en vente chez Famiova"
+        ],
+        "de": [
+          "Eine Weberin von Famiova an einem hölzernen Handwebstuhl mit türkisen und weinroten Streifen, vor Regalen mit gewebten Schals und Taschen",
+          "Eine Weberin von Famiova führt den Faden durch die Kette, hinter ihr Schals in den Regalen",
+          "Ein Webstuhl mit schwarzen, rosa und grünen Fäden, gegenüber den Stofftaschen, Sandalen, Körben und gewebten Taschen des Ladens",
+          "Handgemachte Seifen und Stickereien in geflochtenen Körben auf einem Tisch, unter einer Wand gestreifter Schals, bei Famiova",
+          "Honig- und Rosmarinseifen von Soa Be in einem geflochtenen Korb, zu kaufen bei Famiova",
+          "Drei Flaschen Niaouli-Honig auf einem Holzbrett, zu kaufen bei Famiova"
+        ],
+        "mg": [
+          "Mpanenona ao amin'ny Famiova eo amin'ny tenona hazo misy tsipika manga sy mena matroka, eo anoloan'ny talantalana feno salovana sy kitapo tenona",
+          "Mpanenona ao amin'ny Famiova mampiditra ny kofehy amin'ny tenona, misy salovana mihantona eo amin'ny talantalana ao aoriany",
+          "Tenona misy kofehy mainty, mavokely ary maitso, manatrika ny kitapo lamba, kapa, harona ary kitapo tenona ao amin'ny fivarotana",
+          "Savony vita tanana sy asa-peta-kofehy anaty harona tenona eo ambony latabatra, eo ambanin'ny rindrina feno salovana misy tsipika, ao amin'ny Famiova",
+          "Savony Soa Be misy tantely sy romarin anaty harona tenona, amidy ao amin'ny Famiova",
+          "Tavoahangy telo misy tantely niaouli eo ambony talantalana hazo, amidy ao amin'ny Famiova"
+        ]
+      }
+    },
     "park-entrance-craft-shop": {
       "name": {
         "en": "Park Entrance Craft Shop",
@@ -6496,7 +7163,7 @@ const LISTING_TRANSLATIONS = {
           "## Worth ordering",
           "Romazava, the classic meat-and-greens broth, on a cool evening after the rain. Voanjobory, a stew of Bambara groundnuts: the one at Hotel Manja’s restaurant is exceptional. Zebu steak, at Grenat Hotel’s restaurant among others.",
           "## What things cost",
-          "At a local hotely, a plate costs around 10,000–30,000 Ar. Hotel restaurants are mostly 12,000–35,000 Ar for a main, and the set dinners at Chez Gaspard and Setam Lodge are 45,000–70,000 Ar.",
+          "At a local hotely, a plate costs around 10,000–30,000 Ar. Hotel restaurants are mostly 12,000–35,000 Ar for a main, and the set dinners at Chez Gaspard and Setam Lodge are 65,000–70,000 Ar.",
           "Some lodge kitchens cook to order, so ask ahead if you are eating where you are not staying."
         ],
         "fr": [
@@ -6504,7 +7171,7 @@ const LISTING_TRANSLATIONS = {
           "## À commander",
           "Le romazava, le bouillon classique de viande et de brèdes, par une soirée fraîche après la pluie. Le voanjobory, un ragoût de pois bambara : celui du restaurant de l’Hôtel Manja est exceptionnel. Le steak de zébu, entre autres au restaurant du Grenat Hotel.",
           "## Combien ça coûte",
-          "Dans un hotely local, une assiette coûte environ 10 000–30 000 Ar. Dans les restaurants d’hôtel, un plat coûte le plus souvent 12 000–35 000 Ar, et les dîners en menu chez Gaspard et au Setam Lodge 45 000–70 000 Ar.",
+          "Dans un hotely local, une assiette coûte environ 10 000–30 000 Ar. Dans les restaurants d’hôtel, un plat coûte le plus souvent 12 000–35 000 Ar, et les dîners en menu chez Gaspard et au Setam Lodge 65 000–70 000 Ar.",
           "Certaines cuisines de lodge préparent à la commande : prévenez à l’avance si vous mangez là où vous ne logez pas."
         ],
         "de": [
@@ -6512,7 +7179,7 @@ const LISTING_TRANSLATIONS = {
           "## Lohnt sich",
           "Romazava, die klassische Brühe aus Fleisch und Blattgemüse, an einem kühlen Abend nach dem Regen. Voanjobory, ein Eintopf aus Bambara-Erdnüssen: Der im Restaurant des Hotel Manja ist hervorragend. Zebusteak, unter anderem im Restaurant des Grenat Hotel.",
           "## Was es kostet",
-          "In einem einfachen Hotely kostet ein Teller etwa 10.000–30.000 Ar. In Hotelrestaurants kostet ein Hauptgericht meist 12.000–35.000 Ar, die Abendmenüs bei Chez Gaspard und in der Setam Lodge 45.000–70.000 Ar.",
+          "In einem einfachen Hotely kostet ein Teller etwa 10.000–30.000 Ar. In Hotelrestaurants kostet ein Hauptgericht meist 12.000–35.000 Ar, die Abendmenüs bei Chez Gaspard und in der Setam Lodge 65.000–70.000 Ar.",
           "Manche Lodge-Küchen kochen auf Bestellung – sagen Sie also vorher Bescheid, wenn Sie dort essen, wo Sie nicht wohnen."
         ],
         "mg": [
@@ -6520,7 +7187,7 @@ const LISTING_TRANSLATIONS = {
           "## Mendrika hanafarana",
           "Romazava, ilay ro hena sy anana mahazatra, amin'ny hariva mangatsiatsiaka aorian'ny orana. Voanjobory: tsara mihoatra ilay ao amin'ny trano fisakafoan'ny Hotel Manja. Hen'omby natono, ao amin'ny trano fisakafoan'ny Grenat Hotel sy any an-kafa.",
           "## Ohatrinona",
-          "Ao amin'ny hotely eto an-toerana dia eo amin'ny 10 000–30 000 Ar eo ho eo ny lovia iray. Ao amin'ny trano fisakafoan'ny hotely dia matetika 12 000–35 000 Ar ny sakafo iray, ary 45 000–70 000 Ar ny sakafo hariva voalamina ao Chez Gaspard sy Setam Lodge.",
+          "Ao amin'ny hotely eto an-toerana dia eo amin'ny 10 000–30 000 Ar eo ho eo ny lovia iray. Ao amin'ny trano fisakafoan'ny hotely dia matetika 12 000–35 000 Ar ny sakafo iray, ary 65 000–70 000 Ar ny sakafo hariva voalamina ao Chez Gaspard sy Setam Lodge.",
           "Misy lakozian'ny lodge mahandro araka ny baiko, ka manontania mialoha raha hisakafo any amin'ny toerana tsy hatoriana ianao."
         ]
       }
