@@ -84,9 +84,21 @@ that way unless Kyle asks otherwise.
 The look comes from the **"Ranomafana Website Redesign"** canvas
 (<https://claude.ai/artifact/MSaEKCrvxqyspHBypzwoc3>), applied in October 2026.
 "Deep Forest": near-black greens, one gold (`--gold`) for every action, one ember
-(`--ember`) for small labels; Fraunces (light, large, italic gold for the key phrase)
-over Figtree. Colours are CSS custom properties at the top of the `<style>` block —
-use them rather than new hex values. The canvas boards hold copies of the listings
+(`--ember`) for small labels; Fraunces (light, large) over Figtree. Colours are CSS
+custom properties at the top of the `<style>` block — use them rather than new hex
+values (every colour in the rules is a token now, shades and print colours included).
+
+**Hallmark polish, 24 Nov 2026** (Kyle: "ensure it looks designed and not
+generated"). Fixed in place, layout and words kept: headings are roman throughout (an
+`<em>` in a heading no longer turns italic gold; the gold key phrase stays only in the
+home hero, "nowhere else."); labels, badges, table heads and footer headings are
+sentence case and untracked, with no leaf stroke before them; links carry no glued
+"→" (text links have a faint gold underline instead; the door cards and "Next" cards
+keep their separate arrow); the hero badge uses hairlines, not dots; image grids use
+`minmax(0, 1fr)`; pressed and disabled states added. Don't bring back tracked
+capitals, italic gold heading words or "… →" link labels. The stamp at the top of the
+`<style>` block records what was kept on purpose (section labels, the footer credit's
+dots). The canvas boards hold copies of the listings
 made on 5 Oct 2026; they are **not** a data source. The data file is. **One
 exception: stories** — see below.
 
@@ -1048,8 +1060,7 @@ recommendations"):
 
 **Colours, 23 Oct 2026.** The ground was lifted from near-black to deep forest green,
 secondary text and borders lightened (every text colour passes WCAG AA on `--under`),
-and a forest accent added: `--leaf` / `--leaf-deep` for small strokes before section
-labels, card tops and hovers, tick icons and the footer edge. It never marks an
+and a forest accent added: `--leaf` / `--leaf-deep` for card tops and hovers, tick icons and the footer edge. It never marks an
 action — gold still does that.
 
 Still waiting on Kyle for the 23 Oct additions: the official Facebook, Instagram and

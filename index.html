@@ -63,6 +63,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
+    /* Hallmark · v2.0.0 · built: the project · redesign: polish · theme: Deep Forest (the project's own, kept) · genre: editorial */
+    /* critique: real photographs carry it; the generated tells were tracked-caps labels, italic gold words in every heading and arrows glued to links. Fixed in place. */
+    /* waive 54: section labels kept as sentence-case wayfinding over figurative headings ("Stay" over "Sleep at the forest's edge."); the words are Kyle's in four languages */
+    /* waive 63: the footer credit stays one dot-separated line (Kyle, 11 Oct 2026: "make it succinct"); the price legend and Malagasy word pairs are glossaries */
     /* =====================================================================
        VISUAL SYSTEM · "DEEP FOREST"
        Near-black greens recede so the photography glows. One gold for every
@@ -103,6 +107,43 @@
       --hard-bg: #3D2018; --hard-fg: #F0A585;
       --warn: #F0C860;    --warn-line: #5A4A1C;
       --wet: #4F7FA0; --wet-fg: #8DB8D6; --dry: #5E7268;
+      /* Shades and print colours, lifted out of the rules (Hallmark polish, Nov 2026). */
+      --night-a25: rgba(5, 11, 9, .25);
+      --white-a30: rgba(255, 255, 255, .3);
+      --canopy-a94: rgba(15, 30, 24, .94);
+      --night-a70: rgba(5, 11, 9, .7);
+      --under-a96: rgba(24, 44, 36, .96);
+      --floor-a75: rgba(8, 19, 15, .75);
+      --floor-a0: rgba(8, 19, 15, 0);
+      --canopy-a100: rgba(15, 30, 24, 1);
+      --mist-a35: rgba(234, 240, 234, .35);
+      --floor-a35: rgba(8, 19, 15, .35);
+      --mist-a40: rgba(234, 240, 234, .4);
+      --floor-a10: rgba(8, 19, 15, .1);
+      --floor-a85: rgba(8, 19, 15, .85);
+      --floor-a90: rgba(8, 19, 15, .9);
+      --mist-a20: rgba(234, 240, 234, .2);
+      --leaf-deep-a35: rgba(46, 107, 74, .35);
+      --gold-a28: rgba(229, 181, 61, .28);
+      --night-a80: rgba(5, 11, 9, .8);
+      --floor-a72: rgba(8, 19, 15, .72);
+      --floor-a88: rgba(8, 19, 15, .88);
+      --bright: #F7FBF6;
+      --deep-moss: #17301F;
+      --river: #6E9FC0;
+      --black: #000;
+      --paper: #F4F2EC;
+      --print-rule-lt: #EEEEEE;
+      --print-rule: #CCCCCC;
+      --print-paper: #FFFFFF;
+      --print-ink: #111111;
+      --print-ink-2: #222222;
+      --print-ink-3: #444444;
+      --print-ink-4: #555555;
+      --print-gold: #6E500B;
+      --print-ember: #8A3A1A;
+      --gold-line: rgba(229, 181, 61, .45);
+
 
       --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
       --sans: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -124,7 +165,8 @@
       background-image: radial-gradient(120% 60% at 50% 0%, var(--leaf-glow), transparent 70%);
       background-repeat: no-repeat;
     }
-    body.no-scroll { overflow: hidden; }
+    html, body { overflow-x: clip; }
+    body.no-scroll { overflow: clip; }
     img { display: block; max-width: 100%; }
     a { color: var(--gold); }
     a:hover { color: var(--gold-hi); }
@@ -156,13 +198,12 @@
 
     /* ---------------------------------------------------------- type */
     .eyebrow {
-      display: block; font-size: 13px; font-weight: 700; letter-spacing: .16em;
-      text-transform: uppercase; color: var(--ember);
+      display: block; font-family: var(--sans); font-size: 15px; font-weight: 600; line-height: 1.4; color: var(--ember);
     }
-    /* Forest accent: a short leaf-green stroke before every section label. */
-    .eyebrow::before { content: ''; display: inline-block; width: 22px; height: 2px; margin-right: 10px; vertical-align: .3em; background: var(--leaf); border-radius: 2px; }
     .display { font-family: var(--serif); font-weight: 300; letter-spacing: -.02em; line-height: 1.02; }
-    .display em, .page-title em, .hero-title em, .hero-tagline em, .story h2 em { font-style: italic; color: var(--gold); }
+    .display em, .page-title em, .hero-title em, .story h2 em { font-style: normal; color: inherit; }
+    .hero-tagline em { font-style: normal; color: var(--gold); }
+    .display, .page-title, .hero-title, .hero-tagline, h1, h2, h3 { text-wrap: balance; overflow-wrap: break-word; min-width: 0; }
     .d-72 { font-size: clamp(40px, 5vw, 72px); line-height: 1; }
     .d-64 { font-size: clamp(36px, 4.45vw, 64px); }
     .d-56 { font-size: clamp(34px, 3.9vw, 56px); }
@@ -170,8 +211,10 @@
     .lede { font-size: 17px; line-height: 1.65; color: var(--lichen); }
     .lede-serif { font-family: var(--serif); font-weight: 300; font-size: clamp(20px, 1.7vw, 24px); line-height: 1.45; color: var(--sage); }
     .small-muted { font-size: 14px; line-height: 1.55; color: var(--lichen); }
-    .text-link { color: var(--gold); font-weight: 600; font-size: 15px; text-decoration: none; }
-    .text-link:hover { color: var(--gold-hi); text-decoration: underline; text-underline-offset: 3px; }
+    .text-link { color: var(--gold); font-weight: 600; font-size: 15px; text-decoration: underline; text-decoration-color: var(--gold-line); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    .text-link:hover { color: var(--gold-hi); text-decoration-color: currentColor; }
+    .btn:active, .pill-link:active, .icon-btn:active { transform: translateY(1px); }
+    .btn:disabled, .btn[aria-disabled="true"], button:disabled { opacity: .5; cursor: not-allowed; }
     .link-btn { background: none; border: 0; padding: 0; font-family: inherit; cursor: pointer; align-self: flex-start; }
     .stack { display: flex; flex-direction: column; }
     .g-6 { gap: 6px; } .g-10 { gap: 10px; } .g-14 { gap: 14px; } .g-16 { gap: 16px; } .g-18 { gap: 18px; } .g-20 { gap: 20px; } .g-24 { gap: 24px; }
@@ -186,14 +229,14 @@
     .btn-gold { background: var(--gold); border-color: var(--gold); color: var(--canopy); }
     .btn-gold:hover { background: var(--gold-hi); border-color: var(--gold-hi); color: var(--canopy); }
     .btn-ghost { background: transparent; border-color: var(--moss-3); color: var(--mist); font-weight: 600; }
-    .btn-ghost:hover { border-color: var(--gold); color: #FFFFFF; }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--bright); }
     .btn-lg { padding: 16px 26px; }
     .btn-block { display: flex; width: 100%; }
     .pill-link {
       display: inline-flex; align-items: center; min-height: 44px; padding: 10px 16px; border-radius: 999px;
       border: 1px solid var(--moss-2); color: var(--mist); font-size: 14px; font-weight: 600; text-decoration: none;
     }
-    .pill-link:hover { border-color: var(--gold); color: #FFFFFF; }
+    .pill-link:hover { border-color: var(--gold); color: var(--bright); }
     .pill-link.lg { padding: 12px 18px; font-size: 15px; font-weight: 500; }
     .icon-btn {
       width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center;
@@ -209,7 +252,7 @@
       border: 1px solid var(--warn-line); padding: 3px 8px; border-radius: 6px;
     }
     .badge-soon { align-self: flex-start; font-size: 12px; font-weight: 700; color: var(--canopy); background: var(--ember); padding: 3px 8px; border-radius: 6px; }
-    .level { align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; background: var(--easy-bg); color: var(--easy-fg); }
+    .level { align-self: flex-start; font-size: 13px; font-weight: 700; padding: 5px 10px; border-radius: 999px; background: var(--easy-bg); color: var(--easy-fg); }
     .level--moderate { background: var(--mod-bg); color: var(--mod-fg); }
     .level--demanding { background: var(--hard-bg); color: var(--hard-fg); }
 
@@ -219,20 +262,20 @@
       display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between;
       padding-top: 24px; padding-bottom: 24px;
     }
-    .brand { display: flex; align-items: center; gap: 12px; color: #FFFFFF; text-decoration: none; }
-    .brand:hover { color: #FFFFFF; }
+    .brand { display: flex; align-items: center; gap: 12px; color: var(--bright); text-decoration: none; }
+    .brand:hover { color: var(--bright); }
     .brand-name { font-family: var(--serif); font-weight: 500; font-size: 24px; letter-spacing: .01em; }
     .desktop-nav { display: flex; flex-wrap: wrap; gap: 4px 28px; font-size: 15px; }
     .nl { color: var(--mist); text-decoration: none; font-weight: 500; padding: 10px 2px; border-bottom: 1px solid transparent; }
-    .nl:hover { color: #FFFFFF; border-bottom-color: var(--gold); }
-    .nl[aria-current="page"] { color: #FFFFFF; font-weight: 700; border-bottom-color: var(--gold); }
+    .nl:hover { color: var(--bright); border-bottom-color: var(--gold); }
+    .nl[aria-current="page"] { color: var(--bright); font-weight: 700; border-bottom-color: var(--gold); }
     .header-actions { display: flex; gap: 12px; align-items: center; }
     .lang { position: relative; display: inline-flex; align-items: center; }
     .lang svg { position: absolute; left: 12px; pointer-events: none; }
     .lang-select {
       appearance: none; -webkit-appearance: none; min-height: 44px; padding: 0 32px 0 36px;
-      background: rgba(5, 11, 9, .25) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23EAF0EA'/%3E%3C/svg%3E") no-repeat right 13px center;
-      color: var(--mist); border: 1px solid rgba(255, 255, 255, .3); border-radius: 999px;
+      background: var(--night-a25) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23EAF0EA'/%3E%3C/svg%3E") no-repeat right 13px center;
+      color: var(--mist); border: 1px solid var(--white-a30); border-radius: 999px;
       font: 600 13px var(--sans); cursor: pointer;
     }
     .lang-select:hover { border-color: var(--gold); }
@@ -242,7 +285,7 @@
     /* Desktop: once the hero has scrolled away the header pins itself. */
     @media (min-width: 992px) {
       .site-header.is-stuck {
-        position: fixed; background: rgba(15, 30, 24, .94); border-bottom: 1px solid var(--moss);
+        position: fixed; background: var(--canopy-a94); border-bottom: 1px solid var(--moss);
         -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); animation: slideDown .25s ease;
       }
       .site-header.is-stuck .header-inner { padding-top: 12px; padding-bottom: 12px; }
@@ -272,14 +315,13 @@
     .planner-tab {
       display: none; position: fixed; right: 0; top: 50%; z-index: 90;
       transform: translateY(-50%) rotate(180deg); writing-mode: vertical-rl;
-      background: var(--gold); color: var(--canopy); text-decoration: none; font-weight: 700; font-size: 14px;
-      letter-spacing: .08em; text-transform: uppercase; padding: 20px 12px; border-radius: 0 10px 10px 0;
+      background: var(--gold); color: var(--canopy); text-decoration: none; font-weight: 700; font-size: 14px; padding: 20px 12px; border-radius: 0 10px 10px 0;
     }
     .planner-tab:hover { background: var(--gold-hi); color: var(--canopy); }
     @media (min-width: 992px) { body[data-page="home"] .planner-tab { display: block; } }
 
     /* ------------------------------------------------------- drawer */
-    .drawer-overlay { position: fixed; inset: 0; background: rgba(5, 11, 9, .7); z-index: 2000; opacity: 0; visibility: hidden; transition: opacity .25s ease, visibility .25s; }
+    .drawer-overlay { position: fixed; inset: 0; background: var(--night-a70); z-index: 2000; opacity: 0; visibility: hidden; transition: opacity .25s ease, visibility .25s; }
     .drawer-overlay.active { opacity: 1; visibility: visible; }
     /* Closed, the drawer is display:none rather than parked off-screen: an
        off-screen panel still widens the page on phones. */
@@ -293,9 +335,9 @@
     .drawer-head { display: flex; align-items: center; justify-content: space-between; padding-bottom: 14px; border-bottom: 1px solid var(--moss); }
     .drawer-nav { display: flex; flex-direction: column; gap: 4px; }
     .drawer-nav a { display: flex; align-items: center; min-height: 52px; padding: 10px 14px; border-radius: 12px; color: var(--mist); text-decoration: none; font-size: 18px; font-weight: 600; }
-    .drawer-nav a:hover, .drawer-nav a[aria-current="page"] { background: var(--chip); color: #FFFFFF; }
+    .drawer-nav a:hover, .drawer-nav a[aria-current="page"] { background: var(--chip); color: var(--bright); }
     .drawer-lang { padding-top: 16px; border-top: 1px solid var(--moss); display: flex; flex-direction: column; gap: 8px; }
-    .drawer-lang label { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--lichen); }
+    .drawer-lang label { font-size: 13px; font-weight: 700; color: var(--lichen); }
     .drawer-lang .lang-select { width: 100%; padding-left: 16px; border-color: var(--moss-2); }
 
     /* ------------------------------------------------------- bottom nav (phones & tablets) */
@@ -306,7 +348,7 @@
         display: grid; grid-template-columns: repeat(6, minmax(0, 1fr));
         position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 900;
         height: 68px; max-width: 560px; margin: 0 auto;
-        background: rgba(24, 44, 36, .96); border: 1px solid var(--moss); border-radius: 20px;
+        background: var(--under-a96); border: 1px solid var(--moss); border-radius: 20px;
         -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
       }
       .bottom-nav a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-width: 0; text-decoration: none; color: var(--lichen); font-size: 12px; font-weight: 600; }
@@ -334,23 +376,23 @@
       min-height: clamp(640px, 100svh, 900px); display: flex; flex-direction: column; justify-content: flex-end;
     }
     .hero .bg-photo { opacity: .72; }
-    .hero .shade { background: linear-gradient(180deg, rgba(8,19,15,.75) 0%, rgba(8,19,15,0) 22%, rgba(8,19,15,0) 50%, rgba(15,30,24,1) 100%); }
+    .hero .shade { background: linear-gradient(180deg, var(--floor-a75) 0%, var(--floor-a0) 22%, var(--floor-a0) 50%, var(--canopy-a100) 100%); }
     .hero-inner { position: relative; width: 100%; padding-top: 150px; padding-bottom: 96px; display: flex; flex-direction: column; gap: 24px; }
     .hero-badge {
-      align-self: flex-start; display: inline-flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; font-size: 13px; font-weight: 600;
-      letter-spacing: .14em; text-transform: uppercase; color: var(--mist); border: 1px solid rgba(234,240,234,.35);
-      border-radius: 999px; padding: 8px 16px; background: rgba(8,19,15,.35);
+      align-self: flex-start; display: inline-flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; font-size: 13px; font-weight: 600; color: var(--mist); border: 1px solid var(--mist-a35);
+      border-radius: 999px; padding: 8px 16px; background: var(--floor-a35);
     }
-    .hero-title { font-family: var(--serif); font-weight: 300; font-size: clamp(60px, 11.7vw, 168px); line-height: .86; letter-spacing: -.035em; color: #FFFFFF; }
+    .hero-badge-sep { width: 1px; height: 12px; background: var(--mist-a35); }
+    .hero-title { font-family: var(--serif); font-weight: 300; font-size: clamp(60px, 11.7vw, 168px); line-height: .86; letter-spacing: -.035em; color: var(--bright); }
     .hero-head { display: flex; flex-direction: column; gap: 14px; }
-    .hero-tagline { font-family: var(--serif); font-weight: 300; font-size: clamp(34px, 4.2vw, 60px); line-height: 1.05; letter-spacing: -.02em; color: #FFFFFF; }
+    .hero-tagline { font-family: var(--serif); font-weight: 300; font-size: clamp(34px, 4.2vw, 60px); line-height: 1.05; letter-spacing: -.02em; color: var(--bright); }
     .hero-row { display: flex; flex-wrap: wrap; gap: 24px 32px; align-items: flex-end; justify-content: space-between; }
     .hero-lede { font-size: 20px; line-height: 1.55; max-width: 560px; color: var(--sage); }
     .descend {
       display: flex; gap: 12px; align-items: center; background: none; border: 0; color: var(--mist); cursor: pointer;
-      font-size: 14px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; padding: 0;
+      font-size: 14px; font-weight: 600; padding: 0;
     }
-    .descend-ring { width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(234,240,234,.4); display: flex; align-items: center; justify-content: center; }
+    .descend-ring { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--mist-a40); display: flex; align-items: center; justify-content: center; }
     .descend:hover .descend-ring { border-color: var(--gold); }
     @media (max-width: 720px) {
       .hero { min-height: 680px; }
@@ -370,22 +412,22 @@
       min-height: 440px; display: flex; flex-direction: column; justify-content: flex-end;
     }
     .page-hero .bg-photo { opacity: .5; }
-    .page-hero .shade { background: linear-gradient(180deg, rgba(8,19,15,.75) 0%, rgba(8,19,15,.1) 35%, rgba(15,30,24,1) 100%); }
+    .page-hero .shade { background: linear-gradient(180deg, var(--floor-a75) 0%, var(--floor-a10) 35%, var(--canopy-a100) 100%); }
     .page-hero--plan { min-height: 420px; }
     .page-hero--park { min-height: clamp(560px, 82svh, 760px); }
     .page-hero--park .bg-photo { opacity: .7; }
-    .page-hero--park .shade { background: linear-gradient(180deg, rgba(8,19,15,.75) 0%, rgba(8,19,15,0) 25%, rgba(15,30,24,1) 100%); }
+    .page-hero--park .shade { background: linear-gradient(180deg, var(--floor-a75) 0%, var(--floor-a0) 25%, var(--canopy-a100) 100%); }
     .page-hero-inner { position: relative; width: 100%; padding-top: 140px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 14px; }
     .page-hero--park .page-hero-inner { padding-bottom: 56px; gap: 18px; }
     .crumbs { font-size: 14px; color: var(--lichen); }
     .crumbs a { color: var(--lichen); }
-    .crumbs a:hover { color: #FFFFFF; }
+    .crumbs a:hover { color: var(--bright); }
     .page-title { font-family: var(--serif); font-weight: 300; font-size: clamp(48px, 6.7vw, 96px); line-height: .95; letter-spacing: -.03em; }
     .page-hero--plan .page-title { font-size: clamp(44px, 6.1vw, 88px); }
     .page-hero--park .page-title { font-size: clamp(56px, 8.4vw, 120px); line-height: .9; }
     .page-intro { font-size: 18px; color: var(--sage); max-width: 700px; line-height: 1.55; }
     .hero-badges { display: flex; flex-wrap: wrap; gap: 8px; }
-    .hero-badges span { font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 999px; border: 1px solid rgba(234,240,234,.35); }
+    .hero-badges span { font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--mist-a35); }
     .hero-badges span.on { background: var(--gold); border-color: var(--gold); color: var(--canopy); font-weight: 700; }
     @media (max-width: 720px) {
       .page-hero, .page-hero--plan { min-height: 360px; }
@@ -415,12 +457,12 @@
     .doors { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding-bottom: 96px; }
     .door {
       position: relative; display: block; height: 300px; border-radius: 20px; overflow: hidden;
-      text-decoration: none; color: #FFFFFF; border: 1px solid var(--moss); background: var(--ph);
+      text-decoration: none; color: var(--bright); border: 1px solid var(--moss); background: var(--ph);
     }
-    .door:hover { color: #FFFFFF; }
+    .door:hover { color: var(--bright); }
     .door .bg-photo { transition: transform .8s ease; }
     .door:hover .bg-photo { transform: scale(1.04); }
-    .door .shade { background: linear-gradient(180deg, rgba(8,19,15,0) 35%, rgba(8,19,15,.85) 100%); }
+    .door .shade { background: linear-gradient(180deg, var(--floor-a0) 35%, var(--floor-a85) 100%); }
     .door-text { position: absolute; left: 24px; right: 24px; bottom: 22px; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; }
     .door-copy { display: flex; flex-direction: column; gap: 4px; }
     .door-title { font-family: var(--serif); font-size: 40px; font-weight: 500; line-height: 1.1; }
@@ -429,7 +471,7 @@
     @media (max-width: 720px) {
       .doors { gap: 8px; padding-top: 8px; padding-bottom: 32px; }
       .door { height: 150px; border-radius: 14px; border: 0; }
-      .door .shade { background: linear-gradient(180deg, rgba(8,19,15,0) 30%, rgba(8,19,15,.9) 100%); }
+      .door .shade { background: linear-gradient(180deg, var(--floor-a0) 30%, var(--floor-a90) 100%); }
       .door-text { left: 10px; right: 10px; bottom: 10px; }
       .door-copy { gap: 0; }
       .door-title { font-size: 22px; }
@@ -445,7 +487,7 @@
     .layer-dot.ring { background: var(--canopy); border: 2px solid var(--gold); }
     .layer-dot.ember { background: var(--ember); }
     .layer-copy { display: flex; flex-direction: column; gap: 16px; }
-    .layer-label { font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--lichen); }
+    .layer-label { font-size: 13px; font-weight: 700; color: var(--lichen); }
     .layer-title { font-family: var(--serif); font-weight: 500; font-size: clamp(30px, 3.1vw, 44px); line-height: 1.08; }
     .layer-text { font-size: 17px; line-height: 1.7; color: var(--lichen); }
     .layer-text em { color: var(--sage); }
@@ -453,7 +495,7 @@
     .layer-media img { width: 100%; height: 100%; object-fit: cover; }
     .layer--flip .layer-media { order: -1; }
     @media (max-width: 991px) {
-      .layer { grid-template-columns: 1fr; gap: 24px; padding-left: 32px; padding-bottom: 56px; }
+      .layer { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-left: 32px; padding-bottom: 56px; }
       .layer-media { order: -1; height: 320px; }
     }
     @media (max-width: 720px) {
@@ -462,7 +504,7 @@
       .layer-dot { left: -6px; top: 26px; width: 11px; height: 11px; }
       .layer-media { height: 64px; border-radius: 10px; }
       .layer-copy { gap: 2px; }
-      .layer-label { font-size: 11px; letter-spacing: .14em; }
+      .layer-label { font-size: 12px; }
       .layer-title { font-size: 19px; }
       .layer-text { display: none; }
       /* On phones the whole row is the link */
@@ -473,7 +515,7 @@
     /* ----------------------------------------------------- HOME: before you go */
     .byg { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: var(--band); }
     .byg-grid { display: grid; grid-template-columns: 200px repeat(4, minmax(0, 1fr)); gap: 32px; align-items: start; padding-top: 40px; padding-bottom: 40px; }
-    .byg h2 { font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--ember); padding-top: 10px; }
+    .byg h2 { font-size: 13px; font-weight: 700; color: var(--ember); padding-top: 10px; }
     .byg-item { display: flex; flex-direction: column; gap: 6px; }
     .byg-value { font-family: var(--serif); font-size: 34px; font-weight: 500; line-height: 1.2; color: var(--gold); }
     .byg-label { font-size: 15px; color: var(--lichen); line-height: 1.5; }
@@ -513,7 +555,7 @@
     }
     .welcome-main img, .welcome-inset img { display: block; width: 100%; height: 100%; object-fit: cover; }
     .welcome-inset img { object-position: 50% 40%; }
-    @media (max-width: 991px) { .welcome { grid-template-columns: 1fr; gap: 24px; } }
+    @media (max-width: 991px) { .welcome { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
     @media (max-width: 600px) {
       .welcome-photos { padding-bottom: 40px; }
       .welcome-inset { width: 36%; border-width: 4px; border-radius: 14px; }
@@ -532,12 +574,12 @@
     .price-toggle { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
     .price-toggle .kind-btn { min-height: 40px; padding: 0 14px; font-size: 14px; }
     .plan-card { background: var(--under); border: 1px solid var(--moss); border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 18px; min-height: 360px; }
-    .plan-card-badge { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+    .plan-card-badge { font-size: 13px; font-weight: 700; color: var(--gold); }
     .plan-card h3 { font-family: var(--serif); font-weight: 500; font-size: clamp(28px, 2.8vw, 40px); line-height: 1.1; }
     .tag-row { display: flex; flex-wrap: wrap; gap: 8px; }
     .tag { font-size: 13px; font-weight: 600; padding: 8px 14px; border-radius: 999px; background: var(--chip); color: var(--chip-fg); }
     .plan-card .btn { margin-top: auto; align-self: flex-start; }
-    @media (max-width: 991px) { .pace-grid { grid-template-columns: 1fr; gap: 24px; } }
+    @media (max-width: 991px) { .pace-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
     @media (max-width: 720px) {
       .pace-kinds { flex-wrap: nowrap; overflow-x: auto; margin: 0 -16px; padding: 4px 16px; scrollbar-width: none; }
       .pace-kinds::-webkit-scrollbar { display: none; }
@@ -548,17 +590,17 @@
     }
 
     /* ----------------------------------------------------- HOME: stay feature */
-    .stay-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 20px; }
+    .stay-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
     .photo-card {
       position: relative; display: block; min-height: 300px; border-radius: 20px; overflow: hidden; padding: 0;
-      text-decoration: none; text-align: left; color: #FFFFFF; border: 1px solid var(--moss); background: var(--ph); cursor: pointer;
+      text-decoration: none; text-align: left; color: var(--bright); border: 1px solid var(--moss); background: var(--ph); cursor: pointer;
     }
-    .photo-card .shade { background: linear-gradient(180deg, rgba(8,19,15,0) 40%, rgba(8,19,15,.9) 100%); }
+    .photo-card .shade { background: linear-gradient(180deg, var(--floor-a0) 40%, var(--floor-a90) 100%); }
     .photo-card--big { grid-row: span 2; min-height: 620px; }
-    .photo-card--big .shade { background: linear-gradient(180deg, rgba(8,19,15,0) 45%, rgba(8,19,15,.9) 100%); }
+    .photo-card--big .shade { background: linear-gradient(180deg, var(--floor-a0) 45%, var(--floor-a90) 100%); }
     .photo-card-text { position: absolute; left: 22px; right: 22px; bottom: 20px; display: flex; flex-direction: column; gap: 4px; }
     .photo-card--big .photo-card-text { left: 28px; right: 28px; bottom: 28px; gap: 8px; }
-    .photo-card-kicker { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+    .photo-card-kicker { font-size: 13px; font-weight: 700; color: var(--gold); }
     .photo-card-title { font-family: var(--serif); font-size: 28px; font-weight: 500; line-height: 1.15; }
     .photo-card--big .photo-card-title { font-size: 40px; }
     .photo-card-desc { font-size: 16px; line-height: 1.55; color: var(--sage); max-width: 480px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
@@ -573,11 +615,11 @@
     .browse-card-link { font-weight: 700; color: var(--gold); }
     .stay-see-all { margin-top: 14px; width: 100%; }
     @media (max-width: 991px) {
-      .stay-grid { grid-template-columns: 1fr 1fr; }
+      .stay-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
       .photo-card--big { grid-column: 1 / -1; grid-row: auto; min-height: 420px; }
     }
     @media (max-width: 720px) {
-      .stay-grid { grid-template-columns: 1fr; gap: 14px; }
+      .stay-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
       .stay-grid .minor { display: none; }
       .photo-card--big { min-height: 240px; border-radius: 18px; border: 0; }
       .photo-card--big .photo-card-text { left: 16px; right: 16px; bottom: 16px; gap: 2px; }
@@ -590,11 +632,11 @@
     .story .bg-photo { opacity: .28; }
     .story-inner { position: relative; padding-top: 128px; padding-bottom: 128px; display: flex; flex-direction: column; gap: 56px; }
     .story h2 { font-family: var(--serif); font-weight: 300; font-size: clamp(38px, 5.3vw, 76px); line-height: 1.04; letter-spacing: -.02em; max-width: 1080px; }
-    .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgba(234,240,234,.2); }
+    .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--mist-a20); }
     .glance { border-top-color: var(--leaf-deep); }
     .glance .stat b { color: var(--gold); }
     .stat { padding: 24px 24px 0 0; display: flex; flex-direction: column; gap: 6px; }
-    .stat b { font-family: var(--serif); font-size: clamp(44px, 4.45vw, 64px); font-weight: 300; line-height: 1; }
+    .stat b { font-variant-numeric: lining-nums tabular-nums; font-family: var(--serif); font-size: clamp(44px, 4.45vw, 64px); font-weight: 300; line-height: 1; }
     .stat span { font-size: 15px; color: var(--lichen); }
     @media (max-width: 720px) {
       .story-inner { padding-top: 64px; padding-bottom: 64px; gap: 32px; }
@@ -608,7 +650,7 @@
     .split-media img { width: 100%; height: 100%; object-fit: cover; }
     .pill-row { display: flex; flex-wrap: wrap; gap: 10px; }
     @media (max-width: 991px) {
-      .split { grid-template-columns: 1fr; gap: 28px; }
+      .split { grid-template-columns: minmax(0, 1fr); gap: 28px; }
       .split-media { height: 320px; }
     }
 
@@ -618,14 +660,14 @@
     .ev-date { display: flex; flex-direction: column; line-height: 1; gap: 6px; }
     .ev-day { font-family: var(--serif); font-size: 48px; font-weight: 300; color: var(--mist); }
     .is-next .ev-day { font-size: 64px; color: var(--gold); }
-    .ev-month { font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--lichen); }
+    .ev-month { font-size: 13px; font-weight: 700; color: var(--lichen); }
     .ev-body { display: flex; flex-direction: column; gap: 6px; }
     .ev-title { font-family: var(--serif); font-size: 28px; font-weight: 500; line-height: 1.15; }
     .is-next .ev-title { font-size: 32px; }
     .ev-when { font-size: 15px; font-weight: 600; color: var(--gold); }
     .ev-desc { font-size: 16px; color: var(--lichen); line-height: 1.55; }
     .ev-note { font-size: 13px; color: var(--warn); }
-    .ev-badge { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 8px 14px; border-radius: 999px; background: var(--gold); color: var(--canopy); white-space: nowrap; }
+    .ev-badge { font-size: 13px; font-weight: 700; padding: 8px 14px; border-radius: 999px; background: var(--gold); color: var(--canopy); white-space: nowrap; }
     @media (max-width: 720px) {
       .event-row { grid-template-columns: 72px minmax(0, 1fr); gap: 6px 16px; padding: 20px 0; align-items: start; }
       .ev-day, .is-next .ev-day { font-size: 36px; }
@@ -638,16 +680,16 @@
     /* ----------------------------------------------------- story cards */
     .story-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 28px; }
     .story-card { display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: var(--mist); }
-    .story-card:hover { color: #FFFFFF; }
+    .story-card:hover { color: var(--bright); }
     .story-card-media { height: 260px; border-radius: 16px; overflow: hidden; background: var(--ph); }
     .story-card-media img { width: 100%; height: 100%; object-fit: cover; }
-    .story-card-kicker { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ember); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .story-card-kicker { font-size: 13px; font-weight: 700; color: var(--ember); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
     .story-card-title { font-family: var(--serif); font-size: 28px; font-weight: 500; line-height: 1.15; }
     .story-card-excerpt { font-size: 15px; line-height: 1.6; color: var(--lichen); }
     .story-card .text-link { align-self: flex-start; }
     .story-card-text { display: flex; flex-direction: column; gap: 14px; }
     /* Only one finished story: one wide card, photo beside the text. */
-    .story-cards.is-single { grid-template-columns: 1fr; }
+    .story-cards.is-single { grid-template-columns: minmax(0, 1fr); }
     .is-single .story-card { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 40px; align-items: center; }
     .is-single .story-card-media { height: 360px; }
     @media (max-width: 720px) {
@@ -663,7 +705,7 @@
     @media (max-width: 720px) { .story-hero { height: 200px; } }
 
     /* ----------------------------------------------------- CTA box */
-    .cta-box { border: 1px solid var(--moss-2); border-radius: 28px; padding: 72px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between; background: radial-gradient(90% 120% at 0% 100%, rgba(46, 107, 74, .35), transparent 60%), var(--under); }
+    .cta-box { border: 1px solid var(--moss-2); border-radius: 28px; padding: 72px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between; background: radial-gradient(90% 120% at 0% 100%, var(--leaf-deep-a35), transparent 60%), var(--under); }
     .cta-copy { max-width: 720px; }
     .btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
     @media (max-width: 720px) {
@@ -678,7 +720,7 @@
       position: sticky; top: 96px;
     }
     .f-block { display: flex; flex-direction: column; gap: 8px; }
-    .f-label { display: block; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--lichen); margin-bottom: 2px; }
+    .f-label { display: block; font-size: 13px; font-weight: 700; color: var(--lichen); margin-bottom: 2px; }
     legend.f-label { margin-bottom: 10px; }
     .search-input {
       width: 100%; font: 400 15px var(--sans); padding: 12px 14px; min-height: 44px;
@@ -734,14 +776,14 @@
     .ph b { font-family: var(--serif); font-size: 24px; font-weight: 300; line-height: 1.15; color: var(--mist); }
     .ph span { font-size: 13px; color: var(--lichen); }
     .lcard-body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
-    .lcard-kicker { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ember); }
+    .lcard-kicker { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; font-weight: 700; color: var(--ember); }
     .stars { color: var(--gold); letter-spacing: 0; font-size: 14px; white-space: nowrap; }
     .lcard-title { font-family: var(--serif); font-size: 25px; font-weight: 500; line-height: 1.15; }
     .lcard-open { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-align: left; cursor: pointer; }
     .lcard-open::after { content: ''; position: absolute; inset: 0; border-radius: 20px; }
     .lcard-open:focus-visible { outline: none; }
     .lcard-open:focus-visible::after { outline: 2px solid var(--gold); outline-offset: -2px; }
-    .lcard-open:hover { color: #FFFFFF; }
+    .lcard-open:hover { color: var(--bright); }
     .lcard-badges { display: flex; flex-wrap: wrap; gap: 6px; }
     .lcard-desc { font-size: 14px; line-height: 1.55; color: var(--lichen); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
     .lcard-foot { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--moss); display: flex; flex-direction: column; gap: 2px; }
@@ -761,7 +803,7 @@
     .park-lede { font-family: var(--serif); font-size: clamp(22px, 2.2vw, 32px); line-height: 1.4; font-weight: 300; }
     .circuits { display: flex; flex-direction: column; border-top: 1px solid var(--moss); }
     .circuit { display: grid; grid-template-columns: 80px 220px minmax(0, 1fr); gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--moss); align-items: start; }
-    .circuit-num { font-family: var(--serif); font-size: 48px; font-weight: 300; line-height: 1; color: var(--moss-2); }
+    .circuit-num { font-variant-numeric: lining-nums tabular-nums; font-family: var(--serif); font-size: 48px; font-weight: 300; line-height: 1; color: var(--moss-2); }
     .circuit:nth-child(n+2) .circuit-num { color: var(--moss-3); }
     .circuit:last-child .circuit-num { color: var(--gold); }   /* the deepest circuit */
     .circuit-name { font-family: var(--serif); font-size: 30px; font-weight: 500; line-height: 1.1; }
@@ -777,7 +819,7 @@
     .tips { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 12px; }
     .tips li { display: flex; gap: 12px; padding: 18px; background: var(--under); border: 1px solid var(--moss); border-radius: 14px; font-size: 15px; line-height: 1.5; }
     .tips svg { flex: none; margin-top: 1px; color: var(--leaf); }
-    .tips--one { grid-template-columns: 1fr; }
+    .tips--one { grid-template-columns: minmax(0, 1fr); }
     /* Know before you go */
     .advice-links { list-style: none; padding: 0; display: flex; flex-direction: column; border-top: 1px solid var(--moss); }
     .advice-links li { padding: 14px 0; border-bottom: 1px solid var(--moss); font-size: 16px; }
@@ -796,26 +838,26 @@
     .money-amount { font-family: var(--serif); font-size: 28px; font-weight: 300; line-height: 1.2; color: var(--gold); }
     .money-row h3 { font-size: 18px; font-weight: 600; line-height: 1.4; }
     .money-row p { margin-top: 4px; font-size: 16px; line-height: 1.6; color: var(--fern); }
-    @media (max-width: 640px) { .money-row { grid-template-columns: 1fr; } }
-    .park-photos { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 200px 200px; grid-auto-rows: 200px; gap: 12px; }
+    @media (max-width: 640px) { .money-row { grid-template-columns: minmax(0, 1fr); } }
+    .park-photos { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: 200px 200px; grid-auto-rows: 200px; gap: 12px; }
     .park-photos > :first-child { grid-row: span 2; }
     .park-photo { position: relative; border-radius: 16px; overflow: hidden; background: var(--ph); }
     .park-photo img { width: 100%; height: 100%; object-fit: cover; }
     .service-phone { display: block; }
-    .town-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .town-photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
     .town-photo { display: block; width: 100%; aspect-ratio: 4 / 3; padding: 0; border: 0; border-radius: 16px; overflow: hidden; background: var(--ph); cursor: pointer; }
     .town-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
     .town-photo:hover img { transform: scale(1.03); }
     .town-photo:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
     @media (max-width: 720px) {
-      .town-photos { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .town-photos { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
       .town-photo { aspect-ratio: 1; }
       .town-photo:last-child:nth-child(odd) { grid-column: span 2; aspect-ratio: 2 / 1; }
     }
     .photo-slot { height: 100%; border-radius: 16px; border: 1px dashed var(--moss-2); display: flex; align-items: center; justify-content: center; text-align: center; font-size: 14px; color: var(--lichen); padding: 12px; background: var(--canopy); }
     .mini-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; }
     .mini-card { display: flex; gap: 14px; align-items: center; background: var(--under); border: 1px solid var(--moss); border-radius: 14px; padding: 12px; text-decoration: none; color: var(--mist); text-align: left; cursor: pointer; width: 100%; }
-    .mini-card:hover { border-color: var(--moss-3); color: #FFFFFF; }
+    .mini-card:hover { border-color: var(--moss-3); color: var(--bright); }
     .mini-card-thumb { width: 72px; height: 72px; flex: none; border-radius: 10px; overflow: hidden; background: var(--ph); display: flex; align-items: center; justify-content: center; }
     .mini-card-thumb img { width: 100%; height: 100%; object-fit: cover; }
     .mini-card-thumb svg { color: var(--moss-3); }
@@ -863,7 +905,7 @@
       .circuit { grid-template-columns: 48px minmax(0, 1fr); gap: 10px 16px; }
       .circuit-num { font-size: 34px; }
       .circuit p { grid-column: 2; }
-      .park-photos { grid-template-columns: 1fr 1fr; grid-template-rows: 200px 120px 120px; grid-auto-rows: 120px; }
+      .park-photos { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: 200px 120px 120px; grid-auto-rows: 120px; }
       .park-photos > :nth-child(n+8) { display: none; }   /* keep the phone grid even; the rest are in "See all photos" */
       .park-photos > :first-child { grid-column: 1 / -1; grid-row: auto; }
     }
@@ -872,7 +914,7 @@
     .plan-tabs { border-bottom: 1px solid var(--moss); }
     .guide-intro { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 32px; align-items: start; }
     .guide-intro img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 30%; border-radius: 20px; border: 1px solid var(--moss); }
-    @media (max-width: 860px) { .guide-intro { grid-template-columns: 1fr; gap: 20px; } }
+    @media (max-width: 860px) { .guide-intro { grid-template-columns: minmax(0, 1fr); gap: 20px; } }
     /* Overview pages: one card per page in the section. */
     .hub-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 20px; }
     .hub-card { display: flex; flex-direction: column; background: var(--under); border: 1px solid var(--moss); border-top: 3px solid var(--leaf-deep); border-radius: 20px; overflow: hidden; color: var(--mist); text-decoration: none; transition: border-color .2s ease, transform .2s ease; }
@@ -904,10 +946,10 @@
     .inset-panel { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 48px; align-items: center; border: 1px solid var(--moss-2); border-radius: 28px; padding: 56px; background: var(--band); }
     .numbered { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
     .numbered li { display: flex; gap: 14px; padding: 18px; background: var(--under); border: 1px solid var(--moss); border-radius: 14px; font-size: 15px; line-height: 1.55; }
-    .numbered .num { font-family: var(--serif); font-size: 24px; color: var(--gold); line-height: 1; flex: none; }
+    .numbered .num { font-variant-numeric: lining-nums tabular-nums; font-family: var(--serif); font-size: 24px; color: var(--gold); line-height: 1; flex: none; }
     .rule-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); border-top: 1px solid var(--moss); }
     .rule-row > * { padding: 24px 24px 0 0; display: flex; flex-direction: column; gap: 6px; }
-    .rule-row h2 { padding-top: 28px; font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--ember); }
+    .rule-row h2 { padding-top: 28px; font-size: 13px; font-weight: 700; color: var(--ember); }
     .rule-row strong { font-family: var(--serif); font-size: 26px; font-weight: 500; color: var(--gold); }
     .rule-row span { font-size: 15px; color: var(--lichen); line-height: 1.5; }
     .sec { padding-top: 56px; padding-bottom: 24px; }
@@ -925,7 +967,7 @@
       border-radius: 18px; cursor: pointer; background: var(--under); color: var(--mist); border: 1px solid var(--moss);
     }
     .itin-pick:hover { border-color: var(--moss-3); }
-    .itin-pick-badge { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ember); }
+    .itin-pick-badge { font-size: 13px; font-weight: 700; color: var(--ember); }
     .itin-pick-title { font-family: var(--serif); font-size: 24px; font-weight: 500; line-height: 1.15; }
     .itin-pick-meta { font-size: 14px; opacity: .85; }
     .itin-pick[aria-pressed="true"] { background: var(--gold); color: var(--canopy); border-color: var(--gold); }
@@ -936,7 +978,7 @@
     .timeline li { position: relative; padding: 0 0 32px 36px; display: flex; flex-direction: column; gap: 6px; }
     .timeline li:last-child { padding-bottom: 0; }
     .tl-dot { position: absolute; left: -8px; top: 4px; width: 15px; height: 15px; border-radius: 50%; background: var(--canopy); border: 2px solid var(--gold); }
-    .tl-when { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+    .tl-when { font-size: 13px; font-weight: 700; color: var(--gold); }
     .tl-what { font-size: 19px; line-height: 1.5; }
     .tl-link { align-self: flex-start; font-size: 14px; }
     .itin-detail .visit-card { position: static; }
@@ -952,7 +994,7 @@
     .route { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
     .route > div { display: flex; flex-direction: column; gap: 10px; padding-right: 16px; }
     .route-bar { height: 4px; background: var(--moss-2); border-radius: 2px; }
-    .route-kicker { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--lichen); }
+    .route-kicker { font-size: 13px; font-weight: 700; color: var(--lichen); }
     .route-place { font-family: var(--serif); font-size: 30px; font-weight: 500; line-height: 1.1; }
     .route-dist { font-size: 15px; color: var(--lichen); }
     .route .here .route-bar { background: var(--gold); }
@@ -963,7 +1005,7 @@
     .season-dot { width: 12px; height: 12px; border-radius: 3px; display: inline-block; flex: none; }
     .season-dot.wet { background: var(--wet); }
     .season-dot.dry { background: var(--dry); }
-    .season-kicker { display: flex; gap: 10px; align-items: center; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .season-kicker { display: flex; gap: 10px; align-items: center; font-size: 13px; font-weight: 700; }
     .legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px; color: var(--lichen); }
     .legend span { display: flex; gap: 8px; align-items: center; }
     .ev-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ember); display: inline-block; }
@@ -973,7 +1015,7 @@
       border-radius: 14px; cursor: pointer; min-height: 88px; background: var(--under); color: var(--fern); border: 2px solid var(--moss);
     }
     .month:hover { border-color: var(--moss-3); }
-    .month[aria-pressed="true"] { background: var(--chip); color: #FFFFFF; border-color: var(--gold); }
+    .month[aria-pressed="true"] { background: var(--chip); color: var(--bright); border-color: var(--gold); }
     .month-band { height: 10px; border-radius: 3px; }
     .month-abbr { font-weight: 700; font-size: 15px; }
     .month-marks { display: flex; gap: 6px; align-items: center; justify-content: center; min-height: 16px; font-size: 13px; color: var(--gold); }
@@ -990,12 +1032,12 @@
     /* Guides */
     .steps { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); border-top: 1px solid var(--moss); }
     .steps li { padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 10px; }
-    .steps .num { font-family: var(--serif); font-size: 56px; font-weight: 300; color: var(--gold); line-height: 1; }
+    .steps .num { font-variant-numeric: lining-nums tabular-nums; font-family: var(--serif); font-size: 56px; font-weight: 300; color: var(--gold); line-height: 1; }
     .steps strong { font-size: 19px; font-weight: 600; }
     .steps span { font-size: 15px; line-height: 1.6; color: var(--lichen); }
     .cost-card { background: var(--under); border: 1px solid var(--moss); border-radius: 24px; overflow: hidden; }
     .cost-table { width: 100%; border-collapse: collapse; font-size: 15px; }
-    .cost-table th { padding: 12px 28px; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 700; text-align: left; }
+    .cost-table th { padding: 12px 28px; font-size: 13px; color: var(--muted); font-weight: 700; text-align: left; }
     .cost-table th:last-child, .cost-table td:last-child { text-align: right; }
     .cost-table td { padding: 14px 28px; border-top: 1px solid var(--moss); }
     .cost-table td:last-child { font-weight: 600; }
@@ -1010,9 +1052,9 @@
     /* About */
     .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 16px; }
     .team-card { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 18px; align-items: center; background: var(--under); border: 1px solid var(--moss); border-radius: 20px; padding: 20px; }
-    .headshot { width: 92px; height: 92px; border-radius: 50%; border: 1px dashed var(--moss-3); background: var(--ph); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 700; color: var(--lichen); text-transform: uppercase; letter-spacing: .08em; }
+    .headshot { width: 92px; height: 92px; border-radius: 50%; border: 1px dashed var(--moss-3); background: var(--ph); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 13px; font-weight: 700; color: var(--lichen); }
     .team-card h3 { font-family: var(--serif); font-size: 24px; font-weight: 500; }
-    .team-role { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ember); }
+    .team-role { font-size: 13px; font-weight: 700; color: var(--ember); }
     .team-card p { font-size: 14px; line-height: 1.55; color: var(--lichen); margin-top: 6px; }
 
     /* ----------------------------------------------------- why visit: maps and photo cards */
@@ -1022,7 +1064,7 @@
     .map-box > img { width: 100%; height: auto; }
     .map-pins { position: absolute; inset: 0; }
     .map-label { position: absolute; transform: translate(-50%, -50%); font-size: 13px; font-weight: 600; color: var(--lichen); white-space: nowrap; pointer-events: none; text-shadow: 0 1px 4px var(--floor), 0 0 8px var(--floor); }
-    .map-label--caps { font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+    .map-label--caps { font-size: 13px; font-weight: 700; color: var(--muted); }
     .map-label--left { transform: translate(calc(-100% - 10px), -50%); color: var(--mist); }
     .map-label--edge-l { transform: translate(0, -50%); }
     .map-label--edge-r { transform: translate(-100%, -50%); }
@@ -1031,7 +1073,7 @@
     .map-pin-dot { width: 18px; height: 18px; border-radius: 50%; background: var(--mist); border: 3px solid var(--canopy); box-shadow: 0 0 0 2px var(--mist); transition: transform .2s ease; }
     .map-pin:hover .map-pin-dot { transform: scale(1.15); }
     .map-pin[aria-pressed="true"] { color: var(--gold); }
-    .map-pin[aria-pressed="true"] .map-pin-dot { background: var(--gold); box-shadow: 0 0 0 2px var(--gold), 0 0 0 9px rgba(229, 181, 61, .28); }
+    .map-pin[aria-pressed="true"] .map-pin-dot { background: var(--gold); box-shadow: 0 0 0 2px var(--gold), 0 0 0 9px var(--gold-a28); }
     .map-pin-label { position: absolute; white-space: nowrap; font-size: 13px; font-weight: 700; text-shadow: 0 1px 4px var(--floor), 0 0 8px var(--floor); }
     .map-pin--above .map-pin-label { bottom: 36px; left: 50%; transform: translateX(-50%); }
     .map-pin--below .map-pin-label { top: 36px; left: 50%; transform: translateX(-50%); }
@@ -1063,12 +1105,12 @@
     .map-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--lichen); }
     .map-legend > span { display: inline-flex; gap: 8px; align-items: center; }
     .sw { display: inline-block; width: 22px; height: 12px; border-radius: 3px; }
-    .sw-park { background: #17301F; border: 1px dashed var(--moss-2); }
-    .sw-river { height: 4px; background: #6E9FC0; }
+    .sw-park { background: var(--deep-moss); border: 1px dashed var(--moss-2); }
+    .sw-river { height: 4px; background: var(--river); }
     .sw-road { height: 4px; background: var(--fern); }
     .map-credit { font-size: 12px; line-height: 1.5; color: var(--muted); }
     .film { margin-top: 16px; }
-    .film video { display: block; width: 100%; height: auto; aspect-ratio: 640 / 338; border-radius: 12px; background: #000; }
+    .film video { display: block; width: 100%; height: auto; aspect-ratio: 640 / 338; border-radius: 12px; background: var(--black); }
     .film video.film-wide { aspect-ratio: 16 / 9; }
     .map-credit a { color: var(--lichen); }
     .why-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
@@ -1080,18 +1122,18 @@
     .why-card-media { position: relative; display: block; height: 240px; overflow: hidden; background: var(--ph); }
     .why-card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
     .why-card:hover .why-card-media img { transform: scale(1.04); }
-    .why-card-count { position: absolute; right: 12px; bottom: 12px; display: inline-flex; gap: 6px; align-items: center; padding: 6px 12px; border-radius: 999px; background: rgba(5, 11, 9, .8); font-size: 13px; font-weight: 600; }
+    .why-card-count { position: absolute; right: 12px; bottom: 12px; display: inline-flex; gap: 6px; align-items: center; padding: 6px 12px; border-radius: 999px; background: var(--night-a80); font-size: 13px; font-weight: 600; }
     .why-card-body { display: flex; flex-direction: column; gap: 8px; flex: 1; padding: 20px 24px 24px; }
-    .why-card-num { font-family: var(--serif); font-size: 40px; font-weight: 300; line-height: 1; color: var(--gold); }
+    .why-card-num { font-variant-numeric: lining-nums tabular-nums; font-family: var(--serif); font-size: 40px; font-weight: 300; line-height: 1; color: var(--gold); }
     .why-card-title { font-size: 20px; font-weight: 600; line-height: 1.3; }
     .why-card-text { font-size: 15px; line-height: 1.6; color: var(--lichen); }
     .why-card-more { margin-top: auto; padding-top: 8px; font-size: 15px; font-weight: 700; color: var(--gold); }
     @media (max-width: 991px) {
-      .map-split, .map-split--valley { grid-template-columns: 1fr; gap: 24px; }
+      .map-split, .map-split--valley { grid-template-columns: minmax(0, 1fr); gap: 24px; }
     }
     @media (max-width: 720px) {
       .map-label { font-size: 11px; }
-      .map-label--caps { font-size: 10px; letter-spacing: .12em; }
+      .map-label--caps { font-size: 11px; }
       .map-pin-label { font-size: 12px; }
       .map-panel { padding: 20px; }
       .map-panel h3 { font-size: 26px; }
@@ -1104,23 +1146,22 @@
     /* ----------------------------------------------------- footer */
     .site-footer { background: var(--floor); color: var(--lichen); border-top: 1px solid var(--rule); box-shadow: inset 0 3px 0 var(--leaf-deep); }
     .footer-inner { padding-top: 72px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 56px; }
-    .footer-grid { display: grid; grid-template-columns: 1.6fr repeat(5, minmax(0, 1fr)); gap: 28px; }
+    .footer-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(5, minmax(0, 1fr)); gap: 28px; }
     .footer-brand { display: flex; flex-direction: column; gap: 12px; }
     .footer-name { font-family: var(--serif); font-weight: 300; font-size: 56px; color: var(--mist); line-height: 1; }
     .footer-call { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 20px; line-height: 1.35; color: var(--gold); }
     .footer-col { display: flex; flex-direction: column; gap: 10px; font-size: 15px; }
     .footer-col a { color: var(--lichen); text-decoration: none; }
-    .footer-col a:hover { color: #FFFFFF; }
+    .footer-col a:hover { color: var(--bright); }
     /* Column headings are links too, each to its section's overview page. */
-    .footer-col .footer-head { color: var(--mist); font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-    .footer-col .footer-head::after { content: ' →'; color: var(--gold); }
+    .footer-col .footer-head { color: var(--mist); font-size: 13px; font-weight: 700; }
     .footer-col .footer-head:hover { color: var(--gold-hi); }
     .partners { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding-top: 32px; border-top: 1px solid var(--rule); }
-    .partners-label { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--mist); font-weight: 700; margin-right: 12px; }
+    .partners-label { font-size: 13px; color: var(--mist); font-weight: 700; margin-right: 12px; }
     .partner { display: flex; align-items: center; justify-content: center; height: 76px; padding: 6px 14px; border-radius: 10px; border: 1px solid var(--moss); }
     .partner img { max-height: 46px; max-width: 150px; object-fit: contain; }
     .partner--light img { max-height: 64px; }
-    .partner--light { background: #F4F2EC; border-color: #F4F2EC; }
+    .partner--light { background: var(--paper); border-color: var(--paper); }
     a.partner { transition: border-color .15s; }
     a.partner:hover, a.partner:focus-visible { border-color: var(--gold); }
     .footer-credit { font-size: 14px; line-height: 1.6; color: var(--lichen); max-width: 760px; }
@@ -1139,7 +1180,7 @@
     }
 
     /* ----------------------------------------------------- modal */
-    .modal { position: fixed; inset: 0; z-index: 3000; display: none; align-items: flex-end; justify-content: center; background: rgba(5, 11, 9, .8); }
+    .modal { position: fixed; inset: 0; z-index: 3000; display: none; align-items: flex-end; justify-content: center; background: var(--night-a80); }
     .modal.active { display: flex; }
     .modal-content {
       position: relative; width: 100%; max-height: 92vh; overflow-y: auto; overscroll-behavior: contain;
@@ -1151,16 +1192,16 @@
     }
     .modal-close { position: absolute; top: 16px; right: 16px; z-index: 2; }
     .m-head { display: flex; flex-direction: column; gap: 8px; padding-right: 56px; }
-    .m-kicker { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ember); }
+    .m-kicker { font-size: 13px; font-weight: 700; color: var(--ember); }
     .m-title { font-family: var(--serif); font-size: clamp(30px, 3.4vw, 44px); font-weight: 400; line-height: 1.08; }
     .m-note { display: flex; gap: 10px; align-items: flex-start; margin-top: 16px; padding: 12px 14px; border: 1px solid var(--warn-line); border-radius: 12px; color: var(--warn); font-size: 14px; line-height: 1.5; }
     .m-note svg { flex: none; margin-top: 2px; }
     .m-desc { margin: 18px 0 0; font-size: 16px; line-height: 1.65; color: var(--fern); }
     .m-section { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
-    .m-h { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--lichen); }
+    .m-h { font-size: 13px; font-weight: 700; color: var(--lichen); }
     .gallery-feature { position: relative; height: min(52vw, 380px); min-height: 220px; border-radius: 16px; overflow: hidden; background: var(--ph); }
     .gallery-feature img { width: 100%; height: 100%; object-fit: cover; }
-    .gallery-expand { position: absolute; right: 12px; bottom: 12px; display: inline-flex; gap: 6px; align-items: center; min-height: 36px; padding: 6px 12px; border-radius: 999px; border: 0; background: rgba(5, 11, 9, .8); color: var(--mist); font-size: 13px; font-weight: 600; cursor: pointer; }
+    .gallery-expand { position: absolute; right: 12px; bottom: 12px; display: inline-flex; gap: 6px; align-items: center; min-height: 36px; padding: 6px 12px; border-radius: 999px; border: 0; background: var(--night-a80); color: var(--mist); font-size: 13px; font-weight: 600; cursor: pointer; }
     .gallery-expand:hover { color: var(--gold); }
     .gallery-thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); gap: 8px; }
     .thumb { aspect-ratio: 1.25 / 1; padding: 0; border-radius: 10px; overflow: hidden; border: 2px solid transparent; background: var(--ph); cursor: pointer; }
@@ -1195,14 +1236,14 @@
     .gal-open:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
     .gal-tile.is-liked { border-color: var(--leaf); }
     /* The heart: off is an outline on a dark disc, on is filled ember. */
-    .gal-like { position: absolute; top: 8px; right: 8px; z-index: 1; display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 0; border-radius: 50%; background: rgba(8, 19, 15, .72); color: #FFFFFF; cursor: pointer; transition: transform .15s ease; }
+    .gal-like { position: absolute; top: 8px; right: 8px; z-index: 1; display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 0; border-radius: 50%; background: var(--floor-a72); color: var(--bright); cursor: pointer; transition: transform .15s ease; }
     .gal-like:hover { transform: scale(1.08); }
     .gal-like:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
     .gal-like[aria-pressed="true"] { color: var(--ember); }
     .gal-like[aria-pressed="true"] svg { fill: currentColor; }
     .like-btn[aria-pressed="true"] { color: var(--ember); border-color: var(--ember); }
     .like-btn[aria-pressed="true"] svg { fill: currentColor; }
-    .gal-tile-label { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 12px 10px; font-size: 13px; font-weight: 600; text-align: left; color: #FFFFFF; background: linear-gradient(180deg, transparent, rgba(8, 19, 15, .88)); }
+    .gal-tile-label { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 12px 10px; font-size: 13px; font-weight: 600; text-align: left; color: var(--bright); background: linear-gradient(180deg, transparent, var(--floor-a88)); }
     .kind-btn .n { opacity: .75; font-weight: 500; }
     .kind-btn[aria-pressed="true"] .n { opacity: 1; }
     .lightbox { display: flex; flex-direction: column; gap: 14px; }
@@ -1232,7 +1273,7 @@
     .social-links { display: flex; flex-wrap: wrap; gap: 10px; }
     .social-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--moss-2); color: var(--mist); font-size: 14px; font-weight: 600; text-decoration: none; }
     .social-link svg { color: var(--leaf); }
-    .social-link:hover { border-color: var(--gold); color: #FFFFFF; }
+    .social-link:hover { border-color: var(--gold); color: var(--bright); }
     .footer-social { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding-top: 28px; }
     .footer-social[hidden] { display: none; }
 
@@ -1241,19 +1282,19 @@
        on white, without the menus, photos behind headings, maps or buttons. */
     @media print {
       :root {
-        --floor: #FFFFFF; --canopy: #FFFFFF; --band: #FFFFFF; --under: #FFFFFF; --ph: #EEEEEE;
-        --moss: #CCCCCC; --moss-2: #CCCCCC; --rule: #CCCCCC;
-        --mist: #111111; --sage: #222222; --fern: #222222; --lichen: #444444; --muted: #555555;
-        --gold: #6E500B; --ember: #8A3A1A; --leaf: #2E6B4A; --leaf-deep: #CCCCCC; --leaf-glow: transparent;
+        --floor: var(--print-paper); --canopy: var(--print-paper); --band: var(--print-paper); --under: var(--print-paper); --ph: var(--print-rule-lt);
+        --moss: var(--print-rule); --moss-2: var(--print-rule); --rule: var(--print-rule);
+        --mist: var(--print-ink); --sage: var(--print-ink-2); --fern: var(--print-ink-2); --lichen: var(--print-ink-3); --muted: var(--print-ink-4);
+        --gold: var(--print-gold); --ember: var(--print-ember); --leaf: var(--leaf-deep); --leaf-deep: var(--print-rule); --leaf-glow: transparent;
       }
-      body { background: #FFFFFF; color: #111111; }
+      body { background: var(--print-paper); color: var(--print-ink); }
       .site-header, .bottom-nav, .mobile-drawer, .drawer-overlay, .planner-tab, .skip-link, .site-footer,
       .plan-tabs, .next-card, .btn, .print-btn, .map-frame, .modal-close, .bg-photo, .shade { display: none !important; }
       .page-hero, .page-hero--plan, .page-hero--park, .hero { min-height: 0 !important; }
       .page-hero-inner, .hero-inner { padding-top: 0 !important; padding-bottom: 16px !important; }
-      .hero-title, .hero-tagline, .page-title, .crumbs a { color: #111111 !important; }
+      .hero-title, .hero-tagline, .page-title, .crumbs a { color: var(--print-ink) !important; }
       .visit-card { position: static; max-width: none; }
-      a { color: #111111; }
+      a { color: var(--print-ink); }
       section, article, li, .info-card, .money-row { break-inside: avoid; }
       body.no-scroll main { display: none !important; }
       .modal.active { position: static; display: block; background: none; }
@@ -1346,7 +1387,7 @@
         <div class="wrap hero-inner">
           <span class="hero-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E5B53D" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"></path></svg>
-            <span data-i18n="heroPlace">Madagascar</span><span aria-hidden="true">·</span><span data-i18n="heroBadge">UNESCO World Heritage</span><span class="only-lg">·</span><span class="only-lg" data-i18n="heroBadgeMore">Rainforests of the Atsinanana</span>
+            <span data-i18n="heroPlace">Madagascar</span><span class="hero-badge-sep" aria-hidden="true"></span><span data-i18n="heroBadge">UNESCO World Heritage</span><span class="hero-badge-sep only-lg" aria-hidden="true"></span><span class="only-lg" data-i18n="heroBadgeMore">Rainforests of the Atsinanana</span>
           </span>
           <!-- The site opens on the place's name (Kyle, 16 Oct 2026: "it should open with clear
                text that says Ranomafana"), then the rationale's line (15 Oct 2026): "A world found
@@ -1430,7 +1471,7 @@
             <p class="lede" data-i18n="welcomeText2">UNESCO World Heritage Ranomafana is home to fourteen kinds of lemur, including the rare golden bamboo lemur. Track them with a local guide, find chameleons by torchlight, hike to waterfalls, kayak the Namorona and unwind in the hot springs.</p>
             <p class="lede" data-i18n="welcomeText3">Your stay makes a difference: park fees help protect the forest, and the guides, cooks and hosts you meet live here. Hire local. Buy local. Keep the forest standing.</p>
             <p class="welcome-sign" data-i18n="welcomeSignoff">We look forward to welcoming you to Ranomafana, and hope to see you soon!</p>
-            <a class="text-link" href="#why"><span data-i18n="welcomeLink">Why Madagascar, why Ranomafana</span> →</a>
+            <a class="text-link" href="#why"><span data-i18n="welcomeLink">Why Madagascar, why Ranomafana</span></a>
           </div>
         </div>
       </section>
@@ -1442,7 +1483,7 @@
           <div class="wrap byg-grid">
             <h2 id="bg-h" data-i18n="bygHeading">Before you go</h2>
             <div class="byg-item"><span class="byg-value" data-fill="entryFee">55,000 Ar</span><span class="byg-rough" data-rough="entryFee"></span><span class="byg-label" data-i18n="bygFeeLabel">Park entry per adult, per day, plus a {communityFee} community fee</span></div>
-            <div class="byg-item"><span class="byg-value" data-i18n="bygGuideValue">Guide required</span><span class="byg-label"><span data-i18n="bygGuideLabel">Through your hotel, or at the park.</span> <a class="text-link" href="#guides"><span data-i18n="howItWorks">How it works</span> →</a></span></div>
+            <div class="byg-item"><span class="byg-value" data-i18n="bygGuideValue">Guide required</span><span class="byg-label"><span data-i18n="bygGuideLabel">Through your hotel, or at the park.</span> <a class="text-link" href="#guides"><span data-i18n="howItWorks">How it works</span></a></span></div>
             <div class="byg-item"><span class="byg-value" data-i18n="bygCashValue">Cash only</span><span class="byg-label" data-i18n="bygCashLabel">Ariary, in small notes</span></div>
             <div class="byg-item"><span class="byg-value" data-fill="parkHours">07:00–17:00</span><span class="byg-label" data-i18n="bygTimeLabel">Park opening hours. Mid-morning is best for lemurs</span></div>
           </div>
@@ -1470,7 +1511,7 @@
               <span class="layer-label" data-i18n="layer1Label">01 · Canopy</span>
               <h3 class="layer-title"><span class="only-lg" data-i18n="layer1Title">Where the lemurs come down to breakfast.</span><span class="only-sm" data-i18n="layer1Short">Lemurs at breakfast</span></h3>
               <p class="layer-text" data-i18n="layer1Text">Fourteen species, including the golden bamboo lemur, discovered here in 1986 and the reason this forest is protected. The park opens at 07:00; mid-morning, when the lemurs settle in to feed, is the best time to go in.</p>
-              <a class="text-link layer-link" href="#park"><span><span data-i18n="layer1Link">Walk the Talatakely circuit</span> →</span></a>
+              <a class="text-link layer-link" href="#park"><span><span data-i18n="layer1Link">Walk the Talatakely circuit</span></span></a>
             </div>
             <div class="layer-media zoom"><img src="images/ranomafana-national-park-bamboo-lemur-feeding.jpg" alt="A golden bamboo lemur feeding on bamboo leaves in the rainforest" data-i18n-alt="altBambooLemur" loading="lazy"></div>
           </article>
@@ -1480,7 +1521,7 @@
               <span class="layer-label" data-i18n="layer2Label">02 · Understory</span>
               <h3 class="layer-title"><span class="only-lg" data-i18n="layer2Title">Look twice. That leaf is a gecko.</span><span class="only-sm" data-i18n="layer2Short">Geckos after dark</span></h3>
               <p class="layer-text" data-i18n="layer2Text">Leaf-tailed geckos, chameleons and more than 90 kinds of frog live a metre off the ground. They come out after dark, and a guided night walk is the way to find them.</p>
-              <a class="text-link layer-link" href="#do" onclick="openDoBySlug('night-walk'); return false;"><span><span data-i18n="layer2Link">Find a night walk</span> →</span></a>
+              <a class="text-link layer-link" href="#do" onclick="openDoBySlug('night-walk'); return false;"><span><span data-i18n="layer2Link">Find a night walk</span></span></a>
             </div>
             <div class="layer-media zoom"><img src="images/satanic-leaf-gecko.jpg" alt="Satanic leaf-tailed gecko" data-i18n-alt="altSatanicGecko" loading="lazy"></div>
           </article>
@@ -1490,7 +1531,7 @@
               <span class="layer-label" data-i18n="layer3Label">03 · River</span>
               <h3 class="layer-title"><span class="only-lg" data-i18n="layer3Title">Falls, pools and the Namorona.</span><span class="only-sm" data-i18n="layer3Short">Falls &amp; forest pools</span></h3>
               <p class="layer-text" data-i18n="layer3Text">Waterfall walks with free access, kayaking on the river, and community-run reserves like VOI Ambohimagneva, where trails to pools in the forest are being opened to visitors.</p>
-              <a class="text-link layer-link" href="#do" onclick="goToDo('water'); return false;"><span><span data-i18n="layer3Link">Explore waterfalls &amp; reserves</span> →</span></a>
+              <a class="text-link layer-link" href="#do" onclick="goToDo('water'); return false;"><span><span data-i18n="layer3Link">Explore waterfalls &amp; reserves</span></span></a>
             </div>
             <div class="layer-media zoom"><img src="images/voi-ambohimagneva-river-pool.jpg" alt="River pool at VOI Ambohimagneva community reserve" data-i18n-alt="altRiverPool" loading="lazy"></div>
           </article>
@@ -1500,7 +1541,7 @@
               <span class="layer-label" data-i18n="layer4Label">04 · Hot water</span>
               <h3 class="layer-title"><span class="only-lg" data-i18n="layer4Title">End the day in the springs.</span><span class="only-sm" data-i18n="layer4Short">The thermal springs</span></h3>
               <p class="layer-text" data-i18n="layer4Text" data-i18n-html><em>Rano mafana</em> means hot water. The village thermal pool costs 10,000 Ar and sits at the bottom of the valley, a short walk from most lodges.</p>
-              <a class="text-link layer-link" href="#do" onclick="openDoBySlug('station-thermale'); return false;"><span><span data-i18n="layer4Link">Visit Station Thermale</span> →</span></a>
+              <a class="text-link layer-link" href="#do" onclick="openDoBySlug('station-thermale'); return false;"><span><span data-i18n="layer4Link">Visit Station Thermale</span></span></a>
             </div>
             <!-- Station Thermale's own photo slot (see PHOTO-AND-DATA-GAPS.md). Until it is shot this shows the
                  placeholder card. Do not use Hotel Thermal photos here: they are two different places. -->
@@ -1529,7 +1570,7 @@
             <span class="eyebrow only-lg" data-i18n="stayEyebrow">Stay</span>
             <h2 id="st-h" class="display d-64" data-i18n="stayFeatureHeading">Sleep at the forest’s edge.</h2>
           </div>
-          <a class="text-link only-lg" href="#stay"><span data-i18n="stayAllLink">All {stays} places</span> →</a>
+          <a class="text-link only-lg" href="#stay"><span data-i18n="stayAllLink">All {stays} places</span></a>
         </div>
         <div class="stay-grid" id="stayFeature"></div>
         <a class="btn btn-ghost only-sm stay-see-all" href="#stay" data-i18n="staySeeAll">See all {stays} places</a>
@@ -1573,7 +1614,7 @@
             <span class="eyebrow" data-i18n="navEvents">What’s on</span>
             <h2 id="wo-h" class="display d-64" data-i18n="homeEventsHeading">In the village this season.</h2>
           </div>
-          <a class="text-link" href="#events"><span data-i18n="fullCalendar">Full calendar</span> →</a>
+          <a class="text-link" href="#events"><span data-i18n="fullCalendar">Full calendar</span></a>
         </div>
         <div class="event-rows" id="homeEvents"></div>
       </section>
@@ -1582,7 +1623,7 @@
       <section class="wrap pad-b" aria-labelledby="sr-h">
         <div class="section-head-row">
           <h2 id="sr-h" class="display d-64" data-i18n="storiesHeading">Field notes</h2>
-          <a class="text-link" href="#blog"><span data-i18n="allStories">All stories</span> →</a>
+          <a class="text-link" href="#blog"><span data-i18n="allStories">All stories</span></a>
         </div>
         <div class="story-cards" id="homeStories"></div>
       </section>
@@ -1796,7 +1837,7 @@
           <section class="stack g-20" aria-labelledby="g-h">
             <h2 id="g-h" class="display d-56" data-i18n="photosHeading">Photos</h2>
             <div class="park-photos" id="parkPhotos"></div>
-            <button type="button" class="text-link link-btn" onclick="openParkPhotos()"><span data-i18n="allPhotos">See all photos</span> →</button>
+            <button type="button" class="text-link link-btn" onclick="openParkPhotos()"><span data-i18n="allPhotos">See all photos</span></button>
           </section>
 
           <section class="stack g-20" aria-labelledby="n-h">
@@ -1825,7 +1866,7 @@
           <li><span class="num">01</span><strong data-i18n="step1Title">Find a guide</strong><span data-i18n="step1Text">Ask your hotel, or turn up at the park and choose from the guides working that day. Guides can’t be booked online.</span></li>
           <li><span class="num">02</span><strong data-i18n="step2Title">Pick a walk</strong><span data-i18n="step2Text">Walks are priced by circuit and length, and specialists cost more. Tell your guide about your fitness and any worries: they will adapt the route to suit you.</span></li>
           <li><span class="num">03</span><strong data-i18n="step3Title">Pay in Ariary</strong><span data-i18n="step3Text">Cash only: park entry, the community fee at its own booth, and the guide fee for your group.</span></li>
-          <li><span class="num">04</span><strong data-i18n="step4Title">Go mid-morning</strong><span data-i18n="step4Text" data-i18n-html>The park is open {parkHours}. Mid-morning, when the lemurs are awake and settling in to feed, is the best time. <a class="text-link" href="#getting-here">Getting to the gate →</a></span></li>
+          <li><span class="num">04</span><strong data-i18n="step4Title">Go mid-morning</strong><span data-i18n="step4Text" data-i18n-html>The park is open {parkHours}. Mid-morning, when the lemurs are awake and settling in to feed, is the best time. <a class="text-link" href="#getting-here">Getting to the gate</a></span></li>
         </ol>
       </section>
 
@@ -1840,7 +1881,7 @@
             <thead><tr><th scope="col" data-i18n="costWalk">Walk</th><th scope="col" data-i18n="costPaid">Paid at the gate</th></tr></thead>
             <tbody id="guideCosts"></tbody>
           </table>
-          <p class="small-muted" style="padding: 16px 28px 8px; font-size: 13px;" data-i18n="costFootnote" data-i18n-html>Guide rates by circuit, {feesAsOf}. Plus park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class="text-link" style="font-size: 13px;" href="#park">Park fees →</a></p>
+          <p class="small-muted" style="padding: 16px 28px 8px; font-size: 13px;" data-i18n="costFootnote" data-i18n-html>Guide rates by circuit, {feesAsOf}. Plus park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class="text-link" style="font-size: 13px;" href="#park">Park fees</a></p>
           <p class="small-muted" style="padding: 0 28px 28px; font-size: 13px;" data-rate-note></p>
         </article>
         <div class="stack g-24">
@@ -1862,7 +1903,7 @@
         <p class="lede" style="max-width: 760px;" data-i18n="specText">Specialist guides know the park’s birds, plants, or reptiles and amphibians, and where to find them. They cost {specialistFee}, whatever the circuit, and can also be arranged through Centre ValBio.</p>
         <div class="card-row" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px;">
           <div class="spec"><strong data-i18n="specPrimates">Primatology</strong><span data-i18n="specPrimatesText">Lemurs, including the golden bamboo lemur.</span></div>
-          <div class="spec"><strong data-i18n="specBirds">Ornithology</strong><span data-i18n="specBirdsText" data-i18n-html>Birders: ask for a birding specialist by name. <a class="text-link" href="#birdwatching">Birdwatching in Ranomafana →</a></span></div>
+          <div class="spec"><strong data-i18n="specBirds">Ornithology</strong><span data-i18n="specBirdsText" data-i18n-html>Birders: ask for a birding specialist by name. <a class="text-link" href="#birdwatching">Birdwatching in Ranomafana</a></span></div>
           <div class="spec"><strong data-i18n="specHerps">Herpetology</strong><span data-i18n="specHerpsText">Frogs, chameleons and leaf-tailed geckos.</span></div>
           <div class="spec"><strong data-i18n="specBotany">Botany</strong><span data-i18n="specBotanyText">Orchids, giant ferns and the forest itself.</span></div>
         </div>
@@ -1992,7 +2033,7 @@
           <li><span class="num">03</span><strong data-i18n="birdStep3Title">Walk Sahamalaotra or Vohiparara</strong><span data-i18n="birdStep3Text">Sahamalaotra is the short one, about two hours, with signs at its car park listing the birds to look for. Vohiparara, the higher forest at the park’s western edge, is the long one: cooler and wetter than Talatakely, and on the two-day route it leads on to the sacred lake.</span></li>
           <li><span class="num">04</span><strong data-i18n="birdStep4Title">Pack for it</strong><span data-i18n="birdStep4Text">Binoculars, as the guides may not have spare pairs, plus a warm layer and a rain shell.</span></li>
         </ol>
-        <p class="small-muted" style="font-size: 14px;" data-i18n="birdCostNote" data-i18n-html>International visitors also pay park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class="text-link" style="font-size: 14px;" href="#park">Park fees →</a></p>
+        <p class="small-muted" style="font-size: 14px;" data-i18n="birdCostNote" data-i18n-html>International visitors also pay park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class="text-link" style="font-size: 14px;" href="#park">Park fees</a></p>
       </section>
 
       <section class="wrap" style="padding-top: 24px; padding-bottom: 32px;">
@@ -2114,7 +2155,7 @@
           <ul class="numbered">
             <li><span class="num">1</span><span data-i18n="gateStep1">From the taxi-brousse station in the centre of town, take any brousse heading towards Fianarantsoa and tell them you are getting off at the park entrance: 20–25 minutes, 1,000–2,000 Ar each. Seats are scarce in the morning, when park staff ride them to work. Coming back is the same in reverse.</span></li>
             <li><span class="num">2</span><span data-i18n="gateStep2">Or walk back down, weather permitting: it is a beautiful hour downhill to town, and lemurs are sometimes seen near the road.</span></li>
-            <li><span class="num">3</span><span data-i18n="gateStep3" data-i18n-html>Or sleep at the forest edge: Setam Lodge is an 800 m walk from the park entrance, and Centre ValBio sits beside the park. <a class="text-link" href="#stay">Stay →</a></span></li>
+            <li><span class="num">3</span><span data-i18n="gateStep3" data-i18n-html>Or sleep at the forest edge: Setam Lodge is an 800 m walk from the park entrance, and Centre ValBio sits beside the park. <a class="text-link" href="#stay">Stay</a></span></li>
           </ul>
         </div>
       </section>
@@ -2123,8 +2164,8 @@
         <div class="rule-row">
           <h2 id="pack-h" data-i18n="packHeading">Before you leave</h2>
           <div><strong data-i18n="pack1Title">Bring Ariary</strong><span data-i18n="pack1Text">The park takes cash only, and so do most lodges. Small notes help.</span></div>
-          <div><strong data-i18n="pack2Title">Book a bed</strong><span data-i18n="pack2Text" data-i18n-html>{stays} places to stay, from the forest edge to the village. <a class="text-link" href="#stay">Browse stays →</a></span></div>
-          <div><strong data-i18n="pack3Title">Pack a rain shell</strong><span data-i18n="pack3Text" data-i18n-html>In every season. <a class="text-link" href="#when">When to visit →</a></span></div>
+          <div><strong data-i18n="pack2Title">Book a bed</strong><span data-i18n="pack2Text" data-i18n-html>{stays} places to stay, from the forest edge to the village. <a class="text-link" href="#stay">Browse stays</a></span></div>
+          <div><strong data-i18n="pack3Title">Pack a rain shell</strong><span data-i18n="pack3Text" data-i18n-html>In every season. <a class="text-link" href="#when">When to visit</a></span></div>
         </div>
       </section>
 
@@ -2223,12 +2264,12 @@
           <article class="info-card">
             <h3 data-i18n="visaTitle">Visas</h3>
             <p data-i18n="visaText">Most visitors need a visa for Madagascar. You can apply online before you fly on the government’s e-visa site. Check the rules for your own passport before you book.</p>
-            <a class="text-link" href="https://evisamada-mg.com/" target="_blank" rel="noopener"><span data-i18n="visaLink">Official e-visa site</span> →</a>
+            <a class="text-link" href="https://evisamada-mg.com/" target="_blank" rel="noopener"><span data-i18n="visaLink">Official e-visa site</span></a>
           </article>
           <article class="info-card">
             <h3 data-i18n="healthTitle">Health</h3>
             <p data-i18n="healthText">See a travel clinic or your doctor a few weeks before you go, and ask about malaria and the vaccinations advised for Madagascar.</p>
-            <a class="text-link" href="https://wwwnc.cdc.gov/travel/destinations/traveler/none/madagascar" target="_blank" rel="noopener"><span data-i18n="healthLink">Health advice for Madagascar</span> →</a>
+            <a class="text-link" href="https://wwwnc.cdc.gov/travel/destinations/traveler/none/madagascar" target="_blank" rel="noopener"><span data-i18n="healthLink">Health advice for Madagascar</span></a>
           </article>
           <article class="info-card">
             <h3 data-i18n="safetyTitle">Safety</h3>
@@ -3319,7 +3360,7 @@
         altSahaRoad: "A paved road curving past a pond and forested hills under a clear blue sky",
         birdStep4Title: "Pack for it",
         birdStep4Text: "Binoculars, as the guides may not have spare pairs, plus a warm layer and a rain shell.",
-        birdCostNote: "International visitors also pay park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class=\"text-link\" style=\"font-size: 14px;\" href=\"#park\">Park fees →</a>",
+        birdCostNote: "International visitors also pay park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class=\"text-link\" style=\"font-size: 14px;\" href=\"#park\">Park fees</a>",
         birdPlanEyebrow: "Two days for birders",
         birdPlanTitle: "See the Birders’ Two Days plan",
         birdSources: "Sources: the number of bird species from Madagascar National Parks; the six birds behind the Key Biodiversity Area from its factsheet for Ranomafana National Park (keybiodiversityareas.org, checked October 2026); the specialist guide fee from the notice board at the park office (October 2026); opening hours, the circuit and the tips from this guide’s own local notes (October 2026); the Sahamalaotra circuit from its signs, photographed for this guide (November 2026); photos taken in Ranomafana for this guide. Prices change, so confirm at the park office.",
@@ -3493,10 +3534,10 @@
         gateText: "The park entrance is at Ambodiamontana, about 7 km up the RN25 from the centre of Ranomafana. Most places to stay are in the village, and there is no shuttle between the two.",
         gateStep1: "From the taxi-brousse station in the centre of town, take any brousse heading towards Fianarantsoa and tell them you are getting off at the park entrance: 20–25 minutes, 1,000–2,000 Ar each. Seats are scarce in the morning, when park staff ride them to work. Coming back is the same in reverse.",
         gateStep2: "Or walk back down, weather permitting: it is a beautiful hour downhill to town, and lemurs are sometimes seen near the road.",
-        gateStep3: "Or sleep at the forest edge: Setam Lodge is an 800 m walk from the park entrance, and Centre ValBio sits beside the park. <a class=\"text-link\" href=\"#stay\">Stay →</a>",
+        gateStep3: "Or sleep at the forest edge: Setam Lodge is an 800 m walk from the park entrance, and Centre ValBio sits beside the park. <a class=\"text-link\" href=\"#stay\">Stay</a>",
         pack1Text: "The park takes cash only, and so do most lodges. Small notes help.",
-        pack2Text: "{stays} places to stay, from the forest edge to the village. <a class=\"text-link\" href=\"#stay\">Browse stays →</a>",
-        pack3Text: "In every season. <a class=\"text-link\" href=\"#when\">When to visit →</a>",
+        pack2Text: "{stays} places to stay, from the forest edge to the village. <a class=\"text-link\" href=\"#stay\">Browse stays</a>",
+        pack3Text: "In every season. <a class=\"text-link\" href=\"#when\">When to visit</a>",
         ghSources: "Sources: Cotisse, Soatrans, private car, charter flight, Fianarantsoa connections, fares, journey times and getting to the park gate from this guide’s own local notes (October 2026); distances from Madagascar National Parks; taxi-brousse routes from the coast from Wikivoyage (updated November 2017). Roads and fares change, so check locally.",
         wetText: "Daytime around 26°C and humid, with highs above 28°C from November to February. About 80% of the year’s rain falls in these months. January to March is cyclone season, and some days are too wet for the trails.",
         dryText: "Daytime around 22°C, nights down to 10°C. June to August is the cold season, when reptiles and some other animals are harder to find. Drier is relative here: it still rains.",
@@ -3508,14 +3549,14 @@
         step1Text: "Ask your hotel, or turn up at the park and choose from the guides working that day. Guides can’t be booked online.",
         step2Text: "Walks are priced by circuit and length, and specialists cost more. Tell your guide about your fitness and any worries: they will adapt the route to suit you.",
         step3Text: "Cash only: park entry, the community fee at its own booth, and the guide fee for your group.",
-        step4Text: "The park is open {parkHours}. Mid-morning, when the lemurs are awake and settling in to feed, is the best time. <a class=\"text-link\" href=\"#getting-here\">Getting to the gate →</a>",
+        step4Text: "The park is open {parkHours}. Mid-morning, when the lemurs are awake and settling in to feed, is the best time. <a class=\"text-link\" href=\"#getting-here\">Getting to the gate</a>",
         costText: "The guide fee is shared by everyone in your group, so it costs less each with more people. One guide takes a group of one to four; groups of six or more need at least two.",
-        costFootnote: "Guide rates by circuit, {feesAsOf}. Plus park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class=\"text-link\" style=\"font-size: 13px;\" href=\"#park\">Park fees →</a>",
+        costFootnote: "Guide rates by circuit, {feesAsOf}. Plus park entry: {entryFee} per adult per day ({childFee} ages 5–12, under 5 free) and a {communityFee} community fee. <a class=\"text-link\" style=\"font-size: 13px;\" href=\"#park\">Park fees</a>",
         soloText: "Ask the park office to pair you with other visitors so you split one guide fee.",
         spotterText: "Animal spotters work the forest and tell your guide by phone where the animals are, so you can walk straight to them. The spotter is included in the guide’s price.",
         specText: "Specialist guides know the park’s birds, plants, or reptiles and amphibians, and where to find them. They cost {specialistFee}, whatever the circuit, and can also be arranged through Centre ValBio.",
         specPrimatesText: "Lemurs, including the golden bamboo lemur.",
-        specBirdsText: "Birders: ask for a birding specialist by name. <a class=\"text-link\" href=\"#birdwatching\">Birdwatching in Ranomafana →</a>",
+        specBirdsText: "Birders: ask for a birding specialist by name. <a class=\"text-link\" href=\"#birdwatching\">Birdwatching in Ranomafana</a>",
         specHerpsText: "Frogs, chameleons and leaf-tailed geckos.",
         specBotanyText: "Orchids, giant ferns and the forest itself.",
         outsideMitsinjoText: "Community guides from Ambatolahy lead day and night walks, and the fees go straight to the village.",
@@ -3959,7 +4000,7 @@
         altSahaRoad: "Une route goudronnée qui tourne le long d’un étang et de collines boisées, sous un ciel bleu",
         birdStep4Title: "Équipez-vous",
         birdStep4Text: "Des jumelles, car les guides n’en ont pas toujours à prêter, plus une couche chaude et un imperméable.",
-        birdCostNote: "Les visiteurs étrangers paient aussi l’entrée du parc : {entryFee} par adulte et par jour ({childFee} de 5 à 12 ans, gratuit avant 5 ans) et une taxe communale de {communityFee}. <a class=\"text-link\" style=\"font-size: 14px;\" href=\"#park\">Tarifs du parc →</a>",
+        birdCostNote: "Les visiteurs étrangers paient aussi l’entrée du parc : {entryFee} par adulte et par jour ({childFee} de 5 à 12 ans, gratuit avant 5 ans) et une taxe communale de {communityFee}. <a class=\"text-link\" style=\"font-size: 14px;\" href=\"#park\">Tarifs du parc</a>",
         birdPlanEyebrow: "Deux jours pour ornithologues",
         birdPlanTitle: "Voir le programme « Deux jours pour ornithologues »",
         birdSources: "Sources : nombre d’espèces d’oiseaux d’après Madagascar National Parks ; les six oiseaux de la Zone clé pour la biodiversité d’après sa fiche pour le parc national de Ranomafana (keybiodiversityareas.org, consultée en octobre 2026) ; tarif du guide spécialiste d’après le panneau d’affichage du bureau du parc (octobre 2026) ; horaires, circuit et conseils d’après les notes locales de ce guide (octobre 2026) ; le circuit Sahamalaotra d’après ses panneaux, photographiés pour ce guide (novembre 2026) ; photos prises à Ranomafana pour ce guide. Les prix changent : vérifiez au bureau du parc.",
@@ -4125,10 +4166,10 @@
         gateText: "L’entrée du parc se trouve à Ambodiamontana, à environ 7 km du centre de Ranomafana en remontant la RN25. La plupart des hébergements sont au village, et il n’y a pas de navette entre les deux.",
         gateStep1: "Depuis la gare des taxis-brousses du centre, prenez n’importe quel brousse en direction de Fianarantsoa et dites que vous descendez à l’entrée du parc : 20 à 25 minutes, 1 000–2 000 Ar par personne. Les places sont rares le matin, quand le personnel du parc s’en sert pour aller travailler. Le retour se fait de la même façon.",
         gateStep2: "Ou redescendez à pied si le temps le permet : une belle heure de descente jusqu’au village, et l’on voit parfois des lémuriens près de la route.",
-        gateStep3: "Ou dormez en lisière de forêt : le Setam Lodge est à 800 m à pied de l’entrée du parc, et le Centre ValBio est juste à côté du parc. <a class=\"text-link\" href=\"#stay\">Hébergements →</a>",
+        gateStep3: "Ou dormez en lisière de forêt : le Setam Lodge est à 800 m à pied de l’entrée du parc, et le Centre ValBio est juste à côté du parc. <a class=\"text-link\" href=\"#stay\">Hébergements</a>",
         pack1Text: "Le parc n’accepte que les espèces, comme la plupart des hébergements. Les petites coupures sont utiles.",
-        pack2Text: "{stays} hébergements, de la lisière de la forêt au village. <a class=\"text-link\" href=\"#stay\">Voir les hébergements →</a>",
-        pack3Text: "En toute saison. <a class=\"text-link\" href=\"#when\">Quand venir →</a>",
+        pack2Text: "{stays} hébergements, de la lisière de la forêt au village. <a class=\"text-link\" href=\"#stay\">Voir les hébergements</a>",
+        pack3Text: "En toute saison. <a class=\"text-link\" href=\"#when\">Quand venir</a>",
         ghSources: "Sources : Cotisse, Soatrans, voiture privée, vol charter, correspondances à Fianarantsoa, tarifs, temps de trajet et accès à l’entrée du parc d’après les notes locales de ce guide (octobre 2026) ; distances d’après Madagascar National Parks ; itinéraires en taxi-brousse depuis la côte d’après Wikivoyage (mis à jour en novembre 2017). Les routes et les tarifs changent : renseignez-vous sur place.",
         wetText: "Environ 26 °C en journée et un air humide, avec des maximales au-dessus de 28 °C de novembre à février. Environ 80 % de la pluie de l’année tombe pendant ces mois. De janvier à mars, c’est la saison des cyclones, et certains jours sont trop pluvieux pour les sentiers.",
         dryText: "Environ 22 °C en journée, et jusqu’à 10 °C la nuit. De juin à août, c’est la saison froide, où les reptiles et d’autres animaux sont plus difficiles à trouver. « Plus sec » est relatif ici : il pleut quand même.",
@@ -4140,14 +4181,14 @@
         step1Text: "Demandez à votre hôtel, ou présentez-vous au parc et choisissez parmi les guides présents ce jour-là. On ne peut pas réserver de guide en ligne.",
         step2Text: "Les balades sont tarifées selon le circuit et la durée, et les spécialistes coûtent plus cher. Parlez à votre guide de votre forme physique et de vos éventuelles craintes : il adaptera l’itinéraire.",
         step3Text: "Espèces uniquement : l’entrée du parc, la taxe communautaire à son propre guichet, et le prix du guide pour votre groupe.",
-        step4Text: "Horaires du parc : {parkHours}. Le milieu de matinée, quand les lémuriens sont réveillés et commencent à se nourrir, est le meilleur moment. <a class=\"text-link\" href=\"#getting-here\">Rejoindre l’entrée →</a>",
+        step4Text: "Horaires du parc : {parkHours}. Le milieu de matinée, quand les lémuriens sont réveillés et commencent à se nourrir, est le meilleur moment. <a class=\"text-link\" href=\"#getting-here\">Rejoindre l’entrée</a>",
         costText: "Le prix du guide est partagé par tout votre groupe : plus vous êtes nombreux, moins c’est cher par personne. Un guide prend un groupe de une à quatre personnes ; à partir de six, il en faut au moins deux.",
-        costFootnote: "Tarifs des guides par circuit, {feesAsOf}. Plus l’entrée du parc : {entryFee} par adulte et par jour ({childFee} de 5 à 12 ans, gratuit avant 5 ans) et une taxe communautaire de {communityFee}. <a class=\"text-link\" style=\"font-size: 13px;\" href=\"#park\">Tarifs du parc →</a>",
+        costFootnote: "Tarifs des guides par circuit, {feesAsOf}. Plus l’entrée du parc : {entryFee} par adulte et par jour ({childFee} de 5 à 12 ans, gratuit avant 5 ans) et une taxe communautaire de {communityFee}. <a class=\"text-link\" style=\"font-size: 13px;\" href=\"#park\">Tarifs du parc</a>",
         soloText: "Demandez au bureau du parc de vous associer à d’autres visiteurs pour partager le prix d’un guide.",
         spotterText: "Des pisteurs parcourent la forêt et indiquent par téléphone à votre guide où se trouvent les animaux, pour que vous puissiez aller droit vers eux. Le pisteur est compris dans le prix du guide.",
         specText: "Les guides spécialisés sont experts pour trouver et expliquer les oiseaux, les plantes ou les reptiles et amphibiens du parc. Pour cette expertise, ils coûtent {specialistFee}, quel que soit le circuit. Des guides spécialisés peuvent aussi être organisés par le Centre ValBio.",
         specPrimatesText: "Les lémuriens, dont l’hapalémur doré.",
-        specBirdsText: "Ornithologues : demandez nommément un guide spécialisé en oiseaux. <a class=\"text-link\" href=\"#birdwatching\">L’observation des oiseaux à Ranomafana →</a>",
+        specBirdsText: "Ornithologues : demandez nommément un guide spécialisé en oiseaux. <a class=\"text-link\" href=\"#birdwatching\">L’observation des oiseaux à Ranomafana</a>",
         specHerpsText: "Grenouilles, caméléons et uroplates.",
         specBotanyText: "Orchidées, fougères géantes et la forêt elle-même.",
         outsideMitsinjoText: "Des guides communautaires d’Ambatolahy mènent des balades de jour et de nuit, et les droits vont directement au village.",
@@ -4590,7 +4631,7 @@
         altSahaRoad: "Eine asphaltierte Straße biegt an einem Teich und bewaldeten Hügeln vorbei, unter blauem Himmel",
         birdStep4Title: "Richtig packen",
         birdStep4Text: "Ein Fernglas, denn die Guides haben nicht immer eines übrig, dazu eine warme Schicht und eine Regenjacke.",
-        birdCostNote: "Ausländische Besucher zahlen außerdem den Parkeintritt: {entryFee} pro Erwachsenem und Tag ({childFee} für 5- bis 12-Jährige, unter 5 frei) und eine Gemeindeabgabe von {communityFee}. <a class=\"text-link\" style=\"font-size: 14px;\" href=\"#park\">Parkgebühren →</a>",
+        birdCostNote: "Ausländische Besucher zahlen außerdem den Parkeintritt: {entryFee} pro Erwachsenem und Tag ({childFee} für 5- bis 12-Jährige, unter 5 frei) und eine Gemeindeabgabe von {communityFee}. <a class=\"text-link\" style=\"font-size: 14px;\" href=\"#park\">Parkgebühren</a>",
         birdPlanEyebrow: "Zwei Tage für Vogelkundler",
         birdPlanTitle: "Zum Plan „Zwei Tage für Vogelkundler“",
         birdSources: "Quellen: Zahl der Vogelarten nach Madagascar National Parks; die sechs Vögel des Key Biodiversity Area nach dessen Datenblatt zum Ranomafana-Nationalpark (keybiodiversityareas.org, abgerufen im Oktober 2026); Preis des Spezialisten-Guides nach der Aushangtafel im Parkbüro (Oktober 2026); Öffnungszeiten, Rundweg und Tipps nach den eigenen Notizen dieses Führers vor Ort (Oktober 2026); der Rundweg Sahamalaotra nach seinen Schildern, für diesen Führer fotografiert (November 2026); Fotos in Ranomafana für diesen Führer aufgenommen. Preise ändern sich, bitte im Parkbüro bestätigen.",
@@ -4756,10 +4797,10 @@
         gateText: "Der Parkeingang liegt in Ambodiamontana, etwa 7 km vom Zentrum Ranomafanas die RN25 hinauf. Die meisten Unterkünfte sind im Ort, und es gibt keinen Shuttle zwischen beiden.",
         gateStep1: "Nehmen Sie am Taxi-Brousse-Bahnhof im Zentrum irgendein Brousse Richtung Fianarantsoa und sagen Sie, dass Sie am Parkeingang aussteigen: 20–25 Minuten, 1.000–2.000 Ar pro Person. Morgens sind Plätze knapp, weil die Parkmitarbeiter damit zur Arbeit fahren. Zurück geht es genauso.",
         gateStep2: "Oder gehen Sie bei gutem Wetter zu Fuß zurück: eine wunderschöne Stunde bergab in den Ort, und manchmal sieht man Lemuren nahe der Straße.",
-        gateStep3: "Oder übernachten Sie am Waldrand: Die Setam Lodge liegt 800 m zu Fuß vom Parkeingang, und das Centre ValBio direkt am Park. <a class=\"text-link\" href=\"#stay\">Unterkünfte →</a>",
+        gateStep3: "Oder übernachten Sie am Waldrand: Die Setam Lodge liegt 800 m zu Fuß vom Parkeingang, und das Centre ValBio direkt am Park. <a class=\"text-link\" href=\"#stay\">Unterkünfte</a>",
         pack1Text: "Der Park nimmt nur Bargeld, die meisten Unterkünfte ebenso. Kleine Scheine helfen.",
-        pack2Text: "{stays} Unterkünfte, vom Waldrand bis in den Ort. <a class=\"text-link\" href=\"#stay\">Unterkünfte ansehen →</a>",
-        pack3Text: "Zu jeder Jahreszeit. <a class=\"text-link\" href=\"#when\">Reisezeit →</a>",
+        pack2Text: "{stays} Unterkünfte, vom Waldrand bis in den Ort. <a class=\"text-link\" href=\"#stay\">Unterkünfte ansehen</a>",
+        pack3Text: "Zu jeder Jahreszeit. <a class=\"text-link\" href=\"#when\">Reisezeit</a>",
         ghSources: "Quellen: Cotisse, Soatrans, Privatauto, Charterflug, Anschlüsse in Fianarantsoa, Preise, Fahrzeiten und der Weg zum Parkeingang aus den eigenen Notizen dieses Führers vor Ort (Oktober 2026); Entfernungen von Madagascar National Parks; Taxi-Brousse-Verbindungen von der Küste aus Wikivoyage (Stand November 2017). Straßen und Preise ändern sich, also vor Ort nachfragen.",
         wetText: "Tagsüber etwa 26 °C und feucht, von November bis Februar über 28 °C. Etwa 80 % des Jahresregens fallen in diesen Monaten. Von Januar bis März ist Zyklonsaison, und manche Tage sind für die Wege zu nass.",
         dryText: "Tagsüber etwa 22 °C, nachts bis zu 10 °C. Juni bis August ist die kalte Jahreszeit, in der Reptilien und einige andere Tiere schwerer zu finden sind. Trockener ist hier relativ: Es regnet trotzdem.",
@@ -4771,14 +4812,14 @@
         step1Text: "Fragen Sie Ihr Hotel, oder kommen Sie zum Park und wählen Sie unter den Guides, die an dem Tag arbeiten. Online lassen sich Guides nicht buchen.",
         step2Text: "Die Preise richten sich nach Rundweg und Dauer, Spezialisten kosten mehr. Sagen Sie Ihrem Guide, wie fit Sie sind und was Sie beschäftigt: Er passt die Route an.",
         step3Text: "Nur Bargeld: Parkeintritt, die Gemeindeabgabe an ihrem eigenen Schalter und die Guidegebühr für Ihre Gruppe.",
-        step4Text: "Der Park ist {parkHours} geöffnet. Der Vormittag, wenn die Lemuren wach sind und zu fressen beginnen, ist die beste Zeit. <a class=\"text-link\" href=\"#getting-here\">Zum Parkeingang →</a>",
+        step4Text: "Der Park ist {parkHours} geöffnet. Der Vormittag, wenn die Lemuren wach sind und zu fressen beginnen, ist die beste Zeit. <a class=\"text-link\" href=\"#getting-here\">Zum Parkeingang</a>",
         costText: "Die Guidegebühr teilen sich alle in Ihrer Gruppe, mit mehr Leuten wird es also für jeden günstiger. Ein Guide nimmt eine Gruppe von einer bis vier Personen; ab sechs Personen braucht es mindestens zwei.",
-        costFootnote: "Guidepreise nach Rundweg, Stand {feesAsOf}. Dazu Parkeintritt: {entryFee} pro Erwachsenem und Tag ({childFee} für 5–12 Jahre, unter 5 frei) und eine Gemeindeabgabe von {communityFee}. <a class=\"text-link\" style=\"font-size: 13px;\" href=\"#park\">Parkgebühren →</a>",
+        costFootnote: "Guidepreise nach Rundweg, Stand {feesAsOf}. Dazu Parkeintritt: {entryFee} pro Erwachsenem und Tag ({childFee} für 5–12 Jahre, unter 5 frei) und eine Gemeindeabgabe von {communityFee}. <a class=\"text-link\" style=\"font-size: 13px;\" href=\"#park\">Parkgebühren</a>",
         soloText: "Bitten Sie das Parkbüro, Sie mit anderen Besuchern zusammenzubringen, damit Sie sich eine Guidegebühr teilen.",
         spotterText: "Spotter durchstreifen den Wald und sagen Ihrem Guide per Telefon, wo die Tiere sind, sodass Sie direkt zu ihnen gehen können. Der Spotter ist im Guidepreis enthalten.",
         specText: "Spezial-Guides sind Experten darin, die Vögel, Pflanzen oder Reptilien und Amphibien des Parks zu finden und zu erklären. Wegen dieses Fachwissens kosten sie {specialistFee}, unabhängig vom Rundweg. Spezial-Guides lassen sich auch über das Centre ValBio vermitteln.",
         specPrimatesText: "Lemuren, darunter der Goldene Bambuslemur.",
-        specBirdsText: "Vogelbeobachter: Fragen Sie gezielt nach einem Vogel-Guide. <a class=\"text-link\" href=\"#birdwatching\">Vogelbeobachtung in Ranomafana →</a>",
+        specBirdsText: "Vogelbeobachter: Fragen Sie gezielt nach einem Vogel-Guide. <a class=\"text-link\" href=\"#birdwatching\">Vogelbeobachtung in Ranomafana</a>",
         specHerpsText: "Frösche, Chamäleons und Plattschwanzgeckos.",
         specBotanyText: "Orchideen, Baumfarne und der Wald selbst.",
         outsideMitsinjoText: "Gemeinde-Guides aus Ambatolahy führen Tag- und Nachtwanderungen, und die Gebühren gehen direkt an das Dorf.",
@@ -5221,7 +5262,7 @@
         altSahaRoad: "Lalana vita tara miolaka mandalo dobo sy havoana rakotra ala, ambanin'ny lanitra manga",
         birdStep4Title: "Omano ny entanao",
         birdStep4Text: "Solomaso fijerena lavitra, satria tsy voatery manana fanampiny ny mpitari-dalana, miampy akanjo mafana sy akanjo orana.",
-        birdCostNote: "Mandoa ny fidirana amin'ny valan-javaboahary koa ny vahiny avy any ivelany: {entryFee} isaky ny olon-dehibe isan'andro ({childFee} ho an'ny 5 ka hatramin'ny 12 taona, maimaim-poana ho an'ny latsaky ny 5 taona) sy hetra ho an'ny kaominina {communityFee}. <a class=\"text-link\" style=\"font-size: 14px;\" href=\"#park\">Saran'ny valan-javaboahary →</a>",
+        birdCostNote: "Mandoa ny fidirana amin'ny valan-javaboahary koa ny vahiny avy any ivelany: {entryFee} isaky ny olon-dehibe isan'andro ({childFee} ho an'ny 5 ka hatramin'ny 12 taona, maimaim-poana ho an'ny latsaky ny 5 taona) sy hetra ho an'ny kaominina {communityFee}. <a class=\"text-link\" style=\"font-size: 14px;\" href=\"#park\">Saran'ny valan-javaboahary</a>",
         birdPlanEyebrow: "Roa andro ho an'ny mpijery vorona",
         birdPlanTitle: "Jereo ny fandaharana « Roa andro ho an'ny mpijery vorona »",
         birdSources: "Loharano: ny isan'ny karazam-borona avy amin'ny Madagascar National Parks; ireo vorona enina mahatonga ny Key Biodiversity Area avy amin'ny takelaka momba ny valan-javaboaharin'i Ranomafana (keybiodiversityareas.org, nojerena Oktobra 2026); ny saran'ny mpitari-dalana manam-pahaizana avy amin'ny takelaka fanaovana filazana ao amin'ny biraon'ny valan-javaboahary (Oktobra 2026); ny ora fisokafana, ny lalana ary ny torohevitra avy amin'ny fanamarihan'ity torolàlana ity teny an-toerana (Oktobra 2026); ny lalana Sahamalaotra avy amin'ny takelaka ao aminy, nalaina sary ho an'ity torolàlana ity (Novambra 2026); sary nalaina tany Ranomafana ho an'ity torolàlana ity. Miova ny vidiny, koa hamarino ao amin'ny biraon'ny valan-javaboahary.",
@@ -5388,10 +5429,10 @@
         gateText: "Ao Ambodiamontana ny fidirana amin'ny valan-javaboahary, 7 km eo ho eo miakatra amin'ny RN25 avy eo afovoan'i Ranomafana. Ao an-tanàna ny ankamaroan'ny toerana hatoriana, ary tsy misy fiara mampitohy azy roa.",
         gateStep1: "Avy eo amin'ny fiantsonan'ny taxi-brousse eo afovoan-tanàna, mandehana taxi-brousse mankany Fianarantsoa ary lazao fa hidina eo amin'ny fidirana amin'ny valan-javaboahary ianao: 20–25 minitra, 1 000–2 000 Ar isan'olona. Vitsy ny toerana amin'ny maraina, satria ampiasain'ny mpiasan'ny valan-javaboahary handehanana hiasa izy ireo. Toy izany koa ny fiverenana.",
         gateStep2: "Na miverena an-tongotra raha mamela ny toetr'andro: adiny iray mahafinaritra midina mankany an-tanàna, ary indraindray misy gidro hita eo akaikin'ny lalana.",
-        gateStep3: "Na matory eo amin'ny sisin'ala: 800 m an-tongotra miala ny fidirana amin'ny valan-javaboahary ny Setam Lodge, ary eo akaikin'ny valan-javaboahary ny Centre ValBio. <a class=\"text-link\" href=\"#stay\">Toerana hatoriana →</a>",
+        gateStep3: "Na matory eo amin'ny sisin'ala: 800 m an-tongotra miala ny fidirana amin'ny valan-javaboahary ny Setam Lodge, ary eo akaikin'ny valan-javaboahary ny Centre ValBio. <a class=\"text-link\" href=\"#stay\">Toerana hatoriana</a>",
         pack1Text: "Vola an-tanana ihany no raisin'ny valan-javaboahary, ary toy izany koa ny ankamaroan'ny toerana hatoriana. Mahasoa ny vola madinika.",
-        pack2Text: "Toerana hatoriana {stays}, manomboka eo amin'ny sisin'ala ka hatrany an-tanàna. <a class=\"text-link\" href=\"#stay\">Jereo ny toerana hatoriana →</a>",
-        pack3Text: "Na inona na inona vanim-potoana. <a class=\"text-link\" href=\"#when\">Rahoviana no tsara ho avy →</a>",
+        pack2Text: "Toerana hatoriana {stays}, manomboka eo amin'ny sisin'ala ka hatrany an-tanàna. <a class=\"text-link\" href=\"#stay\">Jereo ny toerana hatoriana</a>",
+        pack3Text: "Na inona na inona vanim-potoana. <a class=\"text-link\" href=\"#when\">Rahoviana no tsara ho avy</a>",
         ghSources: "Loharano: Cotisse, Soatrans, fiara manokana, sidina manokana, fifandraisana any Fianarantsoa, vidiny, faharetan'ny dia ary ny fomba hahatongavana eo amin'ny fidirana amin'ny valan-javaboahary avy amin'ny naoty an-toerana nataon'ity torolàlana ity (Oktobra 2026); halavirana avy amin'ny Madagascar National Parks; lalan'ny taxi-brousse avy any amin'ny morontsiraka avy amin'ny Wikivoyage (navaozina Novambra 2017). Miova ny lalana sy ny vidiny, ka hamarino eto an-toerana.",
         wetText: "Eo amin'ny 26°C eo ho eo amin'ny antoandro ary mando ny rivotra, mihoatra ny 28°C manomboka amin'ny Novambra ka hatramin'ny Febroary. Eo amin'ny 80% eo ho eo amin'ny oran'ny taona no milatsaka amin'ireo volana ireo. Ny Janoary ka hatramin'ny Martsa no vanim-potoanan'ny rivo-doza, ary misy andro be orana loatra ho an'ny lalana.",
         dryText: "Eo amin'ny 22°C eo ho eo amin'ny antoandro, ary mety hidina hatramin'ny 10°C amin'ny alina. Ny Jona ka hatramin'ny Aogositra no vanim-potoana mangatsiaka, izay sarotra kokoa ny hahitana ny biby mandady sy biby hafa. Tsy dia maina loatra eto: mbola misy orana ihany.",
@@ -5403,14 +5444,14 @@
         step1Text: "Anontanio amin'ny hotelinao, na mankanesa any amin'ny valan-javaboahary ary misafidiana amin'ireo mpitari-dalana miasa amin'io andro io. Tsy azo amandrihana amin'ny aterineto ny mpitari-dalana.",
         step2Text: "Arakaraka ny lalana sy ny halavany ny vidiny, ary lafo kokoa ny manampahaizana manokana. Lazao amin'ny mpitari-dalanao ny herinao sy izay manahiana anao: hampifanaraka ny lalana aminao izy.",
         step3Text: "Vola an-tanana ihany: ny fidirana amin'ny valan-javaboahary, ny saran'ny fiaraha-monina amin'ny varavarankely manokana, ary ny saran'ny mpitari-dalana ho an'ny vondronao.",
-        step4Text: "Misokatra amin'ny {parkHours} ny valan-javaboahary. Ny antoandro maraina, rehefa mifoha ny gidro ary manomboka mihinana, no fotoana tsara indrindra. <a class=\"text-link\" href=\"#getting-here\">Mankany amin'ny vavahady →</a>",
+        step4Text: "Misokatra amin'ny {parkHours} ny valan-javaboahary. Ny antoandro maraina, rehefa mifoha ny gidro ary manomboka mihinana, no fotoana tsara indrindra. <a class=\"text-link\" href=\"#getting-here\">Mankany amin'ny vavahady</a>",
         costText: "Zarain'ny olona rehetra ao amin'ny vondronao ny saran'ny mpitari-dalana, ka arakaraka ny hamaroan'ny olona no hihenan'ny anjaran'ny tsirairay. Mpitari-dalana iray no mitondra vondrona olona iray ka hatramin'ny efatra; roa farafahakeliny ho an'ny vondrona olona enina na mihoatra.",
-        costFootnote: "Saran'ny mpitari-dalana isaky ny lalana, {feesAsOf}. Miampy ny fidirana amin'ny valan-javaboahary: {entryFee} isan'olon-dehibe isan'andro ({childFee} ho an'ny 5–12 taona, maimaim-poana latsaky ny 5 taona) ary saran'ny fiaraha-monina {communityFee}. <a class=\"text-link\" style=\"font-size: 13px;\" href=\"#park\">Saran'ny valan-javaboahary →</a>",
+        costFootnote: "Saran'ny mpitari-dalana isaky ny lalana, {feesAsOf}. Miampy ny fidirana amin'ny valan-javaboahary: {entryFee} isan'olon-dehibe isan'andro ({childFee} ho an'ny 5–12 taona, maimaim-poana latsaky ny 5 taona) ary saran'ny fiaraha-monina {communityFee}. <a class=\"text-link\" style=\"font-size: 13px;\" href=\"#park\">Saran'ny valan-javaboahary</a>",
         soloText: "Angataho amin'ny biraon'ny valan-javaboahary ny hampiarahana anao amin'ny mpitsidika hafa mba hizarana ny saran'ny mpitari-dalana iray.",
         spotterText: "Misy mpitady biby mandehandeha ao an'ala ary milaza amin'ny mpitari-dalanao amin'ny telefaona hoe aiza ny biby, ka afaka mandeha mivantana any aminy ianao. Tafiditra ao amin'ny saran'ny mpitari-dalana ny mpitady biby.",
         specText: "Ireo mpitari-dalana manampahaizana manokana dia mahay mitady sy manazava ny vorona, ny zava-maniry, na ny biby mandady sy ny amfibiana ao amin'ny valan-javaboahary. Noho izany fahaizana izany dia {specialistFee} ny sarany, na inona na inona lalana. Azo alahatra amin'ny alalan'ny Centre ValBio koa ny mpitari-dalana manampahaizana manokana.",
         specPrimatesText: "Gidro, anisan'izany ny gidro volamena mpihinam-bolo.",
-        specBirdsText: "Mpijery vorona: angataho amin'ny anarany ny mpitari-dalana manampahaizana momba ny vorona. <a class=\"text-link\" href=\"#birdwatching\">Fijerena vorona any Ranomafana →</a>",
+        specBirdsText: "Mpijery vorona: angataho amin'ny anarany ny mpitari-dalana manampahaizana momba ny vorona. <a class=\"text-link\" href=\"#birdwatching\">Fijerena vorona any Ranomafana</a>",
         specHerpsText: "Sahona, tana ary androngo rambo ravina.",
         specBotanyText: "Orkide, fanjana goavana ary ny ala mihitsy.",
         outsideMitsinjoText: "Mpitari-dalana avy amin'ny fiaraha-monina ao Ambatolahy no mitarika fitsangatsanganana atoandro sy alina, ary mankany amin'ny tanàna mivantana ny sarany.",
@@ -6434,9 +6475,9 @@
     }
     function stopLink(link) {
       if (!link) return '';
-      if (link.page === 'park') return `<a class="text-link tl-link" href="#park">${esc(t('linkPark'))} →</a>`;
-      if (link.page === 'eat') return `<a class="text-link tl-link" href="#eat">${esc(t('linkEat'))} →</a>`;
-      return `<a class="text-link tl-link" href="#do" onclick="return openDoBySlug('${link.slug}')">${esc(t('linkDo'))} →</a>`;
+      if (link.page === 'park') return `<a class="text-link tl-link" href="#park">${esc(t('linkPark'))}</a>`;
+      if (link.page === 'eat') return `<a class="text-link tl-link" href="#eat">${esc(t('linkEat'))}</a>`;
+      return `<a class="text-link tl-link" href="#do" onclick="return openDoBySlug('${link.slug}')">${esc(t('linkDo'))}</a>`;
     }
 
     let selectedItinerary = 'two-day-classic';
@@ -6490,7 +6531,7 @@
             ${needsGuide ? `<p class="small-muted">${esc(t('guideNote'))}</p>` : ''}
             <a class="btn btn-gold" href="#guides">${esc(t('howGuides'))}</a>
             <a class="btn btn-ghost" href="#getting-here">${esc(t('tabGettingHere'))}</a>
-            <a class="text-link" style="text-align: center; margin-top: 4px;" href="${esc(teamMailto('Ranomafana itinerary: ' + english(it, 'title')))}">${esc(t('askAboutPlan'))} →</a>
+            <a class="text-link" style="text-align: center; margin-top: 4px;" href="${esc(teamMailto('Ranomafana itinerary: ' + english(it, 'title')))}">${esc(t('askAboutPlan'))}</a>
             <button type="button" class="text-link print-btn" onclick="window.print()">${esc(t('printPlan'))}</button>
           </div>
         </aside>`;
@@ -6635,7 +6676,7 @@
           <div class="story-card-text">
             <span class="story-card-kicker">${kicker}</span>
             <h3 class="story-card-title">${esc(post.title)}</h3>
-            ${compact ? '' : `<p class="story-card-excerpt">${esc(post.excerpt)}</p><span class="text-link">${esc(t('readStory'))} →</span>`}
+            ${compact ? '' : `<p class="story-card-excerpt">${esc(post.excerpt)}</p><span class="text-link">${esc(t('readStory'))}</span>`}
           </div>
         </a>`;
     }
@@ -6658,7 +6699,7 @@
         <div class="story-hero"><img src="${esc(post.img)}" alt="" loading="lazy"></div>
         <p class="story-lede">${esc(post.excerpt)}</p>
         <div class="story-body">${body || `<p>${esc(t('storyComing'))}</p>`}</div>
-        <div class="m-actions"><a class="btn btn-ghost" href="#blog" onclick="closeModal('itemModal')">${esc(t('allStories'))} →</a>${shareButton()}</div>`);
+        <div class="m-actions"><a class="btn btn-ghost" href="#blog" onclick="closeModal('itemModal')">${esc(t('allStories'))}</a>${shareButton()}</div>`);
       markOpenItem('blog', post.slug);
     }
 
@@ -6705,7 +6746,7 @@
       }).join('') + `
           <a class="browse-card lift minor" href="#stay">
             <span class="browse-card-text">${esc(t('stayBrowseText'))}</span>
-            <span class="browse-card-link">${esc(t('stayBrowseLink'))} →</span>
+            <span class="browse-card-link">${esc(t('stayBrowseLink'))}</span>
           </a>`;
 
       const next = upcomingDated()[0];
@@ -6902,8 +6943,8 @@
           ${events.length
             ? `<div class="stack g-10">${events.map((e) => `<div class="month-event"><strong>${esc(e.title)}</strong><span class="when">${esc(e.whenLabel)}</span><span class="desc">${esc(e.desc)}</span></div>`).join('')}</div>`
             : `<p class="small-muted" style="font-size: 15px;">${esc(t('noEventsMonth'))}</p>`}
-          ${m.wet && bySlug(itineraryData, 'rainy-day') ? `<a class="text-link" style="font-size: 15px;" href="#itineraries" onclick="openItinerary('rainy-day'); return false;">${esc(t('rainyPlanLink'))} →</a>` : ''}
-          ${weekly.length ? `<p class="small-muted">${esc(t('weeklyLead'))} ${weekly.map((e) => `${esc(e.title)} (${esc(e.whenLabel)})`).join('; ')}.${weekly.some((e) => e.verified === false) ? ` ${esc(t('eventUnconfirmed'))}` : ''} <a class="text-link" style="font-size: 14px;" href="#events">${esc(t('navEvents'))} →</a></p>` : ''}
+          ${m.wet && bySlug(itineraryData, 'rainy-day') ? `<a class="text-link" style="font-size: 15px;" href="#itineraries" onclick="openItinerary('rainy-day'); return false;">${esc(t('rainyPlanLink'))}</a>` : ''}
+          ${weekly.length ? `<p class="small-muted">${esc(t('weeklyLead'))} ${weekly.map((e) => `${esc(e.title)} (${esc(e.whenLabel)})`).join('; ')}.${weekly.some((e) => e.verified === false) ? ` ${esc(t('eventUnconfirmed'))}` : ''} <a class="text-link" style="font-size: 14px;" href="#events">${esc(t('navEvents'))}</a></p>` : ''}
         </div>`;
     }
 
@@ -7076,7 +7117,7 @@
     /* A link target is a page ("#park"), a Things to do listing ("do:night-walk") or,
        for "valley", the valley map further down this page. */
     function whyLink([target, key], cls) {
-      const label = `${esc(t(key))} →`;
+      const label = `${esc(t(key))}`;
       if (target.startsWith('do:')) return `<a class="${cls}" href="#do" onclick="return openDoBySlug('${target.slice(3)}')">${label}</a>`;
       if (target === 'valley') return `<a class="${cls}" href="#why" onclick="document.getElementById('mapValley').scrollIntoView({ behavior: 'smooth', block: 'center' }); return false;">${label}</a>`;
       return `<a class="${cls}" href="${target}">${label}</a>`;
@@ -7093,7 +7134,7 @@
               <span class="why-card-num">${String(i + 1).padStart(2, '0')}</span>
               <span class="why-card-title">${esc(t(c.key + 'Title'))}</span>
               <span class="why-card-text">${esc(t(c.key + 'Text'))}</span>
-              <span class="why-card-more">${esc(t('whySeeMore'))} →</span>
+              <span class="why-card-more">${esc(t('whySeeMore'))}</span>
             </span>
           </button>`).join('');
       }
@@ -7274,8 +7315,8 @@
       const p = galleryShown[i];
       if (p.missing) { openGalleryPhoto(i + step, step); return; }
       const opener = p.page === 'stay' ? 'openStayModal' : p.page === 'eat' ? 'openEatModal' : 'openDoModal';
-      const from = p.page === 'park' || p.page === 'ranomafana' || p.page === 'events' || p.page === 'birdwatching' ?`<a class="text-link" href="#${p.page}">${esc(p.name)} →</a>`
-        : `<button type="button" class="text-link print-btn" data-name="${esc(p.name)}" onclick="${opener}(this.dataset.name)">${esc(p.name)} →</button>`;
+      const from = p.page === 'park' || p.page === 'ranomafana' || p.page === 'events' || p.page === 'birdwatching' ?`<a class="text-link" href="#${p.page}">${esc(p.name)}</a>`
+        : `<button type="button" class="text-link print-btn" data-name="${esc(p.name)}" onclick="${opener}(this.dataset.name)">${esc(p.name)}</button>`;
       showModal(`
         <div class="m-head">
           <span class="m-kicker">${esc(t('navGallery'))}</span>
@@ -7468,7 +7509,7 @@
             <span class="hub-card-body">
               <span class="hub-card-title">${esc(title)}</span>
               <span class="hub-card-desc">${esc(desc)}</span>
-              <span class="hub-card-go">${esc(t('hubOpen'))} →</span>
+              <span class="hub-card-go">${esc(t('hubOpen'))}</span>
             </span>
           </a>`;
         }).join('');
