@@ -198,7 +198,7 @@ const stayData = [
     verified: true,
     asOf: "2026-11",
     sourceNote: "Name corrected from 'Foret Astral' — Tripadvisor and Petit Futé both list it as Forêt Australe, at Ambatolahy. Rates, meals, Wi-Fi and features from Kyle's notes (received 11 Oct 2026), which confirm the phone and email. His notes also give www.groupeaustralhotel.com and www.foretaustral.groupeaustralhotel.com, but neither address resolved when checked on 11 Oct 2026, so no website is linked. Bungalow rates, the private bathroom and terrace, and austhotel309@gmail.com from the hotel's own rate sheet, photographed by Kyle (4 Nov 2026; copy in photo-originals/2026-11-04 Foret Australe/). It replaces the 60,000 and 80,000 Ar in his notes of 11 Oct 2026. The sheet prints the address as 'gmail.coms', read here as gmail.com: to be confirmed. It also confirms the phone, as does the plate at reception. Contactless cards from the BRED sign above the rate sheet. Meal prices are still from his notes. Photos: nine of Kyle's of 4 Nov 2026 (used as received, except that the two very dark bathroom photos were brightened; originals in the same folder) lead the gallery, ahead of the four older web photos.",
-    desc: "Eco-lodge at Ambatolahy immersed in nature, with rustic bungalows along the Namorona River near Ranomafana National Park, a private walking circuit, and lemurs in the hotel's own trees.",
+    desc: "Eco-lodge at Ambatolahy with rustic bungalows along the Namorona River near Ranomafana National Park, a private walking circuit, and lemurs in the hotel's own trees.",
     rooms: [
       { type: "Bungalow, 1 double bed (1–2 guests)", price: "68,000 Ar" },
       { type: "Bungalow, 1 double + 1 single bed (up to 3 guests)", price: "78,000 Ar" },
@@ -303,7 +303,7 @@ const stayData = [
     verified: true,
     asOf: "2026-11",
     sourceNote: "Meal prices and the event space for 40 people from Kyle, 3 Nov 2026. Photos: ten of Kyle's 22 of 3 Nov 2026 (look-alikes and distracting shots left out); they replace four older low-resolution web photos, whose files stay in images/ unused.",
-    desc: "Mid-range rooms and bungalows in a lush Namorona River landscape 5 km from Ranomafana, with dining, a bar, and kayaking or local excursions on request.",
+    desc: "Mid-range rooms and bungalows by the Namorona River, 5 km from Ranomafana, with a restaurant, a bar, and kayaking or local excursions on request.",
     gallery: [
       { src: "images/cristo-hotel-sign.jpg", alt: "The Cristo sign in front of the yellow main building at Cristo Hotel" },
       { src: "images/cristo-hotel-entrance.jpg", alt: "Stone steps up to the entrance of Cristo Hotel" },
@@ -333,7 +333,7 @@ const stayData = [
     verified: true,
     asOf: "2026-11",
     sourceNote: "Listed on Tripadvisor and Petit Futé as 'Le Grenat' / 'Hôtel Grenat', on the main road at the village exit. Rates, meals, features, +261 34 12 780 84 and legrenatran@gmail.com from Kyle's notes (received 11 Oct 2026). Previously listed: +261 34 20 622 88 (kept as a second number) and hotelgrenat@gmail.com (replaced by his email) — confirm which still work. Photos: Kyle, 18 Nov 2026 (11 of 17 used; originals in photo-originals/2026-11-18 Grenat Hotel/; the bathroom brightened, the rest resized only). They replace the five older web photos, whose files are kept, unused. Left out: the reception desk from inside (same desk as the doorway photo), the bar with a man at the counter and a bungalow with a man walking past (faces), a second twin room, the shower and the door of room 10 (look-alikes). Meals from the hotel's undated printed menu and laundry from its undated price sheet (Kyle's photos, 18 Nov 2026).",
-    desc: "Comfortable mid-range accommodation on the main road at the edge of the village, with river and rainforest views, private en-suite rooms, guarded private parking, and one of the better-reviewed restaurants in Ranomafana.",
+    desc: "A mid-range hotel on the main road at the edge of the village, with river and rainforest views, en-suite rooms, guarded parking, and one of the better-reviewed restaurants in Ranomafana.",
     rooms: [
       { type: "Single", price: "80,000 Ar" },
       { type: "Double", price: "80,000 Ar" },
@@ -678,7 +678,7 @@ const stayData = [
       { src: "images/lemur-coffee-hotel-exterior.jpg", fallback: "images/placeholder-lemur-coffee-hotel.jpg", alt: "Lemur Coffee Hotel exterior" },
       { src: "images/lemur-coffee-hotel-view.jpg", fallback: "images/placeholder-lemur-coffee-hotel.jpg", alt: "View from Lemur Coffee Hotel" }
     ],
-    desc: "A hybrid address combining accommodation, a specialty coffee house and a meeting space — the newest opening in Ranomafana, aimed at travellers who want a proper coffee and somewhere to sit and work.",
+    desc: "Rooms, a specialty coffee house and a meeting space under one roof: the newest opening in Ranomafana, for travellers who want a proper coffee and somewhere to sit and work.",
     rooms: [
       { type: "Price range", price: "75,000–145,000 Ar" },
       { type: "Standard double (2 people; TV, balcony)", price: "" },
@@ -710,7 +710,7 @@ const stayData = [
     verified: true,
     asOf: "2026-11",
     sourceNote: "Rates, meeting-hall hire and extra bedding from the hotel's rate sheet ('from 1 January 2024', photo from Kyle, 18 Nov 2026); room count, private bathrooms with hot water, TV room, free Wi-Fi, reception hours, phone and email from its leaflet (same day). Bar, coffee and 'no dining' from Kyle's notes (received 11 Oct 2026), which say Wi-Fi reaches some rooms. The rate sheet says the hotel belongs to the Catholic Church; it is run by ECAR. Kyle's photos of 18 Nov 2026 replaced four older web photos that showed the building before its yellow-and-red repaint (files kept in images/, unused). Snack menus (pizza, sandwiches, ice cream, juice, 'sur commande', order number +261 34 55 359 54) from photos the same day; Kyle confirmed on 18 Nov 2026 that they are Chez Jose's own. The restaurant flag stays off: snacks to order, no set meals.",
-    desc: "Centrally located, low-cost Catholic guest house in Ranomafana village — simple overnight lodging within walking distance of the thermal baths, with a bar, coffee, and pizzas, sandwiches and ice cream to order.",
+    desc: "A low-cost Catholic guest house in the centre of Ranomafana village, within walking distance of the thermal baths, with a bar, coffee, and pizzas, sandwiches and ice cream to order.",
     rooms: [
       { type: "Double (5 rooms)", price: "60,000 Ar" },
       { type: "Twin (5 rooms)", price: "60,000 Ar" },
@@ -763,7 +763,7 @@ const stayData = [
       { src: "images/coin-dor-restaurant.jpg", fallback: "images/placeholder-coin-dor.jpg", alt: "Restaurant or common area at Coin d’or" },
       { src: "images/coin-dor-view.jpg", fallback: "images/placeholder-coin-dor.jpg", alt: "View from Coin d’or" }
     ],
-    desc: "Small, charming, centrally located hotely — a village hostel with shared bathrooms and hot water — above its own restaurant, with karaoke and hearty local food.",
+    desc: "A small hotely (village hostel) in the centre, above its own restaurant, with shared bathrooms, hot water, karaoke and hearty local food.",
     features: ["Shared bathrooms", "No Wi-Fi", "Meals at the hotely (local restaurant) downstairs"],
     contact: { phone: "+261 34 31 318 09", email: "satsecretaire1@gmail.com", website: "", social: "" }
   },
@@ -801,7 +801,7 @@ const stayData = [
       { src: "images/akamasoa-guest-house-bathroom.jpg", alt: "A washroom with a basin, toilet and shower, Akamasoa" },
       { src: "images/akamasoa-guest-house-restaurant.jpg", alt: "Long wooden tables and chairs in the dining hall, Akamasoa" }
     ],
-    desc: "Simple, community-focused lodging in gardens below forested hills: a dormitory with student rates, and two rooms with their own kitchen. Basic, clean rooms and local hospitality.",
+    desc: "Simple lodging in gardens below forested hills: a dormitory with student rates, and two rooms with their own kitchen. The rooms are basic and clean.",
     contact: { phone: "+261 34 76 414 21", email: "", website: "", social: "", note: "For reservations." }
   },
   {
@@ -824,7 +824,7 @@ const stayData = [
       { src: "images/chez-liantsoa-restaurant.jpg", fallback: "images/placeholder-chez-liantsoa.jpg", alt: "Restaurant or common area at Chez Liantsoa" },
       { src: "images/chez-liantsoa-view.jpg", fallback: "images/placeholder-chez-liantsoa.jpg", alt: "View from Chez Liantsoa" }
     ],
-    desc: "Cosy, budget-friendly inn with clean rooms and warm local hospitality, close to the village centre and to guides and transport. The bathrooms are shared and there is no hot water. Its sign calls it an annexe of Hotel In-Kavana: the two are linked but separate places to stay.",
+    desc: "A budget inn with clean rooms, close to the village centre and to guides and transport. The bathrooms are shared and there is no hot water. Its sign calls it an annexe of Hotel In-Kavana: the two are linked but separate places to stay.",
     contact: { phone: "+261 34 89 594 20", email: "", website: "", social: "" }
   },
   {
@@ -880,7 +880,7 @@ const stayData = [
       { src: "images/mirary-hotel-restaurant.jpg", fallback: "images/placeholder-mirary-hotel.jpg", alt: "Restaurant or common area at Mirary Hotel" },
       { src: "images/mirary-hotel-view.jpg", fallback: "images/placeholder-mirary-hotel.jpg", alt: "View from Mirary Hotel" }
     ],
-    desc: "Peaceful hotel with standalone garden bungalows and double rooms, private bathrooms, river access, a hotely-style restaurant, and easy access to local trekking start points.",
+    desc: "Peaceful hotel with standalone garden bungalows and double rooms, private bathrooms, river access, a hotely-style restaurant, and the starting points of local treks close by.",
     rooms: [
       { type: "Double", price: "50,000 Ar" },
       { type: "Triple (1 double + 1 single bed)", price: "80,000 Ar" }
@@ -1299,7 +1299,7 @@ const doData = [
     desc: "UNESCO World Heritage montane rainforest holding fourteen lemur species, including the critically endangered golden bamboo lemur. A certified guide is mandatory for international visitors — arrange one through your hotel, or choose from the guides working that day when you arrive.",
     /* Longer introduction for the National Park page (the card uses desc). */
     intro: [
-      "Ranomafana became Madagascar’s fourth national park in 1991 and a UNESCO World Heritage Site in 2007. It protects 43,550 hectares of mountainous rainforest and is one of the island’s most important conservation sites, a treasure trove of plants and animals found nowhere else. It is the fourth most visited national park in Madagascar by international tourists, and for good reason.",
+      "Ranomafana became Madagascar’s fourth national park in 1991 and a UNESCO World Heritage Site in 2007. It protects 43,550 hectares of mountainous rainforest and is one of the island’s most important conservation sites, full of plants and animals found nowhere else. It is the fourth most visited national park in Madagascar by international tourists.",
       "Every visitor buys an entry ticket and pays for a local guide to show them the forest. What you spend depends on the circuit, the guide and what you hope to see. Arrange a guide through your hotel, or turn up at the park and choose from the guides working that day."
     ],
     tips: [
@@ -1606,7 +1606,7 @@ const doData = [
     gallery: [
       { src: "images/thermal-massage-room.jpg", fallback: "images/placeholder-thermal-massage.jpg", alt: "The massage room at Station Thermale" }
     ],
-    desc: "Massage in a room set aside within the Station Thermale's private baths — the standard reward after a long circuit. Book at the same ticket counter as the pool and baths.",
+    desc: "Massage in a room set aside within the Station Thermale's private baths. Book it at the same ticket counter as the pool and baths.",
     tips: ["Book at the Station Thermale ticket counter", "Bring your own massage oil — the centre does not supply it", "Hotel Thermal's spa, a separate business, also offers massages"],
     contact: { phone: "", email: "", website: "", social: "", note: "Book at the Station Thermale ticket booth. Not part of Hotel Thermal." }
   },
@@ -1627,7 +1627,7 @@ const doData = [
       { src: "images/hotel-thermal-garden.jpg", alt: "Garden at Hotel Thermal" },
       { src: "images/hotel-thermal-exterior.jpg", alt: "Hotel Thermal exterior" }
     ],
-    desc: "The closest thing in Ranomafana to a familiar hot tub, with poolside drinks. Hotel Thermal has three small thermal pools, each seating up to eight, that anyone can book — at any time, late evening included. Changing rooms, toilets, cold showers and towels are provided, and you can order drinks, with or without alcohol, to enjoy in the pool.",
+    desc: "The closest thing in Ranomafana to a familiar hot tub, with poolside drinks. Hotel Thermal has three small thermal pools, each seating up to eight, that anyone can book — at any time, late evening included. Changing rooms, toilets, cold showers and towels are provided, and you can order drinks, with or without alcohol, to have in the pool.",
     tips: ["Book in advance at the Hotel Thermal front desk", "Good for a group, or an evening soak after the public pool has closed", "Towels provided — unlike the public pool"],
     contact: { phone: "+261 34 75 512 26 / +261 32 12 511 26", email: "thermal@lerelais.mg", website: "https://thermal-ranomafana.mg/en/home/", social: "https://www.facebook.com/thermalranomafana/" }
   },
@@ -1741,7 +1741,7 @@ const doData = [
       { src: "images/ranomafana-arboretum-building.jpg", alt: "Stone steps up to the green Arboretum building, Ranomafana Arboretum" },
       { src: "images/ranomafana-arboretum-entrance.jpg", alt: "The painted Arboretum sign by the road, with a tree, a chameleon and phone numbers, Ranomafana Arboretum" }
     ],
-    desc: "A hidden gem 2 km east of the town centre on the RN25, founded by Dan Turk: its first 36 native tree species were planted in June 1994, and it was laid out as an arboretum in 2005. It now holds more than 250 species of native tree, more than 65 native palms and more than 200 selected varieties of fruit tree, each with an information plaque, and a nursery that raises palms. A guide speaking English, French and Malagasy leads a loop of the grounds, with stunning views of the valley, unusual fruits to try, and lowland streaked tenrecs, chameleons, butterflies and frogs along the way. A chalet and wide lawns make it a good place for a picnic.",
+    desc: "The arboretum, 2 km east of the town centre on the RN25, was founded by Dan Turk: its first 36 native tree species were planted in June 1994, and it was laid out as an arboretum in 2005. It now holds more than 250 species of native tree, more than 65 native palms and more than 200 selected varieties of fruit tree, each with an information plaque, and a nursery that raises palms. A guide speaking English, French and Malagasy leads a loop of the grounds, with views over the valley, unusual fruits to try, and lowland streaked tenrecs, chameleons, butterflies and frogs along the way. A chalet and wide lawns make it a good place for a picnic.",
     tips: ["2 km east of the town centre: a two-minute drive or an easy 20-minute walk", "Expect the guided loop to take an hour or more", "Be ready to feed a giant Parson's chameleon an insect snack", "Night visits too (30,000 Ar per person)", "Bring a picnic: there is a chalet and plenty of lawn", "Gentle walking — suits varied mobility", "Good option in heavy rain or on a rest day"],
     contact: { phone: "+261 34 99 164 66 / +261 34 90 404 60 / +261 38 11 411 36", email: "arboretum.rmfna@gmail.com", website: "", social: "" }
   },
@@ -1808,7 +1808,7 @@ const doData = [
       { src: "images/famiova-soaps.jpg", alt: "Soa Be honey and rosemary soaps in a woven basket, for sale at Famiova" },
       { src: "images/famiova-honey.jpg", alt: "Three bottles of niaouli honey on a wooden shelf, for sale at Famiova" }
     ],
-    desc: "A women's weaving cooperative in the heart of Ranomafana village, in the old museum. At wooden hand looms, the weavers turn cotton, silk, sisal and raffia into scarves and cloth in the Malagasy weaving tradition, and you can watch them work and buy straight from the cooperative. Famiova means “transformation”: of raw fibre into cloth, and of the lives of the women who weave it. The shop also sells Ranomafana tote bags, baskets, leather sandals, honey and handmade soap.",
+    desc: "A women's weaving cooperative in the centre of Ranomafana village, in the old museum. At wooden hand looms, the weavers turn cotton, silk, sisal and raffia into scarves and cloth in the Malagasy weaving tradition, and you can watch them work and buy straight from the cooperative. Famiova means “transformation”: of raw fibre into cloth, and of the lives of the women who weave it. The shop also sells Ranomafana tote bags, baskets, leather sandals, honey and handmade soap.",
     tips: ["Scarves can be woven to order (material, style, colour): ask well ahead", "Scarves have sold for around 50,000 Ar — ask for today's prices", "Ask before photographing the weavers", "Bring small Ariary notes"],
     contact: { phone: "", email: "", website: "", social: "" }
   },
@@ -1937,8 +1937,8 @@ const doData = [
       { src: "images/voi-ambohimagneva-mantis.jpg", alt: "A brown mantis on a visitor's hand at VOI Ambohimagneva" },
       { src: "images/voi-ambohimagneva-crab.jpg", alt: "A small freshwater crab on a wet rock at VOI Ambohimagneva" }
     ],
-    desc: "A 75-hectare community-managed reserve bordering the national park, governed through a VOI partnership under Madagascar's GELOSE framework, with MNP-certified guide access and Centre ValBio research collaboration. Trails and a river waterfall site are being opened to visitors. Visitor fees go directly to the village and the people who live there.",
-    tips: ["Access on foot, roughly 3 km from town", "Contact ahead — visitor access is still being established"],
+    desc: "A 75-hectare reserve bordering the national park, run by the local community association (the VOI) under Madagascar's community forest-management law, GELOSE. Its guides are certified by Madagascar National Parks, and it has research links to Centre ValBio. Trails and a river waterfall are being opened to visitors. Visitor fees go directly to the village and the people who live there.",
+    tips: ["Access on foot, roughly 3 km from town", "Contact them first: visitor access is still being set up"],
     contact: { phone: "+261 34 31 153 32", email: "", website: "", social: "" }
   },
   {
@@ -2049,7 +2049,7 @@ const itineraryData = [
     bestFor: "Travellers passing through, or a rest day between circuits",
     parkTicket: "Not needed",
     costs: ["do:station-thermale", "?do:night-walk"],
-    desc: "Everything worth doing in Ranomafana that needs no park entry fee and no certified guide — a good option if you arrive late or leave early.",
+    desc: "The things to do in Ranomafana that need no park ticket and no certified guide: a good option if you arrive late or leave early.",
     stops: [
       "Morning — Jirama waterfall walk, upriver from the public pool",
       "Midday — Lunch at Manja or Coin d'or",
@@ -2237,7 +2237,7 @@ const blogData = [
     category: "Practical",
     status: "draft",
     img: "images/ranomafana-national-park-trail.jpg",
-    excerpt: "Entry, community tax, guide fee — three separate payments, three different destinations. A plain breakdown of where the money goes.",
+    excerpt: "Entry, the community tax and the guide fee are three separate payments, and each goes somewhere different.",
     sample: true,
     body: [
       "A day in Ranomafana National Park involves three separate payments, all in Ariary cash: the entry ticket, a community fee, and your guide.",
@@ -2246,7 +2246,7 @@ const blogData = [
       "## Where the money goes",
       "Madagascar National Parks has managed the park since 1991. Income from entrance fees, guided tours and other park activities is often reinvested in maintaining the park, protecting its wildlife and supporting biodiversity research. MNP sends rangers on patrol, builds and maintains boundary markers, firebreaks and watchtowers, and employs local people as guides, escorts, porters, cooks and labourers.",
       "## Why it matters now",
-      "Before the COVID-19 pandemic the park welcomed close to 19,000 international visitors a year. Since then it has been closer to 3,500. Every ticket helps restore what was lost."
+      "Before the COVID-19 pandemic the park welcomed close to 19,000 international visitors a year. Since then it has been closer to 3,500."
     ]
   },
   {
@@ -2301,7 +2301,7 @@ const blogData = [
       "## What it costs",
       "The guide fee is paid once per group, so it costs less each with more people: 90,000 Ar for Talatakely or Sahamalaotra, 120,000 Ar for Vatoharanana and 150,000 Ar for the Valohoaka trek. One guide takes a group of one to four; groups of six or more need at least two. Travelling solo? Ask the park office to pair you with other visitors.",
       "## Specialists",
-      "Specialist guides are experts in finding and explaining the park’s birds, plants, or reptiles and amphibians, and cost 220,000 Ar on any circuit. Birders should ask for one by name.",
+      "Specialist guides know the park’s birds, plants, or reptiles and amphibians, and where to find them. They cost 220,000 Ar on any circuit. Birders should ask for one by name.",
       "Whoever you go with, tell them about your fitness and any worries: they will adapt the route to suit you."
     ]
   },
@@ -2328,10 +2328,10 @@ const blogData = [
     category: "Practical",
     status: "draft",
     img: "images/voi-ambohimagneva-hiking-trail.jpg",
-    excerpt: "Steep trails, rain in every season and a cash-only gate. The short list that matters.",
+    excerpt: "Steep trails, rain in every season and a cash-only gate: what to bring.",
     sample: true,
     body: [
-      "Ranomafana’s trails are steep, often wet, and a long way from a shop. The short list that matters:",
+      "Ranomafana’s trails are steep, often wet, and a long way from a shop. Bring these:",
       "## For the forest",
       "A rain shell, in every season. Sturdy shoes, because the trails are steep and slippery when wet. Water, and on the long Valohoaka trek, lunch and two litres.",
       "## For after dark",

@@ -227,7 +227,7 @@ const LISTING_TRANSLATIONS = {
     },
     "foret-australe": {
       "desc": {
-        "en": "Eco-lodge at Ambatolahy immersed in nature, with rustic bungalows along the Namorona River near Ranomafana National Park, a private walking circuit, and lemurs in the hotel's own trees.",
+        "en": "Eco-lodge at Ambatolahy with rustic bungalows along the Namorona River near Ranomafana National Park, a private walking circuit, and lemurs in the hotel's own trees.",
         "fr": "Écolodge à Ambatolahy en pleine nature, avec des bungalows rustiques au bord de la Namorona près du parc national de Ranomafana, un circuit de promenade privé et des lémuriens dans les arbres de l’hôtel.",
         "de": "Öko-Lodge in Ambatolahy mitten in der Natur, mit rustikalen Bungalows am Fluss Namorona nahe dem Nationalpark Ranomafana, einem eigenen Rundweg und Lemuren in den Bäumen des Hotels.",
         "mg": "Eco-lodge ao Ambatolahy eo afovoan'ny zavaboary, misy bungalow tsotra eo amoron'ny renirano Namorona akaikin'ny valan-javaboahary Ranomafana, lalana fitsangatsanganana manokana, ary gidro eny amin'ireo hazon'ny hotely."
@@ -592,7 +592,7 @@ const LISTING_TRANSLATIONS = {
     },
     "cristo-hotel": {
       "desc": {
-        "en": "Mid-range rooms and bungalows in a lush Namorona River landscape 5 km from Ranomafana, with dining, a bar, and kayaking or local excursions on request.",
+        "en": "Mid-range rooms and bungalows by the Namorona River, 5 km from Ranomafana, with a restaurant, a bar, and kayaking or local excursions on request.",
         "fr": "Chambres et bungalows de milieu de gamme dans un paysage luxuriant au bord de la Namorona, à 5 km de Ranomafana, avec restaurant, bar, et kayak ou excursions locales sur demande.",
         "de": "Mittelklassezimmer und Bungalows in der üppigen Flusslandschaft der Namorona, 5 km von Ranomafana, mit Restaurant, Bar und auf Wunsch Kajakfahren oder Ausflügen in der Umgebung.",
         "mg": "Efitrano sy bungalow antonony eo anivon'ny tontolo maitso amoron'ny renirano Namorona, 5 km miala an'i Ranomafana, misy trano fisakafoana, bar, ary kayak na fitsangatsanganana manodidina raha angatahina."
@@ -668,7 +668,7 @@ const LISTING_TRANSLATIONS = {
     },
     "grenat-hotel": {
       "desc": {
-        "en": "Comfortable mid-range accommodation on the main road at the edge of the village, with river and rainforest views, private en-suite rooms, guarded private parking, and one of the better-reviewed restaurants in Ranomafana.",
+        "en": "A mid-range hotel on the main road at the edge of the village, with river and rainforest views, en-suite rooms, guarded parking, and one of the better-reviewed restaurants in Ranomafana.",
         "fr": "Hébergement confortable de milieu de gamme sur la route principale, en bordure du village, avec vue sur la rivière et la forêt, chambres privées avec salle de bain, parking privé gardé et l’un des restaurants les mieux notés de Ranomafana.",
         "de": "Komfortable Mittelklasseunterkunft an der Hauptstraße am Ortsrand, mit Blick auf Fluss und Regenwald, Privatzimmern mit eigenem Bad, bewachtem Privatparkplatz und einem der am besten bewerteten Restaurants in Ranomafana.",
         "mg": "Toerana hatoriana antonony sady mahafinaritra eo amin'ny lalana lehibe amin'ny sisin-tanàna, misy fijery ny renirano sy ny ala, efitrano manokana misy efitra fandroana, toeram-piantsonana manokana voaambina, ary iray amin'ireo trano fisakafoana tsara laza indrindra eto Ranomafana."
@@ -1909,7 +1909,7 @@ const LISTING_TRANSLATIONS = {
     },
     "lemur-coffee-hotel": {
       "desc": {
-        "en": "A hybrid address combining accommodation, a specialty coffee house and a meeting space — the newest opening in Ranomafana, aimed at travellers who want a proper coffee and somewhere to sit and work.",
+        "en": "Rooms, a specialty coffee house and a meeting space under one roof: the newest opening in Ranomafana, for travellers who want a proper coffee and somewhere to sit and work.",
         "fr": "Une adresse hybride qui réunit hébergement, café de spécialité et espace de réunion — la plus récente ouverture de Ranomafana, pensée pour les voyageurs qui veulent un vrai café et un endroit où s’asseoir pour travailler.",
         "de": "Eine Mischung aus Unterkunft, Spezialitätenkaffee und Treffpunkt – die neueste Eröffnung in Ranomafana, gedacht für Reisende, die einen guten Kaffee und einen Platz zum Arbeiten suchen.",
         "mg": "Toerana mitambatra misy fandriana, trano fisotroana kafe manokana ary efitrano fivoriana — ny vao nisokatra farany teto Ranomafana, natao ho an'ny mpizahatany mila kafe tsara sy toerana hipetrahana hiasa."
@@ -2085,7 +2085,7 @@ const LISTING_TRANSLATIONS = {
     },
     "chez-jose": {
       "desc": {
-        "en": "Centrally located, low-cost Catholic guest house in Ranomafana village — simple overnight lodging within walking distance of the thermal baths, with a bar, coffee, and pizzas, sandwiches and ice cream to order.",
+        "en": "A low-cost Catholic guest house in the centre of Ranomafana village, within walking distance of the thermal baths, with a bar, coffee, and pizzas, sandwiches and ice cream to order.",
         "fr": "Maison d’hôtes catholique bon marché, au centre du village de Ranomafana — un hébergement simple pour la nuit, à distance de marche des bains thermaux, avec bar, café, et pizzas, sandwichs et glaces sur commande.",
         "de": "Zentral gelegenes, günstiges katholisches Gästehaus im Ort Ranomafana – einfache Übernachtung in Gehweite der Thermalbäder, mit Bar, Kaffee sowie Pizza, Sandwiches und Eis auf Bestellung.",
         "mg": "Trano fandraisana vahiny katolika mora vidy eo afovoan'ny tanànan'i Ranomafana — toerana tsotra hatoriana, azo andehanana an-tongotra mankany amin'ny fandroana rano mafana, misy bar sy kafe, ary pizza, sandwich ary glasy azo kaomandy."
@@ -2243,7 +2243,7 @@ const LISTING_TRANSLATIONS = {
     },
     "coin-dor": {
       "desc": {
-        "en": "Small, charming, centrally located hotely — a village hostel with shared bathrooms and hot water — above its own restaurant, with karaoke and hearty local food.",
+        "en": "A small hotely (village hostel) in the centre, above its own restaurant, with shared bathrooms, hot water, karaoke and hearty local food.",
         "fr": "Petit hotely charmant et central — une auberge de village avec salles de bain partagées et eau chaude — au-dessus de son propre restaurant, avec karaoké et cuisine locale copieuse.",
         "de": "Kleines, charmantes, zentral gelegenes Hotely – eine einfache Dorfherberge mit Gemeinschaftsbädern und Warmwasser – über dem eigenen Restaurant, mit Karaoke und herzhafter lokaler Küche.",
         "mg": "Hotely kely mahafinaritra eo afovoan-tanàna — toerana tsotra hatoriana misy efitra fandroana iombonana sy rano mafana — eo ambonin'ny trano fisakafoany manokana, misy karaoke sy sakafo malagasy matsiro sady be."
@@ -2293,7 +2293,7 @@ const LISTING_TRANSLATIONS = {
     },
     "akamasoa-guest-house": {
       "desc": {
-        "en": "Simple, community-focused lodging in gardens below forested hills: a dormitory with student rates, and two rooms with their own kitchen. Basic, clean rooms and local hospitality.",
+        "en": "Simple lodging in gardens below forested hills: a dormitory with student rates, and two rooms with their own kitchen. The rooms are basic and clean.",
         "fr": "Hébergement simple, tourné vers la communauté, dans des jardins au pied de collines boisées : un dortoir à tarifs étudiants, et deux chambres avec leur propre cuisine. Chambres simples et propres, accueil local.",
         "de": "Einfache, gemeinschaftlich geführte Unterkunft in Gärten unterhalb bewaldeter Hügel: ein Schlafsaal mit Studententarifen und zwei Zimmer mit eigener Küche. Schlichte, saubere Zimmer und herzliche Gastfreundschaft.",
         "mg": "Toerana hatoriana tsotra, mifantoka amin'ny fiaraha-monina, anaty zaridaina eo ambanin'ny havoana misy ala: efitrano fatoriana iombonana misy vidiny ho an'ny mpianatra, ary efitrano roa misy lakozia manokana. Efitrano tsotra sady madio, fandraisana mafana avy amin'ny mponina."
@@ -2405,7 +2405,7 @@ const LISTING_TRANSLATIONS = {
     },
     "chez-liantsoa": {
       "desc": {
-        "en": "Cosy, budget-friendly inn with clean rooms and warm local hospitality, close to the village centre and to guides and transport. The bathrooms are shared and there is no hot water. Its sign calls it an annexe of Hotel In-Kavana: the two are linked but separate places to stay.",
+        "en": "A budget inn with clean rooms, close to the village centre and to guides and transport. The bathrooms are shared and there is no hot water. Its sign calls it an annexe of Hotel In-Kavana: the two are linked but separate places to stay.",
         "fr": "Auberge chaleureuse et bon marché, aux chambres propres et à l’accueil local attentionné, près du centre du village, des guides et des transports. Les salles de bain sont communes et il n’y a pas d’eau chaude. Son enseigne la présente comme une annexe de l’Hôtel In-Kavana : les deux sont liés, mais ce sont deux établissements distincts.",
         "de": "Gemütliche, günstige Herberge mit sauberen Zimmern und herzlicher Gastfreundschaft, nahe dem Ortszentrum, den Guides und den Verkehrsmitteln. Die Bäder werden geteilt, warmes Wasser gibt es nicht. Ihr Schild nennt sie eine Dependance des Hotel In-Kavana: Beide gehören zusammen, sind aber getrennte Unterkünfte.",
         "mg": "Trano fandraisana vahiny mafana sady mora vidy, misy efitrano madio sy fandraisana tsara avy amin'ny mponina, akaikin'ny afovoan-tanàna, ny mpitari-dalana ary ny fitaterana. Iombonana ny efitra fandroana ary tsy misy rano mafana. Ny takelany dia milaza azy ho sampan'ny Hotel In-Kavana: mifandray izy roa nefa toerana fandraisana vahiny samy hafa."
@@ -2535,7 +2535,7 @@ const LISTING_TRANSLATIONS = {
     },
     "mirary-hotel": {
       "desc": {
-        "en": "Peaceful hotel with standalone garden bungalows and double rooms, private bathrooms, river access, a hotely-style restaurant, and easy access to local trekking start points.",
+        "en": "Peaceful hotel with standalone garden bungalows and double rooms, private bathrooms, river access, a hotely-style restaurant, and the starting points of local treks close by.",
         "fr": "Hôtel paisible avec des bungalows indépendants dans le jardin et des chambres doubles, salles de bain privées, accès à la rivière, un restaurant de type hotely, et un accès facile aux points de départ des randonnées.",
         "de": "Ruhiges Hotel mit freistehenden Gartenbungalows und Doppelzimmern, eigenen Bädern, Zugang zum Fluss, einem Restaurant im Hotely-Stil und kurzen Wegen zu den Startpunkten der Wanderungen.",
         "mg": "Hotely milamina misy bungalow mitokana ao an-jaridaina sy efitrano roa olona, efitra fandroana manokana, fidinana amin'ny renirano, trano fisakafoana tahaka ny hotely malagasy, ary akaiky ireo toerana fiaingana amin'ny dia an-tongotra."
@@ -3595,7 +3595,7 @@ const LISTING_TRANSLATIONS = {
       },
       "intro": {
         "en": [
-          "Ranomafana became Madagascar’s fourth national park in 1991 and a UNESCO World Heritage Site in 2007. It protects 43,550 hectares of mountainous rainforest and is one of the island’s most important conservation sites, a treasure trove of plants and animals found nowhere else. It is the fourth most visited national park in Madagascar by international tourists, and for good reason.",
+          "Ranomafana became Madagascar’s fourth national park in 1991 and a UNESCO World Heritage Site in 2007. It protects 43,550 hectares of mountainous rainforest and is one of the island’s most important conservation sites, full of plants and animals found nowhere else. It is the fourth most visited national park in Madagascar by international tourists.",
           "Every visitor buys an entry ticket and pays for a local guide to show them the forest. What you spend depends on the circuit, the guide and what you hope to see. Arrange a guide through your hotel, or turn up at the park and choose from the guides working that day."
         ],
         "fr": [
@@ -4871,7 +4871,7 @@ const LISTING_TRANSLATIONS = {
     "thermal-massage": {
       "name": { "en": "Thermal Massage", "fr": "Massage thermal", "de": "Massage im Thermalbad", "mg": "Fanorana" },
       "desc": {
-        "en": "Massage in a room set aside within the Station Thermale's private baths — the standard reward after a long circuit. Book at the same ticket counter as the pool and baths.",
+        "en": "Massage in a room set aside within the Station Thermale's private baths. Book it at the same ticket counter as the pool and baths.",
         "fr": "Massage dans une salle aménagée au sein des bains privés de la Station Thermale — la récompense classique après un long circuit. Réservation au même guichet que la piscine et les bains.",
         "de": "Massage in einem eigenen Raum bei den Badekabinen der Station Thermale – die übliche Belohnung nach einem langen Rundweg. Buchung am selben Schalter wie Becken und Badekabinen.",
         "mg": "Fanorana ao amin'ny efitrano natokana ao amin'ny fandroana manokana ao amin'ny Station Thermale — valisoa mahazatra aorian'ny lalana lava. Mamandriha eo amin'ny varavarankely iray amin'ny dobo sy ny fandroana."
@@ -4926,7 +4926,7 @@ const LISTING_TRANSLATIONS = {
         "mg": "Dobo rano mafana ao amin'ny Hotel Thermal"
       },
       "desc": {
-        "en": "The closest thing in Ranomafana to a familiar hot tub, with poolside drinks. Hotel Thermal has three small thermal pools, each seating up to eight, that anyone can book — at any time, late evening included. Changing rooms, toilets, cold showers and towels are provided, and you can order drinks, with or without alcohol, to enjoy in the pool.",
+        "en": "The closest thing in Ranomafana to a familiar hot tub, with poolside drinks. Hotel Thermal has three small thermal pools, each seating up to eight, that anyone can book — at any time, late evening included. Changing rooms, toilets, cold showers and towels are provided, and you can order drinks, with or without alcohol, to have in the pool.",
         "fr": "Ce qui ressemble le plus, à Ranomafana, à un jacuzzi classique, avec boissons au bord du bassin. L’Hôtel Thermal possède trois petits bassins d’eau thermale de huit places chacun, que tout le monde peut réserver — à toute heure, y compris tard le soir. Vestiaires, toilettes, douches froides et serviettes sont fournis, et vous pouvez commander des boissons, avec ou sans alcool, à déguster dans le bassin.",
         "de": "Das, was in Ranomafana einem vertrauten Whirlpool am nächsten kommt, mit Getränken am Beckenrand. Das Hotel Thermal hat drei kleine Thermalbecken für je bis zu acht Personen, die jeder buchen kann – zu jeder Zeit, auch spätabends. Umkleiden, Toiletten, kalte Duschen und Handtücher sind vorhanden, und Sie können Getränke mit oder ohne Alkohol bestellen und im Becken genießen.",
         "mg": "Ny akaiky indrindra eto Ranomafana amin'ny dobo rano mafana mahazatra, misy zava-pisotro eo amoron'ny dobo. Manana dobo rano mafana kely telo ny Hotel Thermal, samy ho an'olona valo hatramin'ny farany, azon'ny rehetra amandrihana — na amin'ny ora inona na inona, eny fa na dia alina be aza. Misy efitrano fanovana akanjo, kabone, fandroana rano mangatsiaka ary lamba famaohana, ary afaka manafatra zava-pisotro misy toaka na tsy misy ianao hosotroina ao anaty dobo."
@@ -5190,7 +5190,7 @@ const LISTING_TRANSLATIONS = {
         "mg": "Arboretum Ranomafana"
       },
       "desc": {
-        "en": "A hidden gem 2 km east of the town centre on the RN25, founded by Dan Turk: its first 36 native tree species were planted in June 1994, and it was laid out as an arboretum in 2005. It now holds more than 250 species of native tree, more than 65 native palms and more than 200 selected varieties of fruit tree, each with an information plaque, and a nursery that raises palms. A guide speaking English, French and Malagasy leads a loop of the grounds, with stunning views of the valley, unusual fruits to try, and lowland streaked tenrecs, chameleons, butterflies and frogs along the way. A chalet and wide lawns make it a good place for a picnic.",
+        "en": "The arboretum, 2 km east of the town centre on the RN25, was founded by Dan Turk: its first 36 native tree species were planted in June 1994, and it was laid out as an arboretum in 2005. It now holds more than 250 species of native tree, more than 65 native palms and more than 200 selected varieties of fruit tree, each with an information plaque, and a nursery that raises palms. A guide speaking English, French and Malagasy leads a loop of the grounds, with views over the valley, unusual fruits to try, and lowland streaked tenrecs, chameleons, butterflies and frogs along the way. A chalet and wide lawns make it a good place for a picnic.",
         "fr": "Un trésor caché à 2 km à l’est du centre du village sur la RN25, fondé par Dan Turk : ses 36 premières espèces d’arbres autochtones ont été plantées en juin 1994, et il est devenu un arboretum en 2005. Il compte aujourd’hui plus de 250 espèces d’arbres autochtones, plus de 65 palmiers autochtones et plus de 200 variétés sélectionnées d’arbres fruitiers, chacun avec sa plaque d’information, ainsi qu’une pépinière où l’on multiplie les palmiers. Un guide parlant anglais, français et malgache vous fait faire le tour du domaine, avec des vues splendides sur la vallée, des fruits insolites à goûter, et en chemin des tenrecs rayés, des caméléons, des papillons et des grenouilles. Un chalet et de grandes pelouses en font un bon lieu de pique-nique.",
         "de": "Ein verstecktes Juwel 2 km östlich des Ortszentrums an der RN25, gegründet von Dan Turk: Die ersten 36 heimischen Baumarten wurden im Juni 1994 gepflanzt, 2005 wurde daraus ein Arboretum. Heute wachsen hier mehr als 250 heimische Baumarten, mehr als 65 heimische Palmen und mehr als 200 ausgewählte Obstbaumsorten, jede mit einer Infotafel, dazu eine Baumschule, die Palmen zieht. Ein Guide, der Englisch, Französisch und Madagassisch spricht, führt eine Runde über das Gelände, mit herrlichem Blick ins Tal, ungewöhnlichen Früchten zum Probieren und unterwegs Streifentanreks, Chamäleons, Schmetterlingen und Fröschen. Ein Pavillon und weite Rasenflächen machen es zu einem guten Ort für ein Picknick.",
         "mg": "Harena miafina 2 km atsinanan'ny afovoan-tanàna eo amin'ny RN25, naorin'i Dan Turk: ny karazan-kazo teratany 36 voalohany dia nambolena tamin'ny jona 1994, ary lasa arboretum izy tamin'ny 2005. Ankehitriny dia misy karazan-kazo teratany mihoatra ny 250, karazana rofia sy palmie teratany mihoatra ny 65 ary karazana hazo fihinam-boa voafantina mihoatra ny 200, samy manana takelaka fanazavana, ary toeram-pambolena zana-kazo mampitombo palmie. Mpitari-dalana miteny anglisy, frantsay ary malagasy no mitondra anao manodidina ny toerana, misy fijery mahavariana ny lohasaha, voankazo hafahafa azo andramana, ary sora, tana, lolo ary sahona eny an-dalana. Trano kely sy bozaka midadasika no mahatonga azy ho toerana tsara hanaovana pique-nique."
@@ -5540,7 +5540,7 @@ const LISTING_TRANSLATIONS = {
         "mg": "Famiova: mpanenona nentin-drazana"
       },
       "desc": {
-        "en": "A women's weaving cooperative in the heart of Ranomafana village, in the old museum. At wooden hand looms, the weavers turn cotton, silk, sisal and raffia into scarves and cloth in the Malagasy weaving tradition, and you can watch them work and buy straight from the cooperative. Famiova means “transformation”: of raw fibre into cloth, and of the lives of the women who weave it. The shop also sells Ranomafana tote bags, baskets, leather sandals, honey and handmade soap.",
+        "en": "A women's weaving cooperative in the centre of Ranomafana village, in the old museum. At wooden hand looms, the weavers turn cotton, silk, sisal and raffia into scarves and cloth in the Malagasy weaving tradition, and you can watch them work and buy straight from the cooperative. Famiova means “transformation”: of raw fibre into cloth, and of the lives of the women who weave it. The shop also sells Ranomafana tote bags, baskets, leather sandals, honey and handmade soap.",
         "fr": "Une coopérative de tisserandes au cœur du village de Ranomafana, dans l’ancien musée. Sur des métiers à tisser en bois, les tisserandes transforment le coton, la soie, le sisal et le raphia en écharpes et en étoffes selon la tradition malgache du tissage ; on peut les regarder travailler et acheter directement à la coopérative. Famiova signifie « transformation » : celle de la fibre brute en tissu, et celle de la vie des femmes qui le tissent. La boutique vend aussi des sacs en toile Ranomafana, des paniers, des sandales en cuir, du miel et du savon artisanal.",
         "de": "Eine Webkooperative von Frauen mitten im Ort Ranomafana, im alten Museum. An hölzernen Handwebstühlen verarbeiten die Weberinnen Baumwolle, Seide, Sisal und Raffia zu Schals und Stoffen in madagassischer Webtradition; man kann ihnen bei der Arbeit zusehen und direkt bei der Kooperative kaufen. Famiova bedeutet „Wandel“: von der Rohfaser zum Stoff und im Leben der Frauen, die ihn weben. Der Laden verkauft außerdem Ranomafana-Stofftaschen, Körbe, Ledersandalen, Honig und handgemachte Seife.",
         "mg": "Koperativan'ny vehivavy mpanenona eo afovoan'ny tanànan'i Ranomafana, ao amin'ny tranom-bakoka taloha. Amin'ny tenona hazo, ny mpanenona dia manova ny landihazo, ny landy, ny sisal ary ny rafia ho lamba sy salovana araka ny fomban-drazana malagasy amin'ny fanenonana; afaka mijery azy ireo miasa ianao ary mividy mivantana amin'ny koperativa. Ny hoe Famiova dia midika hoe “fiovana”: ny fibra manta lasa lamba, ary ny fiainan'ny vehivavy manenona azy. Mivarotra kitapo lamba Ranomafana, harona, kapa hoditra, tantely ary savony vita tanana koa ny fivarotana."
@@ -5714,7 +5714,7 @@ const LISTING_TRANSLATIONS = {
         "mg": "Tahirin'ny fiaraha-monina VOI Ambohimagneva"
       },
       "desc": {
-        "en": "A 75-hectare community-managed reserve bordering the national park, governed through a VOI partnership under Madagascar's GELOSE framework, with MNP-certified guide access and Centre ValBio research collaboration. Trails and a river waterfall site are being opened to visitors. Visitor fees go directly to the village and the people who live there.",
+        "en": "A 75-hectare reserve bordering the national park, run by the local community association (the VOI) under Madagascar's community forest-management law, GELOSE. Its guides are certified by Madagascar National Parks, and it has research links to Centre ValBio. Trails and a river waterfall are being opened to visitors. Visitor fees go directly to the village and the people who live there.",
         "fr": "Une réserve de 75 hectares gérée par la communauté, en bordure du parc national, administrée par un VOI dans le cadre de la loi malgache GELOSE, avec des guides agréés par MNP et des recherches menées avec le Centre ValBio. Des sentiers et une cascade sur la rivière sont en cours d’ouverture aux visiteurs. Les droits payés par les visiteurs vont directement au village et à ses habitants.",
         "de": "Ein 75 Hektar großes, von der Gemeinde verwaltetes Reservat am Rand des Nationalparks, geführt über eine VOI-Partnerschaft nach Madagaskars GELOSE-Gesetz, mit von MNP zertifizierten Guides und Forschungszusammenarbeit mit dem Centre ValBio. Wege und ein Wasserfall am Fluss werden für Besucher geöffnet. Die Besuchergebühren gehen direkt an das Dorf und seine Bewohner.",
         "mg": "Tahiry 75 hektara tantanan'ny fiaraha-monina, mifanila amin'ny valan-javaboahary, tantanana amin'ny alalan'ny fiaraha-miasa amin'ny VOI araka ny lalàna GELOSE eto Madagasikara, misy mpitari-dalana nahazo fahazoan-dalana avy amin'ny MNP ary fiaraha-miasa amin'ny Centre ValBio amin'ny fikarohana. Efa sokafana ho an'ny mpitsidika ny lalana sy riandrano iray eo amin'ny renirano. Mankany amin'ny tanàna sy ny mponina ao aminy mivantana ny saran'ny mpitsidika."
@@ -6009,7 +6009,7 @@ const LISTING_TRANSLATIONS = {
       "tips": {
         "en": [
           "Access on foot, roughly 3 km from town",
-          "Contact ahead — visitor access is still being established"
+          "Contact them first: visitor access is still being set up"
         ],
         "fr": [
           "Accès à pied, à environ 3 km du village",
@@ -6476,7 +6476,7 @@ const LISTING_TRANSLATIONS = {
       },
       "parkTicket": { "en": "Not needed", "fr": "Pas nécessaire", "de": "Nicht nötig", "mg": "Tsy ilaina" },
       "desc": {
-        "en": "Everything worth doing in Ranomafana that needs no park entry fee and no certified guide — a good option if you arrive late or leave early.",
+        "en": "The things to do in Ranomafana that need no park ticket and no certified guide: a good option if you arrive late or leave early.",
         "fr": "Tout ce qui vaut la peine à Ranomafana sans droit d’entrée ni guide agréé — une bonne option si vous arrivez tard ou partez tôt.",
         "de": "Alles Sehenswerte in Ranomafana, das weder Parkeintritt noch zertifizierten Guide braucht – gut, wenn Sie spät ankommen oder früh abreisen.",
         "mg": "Izay rehetra mendrika atao eto Ranomafana nefa tsy mila saram-pidirana amin'ny valan-javaboahary na mpitari-dalana nahazo fahazoan-dalana — safidy tsara raha tara ianao vao tonga na hiala aloha."
@@ -6828,7 +6828,7 @@ const LISTING_TRANSLATIONS = {
         "mg": "Inona marina no aloan'ny saram-pidiranao?"
       },
       "excerpt": {
-        "en": "Entry, community tax, guide fee — three separate payments, three different destinations. A plain breakdown of where the money goes.",
+        "en": "Entry, the community tax and the guide fee are three separate payments, and each goes somewhere different.",
         "fr": "Entrée, taxe communautaire, guide — trois paiements distincts, trois destinations différentes. Où va l’argent, simplement expliqué.",
         "de": "Eintritt, Gemeindeabgabe, Guidegebühr – drei getrennte Zahlungen, drei verschiedene Empfänger. Einfach erklärt, wohin das Geld geht.",
         "mg": "Fidirana, saran'ny fiaraha-monina, saran'ny mpitari-dalana — fandoavana telo samihafa, toerana telo samihafa no alehany. Fanazavana tsotra momba izay alehan'ny vola."
@@ -6841,7 +6841,7 @@ const LISTING_TRANSLATIONS = {
           "## Where the money goes",
           "Madagascar National Parks has managed the park since 1991. Income from entrance fees, guided tours and other park activities is often reinvested in maintaining the park, protecting its wildlife and supporting biodiversity research. MNP sends rangers on patrol, builds and maintains boundary markers, firebreaks and watchtowers, and employs local people as guides, escorts, porters, cooks and labourers.",
           "## Why it matters now",
-          "Before the COVID-19 pandemic the park welcomed close to 19,000 international visitors a year. Since then it has been closer to 3,500. Every ticket helps restore what was lost."
+          "Before the COVID-19 pandemic the park welcomed close to 19,000 international visitors a year. Since then it has been closer to 3,500."
         ],
         "fr": [
           "Une journée dans le parc national de Ranomafana implique trois paiements distincts, tous en ariary et en espèces : le billet d’entrée, une taxe communautaire et votre guide.",
@@ -6850,7 +6850,7 @@ const LISTING_TRANSLATIONS = {
           "## Où va l’argent",
           "Madagascar National Parks gère le parc depuis 1991. Les recettes des droits d’entrée, des visites guidées et des autres activités du parc sont souvent réinvesties dans son entretien, la protection de sa faune et la recherche sur la biodiversité. MNP envoie des agents en patrouille, construit et entretient bornes, pare-feux et tours de guet, et emploie des habitants comme guides, accompagnateurs, porteurs, cuisiniers et ouvriers.",
           "## Pourquoi c’est important aujourd’hui",
-          "Avant la pandémie de COVID-19, le parc accueillait près de 19 000 visiteurs étrangers par an. Depuis, c’est plutôt 3 500. Chaque billet aide à reconstruire ce qui a été perdu."
+          "Avant la pandémie de COVID-19, le parc accueillait près de 19 000 visiteurs étrangers par an. Depuis, c’est plutôt 3 500."
         ],
         "de": [
           "Ein Tag im Nationalpark Ranomafana bedeutet drei getrennte Zahlungen, alle bar in Ariary: das Eintrittsticket, eine Gemeindeabgabe und Ihr Guide.",
@@ -6859,7 +6859,7 @@ const LISTING_TRANSLATIONS = {
           "## Wohin das Geld geht",
           "Madagascar National Parks verwaltet den Park seit 1991. Einnahmen aus Eintritt, Führungen und anderen Parkangeboten werden oft in den Unterhalt des Parks, den Schutz seiner Tiere und die Biodiversitätsforschung reinvestiert. MNP schickt Ranger auf Patrouille, baut und pflegt Grenzmarkierungen, Brandschneisen und Wachtürme und beschäftigt Menschen aus der Gegend als Guides, Begleiter, Träger, Köche und Arbeiter.",
           "## Warum das gerade jetzt zählt",
-          "Vor der COVID-19-Pandemie kamen jedes Jahr fast 19.000 internationale Besucher in den Park. Seitdem sind es eher 3.500. Jedes Ticket hilft, das Verlorene wieder aufzubauen."
+          "Vor der COVID-19-Pandemie kamen jedes Jahr fast 19.000 internationale Besucher in den Park. Seitdem sind es eher 3.500."
         ],
         "mg": [
           "Ny andro iray ao amin'ny valan-javaboahary Ranomafana dia mitaky fandoavana telo samihafa, samy amin'ny vola ariary an-tanana: ny tapakila fidirana, ny saran'ny fiaraha-monina, ary ny mpitari-dalanao.",
@@ -6868,7 +6868,7 @@ const LISTING_TRANSLATIONS = {
           "## Aiza no alehan'ny vola",
           "Ny Madagascar National Parks no mitantana ny valan-javaboahary nanomboka tamin'ny 1991. Matetika ny vola miditra avy amin'ny saram-pidirana, ny fitsangatsanganana miaraka amin'ny mpitari-dalana ary ny asa hafa ao amin'ny valan-javaboahary dia ampiasaina indray amin'ny fikarakarana ny valan-javaboahary, ny fiarovana ny biby ao aminy ary ny fikarohana momba ny zava-boahary. Mandefa mpiambina hanao fisafoana ny MNP, manorina sy mikarakara ny famantarana sisintany, ny lalana fiarovana amin'ny afo ary ny tilikambo fiambenana, ary mampiasa olona eto an-toerana ho mpitari-dalana, mpanaraka, mpitondra entana, mpahandro ary mpiasa.",
           "## Nahoana no zava-dehibe izany ankehitriny",
-          "Talohan'ny areti-mifindra COVID-19 dia mpitsidika vahiny efa ho 19 000 isan-taona no noraisin'ny valan-javaboahary. Hatramin'izay dia eo amin'ny 3 500 eo ho eo. Manampy amin'ny famerenana izay very ny tapakila tsirairay."
+          "Talohan'ny areti-mifindra COVID-19 dia mpitsidika vahiny efa ho 19 000 isan-taona no noraisin'ny valan-javaboahary. Hatramin'izay dia eo amin'ny 3 500 eo ho eo."
         ]
       }
     },
@@ -7001,7 +7001,7 @@ const LISTING_TRANSLATIONS = {
           "## What it costs",
           "The guide fee is paid once per group, so it costs less each with more people: 90,000 Ar for Talatakely or Sahamalaotra, 120,000 Ar for Vatoharanana and 150,000 Ar for the Valohoaka trek. One guide takes a group of one to four; groups of six or more need at least two. Travelling solo? Ask the park office to pair you with other visitors.",
           "## Specialists",
-          "Specialist guides are experts in finding and explaining the park’s birds, plants, or reptiles and amphibians, and cost 220,000 Ar on any circuit. Birders should ask for one by name.",
+          "Specialist guides know the park’s birds, plants, or reptiles and amphibians, and where to find them. They cost 220,000 Ar on any circuit. Birders should ask for one by name.",
           "Whoever you go with, tell them about your fitness and any worries: they will adapt the route to suit you."
         ],
         "fr": [
@@ -7092,14 +7092,14 @@ const LISTING_TRANSLATIONS = {
         "mg": "Inona no entina amin'ny dia an'ala"
       },
       "excerpt": {
-        "en": "Steep trails, rain in every season and a cash-only gate. The short list that matters.",
+        "en": "Steep trails, rain in every season and a cash-only gate: what to bring.",
         "fr": "Des sentiers raides, de la pluie en toute saison et un guichet qui n’accepte que les espèces. La courte liste qui compte.",
         "de": "Steile Wege, Regen zu jeder Jahreszeit und eine Kasse, die nur Bargeld nimmt. Die kurze Liste, auf die es ankommt.",
         "mg": "Lalana mideza, orana na inona na inona vanim-potoana, ary vola an-tanana ihany no raisina eo am-bavahady. Ilay lisitra fohy tena ilaina."
       },
       "body": {
         "en": [
-          "Ranomafana’s trails are steep, often wet, and a long way from a shop. The short list that matters:",
+          "Ranomafana’s trails are steep, often wet, and a long way from a shop. Bring these:",
           "## For the forest",
           "A rain shell, in every season. Sturdy shoes, because the trails are steep and slippery when wet. Water, and on the long Valohoaka trek, lunch and two litres.",
           "## For after dark",
