@@ -505,6 +505,16 @@ The home page, the park page and the Hiring a guide page read the broken-out fie
 
 ## i18n
 
+**Malagasy is off** (Kyle, 24 Nov 2026: "remove the malagasy language option"). The
+menus offer English, French and German only; `OFFERED_LANGS` in the script decides
+which languages a link (`?lang=mg`), a saved choice or the browser's language can
+pick, so those visitors get English. The Malagasy text is still in every dictionary,
+the translations file and the `-mg` placeholder cards, unused, and `npm run check`
+still checks it: to bring Malagasy back, add `'mg'` to `OFFERED_LANGS`, its
+`<option>` to both language menus, and its lines back in `404.html` and
+`scripts/publish-extras.mjs`. Everything below about four languages describes the
+text as it is kept, not what visitors can choose.
+
 Kyle asked on 12 Oct 2026 for **everything** to be translated in every language
 option, and it now is: interface, page text and listing content. Two places hold it.
 

@@ -87,7 +87,7 @@ function structuredData(page) {
   switch (page) {
     case 'home':
       return [
-        { '@type': 'WebSite', name: 'Ranomafana · A community visitor guide', url: BASE, inLanguage: ['en', 'fr', 'de', 'mg'] },
+        { '@type': 'WebSite', name: 'Ranomafana · A community visitor guide', url: BASE, inLanguage: ['en', 'fr', 'de'] },
         { '@type': 'TouristDestination', name: 'Ranomafana', description: siteDescription, url: BASE, address },
       ];
     case 'stay':

@@ -1293,7 +1293,6 @@
             <option value="en">English</option>
             <option value="fr">Français</option>
             <option value="de">Deutsch</option>
-            <option value="mg">Malagasy</option>
           </select>
         </label>
         <button class="menu-btn" type="button" onclick="toggleDrawer(true)" aria-label="Open menu" data-i18n-aria-label="ariaOpenMenu" aria-controls="mobileDrawer" aria-expanded="false">
@@ -1330,7 +1329,6 @@
         <option value="en">English</option>
         <option value="fr">Français</option>
         <option value="de">Deutsch</option>
-        <option value="mg">Malagasy</option>
       </select>
     </div>
   </aside>
@@ -5778,7 +5776,7 @@
 
     /* remember: true when the visitor picked the language from the menu. */
     function setLanguage(lang, remember) {
-      if (!translations[lang]) lang = 'en';
+      if (!offered(lang)) lang = 'en';
       currentLang = lang;
       document.documentElement.lang = lang;
       TOK = tokenValues();
@@ -5821,21 +5819,26 @@
     /* The first language shown is, in order: a "?lang=fr" in the link, the
        visitor's own earlier choice, their browser's language, then English. */
     const LANG_STORAGE_KEY = 'ranomafana-lang';
+    /* The languages in the menu. Malagasy was taken off at Kyle's request
+       (24 Nov 2026); its text is still in the dictionaries, so adding 'mg'
+       back here and to the two menus brings it back. */
+    const OFFERED_LANGS = ['en', 'fr', 'de'];
+    const offered = (lang) => OFFERED_LANGS.includes(lang) && !!translations[lang];
     function linkLanguage() {
       const lang = new URLSearchParams(location.search).get('lang');
-      return lang && translations[lang] ? lang : null;
+      return lang && offered(lang) ? lang : null;
     }
     function savedLanguage() {
       try {
         const lang = localStorage.getItem(LANG_STORAGE_KEY);
-        if (lang && translations[lang]) return lang;
+        if (lang && offered(lang)) return lang;
       } catch (e) { /* storage blocked */ }
       return null;
     }
     function browserLanguage() {
       for (const pref of navigator.languages || [navigator.language || '']) {
         const code = String(pref).slice(0, 2).toLowerCase();
-        if (translations[code]) return code;
+        if (offered(code)) return code;
       }
       return null;
     }
