@@ -1146,7 +1146,8 @@
     /* ----------------------------------------------------- footer */
     .site-footer { background: var(--floor); color: var(--lichen); border-top: 1px solid var(--rule); box-shadow: inset 0 3px 0 var(--leaf-deep); }
     .footer-inner { padding-top: 72px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 56px; }
-    .footer-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(5, minmax(0, 1fr)); gap: 28px; }
+    /* The brand column never shrinks below the wordmark, so "Ranomafana" can't run into Explore. */
+    .footer-grid { display: grid; grid-template-columns: minmax(min-content, 1.6fr) repeat(5, minmax(0, 1fr)); gap: 28px clamp(28px, 3vw, 48px); }
     .footer-brand { display: flex; flex-direction: column; gap: 12px; }
     .footer-name { font-family: var(--serif); font-weight: 300; font-size: 56px; color: var(--mist); line-height: 1; }
     .footer-call { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 20px; line-height: 1.35; color: var(--gold); }
