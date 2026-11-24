@@ -245,7 +245,14 @@ asks: contrast, new sections, partner logos, social media, birdwatching):
   listing galleries, gathered by `renderGallery()` — nothing to maintain; a new
   gallery photo appears by itself. Placeholders, `PLACEHOLDER_STAY/NATURE` and empty
   pre-wired slots are left out. Filters reuse the Things-to-do layers plus "Stays &
-  food". A tap opens the photo with a link to its listing; arrow keys step through.
+  food". Since 24 Nov 2026 (Kyle: "one image after a time that people can click
+  through or a carousel") it is a **slideshow** in `#galleryShow`: one photo large,
+  moving on every 6 s (the gold timer bar's CSS animation; its end calls the next
+  photo), with arrows, swipe, arrow keys, a Pause/Play button and a strip of small
+  pictures. It pauses under the mouse, on keyboard focus and behind a pop-up, and
+  starts paused for visitors who ask for reduced motion. A slot whose file is missing
+  drops out by itself. A tap on the photo opens it in the pop-up with a link to its
+  listing; arrow keys step through there too.
   Each photo has a ♥ (Kyle, 23 Oct 2026): a liked photo moves to the top (latest
   like first) and joins a "Your likes" filter. Likes are kept in the visitor's own
   browser (`localStorage`, key `ranomafana-liked-photos`), so each visitor sees only
