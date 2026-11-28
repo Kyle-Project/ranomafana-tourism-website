@@ -397,7 +397,7 @@
     @media (max-width: 720px) {
       .hero { min-height: 680px; }
       .hero-inner { padding-bottom: 32px; gap: 16px; }
-      .hero-badge { border: 0; padding: 0; background: none; font-size: 11px; font-weight: 700; color: var(--gold); }
+      .hero-badge { border: 0; padding: 0; background: none; font-size: 12px; font-weight: 700; color: var(--gold); }
       .hero-badge svg { display: none; }
       .hero-title { font-size: min(64px, 17vw); line-height: .9; letter-spacing: -.03em; }   /* "Ranomafana" stays on one line down to 320px */
       .hero-head { gap: 8px; }
@@ -532,7 +532,7 @@
       .byg-card { background: var(--under); border: 1px solid var(--moss); border-radius: 18px; padding: 20px; }
       .byg-grid, .byg-nav { padding: 0; }
       .byg-grid { gap: 16px 12px; }
-      .byg h2 { font-size: 11px; }
+      .byg h2 { font-size: 12px; }
       .byg-value { font-size: 22px; }
       .byg-label { font-size: 13px; }
       .byg-nav { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--moss); gap: 8px; }
@@ -572,7 +572,7 @@
     .kind-btn:hover { border-color: var(--gold); }
     .kind-btn[aria-pressed="true"] { background: var(--gold); color: var(--canopy); border-color: var(--gold); }
     .price-toggle { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-    .price-toggle .kind-btn { min-height: 40px; padding: 0 14px; font-size: 14px; }
+    .price-toggle .kind-btn { min-height: 44px; padding: 0 14px; font-size: 14px; }
     .plan-card { background: var(--under); border: 1px solid var(--moss); border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 18px; min-height: 360px; }
     .plan-card-badge { font-size: 13px; font-weight: 700; color: var(--gold); }
     .plan-card h3 { font-family: var(--serif); font-weight: 500; font-size: clamp(28px, 2.8vw, 40px); line-height: 1.1; }
@@ -671,7 +671,7 @@
     @media (max-width: 720px) {
       .event-row { grid-template-columns: 72px minmax(0, 1fr); gap: 6px 16px; padding: 20px 0; align-items: start; }
       .ev-day, .is-next .ev-day { font-size: 36px; }
-      .ev-month { font-size: 11px; }
+      .ev-month { font-size: 12px; }
       .ev-title, .is-next .ev-title { font-size: 22px; }
       .ev-desc { font-size: 14px; }
       .ev-badge { grid-column: 2; justify-self: start; }
@@ -803,8 +803,8 @@
     .park-lede { font-family: var(--serif); font-size: clamp(22px, 2.2vw, 32px); line-height: 1.4; font-weight: 300; }
     .circuits { display: flex; flex-direction: column; border-top: 1px solid var(--moss); }
     .circuit { display: grid; grid-template-columns: 80px 220px minmax(0, 1fr); gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--moss); align-items: start; }
-    .circuit-num { font-variant-numeric: lining-nums tabular-nums; font-family: var(--serif); font-size: 48px; font-weight: 300; line-height: 1; color: var(--moss-2); }
-    .circuit:nth-child(n+2) .circuit-num { color: var(--moss-3); }
+    .circuit-num { font-variant-numeric: lining-nums tabular-nums; font-family: var(--serif); font-size: 48px; font-weight: 300; line-height: 1; color: var(--moss-3); }
+    .circuit:nth-child(n+2) .circuit-num { color: var(--muted); }
     .circuit:last-child .circuit-num { color: var(--gold); }   /* the deepest circuit */
     .circuit-name { font-family: var(--serif); font-size: 30px; font-weight: 500; line-height: 1.1; }
     .circuit-dur { font-size: 14px; color: var(--lichen); }
@@ -1091,7 +1091,7 @@
     /* On phones the south-east towns are too close for every label, so the small
        pins lose theirs and this row of names does the choosing instead. */
     .map-places { display: none; flex-wrap: wrap; gap: 8px; }
-    .map-place { min-height: 40px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--moss-2); background: none; color: var(--mist); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+    .map-place { min-height: 44px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--moss-2); background: none; color: var(--mist); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
     .map-place[aria-pressed="true"] { border-color: var(--gold); color: var(--gold); }
     @media (max-width: 520px) {
       .map-pin--small .map-pin-label { display: none; }
@@ -1266,13 +1266,13 @@
     @media (prefers-reduced-motion: reduce) { .show-open img { animation: none; } }
     @media (max-width: 720px) {
       .show-stage { aspect-ratio: 4 / 5; border-radius: 12px; }
-      .show-arrow { width: 40px; height: 40px; margin-top: -20px; }
+      .show-arrow { width: 44px; height: 44px; margin-top: -22px; }
       .show-arrow.prev { left: 8px; } .show-arrow.next { right: 8px; }
       .show-label { font-size: 14px; padding: 32px 14px 12px; }
       .show-thumb { width: 68px; height: 50px; }
     }
     /* The heart: off is an outline on a dark disc, on is filled ember. */
-    .gal-like { position: absolute; top: 8px; right: 8px; z-index: 1; display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 0; border-radius: 50%; background: var(--floor-a72); color: var(--bright); cursor: pointer; transition: transform .15s ease; }
+    .gal-like { position: absolute; top: 8px; right: 8px; z-index: 1; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%; background: var(--floor-a72); color: var(--bright); cursor: pointer; transition: transform .15s ease; }
     .gal-like:hover { transform: scale(1.08); }
     .gal-like:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
     .gal-like[aria-pressed="true"] { color: var(--ember); }
@@ -1314,6 +1314,24 @@
     /* ----------------------------------------------------- printing
        Prints the page being read (or only the pop-up, when one is open), dark
        on white, without the menus, photos behind headings, maps or buttons. */
+    /* ------------------------------------- readability and touch (28 Nov 2026)
+       From a design-principles review (ui-ux-pro-max): long paragraphs stop at a
+       comfortable line length, and on touch screens every tap target is at least
+       44 px tall (Apple and Google's minimum). With a mouse, only the line
+       length changes. */
+    /* :where() keeps this weaker than any width a component sets for itself. */
+    :where(.page-view) p:where(:not(.wrap)) { max-width: 40em; }   /* about 75 characters a line */
+    /* The Sources line spans the page; keep its text to a readable width. */
+    .page-note { padding-right: max(var(--gutter), calc(min(100%, 1360px) - var(--gutter) - 48em)); }
+    @media (pointer: coarse) {
+      .crumbs a { padding-block: 10px; }   /* inline, so the line doesn't grow */
+      .footer-col { gap: 0; }
+      .footer-col a { padding-block: 10px; }
+      .checks { gap: 0; }
+      .check { min-height: 44px; }
+      .brand { min-height: 44px; }
+    }
+
     @media print {
       :root {
         --floor: var(--print-paper); --canopy: var(--print-paper); --band: var(--print-paper); --under: var(--print-paper); --ph: var(--print-rule-lt);
